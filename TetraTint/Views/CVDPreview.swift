@@ -20,9 +20,19 @@ struct CVDWindowFilter: NSViewRepresentable {
         // Defer so the view is attached to its window before we reach for it.
         DispatchQueue.main.async {
             guard let content = nsView.window?.contentView else { return }
-            content.wantsLayer = true
-            content.layerUsesCoreImageFilters = true
-            content.layer?.filters = CVDWindowFilter.filters(for: type)
+            let filters = CVDWindowFilter.filters(for: type)
+            if filters.isEmpty {
+                // Normal vision: fully clear the filter and DON'T force
+                // layer-backing on the window's content view. Leaving
+                // layerUsesCoreImageFilters on the whole-window host layer
+                // breaks click/hit-testing in the sidebar list (NSTableView),
+                // so the default state must leave the window untouched.
+                content.layer?.filters = nil
+            } else {
+                content.wantsLayer = true
+                content.layerUsesCoreImageFilters = true
+                content.layer?.filters = filters
+            }
         }
     }
 

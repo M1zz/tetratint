@@ -83,13 +83,6 @@ struct ContentView: View {
     @EnvironmentObject private var store: PaletteStore
     @StateObject private var fly = FlyOverlayModel()
 
-    private var selectionBinding: Binding<AppSection?> {
-        Binding(
-            get: { appState.section },
-            set: { if let new = $0 { appState.section = new } }
-        )
-    }
-
     var body: some View {
         ZStack(alignment: .top) {
             // The whole app, rendered through the active color-vision simulation.
@@ -153,15 +146,40 @@ struct ContentView: View {
     }
 
     private var sidebar: some View {
-        List(AppSection.allCases, selection: selectionBinding) { section in
-            Label {
-                Text(LocalizedStringKey(section.rawValue))
-            } icon: {
-                Image(systemName: section.icon)
+        // Each row is a plain Button that sets the section directly. This does
+        // not rely on List/NavigationSplitView selection binding (which was
+        // silently swallowing clicks) — a plain Button reliably fires on click.
+        List {
+            ForEach(AppSection.allCases) { section in
+                Button {
+                    appState.section = section
+                } label: {
+                    HStack {
+                        Label {
+                            Text(LocalizedStringKey(section.rawValue))
+                        } icon: {
+                            Image(systemName: section.icon)
+                        }
+                        Spacer()
+                        if section == .palette, store.unseenCount > 0 {
+                            Text("\(store.unseenCount)")
+                                .font(.caption.bold())
+                                .padding(.horizontal, 7)
+                                .padding(.vertical, 2)
+                                .background(Color.accentColor, in: Capsule())
+                                .foregroundStyle(.white)
+                        }
+                    }
+                    .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+                .listRowBackground(
+                    appState.section == section
+                        ? Color.accentColor.opacity(0.18)
+                        : Color.clear
+                )
+                .background(paletteAnchor(for: section))
             }
-            .tag(section)
-            .badge(section == .palette ? store.unseenCount : 0)
-            .background(paletteAnchor(for: section))
         }
         .navigationSplitViewColumnWidth(min: 180, ideal: 200)
     }
