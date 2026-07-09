@@ -1,0 +1,124 @@
+/* Navigation & view titles */
+"Color" = "색상";
+"Variants" = "변형";
+"Contrast" = "대비";
+"Color vision" = "색각";
+"Generate variants" = "변형 만들기";
+"Check contrast" = "대비 검사하기";
+"Simulate color vision" = "색각 확인하기";
+"Generate and export light, dark, and high-contrast variants" = "라이트, 다크, 고대비 변형을 생성하고 내보냅니다";
+"Check the color against WCAG contrast thresholds" = "WCAG 대비 기준으로 색을 판정합니다";
+"Simulate how the color looks with color vision deficiency" = "색각이상 사용자에게 색이 어떻게 보이는지 시뮬레이션합니다";
+"Dynamic Type" = "다이나믹 타입";
+"System colors" = "시스템 색상";
+"Palette" = "팔레트";
+
+/* Appearance variants */
+"Light (Any)" = "라이트 (기본)";
+"Light High Contrast" = "라이트 고대비";
+"Dark" = "다크";
+"Dark High Contrast" = "다크 고대비";
+"Light" = "라이트";
+"Light HC" = "라이트 고대비";
+"Dark HC" = "다크 고대비";
+"Light mode default (Any Appearance)" = "라이트 모드 기본값 (Any Appearance)";
+"Light with Increase Contrast on" = "라이트 + 손쉽게 사용 대비 증가 켰을 때";
+"Dark mode default" = "다크 모드 기본값";
+"Dark with Increase Contrast on" = "다크 + 손쉽게 사용 대비 증가 켰을 때";
+
+/* Color vision deficiency subtitles */
+"Normal vision" = "일반 색각";
+"Protan, about 1% of men" = "적색맹, 남성 약 1%";
+"Deutan, about 1% of men" = "녹색맹, 남성 약 1%";
+"Tritan, rare" = "청색맹, 희귀";
+"Monochromacy" = "전색맹 (흑백)";
+
+/* Safe palettes */
+"Scientific visualization standard, 8 colors" = "과학 시각화 표준, 8색";
+"IBM accessibility palette, 5 colors" = "IBM 접근성 팔레트, 5색";
+"Qualitative data visualization, 7 colors" = "정성적 데이터 시각화, 7색";
+
+/* Generator */
+"Light mode base color" = "라이트 모드 기준 색상";
+"Color name" = "색상 이름";
+"Regenerate all" = "전체 다시 생성";
+"Discard manual edits and re-derive from the base color" = "수동 편집을 버리고 기준 색상에서 다시 파생합니다";
+"Save to palette" = "팔레트에 저장";
+"Presets" = "프리셋";
+"Export" = "내보내기";
+"Copied" = "복사됨";
+"Copy" = "복사";
+"Save .colorset" = ".colorset 저장";
+
+/* Variant card */
+"%@:1 vs background" = "%@:1 배경 대비";
+"AA text" = "AA 텍스트";
+"Low" = "낮음";
+"Button" = "버튼";
+"Tint label" = "틴트 라벨";
+"Progress" = "진행";
+"Copy hex" = "hex 복사";
+"Fine-tune this variant manually" = "이 변형을 수동으로 미세 조정";
+
+/* Color vision screen */
+"Color vision simulation" = "색각 시뮬레이션";
+"This shows how your colors look to people with color vision deficiency. It is the current state, not a suggestion to change them." = "내가 쓴 색이 색각이상 사용자에게 어떻게 보이는지 재현합니다. 바꾸라는 제안이 아니라 지금 상태입니다.";
+"Conflict warnings" = "구분 불가 경고";
+"Finds color pairs that become too similar to tell apart under simulation." = "시뮬레이션했을 때 서로 너무 비슷해져 헷갈리는 색 쌍을 찾아냅니다.";
+"Recommended safe palettes" = "색맹 안전 팔레트";
+"If there were conflicts above, switch to a verified palette that stays distinguishable across every vision type." = "위에서 충돌이 있었다면, 모든 색각 유형에서 잘 구분되는 검증된 팔레트로 교체하세요.";
+"No palette saved yet, so the Okabe Ito demo palette is shown. Save colors in Generator to audit your own palette." = "저장된 팔레트가 없어 Okabe Ito 데모 팔레트를 표시합니다. Generator에서 색을 저장하면 내 팔레트가 검사됩니다.";
+"Color" = "색상";
+"All color pairs stay distinguishable across every vision type (ΔE ≥ 12)" = "모든 색상 쌍이 모든 색각 유형에서 구분 가능합니다 (ΔE ≥ 12)";
+"ΔE %@ under %@" = "%2$@에서 ΔE %1$@";
+"Do not rely on color alone. Pair it with icons, patterns, or labels, or switch to a safe palette below." = "색상만으로 상태를 구분하지 말고 아이콘, 패턴, 라벨을 병행하거나, 아래 안전 팔레트로 교체하세요.";
+"Add to palette" = "팔레트에 추가";
+"Derive each color into four variants and save to the palette" = "각 색을 4종 변형으로 파생해 팔레트에 저장";
+
+/* Contrast audit */
+"Paste the colors your app uses (separated by line breaks or commas)" = "앱에서 사용 중인 색상 붙여넣기 (줄바꿈 또는 쉼표 구분)";
+"Audit" = "검사";
+"Screens each color against light (vs white) and dark (vs black) backgrounds using WCAG thresholds." = "라이트(vs 흰색)와 다크(vs 검정) 배경 각각에 대해 WCAG 기준으로 선별합니다.";
+"Preview: %lld colors" = "미리보기: %lld개";
+"Preview: %lld colors, %lld unrecognized" = "미리보기: %1$lld개 중 %2$lld개 인식 불가";
+"%lld of %lld colors need a high-contrast variant" = "총 %2$lld개 중 %1$lld개가 고대비 변형이 필요합니다";
+"Use as is" = "그대로 사용 가능";
+"Needs high contrast" = "고대비 변형 필요";
+"Decorative only" = "장식용으로만";
+"Meets 4.5:1 for text" = "텍스트 기준 4.5:1 충족";
+"Passes 3:1 for UI; text or High Contrast needs a variant" = "UI 요소(3:1)는 통과, 텍스트/고대비 대응은 변형 등록 필요";
+"Below 3:1; do not use for text, icons, or status" = "3:1 미만, 텍스트/아이콘/상태 표시에 사용 금지";
+"Derive four variants" = "4종 변형 생성";
+"Derive four variants including high contrast and save to the palette" = "고대비 포함 4가지 변형을 파생해 팔레트에 저장";
+
+/* Dynamic Type */
+"Scaling preview" = "스케일 미리보기";
+"Style" = "스타일";
+"Custom font PostScript name" = "커스텀 폰트 PostScript 이름";
+"Category" = "카테고리";
+"The quick brown fox jumps over the lazy dog" = "다람쥐 헌 쳇바퀴에 타고파 The quick brown fox";
+"Code" = "코드";
+"Text style sizes (pt)" = "텍스트 스타일 크기 (pt)";
+"Large is the default. In accessibility sizes (AX1 to AX5), Body grows to %@pt, over three times the default, so avoid fixed heights, fixed padding, and lineLimit(1)." = "Large가 기본값입니다. 접근성 카테고리(AX1~AX5)에서 Body는 %@pt까지 커집니다. 기본값의 3배가 넘으므로 고정 높이, 고정 패딩, lineLimit(1)은 반드시 피하세요.";
+
+/* System colors */
+"Tint colors" = "틴트 색상";
+"Gray colors" = "그레이 색상";
+"Reference values from Apple's Human Interface Guidelines. Actual values may change between OS releases, so always use the UIColor or Color API in shipping code rather than hard-coding." = "Apple Human Interface Guidelines의 참고 값입니다. OS 릴리스에 따라 실제 값이 바뀔 수 있으니, 배포 코드에서는 하드코딩하지 말고 UIColor / Color API를 사용하세요.";
+"Click to copy %@" = "클릭하여 %@ 복사";
+
+/* Screen color picker */
+"Pick color from screen" = "화면에서 색 추출";
+"Pick a color from anywhere on screen" = "화면 어디서든 색을 추출";
+"Pick a color from anywhere on screen and make it the working color" = "화면 어디서든 색을 추출해 작업 색상으로 설정";
+"Working color" = "작업 색상";
+"Change the working color to see how it looks under each type of color vision." = "작업 색상을 바꿔 각 색각 유형에서 어떻게 보이는지 확인하세요.";
+
+/* Palette */
+"Export .xcassets" = ".xcassets 내보내기";
+"Export every saved color as one asset catalog" = "저장된 모든 색을 하나의 에셋 카탈로그로 내보내기";
+"No saved colors" = "저장된 색상 없음";
+"Generate a color and save it here, then export your whole brand palette as one .xcassets catalog." = "Generator에서 색을 만들어 저장하고, 브랜드 팔레트 전체를 하나의 .xcassets 카탈로그로 내보내세요.";
+"Each color is saved as four variants" = "각 색은 4가지 변형으로 저장됩니다";
+"Export %@.colorset" = "%@.colorset 내보내기";
+"Delete" = "삭제";

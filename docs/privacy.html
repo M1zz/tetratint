@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TetraTint — Privacy Policy / 개인정보처리방침</title>
+<style>
+  :root {
+    --bg: #f5f5f7; --card: #ffffff; --text: #1d1d1f; --muted: #6e6e73;
+    --border: #e3e3e6; --accent: #0a84ff; --ok: #34c759;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000; --card: #1c1c1e; --text: #f5f5f7; --muted: #98989d;
+      --border: #2c2c2e; --accent: #0a84ff; --ok: #30d158;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", "Apple SD Gothic Neo", sans-serif;
+    line-height: 1.7; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+  .logo {
+    width: 56px; height: 56px; border-radius: 14px; display: grid;
+    grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,.15); margin-bottom: 20px;
+  }
+  .logo i { display: block; }
+  .logo i:nth-child(1){ background:#0a84ff; }
+  .logo i:nth-child(2){ background:#0060df; }
+  .logo i:nth-child(3){ background:#5ac8fa; }
+  .logo i:nth-child(4){ background:#004299; }
+  h1 { font-size: 32px; letter-spacing: -.02em; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 4px; font-size: 17px; }
+  .updated { color: var(--muted); font-size: 14px; margin: 0 0 32px; }
+  .card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+    padding: 24px 26px; margin: 18px 0;
+  }
+  h2 { font-size: 20px; margin: 4px 0 10px; letter-spacing: -.01em; }
+  p { margin: 8px 0; }
+  .muted { color: var(--muted); }
+  .lead {
+    display: inline-flex; align-items: center; gap: 8px; font-weight: 600;
+    color: var(--ok); font-size: 18px;
+  }
+  ul { margin: 8px 0; padding-left: 20px; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .en { color: var(--muted); font-size: 15px; }
+  hr { border: none; border-top: 1px solid var(--border); margin: 28px 0; }
+  footer { color: var(--muted); font-size: 14px; text-align: center; margin-top: 40px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo"><i></i><i></i><i></i><i></i></div>
+  <h1>개인정보처리방침</h1>
+  <p class="sub">TetraTint · Privacy Policy</p>
+  <p class="updated">최종 업데이트 / Last updated: 2026-07-10</p>
+
+  <div class="card">
+    <p class="lead">✓ TetraTint는 어떤 개인정보도 수집하지 않습니다.</p>
+    <p class="en">TetraTint does not collect, store, or transmit any personal data.</p>
+    <p class="muted">TetraTint는 전적으로 사용자의 Mac에서만 동작하는 개발자 도구입니다. 서버로 전송되는 정보가 없으며, 분석·추적·광고 도구를 포함하지 않습니다.</p>
+  </div>
+
+  <div class="card">
+    <h2>수집하는 정보 <span class="en">· Information we collect</span></h2>
+    <p><strong>없음.</strong> TetraTint는 계정 로그인, 사용자 식별자, 사용 통계, 위치 등 어떠한 개인정보도 요구하거나 수집하지 않습니다.</p>
+    <p class="en"><strong>None.</strong> The app requires no account and gathers no identifiers, analytics, or usage data.</p>
+  </div>
+
+  <div class="card">
+    <h2>기기에 저장되는 데이터 <span class="en">· Data stored on your device</span></h2>
+    <ul>
+      <li><strong>저장한 팔레트/색상</strong> — 사용자가 저장한 색상 값은 macOS <code>UserDefaults</code>를 통해 <strong>사용자 기기에만</strong> 로컬로 보관됩니다. 외부로 전송되지 않습니다.</li>
+      <li><strong>내보내기 파일</strong> — <code>.colorset</code>, <code>.xcassets</code> 등은 사용자가 직접 선택한 위치에만 저장됩니다.</li>
+    </ul>
+    <p class="en">Saved palettes are kept locally via macOS <code>UserDefaults</code> on your device only. Exported asset files are written solely to locations you choose.</p>
+  </div>
+
+  <div class="card">
+    <h2>화면 색상 추출(스포이드) <span class="en">· Screen color picker</span></h2>
+    <p>스포이드 기능은 사용자가 가리키는 화면 지점의 색상 값(RGB)만 읽어 작업 색상으로 설정합니다. 화면 캡처를 저장하거나 외부로 전송하지 않으며, 색상 값은 앱 사용 중에만 메모리에 유지됩니다.</p>
+    <p class="en">The eyedropper reads only the color value of the pixel you point at, to set it as the working color. No screenshots are stored or sent anywhere.</p>
+  </div>
+
+  <div class="card">
+    <h2>제3자 서비스 <span class="en">· Third-party services</span></h2>
+    <p>없습니다. TetraTint는 어떤 제3자 SDK, 분석, 클라우드 서비스와도 통신하지 않습니다.</p>
+    <p class="en">None. TetraTint does not integrate any third-party SDKs, analytics, or cloud services.</p>
+  </div>
+
+  <div class="card">
+    <h2>문의 <span class="en">· Contact</span></h2>
+    <p>개인정보처리방침에 대한 문의는 아래로 연락해 주세요.</p>
+    <p><a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com</a></p>
+  </div>
+
+  <hr>
+  <p class="muted" style="text-align:center"><a href="./index.html">← TetraTint 홈</a> · <a href="./support.html">지원 / Support</a></p>
+  <footer>© 2026 TetraTint. All rights reserved.</footer>
+</div>
+</body>
+</html>

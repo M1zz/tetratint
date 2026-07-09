@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TetraTint</title>
+<style>
+  :root {
+    --bg: #f5f5f7; --card: #ffffff; --text: #1d1d1f; --muted: #6e6e73;
+    --border: #e3e3e6; --accent: #0a84ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#000; --card:#1c1c1e; --text:#f5f5f7; --muted:#98989d; --border:#2c2c2e; --accent:#0a84ff; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Apple SD Gothic Neo", sans-serif;
+    line-height: 1.7; -webkit-font-smoothing: antialiased;
+    min-height: 100vh; display: grid; place-items: center;
+  }
+  .wrap { max-width: 620px; padding: 48px 24px; text-align: center; }
+  .logo {
+    width: 88px; height: 88px; border-radius: 20px; display: grid; margin: 0 auto 24px;
+    grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; overflow: hidden;
+    box-shadow: 0 6px 24px rgba(0,0,0,.2);
+  }
+  .logo i { display:block; }
+  .logo i:nth-child(1){ background:#0a84ff; }
+  .logo i:nth-child(2){ background:#0060df; }
+  .logo i:nth-child(3){ background:#5ac8fa; }
+  .logo i:nth-child(4){ background:#004299; }
+  h1 { font-size: 40px; letter-spacing: -.03em; margin: 0 0 8px; }
+  p.tag { color: var(--muted); font-size: 18px; margin: 0 0 32px; }
+  .links { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .links a {
+    background: var(--card); border: 1px solid var(--border); color: var(--text);
+    text-decoration: none; padding: 14px 24px; border-radius: 14px; font-weight: 600;
+  }
+  .links a:hover { border-color: var(--accent); color: var(--accent); }
+  footer { color: var(--muted); font-size: 14px; margin-top: 40px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo"><i></i><i></i><i></i><i></i></div>
+  <h1>TetraTint</h1>
+  <p class="tag">커스텀 컬러·폰트를 위한 macOS 접근성 개발 도구<br><span style="font-size:15px">Accessibility tooling for custom colors &amp; fonts on macOS</span></p>
+  <div class="links">
+    <a href="./support.html">지원 · Support</a>
+    <a href="./privacy.html">개인정보처리방침 · Privacy</a>
+  </div>
+  <footer>© 2026 TetraTint</footer>
+</div>
+</body>
+</html>

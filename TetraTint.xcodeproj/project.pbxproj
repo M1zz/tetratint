@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C7FF1770C169458B7642A94 /* PaletteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3499959ADA1C7A5FE323EF7F /* PaletteStore.swift */; };
+		0FD30AF0BE62E6E11C8B2CA9 /* SystemColorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D7F69D203D9B1276AAAD4 /* SystemColorData.swift */; };
+		11D6F8CB688C3551CD38F8D3 /* ColorMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6266E5945F027636318BF6 /* ColorMath.swift */; };
+		1C85B330E56049DBD6AAE8E6 /* TetraTintApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A9CE4106638DBB9F77FDE /* TetraTintApp.swift */; };
+		63472D239A6A7132A9183A88 /* FlyToPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2920BA56E1E641FF038499 /* FlyToPalette.swift */; };
+		637C23B0E15744162B5771EA /* AppearanceSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AD967B11D838B36CF85FEB /* AppearanceSet.swift */; };
+		6E6B18473C1602C29AFF04EA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4ECE7D82BB077927D8CCC0BC /* Localizable.strings */; };
+		7E52B372932CA7B4A8D24C9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BC6B22B80E00FB7013FE8F /* Assets.xcassets */; };
+		8E81AF8C5C8D15C57080CB33 /* AuditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE03AF3C1A95A09D3485F166 /* AuditView.swift */; };
+		968D493C926D8EAED932971A /* SystemColorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278B9DB81A76EE74B2E7C8BE /* SystemColorsView.swift */; };
+		98E6BEBF675C8D293BE9A27B /* VariantCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805252219AA81B77DFED04C7 /* VariantCard.swift */; };
+		9B41CC035CB3346829F0EC57 /* DynamicTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168878C3D3992DB5ED08D653 /* DynamicTypeView.swift */; };
+		A24E97A82F3D11778859FFC3 /* PaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DA57A4322D5FCA4CCCE586 /* PaletteView.swift */; };
+		A2964F5FC147038F70824B3F /* DynamicTypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB1B2AFF2AB996285B37346 /* DynamicTypeData.swift */; };
+		A2A5BCED3056ACCD3F0B3A6A /* GeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A5DAF0302F7D99CA2D343B /* GeneratorView.swift */; };
+		A807226E2C4216A259B4B5E3 /* ColorVisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A9EC38C31C2B824B261E4F /* ColorVisionView.swift */; };
+		BB92FB9A183AE8F6618B1D15 /* Exporters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A435B94F6434981BC215CB /* Exporters.swift */; };
+		DD91095369A73EFD1CA9B1BE /* ColorWorkspaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9553B0A72B9F18055F6014 /* ColorWorkspaceView.swift */; };
+		E93DAF16747BC0B02F88E836 /* CVDSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F229B2DA9FE066BE4377DE63 /* CVDSimulation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		168878C3D3992DB5ED08D653 /* DynamicTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeView.swift; sourceTree = "<group>"; };
+		17DF28A15E4BCAD19FE864FB /* TetraTint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TetraTint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EB1B2AFF2AB996285B37346 /* DynamicTypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeData.swift; sourceTree = "<group>"; };
+		24AD967B11D838B36CF85FEB /* AppearanceSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceSet.swift; sourceTree = "<group>"; };
+		278B9DB81A76EE74B2E7C8BE /* SystemColorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemColorsView.swift; sourceTree = "<group>"; };
+		2F9553B0A72B9F18055F6014 /* ColorWorkspaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWorkspaceView.swift; sourceTree = "<group>"; };
+		3499959ADA1C7A5FE323EF7F /* PaletteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteStore.swift; sourceTree = "<group>"; };
+		4ECE7D82BB077927D8CCC0BC /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		53A435B94F6434981BC215CB /* Exporters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exporters.swift; sourceTree = "<group>"; };
+		6F5D7F69D203D9B1276AAAD4 /* SystemColorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemColorData.swift; sourceTree = "<group>"; };
+		79DA57A4322D5FCA4CCCE586 /* PaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteView.swift; sourceTree = "<group>"; };
+		805252219AA81B77DFED04C7 /* VariantCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariantCard.swift; sourceTree = "<group>"; };
+		84BC6B22B80E00FB7013FE8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C9A9CE4106638DBB9F77FDE /* TetraTintApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetraTintApp.swift; sourceTree = "<group>"; };
+		AE6266E5945F027636318BF6 /* ColorMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorMath.swift; sourceTree = "<group>"; };
+		BE03AF3C1A95A09D3485F166 /* AuditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditView.swift; sourceTree = "<group>"; };
+		D4A9EC38C31C2B824B261E4F /* ColorVisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorVisionView.swift; sourceTree = "<group>"; };
+		E7A5DAF0302F7D99CA2D343B /* GeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorView.swift; sourceTree = "<group>"; };
+		EF2920BA56E1E641FF038499 /* FlyToPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyToPalette.swift; sourceTree = "<group>"; };
+		F229B2DA9FE066BE4377DE63 /* CVDSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVDSimulation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		2CB2B0BE52D7225EFB596470 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17DF28A15E4BCAD19FE864FB /* TetraTint.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B14C588597E95D248895F4F8 = {
+			isa = PBXGroup;
+			children = (
+				E632681908E366B26B9FD262 /* TetraTint */,
+				2CB2B0BE52D7225EFB596470 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E632681908E366B26B9FD262 /* TetraTint */ = {
+			isa = PBXGroup;
+			children = (
+				84BC6B22B80E00FB7013FE8F /* Assets.xcassets */,
+				4ECE7D82BB077927D8CCC0BC /* Localizable.strings */,
+				9C9A9CE4106638DBB9F77FDE /* TetraTintApp.swift */,
+				FE70641A39955CEE638F3383 /* Export */,
+				EBCAF320FB05F011EEF09241 /* Models */,
+				F92ACD76112E3BC7E823EF06 /* Views */,
+			);
+			path = TetraTint;
+			sourceTree = "<group>";
+		};
+		EBCAF320FB05F011EEF09241 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				24AD967B11D838B36CF85FEB /* AppearanceSet.swift */,
+				AE6266E5945F027636318BF6 /* ColorMath.swift */,
+				F229B2DA9FE066BE4377DE63 /* CVDSimulation.swift */,
+				1EB1B2AFF2AB996285B37346 /* DynamicTypeData.swift */,
+				3499959ADA1C7A5FE323EF7F /* PaletteStore.swift */,
+				6F5D7F69D203D9B1276AAAD4 /* SystemColorData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F92ACD76112E3BC7E823EF06 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE03AF3C1A95A09D3485F166 /* AuditView.swift */,
+				D4A9EC38C31C2B824B261E4F /* ColorVisionView.swift */,
+				2F9553B0A72B9F18055F6014 /* ColorWorkspaceView.swift */,
+				168878C3D3992DB5ED08D653 /* DynamicTypeView.swift */,
+				EF2920BA56E1E641FF038499 /* FlyToPalette.swift */,
+				E7A5DAF0302F7D99CA2D343B /* GeneratorView.swift */,
+				79DA57A4322D5FCA4CCCE586 /* PaletteView.swift */,
+				278B9DB81A76EE74B2E7C8BE /* SystemColorsView.swift */,
+				805252219AA81B77DFED04C7 /* VariantCard.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FE70641A39955CEE638F3383 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				53A435B94F6434981BC215CB /* Exporters.swift */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B8B258BB49BF2C53CCC35A8 /* TetraTint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9C6D7C4F2C5FD84408D28A1 /* Build configuration list for PBXNativeTarget "TetraTint" */;
+			buildPhases = (
+				6C4734AD37A3DE0B25F4FE7F /* Sources */,
+				85C37213118B0D39A84B3CD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TetraTint;
+			packageProductDependencies = (
+			);
+			productName = TetraTint;
+			productReference = 17DF28A15E4BCAD19FE864FB /* TetraTint.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3455D3B5E9BA3154923FFF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0B8B258BB49BF2C53CCC35A8 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7F23E78B161546F84FC2CB8D /* Build configuration list for PBXProject "TetraTint" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				ko,
+			);
+			mainGroup = B14C588597E95D248895F4F8;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B8B258BB49BF2C53CCC35A8 /* TetraTint */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85C37213118B0D39A84B3CD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E52B372932CA7B4A8D24C9A /* Assets.xcassets in Resources */,
+				6E6B18473C1602C29AFF04EA /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C4734AD37A3DE0B25F4FE7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637C23B0E15744162B5771EA /* AppearanceSet.swift in Sources */,
+				8E81AF8C5C8D15C57080CB33 /* AuditView.swift in Sources */,
+				E93DAF16747BC0B02F88E836 /* CVDSimulation.swift in Sources */,
+				11D6F8CB688C3551CD38F8D3 /* ColorMath.swift in Sources */,
+				A807226E2C4216A259B4B5E3 /* ColorVisionView.swift in Sources */,
+				DD91095369A73EFD1CA9B1BE /* ColorWorkspaceView.swift in Sources */,
+				A2964F5FC147038F70824B3F /* DynamicTypeData.swift in Sources */,
+				9B41CC035CB3346829F0EC57 /* DynamicTypeView.swift in Sources */,
+				BB92FB9A183AE8F6618B1D15 /* Exporters.swift in Sources */,
+				63472D239A6A7132A9183A88 /* FlyToPalette.swift in Sources */,
+				A2A5BCED3056ACCD3F0B3A6A /* GeneratorView.swift in Sources */,
+				0C7FF1770C169458B7642A94 /* PaletteStore.swift in Sources */,
+				A24E97A82F3D11778859FFC3 /* PaletteView.swift in Sources */,
+				0FD30AF0BE62E6E11C8B2CA9 /* SystemColorData.swift in Sources */,
+				968D493C926D8EAED932971A /* SystemColorsView.swift in Sources */,
+				1C85B330E56049DBD6AAE8E6 /* TetraTintApp.swift in Sources */,
+				98E6BEBF675C8D293BE9A27B /* VariantCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		08A99750B559687F070D2879 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TetraTint.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.TetraTint;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		48653B4275F416BF9DAF9A08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		68E1DF96B3F2CC39045DCDD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TetraTint.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.TetraTint;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		FBD1DE80E775CC330D55175F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F23E78B161546F84FC2CB8D /* Build configuration list for PBXProject "TetraTint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48653B4275F416BF9DAF9A08 /* Debug */,
+				FBD1DE80E775CC330D55175F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C9C6D7C4F2C5FD84408D28A1 /* Build configuration list for PBXNativeTarget "TetraTint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68E1DF96B3F2CC39045DCDD2 /* Debug */,
+				08A99750B559687F070D2879 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3455D3B5E9BA3154923FFF9 /* Project object */;
+}
