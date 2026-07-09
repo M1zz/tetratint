@@ -1,3 +1,36 @@
+/* Color vision preview */
+"Color vision preview" = "색각 프리뷰";
+"Preview the whole app as someone with color vision deficiency sees it" = "색각이상 사용자에게 보이는 대로 앱 전체를 미리보기";
+"simulated colors, not the real ones" = "실제 색이 아닌 시뮬레이션 색입니다";
+"Exit" = "끄기";
+"Normal" = "일반";
+"Protanopia" = "적색맹";
+"Deuteranopia" = "녹색맹";
+"Tritanopia" = "청색맹";
+"Grayscale" = "흑백";
+
+/* Color names (spoken for accessibility) */
+"Black" = "검정";
+"Dark gray" = "진회색";
+"Gray" = "회색";
+"Light gray" = "밝은 회색";
+"White" = "흰색";
+"Red" = "빨강";
+"Orange" = "주황";
+"Yellow" = "노랑";
+"Lime" = "연두";
+"Green" = "초록";
+"Teal" = "청록";
+"Sky blue" = "하늘색";
+"Blue" = "파랑";
+"Indigo" = "남색";
+"Purple" = "보라";
+"Magenta" = "자홍";
+"Pink" = "분홍";
+"Dark" = "어두운";
+"Light" = "밝은";
+"Pale" = "연한";
+
 /* Navigation & view titles */
 "Color" = "색상";
 "Variants" = "변형";

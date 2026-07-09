@@ -46,6 +46,11 @@ enum CVDSimulator {
         ]
     ]
 
+    /// The Machado severity-1.0 matrix for a dichromacy type (nil for
+    /// normal/grayscale, which aren't a linear 3×3 transform). Exposed so the
+    /// live GPU preview uses the exact same math as the swatch simulation.
+    static func matrix(for type: CVDType) -> [[Double]]? { matrices[type] }
+
     static func simulate(_ rgb: RGB, type: CVDType) -> RGB {
         switch type {
         case .normal:

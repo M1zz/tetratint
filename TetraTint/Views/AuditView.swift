@@ -252,6 +252,11 @@ struct ContrastLens: View {
                     .font(.system(.callout, design: .monospaced))
             }
             .frame(width: 88)
+            .swatchAccessibility(
+                role: String(localized: "Color"),
+                hex: result.hex,
+                note: "\(result.lightVerdict.label), \(result.darkVerdict.label)"
+            )
 
             VStack(alignment: .leading, spacing: 8) {
                 verdictCell(

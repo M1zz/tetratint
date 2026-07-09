@@ -35,6 +35,8 @@ final class AppState: ObservableObject {
     @Published var colorName: String = "brandPrimary"
     /// True once any variant was hand-edited away from the derived value.
     @Published var hasManualEdits = false
+    /// Color vision deficiency simulated across the whole app UI (.normal = off).
+    @Published var previewCVD: CVDType = .normal
 
     private let sampler = NSColorSampler()
 
@@ -89,14 +91,23 @@ struct ContentView: View {
     }
 
     var body: some View {
-        ZStack {
+        ZStack(alignment: .top) {
+            // The whole app, rendered through the active color-vision simulation.
             splitView
 
             // Swatches in flight from an "add" button to the Palette sidebar row.
             ForEach(fly.flights) { flight in
                 FlyingSwatch(flight: flight, target: fly.target) { fly.finish(flight.id) }
             }
+
+            // Kept outside the simulated layer so it stays truthful and legible.
+            if appState.previewCVD != .normal {
+                CVDPreviewBanner(type: appState.previewCVD) {
+                    appState.previewCVD = .normal
+                }
+            }
         }
+        .background(CVDWindowFilter(type: appState.previewCVD))
         .coordinateSpace(name: FlyOverlayModel.spaceName)
         .environmentObject(fly)
         .onPreferenceChange(PaletteAnchorKey.self) { fly.target = $0 }
@@ -122,6 +133,21 @@ struct ContentView: View {
                     Label("Pick color from screen", systemImage: "eyedropper")
                 }
                 .help("Pick a color from anywhere on screen and make it the working color")
+            }
+            ToolbarItem {
+                Menu {
+                    Picker("Color vision preview", selection: $appState.previewCVD) {
+                        ForEach(CVDType.allCases) { type in
+                            Text(LocalizedStringKey(type.rawValue)).tag(type)
+                        }
+                    }
+                    .pickerStyle(.inline)
+                } label: {
+                    Label("Color vision preview",
+                          systemImage: appState.previewCVD == .normal
+                            ? "eye" : "eye.trianglebadge.exclamationmark.fill")
+                }
+                .help("Preview the whole app as someone with color vision deficiency sees it")
             }
         }
     }

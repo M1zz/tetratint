@@ -119,6 +119,7 @@ private struct PaletteRow: View {
                 }
                 .frame(width: PaletteView.variantColumnWidth)
                 .help(appearance.displayName)
+                .swatchAccessibility(role: appearance.shortLabel, hex: item.set[appearance])
             }
 
             Spacer(minLength: 0)

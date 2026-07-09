@@ -87,6 +87,7 @@ struct VariantCard: View {
         .labelsHidden()
         .frame(width: 44, height: 32)
         .help("Fine-tune this variant manually")
+        .accessibilityLabel(Text("\(appearance.displayName): \(hex.colorName), \(hex)"))
     }
 
     // MARK: Contrast badge

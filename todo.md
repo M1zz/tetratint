@@ -30,6 +30,10 @@
 - [x] App Sandbox entitlement 추가 (TetraTint.entitlements) — 배포 검증 에러 해결, codesign으로 확인
 - [x] 지원/개인정보처리 페이지 제작(docs/) + GitHub Pages 게시(https://m1zz.github.io/tetratint/) + README 링크
 
+- [x] 앱 아이콘 1024×1024(512@2x) 누락 수정 — App Store 아이콘 검증 통과
+- [x] 색맹 사용자 접근성: 전역 CVD 프리뷰(CIColorMatrix 창 필터, 적/녹/청/흑백 실시간) + 툴바 토글 + 프리뷰 배너
+- [x] 색 이름 파생(RGB.colorName, 한/영) + 스와치 VoiceOver 접근성 라벨(변형/팔레트/대비)
+
 ## 할 일
 - [ ] Xcode에서 앱 실행 및 동작 확인 (팔레트 정렬/애니메이션 눈으로 확인)
 - [ ] 배포용 Archive는 Release 구성으로 다시 생성해 App Store Connect 업로드
