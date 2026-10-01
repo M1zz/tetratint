@@ -223,6 +223,7 @@
 		08A99750B559687F070D2879 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TetraTint.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,6 +310,7 @@
 		68E1DF96B3F2CC39045DCDD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TetraTint.entitlements;
 				CODE_SIGN_STYLE = Automatic;
