@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TetraTint — 지원</title>
-<meta name="description" content="TetraTint 사용 안내, 자주 묻는 질문, 문의 방법.">
-<link rel="canonical" href="https://m1zz.github.io/tetratint/support.html">
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/tetratint/ko/support.html">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/tetratint/en/support.html">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/tetratint/support.html">
+<title>TetraTint — Privacy Policy</title>
+<meta name="description" content="TetraTint collects no personal data. Your palettes stay on your Mac.">
+<link rel="canonical" href="https://m1zz.github.io/tetratint/en/privacy.html">
+<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/tetratint/ko/privacy.html">
+<link rel="alternate" hreflang="en" href="https://m1zz.github.io/tetratint/en/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/tetratint/privacy.html">
 <style>
   :root {
     --bg: #f5f5f7; --card: #ffffff; --text: #1d1d1f; --muted: #6e6e73;
@@ -64,57 +64,51 @@
 <body>
 <div class="wrap">
   <div class="logo"><i></i><i></i><i></i><i></i></div>
-  <nav class="langs" aria-label="언어">
-    <a href="ko/support.html" hreflang="ko" lang="ko" aria-current="true">한국어</a>
-    <a href="en/support.html" hreflang="en" lang="en">English</a>
+  <nav class="langs" aria-label="Language">
+    <a href="../ko/privacy.html" hreflang="ko" lang="ko">한국어</a>
+    <a href="../en/privacy.html" hreflang="en" lang="en" aria-current="true">English</a>
   </nav>
-  <h1>지원</h1>
-  <p class="sub" style="margin-bottom:24px">TetraTint — 커스텀 컬러·폰트를 위한 macOS 접근성 개발 도구</p>
+  <h1>Privacy Policy</h1>
+  <p class="sub">TetraTint</p>
+  <p class="updated">Last updated: July 10, 2026</p>
 
   <div class="card">
-    <h2>TetraTint란?</h2>
-    <p>애플 시스템이 자동으로 해 주지 <strong>않는</strong> 접근성 작업을 대신하는 macOS 개발자 도구입니다. 커스텀 컬러의 라이트·다크·고대비 4종 변형 생성, 대비(WCAG) 판정, 색각이상 시뮬레이션, 커스텀 폰트의 Dynamic Type 대응 코드 생성을 지원합니다.</p>
-    <p style="margin-top:12px">
-      <span class="pill">변형 생성</span>
-      <span class="pill">대비 검사</span>
-      <span class="pill">색각 시뮬레이션</span>
-      <span class="pill">Dynamic Type</span>
-    </p>
+    <p class="lead">✓ TetraTint does not collect any personal data.</p>
+    <p class="muted">TetraTint is a developer tool that runs entirely on your Mac. Nothing is sent to a server, and the app contains no analytics, tracking or advertising.</p>
   </div>
 
   <div class="card">
-    <h2>요구 사항</h2>
+    <h2>Information we collect</h2>
+    <p><strong>None.</strong> The app doesn't ask for an account and doesn't collect identifiers, usage statistics, location or any other personal information.</p>
+  </div>
+
+  <div class="card">
+    <h2>Data stored on your device</h2>
     <ul>
-      <li>macOS 13.0 (Ventura) 이상</li>
-      <li>내보내기를 쓸 때 파일 저장 위치 선택 권한</li>
+      <li><strong>Saved palettes and colors</strong> — the color values you save are kept in macOS <code>UserDefaults</code> <strong>on your Mac only</strong> and are never sent anywhere.</li>
+      <li><strong>Exported files</strong> — <code>.colorset</code>, <code>.xcassets</code> and other exports are written only to the location you choose.</li>
+      <li><strong>Copied code</strong> — generated code goes to the clipboard only when you click a copy button.</li>
     </ul>
   </div>
 
   <div class="card">
-    <h2>자주 묻는 질문</h2>
-
-    <h3>자동으로 만든 4종 변형이 브랜드 톤과 안 맞아요.</h3>
-    <p class="muted">각 변형 카드의 컬러 피커로 하나씩 고칠 수 있고, “전체 다시 생성”으로 언제든 기준 색에서 다시 만들 수 있습니다.</p>
-
-    <h3>저장한 팔레트는 어디에 보관되나요?</h3>
-    <p class="muted">사용자 Mac에만 저장됩니다(클라우드 동기화·전송 없음). 자세한 내용은 <a href="privacy.html">개인정보처리방침</a>을 참고하세요.</p>
-
-    <h3>스포이드로 추출한 색이 저장되나요?</h3>
-    <p class="muted">아니요. 가리킨 지점의 색상 값만 읽어 작업 색상으로 쓰며, 화면 이미지는 저장하거나 전송하지 않습니다.</p>
-
-    <h3>내보낸 색이 실제 앱에서 시스템 색과 다르게 보여요.</h3>
-    <p class="muted">시스템 컬러 레퍼런스 값은 HIG 문서 기준이며 OS 릴리스마다 달라질 수 있습니다. 실제 앱에서는 늘 <code>UIColor</code> / <code>Color</code> API를 쓰세요.</p>
+    <h2>Screen color picker (eyedropper)</h2>
+    <p>The eyedropper reads only the color value (RGB) of the spot you point at and uses it as the working color. It doesn't save or send screenshots, and the value stays in memory only while you use the app.</p>
   </div>
 
   <div class="card">
-    <h2>문의하기</h2>
-    <p>버그 신고, 기능 제안, 사용 문의는 이메일로 보내 주세요. 보통 2–3일 안에 답장드립니다.</p>
-    <p><a class="btn" href="mailto:leeo@kakao.com?subject=TetraTint%20Support">이메일 보내기</a></p>
-    <p class="muted" style="margin-top:10px"><a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
+    <h2>Third-party services</h2>
+    <p>None. TetraTint doesn't talk to any third-party SDKs, analytics tools or cloud services.</p>
+  </div>
+
+  <div class="card">
+    <h2>Contact</h2>
+    <p>If you have questions about this policy, email us at:</p>
+    <p><a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
   </div>
 
   <hr>
-  <p class="muted" style="text-align:center"><a href="index.html">← TetraTint 홈</a> · <a href="privacy.html">개인정보처리방침</a></p>
+  <p class="muted" style="text-align:center"><a href="index.html">← TetraTint home</a> · <a href="support.html">Support</a></p>
   <footer>© 2026 TetraTint. All rights reserved.</footer>
 </div>
 </body>
