@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 63;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DFB169340C7367EB38C4C67 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
 		168878C3D3992DB5ED08D653 /* DynamicTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeView.swift; sourceTree = "<group>"; };
 		17DF28A15E4BCAD19FE864FB /* TetraTint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TetraTint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EB1B2AFF2AB996285B37346 /* DynamicTypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeData.swift; sourceTree = "<group>"; };
@@ -64,9 +65,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4C2CA0BB99067066FF66B6D3 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				0DFB169340C7367EB38C4C67 /* Version.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		B14C588597E95D248895F4F8 = {
 			isa = PBXGroup;
 			children = (
+				4C2CA0BB99067066FF66B6D3 /* Config */,
 				E632681908E366B26B9FD262 /* TetraTint */,
 				2CB2B0BE52D7225EFB596470 /* Products */,
 			);
@@ -155,6 +165,7 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					0B8B258BB49BF2C53CCC35A8 = {
+						DevelopmentTeam = QGAQ3AY3R3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -170,6 +181,7 @@
 			);
 			mainGroup = B14C588597E95D248895F4F8;
 			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -223,21 +235,19 @@
 		08A99750B559687F070D2879 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TetraTint.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.TetraTint;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.9;
@@ -246,6 +256,7 @@
 		};
 		48653B4275F416BF9DAF9A08 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DFB169340C7367EB38C4C67 /* Version.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -310,21 +321,19 @@
 		68E1DF96B3F2CC39045DCDD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TetraTint.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.TetraTint;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.9;
@@ -333,6 +342,7 @@
 		};
 		FBD1DE80E775CC330D55175F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DFB169340C7367EB38C4C67 /* Version.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
