@@ -32,7 +32,7 @@ struct SystemColorsView: View {
         .foregroundStyle(.secondary)
     }
 
-    private func section(title: String, entries: [SystemColorEntry]) -> some View {
+    private func section(title: LocalizedStringKey, entries: [SystemColorEntry]) -> some View {
         VStack(alignment: .leading, spacing: 8) {
             Text(title)
                 .font(.title3.weight(.semibold))
