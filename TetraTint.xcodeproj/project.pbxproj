@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02BDA304349EAECC9D13FD85 /* ColorMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6266E5945F027636318BF6 /* ColorMath.swift */; };
 		074EC4967E154FB8BBC3516A /* CVDPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9D5FE93E56E1F710753406 /* CVDPreview.swift */; };
 		0C7FF1770C169458B7642A94 /* PaletteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3499959ADA1C7A5FE323EF7F /* PaletteStore.swift */; };
 		0FD30AF0BE62E6E11C8B2CA9 /* SystemColorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D7F69D203D9B1276AAAD4 /* SystemColorData.swift */; };
 		11D6F8CB688C3551CD38F8D3 /* ColorMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6266E5945F027636318BF6 /* ColorMath.swift */; };
 		1C85B330E56049DBD6AAE8E6 /* TetraTintApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A9CE4106638DBB9F77FDE /* TetraTintApp.swift */; };
+		21033CD5F92D15D5D2C0EA5A /* PaletteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3499959ADA1C7A5FE323EF7F /* PaletteStore.swift */; };
+		35BD72EF8DBCE07415FA6F2F /* AppearanceSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AD967B11D838B36CF85FEB /* AppearanceSet.swift */; };
 		63472D239A6A7132A9183A88 /* FlyToPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2920BA56E1E641FF038499 /* FlyToPalette.swift */; };
 		637C23B0E15744162B5771EA /* AppearanceSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AD967B11D838B36CF85FEB /* AppearanceSet.swift */; };
 		6699EFF6D678821C837727FF /* ColorNaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C1E20A2A174BCEE56ADBAE /* ColorNaming.swift */; };
 		6E6B18473C1602C29AFF04EA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4ECE7D82BB077927D8CCC0BC /* Localizable.strings */; };
+		7223E838083257FBDB8A67FA /* CVDSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F229B2DA9FE066BE4377DE63 /* CVDSimulation.swift */; };
 		7E52B372932CA7B4A8D24C9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BC6B22B80E00FB7013FE8F /* Assets.xcassets */; };
 		8E81AF8C5C8D15C57080CB33 /* AuditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE03AF3C1A95A09D3485F166 /* AuditView.swift */; };
 		968D493C926D8EAED932971A /* SystemColorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278B9DB81A76EE74B2E7C8BE /* SystemColorsView.swift */; };
@@ -25,15 +29,20 @@
 		A2964F5FC147038F70824B3F /* DynamicTypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB1B2AFF2AB996285B37346 /* DynamicTypeData.swift */; };
 		A2A5BCED3056ACCD3F0B3A6A /* GeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A5DAF0302F7D99CA2D343B /* GeneratorView.swift */; };
 		A807226E2C4216A259B4B5E3 /* ColorVisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A9EC38C31C2B824B261E4F /* ColorVisionView.swift */; };
+		AAC751A6DB5D87F87E8EFE22 /* ColorNaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C1E20A2A174BCEE56ADBAE /* ColorNaming.swift */; };
 		BB92FB9A183AE8F6618B1D15 /* Exporters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A435B94F6434981BC215CB /* Exporters.swift */; };
+		D05AA9D4CFB93EBE7AEC5DF0 /* Exporters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A435B94F6434981BC215CB /* Exporters.swift */; };
 		DD91095369A73EFD1CA9B1BE /* ColorWorkspaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9553B0A72B9F18055F6014 /* ColorWorkspaceView.swift */; };
 		E93DAF16747BC0B02F88E836 /* CVDSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F229B2DA9FE066BE4377DE63 /* CVDSimulation.swift */; };
+		FD91DB1DBCF7BFA717384342 /* ColorMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DBAFD98538906C328B28B8 /* ColorMathTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01DBAFD98538906C328B28B8 /* ColorMathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorMathTests.swift; sourceTree = "<group>"; };
 		0DFB169340C7367EB38C4C67 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
 		168878C3D3992DB5ED08D653 /* DynamicTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeView.swift; sourceTree = "<group>"; };
 		17DF28A15E4BCAD19FE864FB /* TetraTint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TetraTint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6EC2F451FB1BBAECA73E83 /* TetraTintTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TetraTintTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EB1B2AFF2AB996285B37346 /* DynamicTypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTypeData.swift; sourceTree = "<group>"; };
 		23C1E20A2A174BCEE56ADBAE /* ColorNaming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorNaming.swift; sourceTree = "<group>"; };
 		24AD967B11D838B36CF85FEB /* AppearanceSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceSet.swift; sourceTree = "<group>"; };
@@ -61,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				17DF28A15E4BCAD19FE864FB /* TetraTint.app */,
+				1D6EC2F451FB1BBAECA73E83 /* TetraTintTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,11 +83,20 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		68B3D74C106FFC9088118D96 /* TetraTintTests */ = {
+			isa = PBXGroup;
+			children = (
+				01DBAFD98538906C328B28B8 /* ColorMathTests.swift */,
+			);
+			path = TetraTintTests;
+			sourceTree = "<group>";
+		};
 		B14C588597E95D248895F4F8 = {
 			isa = PBXGroup;
 			children = (
 				4C2CA0BB99067066FF66B6D3 /* Config */,
 				E632681908E366B26B9FD262 /* TetraTint */,
+				68B3D74C106FFC9088118D96 /* TetraTintTests */,
 				2CB2B0BE52D7225EFB596470 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -155,6 +174,23 @@
 			productReference = 17DF28A15E4BCAD19FE864FB /* TetraTint.app */;
 			productType = "com.apple.product-type.application";
 		};
+		11CC791324A0905F6B636E1C /* TetraTintTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB9073694E77D6748A953525 /* Build configuration list for PBXNativeTarget "TetraTintTests" */;
+			buildPhases = (
+				CEE78BBECA0110F400E26E9E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TetraTintTests;
+			packageProductDependencies = (
+			);
+			productName = TetraTintTests;
+			productReference = 1D6EC2F451FB1BBAECA73E83 /* TetraTintTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +201,10 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					0B8B258BB49BF2C53CCC35A8 = {
+						DevelopmentTeam = QGAQ3AY3R3;
+						ProvisioningStyle = Automatic;
+					};
+					11CC791324A0905F6B636E1C = {
 						DevelopmentTeam = QGAQ3AY3R3;
 						ProvisioningStyle = Automatic;
 					};
@@ -186,6 +226,7 @@
 			projectRoot = "";
 			targets = (
 				0B8B258BB49BF2C53CCC35A8 /* TetraTint */,
+				11CC791324A0905F6B636E1C /* TetraTintTests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,6 +270,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEE78BBECA0110F400E26E9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35BD72EF8DBCE07415FA6F2F /* AppearanceSet.swift in Sources */,
+				7223E838083257FBDB8A67FA /* CVDSimulation.swift in Sources */,
+				02BDA304349EAECC9D13FD85 /* ColorMath.swift in Sources */,
+				FD91DB1DBCF7BFA717384342 /* ColorMathTests.swift in Sources */,
+				AAC751A6DB5D87F87E8EFE22 /* ColorNaming.swift in Sources */,
+				D05AA9D4CFB93EBE7AEC5DF0 /* Exporters.swift in Sources */,
+				21033CD5F92D15D5D2C0EA5A /* PaletteStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
@@ -253,6 +308,44 @@
 				SWIFT_VERSION = 5.9;
 			};
 			name = Release;
+		};
+		242B591E3EDB3ABE31117F88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.TetraTintTests;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		40DD397C31B23750C96F3AA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leeo.TetraTintTests;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
 		};
 		48653B4275F416BF9DAF9A08 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -414,6 +507,15 @@
 			buildConfigurations = (
 				68E1DF96B3F2CC39045DCDD2 /* Debug */,
 				08A99750B559687F070D2879 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FB9073694E77D6748A953525 /* Build configuration list for PBXNativeTarget "TetraTintTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40DD397C31B23750C96F3AA5 /* Debug */,
+				242B591E3EDB3ABE31117F88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

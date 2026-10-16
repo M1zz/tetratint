@@ -28,3 +28,39 @@ targets:
         CODE_SIGN_STYLE: Automatic
         ENABLE_HARDENED_RUNTIME: YES
         CODE_SIGN_ENTITLEMENTS: TetraTint.entitlements
+
+  # 색 계산·변형 파생·색각 시뮬레이션 같은 순수 로직의 단위 테스트.
+  # 앱을 띄우지 않는다(호스트 없음) — 앱 init 의 CloudKit 호출과 무관하게 서명 없이도 돈다.
+  # 그래서 시험할 모델 파일을 이 타깃에 직접 함께 컴파일한다.
+  TetraTintTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - TetraTintTests
+      - TetraTint/Models/ColorMath.swift
+      - TetraTint/Models/AppearanceSet.swift
+      - TetraTint/Models/CVDSimulation.swift
+      - TetraTint/Models/ColorNaming.swift
+      - TetraTint/Models/PaletteStore.swift
+      - TetraTint/Export/Exporters.swift
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.leeo.TetraTintTests
+        DEVELOPMENT_TEAM: QGAQ3AY3R3
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_VERSION: 5.9
+        CODE_SIGN_STYLE: Automatic
+
+schemes:
+  TetraTint:
+    build:
+      targets:
+        TetraTint: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - TetraTintTests
+    archive:
+      config: Release
