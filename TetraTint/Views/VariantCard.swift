@@ -55,6 +55,7 @@ struct VariantCard: View {
                 }
                 .buttonStyle(.plain)
                 .help("Copy hex")
+                .accessibilityLabel(Text("Copy \(hex)"))
             }
 
             componentPreview
@@ -110,7 +111,7 @@ struct VariantCard: View {
     // MARK: Mini component preview
 
     private var componentPreview: some View {
-        let tint = Color(hex: hex)
+        let tint: Color = Color(hex: hex)
         return VStack(alignment: .leading, spacing: 8) {
             HStack(spacing: 8) {
                 Text("Button")

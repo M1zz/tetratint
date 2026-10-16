@@ -1,4 +1,5 @@
 import SwiftUI
+import LeeoKit
 
 // MARK: - Fly-to-palette animation
 //
@@ -104,6 +105,8 @@ struct FlyingAddButton<L: View>: View {
     var body: some View {
         Button {
             action()
+            // Saving to the palette is the moment the app did its job.
+            LeeoEngagement.shared.registerSignificantEvent()
             for (i, c) in colors.prefix(6).enumerated() {
                 fly.launch(color: c, from: center, delay: Double(i) * 0.08)
             }

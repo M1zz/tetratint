@@ -1,4 +1,5 @@
 import SwiftUI
+import LeeoKit
 
 struct PaletteView: View {
     @EnvironmentObject private var store: PaletteStore
@@ -15,7 +16,9 @@ struct PaletteView: View {
         .toolbar {
             ToolbarItem {
                 Button {
-                    Exporters.exportAssetCatalog(items: store.items)
+                    if Exporters.exportAssetCatalog(items: store.items) {
+                        LeeoEngagement.shared.registerSignificantEvent()
+                    }
                 } label: {
                     Label("Export .xcassets", systemImage: "square.and.arrow.down.on.square")
                 }
@@ -77,7 +80,11 @@ struct PaletteView: View {
                     PaletteRow(
                         item: item,
                         isNew: item.id == store.lastAddedID,
-                        onExport: { Exporters.exportColorSet(name: item.name, set: item.set) },
+                        onExport: {
+                            if Exporters.exportColorSet(name: item.name, set: item.set) {
+                                LeeoEngagement.shared.registerSignificantEvent()
+                            }
+                        },
                         onDelete: { store.remove(item) }
                     )
                 }
@@ -128,11 +135,13 @@ private struct PaletteRow: View {
                 Image(systemName: "square.and.arrow.down")
             }
             .help("Export \(item.name).colorset")
+            .accessibilityLabel(Text("Export \(item.name).colorset"))
 
             Button(role: .destructive, action: onDelete) {
                 Image(systemName: "trash")
             }
             .help("Delete")
+            .accessibilityLabel(Text("Delete \(item.name)"))
         }
         .padding(12)
         .background(Color(nsColor: .controlBackgroundColor))

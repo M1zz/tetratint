@@ -1,5 +1,7 @@
 import SwiftUI
 import AppKit
+import TipKit
+import LeeoKit
 
 // MARK: - Navigation sections
 
@@ -28,6 +30,9 @@ enum AppSection: String, CaseIterable, Identifiable {
 /// so picking or tweaking it in one place updates all the others.
 @MainActor
 final class AppState: ObservableObject {
+    /// The one instance the window shows. Shortcuts (App Intents) act on it too.
+    static let shared = AppState()
+
     @Published var section: AppSection = .color
     @Published var set: AppearanceSet = VariantDeriver.derive(fromLight: "#007AFF")
     @Published var baseHex: String = "#007AFF"
@@ -64,14 +69,40 @@ final class AppState: ObservableObject {
 @main
 struct TetraTintApp: App {
     @StateObject private var store = PaletteStore()
-    @StateObject private var appState = AppState()
+    @StateObject private var appState = AppState.shared
+
+    /// Read once per launch so a flag that flips mid-session never swaps the root view.
+    private let satisfactionPromptEnabled: Bool
+
+    init() {
+        // 사용량 기록(리뷰 질문의 근거) · 익명 사용 통계 · 원격 킬스위치 갱신.
+        // 전부 실패해도 앱 동작에는 영향이 없다. (macOS 에서 MetricKit 진단은 LeeoKit 안에서 no-op.)
+        LeeoKit.bootstrap(TetraTintSpec.self, flags: TetraTintFlag.self)
+        satisfactionPromptEnabled = LeeoRemoteFlags.isEnabled(TetraTintFlag.satisfactionPromptEnabled)
+        TetraTintTips.configure()
+    }
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            root
                 .environmentObject(store)
                 .environmentObject(appState)
                 .frame(minWidth: 860, minHeight: 620)
+        }
+        .commands { TetraTintHelpCommands() }
+
+        Settings {
+            TetraTintSettingsView()
+        }
+    }
+
+    /// 만족도 질문은 의미 있는 일(저장 · 내보내기)을 한 뒤에만, 조건이 맞을 때 스스로 뜬다.
+    @ViewBuilder
+    private var root: some View {
+        if satisfactionPromptEnabled {
+            ContentView().leeoSatisfactionCheck(TetraTintSpec.self)
+        } else {
+            ContentView()
         }
     }
 }
@@ -82,6 +113,11 @@ struct ContentView: View {
     @EnvironmentObject private var appState: AppState
     @EnvironmentObject private var store: PaletteStore
     @StateObject private var fly = FlyOverlayModel()
+    @AppStorage(OnboardingState.storageKey) private var hasSeenOnboarding = false
+    @State private var showOnboarding = false
+
+    private let pickTip = PickFromScreenTip()
+    private let colorVisionTip = ColorVisionPreviewTip()
 
     var body: some View {
         ZStack(alignment: .top) {
@@ -104,12 +140,27 @@ struct ContentView: View {
         .coordinateSpace(name: FlyOverlayModel.spaceName)
         .environmentObject(fly)
         .onPreferenceChange(PaletteAnchorKey.self) { fly.target = $0 }
+        .onChange(of: appState.previewCVD) { newValue in
+            if newValue != .normal { colorVisionTip.invalidate(reason: .actionPerformed) }
+        }
         .onChange(of: appState.section) { newValue in
             // Clear the "new colors" badge once the user looks at the palette.
             if newValue == .palette { store.unseenCount = 0 }
         }
         // Scale every semantic text style up one step so the whole app reads larger.
         .dynamicTypeSize(.xLarge)
+        .sheet(isPresented: $showOnboarding, onDismiss: { hasSeenOnboarding = true }) {
+            TetraTintOnboardingView { showOnboarding = false }
+        }
+        .onAppear {
+            guard !hasSeenOnboarding else { return }
+            // People who already saved colors before this guide existed know the app.
+            if store.items.isEmpty { showOnboarding = true } else { hasSeenOnboarding = true }
+        }
+        .onChange(of: hasSeenOnboarding) { seen in
+            // Help ▸ Welcome to TetraTint (or Settings) asks for the guide again.
+            if !seen { showOnboarding = true }
+        }
     }
 
     private var splitView: some View {
@@ -121,11 +172,13 @@ struct ContentView: View {
         .toolbar {
             ToolbarItem {
                 Button {
+                    pickTip.invalidate(reason: .actionPerformed)
                     appState.pickFromScreen(switchToColor: true)
                 } label: {
                     Label("Pick color from screen", systemImage: "eyedropper")
                 }
                 .help("Pick a color from anywhere on screen and make it the working color")
+                .popoverTip(pickTip)
             }
             ToolbarItem {
                 Menu {
@@ -141,6 +194,7 @@ struct ContentView: View {
                             ? "eye" : "eye.trianglebadge.exclamationmark.fill")
                 }
                 .help("Preview the whole app as someone with color vision deficiency sees it")
+                .popoverTip(colorVisionTip)
             }
         }
     }

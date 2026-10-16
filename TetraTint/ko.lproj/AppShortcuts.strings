@@ -1,0 +1,5 @@
+/* App Shortcuts phrases — Siri · Spotlight · 단축어 앱 */
+"Pick a color with ${applicationName}" = "${applicationName}로 색 추출";
+"Pick a color from screen in ${applicationName}" = "${applicationName}에서 화면 색 추출";
+"Open ${section} in ${applicationName}" = "${applicationName}에서 ${section} 열기";
+"Show ${applicationName} ${section}" = "${applicationName} ${section} 보기";

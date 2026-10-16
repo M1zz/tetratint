@@ -125,6 +125,8 @@ struct ColorWorkspaceView: View {
                     supportsOpacity: false
                 )
                 .labelsHidden()
+                .accessibilityLabel(Text("Working color"))
+                .accessibilityValue(Text("\(appState.set.light.colorName), \(appState.set.light)"))
 
                 Button {
                     appState.pickFromScreen()
@@ -132,8 +134,10 @@ struct ColorWorkspaceView: View {
                     Image(systemName: "eyedropper")
                 }
                 .help("Pick a color from anywhere on screen")
+                .accessibilityLabel(Text("Pick a color from anywhere on screen"))
 
                 TextField("#007AFF", text: $baseHexField)
+                    .accessibilityLabel(Text("Hex value"))
                     .textFieldStyle(.roundedBorder)
                     .font(.system(.title3, design: .monospaced))
                     .frame(width: 120)
@@ -182,6 +186,7 @@ struct ColorWorkspaceView: View {
                 }
                 .buttonStyle(.plain)
                 .help(entry.name)
+                .accessibilityLabel(Text("Preset \(entry.name)"))
             }
         }
     }

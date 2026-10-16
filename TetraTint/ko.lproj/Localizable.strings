@@ -155,3 +155,51 @@
 "Each color is saved as four variants" = "각 색은 4가지 변형으로 저장됩니다";
 "Export %@.colorset" = "%@.colorset 내보내기";
 "Delete" = "삭제";
+
+/* VoiceOver labels */
+"Delete %@" = "%@ 삭제";
+"Copy %@" = "%@ 복사";
+"Hex value" = "hex 값";
+"Preset %@" = "프리셋 %@";
+
+/* Settings */
+"Support" = "지원";
+"Contact" = "문의";
+"Help" = "도움말";
+"Email the developer" = "개발자에게 이메일 보내기";
+"Message on Instagram (@lee25_ios)" = "인스타그램 DM 보내기 (@lee25_ios)";
+"Show the welcome guide again" = "시작 안내 다시 보기";
+"Opens the guide in the main window" = "메인 창에서 시작 안내를 엽니다";
+
+/* Help menu */
+"Welcome to TetraTint" = "TetraTint 시작하기";
+"TetraTint Support Page" = "TetraTint 지원 페이지";
+"Email the Developer…" = "개발자에게 이메일 보내기…";
+
+/* Onboarding */
+"Accessibility work Apple doesn't do for your custom colors and fonts." = "애플이 커스텀 컬러와 폰트에는 해 주지 않는 접근성 작업을 대신합니다.";
+"Start with one color" = "색 하나로 시작하세요";
+"Type a hex value, use the color well, or pick any pixel on screen with the eyedropper. Every screen works on this same color." = "hex 값을 입력하거나 색 우물을 쓰거나, 스포이드로 화면의 아무 지점이나 찍으세요. 모든 화면이 이 색 하나를 함께 다룹니다.";
+"Look at it through three lenses" = "세 가지 렌즈로 살펴보세요";
+"Generate light, dark, and high-contrast variants, check WCAG contrast, and see how it looks with color vision deficiency." = "라이트, 다크, 고대비 변형을 만들고, WCAG 대비를 검사하고, 색각이상 사용자에게 어떻게 보이는지 확인합니다.";
+"Save and export" = "저장하고 내보내세요";
+"Save colors to your palette, then export a .colorset, SwiftUI or UIKit code, or one .xcassets catalog for Xcode." = "색을 팔레트에 저장한 뒤 .colorset, SwiftUI·UIKit 코드, 또는 Xcode용 .xcassets 카탈로그 하나로 내보냅니다.";
+"Custom fonts too" = "커스텀 폰트도 함께";
+"Dynamic Type shows every text style at every size and writes the scaling code for your custom font." = "다이나믹 타입 화면에서 모든 텍스트 스타일을 모든 크기로 보고, 커스텀 폰트용 크기 조절 코드를 만들 수 있습니다.";
+"You can open this guide again from the Help menu." = "이 안내는 도움말 메뉴에서 다시 열 수 있습니다.";
+"Get Started" = "시작하기";
+
+/* Tips */
+"Pick any color on screen" = "화면의 어떤 색이든 추출하세요";
+"Click the eyedropper, then click a pixel in any app, website, or design file. It becomes the working color everywhere." = "스포이드를 누른 뒤 다른 앱, 웹사이트, 디자인 파일의 아무 지점이나 클릭하세요. 그 색이 모든 화면의 작업 색상이 됩니다.";
+"See the whole app as others do" = "다른 사람의 눈으로 앱 전체를 보세요";
+"Turn on a color vision preview to view every screen as someone with protanopia, deuteranopia, or tritanopia sees it." = "색각 프리뷰를 켜면 적색맹, 녹색맹, 청색맹인 사람에게 보이는 대로 모든 화면을 볼 수 있습니다.";
+
+/* Shortcuts (App Intents) */
+"Pick Color from Screen" = "화면에서 색 추출";
+"Opens TetraTint and starts the eyedropper so you can pick any color on screen." = "TetraTint를 열고 스포이드를 켜서 화면의 어떤 색이든 추출할 수 있게 합니다.";
+"Open in TetraTint" = "TetraTint에서 열기";
+"Opens a TetraTint screen: Color, Dynamic Type, System colors, or Palette." = "TetraTint의 화면 하나를 엽니다: 색상, 다이나믹 타입, 시스템 색상, 팔레트.";
+"Screen" = "화면";
+"Pick Color" = "색 추출";
+"Open Screen" = "화면 열기";

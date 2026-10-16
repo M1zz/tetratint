@@ -1,4 +1,5 @@
 import SwiftUI
+import LeeoKit
 
 /// "Variants" lens: the four appearance variants of the working color plus
 /// the export panel. The color itself is edited in the workspace header.
@@ -79,7 +80,9 @@ struct VariantsLens: View {
                 }
 
                 Button {
-                    Exporters.exportColorSet(name: appState.colorName, set: set)
+                    if Exporters.exportColorSet(name: appState.colorName, set: set) {
+                        LeeoEngagement.shared.registerSignificantEvent()
+                    }
                 } label: {
                     Label("Save .colorset", systemImage: "square.and.arrow.down")
                 }

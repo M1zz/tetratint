@@ -155,27 +155,33 @@ enum Exporters {
     // MARK: - File export
 
     /// Exports a single <name>.colorset folder via a save panel.
+    /// - Returns: true when the files were written (false on cancel or error).
     @MainActor
-    static func exportColorSet(name: String, set: AppearanceSet) {
+    @discardableResult
+    static func exportColorSet(name: String, set: AppearanceSet) -> Bool {
         let panel = NSSavePanel()
         panel.title = "Export color set"
         panel.nameFieldStringValue = "\(name).colorset"
-        guard panel.runModal() == .OK, let url = panel.url else { return }
+        guard panel.runModal() == .OK, let url = panel.url else { return false }
         do {
             try writeColorSet(to: url, set: set)
+            return true
         } catch {
             presentError(error)
+            return false
         }
     }
 
     /// Exports every saved palette item as an .xcassets catalog.
+    /// - Returns: true when the catalog was written (false on cancel or error).
     @MainActor
-    static func exportAssetCatalog(items: [PaletteItem]) {
-        guard !items.isEmpty else { return }
+    @discardableResult
+    static func exportAssetCatalog(items: [PaletteItem]) -> Bool {
+        guard !items.isEmpty else { return false }
         let panel = NSSavePanel()
         panel.title = "Export asset catalog"
         panel.nameFieldStringValue = "Colors.xcassets"
-        guard panel.runModal() == .OK, let url = panel.url else { return }
+        guard panel.runModal() == .OK, let url = panel.url else { return false }
         do {
             let fm = FileManager.default
             try fm.createDirectory(at: url, withIntermediateDirectories: true)
@@ -192,8 +198,10 @@ enum Exporters {
                 let setURL = url.appendingPathComponent("\(item.name).colorset")
                 try writeColorSet(to: setURL, set: item.set)
             }
+            return true
         } catch {
             presentError(error)
+            return false
         }
     }
 

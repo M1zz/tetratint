@@ -15,14 +15,19 @@
 		1C85B330E56049DBD6AAE8E6 /* TetraTintApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9A9CE4106638DBB9F77FDE /* TetraTintApp.swift */; };
 		21033CD5F92D15D5D2C0EA5A /* PaletteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3499959ADA1C7A5FE323EF7F /* PaletteStore.swift */; };
 		35BD72EF8DBCE07415FA6F2F /* AppearanceSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AD967B11D838B36CF85FEB /* AppearanceSet.swift */; };
+		5EC5168C8223131CF03D1BD7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9C0881DC90B3CA63A69745 /* SettingsView.swift */; };
 		63472D239A6A7132A9183A88 /* FlyToPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2920BA56E1E641FF038499 /* FlyToPalette.swift */; };
 		637C23B0E15744162B5771EA /* AppearanceSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AD967B11D838B36CF85FEB /* AppearanceSet.swift */; };
 		6699EFF6D678821C837727FF /* ColorNaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C1E20A2A174BCEE56ADBAE /* ColorNaming.swift */; };
 		6E6B18473C1602C29AFF04EA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4ECE7D82BB077927D8CCC0BC /* Localizable.strings */; };
 		7223E838083257FBDB8A67FA /* CVDSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F229B2DA9FE066BE4377DE63 /* CVDSimulation.swift */; };
 		7E52B372932CA7B4A8D24C9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BC6B22B80E00FB7013FE8F /* Assets.xcassets */; };
+		87DA7C04541F663E9F7E7625 /* Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88A965E5ED8E88885423655 /* Tips.swift */; };
+		898D7E6874C8B27D15B71490 /* TetraTintSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526655E1A405507E8D0C11DD /* TetraTintSpec.swift */; };
 		8E81AF8C5C8D15C57080CB33 /* AuditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE03AF3C1A95A09D3485F166 /* AuditView.swift */; };
+		9311AAA25DAA6ED3B22FA602 /* AppShortcuts.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6CAD4F3CC97ED706DC1B834 /* AppShortcuts.strings */; };
 		968D493C926D8EAED932971A /* SystemColorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278B9DB81A76EE74B2E7C8BE /* SystemColorsView.swift */; };
+		981843BE35EC7866D6382BAC /* LeeoKit in Frameworks */ = {isa = PBXBuildFile; productRef = B787109AAD63B094873F03FA /* LeeoKit */; };
 		98E6BEBF675C8D293BE9A27B /* VariantCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805252219AA81B77DFED04C7 /* VariantCard.swift */; };
 		9B41CC035CB3346829F0EC57 /* DynamicTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168878C3D3992DB5ED08D653 /* DynamicTypeView.swift */; };
 		A24E97A82F3D11778859FFC3 /* PaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DA57A4322D5FCA4CCCE586 /* PaletteView.swift */; };
@@ -30,9 +35,11 @@
 		A2A5BCED3056ACCD3F0B3A6A /* GeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A5DAF0302F7D99CA2D343B /* GeneratorView.swift */; };
 		A807226E2C4216A259B4B5E3 /* ColorVisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A9EC38C31C2B824B261E4F /* ColorVisionView.swift */; };
 		AAC751A6DB5D87F87E8EFE22 /* ColorNaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C1E20A2A174BCEE56ADBAE /* ColorNaming.swift */; };
+		AB5D6CA2A1D3E91FC76A6C88 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64336EA7C63493B1CB6ADFDC /* OnboardingView.swift */; };
 		BB92FB9A183AE8F6618B1D15 /* Exporters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A435B94F6434981BC215CB /* Exporters.swift */; };
 		D05AA9D4CFB93EBE7AEC5DF0 /* Exporters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A435B94F6434981BC215CB /* Exporters.swift */; };
 		DD91095369A73EFD1CA9B1BE /* ColorWorkspaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9553B0A72B9F18055F6014 /* ColorWorkspaceView.swift */; };
+		E6BDD91C16AA25841B07E30E /* AppShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97B4EB98B1896BA6BFB0EE /* AppShortcuts.swift */; };
 		E93DAF16747BC0B02F88E836 /* CVDSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F229B2DA9FE066BE4377DE63 /* CVDSimulation.swift */; };
 		FD91DB1DBCF7BFA717384342 /* ColorMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DBAFD98538906C328B28B8 /* ColorMathTests.swift */; };
 /* End PBXBuildFile section */
@@ -50,20 +57,37 @@
 		2F9553B0A72B9F18055F6014 /* ColorWorkspaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWorkspaceView.swift; sourceTree = "<group>"; };
 		3499959ADA1C7A5FE323EF7F /* PaletteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteStore.swift; sourceTree = "<group>"; };
 		4ECE7D82BB077927D8CCC0BC /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		526655E1A405507E8D0C11DD /* TetraTintSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetraTintSpec.swift; sourceTree = "<group>"; };
 		53A435B94F6434981BC215CB /* Exporters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exporters.swift; sourceTree = "<group>"; };
+		64336EA7C63493B1CB6ADFDC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		6F5D7F69D203D9B1276AAAD4 /* SystemColorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemColorData.swift; sourceTree = "<group>"; };
 		79DA57A4322D5FCA4CCCE586 /* PaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteView.swift; sourceTree = "<group>"; };
 		805252219AA81B77DFED04C7 /* VariantCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariantCard.swift; sourceTree = "<group>"; };
 		84BC6B22B80E00FB7013FE8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C9A9CE4106638DBB9F77FDE /* TetraTintApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetraTintApp.swift; sourceTree = "<group>"; };
+		AB9C0881DC90B3CA63A69745 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		AE6266E5945F027636318BF6 /* ColorMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorMath.swift; sourceTree = "<group>"; };
+		BA97B4EB98B1896BA6BFB0EE /* AppShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShortcuts.swift; sourceTree = "<group>"; };
 		BE03AF3C1A95A09D3485F166 /* AuditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditView.swift; sourceTree = "<group>"; };
 		D4A9EC38C31C2B824B261E4F /* ColorVisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorVisionView.swift; sourceTree = "<group>"; };
+		D6CAD4F3CC97ED706DC1B834 /* AppShortcuts.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = AppShortcuts.strings; path = ko.lproj/AppShortcuts.strings; sourceTree = "<group>"; };
 		E7A5DAF0302F7D99CA2D343B /* GeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorView.swift; sourceTree = "<group>"; };
 		EF2920BA56E1E641FF038499 /* FlyToPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyToPalette.swift; sourceTree = "<group>"; };
 		F229B2DA9FE066BE4377DE63 /* CVDSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVDSimulation.swift; sourceTree = "<group>"; };
+		F88A965E5ED8E88885423655 /* Tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips.swift; sourceTree = "<group>"; };
 		FB9D5FE93E56E1F710753406 /* CVDPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVDPreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9ACDCC0F5D9606B03271F772 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				981843BE35EC7866D6382BAC /* LeeoKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		2CB2B0BE52D7225EFB596470 /* Products */ = {
@@ -81,6 +105,18 @@
 				0DFB169340C7367EB38C4C67 /* Version.xcconfig */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		5725FADEC3EFD89E73A6142E /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				BA97B4EB98B1896BA6BFB0EE /* AppShortcuts.swift */,
+				64336EA7C63493B1CB6ADFDC /* OnboardingView.swift */,
+				AB9C0881DC90B3CA63A69745 /* SettingsView.swift */,
+				526655E1A405507E8D0C11DD /* TetraTintSpec.swift */,
+				F88A965E5ED8E88885423655 /* Tips.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 		68B3D74C106FFC9088118D96 /* TetraTintTests */ = {
@@ -104,11 +140,13 @@
 		E632681908E366B26B9FD262 /* TetraTint */ = {
 			isa = PBXGroup;
 			children = (
+				D6CAD4F3CC97ED706DC1B834 /* AppShortcuts.strings */,
 				84BC6B22B80E00FB7013FE8F /* Assets.xcassets */,
 				4ECE7D82BB077927D8CCC0BC /* Localizable.strings */,
 				9C9A9CE4106638DBB9F77FDE /* TetraTintApp.swift */,
 				FE70641A39955CEE638F3383 /* Export */,
 				EBCAF320FB05F011EEF09241 /* Models */,
+				5725FADEC3EFD89E73A6142E /* Support */,
 				F92ACD76112E3BC7E823EF06 /* Views */,
 			);
 			path = TetraTint;
@@ -162,6 +200,7 @@
 			buildPhases = (
 				6C4734AD37A3DE0B25F4FE7F /* Sources */,
 				85C37213118B0D39A84B3CD0 /* Resources */,
+				9ACDCC0F5D9606B03271F772 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,6 +208,7 @@
 			);
 			name = TetraTint;
 			packageProductDependencies = (
+				B787109AAD63B094873F03FA /* LeeoKit */,
 			);
 			productName = TetraTint;
 			productReference = 17DF28A15E4BCAD19FE864FB /* TetraTint.app */;
@@ -221,6 +261,9 @@
 			);
 			mainGroup = B14C588597E95D248895F4F8;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				85F3329A5666EEBFD7D2DA61 /* XCRemoteSwiftPackageReference "LeeoKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9311AAA25DAA6ED3B22FA602 /* AppShortcuts.strings in Resources */,
 				7E52B372932CA7B4A8D24C9A /* Assets.xcassets in Resources */,
 				6E6B18473C1602C29AFF04EA /* Localizable.strings in Resources */,
 			);
@@ -248,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6BDD91C16AA25841B07E30E /* AppShortcuts.swift in Sources */,
 				637C23B0E15744162B5771EA /* AppearanceSet.swift in Sources */,
 				8E81AF8C5C8D15C57080CB33 /* AuditView.swift in Sources */,
 				074EC4967E154FB8BBC3516A /* CVDPreview.swift in Sources */,
@@ -261,11 +306,15 @@
 				BB92FB9A183AE8F6618B1D15 /* Exporters.swift in Sources */,
 				63472D239A6A7132A9183A88 /* FlyToPalette.swift in Sources */,
 				A2A5BCED3056ACCD3F0B3A6A /* GeneratorView.swift in Sources */,
+				AB5D6CA2A1D3E91FC76A6C88 /* OnboardingView.swift in Sources */,
 				0C7FF1770C169458B7642A94 /* PaletteStore.swift in Sources */,
 				A24E97A82F3D11778859FFC3 /* PaletteView.swift in Sources */,
+				5EC5168C8223131CF03D1BD7 /* SettingsView.swift in Sources */,
 				0FD30AF0BE62E6E11C8B2CA9 /* SystemColorData.swift in Sources */,
 				968D493C926D8EAED932971A /* SystemColorsView.swift in Sources */,
 				1C85B330E56049DBD6AAE8E6 /* TetraTintApp.swift in Sources */,
+				898D7E6874C8B27D15B71490 /* TetraTintSpec.swift in Sources */,
+				87DA7C04541F663E9F7E7625 /* Tips.swift in Sources */,
 				98E6BEBF675C8D293BE9A27B /* VariantCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,7 +448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -479,7 +528,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -521,6 +570,25 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		85F3329A5666EEBFD7D2DA61 /* XCRemoteSwiftPackageReference "LeeoKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/M1zz/LeeoKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.20.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B787109AAD63B094873F03FA /* LeeoKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85F3329A5666EEBFD7D2DA61 /* XCRemoteSwiftPackageReference "LeeoKit" */;
+			productName = LeeoKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C3455D3B5E9BA3154923FFF9 /* Project object */;
 }
