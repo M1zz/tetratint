@@ -47,7 +47,7 @@ open TetraTint.xcodeproj
 
 ## 요구 사항
 
-- macOS 13.0+ (NavigationSplitView)
+- macOS 14.0+ (LeeoKit · TipKit)
 - Xcode 15+
 
 ## 구조
