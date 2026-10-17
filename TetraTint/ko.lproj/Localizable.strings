@@ -203,3 +203,26 @@
 "Screen" = "화면";
 "Pick Color" = "색 추출";
 "Open Screen" = "화면 열기";
+
+/* Roadmap (Settings ▸ Coming Features) — source: TetraTintRoadmap.swift */
+"Close" = "닫기";
+"Better VoiceOver support" = "VoiceOver로 더 편하게";
+"VoiceOver reads every color, button, and value in a sensible order." = "VoiceOver가 색과 단추, 값을 빠짐없이 알맞은 순서로 읽어 줘요.";
+"Easier-to-see interface" = "보기 편한 대비";
+"Labels and controls stay crisp with Increase Contrast turned on." = "대비 높이기를 켜도 글자와 단추가 또렷하게 보여요.";
+"Reduced motion" = "움직임 줄이기";
+"With Reduce Motion on, effects like colors flying into your palette get calmer." = "움직임 줄이기를 켜면 색이 팔레트로 날아가는 효과 같은 움직임이 차분해져요.";
+"More languages" = "더 많은 언어";
+"Use TetraTint in more languages, not just English and Korean." = "영어와 한국어 말고도 더 많은 나라 말로 쓸 수 있게 해요.";
+"What’s new" = "업데이트 소식";
+"After an update, see what’s new the first time you open the app." = "업데이트 뒤 처음 열 때 무엇이 새로 생겼는지 알려 줘요.";
+"Replies to your feedback" = "보낸 의견에 답장 받기";
+"Read our replies to your feedback right in the app." = "보내 주신 의견에 단 답장을 앱 안에서 볼 수 있어요.";
+"Desktop widgets" = "데스크톱 위젯";
+"See your palette right on the desktop without opening the app." = "앱을 열지 않고 데스크톱에서 내 팔레트를 바로 봐요.";
+"Palettes on all your Macs" = "여러 Mac에서 같은 팔레트";
+"Pick up the same palette on your other Macs with iCloud." = "iCloud로 다른 Mac에서도 같은 팔레트를 이어서 써요.";
+"Back up and restore palettes" = "팔레트 백업과 불러오기";
+"Save your palette to a file and load it back anytime." = "팔레트를 파일로 저장해 두고 언제든 다시 불러와요.";
+"Clear the whole palette" = "팔레트 한 번에 비우기";
+"Remove every saved color at once when you want a fresh start." = "새로 시작하고 싶을 때 저장한 색을 한 번에 지워요.";

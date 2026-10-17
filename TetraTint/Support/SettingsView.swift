@@ -11,6 +11,8 @@ struct TetraTintSettingsView: View {
             Form {
                 Section {
                     LeeoSupportSection<TetraTintSpec>()
+                    // 앞으로 만들 기능 — 원본은 TetraTintRoadmap.swift
+                    NavigationLink(LeeoRoadmapText.entry) { RoadmapScreen() }
                 } header: {
                     Text("Support")
                 }
