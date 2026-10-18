@@ -24,7 +24,7 @@ Dark & High-Contrast Colors
 
 ### 키워드
 
-colorblind,WCAG,ratio,checker,palette,dynamic,type,font,size,hex,picker,brand,asset,developer,a11y
+colorblind,accessibility,WCAG,a11y,palette,checker,ratio,dynamic,type,font,picker,hex,developer
 
 ### 프로모션 텍스트
 
@@ -76,7 +76,7 @@ TetraTint: 접근성 디자인 도구
 
 ### 키워드
 
-색맹,색약,색각이상,명암비,대비검사,WCAG,팔레트,다이나믹타입,글자크기,에셋,앱개발,개발자,시스템컬러,브랜드컬러,컬러피커,색변환,색대비,색상표,컬러셋,스위프트,hex,글꼴
+색상대비,명도대비,대비검사,색맹,색약,색각이상,명암비,WCAG,웹접근성,컬러팔레트,다이나믹타입,글자크기,시스템컬러,컬러피커,색변환,개발자,스위프트,hex,색상표,브랜드컬러
 
 ### 프로모션 텍스트
 
