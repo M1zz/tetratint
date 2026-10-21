@@ -1,0 +1,228 @@
+/* Color vision preview */
+"Color vision preview" = "ดูตัวอย่างการมองเห็นสี";
+"Preview the whole app as someone with color vision deficiency sees it" = "ดูทั้งแอปตามที่ผู้มีภาวะตาบอดสีมองเห็น";
+"simulated colors, not the real ones" = "นี่คือสีจำลอง ไม่ใช่สีจริง";
+"Exit" = "ปิด";
+"Normal" = "ปกติ";
+"Protanopia" = "ตาบอดสีแดง";
+"Deuteranopia" = "ตาบอดสีเขียว";
+"Tritanopia" = "ตาบอดสีน้ำเงิน";
+"Grayscale" = "ขาวดำ";
+
+/* Color names (spoken for accessibility) */
+"Black" = "ดำ";
+"Dark gray" = "เทาเข้ม";
+"Gray" = "เทา";
+"Light gray" = "เทาอ่อน";
+"White" = "ขาว";
+"Red" = "แดง";
+"Orange" = "ส้ม";
+"Yellow" = "เหลือง";
+"Lime" = "เขียวมะนาว";
+"Green" = "เขียว";
+"Teal" = "เขียวอมฟ้า";
+"Sky blue" = "ฟ้า";
+"Blue" = "น้ำเงิน";
+"Indigo" = "คราม";
+"Purple" = "ม่วง";
+"Magenta" = "ม่วงแดง";
+"Pink" = "ชมพู";
+"Dark" = "เข้ม";
+"Light" = "อ่อน";
+"Pale" = "จาง";
+
+/* Navigation & view titles */
+"Color" = "สี";
+"Variants" = "เวอร์ชันสี";
+"Contrast" = "คอนทราสต์";
+"Color vision" = "การมองเห็นสี";
+"Generate variants" = "สร้างเวอร์ชันสี";
+"Check contrast" = "ตรวจคอนทราสต์";
+"Simulate color vision" = "จำลองการมองเห็นสี";
+"Generate and export light, dark, and high-contrast variants" = "สร้างและส่งออกเวอร์ชันสีสว่าง มืด และคอนทราสต์สูง";
+"Check the color against WCAG contrast thresholds" = "ตรวจสีตามเกณฑ์คอนทราสต์ของ WCAG";
+"Simulate how the color looks with color vision deficiency" = "จำลองว่าสีนี้จะดูเป็นอย่างไรสำหรับผู้ที่ตาบอดสี";
+"Dynamic Type" = "Dynamic Type";
+"System colors" = "สีของระบบ";
+"Palette" = "จานสี";
+
+/* Appearance variants */
+"Light (Any)" = "สว่าง (ค่าเริ่มต้น)";
+"Light High Contrast" = "สว่าง คอนทราสต์สูง";
+"Dark" = "มืด";
+"Dark High Contrast" = "มืด คอนทราสต์สูง";
+"Light" = "สว่าง";
+"Light HC" = "สว่าง คอนทราสต์สูง";
+"Dark HC" = "มืด คอนทราสต์สูง";
+"Light mode default (Any Appearance)" = "ค่าเริ่มต้นของโหมดสว่าง (Any Appearance)";
+"Light with Increase Contrast on" = "โหมดสว่างเมื่อเปิดเพิ่มคอนทราสต์";
+"Dark mode default" = "ค่าเริ่มต้นของโหมดมืด";
+"Dark with Increase Contrast on" = "โหมดมืดเมื่อเปิดเพิ่มคอนทราสต์";
+
+/* Color vision deficiency subtitles */
+"Normal vision" = "การมองเห็นสีปกติ";
+"Protan, about 1% of men" = "ตาบอดสีแดง พบในผู้ชายราว 1%";
+"Deutan, about 1% of men" = "ตาบอดสีเขียว พบในผู้ชายราว 1%";
+"Tritan, rare" = "ตาบอดสีน้ำเงิน พบได้น้อย";
+"Monochromacy" = "ตาบอดสีทั้งหมด (เห็นเป็นขาวดำ)";
+
+/* Safe palettes */
+"Scientific visualization standard, 8 colors" = "มาตรฐานการแสดงผลข้อมูลทางวิทยาศาสตร์ 8 สี";
+"IBM accessibility palette, 5 colors" = "จานสีเพื่อการเข้าถึงของ IBM 5 สี";
+"Qualitative data visualization, 7 colors" = "สำหรับข้อมูลเชิงคุณภาพ 7 สี";
+
+/* Generator */
+"Light mode base color" = "สีตั้งต้นของโหมดสว่าง";
+"Color name" = "ชื่อสี";
+"Regenerate all" = "สร้างใหม่ทั้งหมด";
+"Discard manual edits and re-derive from the base color" = "ล้างที่แก้ด้วยมือและสร้างใหม่จากสีตั้งต้น";
+"Save to palette" = "บันทึกลงจานสี";
+"Presets" = "ค่าที่ตั้งไว้";
+"Export" = "ส่งออก";
+"Copied" = "คัดลอกแล้ว";
+"Copy" = "คัดลอก";
+"Save .colorset" = "บันทึก .colorset";
+
+/* Variant card */
+"%@:1 vs background" = "%@:1 เทียบกับพื้นหลัง";
+"AA text" = "ข้อความ AA";
+"Low" = "ต่ำ";
+"Button" = "ปุ่ม";
+"Tint label" = "ป้ายสี Tint";
+"Progress" = "ความคืบหน้า";
+"Copy hex" = "คัดลอก hex";
+"Fine-tune this variant manually" = "ปรับเวอร์ชันนี้เองอย่างละเอียด";
+
+/* Color vision screen */
+"Color vision simulation" = "การจำลองการมองเห็นสี";
+"This shows how your colors look to people with color vision deficiency. It is the current state, not a suggestion to change them." = "แสดงว่าสีของคุณดูเป็นอย่างไรสำหรับผู้ที่ตาบอดสี นี่คือภาพสถานะปัจจุบัน ไม่ได้แนะนำให้เปลี่ยนสี";
+"Conflict warnings" = "คำเตือนสีที่แยกยาก";
+"Finds color pairs that become too similar to tell apart under simulation." = "หาคู่สีที่เมื่อจำลองแล้วดูคล้ายกันจนแยกไม่ออก";
+"Recommended safe palettes" = "จานสีที่ปลอดภัยสำหรับผู้ตาบอดสี";
+"If there were conflicts above, switch to a verified palette that stays distinguishable across every vision type." = "ถ้าด้านบนพบสีที่แยกยาก ให้เปลี่ยนไปใช้จานสีที่ผ่านการตรวจสอบแล้วว่าแยกออกได้ในทุกประเภทการมองเห็น";
+"No palette saved yet, so the Okabe Ito demo palette is shown. Save colors in Generator to audit your own palette." = "ยังไม่มีจานสีที่บันทึกไว้ จึงแสดงจานสีตัวอย่าง Okabe Ito บันทึกสีใน Generator เพื่อตรวจจานสีของคุณเอง";
+"Color" = "สี";
+"All color pairs stay distinguishable across every vision type (ΔE ≥ 12)" = "ทุกคู่สีแยกออกได้ในทุกประเภทการมองเห็น (ΔE ≥ 12)";
+"ΔE %@ under %@" = "ΔE %1$@ ใน%2$@";
+"Do not rely on color alone. Pair it with icons, patterns, or labels, or switch to a safe palette below." = "อย่าใช้สีเพียงอย่างเดียวในการสื่อความหมาย ควรใช้ไอคอน ลวดลาย หรือป้ายกำกับร่วมด้วย หรือเปลี่ยนไปใช้จานสีที่ปลอดภัยด้านล่าง";
+"Add to palette" = "เพิ่มลงจานสี";
+"Derive each color into four variants and save to the palette" = "สร้างแต่ละสีเป็น 4 เวอร์ชันแล้วบันทึกลงจานสี";
+
+/* Contrast audit */
+"Paste the colors your app uses (separated by line breaks or commas)" = "วางสีที่แอปของคุณใช้ (คั่นด้วยการขึ้นบรรทัดใหม่หรือจุลภาค)";
+"Audit" = "ตรวจสอบ";
+"Screens each color against light (vs white) and dark (vs black) backgrounds using WCAG thresholds." = "คัดกรองแต่ละสีบนพื้นหลังสว่าง (เทียบกับสีขาว) และมืด (เทียบกับสีดำ) ตามเกณฑ์ของ WCAG";
+"Preview: %lld colors" = "ตัวอย่าง: %lld สี";
+"Preview: %lld colors, %lld unrecognized" = "ตัวอย่าง: %1$lld สี ไม่รู้จัก %2$lld สี";
+"%lld of %lld colors need a high-contrast variant" = "%1$lld จาก %2$lld สี ต้องมีเวอร์ชันคอนทราสต์สูง";
+"Use as is" = "ใช้ได้เลย";
+"Needs high contrast" = "ต้องมีเวอร์ชันคอนทราสต์สูง";
+"Decorative only" = "ใช้เพื่อการตกแต่งเท่านั้น";
+"Meets 4.5:1 for text" = "ผ่านเกณฑ์ 4.5:1 สำหรับข้อความ";
+"Passes 3:1 for UI; text or High Contrast needs a variant" = "ผ่านเกณฑ์ 3:1 สำหรับองค์ประกอบ UI ส่วนข้อความหรือโหมดคอนทราสต์สูงต้องมีเวอร์ชันเพิ่ม";
+"Below 3:1; do not use for text, icons, or status" = "ต่ำกว่า 3:1 ห้ามใช้กับข้อความ ไอคอน หรือสถานะ";
+"Derive four variants" = "สร้าง 4 เวอร์ชัน";
+"Derive four variants including high contrast and save to the palette" = "สร้าง 4 เวอร์ชันรวมคอนทราสต์สูงแล้วบันทึกลงจานสี";
+
+/* Dynamic Type */
+"Scaling preview" = "ตัวอย่างการปรับขนาด";
+"Style" = "สไตล์";
+"Custom font PostScript name" = "ชื่อ PostScript ของฟอนต์กำหนดเอง";
+"Category" = "หมวดขนาด";
+"The quick brown fox jumps over the lazy dog" = "เป็นมนุษย์สุดประเสริฐเลิศคุณค่า กว่าบรรดาฝูงสัตว์เดรัจฉาน";
+"Code" = "โค้ด";
+"Text style sizes (pt)" = "ขนาดของสไตล์ข้อความ (pt)";
+"Large is the default. In accessibility sizes (AX1 to AX5), Body grows to %@pt, over three times the default, so avoid fixed heights, fixed padding, and lineLimit(1)." = "ค่าเริ่มต้นคือ Large ในขนาดเพื่อการเข้าถึง (AX1 ถึง AX5) Body จะใหญ่ขึ้นถึง %@pt มากกว่าสามเท่าของค่าเริ่มต้น จึงควรหลีกเลี่ยงความสูงคงที่ ระยะขอบคงที่ และ lineLimit(1)";
+
+/* System colors */
+"Tint colors" = "สี Tint";
+"Gray colors" = "สีเทา";
+"Reference values from Apple's Human Interface Guidelines. Actual values may change between OS releases, so always use the UIColor or Color API in shipping code rather than hard-coding." = "ค่าอ้างอิงจาก Human Interface Guidelines ของ Apple ค่าจริงอาจเปลี่ยนไปตามเวอร์ชัน OS ดังนั้นในโค้ดที่ปล่อยใช้งานจริง ให้ใช้ UIColor หรือ Color API แทนการเขียนค่าสีลงในโค้ดตรงๆ";
+"Click to copy %@" = "คลิกเพื่อคัดลอก %@";
+
+/* Screen color picker */
+"Pick color from screen" = "เลือกสีจากหน้าจอ";
+"Pick a color from anywhere on screen" = "เลือกสีจากจุดไหนก็ได้บนหน้าจอ";
+"Pick a color from anywhere on screen and make it the working color" = "เลือกสีจากจุดไหนก็ได้บนหน้าจอแล้วตั้งเป็นสีที่ใช้งาน";
+"Working color" = "สีที่ใช้งาน";
+"Change the working color to see how it looks under each type of color vision." = "เปลี่ยนสีที่ใช้งานเพื่อดูว่าเป็นอย่างไรในการมองเห็นแต่ละประเภท";
+
+/* Palette */
+"Export .xcassets" = "ส่งออก .xcassets";
+"Export every saved color as one asset catalog" = "ส่งออกสีที่บันทึกไว้ทั้งหมดเป็น asset catalog เดียว";
+"No saved colors" = "ยังไม่มีสีที่บันทึกไว้";
+"Generate a color and save it here, then export your whole brand palette as one .xcassets catalog." = "สร้างสีแล้วบันทึกไว้ที่นี่ จากนั้นส่งออกจานสีแบรนด์ทั้งหมดเป็นแคตตาล็อก .xcassets เดียว";
+"Each color is saved as four variants" = "แต่ละสีจะถูกบันทึกเป็น 4 เวอร์ชัน";
+"Export %@.colorset" = "ส่งออก %@.colorset";
+"Delete" = "ลบ";
+
+/* VoiceOver labels */
+"Delete %@" = "ลบ %@";
+"Copy %@" = "คัดลอก %@";
+"Hex value" = "ค่า hex";
+"Preset %@" = "ค่าที่ตั้งไว้ %@";
+
+/* Settings */
+"Support" = "ช่วยเหลือ";
+"Contact" = "ติดต่อ";
+"Help" = "วิธีใช้";
+"Email the developer" = "ส่งอีเมลถึงผู้พัฒนา";
+"Message on Instagram (@lee25_ios)" = "ส่งข้อความทาง Instagram (@lee25_ios)";
+"Show the welcome guide again" = "ดูคำแนะนำเริ่มต้นอีกครั้ง";
+"Opens the guide in the main window" = "เปิดคำแนะนำในหน้าต่างหลัก";
+
+/* Help menu */
+"Welcome to TetraTint" = "ยินดีต้อนรับสู่ TetraTint";
+"TetraTint Support Page" = "หน้าช่วยเหลือของ TetraTint";
+"Email the Developer…" = "ส่งอีเมลถึงผู้พัฒนา…";
+
+/* Onboarding */
+"Accessibility work Apple doesn't do for your custom colors and fonts." = "งานด้านการเข้าถึงที่ Apple ไม่ได้ทำให้กับสีและฟอนต์ที่คุณกำหนดเอง";
+"Start with one color" = "เริ่มจากสีเดียว";
+"Type a hex value, use the color well, or pick any pixel on screen with the eyedropper. Every screen works on this same color." = "พิมพ์ค่า hex ใช้ช่องเลือกสี หรือใช้หลอดดูดสีเลือกพิกเซลใดก็ได้บนหน้าจอ ทุกหน้าจอจะทำงานกับสีเดียวกันนี้";
+"Look at it through three lenses" = "ดูผ่านสามมุมมอง";
+"Generate light, dark, and high-contrast variants, check WCAG contrast, and see how it looks with color vision deficiency." = "สร้างเวอร์ชันสว่าง มืด และคอนทราสต์สูง ตรวจคอนทราสต์ตาม WCAG และดูว่าสีเป็นอย่างไรสำหรับผู้ที่ตาบอดสี";
+"Save and export" = "บันทึกและส่งออก";
+"Save colors to your palette, then export a .colorset, SwiftUI or UIKit code, or one .xcassets catalog for Xcode." = "บันทึกสีลงจานสี แล้วส่งออกเป็น .colorset โค้ด SwiftUI หรือ UIKit หรือแคตตาล็อก .xcassets เดียวสำหรับ Xcode";
+"Custom fonts too" = "รองรับฟอนต์กำหนดเองด้วย";
+"Dynamic Type shows every text style at every size and writes the scaling code for your custom font." = "Dynamic Type แสดงทุกสไตล์ข้อความในทุกขนาด และสร้างโค้ดปรับขนาดให้ฟอนต์กำหนดเองของคุณ";
+"You can open this guide again from the Help menu." = "เปิดคำแนะนำนี้ได้อีกครั้งจากเมนูวิธีใช้";
+"Get Started" = "เริ่มต้นใช้งาน";
+
+/* Tips */
+"Pick any color on screen" = "เลือกสีใดก็ได้บนหน้าจอ";
+"Click the eyedropper, then click a pixel in any app, website, or design file. It becomes the working color everywhere." = "คลิกหลอดดูดสี แล้วคลิกพิกเซลในแอป เว็บไซต์ หรือไฟล์ดีไซน์ใดก็ได้ สีนั้นจะกลายเป็นสีที่ใช้งานในทุกหน้าจอ";
+"See the whole app as others do" = "ดูทั้งแอปแบบที่คนอื่นเห็น";
+"Turn on a color vision preview to view every screen as someone with protanopia, deuteranopia, or tritanopia sees it." = "เปิดตัวอย่างการมองเห็นสีเพื่อดูทุกหน้าจอตามที่ผู้ตาบอดสีแดง ตาบอดสีเขียว หรือตาบอดสีน้ำเงินมองเห็น";
+
+/* Shortcuts (App Intents) */
+"Pick Color from Screen" = "เลือกสีจากหน้าจอ";
+"Opens TetraTint and starts the eyedropper so you can pick any color on screen." = "เปิด TetraTint และเริ่มหลอดดูดสี เพื่อให้เลือกสีใดก็ได้บนหน้าจอ";
+"Open in TetraTint" = "เปิดใน TetraTint";
+"Opens a TetraTint screen: Color, Dynamic Type, System colors, or Palette." = "เปิดหน้าจอของ TetraTint ได้แก่ สี, Dynamic Type, สีของระบบ หรือจานสี";
+"Screen" = "หน้าจอ";
+"Pick Color" = "เลือกสี";
+"Open Screen" = "เปิดหน้าจอ";
+
+/* Roadmap (Settings ▸ Coming Features) — source: TetraTintRoadmap.swift */
+"Close" = "ปิด";
+"Better VoiceOver support" = "รองรับ VoiceOver ดียิ่งขึ้น";
+"VoiceOver reads every color, button, and value in a sensible order." = "VoiceOver อ่านทุกสี ทุกปุ่ม และทุกค่าตามลำดับที่เข้าใจง่าย";
+"Easier-to-see interface" = "หน้าตาที่มองเห็นง่ายขึ้น";
+"Labels and controls stay crisp with Increase Contrast turned on." = "ข้อความและปุ่มยังคมชัดเมื่อเปิดเพิ่มคอนทราสต์";
+"Reduced motion" = "ลดการเคลื่อนไหว";
+"With Reduce Motion on, effects like colors flying into your palette get calmer." = "เมื่อเปิดลดการเคลื่อนไหว เอฟเฟกต์อย่างสีที่พุ่งเข้าจานสีจะนุ่มนวลลง";
+"More languages" = "ภาษาเพิ่มเติม";
+"Use TetraTint in more languages, not just English and Korean." = "ใช้ TetraTint ได้ในหลายภาษามากขึ้น ไม่ใช่แค่อังกฤษและเกาหลี";
+"What’s new" = "มีอะไรใหม่";
+"After an update, see what’s new the first time you open the app." = "หลังอัปเดต จะเห็นสิ่งใหม่ๆ ตอนเปิดแอปครั้งแรก";
+"Replies to your feedback" = "คำตอบสำหรับความเห็นของคุณ";
+"Read our replies to your feedback right in the app." = "อ่านคำตอบสำหรับความเห็นที่คุณส่งมาได้ในแอปเลย";
+"Desktop widgets" = "วิดเจ็ตบนเดสก์ท็อป";
+"See your palette right on the desktop without opening the app." = "ดูจานสีของคุณบนเดสก์ท็อปได้เลยโดยไม่ต้องเปิดแอป";
+"Palettes on all your Macs" = "จานสีเดียวกันบนทุกเครื่อง Mac";
+"Pick up the same palette on your other Macs with iCloud." = "ใช้จานสีเดิมต่อบน Mac เครื่องอื่นผ่าน iCloud";
+"Back up and restore palettes" = "สำรองและกู้คืนจานสี";
+"Save your palette to a file and load it back anytime." = "บันทึกจานสีเป็นไฟล์แล้วโหลดกลับมาได้ทุกเมื่อ";
+"Clear the whole palette" = "ล้างจานสีทั้งหมด";
+"Remove every saved color at once when you want a fresh start." = "ลบสีที่บันทึกไว้ทั้งหมดในครั้งเดียว เมื่ออยากเริ่มใหม่";

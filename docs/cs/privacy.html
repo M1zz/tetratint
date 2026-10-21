@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TetraTint — Zásady ochrany osobních údajů</title>
+<meta name="description" content="TetraTint neshromažďuje žádné osobní údaje. Vaše palety zůstávají na vašem Macu, odesílají se pouze anonymní statistiky používání.">
+<link rel="canonical" href="https://m1zz.github.io/tetratint/cs/privacy.html">
+<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/tetratint/ko/privacy.html">
+<link rel="alternate" hreflang="en" href="https://m1zz.github.io/tetratint/en/privacy.html">
+<link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/tetratint/en-GB/privacy.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/tetratint/zh-Hans/privacy.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/tetratint/zh-Hant/privacy.html">
+<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/tetratint/ja/privacy.html">
+<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/tetratint/ru/privacy.html">
+<link rel="alternate" hreflang="es-MX" href="https://m1zz.github.io/tetratint/es-MX/privacy.html">
+<link rel="alternate" hreflang="de-DE" href="https://m1zz.github.io/tetratint/de-DE/privacy.html">
+<link rel="alternate" hreflang="fr-FR" href="https://m1zz.github.io/tetratint/fr-FR/privacy.html">
+<link rel="alternate" hreflang="it" href="https://m1zz.github.io/tetratint/it/privacy.html">
+<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/tetratint/pt-BR/privacy.html">
+<link rel="alternate" hreflang="th" href="https://m1zz.github.io/tetratint/th/privacy.html">
+<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/tetratint/vi/privacy.html">
+<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/tetratint/cs/privacy.html">
+<link rel="alternate" hreflang="da" href="https://m1zz.github.io/tetratint/da/privacy.html">
+<link rel="alternate" hreflang="el" href="https://m1zz.github.io/tetratint/el/privacy.html">
+<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/tetratint/fi/privacy.html">
+<link rel="alternate" hreflang="id" href="https://m1zz.github.io/tetratint/id/privacy.html">
+<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/tetratint/no/privacy.html">
+<link rel="alternate" hreflang="nl-NL" href="https://m1zz.github.io/tetratint/nl-NL/privacy.html">
+<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/tetratint/pl/privacy.html">
+<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/tetratint/sv/privacy.html">
+<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/tetratint/tr/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/tetratint/privacy.html">
+<style>
+  :root {
+    --bg: #f5f5f7; --card: #ffffff; --text: #1d1d1f; --muted: #6e6e73;
+    --border: #e3e3e6; --accent: #0a84ff; --ok: #34c759;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#000; --card:#1c1c1e; --text:#f5f5f7; --muted:#98989d; --border:#2c2c2e; --accent:#0a84ff; --ok:#30d158; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", "Apple SD Gothic Neo", sans-serif;
+    line-height: 1.7; -webkit-font-smoothing: antialiased;
+  }
+  .logo {
+    width: 56px; height: 56px; border-radius: 14px; display: grid;
+    grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,.15); margin-bottom: 20px;
+  }
+  .logo i { display: block; }
+  .logo i:nth-child(1){ background:#0a84ff; }
+  .logo i:nth-child(2){ background:#0060df; }
+  .logo i:nth-child(3){ background:#5ac8fa; }
+  .logo i:nth-child(4){ background:#004299; }
+  nav.langs { display: flex; gap: 6px; flex-wrap: wrap; margin: 0 0 24px; }
+  nav.langs a {
+    border: 1px solid var(--border); color: var(--muted); font-size: 14px;
+    padding: 3px 12px; border-radius: 999px; text-decoration: none;
+  }
+  nav.langs a[aria-current="true"] { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer { color: var(--muted); font-size: 14px; text-align: center; margin-top: 40px; }
+
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+  h1 { font-size: 32px; letter-spacing: -.02em; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 4px; font-size: 17px; }
+  .updated { color: var(--muted); font-size: 14px; margin: 0 0 24px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 24px 26px; margin: 18px 0; }
+  h2 { font-size: 20px; margin: 4px 0 10px; letter-spacing: -.01em; }
+  h3 { font-size: 16px; margin: 18px 0 4px; }
+  p { margin: 8px 0; }
+  .muted { color: var(--muted); }
+  .lead { font-weight: 600; color: var(--ok); font-size: 18px; }
+  ul { margin: 8px 0; padding-left: 20px; }
+  li { margin: 6px 0; }
+  .btn { display: inline-block; background: var(--accent); color: #fff; font-weight: 600; padding: 12px 22px; border-radius: 12px; margin-top: 8px; }
+  .btn:hover { text-decoration: none; opacity: .92; }
+  .pill { display:inline-block; font-size:13px; color:var(--muted); border:1px solid var(--border); border-radius:999px; padding:2px 10px; margin:0 6px 6px 0; }
+  hr { border: none; border-top: 1px solid var(--border); margin: 28px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo"><i></i><i></i><i></i><i></i></div>
+  <nav class="langs" aria-label="Jazyk">
+    <a href="../ko/privacy.html" hreflang="ko" lang="ko">한국어</a>
+    <a href="../en/privacy.html" hreflang="en" lang="en">English</a>
+    <a href="../en-GB/privacy.html" hreflang="en-GB" lang="en-GB">English (UK)</a>
+    <a href="../zh-Hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+    <a href="../zh-Hant/privacy.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+    <a href="../ja/privacy.html" hreflang="ja" lang="ja">日本語</a>
+    <a href="../ru/privacy.html" hreflang="ru" lang="ru">Русский</a>
+    <a href="../es-MX/privacy.html" hreflang="es-MX" lang="es-MX">Español (México)</a>
+    <a href="../de-DE/privacy.html" hreflang="de-DE" lang="de-DE">Deutsch</a>
+    <a href="../fr-FR/privacy.html" hreflang="fr-FR" lang="fr-FR">Français</a>
+    <a href="../it/privacy.html" hreflang="it" lang="it">Italiano</a>
+    <a href="../pt-BR/privacy.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+    <a href="../th/privacy.html" hreflang="th" lang="th">ไทย</a>
+    <a href="../vi/privacy.html" hreflang="vi" lang="vi">Tiếng Việt</a>
+    <a href="../cs/privacy.html" hreflang="cs" lang="cs" aria-current="true">Čeština</a>
+    <a href="../da/privacy.html" hreflang="da" lang="da">Dansk</a>
+    <a href="../el/privacy.html" hreflang="el" lang="el">Ελληνικά</a>
+    <a href="../fi/privacy.html" hreflang="fi" lang="fi">suomi</a>
+    <a href="../id/privacy.html" hreflang="id" lang="id">Bahasa Indonesia</a>
+    <a href="../no/privacy.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+    <a href="../nl-NL/privacy.html" hreflang="nl-NL" lang="nl-NL">Nederlands</a>
+    <a href="../pl/privacy.html" hreflang="pl" lang="pl">Polski</a>
+    <a href="../sv/privacy.html" hreflang="sv" lang="sv">Svenska</a>
+    <a href="../tr/privacy.html" hreflang="tr" lang="tr">Türkçe</a>
+  </nav>
+  <h1>Zásady ochrany osobních údajů</h1>
+  <p class="sub">TetraTint</p>
+  <p class="updated">Poslední aktualizace: 17. října 2026</p>
+
+  <div class="card">
+    <p class="lead">✓ TetraTint neshromažďuje žádné osobní údaje.</p>
+    <p class="muted">TetraTint je nástroj pro vývojáře, který běží celý na vašem Macu. Vaše barvy a palety z něj nikdy neodcházejí. Aplikace odesílá jen anonymní statistiky používání a zpětnou vazbu, kterou se sami rozhodnete poslat. Neobsahuje žádné sledování ani reklamy.</p>
+  </div>
+
+  <div class="card">
+    <h2>Jaké informace shromažďujeme</h2>
+    <p>Aplikace nevyžaduje účet a neshromažďuje vaše jméno, kontaktní údaje, polohu ani žádné jiné osobní informace.</p>
+  </div>
+
+  <div class="card">
+    <h2>Anonymní statistiky používání</h2>
+    <p>Abychom zjistili, kolik lidí TetraTint používá a které verze jsou stále v provozu, odesílá aplikace anonymní statistiky do iCloudu společnosti Apple (CloudKit). Čte je pouze vývojář:</p>
+    <ul>
+      <li>náhodné ID vytvořené při instalaci aplikace (není propojeno s vámi, vaším Apple ID, vaším Macem ani žádnou jinou aplikací; po přeinstalaci se změní)</li>
+      <li>verze aplikace, verze macOS a nastavení oblasti a jazyka</li>
+      <li>kolikrát byla aplikace otevřena, ve které dny, datum instalace a kolik dní od ní uplynulo</li>
+    </ul>
+    <p>Statistiky neobsahují žádné barvy, palety, exportované soubory ani jiný obsah. Odesílají se jen tehdy, když jste přihlášeni k iCloudu.</p>
+  </div>
+
+  <div class="card">
+    <h2>Zpětná vazba</h2>
+    <p>Pokud pošlete zpětnou vazbu z Nastavení, uloží se vaše zpráva spolu s verzí aplikace, verzí macOS a modelem Macu do iCloudu společnosti Apple (CloudKit), aby si ji vývojář mohl přečíst a odpovědět na ni. Kontaktní e-mail se přidá, jen když ho zadáte. Bez stisknutí tlačítka Odeslat se nic neodešle.</p>
+  </div>
+
+  <div class="card">
+    <h2>Data uložená v zařízení</h2>
+    <ul>
+      <li><strong>Uložené palety a barvy</strong> — hodnoty barev, které uložíte, se ukládají do macOS <code>UserDefaults</code> <strong>pouze ve vašem Macu</strong> a nikam se neodesílají.</li>
+      <li><strong>Exportované soubory</strong> — <code>.colorset</code>, <code>.xcassets</code> a další exporty se zapisují jen na místo, které sami zvolíte.</li>
+      <li><strong>Zkopírovaný kód</strong> — vytvořený kód se dostane do schránky, jen když kliknete na tlačítko kopírování.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Výběr barvy z obrazovky (kapátko)</h2>
+    <p>Kapátko přečte jen hodnotu barvy (RGB) místa, na které ukážete, a použije ji jako pracovní barvu. Snímky obrazovky neukládá ani neodesílá a hodnota zůstává v paměti jen po dobu používání aplikace.</p>
+  </div>
+
+  <div class="card">
+    <h2>Služby třetích stran</h2>
+    <p>Žádné. TetraTint neobsahuje žádné cizí sady SDK, analytické nástroje ani reklamy. Statistiky a zpětná vazba uvedené výše putují pouze do iCloudu společnosti Apple (CloudKit).</p>
+  </div>
+
+  <div class="card">
+    <h2>Kontakt</h2>
+    <p>Máte-li k těmto zásadám dotazy, napište nám na e-mail:</p>
+    <p><a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
+  </div>
+
+  <hr>
+  <p class="muted" style="text-align:center"><a href="index.html">← Úvodní stránka TetraTint</a> · <a href="support.html">Podpora</a></p>
+  <footer>© 2026 TetraTint. Všechna práva vyhrazena.</footer>
+</div>
+</body>
+</html>

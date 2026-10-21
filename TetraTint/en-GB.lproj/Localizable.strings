@@ -1,0 +1,228 @@
+/* Color vision preview */
+"Color vision preview" = "Colour vision preview";
+"Preview the whole app as someone with color vision deficiency sees it" = "Preview the whole app as someone with colour vision deficiency sees it";
+"simulated colors, not the real ones" = "simulated colours, not the real ones";
+"Exit" = "Exit";
+"Normal" = "Normal";
+"Protanopia" = "Protanopia";
+"Deuteranopia" = "Deuteranopia";
+"Tritanopia" = "Tritanopia";
+"Grayscale" = "Greyscale";
+
+/* Color names (spoken for accessibility) */
+"Black" = "Black";
+"Dark gray" = "Dark grey";
+"Gray" = "Grey";
+"Light gray" = "Light grey";
+"White" = "White";
+"Red" = "Red";
+"Orange" = "Orange";
+"Yellow" = "Yellow";
+"Lime" = "Lime";
+"Green" = "Green";
+"Teal" = "Teal";
+"Sky blue" = "Sky blue";
+"Blue" = "Blue";
+"Indigo" = "Indigo";
+"Purple" = "Purple";
+"Magenta" = "Magenta";
+"Pink" = "Pink";
+"Dark" = "Dark";
+"Light" = "Light";
+"Pale" = "Pale";
+
+/* Navigation & view titles */
+"Color" = "Colour";
+"Variants" = "Variants";
+"Contrast" = "Contrast";
+"Color vision" = "Colour vision";
+"Generate variants" = "Generate variants";
+"Check contrast" = "Check contrast";
+"Simulate color vision" = "Simulate colour vision";
+"Generate and export light, dark, and high-contrast variants" = "Generate and export light, dark, and high-contrast variants";
+"Check the color against WCAG contrast thresholds" = "Check the colour against WCAG contrast thresholds";
+"Simulate how the color looks with color vision deficiency" = "Simulate how the colour looks with colour vision deficiency";
+"Dynamic Type" = "Dynamic Type";
+"System colors" = "System colours";
+"Palette" = "Palette";
+
+/* Appearance variants */
+"Light (Any)" = "Light (Any)";
+"Light High Contrast" = "Light High Contrast";
+"Dark" = "Dark";
+"Dark High Contrast" = "Dark High Contrast";
+"Light" = "Light";
+"Light HC" = "Light HC";
+"Dark HC" = "Dark HC";
+"Light mode default (Any Appearance)" = "Light mode default (Any Appearance)";
+"Light with Increase Contrast on" = "Light with Increase Contrast on";
+"Dark mode default" = "Dark mode default";
+"Dark with Increase Contrast on" = "Dark with Increase Contrast on";
+
+/* Color vision deficiency subtitles */
+"Normal vision" = "Normal vision";
+"Protan, about 1% of men" = "Protan, about 1% of men";
+"Deutan, about 1% of men" = "Deutan, about 1% of men";
+"Tritan, rare" = "Tritan, rare";
+"Monochromacy" = "Monochromacy";
+
+/* Safe palettes */
+"Scientific visualization standard, 8 colors" = "Scientific visualization standard, 8 colours";
+"IBM accessibility palette, 5 colors" = "IBM accessibility palette, 5 colours";
+"Qualitative data visualization, 7 colors" = "Qualitative data visualization, 7 colours";
+
+/* Generator */
+"Light mode base color" = "Light mode base colour";
+"Color name" = "Colour name";
+"Regenerate all" = "Regenerate all";
+"Discard manual edits and re-derive from the base color" = "Discard manual edits and re-derive from the base colour";
+"Save to palette" = "Save to palette";
+"Presets" = "Presets";
+"Export" = "Export";
+"Copied" = "Copied";
+"Copy" = "Copy";
+"Save .colorset" = "Save .colorset";
+
+/* Variant card */
+"%@:1 vs background" = "%@:1 vs background";
+"AA text" = "AA text";
+"Low" = "Low";
+"Button" = "Button";
+"Tint label" = "Tint label";
+"Progress" = "Progress";
+"Copy hex" = "Copy hex";
+"Fine-tune this variant manually" = "Fine-tune this variant manually";
+
+/* Color vision screen */
+"Color vision simulation" = "Colour vision simulation";
+"This shows how your colors look to people with color vision deficiency. It is the current state, not a suggestion to change them." = "This shows how your colours look to people with colour vision deficiency. It is the current state, not a suggestion to change them.";
+"Conflict warnings" = "Conflict warnings";
+"Finds color pairs that become too similar to tell apart under simulation." = "Finds colour pairs that become too similar to tell apart under simulation.";
+"Recommended safe palettes" = "Recommended safe palettes";
+"If there were conflicts above, switch to a verified palette that stays distinguishable across every vision type." = "If there were conflicts above, switch to a verified palette that stays distinguishable across every vision type.";
+"No palette saved yet, so the Okabe Ito demo palette is shown. Save colors in Generator to audit your own palette." = "No palette saved yet, so the Okabe Ito demo palette is shown. Save colours in Generator to audit your own palette.";
+"Color" = "Colour";
+"All color pairs stay distinguishable across every vision type (ΔE ≥ 12)" = "All colour pairs stay distinguishable across every vision type (ΔE ≥ 12)";
+"ΔE %@ under %@" = "ΔE %@ under %@";
+"Do not rely on color alone. Pair it with icons, patterns, or labels, or switch to a safe palette below." = "Do not rely on colour alone. Pair it with icons, patterns, or labels, or switch to a safe palette below.";
+"Add to palette" = "Add to palette";
+"Derive each color into four variants and save to the palette" = "Derive each colour into four variants and save to the palette";
+
+/* Contrast audit */
+"Paste the colors your app uses (separated by line breaks or commas)" = "Paste the colours your app uses (separated by line breaks or commas)";
+"Audit" = "Audit";
+"Screens each color against light (vs white) and dark (vs black) backgrounds using WCAG thresholds." = "Screens each colour against light (vs white) and dark (vs black) backgrounds using WCAG thresholds.";
+"Preview: %lld colors" = "Preview: %lld colours";
+"Preview: %lld colors, %lld unrecognized" = "Preview: %lld colours, %lld unrecognized";
+"%lld of %lld colors need a high-contrast variant" = "%lld of %lld colours need a high-contrast variant";
+"Use as is" = "Use as is";
+"Needs high contrast" = "Needs high contrast";
+"Decorative only" = "Decorative only";
+"Meets 4.5:1 for text" = "Meets 4.5:1 for text";
+"Passes 3:1 for UI; text or High Contrast needs a variant" = "Passes 3:1 for UI; text or High Contrast needs a variant";
+"Below 3:1; do not use for text, icons, or status" = "Below 3:1; do not use for text, icons, or status";
+"Derive four variants" = "Derive four variants";
+"Derive four variants including high contrast and save to the palette" = "Derive four variants including high contrast and save to the palette";
+
+/* Dynamic Type */
+"Scaling preview" = "Scaling preview";
+"Style" = "Style";
+"Custom font PostScript name" = "Custom font PostScript name";
+"Category" = "Category";
+"The quick brown fox jumps over the lazy dog" = "The quick brown fox jumps over the lazy dog";
+"Code" = "Code";
+"Text style sizes (pt)" = "Text style sizes (pt)";
+"Large is the default. In accessibility sizes (AX1 to AX5), Body grows to %@pt, over three times the default, so avoid fixed heights, fixed padding, and lineLimit(1)." = "Large is the default. In accessibility sizes (AX1 to AX5), Body grows to %@pt, over three times the default, so avoid fixed heights, fixed padding and lineLimit(1).";
+
+/* System colors */
+"Tint colors" = "Tint colours";
+"Gray colors" = "Grey colours";
+"Reference values from Apple's Human Interface Guidelines. Actual values may change between OS releases, so always use the UIColor or Color API in shipping code rather than hard-coding." = "Reference values from Apple's Human Interface Guidelines. Actual values may change between OS releases, so in shipping code always use the UIColor or Color API rather than hard-coding.";
+"Click to copy %@" = "Click to copy %@";
+
+/* Screen color picker */
+"Pick color from screen" = "Pick colour from screen";
+"Pick a color from anywhere on screen" = "Pick a colour from anywhere on screen";
+"Pick a color from anywhere on screen and make it the working color" = "Pick a colour from anywhere on screen and make it the working colour";
+"Working color" = "Working colour";
+"Change the working color to see how it looks under each type of color vision." = "Change the working colour to see how it looks under each type of colour vision.";
+
+/* Palette */
+"Export .xcassets" = "Export .xcassets";
+"Export every saved color as one asset catalog" = "Export every saved colour as one asset catalog";
+"No saved colors" = "No saved colours";
+"Generate a color and save it here, then export your whole brand palette as one .xcassets catalog." = "Generate a colour and save it here, then export your whole brand palette as one .xcassets catalog.";
+"Each color is saved as four variants" = "Each colour is saved as four variants";
+"Export %@.colorset" = "Export %@.colorset";
+"Delete" = "Delete";
+
+/* VoiceOver labels */
+"Delete %@" = "Delete %@";
+"Copy %@" = "Copy %@";
+"Hex value" = "Hex value";
+"Preset %@" = "Preset %@";
+
+/* Settings */
+"Support" = "Support";
+"Contact" = "Contact";
+"Help" = "Help";
+"Email the developer" = "Email the developer";
+"Message on Instagram (@lee25_ios)" = "Message on Instagram (@lee25_ios)";
+"Show the welcome guide again" = "Show the welcome guide again";
+"Opens the guide in the main window" = "Opens the guide in the main window";
+
+/* Help menu */
+"Welcome to TetraTint" = "Welcome to TetraTint";
+"TetraTint Support Page" = "TetraTint Support Page";
+"Email the Developer…" = "Email the Developer…";
+
+/* Onboarding */
+"Accessibility work Apple doesn't do for your custom colors and fonts." = "Accessibility work Apple doesn't do for your custom colours and fonts.";
+"Start with one color" = "Start with one colour";
+"Type a hex value, use the color well, or pick any pixel on screen with the eyedropper. Every screen works on this same color." = "Type a hex value, use the colour well, or pick any pixel on screen with the eyedropper. Every screen works on this same colour.";
+"Look at it through three lenses" = "Look at it through three lenses";
+"Generate light, dark, and high-contrast variants, check WCAG contrast, and see how it looks with color vision deficiency." = "Generate light, dark, and high-contrast variants, check WCAG contrast, and see how it looks with colour vision deficiency.";
+"Save and export" = "Save and export";
+"Save colors to your palette, then export a .colorset, SwiftUI or UIKit code, or one .xcassets catalog for Xcode." = "Save colours to your palette, then export a .colorset, SwiftUI or UIKit code, or one .xcassets catalog for Xcode.";
+"Custom fonts too" = "Custom fonts too";
+"Dynamic Type shows every text style at every size and writes the scaling code for your custom font." = "Dynamic Type shows every text style at every size and writes the scaling code for your custom font.";
+"You can open this guide again from the Help menu." = "You can open this guide again from the Help menu.";
+"Get Started" = "Get Started";
+
+/* Tips */
+"Pick any color on screen" = "Pick any colour on screen";
+"Click the eyedropper, then click a pixel in any app, website, or design file. It becomes the working color everywhere." = "Click the eyedropper, then click a pixel in any app, website, or design file. It becomes the working colour everywhere.";
+"See the whole app as others do" = "See the whole app as others do";
+"Turn on a color vision preview to view every screen as someone with protanopia, deuteranopia, or tritanopia sees it." = "Turn on a colour vision preview to view every screen as someone with protanopia, deuteranopia, or tritanopia sees it.";
+
+/* Shortcuts (App Intents) */
+"Pick Color from Screen" = "Pick Colour from Screen";
+"Opens TetraTint and starts the eyedropper so you can pick any color on screen." = "Opens TetraTint and starts the eyedropper so you can pick any colour on screen.";
+"Open in TetraTint" = "Open in TetraTint";
+"Opens a TetraTint screen: Color, Dynamic Type, System colors, or Palette." = "Opens a TetraTint screen: Colour, Dynamic Type, System colours, or Palette.";
+"Screen" = "Screen";
+"Pick Color" = "Pick Colour";
+"Open Screen" = "Open Screen";
+
+/* Roadmap (Settings ▸ Coming Features) — source: TetraTintRoadmap.swift */
+"Close" = "Close";
+"Better VoiceOver support" = "Better VoiceOver support";
+"VoiceOver reads every color, button, and value in a sensible order." = "VoiceOver reads every colour, button, and value in a sensible order.";
+"Easier-to-see interface" = "Easier-to-see interface";
+"Labels and controls stay crisp with Increase Contrast turned on." = "Labels and controls stay crisp with Increase Contrast turned on.";
+"Reduced motion" = "Reduced motion";
+"With Reduce Motion on, effects like colors flying into your palette get calmer." = "With Reduce Motion on, effects like colours flying into your palette get calmer.";
+"More languages" = "More languages";
+"Use TetraTint in more languages, not just English and Korean." = "Use TetraTint in more languages, not just English and Korean.";
+"What’s new" = "What’s new";
+"After an update, see what’s new the first time you open the app." = "After an update, see what’s new the first time you open the app.";
+"Replies to your feedback" = "Replies to your feedback";
+"Read our replies to your feedback right in the app." = "Read our replies to your feedback right in the app.";
+"Desktop widgets" = "Desktop widgets";
+"See your palette right on the desktop without opening the app." = "See your palette right on the desktop without opening the app.";
+"Palettes on all your Macs" = "Palettes on all your Macs";
+"Pick up the same palette on your other Macs with iCloud." = "Pick up the same palette on your other Macs with iCloud.";
+"Back up and restore palettes" = "Back up and restore palettes";
+"Save your palette to a file and load it back anytime." = "Save your palette to a file and load it back anytime.";
+"Clear the whole palette" = "Clear the whole palette";
+"Remove every saved color at once when you want a fresh start." = "Remove every saved colour at once when you want a fresh start.";

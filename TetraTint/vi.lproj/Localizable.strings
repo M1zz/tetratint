@@ -1,0 +1,228 @@
+/* Color vision preview */
+"Color vision preview" = "Xem trước thị giác màu";
+"Preview the whole app as someone with color vision deficiency sees it" = "Xem toàn bộ ứng dụng như người bị khiếm khuyết thị giác màu";
+"simulated colors, not the real ones" = "màu mô phỏng, không phải màu thật";
+"Exit" = "Tắt";
+"Normal" = "Bình thường";
+"Protanopia" = "Mù màu đỏ";
+"Deuteranopia" = "Mù màu lục";
+"Tritanopia" = "Mù màu lam";
+"Grayscale" = "Thang xám";
+
+/* Color names (spoken for accessibility) */
+"Black" = "Đen";
+"Dark gray" = "Xám đậm";
+"Gray" = "Xám";
+"Light gray" = "Xám nhạt";
+"White" = "Trắng";
+"Red" = "Đỏ";
+"Orange" = "Cam";
+"Yellow" = "Vàng";
+"Lime" = "Xanh chanh";
+"Green" = "Xanh lá";
+"Teal" = "Xanh mòng két";
+"Sky blue" = "Xanh da trời";
+"Blue" = "Xanh dương";
+"Indigo" = "Chàm";
+"Purple" = "Tím";
+"Magenta" = "Đỏ tươi";
+"Pink" = "Hồng";
+"Dark" = "Đậm";
+"Light" = "Sáng";
+"Pale" = "Nhạt";
+
+/* Navigation & view titles */
+"Color" = "Màu";
+"Variants" = "Biến thể";
+"Contrast" = "Độ tương phản";
+"Color vision" = "Thị giác màu";
+"Generate variants" = "Tạo biến thể";
+"Check contrast" = "Kiểm tra tương phản";
+"Simulate color vision" = "Mô phỏng thị giác màu";
+"Generate and export light, dark, and high-contrast variants" = "Tạo và xuất các biến thể sáng, tối và tương phản cao";
+"Check the color against WCAG contrast thresholds" = "Kiểm tra màu theo ngưỡng tương phản WCAG";
+"Simulate how the color looks with color vision deficiency" = "Mô phỏng màu này trông thế nào với người khiếm khuyết thị giác màu";
+"Dynamic Type" = "Dynamic Type";
+"System colors" = "Màu hệ thống";
+"Palette" = "Bảng màu";
+
+/* Appearance variants */
+"Light (Any)" = "Sáng (mặc định)";
+"Light High Contrast" = "Sáng, tương phản cao";
+"Dark" = "Tối";
+"Dark High Contrast" = "Tối, tương phản cao";
+"Light" = "Sáng";
+"Light HC" = "Sáng, TP cao";
+"Dark HC" = "Tối, TP cao";
+"Light mode default (Any Appearance)" = "Mặc định của chế độ sáng (Any Appearance)";
+"Light with Increase Contrast on" = "Chế độ sáng khi bật Tăng độ tương phản";
+"Dark mode default" = "Mặc định của chế độ tối";
+"Dark with Increase Contrast on" = "Chế độ tối khi bật Tăng độ tương phản";
+
+/* Color vision deficiency subtitles */
+"Normal vision" = "Thị giác bình thường";
+"Protan, about 1% of men" = "Mù màu đỏ, khoảng 1% nam giới";
+"Deutan, about 1% of men" = "Mù màu lục, khoảng 1% nam giới";
+"Tritan, rare" = "Mù màu lam, hiếm gặp";
+"Monochromacy" = "Mù màu hoàn toàn (đơn sắc)";
+
+/* Safe palettes */
+"Scientific visualization standard, 8 colors" = "Chuẩn trực quan hóa khoa học, 8 màu";
+"IBM accessibility palette, 5 colors" = "Bảng màu trợ năng của IBM, 5 màu";
+"Qualitative data visualization, 7 colors" = "Trực quan hóa dữ liệu định tính, 7 màu";
+
+/* Generator */
+"Light mode base color" = "Màu gốc của chế độ sáng";
+"Color name" = "Tên màu";
+"Regenerate all" = "Tạo lại tất cả";
+"Discard manual edits and re-derive from the base color" = "Bỏ các chỉnh sửa thủ công và tạo lại từ màu gốc";
+"Save to palette" = "Lưu vào bảng màu";
+"Presets" = "Mẫu có sẵn";
+"Export" = "Xuất";
+"Copied" = "Đã sao chép";
+"Copy" = "Sao chép";
+"Save .colorset" = "Lưu .colorset";
+
+/* Variant card */
+"%@:1 vs background" = "%@:1 so với nền";
+"AA text" = "Văn bản AA";
+"Low" = "Thấp";
+"Button" = "Nút";
+"Tint label" = "Nhãn màu Tint";
+"Progress" = "Tiến trình";
+"Copy hex" = "Sao chép hex";
+"Fine-tune this variant manually" = "Tinh chỉnh thủ công biến thể này";
+
+/* Color vision screen */
+"Color vision simulation" = "Mô phỏng thị giác màu";
+"This shows how your colors look to people with color vision deficiency. It is the current state, not a suggestion to change them." = "Cho bạn thấy màu của mình trông thế nào với người khiếm khuyết thị giác màu. Đây chỉ là hiện trạng, không phải gợi ý nên đổi màu.";
+"Conflict warnings" = "Cảnh báo màu khó phân biệt";
+"Finds color pairs that become too similar to tell apart under simulation." = "Tìm các cặp màu trở nên quá giống nhau, khó phân biệt khi mô phỏng.";
+"Recommended safe palettes" = "Bảng màu an toàn cho người mù màu";
+"If there were conflicts above, switch to a verified palette that stays distinguishable across every vision type." = "Nếu ở trên có màu khó phân biệt, hãy chuyển sang bảng màu đã được kiểm chứng là dễ phân biệt với mọi kiểu thị giác.";
+"No palette saved yet, so the Okabe Ito demo palette is shown. Save colors in Generator to audit your own palette." = "Chưa có bảng màu nào được lưu nên đang hiển thị bảng màu mẫu Okabe Ito. Hãy lưu màu trong Generator để kiểm tra bảng màu của bạn.";
+"Color" = "Màu";
+"All color pairs stay distinguishable across every vision type (ΔE ≥ 12)" = "Mọi cặp màu đều phân biệt được với mọi kiểu thị giác (ΔE ≥ 12)";
+"ΔE %@ under %@" = "ΔE %1$@ với %2$@";
+"Do not rely on color alone. Pair it with icons, patterns, or labels, or switch to a safe palette below." = "Đừng chỉ dựa vào màu sắc. Hãy kết hợp biểu tượng, họa tiết hoặc nhãn, hoặc chuyển sang bảng màu an toàn bên dưới.";
+"Add to palette" = "Thêm vào bảng màu";
+"Derive each color into four variants and save to the palette" = "Tạo bốn biến thể cho mỗi màu rồi lưu vào bảng màu";
+
+/* Contrast audit */
+"Paste the colors your app uses (separated by line breaks or commas)" = "Dán các màu ứng dụng của bạn đang dùng (ngăn cách bằng xuống dòng hoặc dấu phẩy)";
+"Audit" = "Kiểm tra";
+"Screens each color against light (vs white) and dark (vs black) backgrounds using WCAG thresholds." = "Sàng lọc từng màu trên nền sáng (so với trắng) và nền tối (so với đen) theo ngưỡng WCAG.";
+"Preview: %lld colors" = "Xem trước: %lld màu";
+"Preview: %lld colors, %lld unrecognized" = "Xem trước: %1$lld màu, %2$lld không nhận dạng được";
+"%lld of %lld colors need a high-contrast variant" = "%1$lld trên %2$lld màu cần biến thể tương phản cao";
+"Use as is" = "Dùng được ngay";
+"Needs high contrast" = "Cần biến thể tương phản cao";
+"Decorative only" = "Chỉ dùng để trang trí";
+"Meets 4.5:1 for text" = "Đạt 4.5:1 cho văn bản";
+"Passes 3:1 for UI; text or High Contrast needs a variant" = "Đạt 3:1 cho thành phần UI; văn bản hoặc chế độ tương phản cao cần thêm biến thể";
+"Below 3:1; do not use for text, icons, or status" = "Dưới 3:1, không dùng cho văn bản, biểu tượng hay trạng thái";
+"Derive four variants" = "Tạo bốn biến thể";
+"Derive four variants including high contrast and save to the palette" = "Tạo bốn biến thể gồm cả tương phản cao rồi lưu vào bảng màu";
+
+/* Dynamic Type */
+"Scaling preview" = "Xem trước co giãn";
+"Style" = "Kiểu";
+"Custom font PostScript name" = "Tên PostScript của phông chữ tùy chỉnh";
+"Category" = "Nhóm cỡ chữ";
+"The quick brown fox jumps over the lazy dog" = "Muốn ăn phải lăn vào bếp";
+"Code" = "Mã";
+"Text style sizes (pt)" = "Cỡ chữ theo kiểu văn bản (pt)";
+"Large is the default. In accessibility sizes (AX1 to AX5), Body grows to %@pt, over three times the default, so avoid fixed heights, fixed padding, and lineLimit(1)." = "Mặc định là Large. Ở các cỡ trợ năng (AX1 đến AX5), Body tăng lên tới %@pt, gấp hơn ba lần mặc định, nên hãy tránh chiều cao cố định, khoảng đệm cố định và lineLimit(1).";
+
+/* System colors */
+"Tint colors" = "Màu Tint";
+"Gray colors" = "Màu xám";
+"Reference values from Apple's Human Interface Guidelines. Actual values may change between OS releases, so always use the UIColor or Color API in shipping code rather than hard-coding." = "Giá trị tham khảo từ Human Interface Guidelines của Apple. Giá trị thực tế có thể thay đổi giữa các bản hệ điều hành, vì vậy trong mã phát hành hãy dùng UIColor hoặc Color API thay vì ghi cứng giá trị.";
+"Click to copy %@" = "Nhấp để sao chép %@";
+
+/* Screen color picker */
+"Pick color from screen" = "Lấy màu từ màn hình";
+"Pick a color from anywhere on screen" = "Lấy màu từ bất kỳ đâu trên màn hình";
+"Pick a color from anywhere on screen and make it the working color" = "Lấy màu từ bất kỳ đâu trên màn hình và đặt làm màu đang làm việc";
+"Working color" = "Màu đang làm việc";
+"Change the working color to see how it looks under each type of color vision." = "Đổi màu đang làm việc để xem màu trông thế nào với từng kiểu thị giác.";
+
+/* Palette */
+"Export .xcassets" = "Xuất .xcassets";
+"Export every saved color as one asset catalog" = "Xuất mọi màu đã lưu thành một asset catalog";
+"No saved colors" = "Chưa có màu nào được lưu";
+"Generate a color and save it here, then export your whole brand palette as one .xcassets catalog." = "Tạo màu rồi lưu vào đây, sau đó xuất toàn bộ bảng màu thương hiệu thành một catalog .xcassets.";
+"Each color is saved as four variants" = "Mỗi màu được lưu thành bốn biến thể";
+"Export %@.colorset" = "Xuất %@.colorset";
+"Delete" = "Xóa";
+
+/* VoiceOver labels */
+"Delete %@" = "Xóa %@";
+"Copy %@" = "Sao chép %@";
+"Hex value" = "Giá trị hex";
+"Preset %@" = "Mẫu %@";
+
+/* Settings */
+"Support" = "Hỗ trợ";
+"Contact" = "Liên hệ";
+"Help" = "Trợ giúp";
+"Email the developer" = "Gửi email cho nhà phát triển";
+"Message on Instagram (@lee25_ios)" = "Nhắn tin qua Instagram (@lee25_ios)";
+"Show the welcome guide again" = "Xem lại hướng dẫn làm quen";
+"Opens the guide in the main window" = "Mở hướng dẫn trong cửa sổ chính";
+
+/* Help menu */
+"Welcome to TetraTint" = "Chào mừng đến với TetraTint";
+"TetraTint Support Page" = "Trang hỗ trợ TetraTint";
+"Email the Developer…" = "Gửi email cho nhà phát triển…";
+
+/* Onboarding */
+"Accessibility work Apple doesn't do for your custom colors and fonts." = "Phần việc trợ năng mà Apple không làm sẵn cho màu và phông chữ tùy chỉnh của bạn.";
+"Start with one color" = "Bắt đầu từ một màu";
+"Type a hex value, use the color well, or pick any pixel on screen with the eyedropper. Every screen works on this same color." = "Nhập giá trị hex, dùng ô chọn màu, hoặc dùng ống nhỏ giọt để lấy bất kỳ điểm ảnh nào trên màn hình. Mọi màn hình đều làm việc với cùng màu này.";
+"Look at it through three lenses" = "Nhìn màu qua ba góc độ";
+"Generate light, dark, and high-contrast variants, check WCAG contrast, and see how it looks with color vision deficiency." = "Tạo biến thể sáng, tối và tương phản cao, kiểm tra độ tương phản WCAG, và xem màu trông thế nào với người khiếm khuyết thị giác màu.";
+"Save and export" = "Lưu và xuất";
+"Save colors to your palette, then export a .colorset, SwiftUI or UIKit code, or one .xcassets catalog for Xcode." = "Lưu màu vào bảng màu, rồi xuất thành .colorset, mã SwiftUI hoặc UIKit, hay một catalog .xcassets cho Xcode.";
+"Custom fonts too" = "Cả phông chữ tùy chỉnh";
+"Dynamic Type shows every text style at every size and writes the scaling code for your custom font." = "Dynamic Type hiển thị mọi kiểu văn bản ở mọi cỡ chữ và tạo mã co giãn cho phông chữ tùy chỉnh của bạn.";
+"You can open this guide again from the Help menu." = "Bạn có thể mở lại hướng dẫn này từ menu Trợ giúp.";
+"Get Started" = "Bắt đầu";
+
+/* Tips */
+"Pick any color on screen" = "Lấy bất kỳ màu nào trên màn hình";
+"Click the eyedropper, then click a pixel in any app, website, or design file. It becomes the working color everywhere." = "Nhấp vào ống nhỏ giọt, rồi nhấp vào một điểm ảnh trong bất kỳ ứng dụng, trang web hay tệp thiết kế nào. Màu đó sẽ thành màu đang làm việc ở mọi màn hình.";
+"See the whole app as others do" = "Xem cả ứng dụng như người khác thấy";
+"Turn on a color vision preview to view every screen as someone with protanopia, deuteranopia, or tritanopia sees it." = "Bật xem trước thị giác màu để xem mọi màn hình như người mù màu đỏ, mù màu lục hoặc mù màu lam nhìn thấy.";
+
+/* Shortcuts (App Intents) */
+"Pick Color from Screen" = "Lấy màu từ màn hình";
+"Opens TetraTint and starts the eyedropper so you can pick any color on screen." = "Mở TetraTint và bật ống nhỏ giọt để bạn lấy bất kỳ màu nào trên màn hình.";
+"Open in TetraTint" = "Mở trong TetraTint";
+"Opens a TetraTint screen: Color, Dynamic Type, System colors, or Palette." = "Mở một màn hình của TetraTint: Màu, Dynamic Type, Màu hệ thống hoặc Bảng màu.";
+"Screen" = "Màn hình";
+"Pick Color" = "Lấy màu";
+"Open Screen" = "Mở màn hình";
+
+/* Roadmap (Settings ▸ Coming Features) — source: TetraTintRoadmap.swift */
+"Close" = "Đóng";
+"Better VoiceOver support" = "VoiceOver dùng tiện hơn";
+"VoiceOver reads every color, button, and value in a sensible order." = "VoiceOver đọc đủ mọi màu, nút và giá trị theo thứ tự hợp lý.";
+"Easier-to-see interface" = "Giao diện dễ nhìn hơn";
+"Labels and controls stay crisp with Increase Contrast turned on." = "Nhãn và nút vẫn rõ nét khi bật Tăng độ tương phản.";
+"Reduced motion" = "Giảm chuyển động";
+"With Reduce Motion on, effects like colors flying into your palette get calmer." = "Khi bật Giảm chuyển động, các hiệu ứng như màu bay vào bảng màu sẽ nhẹ nhàng hơn.";
+"More languages" = "Thêm ngôn ngữ";
+"Use TetraTint in more languages, not just English and Korean." = "Dùng TetraTint bằng nhiều ngôn ngữ hơn, không chỉ tiếng Anh và tiếng Hàn.";
+"What’s new" = "Có gì mới";
+"After an update, see what’s new the first time you open the app." = "Sau khi cập nhật, bạn sẽ thấy điểm mới ngay lần đầu mở ứng dụng.";
+"Replies to your feedback" = "Phản hồi cho góp ý của bạn";
+"Read our replies to your feedback right in the app." = "Đọc phản hồi cho góp ý của bạn ngay trong ứng dụng.";
+"Desktop widgets" = "Tiện ích trên màn hình nền";
+"See your palette right on the desktop without opening the app." = "Xem bảng màu ngay trên màn hình nền mà không cần mở ứng dụng.";
+"Palettes on all your Macs" = "Cùng một bảng màu trên mọi máy Mac";
+"Pick up the same palette on your other Macs with iCloud." = "Tiếp tục dùng cùng bảng màu trên các máy Mac khác qua iCloud.";
+"Back up and restore palettes" = "Sao lưu và khôi phục bảng màu";
+"Save your palette to a file and load it back anytime." = "Lưu bảng màu thành tệp và nạp lại bất cứ lúc nào.";
+"Clear the whole palette" = "Xóa sạch bảng màu";
+"Remove every saved color at once when you want a fresh start." = "Xóa mọi màu đã lưu cùng lúc khi bạn muốn làm lại từ đầu.";

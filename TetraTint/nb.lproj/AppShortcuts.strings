@@ -1,0 +1,5 @@
+/* App Shortcuts phrases — Siri · Spotlight · Shortcuts app */
+"Pick a color with ${applicationName}" = "Velg en farge med ${applicationName}";
+"Pick a color from screen in ${applicationName}" = "Velg en farge fra skjermen i ${applicationName}";
+"Open ${section} in ${applicationName}" = "Åpne ${section} i ${applicationName}";
+"Show ${applicationName} ${section}" = "Vis ${section} i ${applicationName}";

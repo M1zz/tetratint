@@ -1,0 +1,228 @@
+/* Color vision preview */
+"Color vision preview" = "Forhåndsvisning av fargesyn";
+"Preview the whole app as someone with color vision deficiency sees it" = "Se hele appen slik en person med fargesynsvikt ser den";
+"simulated colors, not the real ones" = "simulerte farger, ikke de virkelige";
+"Exit" = "Slå av";
+"Normal" = "Normal";
+"Protanopia" = "Protanopi";
+"Deuteranopia" = "Deuteranopi";
+"Tritanopia" = "Tritanopi";
+"Grayscale" = "Gråtoner";
+
+/* Color names (spoken for accessibility) */
+"Black" = "Svart";
+"Dark gray" = "Mørk grå";
+"Gray" = "Grå";
+"Light gray" = "Lys grå";
+"White" = "Hvit";
+"Red" = "Rød";
+"Orange" = "Oransje";
+"Yellow" = "Gul";
+"Lime" = "Limegrønn";
+"Green" = "Grønn";
+"Teal" = "Blågrønn";
+"Sky blue" = "Himmelblå";
+"Blue" = "Blå";
+"Indigo" = "Indigo";
+"Purple" = "Lilla";
+"Magenta" = "Magenta";
+"Pink" = "Rosa";
+"Dark" = "Mørk";
+"Light" = "Lys";
+"Pale" = "Blek";
+
+/* Navigation & view titles */
+"Color" = "Farge";
+"Variants" = "Varianter";
+"Contrast" = "Kontrast";
+"Color vision" = "Fargesyn";
+"Generate variants" = "Lag varianter";
+"Check contrast" = "Sjekk kontrast";
+"Simulate color vision" = "Simuler fargesyn";
+"Generate and export light, dark, and high-contrast variants" = "Lag og eksporter lyse, mørke og høykontrastvarianter";
+"Check the color against WCAG contrast thresholds" = "Sjekk fargen mot WCAGs kontrastgrenser";
+"Simulate how the color looks with color vision deficiency" = "Simuler hvordan fargen ser ut ved fargesynsvikt";
+"Dynamic Type" = "Dynamic Type";
+"System colors" = "Systemfarger";
+"Palette" = "Palett";
+
+/* Appearance variants */
+"Light (Any)" = "Lys (Any)";
+"Light High Contrast" = "Lys høykontrast";
+"Dark" = "Mørk";
+"Dark High Contrast" = "Mørk høykontrast";
+"Light" = "Lys";
+"Light HC" = "Lys HK";
+"Dark HC" = "Mørk HK";
+"Light mode default (Any Appearance)" = "Standard for lys modus (Any Appearance)";
+"Light with Increase Contrast on" = "Lys med Øk kontrast slått på";
+"Dark mode default" = "Standard for mørk modus";
+"Dark with Increase Contrast on" = "Mørk med Øk kontrast slått på";
+
+/* Color vision deficiency subtitles */
+"Normal vision" = "Normalt fargesyn";
+"Protan, about 1% of men" = "Protan, omtrent 1 % av menn";
+"Deutan, about 1% of men" = "Deutan, omtrent 1 % av menn";
+"Tritan, rare" = "Tritan, sjelden";
+"Monochromacy" = "Monokromasi";
+
+/* Safe palettes */
+"Scientific visualization standard, 8 colors" = "Standard for vitenskapelig visualisering, 8 farger";
+"IBM accessibility palette, 5 colors" = "IBMs tilgjengelighetspalett, 5 farger";
+"Qualitative data visualization, 7 colors" = "Visualisering av kvalitative data, 7 farger";
+
+/* Generator */
+"Light mode base color" = "Grunnfarge for lys modus";
+"Color name" = "Fargenavn";
+"Regenerate all" = "Lag alle på nytt";
+"Discard manual edits and re-derive from the base color" = "Forkast manuelle endringer og utled på nytt fra grunnfargen";
+"Save to palette" = "Lagre i paletten";
+"Presets" = "Forhåndsvalg";
+"Export" = "Eksporter";
+"Copied" = "Kopiert";
+"Copy" = "Kopier";
+"Save .colorset" = "Lagre .colorset";
+
+/* Variant card */
+"%@:1 vs background" = "%@:1 mot bakgrunnen";
+"AA text" = "AA-tekst";
+"Low" = "Lav";
+"Button" = "Knapp";
+"Tint label" = "Tint-etikett";
+"Progress" = "Fremdrift";
+"Copy hex" = "Kopier hex";
+"Fine-tune this variant manually" = "Finjuster denne varianten manuelt";
+
+/* Color vision screen */
+"Color vision simulation" = "Simulering av fargesyn";
+"This shows how your colors look to people with color vision deficiency. It is the current state, not a suggestion to change them." = "Dette viser hvordan fargene dine ser ut for personer med fargesynsvikt. Det er dagens status, ikke et forslag om å endre dem.";
+"Conflict warnings" = "Advarsler om like farger";
+"Finds color pairs that become too similar to tell apart under simulation." = "Finner fargepar som blir så like at de er vanskelige å skille i simuleringen.";
+"Recommended safe palettes" = "Fargeblindsikre paletter";
+"If there were conflicts above, switch to a verified palette that stays distinguishable across every vision type." = "Hvis det var konflikter ovenfor, bytt til en verifisert palett som er lett å skille på tvers av alle fargesynstyper.";
+"No palette saved yet, so the Okabe Ito demo palette is shown. Save colors in Generator to audit your own palette." = "Ingen palett er lagret ennå, så demopaletten Okabe Ito vises. Lagre farger i Generator for å sjekke din egen palett.";
+"Color" = "Farge";
+"All color pairs stay distinguishable across every vision type (ΔE ≥ 12)" = "Alle fargepar er lette å skille på tvers av alle fargesynstyper (ΔE ≥ 12)";
+"ΔE %@ under %@" = "ΔE %1$@ ved %2$@";
+"Do not rely on color alone. Pair it with icons, patterns, or labels, or switch to a safe palette below." = "Ikke bruk farge alene. Kombiner med ikoner, mønstre eller etiketter, eller bytt til en sikker palett nedenfor.";
+"Add to palette" = "Legg til i paletten";
+"Derive each color into four variants and save to the palette" = "Lag fire varianter av hver farge og lagre dem i paletten";
+
+/* Contrast audit */
+"Paste the colors your app uses (separated by line breaks or commas)" = "Lim inn fargene appen din bruker (atskilt med linjeskift eller komma)";
+"Audit" = "Sjekk";
+"Screens each color against light (vs white) and dark (vs black) backgrounds using WCAG thresholds." = "Tester hver farge mot lys (mot hvit) og mørk (mot svart) bakgrunn med WCAGs grenseverdier.";
+"Preview: %lld colors" = "Forhåndsvisning: %lld farger";
+"Preview: %lld colors, %lld unrecognized" = "Forhåndsvisning: %1$lld farger, %2$lld ikke gjenkjent";
+"%lld of %lld colors need a high-contrast variant" = "%1$lld av %2$lld farger trenger en høykontrastvariant";
+"Use as is" = "Kan brukes som den er";
+"Needs high contrast" = "Trenger høykontrast";
+"Decorative only" = "Bare til dekorasjon";
+"Meets 4.5:1 for text" = "Oppfyller 4,5:1 for tekst";
+"Passes 3:1 for UI; text or High Contrast needs a variant" = "Består 3:1 for brukergrensesnitt; tekst eller høykontrast trenger en variant";
+"Below 3:1; do not use for text, icons, or status" = "Under 3:1; ikke bruk til tekst, ikoner eller status";
+"Derive four variants" = "Lag fire varianter";
+"Derive four variants including high contrast and save to the palette" = "Lag fire varianter inkludert høykontrast og lagre dem i paletten";
+
+/* Dynamic Type */
+"Scaling preview" = "Forhåndsvisning av skalering";
+"Style" = "Stil";
+"Custom font PostScript name" = "PostScript-navn på egendefinert skrift";
+"Category" = "Kategori";
+"The quick brown fox jumps over the lazy dog" = "Vår sære Zulu fra badeøya spilte jo whist og quickstep";
+"Code" = "Kode";
+"Text style sizes (pt)" = "Størrelser for tekststiler (pt)";
+"Large is the default. In accessibility sizes (AX1 to AX5), Body grows to %@pt, over three times the default, so avoid fixed heights, fixed padding, and lineLimit(1)." = "Large er standard. I tilgjengelighetsstørrelsene (AX1 til AX5) vokser Body til %@ pt, mer enn tre ganger standardstørrelsen, så unngå fast høyde, fast padding og lineLimit(1).";
+
+/* System colors */
+"Tint colors" = "Tint-farger";
+"Gray colors" = "Gråfarger";
+"Reference values from Apple's Human Interface Guidelines. Actual values may change between OS releases, so always use the UIColor or Color API in shipping code rather than hard-coding." = "Referanseverdier fra Apples Human Interface Guidelines. De faktiske verdiene kan endre seg mellom OS-versjoner, så bruk alltid UIColor- eller Color-API-et i ferdig kode i stedet for å hardkode.";
+"Click to copy %@" = "Klikk for å kopiere %@";
+
+/* Screen color picker */
+"Pick color from screen" = "Velg farge fra skjermen";
+"Pick a color from anywhere on screen" = "Velg en farge fra hvor som helst på skjermen";
+"Pick a color from anywhere on screen and make it the working color" = "Velg en farge fra hvor som helst på skjermen og bruk den som arbeidsfarge";
+"Working color" = "Arbeidsfarge";
+"Change the working color to see how it looks under each type of color vision." = "Endre arbeidsfargen for å se hvordan den ser ut for hver type fargesyn.";
+
+/* Palette */
+"Export .xcassets" = "Eksporter .xcassets";
+"Export every saved color as one asset catalog" = "Eksporter alle lagrede farger som én ressurskatalog";
+"No saved colors" = "Ingen lagrede farger";
+"Generate a color and save it here, then export your whole brand palette as one .xcassets catalog." = "Lag en farge i Generator og lagre den her, og eksporter så hele merkepaletten som én .xcassets-katalog.";
+"Each color is saved as four variants" = "Hver farge lagres i fire varianter";
+"Export %@.colorset" = "Eksporter %@.colorset";
+"Delete" = "Slett";
+
+/* VoiceOver labels */
+"Delete %@" = "Slett %@";
+"Copy %@" = "Kopier %@";
+"Hex value" = "Hex-verdi";
+"Preset %@" = "Forhåndsvalg %@";
+
+/* Settings */
+"Support" = "Kundestøtte";
+"Contact" = "Kontakt";
+"Help" = "Hjelp";
+"Email the developer" = "Send e-post til utvikleren";
+"Message on Instagram (@lee25_ios)" = "Send melding på Instagram (@lee25_ios)";
+"Show the welcome guide again" = "Vis velkomstguiden igjen";
+"Opens the guide in the main window" = "Åpner guiden i hovedvinduet";
+
+/* Help menu */
+"Welcome to TetraTint" = "Velkommen til TetraTint";
+"TetraTint Support Page" = "Støtteside for TetraTint";
+"Email the Developer…" = "Send e-post til utvikleren …";
+
+/* Onboarding */
+"Accessibility work Apple doesn't do for your custom colors and fonts." = "Tilgjengelighetsarbeidet Apple ikke gjør for dine egne farger og skrifter.";
+"Start with one color" = "Start med én farge";
+"Type a hex value, use the color well, or pick any pixel on screen with the eyedropper. Every screen works on this same color." = "Skriv inn en hex-verdi, bruk fargevelgeren, eller velg en hvilken som helst piksel på skjermen med pipetten. Alle skjermbilder jobber med den samme fargen.";
+"Look at it through three lenses" = "Se på den på tre måter";
+"Generate light, dark, and high-contrast variants, check WCAG contrast, and see how it looks with color vision deficiency." = "Lag lyse, mørke og høykontrastvarianter, sjekk WCAG-kontrast og se hvordan fargen ser ut ved fargesynsvikt.";
+"Save and export" = "Lagre og eksporter";
+"Save colors to your palette, then export a .colorset, SwiftUI or UIKit code, or one .xcassets catalog for Xcode." = "Lagre fargene i paletten, og eksporter dem som .colorset, SwiftUI- eller UIKit-kode, eller én .xcassets-katalog for Xcode.";
+"Custom fonts too" = "Egne skrifter også";
+"Dynamic Type shows every text style at every size and writes the scaling code for your custom font." = "Dynamic Type viser hver tekststil i alle størrelser og skriver skaleringskoden for din egendefinerte skrift.";
+"You can open this guide again from the Help menu." = "Du kan åpne denne guiden igjen fra Hjelp-menyen.";
+"Get Started" = "Kom i gang";
+
+/* Tips */
+"Pick any color on screen" = "Velg hvilken som helst farge på skjermen";
+"Click the eyedropper, then click a pixel in any app, website, or design file. It becomes the working color everywhere." = "Klikk på pipetten, og klikk deretter på en piksel i en hvilken som helst app, nettside eller designfil. Den blir arbeidsfargen overalt.";
+"See the whole app as others do" = "Se hele appen slik andre ser den";
+"Turn on a color vision preview to view every screen as someone with protanopia, deuteranopia, or tritanopia sees it." = "Slå på forhåndsvisning av fargesyn for å se hvert skjermbilde slik en person med protanopi, deuteranopi eller tritanopi ser det.";
+
+/* Shortcuts (App Intents) */
+"Pick Color from Screen" = "Velg farge fra skjermen";
+"Opens TetraTint and starts the eyedropper so you can pick any color on screen." = "Åpner TetraTint og starter pipetten, så du kan velge en hvilken som helst farge på skjermen.";
+"Open in TetraTint" = "Åpne i TetraTint";
+"Opens a TetraTint screen: Color, Dynamic Type, System colors, or Palette." = "Åpner et skjermbilde i TetraTint: Farge, Dynamic Type, Systemfarger eller Palett.";
+"Screen" = "Skjermbilde";
+"Pick Color" = "Velg farge";
+"Open Screen" = "Åpne skjermbilde";
+
+/* Roadmap (Settings ▸ Coming Features) — source: TetraTintRoadmap.swift */
+"Close" = "Lukk";
+"Better VoiceOver support" = "Bedre VoiceOver-støtte";
+"VoiceOver reads every color, button, and value in a sensible order." = "VoiceOver leser opp hver farge, knapp og verdi i en logisk rekkefølge.";
+"Easier-to-see interface" = "Lettere å se";
+"Labels and controls stay crisp with Increase Contrast turned on." = "Etiketter og kontroller forblir skarpe når Øk kontrast er slått på.";
+"Reduced motion" = "Redusert bevegelse";
+"With Reduce Motion on, effects like colors flying into your palette get calmer." = "Når Reduser bevegelse er på, blir effekter som farger som flyr inn i paletten, roligere.";
+"More languages" = "Flere språk";
+"Use TetraTint in more languages, not just English and Korean." = "Bruk TetraTint på flere språk, ikke bare engelsk og koreansk.";
+"What’s new" = "Nyheter";
+"After an update, see what’s new the first time you open the app." = "Etter en oppdatering ser du hva som er nytt første gang du åpner appen.";
+"Replies to your feedback" = "Svar på tilbakemeldingene dine";
+"Read our replies to your feedback right in the app." = "Les svarene våre på tilbakemeldingene dine rett i appen.";
+"Desktop widgets" = "Skrivebordswidgeter";
+"See your palette right on the desktop without opening the app." = "Se paletten din rett på skrivebordet uten å åpne appen.";
+"Palettes on all your Macs" = "Paletter på alle Mac-ene dine";
+"Pick up the same palette on your other Macs with iCloud." = "Fortsett med den samme paletten på andre Mac-er via iCloud.";
+"Back up and restore palettes" = "Sikkerhetskopier og gjenopprett paletter";
+"Save your palette to a file and load it back anytime." = "Lagre paletten i en fil og last den inn igjen når som helst.";
+"Clear the whole palette" = "Tøm hele paletten";
+"Remove every saved color at once when you want a fresh start." = "Fjern alle lagrede farger på én gang når du vil begynne på nytt.";

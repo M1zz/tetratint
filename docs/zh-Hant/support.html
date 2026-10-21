@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TetraTint — 支援</title>
+<meta name="description" content="TetraTint 的運作方式、常見問題，以及聯絡我們的方法。">
+<link rel="canonical" href="https://m1zz.github.io/tetratint/zh-Hant/support.html">
+<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/tetratint/ko/support.html">
+<link rel="alternate" hreflang="en" href="https://m1zz.github.io/tetratint/en/support.html">
+<link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/tetratint/en-GB/support.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/tetratint/zh-Hans/support.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/tetratint/zh-Hant/support.html">
+<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/tetratint/ja/support.html">
+<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/tetratint/ru/support.html">
+<link rel="alternate" hreflang="es-MX" href="https://m1zz.github.io/tetratint/es-MX/support.html">
+<link rel="alternate" hreflang="de-DE" href="https://m1zz.github.io/tetratint/de-DE/support.html">
+<link rel="alternate" hreflang="fr-FR" href="https://m1zz.github.io/tetratint/fr-FR/support.html">
+<link rel="alternate" hreflang="it" href="https://m1zz.github.io/tetratint/it/support.html">
+<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/tetratint/pt-BR/support.html">
+<link rel="alternate" hreflang="th" href="https://m1zz.github.io/tetratint/th/support.html">
+<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/tetratint/vi/support.html">
+<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/tetratint/cs/support.html">
+<link rel="alternate" hreflang="da" href="https://m1zz.github.io/tetratint/da/support.html">
+<link rel="alternate" hreflang="el" href="https://m1zz.github.io/tetratint/el/support.html">
+<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/tetratint/fi/support.html">
+<link rel="alternate" hreflang="id" href="https://m1zz.github.io/tetratint/id/support.html">
+<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/tetratint/no/support.html">
+<link rel="alternate" hreflang="nl-NL" href="https://m1zz.github.io/tetratint/nl-NL/support.html">
+<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/tetratint/pl/support.html">
+<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/tetratint/sv/support.html">
+<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/tetratint/tr/support.html">
+<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/tetratint/support.html">
+<style>
+  :root {
+    --bg: #f5f5f7; --card: #ffffff; --text: #1d1d1f; --muted: #6e6e73;
+    --border: #e3e3e6; --accent: #0a84ff; --ok: #34c759;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#000; --card:#1c1c1e; --text:#f5f5f7; --muted:#98989d; --border:#2c2c2e; --accent:#0a84ff; --ok:#30d158; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", "Apple SD Gothic Neo", sans-serif;
+    line-height: 1.7; -webkit-font-smoothing: antialiased;
+  }
+  .logo {
+    width: 56px; height: 56px; border-radius: 14px; display: grid;
+    grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,.15); margin-bottom: 20px;
+  }
+  .logo i { display: block; }
+  .logo i:nth-child(1){ background:#0a84ff; }
+  .logo i:nth-child(2){ background:#0060df; }
+  .logo i:nth-child(3){ background:#5ac8fa; }
+  .logo i:nth-child(4){ background:#004299; }
+  nav.langs { display: flex; gap: 6px; flex-wrap: wrap; margin: 0 0 24px; }
+  nav.langs a {
+    border: 1px solid var(--border); color: var(--muted); font-size: 14px;
+    padding: 3px 12px; border-radius: 999px; text-decoration: none;
+  }
+  nav.langs a[aria-current="true"] { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer { color: var(--muted); font-size: 14px; text-align: center; margin-top: 40px; }
+
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+  h1 { font-size: 32px; letter-spacing: -.02em; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 4px; font-size: 17px; }
+  .updated { color: var(--muted); font-size: 14px; margin: 0 0 24px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 24px 26px; margin: 18px 0; }
+  h2 { font-size: 20px; margin: 4px 0 10px; letter-spacing: -.01em; }
+  h3 { font-size: 16px; margin: 18px 0 4px; }
+  p { margin: 8px 0; }
+  .muted { color: var(--muted); }
+  .lead { font-weight: 600; color: var(--ok); font-size: 18px; }
+  ul { margin: 8px 0; padding-left: 20px; }
+  li { margin: 6px 0; }
+  .btn { display: inline-block; background: var(--accent); color: #fff; font-weight: 600; padding: 12px 22px; border-radius: 12px; margin-top: 8px; }
+  .btn:hover { text-decoration: none; opacity: .92; }
+  .pill { display:inline-block; font-size:13px; color:var(--muted); border:1px solid var(--border); border-radius:999px; padding:2px 10px; margin:0 6px 6px 0; }
+  hr { border: none; border-top: 1px solid var(--border); margin: 28px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo"><i></i><i></i><i></i><i></i></div>
+  <nav class="langs" aria-label="語言">
+    <a href="../ko/support.html" hreflang="ko" lang="ko">한국어</a>
+    <a href="../en/support.html" hreflang="en" lang="en">English</a>
+    <a href="../en-GB/support.html" hreflang="en-GB" lang="en-GB">English (UK)</a>
+    <a href="../zh-Hans/support.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+    <a href="../zh-Hant/support.html" hreflang="zh-Hant" lang="zh-Hant" aria-current="true">繁體中文</a>
+    <a href="../ja/support.html" hreflang="ja" lang="ja">日本語</a>
+    <a href="../ru/support.html" hreflang="ru" lang="ru">Русский</a>
+    <a href="../es-MX/support.html" hreflang="es-MX" lang="es-MX">Español (México)</a>
+    <a href="../de-DE/support.html" hreflang="de-DE" lang="de-DE">Deutsch</a>
+    <a href="../fr-FR/support.html" hreflang="fr-FR" lang="fr-FR">Français</a>
+    <a href="../it/support.html" hreflang="it" lang="it">Italiano</a>
+    <a href="../pt-BR/support.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+    <a href="../th/support.html" hreflang="th" lang="th">ไทย</a>
+    <a href="../vi/support.html" hreflang="vi" lang="vi">Tiếng Việt</a>
+    <a href="../cs/support.html" hreflang="cs" lang="cs">Čeština</a>
+    <a href="../da/support.html" hreflang="da" lang="da">Dansk</a>
+    <a href="../el/support.html" hreflang="el" lang="el">Ελληνικά</a>
+    <a href="../fi/support.html" hreflang="fi" lang="fi">suomi</a>
+    <a href="../id/support.html" hreflang="id" lang="id">Bahasa Indonesia</a>
+    <a href="../no/support.html" hreflang="nb" lang="nb">Norsk bokmål</a>
+    <a href="../nl-NL/support.html" hreflang="nl-NL" lang="nl-NL">Nederlands</a>
+    <a href="../pl/support.html" hreflang="pl" lang="pl">Polski</a>
+    <a href="../sv/support.html" hreflang="sv" lang="sv">Svenska</a>
+    <a href="../tr/support.html" hreflang="tr" lang="tr">Türkçe</a>
+  </nav>
+  <h1>支援</h1>
+  <p class="sub" style="margin-bottom:24px">TetraTint — 為 macOS 自訂色彩與字體打造的輔助使用工具</p>
+
+  <div class="card">
+    <h2>TetraTint 是什麼？</h2>
+    <p>這是一款 macOS 開發者工具，專門處理 Apple <strong>不會</strong>為自訂色彩與字體自動完成的輔助使用工作。它能為自訂色彩推導出淺色、深色與高對比共四種版本、檢查 WCAG 對比、模擬色覺異常，並為自訂字體產生動態字體程式碼。</p>
+    <p style="margin-top:12px">
+      <span class="pill">變化版本</span>
+      <span class="pill">對比</span>
+      <span class="pill">色覺</span>
+      <span class="pill">動態字體</span>
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>系統需求</h2>
+    <ul>
+      <li>macOS 14.0（Sonoma）或以上版本</li>
+      <li>匯出時可以自行選擇儲存位置的權限</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>常見問題</h2>
+
+    <h3>產生的四種版本和我的品牌風格不符。</h3>
+    <p class="muted">你可以用各版本卡片上的顏色選取器個別調整，也可以隨時按「全部重新產生」，從基準色重新推導。</p>
+
+    <h3>我儲存的色票存放在哪裡？</h3>
+    <p class="muted">只存放在你的 Mac 上，沒有雲端同步，也不會上傳任何內容。詳情請參閱<a href="privacy.html">隱私權政策</a>。</p>
+
+    <h3>滴管會儲存取得的顏色嗎？</h3>
+    <p class="muted">不會。它只會讀取你指向位置的色彩值，並作為目前使用的顏色，不會儲存或傳送任何螢幕影像。</p>
+
+    <h3>匯出的顏色和我 App 裡的系統色彩看起來不一樣。</h3>
+    <p class="muted">系統色彩的參考值來自《人機介面指南》，可能隨系統版本而改變。在你的 App 中，請一律使用 <code>UIColor</code> / <code>Color</code> API。</p>
+  </div>
+
+  <div class="card">
+    <h2>聯絡我們</h2>
+    <p>歡迎以電子郵件回報問題、提出功能建議或詢問任何疑問。我們通常會在 2 至 3 天內回覆。</p>
+    <p><a class="btn" href="mailto:leeo@kakao.com?subject=TetraTint%20Support">寄信給支援團隊</a></p>
+    <p class="muted" style="margin-top:10px"><a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
+  </div>
+
+  <hr>
+  <p class="muted" style="text-align:center"><a href="index.html">← TetraTint 首頁</a> · <a href="privacy.html">隱私權政策</a></p>
+  <footer>© 2026 TetraTint. 保留一切權利。</footer>
+</div>
+</body>
+</html>

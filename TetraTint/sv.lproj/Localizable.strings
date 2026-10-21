@@ -1,0 +1,228 @@
+/* Color vision preview */
+"Color vision preview" = "Förhandsvisning av färgseende";
+"Preview the whole app as someone with color vision deficiency sees it" = "Förhandsvisa hela appen så som den ser ut för någon med nedsatt färgseende";
+"simulated colors, not the real ones" = "simulerade färger, inte de verkliga";
+"Exit" = "Avsluta";
+"Normal" = "Normal";
+"Protanopia" = "Protanopi";
+"Deuteranopia" = "Deuteranopi";
+"Tritanopia" = "Tritanopi";
+"Grayscale" = "Gråskala";
+
+/* Color names (spoken for accessibility) */
+"Black" = "Svart";
+"Dark gray" = "Mörkgrå";
+"Gray" = "Grå";
+"Light gray" = "Ljusgrå";
+"White" = "Vit";
+"Red" = "Röd";
+"Orange" = "Orange";
+"Yellow" = "Gul";
+"Lime" = "Limegrön";
+"Green" = "Grön";
+"Teal" = "Blågrön";
+"Sky blue" = "Himmelsblå";
+"Blue" = "Blå";
+"Indigo" = "Indigo";
+"Purple" = "Lila";
+"Magenta" = "Magenta";
+"Pink" = "Rosa";
+"Dark" = "Mörk";
+"Light" = "Ljus";
+"Pale" = "Blek";
+
+/* Navigation & view titles */
+"Color" = "Färg";
+"Variants" = "Varianter";
+"Contrast" = "Kontrast";
+"Color vision" = "Färgseende";
+"Generate variants" = "Skapa varianter";
+"Check contrast" = "Kontrollera kontrast";
+"Simulate color vision" = "Simulera färgseende";
+"Generate and export light, dark, and high-contrast variants" = "Skapa och exportera ljusa, mörka och högkontrastvarianter";
+"Check the color against WCAG contrast thresholds" = "Kontrollera färgen mot WCAG:s kontrastgränser";
+"Simulate how the color looks with color vision deficiency" = "Simulera hur färgen ser ut vid nedsatt färgseende";
+"Dynamic Type" = "Dynamic Type";
+"System colors" = "Systemfärger";
+"Palette" = "Palett";
+
+/* Appearance variants */
+"Light (Any)" = "Ljust (standard)";
+"Light High Contrast" = "Ljust, hög kontrast";
+"Dark" = "Mörkt";
+"Dark High Contrast" = "Mörkt, hög kontrast";
+"Light" = "Ljust";
+"Light HC" = "Ljust HK";
+"Dark HC" = "Mörkt HK";
+"Light mode default (Any Appearance)" = "Standard för ljust läge (Any Appearance)";
+"Light with Increase Contrast on" = "Ljust med Öka kontrast aktiverat";
+"Dark mode default" = "Standard för mörkt läge";
+"Dark with Increase Contrast on" = "Mörkt med Öka kontrast aktiverat";
+
+/* Color vision deficiency subtitles */
+"Normal vision" = "Normalt färgseende";
+"Protan, about 1% of men" = "Protan, cirka 1 procent av männen";
+"Deutan, about 1% of men" = "Deutan, cirka 1 procent av männen";
+"Tritan, rare" = "Tritan, ovanligt";
+"Monochromacy" = "Monokromati";
+
+/* Safe palettes */
+"Scientific visualization standard, 8 colors" = "Standard för vetenskaplig visualisering, 8 färger";
+"IBM accessibility palette, 5 colors" = "IBM:s tillgänglighetspalett, 5 färger";
+"Qualitative data visualization, 7 colors" = "Visualisering av kvalitativa data, 7 färger";
+
+/* Generator */
+"Light mode base color" = "Basfärg för ljust läge";
+"Color name" = "Färgnamn";
+"Regenerate all" = "Skapa om alla";
+"Discard manual edits and re-derive from the base color" = "Förkasta manuella ändringar och härled på nytt från basfärgen";
+"Save to palette" = "Spara i paletten";
+"Presets" = "Förval";
+"Export" = "Exportera";
+"Copied" = "Kopierad";
+"Copy" = "Kopiera";
+"Save .colorset" = "Spara .colorset";
+
+/* Variant card */
+"%@:1 vs background" = "%@:1 mot bakgrunden";
+"AA text" = "AA-text";
+"Low" = "Låg";
+"Button" = "Knapp";
+"Tint label" = "Tonad etikett";
+"Progress" = "Förlopp";
+"Copy hex" = "Kopiera hex";
+"Fine-tune this variant manually" = "Finjustera varianten manuellt";
+
+/* Color vision screen */
+"Color vision simulation" = "Simulering av färgseende";
+"This shows how your colors look to people with color vision deficiency. It is the current state, not a suggestion to change them." = "Här ser du hur dina färger uppfattas av personer med nedsatt färgseende. Det är nuläget, inte ett förslag på ändring.";
+"Conflict warnings" = "Varningar för förväxling";
+"Finds color pairs that become too similar to tell apart under simulation." = "Hittar färgpar som blir så lika varandra att de inte går att skilja åt vid simulering.";
+"Recommended safe palettes" = "Rekommenderade säkra paletter";
+"If there were conflicts above, switch to a verified palette that stays distinguishable across every vision type." = "Om det fanns förväxlingar ovan kan du byta till en beprövad palett som går att skilja åt för alla typer av färgseende.";
+"No palette saved yet, so the Okabe Ito demo palette is shown. Save colors in Generator to audit your own palette." = "Ingen palett har sparats än, så demopaletten Okabe Ito visas. Spara färger i Generator för att granska din egen palett.";
+"Color" = "Färg";
+"All color pairs stay distinguishable across every vision type (ΔE ≥ 12)" = "Alla färgpar går att skilja åt för alla typer av färgseende (ΔE ≥ 12)";
+"ΔE %@ under %@" = "ΔE %1$@ vid %2$@";
+"Do not rely on color alone. Pair it with icons, patterns, or labels, or switch to a safe palette below." = "Förlita dig inte på enbart färg. Kombinera med ikoner, mönster eller etiketter, eller byt till en säker palett nedan.";
+"Add to palette" = "Lägg till i paletten";
+"Derive each color into four variants and save to the palette" = "Härled fyra varianter av varje färg och spara i paletten";
+
+/* Contrast audit */
+"Paste the colors your app uses (separated by line breaks or commas)" = "Klistra in färgerna som din app använder (avgränsade med radbrytningar eller kommatecken)";
+"Audit" = "Granska";
+"Screens each color against light (vs white) and dark (vs black) backgrounds using WCAG thresholds." = "Prövar varje färg mot ljus (mot vit) och mörk (mot svart) bakgrund enligt WCAG:s gränsvärden.";
+"Preview: %lld colors" = "Förhandsvisning: %lld färger";
+"Preview: %lld colors, %lld unrecognized" = "Förhandsvisning: %1$lld färger, %2$lld som inte känns igen";
+"%lld of %lld colors need a high-contrast variant" = "%1$lld av %2$lld färger behöver en högkontrastvariant";
+"Use as is" = "Kan användas som den är";
+"Needs high contrast" = "Behöver hög kontrast";
+"Decorative only" = "Endast som dekoration";
+"Meets 4.5:1 for text" = "Uppfyller 4,5:1 för text";
+"Passes 3:1 for UI; text or High Contrast needs a variant" = "Klarar 3:1 för gränssnitt; text eller hög kontrast kräver en variant";
+"Below 3:1; do not use for text, icons, or status" = "Under 3:1; använd inte till text, ikoner eller status";
+"Derive four variants" = "Skapa fyra varianter";
+"Derive four variants including high contrast and save to the palette" = "Skapa fyra varianter, inklusive hög kontrast, och spara i paletten";
+
+/* Dynamic Type */
+"Scaling preview" = "Förhandsvisning av skalning";
+"Style" = "Stil";
+"Custom font PostScript name" = "PostScript-namn på eget typsnitt";
+"Category" = "Kategori";
+"The quick brown fox jumps over the lazy dog" = "Yxskaftbud, ge vår WC-zonmö IQ-hjälp";
+"Code" = "Kod";
+"Text style sizes (pt)" = "Textstilarnas storlekar (pt)";
+"Large is the default. In accessibility sizes (AX1 to AX5), Body grows to %@pt, over three times the default, so avoid fixed heights, fixed padding, and lineLimit(1)." = "Large är standard. I tillgänglighetsstorlekarna (AX1 till AX5) växer Body till %@ pt, mer än tre gånger standardstorleken, så undvik fasta höjder, fast utfyllnad och lineLimit(1).";
+
+/* System colors */
+"Tint colors" = "Accentfärger";
+"Gray colors" = "Gråtoner";
+"Reference values from Apple's Human Interface Guidelines. Actual values may change between OS releases, so always use the UIColor or Color API in shipping code rather than hard-coding." = "Referensvärden från Apples Human Interface Guidelines. De faktiska värdena kan ändras mellan OS-versioner, så använd alltid API:erna UIColor eller Color i färdig kod i stället för hårdkodade värden.";
+"Click to copy %@" = "Klicka för att kopiera %@";
+
+/* Screen color picker */
+"Pick color from screen" = "Hämta färg från skärmen";
+"Pick a color from anywhere on screen" = "Hämta en färg var som helst på skärmen";
+"Pick a color from anywhere on screen and make it the working color" = "Hämta en färg var som helst på skärmen och gör den till arbetsfärg";
+"Working color" = "Arbetsfärg";
+"Change the working color to see how it looks under each type of color vision." = "Ändra arbetsfärgen för att se hur den ser ut vid varje typ av färgseende.";
+
+/* Palette */
+"Export .xcassets" = "Exportera .xcassets";
+"Export every saved color as one asset catalog" = "Exportera alla sparade färger som en enda tillgångskatalog";
+"No saved colors" = "Inga sparade färger";
+"Generate a color and save it here, then export your whole brand palette as one .xcassets catalog." = "Skapa en färg och spara den här. Exportera sedan hela varumärkespaletten som en .xcassets-katalog.";
+"Each color is saved as four variants" = "Varje färg sparas som fyra varianter";
+"Export %@.colorset" = "Exportera %@.colorset";
+"Delete" = "Radera";
+
+/* VoiceOver labels */
+"Delete %@" = "Radera %@";
+"Copy %@" = "Kopiera %@";
+"Hex value" = "Hex-värde";
+"Preset %@" = "Förval %@";
+
+/* Settings */
+"Support" = "Support";
+"Contact" = "Kontakt";
+"Help" = "Hjälp";
+"Email the developer" = "Mejla utvecklaren";
+"Message on Instagram (@lee25_ios)" = "Skriv på Instagram (@lee25_ios)";
+"Show the welcome guide again" = "Visa välkomstguiden igen";
+"Opens the guide in the main window" = "Öppnar guiden i huvudfönstret";
+
+/* Help menu */
+"Welcome to TetraTint" = "Välkommen till TetraTint";
+"TetraTint Support Page" = "Supportsida för TetraTint";
+"Email the Developer…" = "Mejla utvecklaren …";
+
+/* Onboarding */
+"Accessibility work Apple doesn't do for your custom colors and fonts." = "Tillgänglighetsarbetet som Apple inte gör åt dina egna färger och typsnitt.";
+"Start with one color" = "Börja med en färg";
+"Type a hex value, use the color well, or pick any pixel on screen with the eyedropper. Every screen works on this same color." = "Skriv ett hex-värde, använd färgrutan eller välj valfri pixel på skärmen med pipetten. Alla skärmar arbetar med just den här färgen.";
+"Look at it through three lenses" = "Se den genom tre linser";
+"Generate light, dark, and high-contrast variants, check WCAG contrast, and see how it looks with color vision deficiency." = "Skapa ljusa, mörka och högkontrastvarianter, kontrollera WCAG-kontrasten och se hur färgen ser ut vid nedsatt färgseende.";
+"Save and export" = "Spara och exportera";
+"Save colors to your palette, then export a .colorset, SwiftUI or UIKit code, or one .xcassets catalog for Xcode." = "Spara färgerna i paletten och exportera sedan en .colorset, SwiftUI- eller UIKit-kod, eller en .xcassets-katalog för Xcode.";
+"Custom fonts too" = "Egna typsnitt också";
+"Dynamic Type shows every text style at every size and writes the scaling code for your custom font." = "Dynamic Type visar varje textstil i varje storlek och skriver skalningskoden för ditt egna typsnitt.";
+"You can open this guide again from the Help menu." = "Du kan öppna den här guiden igen från hjälpmenyn.";
+"Get Started" = "Kom igång";
+
+/* Tips */
+"Pick any color on screen" = "Hämta valfri färg från skärmen";
+"Click the eyedropper, then click a pixel in any app, website, or design file. It becomes the working color everywhere." = "Klicka på pipetten och sedan på en pixel i valfri app, webbplats eller designfil. Färgen blir arbetsfärg överallt.";
+"See the whole app as others do" = "Se hela appen som andra ser den";
+"Turn on a color vision preview to view every screen as someone with protanopia, deuteranopia, or tritanopia sees it." = "Slå på förhandsvisning av färgseende för att se varje skärm som en person med protanopi, deuteranopi eller tritanopi gör.";
+
+/* Shortcuts (App Intents) */
+"Pick Color from Screen" = "Hämta färg från skärmen";
+"Opens TetraTint and starts the eyedropper so you can pick any color on screen." = "Öppnar TetraTint och startar pipetten så att du kan hämta valfri färg från skärmen.";
+"Open in TetraTint" = "Öppna i TetraTint";
+"Opens a TetraTint screen: Color, Dynamic Type, System colors, or Palette." = "Öppnar en skärm i TetraTint: Färg, Dynamic Type, Systemfärger eller Palett.";
+"Screen" = "Skärm";
+"Pick Color" = "Hämta färg";
+"Open Screen" = "Öppna skärm";
+
+/* Roadmap (Settings ▸ Coming Features) — source: TetraTintRoadmap.swift */
+"Close" = "Stäng";
+"Better VoiceOver support" = "Bättre stöd för VoiceOver";
+"VoiceOver reads every color, button, and value in a sensible order." = "VoiceOver läser upp varje färg, knapp och värde i en logisk ordning.";
+"Easier-to-see interface" = "Lättare att se";
+"Labels and controls stay crisp with Increase Contrast turned on." = "Etiketter och reglage förblir tydliga när Öka kontrast är påslaget.";
+"Reduced motion" = "Mindre rörelse";
+"With Reduce Motion on, effects like colors flying into your palette get calmer." = "Med Minska rörelser påslaget blir effekter som färger som flyger in i paletten lugnare.";
+"More languages" = "Fler språk";
+"Use TetraTint in more languages, not just English and Korean." = "Använd TetraTint på fler språk, inte bara engelska och koreanska.";
+"What’s new" = "Nyheter";
+"After an update, see what’s new the first time you open the app." = "Efter en uppdatering ser du vad som är nytt första gången du öppnar appen.";
+"Replies to your feedback" = "Svar på din feedback";
+"Read our replies to your feedback right in the app." = "Läs våra svar på din feedback direkt i appen.";
+"Desktop widgets" = "Widgetar för skrivbordet";
+"See your palette right on the desktop without opening the app." = "Se din palett direkt på skrivbordet utan att öppna appen.";
+"Palettes on all your Macs" = "Paletter på alla dina Mac-datorer";
+"Pick up the same palette on your other Macs with iCloud." = "Fortsätt med samma palett på dina andra Mac-datorer via iCloud.";
+"Back up and restore palettes" = "Säkerhetskopiera och återställ paletter";
+"Save your palette to a file and load it back anytime." = "Spara paletten i en fil och läs in den igen när du vill.";
+"Clear the whole palette" = "Töm hela paletten";
+"Remove every saved color at once when you want a fresh start." = "Ta bort alla sparade färger på en gång när du vill börja om.";

@@ -1,0 +1,228 @@
+/* Color vision preview */
+"Color vision preview" = "Voorbeeld kleurenzicht";
+"Preview the whole app as someone with color vision deficiency sees it" = "Bekijk de hele app zoals iemand met kleurenblindheid hem ziet";
+"simulated colors, not the real ones" = "gesimuleerde kleuren, niet de echte";
+"Exit" = "Stoppen";
+"Normal" = "Normaal";
+"Protanopia" = "Protanopie";
+"Deuteranopia" = "Deuteranopie";
+"Tritanopia" = "Tritanopie";
+"Grayscale" = "Grijstinten";
+
+/* Color names (spoken for accessibility) */
+"Black" = "Zwart";
+"Dark gray" = "Donkergrijs";
+"Gray" = "Grijs";
+"Light gray" = "Lichtgrijs";
+"White" = "Wit";
+"Red" = "Rood";
+"Orange" = "Oranje";
+"Yellow" = "Geel";
+"Lime" = "Limoengroen";
+"Green" = "Groen";
+"Teal" = "Blauwgroen";
+"Sky blue" = "Hemelsblauw";
+"Blue" = "Blauw";
+"Indigo" = "Indigo";
+"Purple" = "Paars";
+"Magenta" = "Magenta";
+"Pink" = "Roze";
+"Dark" = "Donker";
+"Light" = "Licht";
+"Pale" = "Bleek";
+
+/* Navigation & view titles */
+"Color" = "Kleur";
+"Variants" = "Varianten";
+"Contrast" = "Contrast";
+"Color vision" = "Kleurenzicht";
+"Generate variants" = "Varianten maken";
+"Check contrast" = "Contrast controleren";
+"Simulate color vision" = "Kleurenzicht simuleren";
+"Generate and export light, dark, and high-contrast variants" = "Maak lichte, donkere en hoogcontrastvarianten en exporteer ze";
+"Check the color against WCAG contrast thresholds" = "Toets de kleur aan de WCAG-contrastdrempels";
+"Simulate how the color looks with color vision deficiency" = "Simuleer hoe de kleur eruitziet bij kleurenblindheid";
+"Dynamic Type" = "Dynamic Type";
+"System colors" = "Systeemkleuren";
+"Palette" = "Palet";
+
+/* Appearance variants */
+"Light (Any)" = "Licht (standaard)";
+"Light High Contrast" = "Licht, hoog contrast";
+"Dark" = "Donker";
+"Dark High Contrast" = "Donker, hoog contrast";
+"Light" = "Licht";
+"Light HC" = "Licht, hoog contrast";
+"Dark HC" = "Donker, hoog contrast";
+"Light mode default (Any Appearance)" = "Standaard voor lichte modus (Any Appearance)";
+"Light with Increase Contrast on" = "Licht met ‘Contrast verhogen’ aan";
+"Dark mode default" = "Standaard voor donkere modus";
+"Dark with Increase Contrast on" = "Donker met ‘Contrast verhogen’ aan";
+
+/* Color vision deficiency subtitles */
+"Normal vision" = "Normaal kleurenzicht";
+"Protan, about 1% of men" = "Protaan, ongeveer 1% van de mannen";
+"Deutan, about 1% of men" = "Deutaan, ongeveer 1% van de mannen";
+"Tritan, rare" = "Tritaan, zeldzaam";
+"Monochromacy" = "Monochromasie";
+
+/* Safe palettes */
+"Scientific visualization standard, 8 colors" = "Standaard voor wetenschappelijke visualisatie, 8 kleuren";
+"IBM accessibility palette, 5 colors" = "IBM-toegankelijkheidspalet, 5 kleuren";
+"Qualitative data visualization, 7 colors" = "Kwalitatieve datavisualisatie, 7 kleuren";
+
+/* Generator */
+"Light mode base color" = "Basiskleur voor lichte modus";
+"Color name" = "Kleurnaam";
+"Regenerate all" = "Alles opnieuw maken";
+"Discard manual edits and re-derive from the base color" = "Handmatige aanpassingen wissen en opnieuw afleiden van de basiskleur";
+"Save to palette" = "Bewaar in palet";
+"Presets" = "Voorinstellingen";
+"Export" = "Exporteren";
+"Copied" = "Gekopieerd";
+"Copy" = "Kopieer";
+"Save .colorset" = ".colorset bewaren";
+
+/* Variant card */
+"%@:1 vs background" = "%@:1 t.o.v. achtergrond";
+"AA text" = "AA-tekst";
+"Low" = "Laag";
+"Button" = "Knop";
+"Tint label" = "Tintlabel";
+"Progress" = "Voortgang";
+"Copy hex" = "Kopieer hex";
+"Fine-tune this variant manually" = "Pas deze variant handmatig verder aan";
+
+/* Color vision screen */
+"Color vision simulation" = "Simulatie van kleurenzicht";
+"This shows how your colors look to people with color vision deficiency. It is the current state, not a suggestion to change them." = "Zo zien mensen met kleurenblindheid jouw kleuren. Dit is de huidige situatie en geen advies om iets te veranderen.";
+"Conflict warnings" = "Waarschuwingen voor verwarring";
+"Finds color pairs that become too similar to tell apart under simulation." = "Zoekt kleurparen die in de simulatie te veel op elkaar lijken om uit elkaar te houden.";
+"Recommended safe palettes" = "Aanbevolen kleurenblindveilige paletten";
+"If there were conflicts above, switch to a verified palette that stays distinguishable across every vision type." = "Zijn er hierboven kleuren die door elkaar worden gehaald, kies dan een getest palet dat bij elk type kleurenzicht goed te onderscheiden blijft.";
+"No palette saved yet, so the Okabe Ito demo palette is shown. Save colors in Generator to audit your own palette." = "Er is nog geen palet bewaard, daarom zie je het demopalet Okabe Ito. Bewaar kleuren in Generator om je eigen palet te laten controleren.";
+"Color" = "Kleur";
+"All color pairs stay distinguishable across every vision type (ΔE ≥ 12)" = "Alle kleurparen blijven bij elk type kleurenzicht te onderscheiden (ΔE ≥ 12)";
+"ΔE %@ under %@" = "ΔE %1$@ bij %2$@";
+"Do not rely on color alone. Pair it with icons, patterns, or labels, or switch to a safe palette below." = "Vertrouw niet alleen op kleur. Combineer kleur met symbolen, patronen of labels, of kies hieronder een veilig palet.";
+"Add to palette" = "Voeg toe aan palet";
+"Derive each color into four variants and save to the palette" = "Leid van elke kleur vier varianten af en bewaar ze in het palet";
+
+/* Contrast audit */
+"Paste the colors your app uses (separated by line breaks or commas)" = "Plak de kleuren die je app gebruikt (gescheiden door regeleinden of komma’s)";
+"Audit" = "Controleren";
+"Screens each color against light (vs white) and dark (vs black) backgrounds using WCAG thresholds." = "Toetst elke kleur op lichte (t.o.v. wit) en donkere (t.o.v. zwart) achtergronden met de WCAG-drempels.";
+"Preview: %lld colors" = "Voorbeeld: %lld kleuren";
+"Preview: %lld colors, %lld unrecognized" = "Voorbeeld: %1$lld kleuren, waarvan %2$lld niet herkend";
+"%lld of %lld colors need a high-contrast variant" = "%1$lld van de %2$lld kleuren hebben een hoogcontrastvariant nodig";
+"Use as is" = "Kan zo blijven";
+"Needs high contrast" = "Hoogcontrastvariant nodig";
+"Decorative only" = "Alleen voor decoratie";
+"Meets 4.5:1 for text" = "Haalt 4,5:1 voor tekst";
+"Passes 3:1 for UI; text or High Contrast needs a variant" = "Haalt 3:1 voor interface-elementen; voor tekst of hoog contrast is een variant nodig";
+"Below 3:1; do not use for text, icons, or status" = "Onder 3:1; niet gebruiken voor tekst, symbolen of status";
+"Derive four variants" = "Vier varianten afleiden";
+"Derive four variants including high contrast and save to the palette" = "Leid vier varianten af, inclusief hoog contrast, en bewaar ze in het palet";
+
+/* Dynamic Type */
+"Scaling preview" = "Voorbeeld van schaling";
+"Style" = "Stijl";
+"Custom font PostScript name" = "PostScript-naam van eigen lettertype";
+"Category" = "Categorie";
+"The quick brown fox jumps over the lazy dog" = "Pa’s wijze lynx bezag vroom het fijne aquaduct";
+"Code" = "Code";
+"Text style sizes (pt)" = "Groottes van tekststijlen (pt)";
+"Large is the default. In accessibility sizes (AX1 to AX5), Body grows to %@pt, over three times the default, so avoid fixed heights, fixed padding, and lineLimit(1)." = "Large is de standaard. In de toegankelijkheidsgroottes (AX1 t/m AX5) groeit Body tot %@ pt, meer dan drie keer de standaardgrootte. Vermijd dus vaste hoogtes, vaste marges en lineLimit(1).";
+
+/* System colors */
+"Tint colors" = "Tintkleuren";
+"Gray colors" = "Grijstinten";
+"Reference values from Apple's Human Interface Guidelines. Actual values may change between OS releases, so always use the UIColor or Color API in shipping code rather than hard-coding." = "Referentiewaarden uit de Human Interface Guidelines van Apple. De echte waarden kunnen per OS-versie veranderen. Gebruik in je uiteindelijke code daarom altijd de UIColor- of Color-API in plaats van vaste waarden.";
+"Click to copy %@" = "Klik om %@ te kopiëren";
+
+/* Screen color picker */
+"Pick color from screen" = "Kleur van scherm kiezen";
+"Pick a color from anywhere on screen" = "Kies een kleur van overal op het scherm";
+"Pick a color from anywhere on screen and make it the working color" = "Kies een kleur van overal op het scherm en maak er je werkkleur van";
+"Working color" = "Werkkleur";
+"Change the working color to see how it looks under each type of color vision." = "Verander de werkkleur om te zien hoe die eruitziet bij elk type kleurenzicht.";
+
+/* Palette */
+"Export .xcassets" = ".xcassets exporteren";
+"Export every saved color as one asset catalog" = "Exporteer alle bewaarde kleuren als één asset-catalogus";
+"No saved colors" = "Geen bewaarde kleuren";
+"Generate a color and save it here, then export your whole brand palette as one .xcassets catalog." = "Maak een kleur in Generator en bewaar hem hier. Exporteer daarna je hele merkpalet als één .xcassets-catalogus.";
+"Each color is saved as four variants" = "Elke kleur wordt als vier varianten bewaard";
+"Export %@.colorset" = "%@.colorset exporteren";
+"Delete" = "Verwijder";
+
+/* VoiceOver labels */
+"Delete %@" = "Verwijder %@";
+"Copy %@" = "Kopieer %@";
+"Hex value" = "Hex-waarde";
+"Preset %@" = "Voorinstelling %@";
+
+/* Settings */
+"Support" = "Support";
+"Contact" = "Contact";
+"Help" = "Help";
+"Email the developer" = "Mail de ontwikkelaar";
+"Message on Instagram (@lee25_ios)" = "Stuur een bericht op Instagram (@lee25_ios)";
+"Show the welcome guide again" = "Welkomstgids opnieuw tonen";
+"Opens the guide in the main window" = "Opent de gids in het hoofdvenster";
+
+/* Help menu */
+"Welcome to TetraTint" = "Welkom bij TetraTint";
+"TetraTint Support Page" = "Supportpagina van TetraTint";
+"Email the Developer…" = "Mail de ontwikkelaar…";
+
+/* Onboarding */
+"Accessibility work Apple doesn't do for your custom colors and fonts." = "Het toegankelijkheidswerk dat Apple niet voor je eigen kleuren en lettertypen doet.";
+"Start with one color" = "Begin met één kleur";
+"Type a hex value, use the color well, or pick any pixel on screen with the eyedropper. Every screen works on this same color." = "Typ een hexwaarde, gebruik het kleurvak of kies met de pipet een willekeurige pixel op het scherm. Alle schermen werken met deze ene kleur.";
+"Look at it through three lenses" = "Bekijk hem door drie lenzen";
+"Generate light, dark, and high-contrast variants, check WCAG contrast, and see how it looks with color vision deficiency." = "Maak lichte, donkere en hoogcontrastvarianten, controleer het WCAG-contrast en zie hoe de kleur eruitziet bij kleurenblindheid.";
+"Save and export" = "Bewaar en exporteer";
+"Save colors to your palette, then export a .colorset, SwiftUI or UIKit code, or one .xcassets catalog for Xcode." = "Bewaar kleuren in je palet en exporteer ze als .colorset, als SwiftUI- of UIKit-code, of als één .xcassets-catalogus voor Xcode.";
+"Custom fonts too" = "Ook voor eigen lettertypen";
+"Dynamic Type shows every text style at every size and writes the scaling code for your custom font." = "Dynamic Type toont elke tekststijl in elke grootte en schrijft de schalingscode voor je eigen lettertype.";
+"You can open this guide again from the Help menu." = "Je kunt deze gids opnieuw openen via het menu Help.";
+"Get Started" = "Aan de slag";
+
+/* Tips */
+"Pick any color on screen" = "Kies elke kleur op het scherm";
+"Click the eyedropper, then click a pixel in any app, website, or design file. It becomes the working color everywhere." = "Klik op de pipet en klik daarna op een pixel in een willekeurige app, website of ontwerpbestand. Die kleur wordt overal je werkkleur.";
+"See the whole app as others do" = "Zie de hele app zoals anderen hem zien";
+"Turn on a color vision preview to view every screen as someone with protanopia, deuteranopia, or tritanopia sees it." = "Zet het voorbeeld van kleurenzicht aan om elk scherm te zien zoals iemand met protanopie, deuteranopie of tritanopie het ziet.";
+
+/* Shortcuts (App Intents) */
+"Pick Color from Screen" = "Kleur van scherm kiezen";
+"Opens TetraTint and starts the eyedropper so you can pick any color on screen." = "Opent TetraTint en start de pipet, zodat je elke kleur op het scherm kunt kiezen.";
+"Open in TetraTint" = "Open in TetraTint";
+"Opens a TetraTint screen: Color, Dynamic Type, System colors, or Palette." = "Opent een scherm van TetraTint: Kleur, Dynamic Type, Systeemkleuren of Palet.";
+"Screen" = "Scherm";
+"Pick Color" = "Kleur kiezen";
+"Open Screen" = "Scherm openen";
+
+/* Roadmap (Settings ▸ Coming Features) — source: TetraTintRoadmap.swift */
+"Close" = "Sluit";
+"Better VoiceOver support" = "Betere ondersteuning voor VoiceOver";
+"VoiceOver reads every color, button, and value in a sensible order." = "VoiceOver leest elke kleur, knop en waarde voor in een logische volgorde.";
+"Easier-to-see interface" = "Beter zichtbare interface";
+"Labels and controls stay crisp with Increase Contrast turned on." = "Labels en bedieningselementen blijven scherp als ‘Contrast verhogen’ aan staat.";
+"Reduced motion" = "Minder beweging";
+"With Reduce Motion on, effects like colors flying into your palette get calmer." = "Met ‘Beperk beweging’ aan worden effecten, zoals kleuren die naar je palet vliegen, rustiger.";
+"More languages" = "Meer talen";
+"Use TetraTint in more languages, not just English and Korean." = "Gebruik TetraTint in meer talen dan alleen Engels en Koreaans.";
+"What’s new" = "Wat is er nieuw";
+"After an update, see what’s new the first time you open the app." = "Zie na een update bij de eerste keer openen wat er nieuw is.";
+"Replies to your feedback" = "Antwoorden op je feedback";
+"Read our replies to your feedback right in the app." = "Lees onze antwoorden op je feedback rechtstreeks in de app.";
+"Desktop widgets" = "Bureaubladwidgets";
+"See your palette right on the desktop without opening the app." = "Zie je palet direct op het bureaublad, zonder de app te openen.";
+"Palettes on all your Macs" = "Je paletten op al je Macs";
+"Pick up the same palette on your other Macs with iCloud." = "Werk met iCloud op je andere Macs verder met hetzelfde palet.";
+"Back up and restore palettes" = "Paletten back-uppen en terugzetten";
+"Save your palette to a file and load it back anytime." = "Bewaar je palet in een bestand en laad het wanneer je wilt weer in.";
+"Clear the whole palette" = "Het hele palet wissen";
+"Remove every saved color at once when you want a fresh start." = "Verwijder alle bewaarde kleuren in één keer als je opnieuw wilt beginnen.";

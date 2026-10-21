@@ -1,0 +1,228 @@
+/* Color vision preview */
+"Color vision preview" = "Náhled barevného vidění";
+"Preview the whole app as someone with color vision deficiency sees it" = "Zobrazit celou aplikaci tak, jak ji vidí člověk s poruchou barevného vidění";
+"simulated colors, not the real ones" = "simulované barvy, nikoli skutečné";
+"Exit" = "Ukončit";
+"Normal" = "Normální";
+"Protanopia" = "Protanopie";
+"Deuteranopia" = "Deuteranopie";
+"Tritanopia" = "Tritanopie";
+"Grayscale" = "Odstíny šedi";
+
+/* Color names (spoken for accessibility) */
+"Black" = "Černá";
+"Dark gray" = "Tmavě šedá";
+"Gray" = "Šedá";
+"Light gray" = "Světle šedá";
+"White" = "Bílá";
+"Red" = "Červená";
+"Orange" = "Oranžová";
+"Yellow" = "Žlutá";
+"Lime" = "Limetková";
+"Green" = "Zelená";
+"Teal" = "Modrozelená";
+"Sky blue" = "Nebesky modrá";
+"Blue" = "Modrá";
+"Indigo" = "Indigová";
+"Purple" = "Fialová";
+"Magenta" = "Purpurová";
+"Pink" = "Růžová";
+"Dark" = "Tmavá";
+"Light" = "Světlá";
+"Pale" = "Bledá";
+
+/* Navigation & view titles */
+"Color" = "Barva";
+"Variants" = "Varianty";
+"Contrast" = "Kontrast";
+"Color vision" = "Barevné vidění";
+"Generate variants" = "Vytvořit varianty";
+"Check contrast" = "Zkontrolovat kontrast";
+"Simulate color vision" = "Simulovat barevné vidění";
+"Generate and export light, dark, and high-contrast variants" = "Vytvoří a exportuje světlou, tmavou a vysoce kontrastní variantu";
+"Check the color against WCAG contrast thresholds" = "Ověří barvu podle kontrastních limitů WCAG";
+"Simulate how the color looks with color vision deficiency" = "Ukáže, jak barva vypadá při poruše barevného vidění";
+"Dynamic Type" = "Dynamic Type";
+"System colors" = "Systémové barvy";
+"Palette" = "Paleta";
+
+/* Appearance variants */
+"Light (Any)" = "Světlý (Any)";
+"Light High Contrast" = "Světlý, vysoký kontrast";
+"Dark" = "Tmavý";
+"Dark High Contrast" = "Tmavý, vysoký kontrast";
+"Light" = "Světlý";
+"Light HC" = "Světlý VK";
+"Dark HC" = "Tmavý VK";
+"Light mode default (Any Appearance)" = "Výchozí světlý režim (Any Appearance)";
+"Light with Increase Contrast on" = "Světlý se zapnutým zvýšeným kontrastem";
+"Dark mode default" = "Výchozí tmavý režim";
+"Dark with Increase Contrast on" = "Tmavý se zapnutým zvýšeným kontrastem";
+
+/* Color vision deficiency subtitles */
+"Normal vision" = "Normální barevné vidění";
+"Protan, about 1% of men" = "Protan, asi 1 % mužů";
+"Deutan, about 1% of men" = "Deutan, asi 1 % mužů";
+"Tritan, rare" = "Tritan, vzácný";
+"Monochromacy" = "Monochromazie";
+
+/* Safe palettes */
+"Scientific visualization standard, 8 colors" = "Standard pro vědecké vizualizace, 8 barev";
+"IBM accessibility palette, 5 colors" = "Paleta IBM pro přístupnost, 5 barev";
+"Qualitative data visualization, 7 colors" = "Vizualizace kategoriálních dat, 7 barev";
+
+/* Generator */
+"Light mode base color" = "Základní barva světlého režimu";
+"Color name" = "Název barvy";
+"Regenerate all" = "Vytvořit vše znovu";
+"Discard manual edits and re-derive from the base color" = "Zahodí ruční úpravy a odvodí vše znovu ze základní barvy";
+"Save to palette" = "Uložit do palety";
+"Presets" = "Předvolby";
+"Export" = "Exportovat";
+"Copied" = "Zkopírováno";
+"Copy" = "Kopírovat";
+"Save .colorset" = "Uložit .colorset";
+
+/* Variant card */
+"%@:1 vs background" = "%@:1 vůči pozadí";
+"AA text" = "Text AA";
+"Low" = "Nízký";
+"Button" = "Tlačítko";
+"Tint label" = "Barevný popisek";
+"Progress" = "Průběh";
+"Copy hex" = "Kopírovat hex";
+"Fine-tune this variant manually" = "Doladit tuto variantu ručně";
+
+/* Color vision screen */
+"Color vision simulation" = "Simulace barevného vidění";
+"This shows how your colors look to people with color vision deficiency. It is the current state, not a suggestion to change them." = "Ukazuje, jak vaše barvy vidí lidé s poruchou barevného vidění. Jde o aktuální stav, ne o doporučení je měnit.";
+"Conflict warnings" = "Varování před záměnou";
+"Finds color pairs that become too similar to tell apart under simulation." = "Najde dvojice barev, které se při simulaci stanou tak podobnými, že je nelze odlišit.";
+"Recommended safe palettes" = "Doporučené bezpečné palety";
+"If there were conflicts above, switch to a verified palette that stays distinguishable across every vision type." = "Pokud se výše objevily záměny, přepněte na ověřenou paletu, jejíž barvy lze odlišit u všech typů vidění.";
+"No palette saved yet, so the Okabe Ito demo palette is shown. Save colors in Generator to audit your own palette." = "Zatím není uložena žádná paleta, proto se zobrazuje ukázková paleta Okabe Ito. Uložte barvy v Generator a zkontrolujte tak vlastní paletu.";
+"Color" = "Barva";
+"All color pairs stay distinguishable across every vision type (ΔE ≥ 12)" = "Všechny dvojice barev lze odlišit u všech typů vidění (ΔE ≥ 12)";
+"ΔE %@ under %@" = "ΔE %1$@ při %2$@";
+"Do not rely on color alone. Pair it with icons, patterns, or labels, or switch to a safe palette below." = "Nespoléhejte jen na barvu. Doplňte ji ikonami, vzory nebo popisky, případně přepněte na bezpečnou paletu níže.";
+"Add to palette" = "Přidat do palety";
+"Derive each color into four variants and save to the palette" = "Odvodí z každé barvy čtyři varianty a uloží je do palety";
+
+/* Contrast audit */
+"Paste the colors your app uses (separated by line breaks or commas)" = "Vložte barvy, které vaše aplikace používá (oddělené novými řádky nebo čárkami)";
+"Audit" = "Zkontrolovat";
+"Screens each color against light (vs white) and dark (vs black) backgrounds using WCAG thresholds." = "Každou barvu posoudí podle limitů WCAG na světlém (proti bílé) a tmavém (proti černé) pozadí.";
+"Preview: %lld colors" = "Náhled: %lld barev";
+"Preview: %lld colors, %lld unrecognized" = "Náhled: %1$lld barev, %2$lld nerozpoznáno";
+"%lld of %lld colors need a high-contrast variant" = "Vysoce kontrastní variantu potřebuje %1$lld z %2$lld barev";
+"Use as is" = "Lze použít beze změny";
+"Needs high contrast" = "Chce vysoký kontrast";
+"Decorative only" = "Jen dekorativní";
+"Meets 4.5:1 for text" = "Splňuje 4,5:1 pro text";
+"Passes 3:1 for UI; text or High Contrast needs a variant" = "Pro prvky rozhraní vyhovuje (3:1); pro text nebo vysoký kontrast je potřeba varianta";
+"Below 3:1; do not use for text, icons, or status" = "Pod 3:1; nepoužívejte pro text, ikony ani stavy";
+"Derive four variants" = "Odvodit čtyři varianty";
+"Derive four variants including high contrast and save to the palette" = "Odvodí čtyři varianty včetně vysokého kontrastu a uloží je do palety";
+
+/* Dynamic Type */
+"Scaling preview" = "Náhled škálování";
+"Style" = "Styl";
+"Custom font PostScript name" = "PostScript název vlastního písma";
+"Category" = "Kategorie";
+"The quick brown fox jumps over the lazy dog" = "Příliš žluťoučký kůň úpěl ďábelské ódy";
+"Code" = "Kód";
+"Text style sizes (pt)" = "Velikosti stylů textu (pt)";
+"Large is the default. In accessibility sizes (AX1 to AX5), Body grows to %@pt, over three times the default, so avoid fixed heights, fixed padding, and lineLimit(1)." = "Výchozí je Large. Ve velikostech pro přístupnost (AX1 až AX5) vyroste Body na %@ pt, tedy na víc než trojnásobek výchozí hodnoty. Vyhněte se proto pevným výškám, pevným odsazením a lineLimit(1).";
+
+/* System colors */
+"Tint colors" = "Barvy tint";
+"Gray colors" = "Odstíny šedé";
+"Reference values from Apple's Human Interface Guidelines. Actual values may change between OS releases, so always use the UIColor or Color API in shipping code rather than hard-coding." = "Referenční hodnoty z Apple Human Interface Guidelines. Skutečné hodnoty se mohou mezi verzemi systému změnit, proto v ostrém kódu vždy používejte API UIColor nebo Color a hodnoty nezapisujte pevně.";
+"Click to copy %@" = "Kliknutím zkopírujete %@";
+
+/* Screen color picker */
+"Pick color from screen" = "Vybrat barvu z obrazovky";
+"Pick a color from anywhere on screen" = "Vybrat barvu odkudkoli na obrazovce";
+"Pick a color from anywhere on screen and make it the working color" = "Vybere barvu odkudkoli na obrazovce a nastaví ji jako pracovní";
+"Working color" = "Pracovní barva";
+"Change the working color to see how it looks under each type of color vision." = "Změňte pracovní barvu a uvidíte, jak vypadá u jednotlivých typů barevného vidění.";
+
+/* Palette */
+"Export .xcassets" = "Exportovat .xcassets";
+"Export every saved color as one asset catalog" = "Exportuje všechny uložené barvy jako jeden katalog assetů";
+"No saved colors" = "Žádné uložené barvy";
+"Generate a color and save it here, then export your whole brand palette as one .xcassets catalog." = "Vytvořte barvu, uložte ji sem a pak exportujte celou paletu své značky jako jeden katalog .xcassets.";
+"Each color is saved as four variants" = "Každá barva se ukládá ve čtyřech variantách";
+"Export %@.colorset" = "Exportovat %@.colorset";
+"Delete" = "Smazat";
+
+/* VoiceOver labels */
+"Delete %@" = "Smazat %@";
+"Copy %@" = "Kopírovat %@";
+"Hex value" = "Hodnota hex";
+"Preset %@" = "Předvolba %@";
+
+/* Settings */
+"Support" = "Podpora";
+"Contact" = "Kontakt";
+"Help" = "Nápověda";
+"Email the developer" = "Napsat vývojáři e-mail";
+"Message on Instagram (@lee25_ios)" = "Napsat na Instagramu (@lee25_ios)";
+"Show the welcome guide again" = "Znovu zobrazit úvodního průvodce";
+"Opens the guide in the main window" = "Otevře průvodce v hlavním okně";
+
+/* Help menu */
+"Welcome to TetraTint" = "Vítejte v TetraTint";
+"TetraTint Support Page" = "Stránka podpory TetraTint";
+"Email the Developer…" = "Napsat vývojáři e-mail…";
+
+/* Onboarding */
+"Accessibility work Apple doesn't do for your custom colors and fonts." = "Práce na přístupnosti, kterou Apple pro vaše vlastní barvy a písma neudělá.";
+"Start with one color" = "Začněte jednou barvou";
+"Type a hex value, use the color well, or pick any pixel on screen with the eyedropper. Every screen works on this same color." = "Zadejte hodnotu hex, použijte výběr barvy nebo kapátkem vyberte libovolný pixel na obrazovce. Všechny obrazovky pracují s touto jednou barvou.";
+"Look at it through three lenses" = "Podívejte se na ni třemi pohledy";
+"Generate light, dark, and high-contrast variants, check WCAG contrast, and see how it looks with color vision deficiency." = "Vytvořte světlou, tmavou a vysoce kontrastní variantu, zkontrolujte kontrast podle WCAG a podívejte se, jak barva vypadá při poruše barevného vidění.";
+"Save and export" = "Uložte a exportujte";
+"Save colors to your palette, then export a .colorset, SwiftUI or UIKit code, or one .xcassets catalog for Xcode." = "Uložte barvy do palety a exportujte je jako .colorset, kód SwiftUI či UIKit, nebo jako jeden katalog .xcassets pro Xcode.";
+"Custom fonts too" = "Také vlastní písma";
+"Dynamic Type shows every text style at every size and writes the scaling code for your custom font." = "Dynamic Type zobrazí každý styl textu v každé velikosti a vytvoří kód pro škálování vašeho vlastního písma.";
+"You can open this guide again from the Help menu." = "Tohoto průvodce můžete znovu otevřít z nabídky Nápověda.";
+"Get Started" = "Začít";
+
+/* Tips */
+"Pick any color on screen" = "Vyberte jakoukoli barvu na obrazovce";
+"Click the eyedropper, then click a pixel in any app, website, or design file. It becomes the working color everywhere." = "Klikněte na kapátko a pak na libovolný pixel v jakékoli aplikaci, na webu nebo v designovém souboru. Barva se stane pracovní na všech obrazovkách.";
+"See the whole app as others do" = "Podívejte se na celou aplikaci očima ostatních";
+"Turn on a color vision preview to view every screen as someone with protanopia, deuteranopia, or tritanopia sees it." = "Zapněte náhled barevného vidění a uvidíte každou obrazovku tak, jak ji vidí člověk s protanopií, deuteranopií nebo tritanopií.";
+
+/* Shortcuts (App Intents) */
+"Pick Color from Screen" = "Vybrat barvu z obrazovky";
+"Opens TetraTint and starts the eyedropper so you can pick any color on screen." = "Otevře TetraTint a spustí kapátko, abyste mohli vybrat jakoukoli barvu na obrazovce.";
+"Open in TetraTint" = "Otevřít v TetraTint";
+"Opens a TetraTint screen: Color, Dynamic Type, System colors, or Palette." = "Otevře jednu z obrazovek TetraTint: Barva, Dynamic Type, Systémové barvy nebo Paleta.";
+"Screen" = "Obrazovka";
+"Pick Color" = "Vybrat barvu";
+"Open Screen" = "Otevřít obrazovku";
+
+/* Roadmap (Settings ▸ Coming Features) — source: TetraTintRoadmap.swift */
+"Close" = "Zavřít";
+"Better VoiceOver support" = "Lepší podpora VoiceOver";
+"VoiceOver reads every color, button, and value in a sensible order." = "VoiceOver přečte každou barvu, tlačítko i hodnotu ve smysluplném pořadí.";
+"Easier-to-see interface" = "Lépe čitelné rozhraní";
+"Labels and controls stay crisp with Increase Contrast turned on." = "Popisky a ovládací prvky zůstanou ostré i se zapnutým zvýšeným kontrastem.";
+"Reduced motion" = "Omezený pohyb";
+"With Reduce Motion on, effects like colors flying into your palette get calmer." = "Při zapnutém omezení pohybu budou efekty, třeba barvy letící do palety, klidnější.";
+"More languages" = "Další jazyky";
+"Use TetraTint in more languages, not just English and Korean." = "Používejte TetraTint ve více jazycích, nejen v angličtině a korejštině.";
+"What’s new" = "Co je nového";
+"After an update, see what’s new the first time you open the app." = "Po aktualizaci uvidíte při prvním otevření aplikace, co je nového.";
+"Replies to your feedback" = "Odpovědi na vaši zpětnou vazbu";
+"Read our replies to your feedback right in the app." = "Odpovědi na vaši zpětnou vazbu si přečtete přímo v aplikaci.";
+"Desktop widgets" = "Widgety na ploše";
+"See your palette right on the desktop without opening the app." = "Podívejte se na svou paletu přímo na ploše, aniž byste otevírali aplikaci.";
+"Palettes on all your Macs" = "Palety na všech vašich Macích";
+"Pick up the same palette on your other Macs with iCloud." = "Navažte na stejné paletě na dalších Macích díky iCloudu.";
+"Back up and restore palettes" = "Záloha a obnovení palet";
+"Save your palette to a file and load it back anytime." = "Uložte paletu do souboru a kdykoli ji znovu načtěte.";
+"Clear the whole palette" = "Vymazat celou paletu";
+"Remove every saved color at once when you want a fresh start." = "Smažte všechny uložené barvy najednou, když chcete začít znovu.";

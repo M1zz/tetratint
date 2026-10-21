@@ -1,0 +1,228 @@
+/* Color vision preview */
+"Color vision preview" = "色覚プレビュー";
+"Preview the whole app as someone with color vision deficiency sees it" = "色覚特性のある人の見え方で、アプリ全体をプレビューします";
+"simulated colors, not the real ones" = "実際の色ではなく、シミュレーションした色です";
+"Exit" = "オフにする";
+"Normal" = "一般色覚";
+"Protanopia" = "P型（1型）色覚";
+"Deuteranopia" = "D型（2型）色覚";
+"Tritanopia" = "T型（3型）色覚";
+"Grayscale" = "グレイスケール";
+
+/* Color names (spoken for accessibility) */
+"Black" = "黒";
+"Dark gray" = "ダークグレイ";
+"Gray" = "グレイ";
+"Light gray" = "ライトグレイ";
+"White" = "白";
+"Red" = "赤";
+"Orange" = "オレンジ";
+"Yellow" = "黄";
+"Lime" = "黄緑";
+"Green" = "緑";
+"Teal" = "青緑";
+"Sky blue" = "空色";
+"Blue" = "青";
+"Indigo" = "藍色";
+"Purple" = "紫";
+"Magenta" = "マゼンタ";
+"Pink" = "ピンク";
+"Dark" = "濃い";
+"Light" = "明るい";
+"Pale" = "薄い";
+
+/* Navigation & view titles */
+"Color" = "カラー";
+"Variants" = "バリエーション";
+"Contrast" = "コントラスト";
+"Color vision" = "色覚";
+"Generate variants" = "バリエーションを作成";
+"Check contrast" = "コントラストをチェック";
+"Simulate color vision" = "色覚をシミュレート";
+"Generate and export light, dark, and high-contrast variants" = "ライト、ダーク、ハイコントラストのバリエーションを作成して書き出します";
+"Check the color against WCAG contrast thresholds" = "WCAGのコントラスト基準で色を判定します";
+"Simulate how the color looks with color vision deficiency" = "色覚特性のある人に色がどう見えるかをシミュレートします";
+"Dynamic Type" = "Dynamic Type";
+"System colors" = "システムカラー";
+"Palette" = "パレット";
+
+/* Appearance variants */
+"Light (Any)" = "ライト（標準）";
+"Light High Contrast" = "ライト・ハイコントラスト";
+"Dark" = "ダーク";
+"Dark High Contrast" = "ダーク・ハイコントラスト";
+"Light" = "ライト";
+"Light HC" = "ライトHC";
+"Dark HC" = "ダークHC";
+"Light mode default (Any Appearance)" = "ライトモードの標準値（Any Appearance）";
+"Light with Increase Contrast on" = "ライト＋「コントラストを上げる」オン時";
+"Dark mode default" = "ダークモードの標準値";
+"Dark with Increase Contrast on" = "ダーク＋「コントラストを上げる」オン時";
+
+/* Color vision deficiency subtitles */
+"Normal vision" = "一般的な色覚";
+"Protan, about 1% of men" = "P型、男性の約1%";
+"Deutan, about 1% of men" = "D型、男性の約1%";
+"Tritan, rare" = "T型、まれ";
+"Monochromacy" = "全色盲（モノクロ）";
+
+/* Safe palettes */
+"Scientific visualization standard, 8 colors" = "科学的可視化の標準、8色";
+"IBM accessibility palette, 5 colors" = "IBMのアクセシビリティ向けパレット、5色";
+"Qualitative data visualization, 7 colors" = "質的データの可視化向け、7色";
+
+/* Generator */
+"Light mode base color" = "ライトモードの基準色";
+"Color name" = "カラー名";
+"Regenerate all" = "すべて再生成";
+"Discard manual edits and re-derive from the base color" = "手動の編集を破棄し、基準色から作り直します";
+"Save to palette" = "パレットに保存";
+"Presets" = "プリセット";
+"Export" = "書き出し";
+"Copied" = "コピーしました";
+"Copy" = "コピー";
+"Save .colorset" = ".colorsetを保存";
+
+/* Variant card */
+"%@:1 vs background" = "背景とのコントラスト比 %@:1";
+"AA text" = "AAテキスト";
+"Low" = "低い";
+"Button" = "ボタン";
+"Tint label" = "ティントラベル";
+"Progress" = "進捗";
+"Copy hex" = "hexをコピー";
+"Fine-tune this variant manually" = "このバリエーションを手動で微調整";
+
+/* Color vision screen */
+"Color vision simulation" = "色覚シミュレーション";
+"This shows how your colors look to people with color vision deficiency. It is the current state, not a suggestion to change them." = "使用中の色が、色覚特性のある人にどう見えるかを再現します。色を変えるよう勧めるものではなく、現状を示すものです。";
+"Conflict warnings" = "区別しにくい色の警告";
+"Finds color pairs that become too similar to tell apart under simulation." = "シミュレーションすると似すぎて見分けがつかなくなる色の組み合わせを探します。";
+"Recommended safe palettes" = "色覚に配慮したパレット";
+"If there were conflicts above, switch to a verified palette that stays distinguishable across every vision type." = "上で見分けにくい組み合わせが見つかった場合は、どの色覚タイプでも区別できる検証済みのパレットに切り替えましょう。";
+"No palette saved yet, so the Okabe Ito demo palette is shown. Save colors in Generator to audit your own palette." = "保存済みのパレットがないため、Okabe Itoのデモ用パレットを表示しています。Generatorで色を保存すると、自分のパレットをチェックできます。";
+"Color" = "カラー";
+"All color pairs stay distinguishable across every vision type (ΔE ≥ 12)" = "すべての色の組み合わせが、どの色覚タイプでも区別できます（ΔE ≥ 12）";
+"ΔE %@ under %@" = "%2$@でのΔE：%1$@";
+"Do not rely on color alone. Pair it with icons, patterns, or labels, or switch to a safe palette below." = "色だけで状態を伝えないでください。アイコンやパターン、ラベルを併用するか、下の安全なパレットに切り替えましょう。";
+"Add to palette" = "パレットに追加";
+"Derive each color into four variants and save to the palette" = "各色から4種類のバリエーションを作成し、パレットに保存します";
+
+/* Contrast audit */
+"Paste the colors your app uses (separated by line breaks or commas)" = "アプリで使っている色を貼り付け（改行またはカンマ区切り）";
+"Audit" = "チェック";
+"Screens each color against light (vs white) and dark (vs black) backgrounds using WCAG thresholds." = "WCAGの基準で、ライト（白に対して）とダーク（黒に対して）の背景ごとに各色を判定します。";
+"Preview: %lld colors" = "プレビュー：%lld色";
+"Preview: %lld colors, %lld unrecognized" = "プレビュー：%1$lld色（うち%2$lld色は認識できません）";
+"%lld of %lld colors need a high-contrast variant" = "全%2$lld色のうち%1$lld色にハイコントラスト版が必要です";
+"Use as is" = "そのまま使えます";
+"Needs high contrast" = "ハイコントラスト版が必要";
+"Decorative only" = "装飾用のみ";
+"Meets 4.5:1 for text" = "テキストの基準4.5:1を満たしています";
+"Passes 3:1 for UI; text or High Contrast needs a variant" = "UI部品の基準3:1は満たしています。テキストやハイコントラストにはバリエーションが必要です";
+"Below 3:1; do not use for text, icons, or status" = "3:1未満です。テキスト、アイコン、状態表示には使わないでください";
+"Derive four variants" = "4種類のバリエーションを作成";
+"Derive four variants including high contrast and save to the palette" = "ハイコントラストを含む4種類のバリエーションを作成し、パレットに保存します";
+
+/* Dynamic Type */
+"Scaling preview" = "拡大縮小プレビュー";
+"Style" = "スタイル";
+"Custom font PostScript name" = "カスタムフォントのPostScript名";
+"Category" = "カテゴリ";
+"The quick brown fox jumps over the lazy dog" = "いろはにほへと The quick brown fox";
+"Code" = "コード";
+"Text style sizes (pt)" = "テキストスタイルのサイズ（pt）";
+"Large is the default. In accessibility sizes (AX1 to AX5), Body grows to %@pt, over three times the default, so avoid fixed heights, fixed padding, and lineLimit(1)." = "標準はLargeです。アクセシビリティサイズ（AX1〜AX5）ではBodyが%@ptまで大きくなり、標準の3倍以上になります。固定の高さ、固定のパディング、lineLimit(1)は避けてください。";
+
+/* System colors */
+"Tint colors" = "ティントカラー";
+"Gray colors" = "グレイ系カラー";
+"Reference values from Apple's Human Interface Guidelines. Actual values may change between OS releases, so always use the UIColor or Color API in shipping code rather than hard-coding." = "Appleのヒューマンインターフェイスガイドラインに載っている参考値です。実際の値はOSのリリースごとに変わる可能性があるため、製品のコードでは値を直接書かず、UIColorまたはColorのAPIを使ってください。";
+"Click to copy %@" = "クリックして%@をコピー";
+
+/* Screen color picker */
+"Pick color from screen" = "画面から色を取得";
+"Pick a color from anywhere on screen" = "画面上のどこからでも色を取得";
+"Pick a color from anywhere on screen and make it the working color" = "画面上のどこからでも色を取得し、作業中の色に設定します";
+"Working color" = "作業中の色";
+"Change the working color to see how it looks under each type of color vision." = "作業中の色を変えて、各色覚タイプでの見え方を確認しましょう。";
+
+/* Palette */
+"Export .xcassets" = ".xcassetsを書き出し";
+"Export every saved color as one asset catalog" = "保存したすべての色を1つのアセットカタログとして書き出します";
+"No saved colors" = "保存した色はありません";
+"Generate a color and save it here, then export your whole brand palette as one .xcassets catalog." = "色を作成してここに保存すると、ブランドのパレット全体を1つの.xcassetsカタログとして書き出せます。";
+"Each color is saved as four variants" = "各色は4種類のバリエーションで保存されます";
+"Export %@.colorset" = "%@.colorsetを書き出し";
+"Delete" = "削除";
+
+/* VoiceOver labels */
+"Delete %@" = "%@を削除";
+"Copy %@" = "%@をコピー";
+"Hex value" = "hex値";
+"Preset %@" = "プリセット %@";
+
+/* Settings */
+"Support" = "サポート";
+"Contact" = "お問い合わせ";
+"Help" = "ヘルプ";
+"Email the developer" = "開発者にメールを送る";
+"Message on Instagram (@lee25_ios)" = "InstagramでDMを送る（@lee25_ios）";
+"Show the welcome guide again" = "ようこそガイドをもう一度表示";
+"Opens the guide in the main window" = "メインウインドウでガイドを開きます";
+
+/* Help menu */
+"Welcome to TetraTint" = "TetraTintへようこそ";
+"TetraTint Support Page" = "TetraTintのサポートページ";
+"Email the Developer…" = "開発者にメールを送る…";
+
+/* Onboarding */
+"Accessibility work Apple doesn't do for your custom colors and fonts." = "Appleがカスタムカラーやカスタムフォントに対しては行ってくれないアクセシビリティ対応を、お任せください。";
+"Start with one color" = "まずは1色から";
+"Type a hex value, use the color well, or pick any pixel on screen with the eyedropper. Every screen works on this same color." = "hex値を入力するか、カラーウェルを使うか、スポイトで画面上の好きな1ピクセルを選びます。すべての画面が、この1色をもとに動作します。";
+"Look at it through three lenses" = "3つの視点で確認";
+"Generate light, dark, and high-contrast variants, check WCAG contrast, and see how it looks with color vision deficiency." = "ライト、ダーク、ハイコントラストのバリエーションを作成し、WCAGのコントラストをチェックして、色覚特性のある人の見え方も確認できます。";
+"Save and export" = "保存して書き出し";
+"Save colors to your palette, then export a .colorset, SwiftUI or UIKit code, or one .xcassets catalog for Xcode." = "色をパレットに保存したら、.colorset、SwiftUIやUIKitのコード、またはXcode用の.xcassetsカタログ1つにまとめて書き出せます。";
+"Custom fonts too" = "カスタムフォントにも対応";
+"Dynamic Type shows every text style at every size and writes the scaling code for your custom font." = "Dynamic Typeの画面では、すべてのテキストスタイルをすべてのサイズで確認でき、カスタムフォント用の拡大縮小コードも生成できます。";
+"You can open this guide again from the Help menu." = "このガイドは、ヘルプメニューからいつでも開き直せます。";
+"Get Started" = "はじめる";
+
+/* Tips */
+"Pick any color on screen" = "画面上の好きな色を取得";
+"Click the eyedropper, then click a pixel in any app, website, or design file. It becomes the working color everywhere." = "スポイトをクリックしてから、ほかのアプリやWebサイト、デザインファイル上の好きな1ピクセルをクリックします。その色が、すべての画面で作業中の色になります。";
+"See the whole app as others do" = "ほかの人の見え方でアプリ全体を確認";
+"Turn on a color vision preview to view every screen as someone with protanopia, deuteranopia, or tritanopia sees it." = "色覚プレビューをオンにすると、P型・D型・T型の色覚の人に見える状態で、すべての画面を確認できます。";
+
+/* Shortcuts (App Intents) */
+"Pick Color from Screen" = "画面から色を取得";
+"Opens TetraTint and starts the eyedropper so you can pick any color on screen." = "TetraTintを開いてスポイトを起動し、画面上の好きな色を取得できるようにします。";
+"Open in TetraTint" = "TetraTintで開く";
+"Opens a TetraTint screen: Color, Dynamic Type, System colors, or Palette." = "TetraTintの画面を1つ開きます：カラー、Dynamic Type、システムカラー、パレット。";
+"Screen" = "画面";
+"Pick Color" = "色を取得";
+"Open Screen" = "画面を開く";
+
+/* Roadmap (Settings ▸ Coming Features) — source: TetraTintRoadmap.swift */
+"Close" = "閉じる";
+"Better VoiceOver support" = "VoiceOverでもっと使いやすく";
+"VoiceOver reads every color, button, and value in a sensible order." = "VoiceOverが、色もボタンも値も、わかりやすい順番で読み上げます。";
+"Easier-to-see interface" = "見やすい画面に";
+"Labels and controls stay crisp with Increase Contrast turned on." = "「コントラストを上げる」をオンにしても、文字やボタンがくっきり見えます。";
+"Reduced motion" = "視差効果を減らす";
+"With Reduce Motion on, effects like colors flying into your palette get calmer." = "「視差効果を減らす」をオンにすると、色がパレットに飛んでいく演出などの動きがおだやかになります。";
+"More languages" = "対応言語を拡大";
+"Use TetraTint in more languages, not just English and Korean." = "英語と韓国語だけでなく、もっと多くの言語でTetraTintを使えるようになります。";
+"What’s new" = "新機能のお知らせ";
+"After an update, see what’s new the first time you open the app." = "アップデート後、最初に開いたときに新しくなった点をお知らせします。";
+"Replies to your feedback" = "ご意見への返信";
+"Read our replies to your feedback right in the app." = "お寄せいただいたご意見への返信を、アプリの中で読めます。";
+"Desktop widgets" = "デスクトップウィジェット";
+"See your palette right on the desktop without opening the app." = "アプリを開かなくても、デスクトップでパレットをすぐ確認できます。";
+"Palettes on all your Macs" = "すべてのMacで同じパレット";
+"Pick up the same palette on your other Macs with iCloud." = "iCloudで、ほかのMacでも同じパレットを続けて使えます。";
+"Back up and restore palettes" = "パレットのバックアップと復元";
+"Save your palette to a file and load it back anytime." = "パレットをファイルに保存して、いつでも読み込み直せます。";
+"Clear the whole palette" = "パレットを一括で空にする";
+"Remove every saved color at once when you want a fresh start." = "最初からやり直したいときに、保存した色をまとめて削除できます。";

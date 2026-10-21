@@ -1,0 +1,5 @@
+/* App Shortcuts phrases — Siri · Spotlight · Kurzbefehle-App */
+"Pick a color with ${applicationName}" = "Farbe mit ${applicationName} aufnehmen";
+"Pick a color from screen in ${applicationName}" = "Farbe vom Bildschirm in ${applicationName} aufnehmen";
+"Open ${section} in ${applicationName}" = "${section} in ${applicationName} öffnen";
+"Show ${applicationName} ${section}" = "${applicationName} ${section} zeigen";

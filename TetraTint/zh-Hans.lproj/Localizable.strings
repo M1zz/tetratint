@@ -1,0 +1,228 @@
+/* Color vision preview */
+"Color vision preview" = "色觉预览";
+"Preview the whole app as someone with color vision deficiency sees it" = "以色觉缺陷用户的视角预览整个 App";
+"simulated colors, not the real ones" = "此为模拟颜色，并非真实颜色";
+"Exit" = "退出";
+"Normal" = "正常";
+"Protanopia" = "红色盲";
+"Deuteranopia" = "绿色盲";
+"Tritanopia" = "蓝色盲";
+"Grayscale" = "灰度";
+
+/* Color names (spoken for accessibility) */
+"Black" = "黑色";
+"Dark gray" = "深灰色";
+"Gray" = "灰色";
+"Light gray" = "浅灰色";
+"White" = "白色";
+"Red" = "红色";
+"Orange" = "橙色";
+"Yellow" = "黄色";
+"Lime" = "黄绿色";
+"Green" = "绿色";
+"Teal" = "青色";
+"Sky blue" = "天蓝色";
+"Blue" = "蓝色";
+"Indigo" = "靛蓝色";
+"Purple" = "紫色";
+"Magenta" = "洋红色";
+"Pink" = "粉色";
+"Dark" = "深色";
+"Light" = "浅色";
+"Pale" = "淡色";
+
+/* Navigation & view titles */
+"Color" = "颜色";
+"Variants" = "变体";
+"Contrast" = "对比度";
+"Color vision" = "色觉";
+"Generate variants" = "生成变体";
+"Check contrast" = "检查对比度";
+"Simulate color vision" = "模拟色觉";
+"Generate and export light, dark, and high-contrast variants" = "生成并导出浅色、深色和高对比度变体";
+"Check the color against WCAG contrast thresholds" = "按 WCAG 对比度标准检查颜色";
+"Simulate how the color looks with color vision deficiency" = "模拟色觉缺陷用户看到的颜色效果";
+"Dynamic Type" = "动态字体";
+"System colors" = "系统颜色";
+"Palette" = "调色板";
+
+/* Appearance variants */
+"Light (Any)" = "浅色（任何外观）";
+"Light High Contrast" = "浅色高对比度";
+"Dark" = "深色";
+"Dark High Contrast" = "深色高对比度";
+"Light" = "浅色";
+"Light HC" = "浅色高对比";
+"Dark HC" = "深色高对比";
+"Light mode default (Any Appearance)" = "浅色模式默认值（Any Appearance）";
+"Light with Increase Contrast on" = "浅色模式，已开启“增强对比度”";
+"Dark mode default" = "深色模式默认值";
+"Dark with Increase Contrast on" = "深色模式，已开启“增强对比度”";
+
+/* Color vision deficiency subtitles */
+"Normal vision" = "正常色觉";
+"Protan, about 1% of men" = "红色盲，约占男性的 1%";
+"Deutan, about 1% of men" = "绿色盲，约占男性的 1%";
+"Tritan, rare" = "蓝色盲，较为罕见";
+"Monochromacy" = "全色盲（灰度）";
+
+/* Safe palettes */
+"Scientific visualization standard, 8 colors" = "科学可视化标准，8 色";
+"IBM accessibility palette, 5 colors" = "IBM 无障碍调色板，5 色";
+"Qualitative data visualization, 7 colors" = "定性数据可视化，7 色";
+
+/* Generator */
+"Light mode base color" = "浅色模式基准色";
+"Color name" = "颜色名称";
+"Regenerate all" = "全部重新生成";
+"Discard manual edits and re-derive from the base color" = "放弃手动调整，从基准色重新生成";
+"Save to palette" = "存入调色板";
+"Presets" = "预设";
+"Export" = "导出";
+"Copied" = "已拷贝";
+"Copy" = "拷贝";
+"Save .colorset" = "保存 .colorset";
+
+/* Variant card */
+"%@:1 vs background" = "与背景的对比度 %@:1";
+"AA text" = "AA 文本";
+"Low" = "偏低";
+"Button" = "按钮";
+"Tint label" = "着色标签";
+"Progress" = "进度";
+"Copy hex" = "拷贝 hex 值";
+"Fine-tune this variant manually" = "手动微调此变体";
+
+/* Color vision screen */
+"Color vision simulation" = "色觉模拟";
+"This shows how your colors look to people with color vision deficiency. It is the current state, not a suggestion to change them." = "这里展示的是色觉缺陷用户眼中你所用颜色的样子，仅反映当前状态，并不是要求你修改颜色。";
+"Conflict warnings" = "难以区分的警告";
+"Finds color pairs that become too similar to tell apart under simulation." = "找出在模拟下因过于相近而难以区分的颜色组合。";
+"Recommended safe palettes" = "色盲友好调色板";
+"If there were conflicts above, switch to a verified palette that stays distinguishable across every vision type." = "如果上方存在冲突，建议换用经过验证、在所有色觉类型下都容易区分的调色板。";
+"No palette saved yet, so the Okabe Ito demo palette is shown. Save colors in Generator to audit your own palette." = "尚未存入调色板，因此显示 Okabe Ito 示例调色板。在“Generator”中存入颜色后，即可检查你自己的调色板。";
+"Color" = "颜色";
+"All color pairs stay distinguishable across every vision type (ΔE ≥ 12)" = "所有颜色组合在各种色觉类型下均可区分（ΔE ≥ 12）";
+"ΔE %@ under %@" = "%2$@下的 ΔE 为 %1$@";
+"Do not rely on color alone. Pair it with icons, patterns, or labels, or switch to a safe palette below." = "不要只靠颜色来表达状态，请搭配图标、图案或标签，或换用下方的安全调色板。";
+"Add to palette" = "添加到调色板";
+"Derive each color into four variants and save to the palette" = "将每种颜色衍生为四种变体并存入调色板";
+
+/* Contrast audit */
+"Paste the colors your app uses (separated by line breaks or commas)" = "粘贴 App 中使用的颜色（用换行或逗号分隔）";
+"Audit" = "检查";
+"Screens each color against light (vs white) and dark (vs black) backgrounds using WCAG thresholds." = "按 WCAG 标准，分别在浅色（对比白色）和深色（对比黑色）背景下筛查每种颜色。";
+"Preview: %lld colors" = "预览：%lld 种颜色";
+"Preview: %lld colors, %lld unrecognized" = "预览：%1$lld 种颜色，其中 %2$lld 种无法识别";
+"%lld of %lld colors need a high-contrast variant" = "共 %2$lld 种颜色，其中 %1$lld 种需要高对比度变体";
+"Use as is" = "可直接使用";
+"Needs high contrast" = "需要高对比度变体";
+"Decorative only" = "仅限装饰用途";
+"Meets 4.5:1 for text" = "文本对比度达到 4.5:1";
+"Passes 3:1 for UI; text or High Contrast needs a variant" = "UI 元素达到 3:1；文本或高对比度模式需要另设变体";
+"Below 3:1; do not use for text, icons, or status" = "低于 3:1，请勿用于文本、图标或状态提示";
+"Derive four variants" = "生成四种变体";
+"Derive four variants including high contrast and save to the palette" = "生成含高对比度在内的四种变体并存入调色板";
+
+/* Dynamic Type */
+"Scaling preview" = "缩放预览";
+"Style" = "样式";
+"Custom font PostScript name" = "自定义字体的 PostScript 名称";
+"Category" = "类别";
+"The quick brown fox jumps over the lazy dog" = "天地玄黄，宇宙洪荒 The quick brown fox";
+"Code" = "代码";
+"Text style sizes (pt)" = "文本样式字号（pt）";
+"Large is the default. In accessibility sizes (AX1 to AX5), Body grows to %@pt, over three times the default, so avoid fixed heights, fixed padding, and lineLimit(1)." = "默认类别为 Large。在辅助功能字号（AX1 至 AX5）下，Body 会增大到 %@pt，超过默认值的三倍，因此请避免使用固定高度、固定内边距和 lineLimit(1)。";
+
+/* System colors */
+"Tint colors" = "着色颜色";
+"Gray colors" = "灰色系";
+"Reference values from Apple's Human Interface Guidelines. Actual values may change between OS releases, so always use the UIColor or Color API in shipping code rather than hard-coding." = "数值参考自 Apple《人机界面指南》。实际数值可能随系统版本变化，正式发布的代码中请使用 UIColor 或 Color API，不要硬编码。";
+"Click to copy %@" = "点按拷贝 %@";
+
+/* Screen color picker */
+"Pick color from screen" = "屏幕取色";
+"Pick a color from anywhere on screen" = "在屏幕任意位置取色";
+"Pick a color from anywhere on screen and make it the working color" = "在屏幕任意位置取色，并设为当前工作颜色";
+"Working color" = "工作颜色";
+"Change the working color to see how it looks under each type of color vision." = "更改工作颜色，即可查看它在各种色觉类型下的效果。";
+
+/* Palette */
+"Export .xcassets" = "导出 .xcassets";
+"Export every saved color as one asset catalog" = "将所有已存颜色导出为一个资源目录";
+"No saved colors" = "暂无已存颜色";
+"Generate a color and save it here, then export your whole brand palette as one .xcassets catalog." = "在 Generator 中生成颜色并存到这里，然后将整套品牌调色板导出为一个 .xcassets 目录。";
+"Each color is saved as four variants" = "每种颜色会存为四种变体";
+"Export %@.colorset" = "导出 %@.colorset";
+"Delete" = "删除";
+
+/* VoiceOver labels */
+"Delete %@" = "删除 %@";
+"Copy %@" = "拷贝 %@";
+"Hex value" = "hex 值";
+"Preset %@" = "预设 %@";
+
+/* Settings */
+"Support" = "支持";
+"Contact" = "联系";
+"Help" = "帮助";
+"Email the developer" = "给开发者发邮件";
+"Message on Instagram (@lee25_ios)" = "在 Instagram 上私信（@lee25_ios）";
+"Show the welcome guide again" = "重新查看欢迎引导";
+"Opens the guide in the main window" = "在主窗口中打开引导";
+
+/* Help menu */
+"Welcome to TetraTint" = "欢迎使用 TetraTint";
+"TetraTint Support Page" = "TetraTint 支持页面";
+"Email the Developer…" = "给开发者发邮件…";
+
+/* Onboarding */
+"Accessibility work Apple doesn't do for your custom colors and fonts." = "为你的自定义颜色和字体，补上 Apple 没有代劳的无障碍工作。";
+"Start with one color" = "从一种颜色开始";
+"Type a hex value, use the color well, or pick any pixel on screen with the eyedropper. Every screen works on this same color." = "输入 hex 值，使用颜色面板，或用吸管在屏幕上任意取色。所有页面都围绕这同一种颜色工作。";
+"Look at it through three lenses" = "用三种视角检视";
+"Generate light, dark, and high-contrast variants, check WCAG contrast, and see how it looks with color vision deficiency." = "生成浅色、深色和高对比度变体，检查 WCAG 对比度，并查看色觉缺陷用户眼中的效果。";
+"Save and export" = "存储并导出";
+"Save colors to your palette, then export a .colorset, SwiftUI or UIKit code, or one .xcassets catalog for Xcode." = "将颜色存入调色板，再导出为 .colorset、SwiftUI 或 UIKit 代码，或导出供 Xcode 使用的 .xcassets 目录。";
+"Custom fonts too" = "自定义字体同样适用";
+"Dynamic Type shows every text style at every size and writes the scaling code for your custom font." = "“动态字体”页面可查看所有文本样式在各种字号下的效果，并为你的自定义字体生成缩放代码。";
+"You can open this guide again from the Help menu." = "你可以随时在“帮助”菜单中重新打开此引导。";
+"Get Started" = "开始使用";
+
+/* Tips */
+"Pick any color on screen" = "在屏幕上随意取色";
+"Click the eyedropper, then click a pixel in any app, website, or design file. It becomes the working color everywhere." = "点按吸管，再点按任意 App、网页或设计文件中的任意一点，该颜色就会成为所有页面的工作颜色。";
+"See the whole app as others do" = "以他人的视角查看整个 App";
+"Turn on a color vision preview to view every screen as someone with protanopia, deuteranopia, or tritanopia sees it." = "开启色觉预览后，即可按红色盲、绿色盲或蓝色盲用户看到的效果查看每个页面。";
+
+/* Shortcuts (App Intents) */
+"Pick Color from Screen" = "屏幕取色";
+"Opens TetraTint and starts the eyedropper so you can pick any color on screen." = "打开 TetraTint 并启动吸管，让你在屏幕上随意取色。";
+"Open in TetraTint" = "在 TetraTint 中打开";
+"Opens a TetraTint screen: Color, Dynamic Type, System colors, or Palette." = "打开 TetraTint 的某个页面：颜色、动态字体、系统颜色或调色板。";
+"Screen" = "页面";
+"Pick Color" = "取色";
+"Open Screen" = "打开页面";
+
+/* Roadmap (Settings ▸ Coming Features) — source: TetraTintRoadmap.swift */
+"Close" = "关闭";
+"Better VoiceOver support" = "更好的旁白支持";
+"VoiceOver reads every color, button, and value in a sensible order." = "旁白会按合理的顺序朗读每种颜色、按钮和数值。";
+"Easier-to-see interface" = "更清晰易读的界面";
+"Labels and controls stay crisp with Increase Contrast turned on." = "开启“增强对比度”后，文字和控件依然清晰醒目。";
+"Reduced motion" = "减少动态效果";
+"With Reduce Motion on, effects like colors flying into your palette get calmer." = "开启“减弱动态效果”后，颜色飞入调色板之类的动画会更加柔和。";
+"More languages" = "更多语言";
+"Use TetraTint in more languages, not just English and Korean." = "除英语和韩语外，支持用更多语言使用 TetraTint。";
+"What’s new" = "新功能介绍";
+"After an update, see what’s new the first time you open the app." = "更新后首次打开 App 时，即可看到新增了哪些内容。";
+"Replies to your feedback" = "查看反馈回复";
+"Read our replies to your feedback right in the app." = "直接在 App 内查看我们对你反馈的回复。";
+"Desktop widgets" = "桌面小组件";
+"See your palette right on the desktop without opening the app." = "无需打开 App，直接在桌面上查看你的调色板。";
+"Palettes on all your Macs" = "所有 Mac 共享调色板";
+"Pick up the same palette on your other Macs with iCloud." = "通过 iCloud，在其他 Mac 上继续使用同一套调色板。";
+"Back up and restore palettes" = "备份与恢复调色板";
+"Save your palette to a file and load it back anytime." = "将调色板存为文件，随时可以重新载入。";
+"Clear the whole palette" = "一键清空调色板";
+"Remove every saved color at once when you want a fresh start." = "想重新开始时，可一次性删除所有已存颜色。";

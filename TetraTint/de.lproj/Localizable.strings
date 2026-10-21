@@ -1,0 +1,228 @@
+/* Color vision preview */
+"Color vision preview" = "Farbsehen-Vorschau";
+"Preview the whole app as someone with color vision deficiency sees it" = "Die ganze App so ansehen, wie Menschen mit Farbfehlsichtigkeit sie sehen";
+"simulated colors, not the real ones" = "Simulierte Farben, nicht die echten";
+"Exit" = "Beenden";
+"Normal" = "Normal";
+"Protanopia" = "Protanopie";
+"Deuteranopia" = "Deuteranopie";
+"Tritanopia" = "Tritanopie";
+"Grayscale" = "Graustufen";
+
+/* Color names (spoken for accessibility) */
+"Black" = "Schwarz";
+"Dark gray" = "Dunkelgrau";
+"Gray" = "Grau";
+"Light gray" = "Hellgrau";
+"White" = "Weiß";
+"Red" = "Rot";
+"Orange" = "Orange";
+"Yellow" = "Gelb";
+"Lime" = "Limettengrün";
+"Green" = "Grün";
+"Teal" = "Blaugrün";
+"Sky blue" = "Himmelblau";
+"Blue" = "Blau";
+"Indigo" = "Indigo";
+"Purple" = "Violett";
+"Magenta" = "Magenta";
+"Pink" = "Rosa";
+"Dark" = "Dunkel";
+"Light" = "Hell";
+"Pale" = "Blass";
+
+/* Navigation & view titles */
+"Color" = "Farbe";
+"Variants" = "Varianten";
+"Contrast" = "Kontrast";
+"Color vision" = "Farbsehen";
+"Generate variants" = "Varianten erzeugen";
+"Check contrast" = "Kontrast prüfen";
+"Simulate color vision" = "Farbsehen simulieren";
+"Generate and export light, dark, and high-contrast variants" = "Helle, dunkle und kontrastreiche Varianten erzeugen und exportieren";
+"Check the color against WCAG contrast thresholds" = "Die Farbe anhand der WCAG-Kontrastgrenzen prüfen";
+"Simulate how the color looks with color vision deficiency" = "Simulieren, wie die Farbe bei Farbfehlsichtigkeit aussieht";
+"Dynamic Type" = "Dynamic Type";
+"System colors" = "Systemfarben";
+"Palette" = "Palette";
+
+/* Appearance variants */
+"Light (Any)" = "Hell (Standard)";
+"Light High Contrast" = "Hell, hoher Kontrast";
+"Dark" = "Dunkel";
+"Dark High Contrast" = "Dunkel, hoher Kontrast";
+"Light" = "Hell";
+"Light HC" = "Hell, hoher Kontrast";
+"Dark HC" = "Dunkel, hoher Kontrast";
+"Light mode default (Any Appearance)" = "Standard im hellen Modus (Any Appearance)";
+"Light with Increase Contrast on" = "Hell mit aktiviertem „Kontrast erhöhen“";
+"Dark mode default" = "Standard im dunklen Modus";
+"Dark with Increase Contrast on" = "Dunkel mit aktiviertem „Kontrast erhöhen“";
+
+/* Color vision deficiency subtitles */
+"Normal vision" = "Normales Farbsehen";
+"Protan, about 1% of men" = "Protan, etwa 1 % der Männer";
+"Deutan, about 1% of men" = "Deutan, etwa 1 % der Männer";
+"Tritan, rare" = "Tritan, selten";
+"Monochromacy" = "Monochromasie (Graustufen)";
+
+/* Safe palettes */
+"Scientific visualization standard, 8 colors" = "Standard für wissenschaftliche Visualisierung, 8 Farben";
+"IBM accessibility palette, 5 colors" = "IBM-Palette für Barrierefreiheit, 5 Farben";
+"Qualitative data visualization, 7 colors" = "Für qualitative Daten, 7 Farben";
+
+/* Generator */
+"Light mode base color" = "Basisfarbe für den hellen Modus";
+"Color name" = "Farbname";
+"Regenerate all" = "Alle neu erzeugen";
+"Discard manual edits and re-derive from the base color" = "Manuelle Änderungen verwerfen und aus der Basisfarbe neu ableiten";
+"Save to palette" = "In Palette sichern";
+"Presets" = "Vorgaben";
+"Export" = "Exportieren";
+"Copied" = "Kopiert";
+"Copy" = "Kopieren";
+"Save .colorset" = ".colorset sichern";
+
+/* Variant card */
+"%@:1 vs background" = "%@:1 zum Hintergrund";
+"AA text" = "AA-Text";
+"Low" = "Niedrig";
+"Button" = "Button";
+"Tint label" = "Tint-Beschriftung";
+"Progress" = "Fortschritt";
+"Copy hex" = "Hex kopieren";
+"Fine-tune this variant manually" = "Diese Variante von Hand feinjustieren";
+
+/* Color vision screen */
+"Color vision simulation" = "Farbsehen-Simulation";
+"This shows how your colors look to people with color vision deficiency. It is the current state, not a suggestion to change them." = "Hier siehst du, wie deine Farben auf Menschen mit Farbfehlsichtigkeit wirken. Das ist der aktuelle Stand, keine Aufforderung, sie zu ändern.";
+"Conflict warnings" = "Verwechslungswarnungen";
+"Finds color pairs that become too similar to tell apart under simulation." = "Findet Farbpaare, die in der Simulation zu ähnlich werden und sich nicht mehr unterscheiden lassen.";
+"Recommended safe palettes" = "Empfohlene sichere Paletten";
+"If there were conflicts above, switch to a verified palette that stays distinguishable across every vision type." = "Falls oben Konflikte aufgetreten sind, wechsle zu einer geprüften Palette, die bei jeder Art des Farbsehens unterscheidbar bleibt.";
+"No palette saved yet, so the Okabe Ito demo palette is shown. Save colors in Generator to audit your own palette." = "Noch keine Palette gesichert, daher siehst du die Okabe-Ito-Demopalette. Sichere Farben im Generator, um deine eigene Palette zu prüfen.";
+"Color" = "Farbe";
+"All color pairs stay distinguishable across every vision type (ΔE ≥ 12)" = "Alle Farbpaare bleiben bei jeder Art des Farbsehens unterscheidbar (ΔE ≥ 12)";
+"ΔE %@ under %@" = "ΔE %1$@ bei %2$@";
+"Do not rely on color alone. Pair it with icons, patterns, or labels, or switch to a safe palette below." = "Verlasse dich nicht allein auf Farbe. Ergänze Symbole, Muster oder Beschriftungen oder wechsle zu einer der sicheren Paletten unten.";
+"Add to palette" = "Zur Palette hinzufügen";
+"Derive each color into four variants and save to the palette" = "Jede Farbe in vier Varianten ableiten und in der Palette sichern";
+
+/* Contrast audit */
+"Paste the colors your app uses (separated by line breaks or commas)" = "Farben einfügen, die deine App verwendet (getrennt durch Zeilenumbrüche oder Kommas)";
+"Audit" = "Prüfen";
+"Screens each color against light (vs white) and dark (vs black) backgrounds using WCAG thresholds." = "Prüft jede Farbe anhand der WCAG-Grenzwerte auf hellem (gegen Weiß) und dunklem Hintergrund (gegen Schwarz).";
+"Preview: %lld colors" = "Vorschau: %lld Farben";
+"Preview: %lld colors, %lld unrecognized" = "Vorschau: %lld Farben, %lld nicht erkannt";
+"%lld of %lld colors need a high-contrast variant" = "%lld von %lld Farben brauchen eine Variante mit hohem Kontrast";
+"Use as is" = "Unverändert nutzbar";
+"Needs high contrast" = "Hoher Kontrast nötig";
+"Decorative only" = "Nur zur Dekoration";
+"Meets 4.5:1 for text" = "Erfüllt 4,5:1 für Text";
+"Passes 3:1 for UI; text or High Contrast needs a variant" = "Erfüllt 3:1 für UI-Elemente; für Text oder hohen Kontrast ist eine Variante nötig";
+"Below 3:1; do not use for text, icons, or status" = "Unter 3:1; nicht für Text, Symbole oder Statusanzeigen verwenden";
+"Derive four variants" = "Vier Varianten ableiten";
+"Derive four variants including high contrast and save to the palette" = "Vier Varianten inklusive hohem Kontrast ableiten und in der Palette sichern";
+
+/* Dynamic Type */
+"Scaling preview" = "Skalierungsvorschau";
+"Style" = "Stil";
+"Custom font PostScript name" = "PostScript-Name der eigenen Schrift";
+"Category" = "Kategorie";
+"The quick brown fox jumps over the lazy dog" = "Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich";
+"Code" = "Code";
+"Text style sizes (pt)" = "Größen der Textstile (pt)";
+"Large is the default. In accessibility sizes (AX1 to AX5), Body grows to %@pt, over three times the default, so avoid fixed heights, fixed padding, and lineLimit(1)." = "Large ist der Standard. In den Bedienungshilfen-Größen (AX1 bis AX5) wächst Body auf %@ pt, mehr als das Dreifache des Standards. Vermeide daher feste Höhen, feste Abstände und lineLimit(1).";
+
+/* System colors */
+"Tint colors" = "Tint-Farben";
+"Gray colors" = "Grautöne";
+"Reference values from Apple's Human Interface Guidelines. Actual values may change between OS releases, so always use the UIColor or Color API in shipping code rather than hard-coding." = "Referenzwerte aus Apples Human Interface Guidelines. Die tatsächlichen Werte können sich mit neuen OS-Versionen ändern. Verwende im ausgelieferten Code deshalb die UIColor- oder Color-API, statt Werte fest einzutragen.";
+"Click to copy %@" = "Klicken, um %@ zu kopieren";
+
+/* Screen color picker */
+"Pick color from screen" = "Farbe vom Bildschirm aufnehmen";
+"Pick a color from anywhere on screen" = "Eine Farbe von beliebiger Stelle des Bildschirms aufnehmen";
+"Pick a color from anywhere on screen and make it the working color" = "Eine Farbe von beliebiger Stelle des Bildschirms aufnehmen und als Arbeitsfarbe festlegen";
+"Working color" = "Arbeitsfarbe";
+"Change the working color to see how it looks under each type of color vision." = "Ändere die Arbeitsfarbe, um zu sehen, wie sie bei jeder Art des Farbsehens aussieht.";
+
+/* Palette */
+"Export .xcassets" = ".xcassets exportieren";
+"Export every saved color as one asset catalog" = "Alle gesicherten Farben als einen Asset-Katalog exportieren";
+"No saved colors" = "Keine gesicherten Farben";
+"Generate a color and save it here, then export your whole brand palette as one .xcassets catalog." = "Erzeuge im Generator eine Farbe und sichere sie hier. Danach exportierst du deine gesamte Markenpalette als einen .xcassets-Katalog.";
+"Each color is saved as four variants" = "Jede Farbe wird in vier Varianten gesichert";
+"Export %@.colorset" = "%@.colorset exportieren";
+"Delete" = "Löschen";
+
+/* VoiceOver labels */
+"Delete %@" = "%@ löschen";
+"Copy %@" = "%@ kopieren";
+"Hex value" = "Hex-Wert";
+"Preset %@" = "Vorgabe %@";
+
+/* Settings */
+"Support" = "Support";
+"Contact" = "Kontakt";
+"Help" = "Hilfe";
+"Email the developer" = "Dem Entwickler mailen";
+"Message on Instagram (@lee25_ios)" = "Nachricht auf Instagram (@lee25_ios)";
+"Show the welcome guide again" = "Willkommensanleitung erneut zeigen";
+"Opens the guide in the main window" = "Öffnet die Anleitung im Hauptfenster";
+
+/* Help menu */
+"Welcome to TetraTint" = "Willkommen bei TetraTint";
+"TetraTint Support Page" = "TetraTint-Supportseite";
+"Email the Developer…" = "Dem Entwickler mailen …";
+
+/* Onboarding */
+"Accessibility work Apple doesn't do for your custom colors and fonts." = "Die Barrierefreiheits-Arbeit, die Apple für eigene Farben und Schriften nicht übernimmt.";
+"Start with one color" = "Starte mit einer Farbe";
+"Type a hex value, use the color well, or pick any pixel on screen with the eyedropper. Every screen works on this same color." = "Gib einen Hex-Wert ein, nutze das Farbfeld oder nimm mit der Pipette einen beliebigen Bildschirmpunkt auf. Alle Bereiche arbeiten mit dieser einen Farbe.";
+"Look at it through three lenses" = "Betrachte sie mit drei Blickwinkeln";
+"Generate light, dark, and high-contrast variants, check WCAG contrast, and see how it looks with color vision deficiency." = "Erzeuge helle, dunkle und kontrastreiche Varianten, prüfe den WCAG-Kontrast und sieh, wie die Farbe bei Farbfehlsichtigkeit wirkt.";
+"Save and export" = "Sichern und exportieren";
+"Save colors to your palette, then export a .colorset, SwiftUI or UIKit code, or one .xcassets catalog for Xcode." = "Sichere Farben in deiner Palette und exportiere sie als .colorset, als SwiftUI- oder UIKit-Code oder als einen .xcassets-Katalog für Xcode.";
+"Custom fonts too" = "Auch für eigene Schriften";
+"Dynamic Type shows every text style at every size and writes the scaling code for your custom font." = "Dynamic Type zeigt jeden Textstil in jeder Größe und schreibt den Skalierungscode für deine eigene Schrift.";
+"You can open this guide again from the Help menu." = "Du kannst diese Anleitung jederzeit über das Hilfemenü erneut öffnen.";
+"Get Started" = "Los geht’s";
+
+/* Tips */
+"Pick any color on screen" = "Jede Farbe vom Bildschirm aufnehmen";
+"Click the eyedropper, then click a pixel in any app, website, or design file. It becomes the working color everywhere." = "Klicke auf die Pipette und dann auf einen Pixel in einer beliebigen App, Website oder Designdatei. Die Farbe wird überall zur Arbeitsfarbe.";
+"See the whole app as others do" = "Die ganze App mit den Augen anderer sehen";
+"Turn on a color vision preview to view every screen as someone with protanopia, deuteranopia, or tritanopia sees it." = "Schalte die Farbsehen-Vorschau ein, um jeden Bereich so zu sehen, wie ihn Menschen mit Protanopie, Deuteranopie oder Tritanopie sehen.";
+
+/* Shortcuts (App Intents) */
+"Pick Color from Screen" = "Farbe vom Bildschirm aufnehmen";
+"Opens TetraTint and starts the eyedropper so you can pick any color on screen." = "Öffnet TetraTint und startet die Pipette, damit du eine beliebige Farbe vom Bildschirm aufnehmen kannst.";
+"Open in TetraTint" = "In TetraTint öffnen";
+"Opens a TetraTint screen: Color, Dynamic Type, System colors, or Palette." = "Öffnet einen Bereich von TetraTint: Farbe, Dynamic Type, Systemfarben oder Palette.";
+"Screen" = "Bereich";
+"Pick Color" = "Farbe aufnehmen";
+"Open Screen" = "Bereich öffnen";
+
+/* Roadmap (Settings ▸ Coming Features) — source: TetraTintRoadmap.swift */
+"Close" = "Schließen";
+"Better VoiceOver support" = "Besser mit VoiceOver";
+"VoiceOver reads every color, button, and value in a sensible order." = "VoiceOver liest jede Farbe, jede Taste und jeden Wert in sinnvoller Reihenfolge vor.";
+"Easier-to-see interface" = "Besser erkennbare Oberfläche";
+"Labels and controls stay crisp with Increase Contrast turned on." = "Beschriftungen und Bedienelemente bleiben auch mit „Kontrast erhöhen“ gestochen scharf.";
+"Reduced motion" = "Weniger Bewegung";
+"With Reduce Motion on, effects like colors flying into your palette get calmer." = "Mit aktivierter Option „Bewegung reduzieren“ werden Effekte wie Farben, die in deine Palette fliegen, ruhiger.";
+"More languages" = "Mehr Sprachen";
+"Use TetraTint in more languages, not just English and Korean." = "Nutze TetraTint in mehr Sprachen, nicht nur auf Englisch und Koreanisch.";
+"What’s new" = "Neuigkeiten";
+"After an update, see what’s new the first time you open the app." = "Nach einem Update erfährst du beim ersten Öffnen, was neu ist.";
+"Replies to your feedback" = "Antworten auf dein Feedback";
+"Read our replies to your feedback right in the app." = "Lies unsere Antworten auf dein Feedback direkt in der App.";
+"Desktop widgets" = "Schreibtisch-Widgets";
+"See your palette right on the desktop without opening the app." = "Sieh deine Palette direkt auf dem Schreibtisch, ohne die App zu öffnen.";
+"Palettes on all your Macs" = "Paletten auf all deinen Macs";
+"Pick up the same palette on your other Macs with iCloud." = "Mach mit iCloud auf deinen anderen Macs mit derselben Palette weiter.";
+"Back up and restore palettes" = "Paletten sichern und wiederherstellen";
+"Save your palette to a file and load it back anytime." = "Speichere deine Palette in einer Datei und lade sie jederzeit wieder.";
+"Clear the whole palette" = "Ganze Palette leeren";
+"Remove every saved color at once when you want a fresh start." = "Entferne alle gesicherten Farben auf einmal, wenn du neu anfangen willst.";

@@ -1,0 +1,5 @@
+/* App Shortcuts phrases — Siri · Spotlight · Shortcuts */
+"Pick a color with ${applicationName}" = "Vybrat barvu pomocí ${applicationName}";
+"Pick a color from screen in ${applicationName}" = "Vybrat barvu z obrazovky v ${applicationName}";
+"Open ${section} in ${applicationName}" = "Otevřít ${section} v ${applicationName}";
+"Show ${applicationName} ${section}" = "Zobrazit ${section} v ${applicationName}";

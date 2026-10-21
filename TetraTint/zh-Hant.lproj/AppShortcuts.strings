@@ -1,0 +1,5 @@
+/* App Shortcuts phrases — Siri · Spotlight · Shortcuts app */
+"Pick a color with ${applicationName}" = "用 ${applicationName} 取色";
+"Pick a color from screen in ${applicationName}" = "用 ${applicationName} 從螢幕取色";
+"Open ${section} in ${applicationName}" = "在 ${applicationName} 開啟${section}";
+"Show ${applicationName} ${section}" = "顯示 ${applicationName} 的${section}";

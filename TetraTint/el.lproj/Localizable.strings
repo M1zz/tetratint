@@ -1,0 +1,228 @@
+/* Color vision preview */
+"Color vision preview" = "Προεπισκόπηση όρασης χρωμάτων";
+"Preview the whole app as someone with color vision deficiency sees it" = "Δείτε ολόκληρη την εφαρμογή όπως τη βλέπει κάποιος με αχρωματοψία";
+"simulated colors, not the real ones" = "προσομοιωμένα χρώματα, όχι τα πραγματικά";
+"Exit" = "Έξοδος";
+"Normal" = "Κανονική";
+"Protanopia" = "Πρωτανοπία";
+"Deuteranopia" = "Δευτερανοπία";
+"Tritanopia" = "Τριτανοπία";
+"Grayscale" = "Κλίμακα του γκρι";
+
+/* Color names (spoken for accessibility) */
+"Black" = "Μαύρο";
+"Dark gray" = "Σκούρο γκρι";
+"Gray" = "Γκρι";
+"Light gray" = "Ανοιχτό γκρι";
+"White" = "Λευκό";
+"Red" = "Κόκκινο";
+"Orange" = "Πορτοκαλί";
+"Yellow" = "Κίτρινο";
+"Lime" = "Λαχανί";
+"Green" = "Πράσινο";
+"Teal" = "Πετρόλ";
+"Sky blue" = "Γαλάζιο";
+"Blue" = "Μπλε";
+"Indigo" = "Λουλακί";
+"Purple" = "Μωβ";
+"Magenta" = "Ματζέντα";
+"Pink" = "Ροζ";
+"Dark" = "Σκούρο";
+"Light" = "Ανοιχτό";
+"Pale" = "Απαλό";
+
+/* Navigation & view titles */
+"Color" = "Χρώμα";
+"Variants" = "Παραλλαγές";
+"Contrast" = "Αντίθεση";
+"Color vision" = "Όραση χρωμάτων";
+"Generate variants" = "Δημιουργία παραλλαγών";
+"Check contrast" = "Έλεγχος αντίθεσης";
+"Simulate color vision" = "Προσομοίωση όρασης χρωμάτων";
+"Generate and export light, dark, and high-contrast variants" = "Δημιουργήστε και εξαγάγετε παραλλαγές για φωτεινή, σκοτεινή και υψηλή αντίθεση";
+"Check the color against WCAG contrast thresholds" = "Ελέγξτε το χρώμα με βάση τα όρια αντίθεσης του WCAG";
+"Simulate how the color looks with color vision deficiency" = "Δείτε πώς φαίνεται το χρώμα σε άτομα με αχρωματοψία";
+"Dynamic Type" = "Dynamic Type";
+"System colors" = "Χρώματα συστήματος";
+"Palette" = "Παλέτα";
+
+/* Appearance variants */
+"Light (Any)" = "Φωτεινή (Any)";
+"Light High Contrast" = "Φωτεινή υψηλής αντίθεσης";
+"Dark" = "Σκοτεινή";
+"Dark High Contrast" = "Σκοτεινή υψηλής αντίθεσης";
+"Light" = "Φωτεινή";
+"Light HC" = "Φωτεινή HC";
+"Dark HC" = "Σκοτεινή HC";
+"Light mode default (Any Appearance)" = "Προεπιλογή φωτεινής λειτουργίας (Any Appearance)";
+"Light with Increase Contrast on" = "Φωτεινή με ενεργή την Αύξηση αντίθεσης";
+"Dark mode default" = "Προεπιλογή σκοτεινής λειτουργίας";
+"Dark with Increase Contrast on" = "Σκοτεινή με ενεργή την Αύξηση αντίθεσης";
+
+/* Color vision deficiency subtitles */
+"Normal vision" = "Κανονική όραση";
+"Protan, about 1% of men" = "Πρωτάνοπες, περίπου 1% των ανδρών";
+"Deutan, about 1% of men" = "Δευτεράνοπες, περίπου 1% των ανδρών";
+"Tritan, rare" = "Τριτάνοπες, σπάνια";
+"Monochromacy" = "Μονοχρωματοψία";
+
+/* Safe palettes */
+"Scientific visualization standard, 8 colors" = "Πρότυπο επιστημονικής απεικόνισης, 8 χρώματα";
+"IBM accessibility palette, 5 colors" = "Παλέτα προσβασιμότητας της IBM, 5 χρώματα";
+"Qualitative data visualization, 7 colors" = "Απεικόνιση ποιοτικών δεδομένων, 7 χρώματα";
+
+/* Generator */
+"Light mode base color" = "Βασικό χρώμα φωτεινής λειτουργίας";
+"Color name" = "Όνομα χρώματος";
+"Regenerate all" = "Επαναδημιουργία όλων";
+"Discard manual edits and re-derive from the base color" = "Απόρριψη χειροκίνητων αλλαγών και νέα παραγωγή από το βασικό χρώμα";
+"Save to palette" = "Αποθήκευση στην παλέτα";
+"Presets" = "Έτοιμες επιλογές";
+"Export" = "Εξαγωγή";
+"Copied" = "Αντιγράφηκε";
+"Copy" = "Αντιγραφή";
+"Save .colorset" = "Αποθήκευση .colorset";
+
+/* Variant card */
+"%@:1 vs background" = "%@:1 έναντι φόντου";
+"AA text" = "Κείμενο AA";
+"Low" = "Χαμηλή";
+"Button" = "Κουμπί";
+"Tint label" = "Ετικέτα απόχρωσης";
+"Progress" = "Πρόοδος";
+"Copy hex" = "Αντιγραφή hex";
+"Fine-tune this variant manually" = "Χειροκίνητη λεπτομερής ρύθμιση αυτής της παραλλαγής";
+
+/* Color vision screen */
+"Color vision simulation" = "Προσομοίωση όρασης χρωμάτων";
+"This shows how your colors look to people with color vision deficiency. It is the current state, not a suggestion to change them." = "Εδώ βλέπετε πώς φαίνονται τα χρώματά σας σε άτομα με αχρωματοψία. Είναι η τρέχουσα κατάσταση και όχι πρόταση αλλαγής.";
+"Conflict warnings" = "Προειδοποιήσεις σύγχυσης";
+"Finds color pairs that become too similar to tell apart under simulation." = "Εντοπίζει ζεύγη χρωμάτων που στην προσομοίωση γίνονται πολύ όμοια και δεν ξεχωρίζουν.";
+"Recommended safe palettes" = "Προτεινόμενες ασφαλείς παλέτες";
+"If there were conflicts above, switch to a verified palette that stays distinguishable across every vision type." = "Αν παραπάνω εμφανίστηκαν συγκρούσεις, αλλάξτε σε μια δοκιμασμένη παλέτα που ξεχωρίζει σε κάθε τύπο όρασης.";
+"No palette saved yet, so the Okabe Ito demo palette is shown. Save colors in Generator to audit your own palette." = "Δεν υπάρχει αποθηκευμένη παλέτα, γι' αυτό εμφανίζεται η δοκιμαστική παλέτα Okabe Ito. Αποθηκεύστε χρώματα στο Generator για να ελεγχθεί η δική σας παλέτα.";
+"Color" = "Χρώμα";
+"All color pairs stay distinguishable across every vision type (ΔE ≥ 12)" = "Όλα τα ζεύγη χρωμάτων ξεχωρίζουν σε κάθε τύπο όρασης (ΔE ≥ 12)";
+"ΔE %@ under %@" = "ΔE %1$@ σε %2$@";
+"Do not rely on color alone. Pair it with icons, patterns, or labels, or switch to a safe palette below." = "Μην βασίζεστε μόνο στο χρώμα. Συνδυάστε το με εικονίδια, μοτίβα ή ετικέτες ή αλλάξτε σε μια ασφαλή παλέτα παρακάτω.";
+"Add to palette" = "Προσθήκη στην παλέτα";
+"Derive each color into four variants and save to the palette" = "Δημιουργία τεσσάρων παραλλαγών για κάθε χρώμα και αποθήκευση στην παλέτα";
+
+/* Contrast audit */
+"Paste the colors your app uses (separated by line breaks or commas)" = "Επικολλήστε τα χρώματα που χρησιμοποιεί η εφαρμογή σας (χωρισμένα με αλλαγές γραμμής ή κόμματα)";
+"Audit" = "Έλεγχος";
+"Screens each color against light (vs white) and dark (vs black) backgrounds using WCAG thresholds." = "Ελέγχει κάθε χρώμα σε φωτεινό (έναντι λευκού) και σκοτεινό (έναντι μαύρου) φόντο με τα όρια του WCAG.";
+"Preview: %lld colors" = "Προεπισκόπηση: %lld χρώματα";
+"Preview: %lld colors, %lld unrecognized" = "Προεπισκόπηση: %1$lld χρώματα, %2$lld μη αναγνωρισμένα";
+"%lld of %lld colors need a high-contrast variant" = "%1$lld από %2$lld χρώματα χρειάζονται παραλλαγή υψηλής αντίθεσης";
+"Use as is" = "Κατάλληλο ως έχει";
+"Needs high contrast" = "Χρειάζεται υψηλή αντίθεση";
+"Decorative only" = "Μόνο για διακόσμηση";
+"Meets 4.5:1 for text" = "Πληροί το 4,5:1 για κείμενο";
+"Passes 3:1 for UI; text or High Contrast needs a variant" = "Περνά το 3:1 για στοιχεία UI· για κείμενο ή υψηλή αντίθεση χρειάζεται παραλλαγή";
+"Below 3:1; do not use for text, icons, or status" = "Κάτω από 3:1· μην το χρησιμοποιείτε για κείμενο, εικονίδια ή ένδειξη κατάστασης";
+"Derive four variants" = "Δημιουργία τεσσάρων παραλλαγών";
+"Derive four variants including high contrast and save to the palette" = "Δημιουργία τεσσάρων παραλλαγών, με υψηλή αντίθεση, και αποθήκευση στην παλέτα";
+
+/* Dynamic Type */
+"Scaling preview" = "Προεπισκόπηση κλιμάκωσης";
+"Style" = "Στυλ";
+"Custom font PostScript name" = "Όνομα PostScript προσαρμοσμένης γραμματοσειράς";
+"Category" = "Κατηγορία";
+"The quick brown fox jumps over the lazy dog" = "Ξεσκεπάζω την ψυχοφθόρα βδελυγμία The quick brown fox";
+"Code" = "Κώδικας";
+"Text style sizes (pt)" = "Μεγέθη στυλ κειμένου (pt)";
+"Large is the default. In accessibility sizes (AX1 to AX5), Body grows to %@pt, over three times the default, so avoid fixed heights, fixed padding, and lineLimit(1)." = "Το Large είναι η προεπιλογή. Στα μεγέθη προσβασιμότητας (AX1 έως AX5) το Body φτάνει τα %@pt, πάνω από τριπλάσιο της προεπιλογής, οπότε αποφύγετε σταθερά ύψη, σταθερά περιθώρια και lineLimit(1).";
+
+/* System colors */
+"Tint colors" = "Χρώματα απόχρωσης";
+"Gray colors" = "Γκρι χρώματα";
+"Reference values from Apple's Human Interface Guidelines. Actual values may change between OS releases, so always use the UIColor or Color API in shipping code rather than hard-coding." = "Τιμές αναφοράς από τις Human Interface Guidelines της Apple. Οι πραγματικές τιμές μπορεί να αλλάξουν ανάμεσα σε εκδόσεις του λειτουργικού, γι' αυτό στον κώδικα που κυκλοφορεί χρησιμοποιείτε πάντα το API UIColor ή Color αντί για σταθερές τιμές.";
+"Click to copy %@" = "Κάντε κλικ για αντιγραφή του %@";
+
+/* Screen color picker */
+"Pick color from screen" = "Επιλογή χρώματος από την οθόνη";
+"Pick a color from anywhere on screen" = "Επιλέξτε χρώμα από οποιοδήποτε σημείο της οθόνης";
+"Pick a color from anywhere on screen and make it the working color" = "Επιλέξτε χρώμα από οποιοδήποτε σημείο της οθόνης και ορίστε το ως χρώμα εργασίας";
+"Working color" = "Χρώμα εργασίας";
+"Change the working color to see how it looks under each type of color vision." = "Αλλάξτε το χρώμα εργασίας για να δείτε πώς φαίνεται σε κάθε τύπο όρασης χρωμάτων.";
+
+/* Palette */
+"Export .xcassets" = "Εξαγωγή .xcassets";
+"Export every saved color as one asset catalog" = "Εξαγωγή όλων των αποθηκευμένων χρωμάτων σε έναν κατάλογο πόρων";
+"No saved colors" = "Κανένα αποθηκευμένο χρώμα";
+"Generate a color and save it here, then export your whole brand palette as one .xcassets catalog." = "Δημιουργήστε ένα χρώμα και αποθηκεύστε το εδώ και μετά εξαγάγετε ολόκληρη την παλέτα της επωνυμίας σας ως έναν κατάλογο .xcassets.";
+"Each color is saved as four variants" = "Κάθε χρώμα αποθηκεύεται σε τέσσερις παραλλαγές";
+"Export %@.colorset" = "Εξαγωγή %@.colorset";
+"Delete" = "Διαγραφή";
+
+/* VoiceOver labels */
+"Delete %@" = "Διαγραφή %@";
+"Copy %@" = "Αντιγραφή %@";
+"Hex value" = "Τιμή hex";
+"Preset %@" = "Έτοιμη επιλογή %@";
+
+/* Settings */
+"Support" = "Υποστήριξη";
+"Contact" = "Επικοινωνία";
+"Help" = "Βοήθεια";
+"Email the developer" = "Στείλτε email στον προγραμματιστή";
+"Message on Instagram (@lee25_ios)" = "Μήνυμα στο Instagram (@lee25_ios)";
+"Show the welcome guide again" = "Εμφάνιση του οδηγού καλωσορίσματος ξανά";
+"Opens the guide in the main window" = "Ανοίγει τον οδηγό στο κύριο παράθυρο";
+
+/* Help menu */
+"Welcome to TetraTint" = "Καλώς ήρθατε στο TetraTint";
+"TetraTint Support Page" = "Σελίδα υποστήριξης του TetraTint";
+"Email the Developer…" = "Email στον προγραμματιστή…";
+
+/* Onboarding */
+"Accessibility work Apple doesn't do for your custom colors and fonts." = "Η δουλειά προσβασιμότητας που η Apple δεν κάνει για τα προσαρμοσμένα χρώματα και γραμματοσειρές σας.";
+"Start with one color" = "Ξεκινήστε με ένα χρώμα";
+"Type a hex value, use the color well, or pick any pixel on screen with the eyedropper. Every screen works on this same color." = "Πληκτρολογήστε μια τιμή hex, χρησιμοποιήστε τον επιλογέα χρώματος ή διαλέξτε οποιοδήποτε εικονοστοιχείο της οθόνης με το σταγονόμετρο. Όλες οι οθόνες δουλεύουν με αυτό το ίδιο χρώμα.";
+"Look at it through three lenses" = "Δείτε το με τρεις διαφορετικούς φακούς";
+"Generate light, dark, and high-contrast variants, check WCAG contrast, and see how it looks with color vision deficiency." = "Δημιουργήστε παραλλαγές για φωτεινή, σκοτεινή και υψηλή αντίθεση, ελέγξτε την αντίθεση κατά WCAG και δείτε πώς φαίνεται σε άτομα με αχρωματοψία.";
+"Save and export" = "Αποθηκεύστε και εξαγάγετε";
+"Save colors to your palette, then export a .colorset, SwiftUI or UIKit code, or one .xcassets catalog for Xcode." = "Αποθηκεύστε χρώματα στην παλέτα σας και μετά εξαγάγετε ένα .colorset, κώδικα SwiftUI ή UIKit ή έναν κατάλογο .xcassets για το Xcode.";
+"Custom fonts too" = "Και προσαρμοσμένες γραμματοσειρές";
+"Dynamic Type shows every text style at every size and writes the scaling code for your custom font." = "Το Dynamic Type δείχνει κάθε στυλ κειμένου σε κάθε μέγεθος και γράφει τον κώδικα κλιμάκωσης για την προσαρμοσμένη γραμματοσειρά σας.";
+"You can open this guide again from the Help menu." = "Μπορείτε να ανοίξετε ξανά αυτόν τον οδηγό από το μενού Βοήθεια.";
+"Get Started" = "Ας ξεκινήσουμε";
+
+/* Tips */
+"Pick any color on screen" = "Επιλέξτε οποιοδήποτε χρώμα της οθόνης";
+"Click the eyedropper, then click a pixel in any app, website, or design file. It becomes the working color everywhere." = "Πατήστε το σταγονόμετρο και μετά κάντε κλικ σε ένα εικονοστοιχείο σε οποιαδήποτε εφαρμογή, ιστοσελίδα ή αρχείο σχεδίασης. Γίνεται το χρώμα εργασίας σε όλες τις οθόνες.";
+"See the whole app as others do" = "Δείτε ολόκληρη την εφαρμογή όπως τη βλέπουν οι άλλοι";
+"Turn on a color vision preview to view every screen as someone with protanopia, deuteranopia, or tritanopia sees it." = "Ενεργοποιήστε την προεπισκόπηση όρασης χρωμάτων για να δείτε κάθε οθόνη όπως τη βλέπει κάποιος με πρωτανοπία, δευτερανοπία ή τριτανοπία.";
+
+/* Shortcuts (App Intents) */
+"Pick Color from Screen" = "Επιλογή χρώματος από την οθόνη";
+"Opens TetraTint and starts the eyedropper so you can pick any color on screen." = "Ανοίγει το TetraTint και ενεργοποιεί το σταγονόμετρο για να επιλέξετε οποιοδήποτε χρώμα της οθόνης.";
+"Open in TetraTint" = "Άνοιγμα στο TetraTint";
+"Opens a TetraTint screen: Color, Dynamic Type, System colors, or Palette." = "Ανοίγει μια οθόνη του TetraTint: Χρώμα, Dynamic Type, Χρώματα συστήματος ή Παλέτα.";
+"Screen" = "Οθόνη";
+"Pick Color" = "Επιλογή χρώματος";
+"Open Screen" = "Άνοιγμα οθόνης";
+
+/* Roadmap (Settings ▸ Coming Features) — source: TetraTintRoadmap.swift */
+"Close" = "Κλείσιμο";
+"Better VoiceOver support" = "Καλύτερη υποστήριξη VoiceOver";
+"VoiceOver reads every color, button, and value in a sensible order." = "Το VoiceOver διαβάζει κάθε χρώμα, κουμπί και τιμή με λογική σειρά.";
+"Easier-to-see interface" = "Πιο ευανάγνωστο περιβάλλον";
+"Labels and controls stay crisp with Increase Contrast turned on." = "Τα κείμενα και τα κουμπιά μένουν καθαρά με ενεργή την Αύξηση αντίθεσης.";
+"Reduced motion" = "Μείωση κίνησης";
+"With Reduce Motion on, effects like colors flying into your palette get calmer." = "Με ενεργή τη Μείωση κίνησης, εφέ όπως τα χρώματα που πετούν προς την παλέτα γίνονται πιο ήρεμα.";
+"More languages" = "Περισσότερες γλώσσες";
+"Use TetraTint in more languages, not just English and Korean." = "Χρησιμοποιήστε το TetraTint σε περισσότερες γλώσσες, όχι μόνο αγγλικά και κορεατικά.";
+"What’s new" = "Τι νέο υπάρχει";
+"After an update, see what’s new the first time you open the app." = "Μετά από μια ενημέρωση, δείτε τι νέο υπάρχει την πρώτη φορά που ανοίγετε την εφαρμογή.";
+"Replies to your feedback" = "Απαντήσεις στα σχόλιά σας";
+"Read our replies to your feedback right in the app." = "Διαβάστε τις απαντήσεις μας στα σχόλιά σας μέσα στην ίδια την εφαρμογή.";
+"Desktop widgets" = "Widget επιφάνειας εργασίας";
+"See your palette right on the desktop without opening the app." = "Δείτε την παλέτα σας απευθείας στην επιφάνεια εργασίας χωρίς να ανοίξετε την εφαρμογή.";
+"Palettes on all your Macs" = "Παλέτες σε όλα τα Mac σας";
+"Pick up the same palette on your other Macs with iCloud." = "Συνεχίστε με την ίδια παλέτα στα άλλα σας Mac μέσω iCloud.";
+"Back up and restore palettes" = "Αντίγραφο ασφαλείας και επαναφορά παλετών";
+"Save your palette to a file and load it back anytime." = "Αποθηκεύστε την παλέτα σε αρχείο και φορτώστε την ξανά όποτε θέλετε.";
+"Clear the whole palette" = "Εκκαθάριση ολόκληρης της παλέτας";
+"Remove every saved color at once when you want a fresh start." = "Διαγράψτε όλα τα αποθηκευμένα χρώματα με μία κίνηση όταν θέλετε να ξεκινήσετε από την αρχή.";

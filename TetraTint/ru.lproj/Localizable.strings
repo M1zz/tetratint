@@ -1,0 +1,228 @@
+/* Color vision preview */
+"Color vision preview" = "Просмотр цветового зрения";
+"Preview the whole app as someone with color vision deficiency sees it" = "Посмотрите на всё приложение глазами человека с нарушением цветового зрения";
+"simulated colors, not the real ones" = "это симуляция, а не настоящие цвета";
+"Exit" = "Выключить";
+"Normal" = "Обычное";
+"Protanopia" = "Протанопия";
+"Deuteranopia" = "Дейтеранопия";
+"Tritanopia" = "Тританопия";
+"Grayscale" = "Оттенки серого";
+
+/* Color names (spoken for accessibility) */
+"Black" = "Чёрный";
+"Dark gray" = "Тёмно-серый";
+"Gray" = "Серый";
+"Light gray" = "Светло-серый";
+"White" = "Белый";
+"Red" = "Красный";
+"Orange" = "Оранжевый";
+"Yellow" = "Жёлтый";
+"Lime" = "Салатовый";
+"Green" = "Зелёный";
+"Teal" = "Бирюзовый";
+"Sky blue" = "Голубой";
+"Blue" = "Синий";
+"Indigo" = "Индиго";
+"Purple" = "Фиолетовый";
+"Magenta" = "Пурпурный";
+"Pink" = "Розовый";
+"Dark" = "Тёмный";
+"Light" = "Светлый";
+"Pale" = "Бледный";
+
+/* Navigation & view titles */
+"Color" = "Цвет";
+"Variants" = "Варианты";
+"Contrast" = "Контраст";
+"Color vision" = "Цветовое зрение";
+"Generate variants" = "Создать варианты";
+"Check contrast" = "Проверить контраст";
+"Simulate color vision" = "Проверить цветовое зрение";
+"Generate and export light, dark, and high-contrast variants" = "Создавайте и экспортируйте светлый, тёмный и высококонтрастные варианты";
+"Check the color against WCAG contrast thresholds" = "Проверьте цвет по порогам контраста WCAG";
+"Simulate how the color looks with color vision deficiency" = "Посмотрите, как цвет выглядит при нарушениях цветового зрения";
+"Dynamic Type" = "Dynamic Type";
+"System colors" = "Системные цвета";
+"Palette" = "Палитра";
+
+/* Appearance variants */
+"Light (Any)" = "Светлая (по умолчанию)";
+"Light High Contrast" = "Светлая, высокий контраст";
+"Dark" = "Тёмная";
+"Dark High Contrast" = "Тёмная, высокий контраст";
+"Light" = "Светлая";
+"Light HC" = "Светлая, выс. контраст";
+"Dark HC" = "Тёмная, выс. контраст";
+"Light mode default (Any Appearance)" = "Значение по умолчанию для светлой темы (Any Appearance)";
+"Light with Increase Contrast on" = "Светлая тема с включённым параметром «Увеличить контраст»";
+"Dark mode default" = "Значение по умолчанию для тёмной темы";
+"Dark with Increase Contrast on" = "Тёмная тема с включённым параметром «Увеличить контраст»";
+
+/* Color vision deficiency subtitles */
+"Normal vision" = "Обычное зрение";
+"Protan, about 1% of men" = "Протанопия, около 1% мужчин";
+"Deutan, about 1% of men" = "Дейтеранопия, около 1% мужчин";
+"Tritan, rare" = "Тританопия, встречается редко";
+"Monochromacy" = "Монохромазия";
+
+/* Safe palettes */
+"Scientific visualization standard, 8 colors" = "Стандарт для научной визуализации, 8 цветов";
+"IBM accessibility palette, 5 colors" = "Палитра IBM для доступности, 5 цветов";
+"Qualitative data visualization, 7 colors" = "Для качественных данных, 7 цветов";
+
+/* Generator */
+"Light mode base color" = "Базовый цвет светлой темы";
+"Color name" = "Название цвета";
+"Regenerate all" = "Создать всё заново";
+"Discard manual edits and re-derive from the base color" = "Отменить ручные правки и заново вывести всё из базового цвета";
+"Save to palette" = "Сохранить в палитру";
+"Presets" = "Пресеты";
+"Export" = "Экспорт";
+"Copied" = "Скопировано";
+"Copy" = "Копировать";
+"Save .colorset" = "Сохранить .colorset";
+
+/* Variant card */
+"%@:1 vs background" = "%@:1 к фону";
+"AA text" = "Текст AA";
+"Low" = "Низкий";
+"Button" = "Кнопка";
+"Tint label" = "Метка с оттенком";
+"Progress" = "Индикатор";
+"Copy hex" = "Копировать hex";
+"Fine-tune this variant manually" = "Подстроить этот вариант вручную";
+
+/* Color vision screen */
+"Color vision simulation" = "Симуляция цветового зрения";
+"This shows how your colors look to people with color vision deficiency. It is the current state, not a suggestion to change them." = "Так ваши цвета видят люди с нарушением цветового зрения. Это текущее состояние, а не совет что-то менять.";
+"Conflict warnings" = "Предупреждения о конфликтах";
+"Finds color pairs that become too similar to tell apart under simulation." = "Находит пары цветов, которые при симуляции становятся слишком похожими и сливаются.";
+"Recommended safe palettes" = "Безопасные палитры";
+"If there were conflicts above, switch to a verified palette that stays distinguishable across every vision type." = "Если выше нашлись конфликты, перейдите на проверенную палитру: её цвета различимы при любом типе цветового зрения.";
+"No palette saved yet, so the Okabe Ito demo palette is shown. Save colors in Generator to audit your own palette." = "Сохранённой палитры пока нет, поэтому показана демо-палитра Okabe Ito. Сохраните цвета в Generator, и проверится ваша собственная палитра.";
+"Color" = "Цвет";
+"All color pairs stay distinguishable across every vision type (ΔE ≥ 12)" = "Все пары цветов различимы при любом типе цветового зрения (ΔE ≥ 12)";
+"ΔE %@ under %@" = "ΔE %1$@ при %2$@";
+"Do not rely on color alone. Pair it with icons, patterns, or labels, or switch to a safe palette below." = "Не полагайтесь только на цвет. Добавьте значки, узоры или подписи либо перейдите на безопасную палитру ниже.";
+"Add to palette" = "Добавить в палитру";
+"Derive each color into four variants and save to the palette" = "Создать четыре варианта для каждого цвета и сохранить в палитру";
+
+/* Contrast audit */
+"Paste the colors your app uses (separated by line breaks or commas)" = "Вставьте цвета, которые использует ваше приложение (через запятую или с новой строки)";
+"Audit" = "Проверить";
+"Screens each color against light (vs white) and dark (vs black) backgrounds using WCAG thresholds." = "Каждый цвет проверяется на светлом (относительно белого) и тёмном (относительно чёрного) фоне по порогам WCAG.";
+"Preview: %lld colors" = "Предпросмотр: цветов — %lld";
+"Preview: %lld colors, %lld unrecognized" = "Предпросмотр: цветов — %1$lld, не распознано — %2$lld";
+"%lld of %lld colors need a high-contrast variant" = "Высококонтрастный вариант нужен для %1$lld из %2$lld цветов";
+"Use as is" = "Можно использовать как есть";
+"Needs high contrast" = "Нужен высокий контраст";
+"Decorative only" = "Только для декора";
+"Meets 4.5:1 for text" = "Выполняет 4,5:1 для текста";
+"Passes 3:1 for UI; text or High Contrast needs a variant" = "Подходит для элементов UI (3:1); для текста и высокого контраста нужен вариант";
+"Below 3:1; do not use for text, icons, or status" = "Меньше 3:1: не используйте для текста, значков и статусов";
+"Derive four variants" = "Создать четыре варианта";
+"Derive four variants including high contrast and save to the palette" = "Создать четыре варианта, включая высококонтрастный, и сохранить в палитру";
+
+/* Dynamic Type */
+"Scaling preview" = "Предпросмотр масштаба";
+"Style" = "Стиль";
+"Custom font PostScript name" = "PostScript-имя своего шрифта";
+"Category" = "Категория";
+"The quick brown fox jumps over the lazy dog" = "Съешь же ещё этих мягких французских булок, да выпей чаю. The quick brown fox";
+"Code" = "Код";
+"Text style sizes (pt)" = "Размеры стилей текста (pt)";
+"Large is the default. In accessibility sizes (AX1 to AX5), Body grows to %@pt, over three times the default, so avoid fixed heights, fixed padding, and lineLimit(1)." = "По умолчанию используется Large. В категориях доступности (AX1–AX5) Body вырастает до %@ pt, а это больше чем втрое, поэтому избегайте фиксированной высоты, фиксированных отступов и lineLimit(1).";
+
+/* System colors */
+"Tint colors" = "Цвета оттенков";
+"Gray colors" = "Серые цвета";
+"Reference values from Apple's Human Interface Guidelines. Actual values may change between OS releases, so always use the UIColor or Color API in shipping code rather than hard-coding." = "Справочные значения из Apple Human Interface Guidelines. В новых версиях ОС они могут измениться, поэтому в готовом коде используйте API UIColor или Color, а не жёстко заданные значения.";
+"Click to copy %@" = "Нажмите, чтобы скопировать %@";
+
+/* Screen color picker */
+"Pick color from screen" = "Взять цвет с экрана";
+"Pick a color from anywhere on screen" = "Взять цвет в любом месте экрана";
+"Pick a color from anywhere on screen and make it the working color" = "Взять цвет в любом месте экрана и сделать его рабочим";
+"Working color" = "Рабочий цвет";
+"Change the working color to see how it looks under each type of color vision." = "Измените рабочий цвет и посмотрите, как он выглядит при каждом типе цветового зрения.";
+
+/* Palette */
+"Export .xcassets" = "Экспорт .xcassets";
+"Export every saved color as one asset catalog" = "Экспортировать все сохранённые цвета одним каталогом ресурсов";
+"No saved colors" = "Нет сохранённых цветов";
+"Generate a color and save it here, then export your whole brand palette as one .xcassets catalog." = "Создайте цвет в Generator и сохраните его здесь, а потом экспортируйте всю палитру бренда одним каталогом .xcassets.";
+"Each color is saved as four variants" = "Каждый цвет сохраняется в виде четырёх вариантов";
+"Export %@.colorset" = "Экспорт %@.colorset";
+"Delete" = "Удалить";
+
+/* VoiceOver labels */
+"Delete %@" = "Удалить %@";
+"Copy %@" = "Копировать %@";
+"Hex value" = "Значение hex";
+"Preset %@" = "Пресет %@";
+
+/* Settings */
+"Support" = "Поддержка";
+"Contact" = "Связь";
+"Help" = "Справка";
+"Email the developer" = "Написать разработчику";
+"Message on Instagram (@lee25_ios)" = "Написать в Instagram (@lee25_ios)";
+"Show the welcome guide again" = "Показать приветственное руководство снова";
+"Opens the guide in the main window" = "Откроет руководство в главном окне";
+
+/* Help menu */
+"Welcome to TetraTint" = "Добро пожаловать в TetraTint";
+"TetraTint Support Page" = "Страница поддержки TetraTint";
+"Email the Developer…" = "Написать разработчику…";
+
+/* Onboarding */
+"Accessibility work Apple doesn't do for your custom colors and fonts." = "Доступность для ваших собственных цветов и шрифтов, которой Apple за вас не занимается.";
+"Start with one color" = "Начните с одного цвета";
+"Type a hex value, use the color well, or pick any pixel on screen with the eyedropper. Every screen works on this same color." = "Введите значение hex, воспользуйтесь палитрой цветов или возьмите пипеткой любой пиксель на экране. Все разделы работают с этим одним цветом.";
+"Look at it through three lenses" = "Взгляните на него тремя способами";
+"Generate light, dark, and high-contrast variants, check WCAG contrast, and see how it looks with color vision deficiency." = "Создайте светлый, тёмный и высококонтрастный варианты, проверьте контраст по WCAG и посмотрите, как цвет выглядит при нарушениях цветового зрения.";
+"Save and export" = "Сохраните и экспортируйте";
+"Save colors to your palette, then export a .colorset, SwiftUI or UIKit code, or one .xcassets catalog for Xcode." = "Сохраните цвета в палитру, а затем экспортируйте .colorset, код для SwiftUI или UIKit либо один каталог .xcassets для Xcode.";
+"Custom fonts too" = "И свои шрифты тоже";
+"Dynamic Type shows every text style at every size and writes the scaling code for your custom font." = "Dynamic Type показывает каждый стиль текста во всех размерах и пишет код масштабирования для вашего шрифта.";
+"You can open this guide again from the Help menu." = "Это руководство можно открыть снова из меню «Справка».";
+"Get Started" = "Начать";
+
+/* Tips */
+"Pick any color on screen" = "Берите любой цвет с экрана";
+"Click the eyedropper, then click a pixel in any app, website, or design file. It becomes the working color everywhere." = "Нажмите пипетку, а затем щёлкните любой пиксель в другом приложении, на сайте или в файле с дизайном. Этот цвет станет рабочим на всех экранах.";
+"See the whole app as others do" = "Смотрите на всё приложение глазами других людей";
+"Turn on a color vision preview to view every screen as someone with protanopia, deuteranopia, or tritanopia sees it." = "Включите просмотр цветового зрения, и каждый экран будет выглядеть так, как его видят люди с протанопией, дейтеранопией или тританопией.";
+
+/* Shortcuts (App Intents) */
+"Pick Color from Screen" = "Взять цвет с экрана";
+"Opens TetraTint and starts the eyedropper so you can pick any color on screen." = "Открывает TetraTint и включает пипетку, чтобы вы могли взять любой цвет с экрана.";
+"Open in TetraTint" = "Открыть в TetraTint";
+"Opens a TetraTint screen: Color, Dynamic Type, System colors, or Palette." = "Открывает один из экранов TetraTint: Цвет, Dynamic Type, Системные цвета или Палитра.";
+"Screen" = "Экран";
+"Pick Color" = "Взять цвет";
+"Open Screen" = "Открыть экран";
+
+/* Roadmap (Settings ▸ Coming Features) — source: TetraTintRoadmap.swift */
+"Close" = "Закрыть";
+"Better VoiceOver support" = "Удобнее с VoiceOver";
+"VoiceOver reads every color, button, and value in a sensible order." = "VoiceOver читает все цвета, кнопки и значения в понятном порядке.";
+"Easier-to-see interface" = "Интерфейс, который легче разглядеть";
+"Labels and controls stay crisp with Increase Contrast turned on." = "Подписи и элементы управления остаются чёткими при включённом параметре «Увеличить контраст».";
+"Reduced motion" = "Меньше движения";
+"With Reduce Motion on, effects like colors flying into your palette get calmer." = "При включённом параметре «Уменьшить движение» эффекты вроде летящих в палитру цветов становятся спокойнее.";
+"More languages" = "Больше языков";
+"Use TetraTint in more languages, not just English and Korean." = "Пользуйтесь TetraTint на разных языках, а не только на английском и корейском.";
+"What’s new" = "Что нового";
+"After an update, see what’s new the first time you open the app." = "После обновления при первом запуске приложения вы увидите, что в нём нового.";
+"Replies to your feedback" = "Ответы на ваши отзывы";
+"Read our replies to your feedback right in the app." = "Читайте наши ответы на ваши отзывы прямо в приложении.";
+"Desktop widgets" = "Виджеты на рабочем столе";
+"See your palette right on the desktop without opening the app." = "Смотрите свою палитру прямо на рабочем столе, не открывая приложение.";
+"Palettes on all your Macs" = "Палитры на всех ваших Mac";
+"Pick up the same palette on your other Macs with iCloud." = "Продолжайте работу с той же палитрой на других Mac через iCloud.";
+"Back up and restore palettes" = "Резервные копии палитр";
+"Save your palette to a file and load it back anytime." = "Сохраните палитру в файл и загрузите её обратно в любой момент.";
+"Clear the whole palette" = "Очистка всей палитры";
+"Remove every saved color at once when you want a fresh start." = "Удалите все сохранённые цвета разом, когда захотите начать с чистого листа.";

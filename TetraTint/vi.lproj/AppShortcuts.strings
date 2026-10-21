@@ -1,0 +1,5 @@
+/* App Shortcuts phrases — Siri · Spotlight · Shortcuts app */
+"Pick a color with ${applicationName}" = "Lấy màu bằng ${applicationName}";
+"Pick a color from screen in ${applicationName}" = "Lấy màu từ màn hình trong ${applicationName}";
+"Open ${section} in ${applicationName}" = "Mở ${section} trong ${applicationName}";
+"Show ${applicationName} ${section}" = "Hiển thị ${section} của ${applicationName}";

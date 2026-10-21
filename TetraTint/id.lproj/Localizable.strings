@@ -1,0 +1,228 @@
+/* Color vision preview */
+"Color vision preview" = "Pratinjau penglihatan warna";
+"Preview the whole app as someone with color vision deficiency sees it" = "Lihat seluruh app seperti yang terlihat oleh penderita gangguan penglihatan warna";
+"simulated colors, not the real ones" = "warna simulasi, bukan warna asli";
+"Exit" = "Matikan";
+"Normal" = "Normal";
+"Protanopia" = "Protanopia";
+"Deuteranopia" = "Deuteranopia";
+"Tritanopia" = "Tritanopia";
+"Grayscale" = "Skala abu-abu";
+
+/* Color names (spoken for accessibility) */
+"Black" = "Hitam";
+"Dark gray" = "Abu-abu tua";
+"Gray" = "Abu-abu";
+"Light gray" = "Abu-abu muda";
+"White" = "Putih";
+"Red" = "Merah";
+"Orange" = "Oranye";
+"Yellow" = "Kuning";
+"Lime" = "Hijau limau";
+"Green" = "Hijau";
+"Teal" = "Hijau kebiruan";
+"Sky blue" = "Biru langit";
+"Blue" = "Biru";
+"Indigo" = "Nila";
+"Purple" = "Ungu";
+"Magenta" = "Magenta";
+"Pink" = "Merah muda";
+"Dark" = "Tua";
+"Light" = "Muda";
+"Pale" = "Pucat";
+
+/* Navigation & view titles */
+"Color" = "Warna";
+"Variants" = "Varian";
+"Contrast" = "Kontras";
+"Color vision" = "Penglihatan warna";
+"Generate variants" = "Buat varian";
+"Check contrast" = "Periksa kontras";
+"Simulate color vision" = "Simulasikan penglihatan warna";
+"Generate and export light, dark, and high-contrast variants" = "Buat dan ekspor varian terang, gelap, dan kontras tinggi";
+"Check the color against WCAG contrast thresholds" = "Periksa warna terhadap ambang kontras WCAG";
+"Simulate how the color looks with color vision deficiency" = "Simulasikan tampilan warna bagi penderita gangguan penglihatan warna";
+"Dynamic Type" = "Dynamic Type";
+"System colors" = "Warna sistem";
+"Palette" = "Palet";
+
+/* Appearance variants */
+"Light (Any)" = "Terang (Any)";
+"Light High Contrast" = "Terang kontras tinggi";
+"Dark" = "Gelap";
+"Dark High Contrast" = "Gelap kontras tinggi";
+"Light" = "Terang";
+"Light HC" = "Terang KT";
+"Dark HC" = "Gelap KT";
+"Light mode default (Any Appearance)" = "Bawaan mode terang (Any Appearance)";
+"Light with Increase Contrast on" = "Terang dengan Tingkatkan Kontras aktif";
+"Dark mode default" = "Bawaan mode gelap";
+"Dark with Increase Contrast on" = "Gelap dengan Tingkatkan Kontras aktif";
+
+/* Color vision deficiency subtitles */
+"Normal vision" = "Penglihatan normal";
+"Protan, about 1% of men" = "Protan, sekitar 1% pria";
+"Deutan, about 1% of men" = "Deutan, sekitar 1% pria";
+"Tritan, rare" = "Tritan, jarang";
+"Monochromacy" = "Monokromasi";
+
+/* Safe palettes */
+"Scientific visualization standard, 8 colors" = "Standar visualisasi ilmiah, 8 warna";
+"IBM accessibility palette, 5 colors" = "Palet aksesibilitas IBM, 5 warna";
+"Qualitative data visualization, 7 colors" = "Visualisasi data kualitatif, 7 warna";
+
+/* Generator */
+"Light mode base color" = "Warna dasar mode terang";
+"Color name" = "Nama warna";
+"Regenerate all" = "Buat ulang semua";
+"Discard manual edits and re-derive from the base color" = "Buang suntingan manual dan turunkan ulang dari warna dasar";
+"Save to palette" = "Simpan ke palet";
+"Presets" = "Preset";
+"Export" = "Ekspor";
+"Copied" = "Disalin";
+"Copy" = "Salin";
+"Save .colorset" = "Simpan .colorset";
+
+/* Variant card */
+"%@:1 vs background" = "%@:1 terhadap latar";
+"AA text" = "Teks AA";
+"Low" = "Rendah";
+"Button" = "Tombol";
+"Tint label" = "Label tint";
+"Progress" = "Progres";
+"Copy hex" = "Salin hex";
+"Fine-tune this variant manually" = "Sesuaikan varian ini secara manual";
+
+/* Color vision screen */
+"Color vision simulation" = "Simulasi penglihatan warna";
+"This shows how your colors look to people with color vision deficiency. It is the current state, not a suggestion to change them." = "Ini menunjukkan tampilan warna Anda bagi penderita gangguan penglihatan warna. Ini kondisi saat ini, bukan saran untuk mengubahnya.";
+"Conflict warnings" = "Peringatan warna sulit dibedakan";
+"Finds color pairs that become too similar to tell apart under simulation." = "Menemukan pasangan warna yang jadi terlalu mirip untuk dibedakan saat disimulasikan.";
+"Recommended safe palettes" = "Palet aman buta warna";
+"If there were conflicts above, switch to a verified palette that stays distinguishable across every vision type." = "Jika ada konflik di atas, ganti dengan palet terverifikasi yang tetap mudah dibedakan di semua jenis penglihatan.";
+"No palette saved yet, so the Okabe Ito demo palette is shown. Save colors in Generator to audit your own palette." = "Belum ada palet tersimpan, jadi palet demo Okabe Ito ditampilkan. Simpan warna di Generator untuk memeriksa palet Anda sendiri.";
+"Color" = "Warna";
+"All color pairs stay distinguishable across every vision type (ΔE ≥ 12)" = "Semua pasangan warna tetap bisa dibedakan di semua jenis penglihatan (ΔE ≥ 12)";
+"ΔE %@ under %@" = "ΔE %1$@ pada %2$@";
+"Do not rely on color alone. Pair it with icons, patterns, or labels, or switch to a safe palette below." = "Jangan mengandalkan warna saja. Padukan dengan ikon, pola, atau label, atau ganti ke palet aman di bawah.";
+"Add to palette" = "Tambahkan ke palet";
+"Derive each color into four variants and save to the palette" = "Turunkan tiap warna menjadi empat varian dan simpan ke palet";
+
+/* Contrast audit */
+"Paste the colors your app uses (separated by line breaks or commas)" = "Tempel warna yang dipakai app Anda (dipisah baris baru atau koma)";
+"Audit" = "Periksa";
+"Screens each color against light (vs white) and dark (vs black) backgrounds using WCAG thresholds." = "Menyaring tiap warna terhadap latar terang (vs putih) dan gelap (vs hitam) dengan ambang WCAG.";
+"Preview: %lld colors" = "Pratinjau: %lld warna";
+"Preview: %lld colors, %lld unrecognized" = "Pratinjau: %1$lld warna, %2$lld tidak dikenali";
+"%lld of %lld colors need a high-contrast variant" = "%1$lld dari %2$lld warna memerlukan varian kontras tinggi";
+"Use as is" = "Aman dipakai apa adanya";
+"Needs high contrast" = "Perlu kontras tinggi";
+"Decorative only" = "Hanya untuk dekorasi";
+"Meets 4.5:1 for text" = "Memenuhi 4,5:1 untuk teks";
+"Passes 3:1 for UI; text or High Contrast needs a variant" = "Lolos 3:1 untuk elemen UI; teks atau Kontras Tinggi perlu varian";
+"Below 3:1; do not use for text, icons, or status" = "Di bawah 3:1; jangan dipakai untuk teks, ikon, atau status";
+"Derive four variants" = "Buat empat varian";
+"Derive four variants including high contrast and save to the palette" = "Turunkan empat varian termasuk kontras tinggi dan simpan ke palet";
+
+/* Dynamic Type */
+"Scaling preview" = "Pratinjau skala";
+"Style" = "Gaya";
+"Custom font PostScript name" = "Nama PostScript font kustom";
+"Category" = "Kategori";
+"The quick brown fox jumps over the lazy dog" = "Kuda pacu cokelat itu melompati anjing malas";
+"Code" = "Kode";
+"Text style sizes (pt)" = "Ukuran gaya teks (pt)";
+"Large is the default. In accessibility sizes (AX1 to AX5), Body grows to %@pt, over three times the default, so avoid fixed heights, fixed padding, and lineLimit(1)." = "Large adalah bawaannya. Pada ukuran aksesibilitas (AX1 sampai AX5), Body membesar hingga %@pt, lebih dari tiga kali ukuran bawaan, jadi hindari tinggi tetap, padding tetap, dan lineLimit(1).";
+
+/* System colors */
+"Tint colors" = "Warna tint";
+"Gray colors" = "Warna abu-abu";
+"Reference values from Apple's Human Interface Guidelines. Actual values may change between OS releases, so always use the UIColor or Color API in shipping code rather than hard-coding." = "Nilai acuan dari Human Interface Guidelines Apple. Nilai sebenarnya bisa berubah antarrilis OS, jadi pada kode rilis selalu gunakan API UIColor atau Color, jangan ditulis langsung.";
+"Click to copy %@" = "Klik untuk menyalin %@";
+
+/* Screen color picker */
+"Pick color from screen" = "Ambil warna dari layar";
+"Pick a color from anywhere on screen" = "Ambil warna dari mana saja di layar";
+"Pick a color from anywhere on screen and make it the working color" = "Ambil warna dari mana saja di layar dan jadikan warna kerja";
+"Working color" = "Warna kerja";
+"Change the working color to see how it looks under each type of color vision." = "Ubah warna kerja untuk melihat tampilannya pada tiap jenis penglihatan warna.";
+
+/* Palette */
+"Export .xcassets" = "Ekspor .xcassets";
+"Export every saved color as one asset catalog" = "Ekspor semua warna tersimpan sebagai satu katalog aset";
+"No saved colors" = "Belum ada warna tersimpan";
+"Generate a color and save it here, then export your whole brand palette as one .xcassets catalog." = "Buat warna di Generator dan simpan di sini, lalu ekspor seluruh palet merek Anda sebagai satu katalog .xcassets.";
+"Each color is saved as four variants" = "Tiap warna disimpan dalam empat varian";
+"Export %@.colorset" = "Ekspor %@.colorset";
+"Delete" = "Hapus";
+
+/* VoiceOver labels */
+"Delete %@" = "Hapus %@";
+"Copy %@" = "Salin %@";
+"Hex value" = "Nilai hex";
+"Preset %@" = "Preset %@";
+
+/* Settings */
+"Support" = "Dukungan";
+"Contact" = "Kontak";
+"Help" = "Bantuan";
+"Email the developer" = "Kirim email ke developer";
+"Message on Instagram (@lee25_ios)" = "Kirim pesan di Instagram (@lee25_ios)";
+"Show the welcome guide again" = "Tampilkan panduan awal lagi";
+"Opens the guide in the main window" = "Membuka panduan di jendela utama";
+
+/* Help menu */
+"Welcome to TetraTint" = "Selamat Datang di TetraTint";
+"TetraTint Support Page" = "Halaman Dukungan TetraTint";
+"Email the Developer…" = "Kirim Email ke Developer…";
+
+/* Onboarding */
+"Accessibility work Apple doesn't do for your custom colors and fonts." = "Pekerjaan aksesibilitas untuk warna dan font kustom yang tidak dikerjakan Apple.";
+"Start with one color" = "Mulai dari satu warna";
+"Type a hex value, use the color well, or pick any pixel on screen with the eyedropper. Every screen works on this same color." = "Ketik nilai hex, pakai color well, atau ambil piksel mana pun di layar dengan pipet. Semua layar bekerja dengan warna yang sama ini.";
+"Look at it through three lenses" = "Lihat lewat tiga sudut pandang";
+"Generate light, dark, and high-contrast variants, check WCAG contrast, and see how it looks with color vision deficiency." = "Buat varian terang, gelap, dan kontras tinggi, periksa kontras WCAG, dan lihat tampilannya bagi penderita gangguan penglihatan warna.";
+"Save and export" = "Simpan dan ekspor";
+"Save colors to your palette, then export a .colorset, SwiftUI or UIKit code, or one .xcassets catalog for Xcode." = "Simpan warna ke palet, lalu ekspor sebagai .colorset, kode SwiftUI atau UIKit, atau satu katalog .xcassets untuk Xcode.";
+"Custom fonts too" = "Font kustom juga";
+"Dynamic Type shows every text style at every size and writes the scaling code for your custom font." = "Dynamic Type menampilkan setiap gaya teks di setiap ukuran dan menulis kode penskalaan untuk font kustom Anda.";
+"You can open this guide again from the Help menu." = "Panduan ini bisa dibuka lagi dari menu Bantuan.";
+"Get Started" = "Mulai";
+
+/* Tips */
+"Pick any color on screen" = "Ambil warna apa pun di layar";
+"Click the eyedropper, then click a pixel in any app, website, or design file. It becomes the working color everywhere." = "Klik pipet, lalu klik piksel di app, situs web, atau file desain mana pun. Warna itu menjadi warna kerja di semua layar.";
+"See the whole app as others do" = "Lihat seluruh app seperti orang lain melihatnya";
+"Turn on a color vision preview to view every screen as someone with protanopia, deuteranopia, or tritanopia sees it." = "Aktifkan pratinjau penglihatan warna untuk melihat setiap layar seperti yang terlihat oleh penderita protanopia, deuteranopia, atau tritanopia.";
+
+/* Shortcuts (App Intents) */
+"Pick Color from Screen" = "Ambil Warna dari Layar";
+"Opens TetraTint and starts the eyedropper so you can pick any color on screen." = "Membuka TetraTint dan mengaktifkan pipet agar Anda bisa mengambil warna apa pun di layar.";
+"Open in TetraTint" = "Buka di TetraTint";
+"Opens a TetraTint screen: Color, Dynamic Type, System colors, or Palette." = "Membuka salah satu layar TetraTint: Warna, Dynamic Type, Warna sistem, atau Palet.";
+"Screen" = "Layar";
+"Pick Color" = "Ambil Warna";
+"Open Screen" = "Buka Layar";
+
+/* Roadmap (Settings ▸ Coming Features) — source: TetraTintRoadmap.swift */
+"Close" = "Tutup";
+"Better VoiceOver support" = "Dukungan VoiceOver yang lebih baik";
+"VoiceOver reads every color, button, and value in a sensible order." = "VoiceOver membacakan setiap warna, tombol, dan nilai dengan urutan yang masuk akal.";
+"Easier-to-see interface" = "Tampilan yang lebih jelas";
+"Labels and controls stay crisp with Increase Contrast turned on." = "Label dan kontrol tetap tajam saat Tingkatkan Kontras diaktifkan.";
+"Reduced motion" = "Kurangi gerakan";
+"With Reduce Motion on, effects like colors flying into your palette get calmer." = "Saat Kurangi Gerakan aktif, efek seperti warna yang terbang ke palet menjadi lebih tenang.";
+"More languages" = "Lebih banyak bahasa";
+"Use TetraTint in more languages, not just English and Korean." = "Gunakan TetraTint dalam lebih banyak bahasa, tidak hanya Inggris dan Korea.";
+"What’s new" = "Yang baru";
+"After an update, see what’s new the first time you open the app." = "Setelah pembaruan, lihat apa yang baru saat pertama kali membuka app.";
+"Replies to your feedback" = "Balasan untuk masukan Anda";
+"Read our replies to your feedback right in the app." = "Baca balasan kami atas masukan Anda langsung di dalam app.";
+"Desktop widgets" = "Widget desktop";
+"See your palette right on the desktop without opening the app." = "Lihat palet Anda langsung di desktop tanpa membuka app.";
+"Palettes on all your Macs" = "Palet di semua Mac Anda";
+"Pick up the same palette on your other Macs with iCloud." = "Lanjutkan memakai palet yang sama di Mac lain lewat iCloud.";
+"Back up and restore palettes" = "Cadangkan dan pulihkan palet";
+"Save your palette to a file and load it back anytime." = "Simpan palet ke file dan muat kembali kapan saja.";
+"Clear the whole palette" = "Kosongkan seluruh palet";
+"Remove every saved color at once when you want a fresh start." = "Hapus semua warna tersimpan sekaligus saat ingin memulai dari awal.";

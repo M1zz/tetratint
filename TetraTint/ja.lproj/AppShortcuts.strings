@@ -1,0 +1,5 @@
+/* App Shortcuts phrases — Siri · Spotlight · Shortcuts app */
+"Pick a color with ${applicationName}" = "${applicationName}で色を取得";
+"Pick a color from screen in ${applicationName}" = "${applicationName}で画面から色を取得";
+"Open ${section} in ${applicationName}" = "${applicationName}で${section}を開く";
+"Show ${applicationName} ${section}" = "${applicationName}の${section}を表示";

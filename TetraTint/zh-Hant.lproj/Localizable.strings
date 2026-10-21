@@ -1,0 +1,228 @@
+/* Color vision preview */
+"Color vision preview" = "色覺預覽";
+"Preview the whole app as someone with color vision deficiency sees it" = "以色覺異常者看到的樣子預覽整個 App";
+"simulated colors, not the real ones" = "這是模擬色彩，並非實際顏色";
+"Exit" = "關閉";
+"Normal" = "一般";
+"Protanopia" = "紅色盲";
+"Deuteranopia" = "綠色盲";
+"Tritanopia" = "藍色盲";
+"Grayscale" = "灰階";
+
+/* Color names (spoken for accessibility) */
+"Black" = "黑色";
+"Dark gray" = "深灰色";
+"Gray" = "灰色";
+"Light gray" = "淺灰色";
+"White" = "白色";
+"Red" = "紅色";
+"Orange" = "橘色";
+"Yellow" = "黃色";
+"Lime" = "黃綠色";
+"Green" = "綠色";
+"Teal" = "青綠色";
+"Sky blue" = "天藍色";
+"Blue" = "藍色";
+"Indigo" = "靛藍色";
+"Purple" = "紫色";
+"Magenta" = "洋紅色";
+"Pink" = "粉紅色";
+"Dark" = "深";
+"Light" = "亮";
+"Pale" = "淡";
+
+/* Navigation & view titles */
+"Color" = "色彩";
+"Variants" = "變化版本";
+"Contrast" = "對比";
+"Color vision" = "色覺";
+"Generate variants" = "產生變化版本";
+"Check contrast" = "檢查對比";
+"Simulate color vision" = "模擬色覺";
+"Generate and export light, dark, and high-contrast variants" = "產生並匯出淺色、深色與高對比的變化版本";
+"Check the color against WCAG contrast thresholds" = "依 WCAG 對比標準檢查這個顏色";
+"Simulate how the color looks with color vision deficiency" = "模擬色覺異常者看到這個顏色的樣子";
+"Dynamic Type" = "動態字體";
+"System colors" = "系統色彩";
+"Palette" = "色票";
+
+/* Appearance variants */
+"Light (Any)" = "淺色（預設）";
+"Light High Contrast" = "淺色高對比";
+"Dark" = "深色";
+"Dark High Contrast" = "深色高對比";
+"Light" = "淺色";
+"Light HC" = "淺色高對比";
+"Dark HC" = "深色高對比";
+"Light mode default (Any Appearance)" = "淺色模式預設值（Any Appearance）";
+"Light with Increase Contrast on" = "淺色，並開啟「提高對比」";
+"Dark mode default" = "深色模式預設值";
+"Dark with Increase Contrast on" = "深色，並開啟「提高對比」";
+
+/* Color vision deficiency subtitles */
+"Normal vision" = "一般色覺";
+"Protan, about 1% of men" = "紅色盲，約佔男性 1%";
+"Deutan, about 1% of men" = "綠色盲，約佔男性 1%";
+"Tritan, rare" = "藍色盲，較為罕見";
+"Monochromacy" = "全色盲（灰階）";
+
+/* Safe palettes */
+"Scientific visualization standard, 8 colors" = "科學視覺化標準，8 色";
+"IBM accessibility palette, 5 colors" = "IBM 輔助使用色票，5 色";
+"Qualitative data visualization, 7 colors" = "定性資料視覺化，7 色";
+
+/* Generator */
+"Light mode base color" = "淺色模式基準色";
+"Color name" = "色彩名稱";
+"Regenerate all" = "全部重新產生";
+"Discard manual edits and re-derive from the base color" = "捨棄手動調整，從基準色重新推導";
+"Save to palette" = "儲存到色票";
+"Presets" = "預設色";
+"Export" = "匯出";
+"Copied" = "已拷貝";
+"Copy" = "拷貝";
+"Save .colorset" = "儲存 .colorset";
+
+/* Variant card */
+"%@:1 vs background" = "與背景的對比為 %@:1";
+"AA text" = "AA 文字";
+"Low" = "偏低";
+"Button" = "按鈕";
+"Tint label" = "強調色標籤";
+"Progress" = "進度";
+"Copy hex" = "拷貝 hex";
+"Fine-tune this variant manually" = "手動微調這個版本";
+
+/* Color vision screen */
+"Color vision simulation" = "色覺模擬";
+"This shows how your colors look to people with color vision deficiency. It is the current state, not a suggestion to change them." = "這裡呈現你使用的顏色在色覺異常者眼中的樣子。這只是目前的狀態，並不是建議你更換顏色。";
+"Conflict warnings" = "難以分辨警告";
+"Finds color pairs that become too similar to tell apart under simulation." = "找出模擬後變得太接近、難以分辨的顏色組合。";
+"Recommended safe palettes" = "色盲友善色票";
+"If there were conflicts above, switch to a verified palette that stays distinguishable across every vision type." = "如果上方出現衝突，可改用經過驗證、在各種色覺類型下都能清楚分辨的色票。";
+"No palette saved yet, so the Okabe Ito demo palette is shown. Save colors in Generator to audit your own palette." = "目前尚未儲存任何色票，因此顯示 Okabe Ito 示範色票。在 Generator 中儲存顏色後，就能檢查你自己的色票。";
+"Color" = "色彩";
+"All color pairs stay distinguishable across every vision type (ΔE ≥ 12)" = "所有顏色組合在各種色覺類型下都能分辨（ΔE ≥ 12）";
+"ΔE %@ under %@" = "在%2$@下的 ΔE 為 %1$@";
+"Do not rely on color alone. Pair it with icons, patterns, or labels, or switch to a safe palette below." = "不要只靠顏色傳達狀態，請搭配圖示、圖案或標籤，或改用下方的安全色票。";
+"Add to palette" = "加入色票";
+"Derive each color into four variants and save to the palette" = "將每個顏色推導成四種變化版本並儲存到色票";
+
+/* Contrast audit */
+"Paste the colors your app uses (separated by line breaks or commas)" = "貼上 App 使用的顏色（以換行或逗號分隔）";
+"Audit" = "檢查";
+"Screens each color against light (vs white) and dark (vs black) backgrounds using WCAG thresholds." = "依 WCAG 標準，分別以淺色（對白色）與深色（對黑色）背景篩選每個顏色。";
+"Preview: %lld colors" = "預覽：%lld 個顏色";
+"Preview: %lld colors, %lld unrecognized" = "預覽：%1$lld 個顏色，其中 %2$lld 個無法辨識";
+"%lld of %lld colors need a high-contrast variant" = "%2$lld 個顏色中，有 %1$lld 個需要高對比版本";
+"Use as is" = "可直接使用";
+"Needs high contrast" = "需要高對比版本";
+"Decorative only" = "僅限裝飾用途";
+"Meets 4.5:1 for text" = "符合文字所需的 4.5:1";
+"Passes 3:1 for UI; text or High Contrast needs a variant" = "UI 元件符合 3:1；文字或高對比情境需要另外建立版本";
+"Below 3:1; do not use for text, icons, or status" = "低於 3:1，請勿用於文字、圖示或狀態標示";
+"Derive four variants" = "產生四種版本";
+"Derive four variants including high contrast and save to the palette" = "產生包含高對比在內的四種版本，並儲存到色票";
+
+/* Dynamic Type */
+"Scaling preview" = "縮放預覽";
+"Style" = "樣式";
+"Custom font PostScript name" = "自訂字體的 PostScript 名稱";
+"Category" = "級距";
+"The quick brown fox jumps over the lazy dog" = "天地玄黃宇宙洪荒 The quick brown fox";
+"Code" = "程式碼";
+"Text style sizes (pt)" = "文字樣式大小（pt）";
+"Large is the default. In accessibility sizes (AX1 to AX5), Body grows to %@pt, over three times the default, so avoid fixed heights, fixed padding, and lineLimit(1)." = "預設為 Large。在輔助使用大小（AX1 到 AX5）下，Body 會放大到 %@pt，超過預設值的三倍，因此請避免使用固定高度、固定邊距與 lineLimit(1)。";
+
+/* System colors */
+"Tint colors" = "強調色";
+"Gray colors" = "灰色系";
+"Reference values from Apple's Human Interface Guidelines. Actual values may change between OS releases, so always use the UIColor or Color API in shipping code rather than hard-coding." = "以下為 Apple《人機介面指南》中的參考值。實際數值可能隨系統版本而改變，正式發行的程式碼請使用 UIColor 或 Color API，不要直接寫死數值。";
+"Click to copy %@" = "按一下即可拷貝 %@";
+
+/* Screen color picker */
+"Pick color from screen" = "從螢幕取色";
+"Pick a color from anywhere on screen" = "從螢幕上任何位置取色";
+"Pick a color from anywhere on screen and make it the working color" = "從螢幕上任何位置取色，並設為目前使用的顏色";
+"Working color" = "目前使用的顏色";
+"Change the working color to see how it looks under each type of color vision." = "更換目前使用的顏色，看看它在各種色覺類型下的樣子。";
+
+/* Palette */
+"Export .xcassets" = "匯出 .xcassets";
+"Export every saved color as one asset catalog" = "將所有已儲存的顏色匯出為一個資產目錄";
+"No saved colors" = "尚無已儲存的顏色";
+"Generate a color and save it here, then export your whole brand palette as one .xcassets catalog." = "產生顏色並儲存在這裡，再將整套品牌色票匯出為一個 .xcassets 目錄。";
+"Each color is saved as four variants" = "每個顏色都會以四種版本儲存";
+"Export %@.colorset" = "匯出 %@.colorset";
+"Delete" = "刪除";
+
+/* VoiceOver labels */
+"Delete %@" = "刪除 %@";
+"Copy %@" = "拷貝 %@";
+"Hex value" = "hex 值";
+"Preset %@" = "預設色 %@";
+
+/* Settings */
+"Support" = "支援";
+"Contact" = "聯絡我們";
+"Help" = "說明";
+"Email the developer" = "寄電子郵件給開發者";
+"Message on Instagram (@lee25_ios)" = "在 Instagram 傳訊息（@lee25_ios）";
+"Show the welcome guide again" = "再次顯示歡迎導覽";
+"Opens the guide in the main window" = "在主視窗中開啟導覽";
+
+/* Help menu */
+"Welcome to TetraTint" = "歡迎使用 TetraTint";
+"TetraTint Support Page" = "TetraTint 支援頁面";
+"Email the Developer…" = "寄電子郵件給開發者⋯";
+
+/* Onboarding */
+"Accessibility work Apple doesn't do for your custom colors and fonts." = "Apple 不會替自訂色彩與字體處理的輔助使用工作，交給 TetraTint。";
+"Start with one color" = "從一個顏色開始";
+"Type a hex value, use the color well, or pick any pixel on screen with the eyedropper. Every screen works on this same color." = "輸入 hex 值、使用顏色選取器，或用滴管點選螢幕上的任何一點。所有畫面都會共用這個顏色。";
+"Look at it through three lenses" = "從三個角度檢視";
+"Generate light, dark, and high-contrast variants, check WCAG contrast, and see how it looks with color vision deficiency." = "產生淺色、深色與高對比版本，檢查 WCAG 對比，並看看色覺異常者眼中的樣子。";
+"Save and export" = "儲存並匯出";
+"Save colors to your palette, then export a .colorset, SwiftUI or UIKit code, or one .xcassets catalog for Xcode." = "將顏色儲存到色票後，可匯出 .colorset、SwiftUI 或 UIKit 程式碼，或是供 Xcode 使用的 .xcassets 目錄。";
+"Custom fonts too" = "自訂字體也沒問題";
+"Dynamic Type shows every text style at every size and writes the scaling code for your custom font." = "「動態字體」畫面會以各種大小呈現所有文字樣式，並為你的自訂字體產生縮放程式碼。";
+"You can open this guide again from the Help menu." = "之後可以從「說明」選單再次開啟這份導覽。";
+"Get Started" = "開始使用";
+
+/* Tips */
+"Pick any color on screen" = "取得螢幕上的任何顏色";
+"Click the eyedropper, then click a pixel in any app, website, or design file. It becomes the working color everywhere." = "按下滴管後，再點選任何 App、網站或設計檔中的一個像素，該顏色就會成為所有畫面的目前顏色。";
+"See the whole app as others do" = "用別人的眼睛看整個 App";
+"Turn on a color vision preview to view every screen as someone with protanopia, deuteranopia, or tritanopia sees it." = "開啟色覺預覽後，就能以紅色盲、綠色盲或藍色盲者看到的樣子檢視每個畫面。";
+
+/* Shortcuts (App Intents) */
+"Pick Color from Screen" = "從螢幕取色";
+"Opens TetraTint and starts the eyedropper so you can pick any color on screen." = "開啟 TetraTint 並啟動滴管，讓你可以取得螢幕上的任何顏色。";
+"Open in TetraTint" = "在 TetraTint 中開啟";
+"Opens a TetraTint screen: Color, Dynamic Type, System colors, or Palette." = "開啟 TetraTint 的其中一個畫面：色彩、動態字體、系統色彩或色票。";
+"Screen" = "畫面";
+"Pick Color" = "取色";
+"Open Screen" = "開啟畫面";
+
+/* Roadmap (Settings ▸ Coming Features) — source: TetraTintRoadmap.swift */
+"Close" = "關閉";
+"Better VoiceOver support" = "更好用的旁白";
+"VoiceOver reads every color, button, and value in a sensible order." = "旁白會依合理的順序朗讀每個顏色、按鈕與數值。";
+"Easier-to-see interface" = "更容易看清的介面";
+"Labels and controls stay crisp with Increase Contrast turned on." = "開啟「提高對比」後，文字與按鈕依然清晰。";
+"Reduced motion" = "減少動態效果";
+"With Reduce Motion on, effects like colors flying into your palette get calmer." = "開啟「減少動態效果」後，顏色飛入色票這類動畫會更加柔和。";
+"More languages" = "更多語言";
+"Use TetraTint in more languages, not just English and Korean." = "讓你用更多語言使用 TetraTint，不再只有英文和韓文。";
+"What’s new" = "新功能介紹";
+"After an update, see what’s new the first time you open the app." = "更新後第一次開啟 App 時，會告訴你有哪些新內容。";
+"Replies to your feedback" = "接收意見回覆";
+"Read our replies to your feedback right in the app." = "直接在 App 裡查看我們對你意見的回覆。";
+"Desktop widgets" = "桌面小工具";
+"See your palette right on the desktop without opening the app." = "不必開啟 App，直接在桌面上查看你的色票。";
+"Palettes on all your Macs" = "所有 Mac 共用色票";
+"Pick up the same palette on your other Macs with iCloud." = "透過 iCloud，在其他 Mac 上接續使用同一份色票。";
+"Back up and restore palettes" = "備份與還原色票";
+"Save your palette to a file and load it back anytime." = "將色票存成檔案，隨時都能再載入。";
+"Clear the whole palette" = "一次清空色票";
+"Remove every saved color at once when you want a fresh start." = "想重新開始時，可一次刪除所有已儲存的顏色。";

@@ -1,0 +1,228 @@
+/* Color vision preview */
+"Color vision preview" = "Renk görme önizlemesi";
+"Preview the whole app as someone with color vision deficiency sees it" = "Tüm uygulamayı renk görme bozukluğu olan biri gibi önizleyin";
+"simulated colors, not the real ones" = "simüle edilmiş renkler, gerçekleri değil";
+"Exit" = "Kapat";
+"Normal" = "Normal";
+"Protanopia" = "Protanopi";
+"Deuteranopia" = "Döteranopi";
+"Tritanopia" = "Tritanopi";
+"Grayscale" = "Gri tonlama";
+
+/* Color names (spoken for accessibility) */
+"Black" = "Siyah";
+"Dark gray" = "Koyu gri";
+"Gray" = "Gri";
+"Light gray" = "Açık gri";
+"White" = "Beyaz";
+"Red" = "Kırmızı";
+"Orange" = "Turuncu";
+"Yellow" = "Sarı";
+"Lime" = "Limon yeşili";
+"Green" = "Yeşil";
+"Teal" = "Deniz mavisi";
+"Sky blue" = "Gök mavisi";
+"Blue" = "Mavi";
+"Indigo" = "Çivit mavisi";
+"Purple" = "Mor";
+"Magenta" = "Eflatun";
+"Pink" = "Pembe";
+"Dark" = "Koyu";
+"Light" = "Açık";
+"Pale" = "Soluk";
+
+/* Navigation & view titles */
+"Color" = "Renk";
+"Variants" = "Varyantlar";
+"Contrast" = "Kontrast";
+"Color vision" = "Renk görme";
+"Generate variants" = "Varyant oluştur";
+"Check contrast" = "Kontrastı denetle";
+"Simulate color vision" = "Renk görmeyi simüle et";
+"Generate and export light, dark, and high-contrast variants" = "Açık, koyu ve yüksek kontrastlı varyantları oluşturup dışa aktarın";
+"Check the color against WCAG contrast thresholds" = "Rengi WCAG kontrast eşiklerine göre denetleyin";
+"Simulate how the color looks with color vision deficiency" = "Rengin renk görme bozukluğunda nasıl göründüğünü simüle edin";
+"Dynamic Type" = "Dynamic Type";
+"System colors" = "Sistem renkleri";
+"Palette" = "Palet";
+
+/* Appearance variants */
+"Light (Any)" = "Açık (varsayılan)";
+"Light High Contrast" = "Açık, yüksek kontrast";
+"Dark" = "Koyu";
+"Dark High Contrast" = "Koyu, yüksek kontrast";
+"Light" = "Açık";
+"Light HC" = "Açık YK";
+"Dark HC" = "Koyu YK";
+"Light mode default (Any Appearance)" = "Açık mod varsayılanı (Any Appearance)";
+"Light with Increase Contrast on" = "Kontrastı Artır açıkken açık mod";
+"Dark mode default" = "Koyu mod varsayılanı";
+"Dark with Increase Contrast on" = "Kontrastı Artır açıkken koyu mod";
+
+/* Color vision deficiency subtitles */
+"Normal vision" = "Normal renk görme";
+"Protan, about 1% of men" = "Protan, erkeklerin yaklaşık yüzde 1’i";
+"Deutan, about 1% of men" = "Deutan, erkeklerin yaklaşık yüzde 1’i";
+"Tritan, rare" = "Tritan, nadir görülür";
+"Monochromacy" = "Monokromasi";
+
+/* Safe palettes */
+"Scientific visualization standard, 8 colors" = "Bilimsel görselleştirme standardı, 8 renk";
+"IBM accessibility palette, 5 colors" = "IBM erişilebilirlik paleti, 5 renk";
+"Qualitative data visualization, 7 colors" = "Nitel veri görselleştirme, 7 renk";
+
+/* Generator */
+"Light mode base color" = "Açık mod temel rengi";
+"Color name" = "Renk adı";
+"Regenerate all" = "Tümünü yeniden oluştur";
+"Discard manual edits and re-derive from the base color" = "Elle yapılan düzenlemeleri atıp temel renkten yeniden türet";
+"Save to palette" = "Palete kaydet";
+"Presets" = "Hazır ayarlar";
+"Export" = "Dışa aktar";
+"Copied" = "Kopyalandı";
+"Copy" = "Kopyala";
+"Save .colorset" = ".colorset kaydet";
+
+/* Variant card */
+"%@:1 vs background" = "Arka plana karşı %@:1";
+"AA text" = "AA metin";
+"Low" = "Düşük";
+"Button" = "Düğme";
+"Tint label" = "Ton etiketi";
+"Progress" = "İlerleme";
+"Copy hex" = "Hex kodunu kopyala";
+"Fine-tune this variant manually" = "Bu varyantı elle ince ayarla";
+
+/* Color vision screen */
+"Color vision simulation" = "Renk görme simülasyonu";
+"This shows how your colors look to people with color vision deficiency. It is the current state, not a suggestion to change them." = "Renklerinizin renk görme bozukluğu olan kişilere nasıl göründüğünü gösterir. Bu mevcut durumdur, renkleri değiştirme önerisi değildir.";
+"Conflict warnings" = "Karışma uyarıları";
+"Finds color pairs that become too similar to tell apart under simulation." = "Simülasyonda birbirinden ayırt edilemeyecek kadar benzeşen renk çiftlerini bulur.";
+"Recommended safe palettes" = "Önerilen güvenli paletler";
+"If there were conflicts above, switch to a verified palette that stays distinguishable across every vision type." = "Yukarıda karışan renkler varsa, her renk görme türünde ayırt edilebilen doğrulanmış bir palete geçin.";
+"No palette saved yet, so the Okabe Ito demo palette is shown. Save colors in Generator to audit your own palette." = "Henüz kayıtlı palet olmadığından Okabe Ito demo paleti gösteriliyor. Kendi paletinizi denetlemek için Generator’da renk kaydedin.";
+"Color" = "Renk";
+"All color pairs stay distinguishable across every vision type (ΔE ≥ 12)" = "Tüm renk çiftleri her renk görme türünde ayırt edilebiliyor (ΔE ≥ 12)";
+"ΔE %@ under %@" = "%2$@ altında ΔE %1$@";
+"Do not rely on color alone. Pair it with icons, patterns, or labels, or switch to a safe palette below." = "Yalnızca renge güvenmeyin. Simgeler, desenler veya etiketlerle destekleyin ya da aşağıdaki güvenli paletlerden birine geçin.";
+"Add to palette" = "Palete ekle";
+"Derive each color into four variants and save to the palette" = "Her rengi dört varyanta dönüştürüp palete kaydet";
+
+/* Contrast audit */
+"Paste the colors your app uses (separated by line breaks or commas)" = "Uygulamanızın kullandığı renkleri yapıştırın (satır sonu veya virgülle ayrılmış)";
+"Audit" = "Denetle";
+"Screens each color against light (vs white) and dark (vs black) backgrounds using WCAG thresholds." = "Her rengi WCAG eşiklerine göre açık (beyaza karşı) ve koyu (siyaha karşı) arka planlarda eler.";
+"Preview: %lld colors" = "Önizleme: %lld renk";
+"Preview: %lld colors, %lld unrecognized" = "Önizleme: %1$lld renk, %2$lld tanınmadı";
+"%lld of %lld colors need a high-contrast variant" = "%2$lld renkten %1$lld tanesi yüksek kontrastlı varyant gerektiriyor";
+"Use as is" = "Olduğu gibi kullanılabilir";
+"Needs high contrast" = "Yüksek kontrast gerekir";
+"Decorative only" = "Yalnızca dekoratif";
+"Meets 4.5:1 for text" = "Metin için 4,5:1 sağlanıyor";
+"Passes 3:1 for UI; text or High Contrast needs a variant" = "Arayüz için 3:1’i geçiyor; metin veya yüksek kontrast için varyant gerekir";
+"Below 3:1; do not use for text, icons, or status" = "3:1’in altında; metin, simge veya durum göstergesi için kullanmayın";
+"Derive four variants" = "Dört varyant türet";
+"Derive four variants including high contrast and save to the palette" = "Yüksek kontrast dahil dört varyant türetip palete kaydet";
+
+/* Dynamic Type */
+"Scaling preview" = "Ölçekleme önizlemesi";
+"Style" = "Stil";
+"Custom font PostScript name" = "Özel yazı tipinin PostScript adı";
+"Category" = "Kategori";
+"The quick brown fox jumps over the lazy dog" = "Pijamalı hasta yağız şoföre çabucak güvendi";
+"Code" = "Kod";
+"Text style sizes (pt)" = "Metin stili boyutları (pt)";
+"Large is the default. In accessibility sizes (AX1 to AX5), Body grows to %@pt, over three times the default, so avoid fixed heights, fixed padding, and lineLimit(1)." = "Varsayılan boyut Large’dır. Erişilebilirlik boyutlarında (AX1–AX5) Body %@ pt’ye kadar büyür; bu, varsayılanın üç katından fazladır. Bu yüzden sabit yükseklik, sabit dolgu ve lineLimit(1) kullanmaktan kaçının.";
+
+/* System colors */
+"Tint colors" = "Vurgu renkleri";
+"Gray colors" = "Gri renkler";
+"Reference values from Apple's Human Interface Guidelines. Actual values may change between OS releases, so always use the UIColor or Color API in shipping code rather than hard-coding." = "Apple’ın Human Interface Guidelines belgesindeki referans değerlerdir. Gerçek değerler işletim sistemi sürümleri arasında değişebilir; bu yüzden yayınlanan kodda sabit değer yazmak yerine her zaman UIColor veya Color API’sini kullanın.";
+"Click to copy %@" = "%@ değerini kopyalamak için tıklayın";
+
+/* Screen color picker */
+"Pick color from screen" = "Ekrandan renk seç";
+"Pick a color from anywhere on screen" = "Ekranın herhangi bir yerinden renk seçin";
+"Pick a color from anywhere on screen and make it the working color" = "Ekranın herhangi bir yerinden renk seçip çalışma rengi yapın";
+"Working color" = "Çalışma rengi";
+"Change the working color to see how it looks under each type of color vision." = "Çalışma rengini değiştirerek her renk görme türünde nasıl göründüğüne bakın.";
+
+/* Palette */
+"Export .xcassets" = ".xcassets dışa aktar";
+"Export every saved color as one asset catalog" = "Kayıtlı tüm renkleri tek bir varlık kataloğu olarak dışa aktarın";
+"No saved colors" = "Kayıtlı renk yok";
+"Generate a color and save it here, then export your whole brand palette as one .xcassets catalog." = "Bir renk oluşturup buraya kaydedin, ardından tüm marka paletinizi tek bir .xcassets kataloğu olarak dışa aktarın.";
+"Each color is saved as four variants" = "Her renk dört varyant olarak kaydedilir";
+"Export %@.colorset" = "%@.colorset dışa aktar";
+"Delete" = "Sil";
+
+/* VoiceOver labels */
+"Delete %@" = "%@ sil";
+"Copy %@" = "%@ kopyala";
+"Hex value" = "Hex değeri";
+"Preset %@" = "Hazır ayar %@";
+
+/* Settings */
+"Support" = "Destek";
+"Contact" = "İletişim";
+"Help" = "Yardım";
+"Email the developer" = "Geliştiriciye e-posta gönder";
+"Message on Instagram (@lee25_ios)" = "Instagram’dan mesaj gönder (@lee25_ios)";
+"Show the welcome guide again" = "Karşılama rehberini yeniden göster";
+"Opens the guide in the main window" = "Rehberi ana pencerede açar";
+
+/* Help menu */
+"Welcome to TetraTint" = "TetraTint’e Hoş Geldiniz";
+"TetraTint Support Page" = "TetraTint Destek Sayfası";
+"Email the Developer…" = "Geliştiriciye E-posta Gönder…";
+
+/* Onboarding */
+"Accessibility work Apple doesn't do for your custom colors and fonts." = "Apple’ın özel renkleriniz ve yazı tipleriniz için yapmadığı erişilebilirlik işini sizin yerinize yapar.";
+"Start with one color" = "Tek bir renkle başlayın";
+"Type a hex value, use the color well, or pick any pixel on screen with the eyedropper. Every screen works on this same color." = "Bir hex değeri yazın, renk kutusunu kullanın ya da damlalıkla ekrandaki herhangi bir pikseli seçin. Tüm ekranlar bu tek renk üzerinde çalışır.";
+"Look at it through three lenses" = "Üç farklı mercekten bakın";
+"Generate light, dark, and high-contrast variants, check WCAG contrast, and see how it looks with color vision deficiency." = "Açık, koyu ve yüksek kontrastlı varyantlar oluşturun, WCAG kontrastını denetleyin ve rengin renk görme bozukluğunda nasıl göründüğüne bakın.";
+"Save and export" = "Kaydedin ve dışa aktarın";
+"Save colors to your palette, then export a .colorset, SwiftUI or UIKit code, or one .xcassets catalog for Xcode." = "Renkleri paletinize kaydedin, ardından bir .colorset, SwiftUI veya UIKit kodu ya da Xcode için tek bir .xcassets kataloğu dışa aktarın.";
+"Custom fonts too" = "Özel yazı tipleri de var";
+"Dynamic Type shows every text style at every size and writes the scaling code for your custom font." = "Dynamic Type her metin stilini her boyutta gösterir ve özel yazı tipiniz için ölçekleme kodunu yazar.";
+"You can open this guide again from the Help menu." = "Bu rehberi Yardım menüsünden yeniden açabilirsiniz.";
+"Get Started" = "Başla";
+
+/* Tips */
+"Pick any color on screen" = "Ekrandaki herhangi bir rengi seçin";
+"Click the eyedropper, then click a pixel in any app, website, or design file. It becomes the working color everywhere." = "Damlalığa tıklayın, sonra herhangi bir uygulamada, web sitesinde veya tasarım dosyasında bir piksele tıklayın. Bu renk her yerde çalışma rengi olur.";
+"See the whole app as others do" = "Uygulamayı başkalarının gözünden görün";
+"Turn on a color vision preview to view every screen as someone with protanopia, deuteranopia, or tritanopia sees it." = "Renk görme önizlemesini açarak her ekranı protanopi, döteranopi veya tritanopisi olan biri gibi görün.";
+
+/* Shortcuts (App Intents) */
+"Pick Color from Screen" = "Ekrandan Renk Seç";
+"Opens TetraTint and starts the eyedropper so you can pick any color on screen." = "TetraTint’i açar ve damlalığı başlatır; böylece ekrandaki herhangi bir rengi seçebilirsiniz.";
+"Open in TetraTint" = "TetraTint’te Aç";
+"Opens a TetraTint screen: Color, Dynamic Type, System colors, or Palette." = "TetraTint’te bir ekran açar: Renk, Dynamic Type, Sistem renkleri veya Palet.";
+"Screen" = "Ekran";
+"Pick Color" = "Renk Seç";
+"Open Screen" = "Ekranı Aç";
+
+/* Roadmap (Settings ▸ Coming Features) — source: TetraTintRoadmap.swift */
+"Close" = "Kapat";
+"Better VoiceOver support" = "Daha iyi VoiceOver desteği";
+"VoiceOver reads every color, button, and value in a sensible order." = "VoiceOver her rengi, düğmeyi ve değeri mantıklı bir sırayla okur.";
+"Easier-to-see interface" = "Daha rahat görülen arayüz";
+"Labels and controls stay crisp with Increase Contrast turned on." = "Kontrastı Artır açıkken etiketler ve denetimler net görünür.";
+"Reduced motion" = "Daha az hareket";
+"With Reduce Motion on, effects like colors flying into your palette get calmer." = "Hareketi Azalt açıkken renklerin palete uçması gibi efektler daha sakin olur.";
+"More languages" = "Daha fazla dil";
+"Use TetraTint in more languages, not just English and Korean." = "TetraTint’i yalnızca İngilizce ve Korece ile sınırlı kalmadan daha fazla dilde kullanın.";
+"What’s new" = "Yenilikler";
+"After an update, see what’s new the first time you open the app." = "Güncellemeden sonra uygulamayı ilk açtığınızda nelerin yeni olduğunu görün.";
+"Replies to your feedback" = "Geri bildirimlerinize yanıtlar";
+"Read our replies to your feedback right in the app." = "Geri bildirimlerinize verdiğimiz yanıtları doğrudan uygulamada okuyun.";
+"Desktop widgets" = "Masaüstü widget’ları";
+"See your palette right on the desktop without opening the app." = "Uygulamayı açmadan paletinizi doğrudan masaüstünde görün.";
+"Palettes on all your Macs" = "Tüm Mac’lerinizde paletler";
+"Pick up the same palette on your other Macs with iCloud." = "iCloud ile diğer Mac’lerinizde aynı paletle devam edin.";
+"Back up and restore palettes" = "Paletleri yedekleyin ve geri yükleyin";
+"Save your palette to a file and load it back anytime." = "Paletinizi bir dosyaya kaydedin ve istediğiniz zaman geri yükleyin.";
+"Clear the whole palette" = "Tüm paleti temizle";
+"Remove every saved color at once when you want a fresh start." = "Baştan başlamak istediğinizde kayıtlı tüm renkleri tek seferde kaldırın.";
