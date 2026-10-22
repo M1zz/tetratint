@@ -7,165 +7,168 @@ App Store 의 "이 버전의 새로운 기능" 에 그대로 올라가는 글이
 
 ### 앱스토어 (한국어)
 
-이제 App Store에서 한국어로 앱을 소개해요
-시스템 색상 화면의 분류 이름도 한국어로 보여요
-지원과 개인정보 안내를 한국어 페이지로 볼 수 있어요
+이제 24개 언어로 앱을 쓸 수 있어요
+처음 열면 사용법 안내와 팁을 보여 줘요
+단축어 앱에서 화면 색을 바로 집을 수 있어요
+설정에서 의견을 보내고 다음 기능을 볼 수 있어요
 
 ### App Store (English)
 
-The App Store page now speaks Korean too
-System colors headings are now localized
-Help and privacy pages in your language
+TetraTint now speaks 24 languages
+A welcome guide and tips for new users
+Pick a color from screen with Shortcuts
+See upcoming features and send feedback
 
-### App Store (English (UK))
+### App Store (en-GB)
 
-The App Store page now speaks Korean too
-System colour headings are now localised
-Help and privacy pages in your language
-
+TetraTint now speaks 24 languages
+A welcome guide and tips for new users
+Pick a colour from screen with Shortcuts
+See upcoming features and send feedback
 
 ### App Store (简体中文)
 
-App Store 页面现已支持韩语
-系统颜色页面的分类名称已本地化
-支持与隐私页面已有简体中文版
-
+现已支持 24 种语言
+首次打开时提供使用指南和小提示
+可用快捷指令直接从屏幕取色
+在设置中发送反馈并查看即将推出的功能
 
 ### App Store (繁體中文)
 
-App Store 頁面新增韓文介紹
-系統色彩畫面的分類名稱也已在地化
-說明與隱私權頁面提供你的語言版本
-
+現已支援 24 種語言
+首次開啟時提供使用導覽與小提示
+可用捷徑直接從螢幕取色
+在設定中傳送意見並查看即將推出的功能
 
 ### App Store (日本語)
 
-App Storeのページが韓国語にも対応しました
-システムカラー画面の見出しも各言語に対応しました
-サポートとプライバシーのページをお使いの言語で読めます
-
+24の言語に対応しました
+初回起動時に使い方ガイドとヒントを表示します
+ショートカットから画面の色を取得できます
+設定からフィードバックを送り、今後の予定を見られます
 
 ### App Store (Русский)
 
-App Store теперь говорит по-русски
-Системные цвета теперь на русском
-Поддержка и приватность на русском
-
+Приложение теперь на 24 языках
+Гид и подсказки при первом запуске
+Берите цвет с экрана через Команды
+Отзыв и планы развития в Настройках
 
 ### App Store (Español (México))
 
-Ahora la App Store te habla en español
-Colores del sistema, ya en español
-Ayuda y privacidad en tu idioma
-
+Ahora disponible en 24 idiomas
+Guía de bienvenida y consejos al iniciar
+Toma un color de la pantalla con Atajos
+Envía comentarios y ve lo que viene
 
 ### App Store (Deutsch)
 
-Jetzt auch auf Deutsch im App Store
-Systemfarben-Rubriken jetzt auf Deutsch
-Hilfe und Datenschutz in deiner Sprache
-
+Jetzt in 24 Sprachen verfügbar
+Willkommensguide und Tipps zum Start
+Farbe vom Bildschirm per Kurzbefehl
+Feedback senden und Geplantes ansehen
 
 ### App Store (Français)
 
-La fiche App Store est aussi en français
-Couleurs système : titres en français
-Aide et confidentialité en français
-
+Disponible désormais en 24 langues
+Guide d'accueil et astuces au démarrage
+Pipette d'écran dans l'app Raccourcis
+Avis et fonctions à venir dans Réglages
 
 ### App Store (Italiano)
 
-Ora l'App Store parla anche coreano
-Titoli dei colori di sistema tradotti
-Aiuto e privacy nella tua lingua
-
+Ora disponibile in 24 lingue
+Guida iniziale e suggerimenti
+Prendi colori dallo schermo con Comandi
+Invia feedback e scopri cosa arriva
 
 ### App Store (Português (Brasil))
 
-Agora a App Store também fala coreano
-Títulos das cores do sistema traduzidos
-Ajuda e privacidade no seu idioma
-
+Agora disponível em 24 idiomas
+Guia de boas-vindas e dicas para começar
+Capture cores da tela com o app Atalhos
+Envie feedback e veja o que vem por aí
 
 ### App Store (ไทย)
 
-หน้า App Store มีภาษาไทยแล้ว
-ชื่อหมวดในหน้าสีของระบบเป็นภาษาไทยแล้ว
-หน้าช่วยเหลือและความเป็นส่วนตัวมีภาษาไทย
-
+ใช้งานได้แล้ว 24 ภาษา
+มีคู่มือและเคล็ดลับเมื่อเปิดครั้งแรก
+ดูดสีจากหน้าจอผ่านแอปคำสั่งลัดได้
+ส่งความคิดเห็นและดูฟีเจอร์ที่กำลังจะมา
 
 ### App Store (Tiếng Việt)
 
-Trang App Store giờ đã có tiếng Việt
-Tên nhóm ở màn hình Màu hệ thống đã dịch
-Hỗ trợ và quyền riêng tư có tiếng Việt
-
+Nay đã có 24 ngôn ngữ
+Hướng dẫn và mẹo khi mở lần đầu
+Lấy màu trên màn hình bằng Phím tắt
+Gửi góp ý và xem tính năng sắp ra mắt
 
 ### App Store (Čeština)
 
-Stránka App Storu teď mluví i korejsky
-Nadpisy Systémových barev jsou přeložené
-Nápověda a ochrana soukromí česky
-
+Nově ve 24 jazycích
+Úvodní průvodce a tipy pro začátek
+Barvu z obrazovky vezmete přes Zkratky
+Pošlete zpětnou vazbu a mrkněte na plány
 
 ### App Store (Dansk)
 
-App Store-siden er nu også på koreansk
-Overskrifter i Systemfarver er oversat
-Hjælp og privatliv på dansk
-
+Nu på 24 sprog
+Velkomstguide og tips, når du starter
+Hent farver fra skærmen med Genveje
+Send feedback og se, hvad der kommer
 
 ### App Store (Ελληνικά)
 
-Το App Store μιλά πλέον και κορεατικά
-Τίτλοι χρωμάτων συστήματος μεταφρασμένοι
-Βοήθεια και απόρρητο στη γλώσσα σας
-
+Τώρα σε 24 γλώσσες
+Οδηγός καλωσορίσματος και συμβουλές
+Χρώμα από την οθόνη μέσω Συντομεύσεων
+Στείλτε σχόλια και δείτε τι έρχεται
 
 ### App Store (suomi)
 
-App Store -sivu puhuu nyt myös koreaa
-Järjestelmävärien otsikot on käännetty
-Ohje ja tietosuoja omalla kielelläsi
-
+Nyt 24 kielellä
+Tervetuloa-opas ja vinkit alkuun
+Poimi väri näytöltä Pikakomennoilla
+Lähetä palautetta, näe mitä on tulossa
 
 ### App Store (Bahasa Indonesia)
 
-Kini App Store juga berbahasa Indonesia
-Judul di Warna sistem kini diterjemahkan
-Bantuan dan privasi dalam bahasamu
-
+Kini tersedia dalam 24 bahasa
+Panduan dan tips saat pertama dibuka
+Ambil warna dari layar lewat Pintasan
+Kirim masukan dan lihat fitur mendatang
 
 ### App Store (Norsk bokmål)
 
-App Store-siden snakker nå norsk også
-Overskriftene i Systemfarger er oversatt
-Hjelp og personvern på ditt språk
-
+Nå på 24 språk
+Velkomstguide og tips når du starter
+Hent farger fra skjermen med Snarveier
+Send tilbakemelding og se hva som kommer
 
 ### App Store (Nederlands)
 
-App Store-pagina nu ook in het Koreaans
-Koppen bij Systeemkleuren zijn vertaald
-Help en privacy in jouw eigen taal
-
+Nu beschikbaar in 24 talen
+Welkomstgids en tips om te beginnen
+Pipet voor je scherm in Opdrachten
+Stuur feedback en zie wat eraan komt
 
 ### App Store (Polski)
 
-Strona w App Store także po koreańsku
-Nagłówki kolorów systemowych po polsku
-Pomoc i prywatność w Twoim języku
-
+Teraz w 24 językach
+Przewodnik powitalny i porady na start
+Pobieraj kolor z ekranu przez Skróty
+Wyślij opinię i zobacz, co nadchodzi
 
 ### App Store (Svenska)
 
-Sidan i App Store finns nu på svenska
-Systemfärgernas rubriker är översatta
-Support och integritetspolicy på svenska
-
+Nu på 24 språk
+Välkomstguide och tips när du börjar
+Hämta färger från skärmen med Genvägar
+Skicka feedback och se vad som kommer
 
 ### App Store (Türkçe)
 
-App Store sayfası artık Türkçe de var
-Sistem renklerinin başlıkları Türkçe
-Destek ve gizlilik sayfaları Türkçe
+Artık 24 dilde
+İlk açılışta rehber ve ipuçları
+Kestirmeler ile ekrandan renk alın
+Geri bildirim verin, yenilikleri görün
