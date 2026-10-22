@@ -6,6 +6,10 @@
 #
 # ⚠️ CODE_SIGNING_ALLOWED=NO 로 빠르게 만들지 말 것.
 #    entitlements(샌드박스 · 사용자 선택 파일 쓰기)가 빠지면 실제 배포 경로에서만 터지는 문제를 놓친다.
+#
+# -allowProvisioningUpdates: LeeoKit 의 iCloud(CloudKit) entitlement 때문에 앱 타깃은
+#    Mac App Development 프로파일이 있어야 서명된다. 이 플래그가 없으면 Xcode 가 프로파일을
+#    만들지 못해 "No profiles for 'com.leeo.TetraTint'" 로 빌드가 멈춘다(종료코드 65).
 set -e
 ROOT="$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
 cd "$ROOT"
@@ -15,6 +19,7 @@ xcodebuild test \
   -project TetraTint.xcodeproj \
   -scheme TetraTint \
   -destination 'platform=macOS' \
+  -allowProvisioningUpdates \
   -quiet
 
 echo "🔨 Release 빌드 (TetraTint)"
@@ -23,6 +28,7 @@ xcodebuild build \
   -scheme TetraTint \
   -configuration Release \
   -destination 'platform=macOS' \
+  -allowProvisioningUpdates \
   -quiet
 
 echo ""
