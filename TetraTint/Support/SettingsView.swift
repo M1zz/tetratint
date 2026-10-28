@@ -13,6 +13,8 @@ struct TetraTintSettingsView: View {
                     LeeoSupportSection<TetraTintSpec>()
                     // 앞으로 만들 기능 — 원본은 TetraTintRoadmap.swift
                     NavigationLink(LeeoRoadmapText.entry) { RoadmapScreen() }
+                    // 친구에게 소개하기 — App Store ID 가 없으면 그리지 않는다
+                    LeeoShareAppLink<TetraTintSpec>()
                 } header: {
                     Text("Support")
                 }
