@@ -226,3 +226,6 @@
 "Save your palette to a file and load it back anytime." = "将调色板存为文件，随时可以重新载入。";
 "Clear the whole palette" = "一键清空调色板";
 "Remove every saved color at once when you want a fresh start." = "想重新开始时，可一次性删除所有已存颜色。";
+
+/* Tip ask card: how many times colors were saved or exported */
+"You've saved or exported colors %lld times with TetraTint" = "你已用 TetraTint 保存或导出颜色 %lld 次";

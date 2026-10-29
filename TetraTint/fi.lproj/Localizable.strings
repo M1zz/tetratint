@@ -226,3 +226,6 @@
 "Save your palette to a file and load it back anytime." = "Tallenna palettisi tiedostoon ja lataa se takaisin milloin tahansa.";
 "Clear the whole palette" = "Tyhjennä koko paletti";
 "Remove every saved color at once when you want a fresh start." = "Poista kaikki tallennetut värit kerralla, kun haluat aloittaa alusta.";
+
+/* Tip ask card: how many times colors were saved or exported */
+"You've saved or exported colors %lld times with TetraTint" = "Olet tallentanut tai vienyt värejä TetraTintillä jo %lld kertaa";

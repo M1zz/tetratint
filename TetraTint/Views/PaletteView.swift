@@ -75,6 +75,8 @@ struct PaletteView: View {
     private var list: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 10) {
+                // 저장·내보내기로 덕을 본 사람에게, 모아 둔 팔레트를 보는 자리에서 드물게 응원을 부탁한다.
+                LeeoTipAskSlot<TetraTintSpec>(tipJar: TetraTintSpec.tipJar, reached: TetraTintTipMoments.reachedNow)
                 columnHeader
                 ForEach(store.items) { item in
                     PaletteRow(
@@ -159,4 +161,21 @@ private struct PaletteRow: View {
             }
         }
     }
+}
+
+// MARK: - 응원 부탁 순간
+
+/// 팁을 부탁할 순간 — 팔레트에 저장하거나 내보낸 횟수(`LeeoEngagement` 가 센다). 큰 것부터.
+enum TetraTintTipMoments {
+    static let saves = [100, 30, 10]
+
+    static func reached(saves count: Int) -> [LeeoTipMoment] {
+        saves.filter { count >= $0 }.map {
+            LeeoTipMoment(id: "saves.\($0)",
+                          message: String(localized: "You've saved or exported colors \(count) times with TetraTint",
+                                          comment: "Tip ask card: how many times colors were saved or exported"))
+        }
+    }
+
+    static var reachedNow: [LeeoTipMoment] { reached(saves: LeeoEngagement.shared.significantEventCount) }
 }

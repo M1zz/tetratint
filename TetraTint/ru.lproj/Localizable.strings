@@ -226,3 +226,6 @@
 "Save your palette to a file and load it back anytime." = "Сохраните палитру в файл и загрузите её обратно в любой момент.";
 "Clear the whole palette" = "Очистка всей палитры";
 "Remove every saved color at once when you want a fresh start." = "Удалите все сохранённые цвета разом, когда захотите начать с чистого листа.";
+
+/* Tip ask card: how many times colors were saved or exported */
+"You've saved or exported colors %lld times with TetraTint" = "Сохранений и экспортов цветов в TetraTint: %lld";

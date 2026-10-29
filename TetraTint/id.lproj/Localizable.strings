@@ -226,3 +226,6 @@
 "Save your palette to a file and load it back anytime." = "Simpan palet ke file dan muat kembali kapan saja.";
 "Clear the whole palette" = "Kosongkan seluruh palet";
 "Remove every saved color at once when you want a fresh start." = "Hapus semua warna tersimpan sekaligus saat ingin memulai dari awal.";
+
+/* Tip ask card: how many times colors were saved or exported */
+"You've saved or exported colors %lld times with TetraTint" = "Kamu sudah menyimpan atau mengekspor warna %lld kali dengan TetraTint";

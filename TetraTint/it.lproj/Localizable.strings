@@ -226,3 +226,6 @@
 "Save your palette to a file and load it back anytime." = "Salva la palette in un file e ricaricala quando vuoi.";
 "Clear the whole palette" = "Svuota tutta la palette";
 "Remove every saved color at once when you want a fresh start." = "Elimina tutti i colori salvati in un colpo solo quando vuoi ripartire da zero.";
+
+/* Tip ask card: how many times colors were saved or exported */
+"You've saved or exported colors %lld times with TetraTint" = "Hai già salvato o esportato colori %lld volte con TetraTint";

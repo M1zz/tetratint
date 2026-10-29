@@ -226,3 +226,6 @@
 "Save your palette to a file and load it back anytime." = "บันทึกจานสีเป็นไฟล์แล้วโหลดกลับมาได้ทุกเมื่อ";
 "Clear the whole palette" = "ล้างจานสีทั้งหมด";
 "Remove every saved color at once when you want a fresh start." = "ลบสีที่บันทึกไว้ทั้งหมดในครั้งเดียว เมื่ออยากเริ่มใหม่";
+
+/* Tip ask card: how many times colors were saved or exported */
+"You've saved or exported colors %lld times with TetraTint" = "คุณบันทึกหรือส่งออกสีด้วย TetraTint มาแล้ว %lld ครั้ง";

@@ -226,3 +226,6 @@
 "Save your palette to a file and load it back anytime." = "Αποθηκεύστε την παλέτα σε αρχείο και φορτώστε την ξανά όποτε θέλετε.";
 "Clear the whole palette" = "Εκκαθάριση ολόκληρης της παλέτας";
 "Remove every saved color at once when you want a fresh start." = "Διαγράψτε όλα τα αποθηκευμένα χρώματα με μία κίνηση όταν θέλετε να ξεκινήσετε από την αρχή.";
+
+/* Tip ask card: how many times colors were saved or exported */
+"You've saved or exported colors %lld times with TetraTint" = "Έχετε αποθηκεύσει ή εξαγάγει χρώματα %lld φορές με το TetraTint";

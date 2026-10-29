@@ -226,3 +226,6 @@
 "Save your palette to a file and load it back anytime." = "パレットをファイルに保存して、いつでも読み込み直せます。";
 "Clear the whole palette" = "パレットを一括で空にする";
 "Remove every saved color at once when you want a fresh start." = "最初からやり直したいときに、保存した色をまとめて削除できます。";
+
+/* Tip ask card: how many times colors were saved or exported */
+"You've saved or exported colors %lld times with TetraTint" = "TetraTintでカラーを%lld回保存・書き出ししました";

@@ -88,6 +88,8 @@ struct TetraTintApp: App {
                 .environmentObject(store)
                 .environmentObject(appState)
                 .frame(minWidth: 860, minHeight: 620)
+                // 개발자 응원하기(팁) — 상품을 불러오고, 끝나지 않은 팁을 마저 센다.
+                .task { await TetraTintSpec.tipJar.startStandalone() }
         }
         .commands { TetraTintHelpCommands() }
 

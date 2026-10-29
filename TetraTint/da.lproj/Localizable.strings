@@ -226,3 +226,6 @@
 "Save your palette to a file and load it back anytime." = "Gem din palet i en fil, og hent den igen, når som helst du vil.";
 "Clear the whole palette" = "Ryd hele paletten";
 "Remove every saved color at once when you want a fresh start." = "Fjern alle gemte farver på én gang, når du vil starte forfra.";
+
+/* Tip ask card: how many times colors were saved or exported */
+"You've saved or exported colors %lld times with TetraTint" = "Du har gemt eller eksporteret farver %lld gange med TetraTint";

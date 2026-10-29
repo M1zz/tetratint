@@ -15,6 +15,8 @@ struct TetraTintSettingsView: View {
                     NavigationLink(LeeoRoadmapText.entry) { RoadmapScreen() }
                     // 친구에게 소개하기 — App Store ID 가 없으면 그리지 않는다
                     LeeoShareAppLink<TetraTintSpec>()
+                    // 개발자 응원하기 — 판매 중인 팁이 있어야 선다
+                    LeeoTipJarLink<TetraTintSpec>(tipJar: TetraTintSpec.tipJar)
                 } header: {
                     Text("Support")
                 }

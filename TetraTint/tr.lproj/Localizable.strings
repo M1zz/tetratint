@@ -226,3 +226,6 @@
 "Save your palette to a file and load it back anytime." = "Paletinizi bir dosyaya kaydedin ve istediğiniz zaman geri yükleyin.";
 "Clear the whole palette" = "Tüm paleti temizle";
 "Remove every saved color at once when you want a fresh start." = "Baştan başlamak istediğinizde kayıtlı tüm renkleri tek seferde kaldırın.";
+
+/* Tip ask card: how many times colors were saved or exported */
+"You've saved or exported colors %lld times with TetraTint" = "TetraTint ile renkleri %lld kez kaydettin ya da dışa aktardın";

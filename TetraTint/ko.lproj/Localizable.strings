@@ -226,3 +226,6 @@
 "Save your palette to a file and load it back anytime." = "팔레트를 파일로 저장해 두고 언제든 다시 불러와요.";
 "Clear the whole palette" = "팔레트 한 번에 비우기";
 "Remove every saved color at once when you want a fresh start." = "새로 시작하고 싶을 때 저장한 색을 한 번에 지워요.";
+
+/* Tip ask card: how many times colors were saved or exported */
+"You've saved or exported colors %lld times with TetraTint" = "TetraTint 로 색을 %lld번 저장하거나 내보냈어요";

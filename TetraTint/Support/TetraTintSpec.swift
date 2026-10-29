@@ -13,6 +13,13 @@ enum TetraTintSpec: LeeoAppSpec {
         privacyURL: URL(string: "https://m1zz.github.io/tetratint/privacy.html")!,
         supportURL: URL(string: "https://m1zz.github.io/tetratint/support.html")!)
     static let monetization = LeeoMonetization.free
+    /// 개발자 응원하기(팁, 소모성 세 가지 — 작은 것부터). 기능을 열지 않는다.
+    /// 무료 앱이라 LeeoStore 가 없다 — 앱이 뜰 때 `startStandalone()` 으로 혼자 선다.
+    @MainActor static let tipJar = LeeoTipJar(config: LeeoTipJarConfig(productIDs: [
+        "com.leeo.TetraTint.tip.small",
+        "com.leeo.TetraTint.tip.medium",
+        "com.leeo.TetraTint.tip.large"
+    ]))
     /// Mac App Store 의 TetraTint. 설정의 "리뷰 남기기" 가 작성 페이지로 바로 간다.
     static let appStoreID: String? = "6789206198"
     /// 익명 사용 통계 → FeedbackHub. 없으면 bootstrap 이 스냅샷·app_open 을 건너뛴다.

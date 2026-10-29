@@ -226,3 +226,6 @@
 "Save your palette to a file and load it back anytime." = "Lưu bảng màu thành tệp và nạp lại bất cứ lúc nào.";
 "Clear the whole palette" = "Xóa sạch bảng màu";
 "Remove every saved color at once when you want a fresh start." = "Xóa mọi màu đã lưu cùng lúc khi bạn muốn làm lại từ đầu.";
+
+/* Tip ask card: how many times colors were saved or exported */
+"You've saved or exported colors %lld times with TetraTint" = "Bạn đã lưu hoặc xuất màu %lld lần với TetraTint";

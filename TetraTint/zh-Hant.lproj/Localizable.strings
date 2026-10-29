@@ -226,3 +226,6 @@
 "Save your palette to a file and load it back anytime." = "將色票存成檔案，隨時都能再載入。";
 "Clear the whole palette" = "一次清空色票";
 "Remove every saved color at once when you want a fresh start." = "想重新開始時，可一次刪除所有已儲存的顏色。";
+
+/* Tip ask card: how many times colors were saved or exported */
+"You've saved or exported colors %lld times with TetraTint" = "你已用 TetraTint 儲存或輸出顏色 %lld 次";
