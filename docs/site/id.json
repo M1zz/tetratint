@@ -1,0 +1,172 @@
+{
+  "title": "TetraTint: sesuaikan warna brand dengan mode gelap dan kontras tinggi di Mac",
+  "description": "Alat developer Mac: ubah satu warna jadi varian terang, gelap, dan kontras tinggi, lalu periksa kontras WCAG, buta warna, dan Dynamic Type.",
+  "hero": {
+    "headline": "Masukkan satu warna,\ndapatkan empat tampilan",
+    "lead": "Warna sistem menyesuaikan sendiri dengan mode gelap dan Tingkatkan Kontras. Warna brand Anda tidak. TetraTint mengambil satu warna mode terang, membuat varian Terang, Terang kontras tinggi, Gelap, dan Gelap kontras tinggi, lalu mengekspornya langsung ke Xcode.",
+    "cta": "Unduh gratis di Mac App Store",
+    "note": "Semua fitur gratis. Perlu macOS 14 atau lebih baru."
+  },
+  "demo": {
+    "title": "Coba warna brand Anda",
+    "lead": "Tempel nilai hex atau ketuk preset. Dengan perhitungan yang sama seperti di app, keempat varian dan kontrasnya langsung muncul.",
+    "picker": "Pilih warna",
+    "hex": "Warna dasar mode terang, nilai hex",
+    "presets": "Preset",
+    "light": "Terang (Any)",
+    "lightHC": "Terang kontras tinggi",
+    "dark": "Gelap",
+    "darkHC": "Gelap kontras tinggi",
+    "ratio": "%@:1 terhadap latar",
+    "aa": "Teks AA",
+    "low": "Rendah",
+    "button": "Tombol",
+    "tint": "Label tint",
+    "footnote": "Kartu terang diukur terhadap putih, kartu gelap terhadap hitam. Di app, Anda bisa menyetel tiap kartu dengan pemilih warna dan mengekspornya ke Contents.json, .colorset, atau kode."
+  },
+  "problem": {
+    "title": "Pernah melihat warna brand tenggelam di mode gelap?",
+    "text": "Biru yang Anda pilih di mode terang tampak kusam di atas hitam, dan pengguna yang menyalakan Tingkatkan Kontras nyaris tak bisa membaca teksnya. Mencari warna untuk tiap tampilan dan menghitung kontras satu per satu bisa makan setengah hari. TetraTint membuat varian mengikuti cara warna sistem berubah antartampilan, dan langsung memberi tahu apakah tiap varian lolos."
+  },
+  "features": [
+    {
+      "title": "Periksa semua warna yang Anda pakai sekaligus",
+      "text": "Tempel seluruh daftar hex dari app Anda, dan tiap warna dinilai: aman dipakai apa adanya, perlu kontras tinggi, atau hanya untuk dekorasi.\nSekali klik, warna bermasalah jadi empat varian yang tersimpan di palet. Berguna juga untuk menyiapkan label aksesibilitas Kontras yang Memadai di App Store.",
+      "shot": "02-contrast"
+    },
+    {
+      "title": "Lihat dengan mata penyandang buta warna",
+      "text": "Simulasikan palet dengan protanopia, deuteranopia, tritanopia, dan skala abu-abu, plus peringatan untuk pasangan warna yang jadi sulit dibedakan.\nMuat palet ramah buta warna Okabe–Ito, IBM, dan Paul Tol dengan sekali klik, atau pakai tombol mata di kanan atas untuk melihat seluruh app seperti itu.",
+      "shot": "03-color-vision"
+    },
+    {
+      "title": "Font kustom ikut ukuran teks",
+      "text": "Lihat 11 gaya teks dalam 7 tingkat ukuran, lalu geser slider untuk melihat ukuran sebenarnya.\nMasukkan nama PostScript font Anda dan dapatkan kode UIKit, SwiftUI, dan `@ScaledMetric`, plus kode yang mengubah tata letak saat teks besar.",
+      "shot": "04-dynamic-type"
+    }
+  ],
+  "steps": {
+    "title": "Mulai dalam tiga langkah",
+    "items": [
+      {
+        "title": "Masukkan warna dasar",
+        "text": "Tempel hex, ambil warna dari mana saja di layar dengan pipet, atau pilih preset."
+      },
+      {
+        "title": "Periksa empat varian",
+        "text": "Baca lencana kontras dan setel varian yang tidak cocok dengan brand lewat pemilih warna."
+      },
+      {
+        "title": "Ekspor ke Xcode",
+        "text": "Salin atau simpan sebagai Contents.json, .colorset, atau kode UIKit dan SwiftUI."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Cara varian dibuat dan arti lencananya",
+    "rows": [
+      [
+        "Terang (Any)",
+        "Warna Anda apa adanya"
+      ],
+      [
+        "Terang kontras tinggi",
+        "Sedikit lebih jenuh, digelapkan sampai 4.5:1 di atas putih"
+      ],
+      [
+        "Gelap",
+        "Sedikit lebih terang dan cerah (kecerahan +5, saturasi +3)"
+      ],
+      [
+        "Gelap kontras tinggi",
+        "Diterangkan sampai 7:1 di atas hitam"
+      ],
+      [
+        "Teks AA",
+        "Kontras dengan latar minimal 4.5:1, layak untuk teks"
+      ],
+      [
+        "UI 3:1",
+        "Minimal 3:1, cukup untuk tombol dan ikon, tapi tidak untuk teks"
+      ],
+      [
+        "Rendah",
+        "Di bawah 3:1, jangan dipakai untuk teks, ikon, atau status"
+      ],
+      [
+        "Ekspor",
+        "Contents.json · .colorset · UIKit · SwiftUI, atau seluruh palet dalam satu .xcassets"
+      ]
+    ],
+    "note": "Nilai acuan warna sistem berasal dari Human Interface Guidelines Apple dan bisa berubah seiring pembaruan sistem. Di app yang dirilis, gunakan API warna sistem."
+  },
+  "pricing": {
+    "title": "Semua fitur gratis",
+    "free": {
+      "name": "TetraTint",
+      "items": [
+        "Buat dan ekspor empat varian",
+        "Pemeriksaan kontras untuk daftar hex",
+        "Simulasi penglihatan warna dan palet ramah buta warna",
+        "Tabel Dynamic Type dan pembuatan kode",
+        "Acuan warna sistem, ekspor palet ke .xcassets"
+      ]
+    },
+    "pro": {
+      "name": "Dukung developer (opsional)",
+      "items": [
+        "Tidak ada yang dikunci",
+        "Kalau membantu, Anda bisa memberi tip di Pengaturan"
+      ],
+      "note": "Tip tidak mengubah fitur apa pun."
+    },
+    "note": "Tanpa akun, tanpa iklan. Palet hanya tersimpan di Mac ini."
+  },
+  "faq": {
+    "title": "Pertanyaan umum",
+    "items": [
+      {
+        "q": "Varian yang dibuat tidak cocok dengan brand saya.",
+        "a": "Setel tiap varian dengan pemilih warna di kartunya. Buat ulang semua akan membuang suntingan manual dan menurunkan ulang semuanya dari warna dasar."
+      },
+      {
+        "q": "Bagaimana varian dihitung?",
+        "a": "Mengikuti cara warna sistem Apple benar-benar berubah antartampilan: sedikit lebih terang dan cerah di mode gelap, minimal 4.5:1 di atas putih untuk terang kontras tinggi, dan minimal 7:1 di atas hitam untuk gelap kontras tinggi."
+      },
+      {
+        "q": "Apa arti peringatan di simulasi penglihatan warna?",
+        "a": "Artinya dalam simulasi itu, selisih dua warna (ΔE) turun di bawah 12 sehingga sulit dibedakan. Jangan andalkan warna saja: tambahkan ikon, pola, atau label, atau ganti ke palet ramah buta warna."
+      },
+      {
+        "q": "Bagaimana agar font kustom mendukung Dynamic Type?",
+        "a": "Di Dynamic Type, masukkan nama PostScript font dan pilih gaya untuk mendapatkan kode UIKit, SwiftUI, dan `@ScaledMetric`. Pada ukuran aksesibilitas, Body membesar lebih dari tiga kali lipat, jadi hindari tinggi tetap dan lineLimit(1)."
+      },
+      {
+        "q": "Warna yang diekspor terlihat beda dari warna sistem di app saya.",
+        "a": "Nilai acuan berasal dari Human Interface Guidelines dan bisa berubah antarversi sistem. Untuk warna sistem, selalu gunakan API UIColor atau Color."
+      },
+      {
+        "q": "Di mana palet saya disimpan?",
+        "a": "Hanya di Mac Anda. Tidak ada yang disinkronkan ke cloud atau dikirim ke mana pun. Lihat kebijakan privasi untuk detailnya."
+      },
+      {
+        "q": "Apakah warna yang diambil dengan pipet disimpan?",
+        "a": "Tidak. Hanya nilai warna di titik yang dipilih yang dibaca dan dipakai sebagai warna kerja. Tidak ada gambar layar yang disimpan atau dikirim."
+      },
+      {
+        "q": "Bisa dipakai di Mac apa saja?",
+        "a": "macOS 14 (Sonoma) atau lebih baru. Saat ekspor, Anda sendiri yang memilih lokasi penyimpanan file."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Warna brand yang bekerja\nseperti warna sistem",
+    "cta": "Unduh gratis di Mac App Store"
+  },
+  "ui": {
+    "skip": "Langsung ke konten",
+    "languages": "Bahasa",
+    "privacy": "Kebijakan Privasi",
+    "contact": "Laporan bug, ide fitur, atau pertanyaan? Kirim email ke {email}. Biasanya kami membalas dalam 2–3 hari."
+  }
+}

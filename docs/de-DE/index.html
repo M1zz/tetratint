@@ -1,122 +1,192 @@
 <!doctype html>
 <html lang="de-DE">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TetraTint — Barrierefreiheit für eigene Farben &amp; Schriften unter macOS</title>
-<meta name="description" content="Ein Entwicklerwerkzeug für macOS: leitet helle, dunkle und kontrastreiche Varianten eigener Farben ab, prüft den WCAG-Kontrast, simuliert Farbfehlsichtigkeiten und erzeugt Dynamic-Type-Code.">
-<link rel="canonical" href="https://m1zz.github.io/tetratint/de-DE/">
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/tetratint/ko/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/tetratint/en/">
-<link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/tetratint/en-GB/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/tetratint/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/tetratint/zh-Hant/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/tetratint/ja/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/tetratint/ru/">
-<link rel="alternate" hreflang="es-MX" href="https://m1zz.github.io/tetratint/es-MX/">
-<link rel="alternate" hreflang="de-DE" href="https://m1zz.github.io/tetratint/de-DE/">
-<link rel="alternate" hreflang="fr-FR" href="https://m1zz.github.io/tetratint/fr-FR/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/tetratint/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/tetratint/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/tetratint/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/tetratint/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/tetratint/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/tetratint/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/tetratint/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/tetratint/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/tetratint/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/tetratint/no/">
-<link rel="alternate" hreflang="nl-NL" href="https://m1zz.github.io/tetratint/nl-NL/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/tetratint/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/tetratint/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/tetratint/tr/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/tetratint/">
-<style>
-  :root {
-    --bg: #f5f5f7; --card: #ffffff; --text: #1d1d1f; --muted: #6e6e73;
-    --border: #e3e3e6; --accent: #0a84ff; --ok: #34c759;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg:#000; --card:#1c1c1e; --text:#f5f5f7; --muted:#98989d; --border:#2c2c2e; --accent:#0a84ff; --ok:#30d158; }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--bg); color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", "Apple SD Gothic Neo", sans-serif;
-    line-height: 1.7; -webkit-font-smoothing: antialiased;
-  }
-  .logo {
-    width: 56px; height: 56px; border-radius: 14px; display: grid;
-    grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0,0,0,.15); margin-bottom: 20px;
-  }
-  .logo i { display: block; }
-  .logo i:nth-child(1){ background:#0a84ff; }
-  .logo i:nth-child(2){ background:#0060df; }
-  .logo i:nth-child(3){ background:#5ac8fa; }
-  .logo i:nth-child(4){ background:#004299; }
-  nav.langs { display: flex; gap: 6px; flex-wrap: wrap; margin: 0 0 24px; }
-  nav.langs a {
-    border: 1px solid var(--border); color: var(--muted); font-size: 14px;
-    padding: 3px 12px; border-radius: 999px; text-decoration: none;
-  }
-  nav.langs a[aria-current="true"] { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  footer { color: var(--muted); font-size: 14px; text-align: center; margin-top: 40px; }
-
-  body { min-height: 100vh; display: grid; place-items: center; }
-  .wrap { max-width: 620px; padding: 48px 24px; text-align: center; }
-  .logo { width: 88px; height: 88px; border-radius: 20px; margin: 0 auto 24px; box-shadow: 0 6px 24px rgba(0,0,0,.2); }
-  nav.langs { justify-content: center; }
-  h1 { font-size: 40px; letter-spacing: -.03em; margin: 0 0 8px; }
-  p.tag { color: var(--muted); font-size: 18px; margin: 0 0 20px; }
-  p.desc { margin: 0 0 32px; }
-  .links { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
-  .links a {
-    background: var(--card); border: 1px solid var(--border); color: var(--text);
-    text-decoration: none; padding: 14px 24px; border-radius: 14px; font-weight: 600;
-  }
-  .links a:hover { border-color: var(--accent); color: var(--accent); }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TetraTint: Markenfarben für Dunkelmodus und hohen Kontrast auf dem Mac</title>
+  <meta name="description" content="Entwicklertool für den Mac: macht aus einer Farbe helle, dunkle und kontrastreiche Varianten und prüft WCAG-Kontrast, Farbsehen und Dynamic Type.">
+  <meta name="theme-color" content="#0064D2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6789206198">
+  <link rel="canonical" href="https://m1zz.github.io/tetratint/de-DE/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/tetratint/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/tetratint/ko/">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/tetratint/en-GB/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/tetratint/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/tetratint/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/tetratint/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/tetratint/ru/">
+  <link rel="alternate" hreflang="es-MX" href="https://m1zz.github.io/tetratint/es-MX/">
+  <link rel="alternate" hreflang="de-DE" href="https://m1zz.github.io/tetratint/de-DE/">
+  <link rel="alternate" hreflang="fr-FR" href="https://m1zz.github.io/tetratint/fr-FR/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/tetratint/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/tetratint/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/tetratint/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/tetratint/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/tetratint/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/tetratint/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/tetratint/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/tetratint/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/tetratint/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/tetratint/no/">
+  <link rel="alternate" hreflang="nl-NL" href="https://m1zz.github.io/tetratint/nl-NL/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/tetratint/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/tetratint/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/tetratint/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/tetratint/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TetraTint: Markenfarben für Dunkelmodus und hohen Kontrast auf dem Mac">
+  <meta property="og:description" content="Entwicklertool für den Mac: macht aus einer Farbe helle, dunkle und kontrastreiche Varianten und prüft WCAG-Kontrast, Farbsehen und Dynamic Type.">
+  <meta property="og:url" content="https://m1zz.github.io/tetratint/de-DE/">
+  <meta property="og:image" content="https://m1zz.github.io/tetratint/img/de-DE/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#0064D2}@media (prefers-color-scheme:dark){:root{--accent:#409CFF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<div class="wrap">
-  <div class="logo"><i></i><i></i><i></i><i></i></div>
-  <nav class="langs" aria-label="Sprache">
-    <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
-    <a href="../en/index.html" hreflang="en" lang="en">English</a>
-    <a href="../en-GB/index.html" hreflang="en-GB" lang="en-GB">English (UK)</a>
-    <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-    <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-    <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-    <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-    <a href="../es-MX/index.html" hreflang="es-MX" lang="es-MX">Español (México)</a>
-    <a href="../de-DE/index.html" hreflang="de-DE" lang="de-DE" aria-current="true">Deutsch</a>
-    <a href="../fr-FR/index.html" hreflang="fr-FR" lang="fr-FR">Français</a>
-    <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-    <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-    <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-    <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-    <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-    <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-    <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-    <a href="../fi/index.html" hreflang="fi" lang="fi">suomi</a>
-    <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-    <a href="../no/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-    <a href="../nl-NL/index.html" hreflang="nl-NL" lang="nl-NL">Nederlands</a>
-    <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-    <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-    <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-  </nav>
-  <h1>TetraTint</h1>
-  <p class="tag">Barrierefreiheit für eigene Farben &amp; Schriften unter macOS</p>
-  <p class="desc">Starte mit einer Basisfarbe und erhalte alle vier Varianten für hellen, dunklen und kontrastreichen Modus. Prüfe den WCAG-Kontrast, sieh dir die Farbe bei Farbfehlsichtigkeit an und erzeuge Dynamic-Type-Code für deine eigenen Schriften.</p>
-  <div class="links">
-    <a href="support.html">Support</a>
-    <a href="privacy.html">Datenschutzerklärung</a>
-  </div>
-  <footer>© 2026 TetraTint</footer>
-</div>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+  <header class="bar">
+    <a class="brand" href="../de-DE/"><img src="../icon.png" alt="" width="32" height="32">TetraTint</a>
+    <a class="lang-link" href="#languages">Sprache</a>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Eine Farbe rein,<br>vier Darstellungen raus</h1>
+        <p class="lead">Systemfarben passen sich von selbst an Dunkelmodus und „Kontrast erhöhen“ an. Deine Markenfarben nicht. TetraTint nimmt eine Farbe aus dem hellen Modus, erzeugt die Varianten Hell, Hell mit hohem Kontrast, Dunkel und Dunkel mit hohem Kontrast und exportiert sie direkt nach Xcode.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6789206198">Kostenlos im Mac App Store laden</a><a class="try" href="#try">Probier deine Markenfarbe aus ↓</a></div>
+        <p class="muted small">Alle Funktionen sind kostenlos. Ab macOS 14.</p>
+      </div>
+      <div class="plain"><img src="../img/de-DE/01-generator.jpg" alt="Eine Farbe rein, vier Darstellungen raus" width="600" height="350" decoding="async"></div>
+    </section>
+
+
+    <section class="reveal" id="try">
+      <h2>Probier deine Markenfarbe aus</h2>
+      <p class="muted">Füge einen Hex-Wert ein oder tippe auf eine Vorgabe. Mit derselben Berechnung wie in der App siehst du sofort alle vier Varianten und ihren Kontrast.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Probier deine Markenfarbe aus&quot;, &quot;lead&quot;: &quot;Füge einen Hex-Wert ein oder tippe auf eine Vorgabe. Mit derselben Berechnung wie in der App siehst du sofort alle vier Varianten und ihren Kontrast.&quot;, &quot;picker&quot;: &quot;Farbe wählen&quot;, &quot;hex&quot;: &quot;Grundfarbe für den hellen Modus, Hex-Wert&quot;, &quot;presets&quot;: &quot;Vorgaben&quot;, &quot;light&quot;: &quot;Hell (Standard)&quot;, &quot;lightHC&quot;: &quot;Hell, hoher Kontrast&quot;, &quot;dark&quot;: &quot;Dunkel&quot;, &quot;darkHC&quot;: &quot;Dunkel, hoher Kontrast&quot;, &quot;ratio&quot;: &quot;%@:1 zum Hintergrund&quot;, &quot;aa&quot;: &quot;AA-Text&quot;, &quot;low&quot;: &quot;Niedrig&quot;, &quot;button&quot;: &quot;Button&quot;, &quot;tint&quot;: &quot;Tint-Beschriftung&quot;, &quot;footnote&quot;: &quot;Helle Karten werden gegen Weiß gemessen, dunkle gegen Schwarz. In der App feinjustierst du jede Karte mit der Farbauswahl und exportierst als Contents.json, .colorset oder Code.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Ist deine Markenfarbe im Dunkelmodus schon mal untergegangen?</h2>
+      <p>Das Blau aus dem hellen Modus wirkt auf Schwarz trüb, und wer „Kontrast erhöhen“ aktiviert hat, kann den Text kaum lesen. Für jede Darstellung eine Farbe suchen und jeden Kontrast von Hand nachrechnen kostet einen halben Tag. TetraTint leitet die Varianten so ab, wie sich Systemfarben zwischen den Darstellungen verändern, und zeigt sofort, ob jede besteht.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Alle Farben auf einmal prüfen</h2>
+        <p>Füge die komplette Hex-Liste deiner App ein, und jede Farbe wird eingeordnet: unverändert nutzbar, hoher Kontrast nötig oder nur zur Dekoration.<br>Eine Problemfarbe wird mit einem Klick zu vier Varianten in deiner Palette. So bist du schnell bereit für die Barrierefreiheitsangabe „Ausreichender Kontrast“ im App Store.</p>
+      </div>
+      <div class="plain"><img src="../img/de-DE/02-contrast.jpg" alt="Alle Farben auf einmal prüfen" width="600" height="350" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Mit den Augen farbenfehlsichtiger Menschen sehen</h2>
+        <p>Sieh deine Palette mit Protanopie, Deuteranopie, Tritanopie und in Graustufen, und erhalte eine Warnung für Paare, die kaum noch zu unterscheiden sind.<br>Lade die farbenblindsicheren Paletten Okabe–Ito, IBM und Paul Tol mit einem Klick, oder zeig mit dem Augensymbol oben rechts die ganze App so an.</p>
+      </div>
+      <div class="plain"><img src="../img/de-DE/03-color-vision.jpg" alt="Mit den Augen farbenfehlsichtiger Menschen sehen" width="600" height="350" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Eigene Schriften folgen der Textgröße</h2>
+        <p>Sieh alle 11 Textstile in 7 Größenstufen und verschiebe einen Regler, um echte Größen zu sehen.<br>Gib den PostScript-Namen deiner Schrift ein und erhalte Code für UIKit, SwiftUI und <code>@ScaledMetric</code> sowie Code, der bei großer Schrift das Layout umstellt.</p>
+      </div>
+      <div class="plain"><img src="../img/de-DE/04-dynamic-type.jpg" alt="Eigene Schriften folgen der Textgröße" width="600" height="350" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>In drei Schritten startklar</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Grundfarbe eingeben</h3><p>Hex einfügen, mit der Pipette irgendwo auf dem Bildschirm aufnehmen oder eine Vorgabe wählen.</p></li>
+<li class="card"><span class="n">2</span><h3>Vier Varianten prüfen</h3><p>Kontrast an den Abzeichen ablesen und unpassende Varianten mit der Farbauswahl anpassen.</p></li>
+<li class="card"><span class="n">3</span><h3>Nach Xcode exportieren</h3><p>Als Contents.json, .colorset oder UIKit- und SwiftUI-Code kopieren oder sichern.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>So entstehen die Varianten, das bedeuten die Abzeichen</h2>
+      <div class="card table">
+        <dl><div><dt>Hell (Standard)</dt><dd>Deine Farbe wie eingegeben</dd></div><div><dt>Hell, hoher Kontrast</dt><dd>Etwas gesättigter, abgedunkelt bis 4.5:1 auf Weiß</dd></div><div><dt>Dunkel</dt><dd>Etwas heller und kräftiger (Helligkeit +5, Sättigung +3)</dd></div><div><dt>Dunkel, hoher Kontrast</dt><dd>Aufgehellt bis 7:1 auf Schwarz</dd></div><div><dt>AA-Text</dt><dd>Mindestens 4.5:1 zum Hintergrund, geeignet für Fließtext</dd></div><div><dt>UI 3:1</dt><dd>Mindestens 3:1, reicht für Buttons und Symbole, nicht für Text</dd></div><div><dt>Niedrig</dt><dd>Unter 3:1, nicht für Text, Symbole oder Statusanzeigen</dd></div><div><dt>Export</dt><dd>Contents.json · .colorset · UIKit · SwiftUI, oder die ganze Palette als ein .xcassets</dd></div></dl>
+      </div>
+      <p class="muted">Die Referenzwerte der Systemfarben stammen aus Apples Human Interface Guidelines und können sich mit OS-Updates ändern. Nutze in deiner fertigen App die APIs für Systemfarben.</p>
+    </section>
+
+
+    <section class="reveal" id="pricing">
+      <h2>Alle Funktionen sind kostenlos</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>TetraTint</h3>
+          <ul><li>Vier Varianten erzeugen und exportieren</li><li>Kontrastprüfung für eine Liste von Hex-Werten</li><li>Farbsehen-Simulation und farbenblindsichere Paletten</li><li>Dynamic-Type-Tabelle und Code-Erzeugung</li><li>Systemfarben-Referenz, Palettenexport als .xcassets</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Den Entwickler unterstützen (freiwillig)</h3>
+          <ul><li>Nichts ist gesperrt</li><li>Wenn es dir geholfen hat, kannst du in den Einstellungen ein Trinkgeld geben</li></ul>
+          <p class="muted">Ein Trinkgeld schaltet keine Funktionen frei.</p>
+        </div>
+      </div>
+      <p class="muted">Kein Konto, keine Werbung. Deine Palette bleibt nur auf diesem Mac.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Häufige Fragen</h2>
+      <div class="faq"><details><summary>Die erzeugten Varianten passen nicht zu meiner Marke.</summary><p>Passe jede Variante mit der Farbauswahl auf ihrer Karte an. „Alle neu erzeugen“ verwirft deine Änderungen und leitet alles neu aus der Grundfarbe ab.</p></details>
+<details><summary>Wie werden die Varianten berechnet?</summary><p>Sie folgen dem, wie sich Apples Systemfarben tatsächlich zwischen den Darstellungen verändern: im Dunkelmodus etwas heller und kräftiger, bei Hell mit hohem Kontrast mindestens 4.5:1 auf Weiß, bei Dunkel mit hohem Kontrast mindestens 7:1 auf Schwarz.</p></details>
+<details><summary>Was bedeutet eine Warnung bei der Farbsehen-Simulation?</summary><p>Unter dieser Simulation fällt der Unterschied zweier Farben unter ΔE 12, sie sind kaum zu unterscheiden. Verlass dich nicht nur auf Farbe: ergänze Symbole, Muster oder Beschriftungen, oder wechsle zu einer sicheren Palette.</p></details>
+<details><summary>Wie bringe ich einer eigenen Schrift Dynamic Type bei?</summary><p>Gib unter Dynamic Type den PostScript-Namen der Schrift ein und wähle einen Stil, dann erhältst du Code für UIKit, SwiftUI und <code>@ScaledMetric</code>. In den Bedienungshilfen-Größen wird Body mehr als dreimal so groß, vermeide also feste Höhen und lineLimit(1).</p></details>
+<details><summary>Exportierte Farben sehen anders aus als die Systemfarben in meiner App.</summary><p>Die Referenzwerte stammen aus den Human Interface Guidelines und können sich zwischen OS-Versionen ändern. Verwende für Systemfarben immer die APIs UIColor oder Color.</p></details>
+<details><summary>Wo wird meine Palette gespeichert?</summary><p>Nur auf deinem Mac. Nichts wird mit der Cloud synchronisiert oder irgendwohin gesendet. Mehr dazu in der Datenschutzerklärung.</p></details>
+<details><summary>Wird eine mit der Pipette aufgenommene Farbe gespeichert?</summary><p>Nein. Es wird nur der Farbwert an der gewählten Stelle gelesen und als Arbeitsfarbe verwendet. Kein Bildschirmbild wird gespeichert oder gesendet.</p></details>
+<details><summary>Auf welchen Macs läuft die App?</summary><p>Ab macOS 14 (Sonoma). Beim Export wählst du selbst, wo die Dateien gesichert werden.</p></details></div>
+      <p class="contact">Fehler, Ideen oder Fragen? Schreib an <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>. Meist kommt die Antwort innerhalb von 2–3 Tagen.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Markenfarben, die sich<br>wie Systemfarben verhalten</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6789206198">Kostenlos im Mac App Store laden</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Sprache"><a href="../" hreflang="en" lang="en">English</a>
+<a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../en-GB/" hreflang="en-GB" lang="en-GB">English (UK)</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es-MX/" hreflang="es-MX" lang="es-MX">Español (México)</a>
+<a href="../de-DE/" hreflang="de-DE" lang="de-DE" aria-current="page">Deutsch</a>
+<a href="../fr-FR/" hreflang="fr-FR" lang="fr-FR">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../no/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl-NL/" hreflang="nl-NL" lang="nl-NL">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Datenschutzerklärung</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 TetraTint</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

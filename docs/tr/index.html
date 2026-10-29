@@ -1,122 +1,192 @@
 <!doctype html>
 <html lang="tr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TetraTint — macOS’ta özel renkler ve yazı tipleri için erişilebilirlik aracı</title>
-<meta name="description" content="Özel renklerin açık, koyu ve yüksek kontrastlı varyantlarını türeten, WCAG kontrastını denetleyen, renk görme bozukluklarını simüle eden ve Dynamic Type kodu üreten bir macOS geliştirici aracı.">
-<link rel="canonical" href="https://m1zz.github.io/tetratint/tr/">
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/tetratint/ko/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/tetratint/en/">
-<link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/tetratint/en-GB/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/tetratint/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/tetratint/zh-Hant/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/tetratint/ja/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/tetratint/ru/">
-<link rel="alternate" hreflang="es-MX" href="https://m1zz.github.io/tetratint/es-MX/">
-<link rel="alternate" hreflang="de-DE" href="https://m1zz.github.io/tetratint/de-DE/">
-<link rel="alternate" hreflang="fr-FR" href="https://m1zz.github.io/tetratint/fr-FR/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/tetratint/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/tetratint/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/tetratint/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/tetratint/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/tetratint/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/tetratint/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/tetratint/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/tetratint/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/tetratint/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/tetratint/no/">
-<link rel="alternate" hreflang="nl-NL" href="https://m1zz.github.io/tetratint/nl-NL/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/tetratint/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/tetratint/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/tetratint/tr/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/tetratint/">
-<style>
-  :root {
-    --bg: #f5f5f7; --card: #ffffff; --text: #1d1d1f; --muted: #6e6e73;
-    --border: #e3e3e6; --accent: #0a84ff; --ok: #34c759;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg:#000; --card:#1c1c1e; --text:#f5f5f7; --muted:#98989d; --border:#2c2c2e; --accent:#0a84ff; --ok:#30d158; }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--bg); color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", "Apple SD Gothic Neo", sans-serif;
-    line-height: 1.7; -webkit-font-smoothing: antialiased;
-  }
-  .logo {
-    width: 56px; height: 56px; border-radius: 14px; display: grid;
-    grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0,0,0,.15); margin-bottom: 20px;
-  }
-  .logo i { display: block; }
-  .logo i:nth-child(1){ background:#0a84ff; }
-  .logo i:nth-child(2){ background:#0060df; }
-  .logo i:nth-child(3){ background:#5ac8fa; }
-  .logo i:nth-child(4){ background:#004299; }
-  nav.langs { display: flex; gap: 6px; flex-wrap: wrap; margin: 0 0 24px; }
-  nav.langs a {
-    border: 1px solid var(--border); color: var(--muted); font-size: 14px;
-    padding: 3px 12px; border-radius: 999px; text-decoration: none;
-  }
-  nav.langs a[aria-current="true"] { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  footer { color: var(--muted); font-size: 14px; text-align: center; margin-top: 40px; }
-
-  body { min-height: 100vh; display: grid; place-items: center; }
-  .wrap { max-width: 620px; padding: 48px 24px; text-align: center; }
-  .logo { width: 88px; height: 88px; border-radius: 20px; margin: 0 auto 24px; box-shadow: 0 6px 24px rgba(0,0,0,.2); }
-  nav.langs { justify-content: center; }
-  h1 { font-size: 40px; letter-spacing: -.03em; margin: 0 0 8px; }
-  p.tag { color: var(--muted); font-size: 18px; margin: 0 0 20px; }
-  p.desc { margin: 0 0 32px; }
-  .links { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
-  .links a {
-    background: var(--card); border: 1px solid var(--border); color: var(--text);
-    text-decoration: none; padding: 14px 24px; border-radius: 14px; font-weight: 600;
-  }
-  .links a:hover { border-color: var(--accent); color: var(--accent); }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TetraTint: marka renklerini Mac’te koyu moda ve yüksek kontrasta uyarlayın</title>
+  <meta name="description" content="Mac geliştirici aracı: tek renkten açık, koyu ve yüksek kontrastlı varyantlar üretir; WCAG kontrastını, renk körlüğünü ve Dynamic Type’ı denetler.">
+  <meta name="theme-color" content="#0064D2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6789206198">
+  <link rel="canonical" href="https://m1zz.github.io/tetratint/tr/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/tetratint/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/tetratint/ko/">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/tetratint/en-GB/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/tetratint/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/tetratint/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/tetratint/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/tetratint/ru/">
+  <link rel="alternate" hreflang="es-MX" href="https://m1zz.github.io/tetratint/es-MX/">
+  <link rel="alternate" hreflang="de-DE" href="https://m1zz.github.io/tetratint/de-DE/">
+  <link rel="alternate" hreflang="fr-FR" href="https://m1zz.github.io/tetratint/fr-FR/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/tetratint/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/tetratint/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/tetratint/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/tetratint/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/tetratint/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/tetratint/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/tetratint/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/tetratint/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/tetratint/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/tetratint/no/">
+  <link rel="alternate" hreflang="nl-NL" href="https://m1zz.github.io/tetratint/nl-NL/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/tetratint/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/tetratint/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/tetratint/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/tetratint/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TetraTint: marka renklerini Mac’te koyu moda ve yüksek kontrasta uyarlayın">
+  <meta property="og:description" content="Mac geliştirici aracı: tek renkten açık, koyu ve yüksek kontrastlı varyantlar üretir; WCAG kontrastını, renk körlüğünü ve Dynamic Type’ı denetler.">
+  <meta property="og:url" content="https://m1zz.github.io/tetratint/tr/">
+  <meta property="og:image" content="https://m1zz.github.io/tetratint/img/tr/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#0064D2}@media (prefers-color-scheme:dark){:root{--accent:#409CFF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<div class="wrap">
-  <div class="logo"><i></i><i></i><i></i><i></i></div>
-  <nav class="langs" aria-label="Dil">
-    <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
-    <a href="../en/index.html" hreflang="en" lang="en">English</a>
-    <a href="../en-GB/index.html" hreflang="en-GB" lang="en-GB">English (UK)</a>
-    <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-    <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-    <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-    <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-    <a href="../es-MX/index.html" hreflang="es-MX" lang="es-MX">Español (México)</a>
-    <a href="../de-DE/index.html" hreflang="de-DE" lang="de-DE">Deutsch</a>
-    <a href="../fr-FR/index.html" hreflang="fr-FR" lang="fr-FR">Français</a>
-    <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-    <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-    <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-    <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-    <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-    <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-    <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-    <a href="../fi/index.html" hreflang="fi" lang="fi">suomi</a>
-    <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-    <a href="../no/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-    <a href="../nl-NL/index.html" hreflang="nl-NL" lang="nl-NL">Nederlands</a>
-    <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-    <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-    <a href="../tr/index.html" hreflang="tr" lang="tr" aria-current="true">Türkçe</a>
-  </nav>
-  <h1>TetraTint</h1>
-  <p class="tag">macOS’ta özel renkler ve yazı tipleri için erişilebilirlik aracı</p>
-  <p class="desc">Tek bir temel renkle başlayıp açık, koyu ve yüksek kontrastlı dört varyantın tamamını elde edin, WCAG kontrastını denetleyin, rengin renk görme bozukluklarında nasıl göründüğünü önizleyin ve özel yazı tipleriniz için Dynamic Type kodu üretin.</p>
-  <div class="links">
-    <a href="support.html">Destek</a>
-    <a href="privacy.html">Gizlilik Politikası</a>
-  </div>
-  <footer>© 2026 TetraTint</footer>
-</div>
+  <a class="skip" href="#main">İçeriğe geç</a>
+  <header class="bar">
+    <a class="brand" href="../tr/"><img src="../icon.png" alt="" width="32" height="32">TetraTint</a>
+    <a class="lang-link" href="#languages">Dil</a>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Tek renk girer,<br>dört görünüm çıkar</h1>
+        <p class="lead">Sistem renkleri koyu moda ve Kontrastı Artır ayarına kendiliğinden uyar. Marka renkleriniz uymaz. TetraTint açık moddaki tek bir renkten Açık, Açık yüksek kontrast, Koyu ve Koyu yüksek kontrast varyantlarını üretir ve doğrudan Xcode’a aktarır.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6789206198">Mac App Store’dan ücretsiz indirin</a><a class="try" href="#try">Marka renginizi deneyin ↓</a></div>
+        <p class="muted small">Tüm özellikler ücretsiz. macOS 14 veya üstü gerekir.</p>
+      </div>
+      <div class="plain"><img src="../img/tr/01-generator.jpg" alt="Tek renk girer, dört görünüm çıkar" width="600" height="350" decoding="async"></div>
+    </section>
+
+
+    <section class="reveal" id="try">
+      <h2>Marka renginizi deneyin</h2>
+      <p class="muted">Bir hex değeri yapıştırın ya da hazır ayarlardan birine dokunun. Uygulamadakiyle aynı hesapla dört varyant ve kontrastları anında çıkar.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Marka renginizi deneyin&quot;, &quot;lead&quot;: &quot;Bir hex değeri yapıştırın ya da hazır ayarlardan birine dokunun. Uygulamadakiyle aynı hesapla dört varyant ve kontrastları anında çıkar.&quot;, &quot;picker&quot;: &quot;Renk seç&quot;, &quot;hex&quot;: &quot;Açık mod temel rengi, hex değeri&quot;, &quot;presets&quot;: &quot;Hazır ayarlar&quot;, &quot;light&quot;: &quot;Açık (varsayılan)&quot;, &quot;lightHC&quot;: &quot;Açık, yüksek kontrast&quot;, &quot;dark&quot;: &quot;Koyu&quot;, &quot;darkHC&quot;: &quot;Koyu, yüksek kontrast&quot;, &quot;ratio&quot;: &quot;Arka plana karşı %@:1&quot;, &quot;aa&quot;: &quot;AA metin&quot;, &quot;low&quot;: &quot;Düşük&quot;, &quot;button&quot;: &quot;Düğme&quot;, &quot;tint&quot;: &quot;Ton etiketi&quot;, &quot;footnote&quot;: &quot;Açık kartlar beyaza, koyu kartlar siyaha karşı ölçülür. Uygulamada her kartı renk seçiciyle ince ayarlayıp Contents.json, .colorset veya kod olarak dışa aktarabilirsiniz.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Marka renginiz koyu modda kayboldu mu hiç?</h2>
+      <p>Açık modda seçtiğiniz mavi siyah üzerinde bulanık görünür, Kontrastı Artır açık olanlar da metni zor okur. Her görünüm için renk arayıp kontrastı elle hesaplamak yarım gününüzü alır. TetraTint varyantları sistem renklerinin görünümler arasında değiştiği şekilde türetir ve her birinin geçip geçmediğini hemen gösterir.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Kullandığınız tüm renkleri tek seferde denetleyin</h2>
+        <p>Uygulamanızdaki hex listesinin tamamını yapıştırın; her renk değerlendirilir: olduğu gibi kullanılabilir, yüksek kontrast gerekir ya da yalnızca dekoratif.<br>Sorunlu bir renk tek tıkla dört varyanta dönüşüp paletinize kaydedilir. App Store’daki Yeterli Kontrast erişilebilirlik etiketine hazırlanırken de işe yarar.</p>
+      </div>
+      <div class="plain"><img src="../img/tr/02-contrast.jpg" alt="Kullandığınız tüm renkleri tek seferde denetleyin" width="600" height="350" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Renk körü birinin gözünden bakın</h2>
+        <p>Paletinizi protanopi, döteranopi, tritanopi ve gri tonlamayla görün; ayırt edilmesi zorlaşan çiftler için uyarı alın.<br>Renk körlüğüne uygun Okabe–Ito, IBM ve Paul Tol paletlerini tek tıkla yükleyin ya da sağ üstteki göz düğmesiyle tüm uygulamayı bu şekilde görün.</p>
+      </div>
+      <div class="plain"><img src="../img/tr/03-color-vision.jpg" alt="Renk körü birinin gözünden bakın" width="600" height="350" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Özel yazı tipleri de metin boyutunu izler</h2>
+        <p>11 metin stilini 7 boyutta görün, kaydırıcıyı sürükleyerek gerçek boyutları önizleyin.<br>Yazı tipinin PostScript adını girin; UIKit, SwiftUI ve <code>@ScaledMetric</code> kodunun yanında büyük metinde düzeni değiştiren kodu da alın.</p>
+      </div>
+      <div class="plain"><img src="../img/tr/04-dynamic-type.jpg" alt="Özel yazı tipleri de metin boyutunu izler" width="600" height="350" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Üç adımda başlayın</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Temel rengi girin</h3><p>Bir hex yapıştırın, damlalıkla ekranın herhangi bir yerinden renk alın ya da hazır ayar seçin.</p></li>
+<li class="card"><span class="n">2</span><h3>Dört varyantı kontrol edin</h3><p>Kontrast rozetlerine bakın, markaya uymayan varyantları renk seçiciyle düzeltin.</p></li>
+<li class="card"><span class="n">3</span><h3>Xcode’a aktarın</h3><p>Contents.json, .colorset ya da UIKit ve SwiftUI kodu olarak kopyalayın veya kaydedin.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Varyantlar nasıl üretilir, rozetler ne anlama gelir</h2>
+      <div class="card table">
+        <dl><div><dt>Açık (varsayılan)</dt><dd>Girdiğiniz renk olduğu gibi</dd></div><div><dt>Açık, yüksek kontrast</dt><dd>Biraz daha doygun, beyaz üzerinde 4.5:1 olana dek koyulaştırılır</dd></div><div><dt>Koyu</dt><dd>Biraz daha açık ve canlı (açıklık +5, doygunluk +3)</dd></div><div><dt>Koyu, yüksek kontrast</dt><dd>Siyah üzerinde 7:1 olana dek açılır</dd></div><div><dt>AA metin</dt><dd>Arka plana karşı en az 4.5:1, metin için uygun</dd></div><div><dt>UI 3:1</dt><dd>En az 3:1, düğme ve simgeler için yeterli ama metin için değil</dd></div><div><dt>Düşük</dt><dd>3:1’in altında, metin, simge ya da durum göstergesinde kullanmayın</dd></div><div><dt>Dışa aktarma</dt><dd>Contents.json · .colorset · UIKit · SwiftUI ya da tüm palet tek bir .xcassets</dd></div></dl>
+      </div>
+      <p class="muted">Sistem renklerinin referans değerleri Apple’ın Human Interface Guidelines belgesinden alınmıştır ve sistem güncellemeleriyle değişebilir. Yayımladığınız uygulamada sistem renk API’lerini kullanın.</p>
+    </section>
+
+
+    <section class="reveal" id="pricing">
+      <h2>Tüm özellikler ücretsiz</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>TetraTint</h3>
+          <ul><li>Dört varyant üretme ve dışa aktarma</li><li>Hex listesi için kontrast denetimi</li><li>Renk görme simülasyonu ve renk körlüğüne uygun paletler</li><li>Dynamic Type tablosu ve kod üretimi</li><li>Sistem renkleri başvurusu, paleti .xcassets olarak dışa aktarma</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Geliştiriciyi destekleyin (isteğe bağlı)</h3>
+          <ul><li>Kilitli hiçbir özellik yok</li><li>İşinize yaradıysa Ayarlar’dan bahşiş bırakabilirsiniz</li></ul>
+          <p class="muted">Bahşiş hiçbir özelliği değiştirmez.</p>
+        </div>
+      </div>
+      <p class="muted">Hesap yok, reklam yok. Paletiniz yalnızca bu Mac’te kalır.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Sık sorulan sorular</h2>
+      <div class="faq"><details><summary>Üretilen varyantlar markamıza uymuyor.</summary><p>Her varyantı kartındaki renk seçiciyle ayarlayın. Tümünü yeniden oluştur, elle yaptığınız değişiklikleri atıp her şeyi temel renkten yeniden türetir.</p></details>
+<details><summary>Varyantlar nasıl hesaplanıyor?</summary><p>Apple sistem renklerinin görünümler arasında gerçekte nasıl değiştiğini izler: koyuda biraz daha açık ve canlı, açık yüksek kontrastta beyaz üzerinde en az 4.5:1, koyu yüksek kontrastta siyah üzerinde en az 7:1.</p></details>
+<details><summary>Renk görme simülasyonundaki uyarı ne demek?</summary><p>O simülasyonda iki renk arasındaki farkın (ΔE) 12’nin altına düştüğü ve ayırt etmenin zorlaştığı anlamına gelir. Yalnızca renge güvenmeyin: simge, desen veya etiket ekleyin ya da güvenli bir palete geçin.</p></details>
+<details><summary>Özel yazı tipime Dynamic Type desteği nasıl eklerim?</summary><p>Dynamic Type bölümünde yazı tipinin PostScript adını girip bir stil seçin; UIKit, SwiftUI ve <code>@ScaledMetric</code> kodu oluşur. Erişilebilirlik boyutlarında Body varsayılanın üç katından fazla büyür, bu yüzden sabit yükseklik ve lineLimit(1) kullanmayın.</p></details>
+<details><summary>Dışa aktarılan renkler uygulamamdaki sistem renklerinden farklı görünüyor.</summary><p>Referans değerler Human Interface Guidelines belgesinden gelir ve sistem sürümleri arasında değişebilir. Sistem renkleri için her zaman UIColor veya Color API’sini kullanın.</p></details>
+<details><summary>Paletim nerede saklanıyor?</summary><p>Yalnızca Mac’inizde. Hiçbir şey buluta eşzamanlanmaz ya da bir yere gönderilmez. Ayrıntılar için gizlilik politikasına bakın.</p></details>
+<details><summary>Damlalıkla aldığım renk kaydediliyor mu?</summary><p>Hayır. Yalnızca seçtiğiniz noktadaki renk değeri okunur ve çalışma rengi olarak kullanılır. Ekran görüntüsü kaydedilmez ya da gönderilmez.</p></details>
+<details><summary>Hangi Mac’lerde çalışır?</summary><p>macOS 14 (Sonoma) veya üstünde. Dışa aktarırken dosyaların nereye kaydedileceğini siz seçersiniz.</p></details></div>
+      <p class="contact">Hata bildirimi, özellik önerisi ya da soru için <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> adresine yazın. Genellikle 2–3 gün içinde yanıt veririz.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Sistem renkleri gibi davranan<br>marka renkleri</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6789206198">Mac App Store’dan ücretsiz indirin</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Dil"><a href="../" hreflang="en" lang="en">English</a>
+<a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../en-GB/" hreflang="en-GB" lang="en-GB">English (UK)</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es-MX/" hreflang="es-MX" lang="es-MX">Español (México)</a>
+<a href="../de-DE/" hreflang="de-DE" lang="de-DE">Deutsch</a>
+<a href="../fr-FR/" hreflang="fr-FR" lang="fr-FR">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../no/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl-NL/" hreflang="nl-NL" lang="nl-NL">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr" aria-current="page">Türkçe</a></nav>
+    <p><a href="privacy.html">Gizlilik Politikası</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 TetraTint</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

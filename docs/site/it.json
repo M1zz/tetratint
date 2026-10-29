@@ -1,0 +1,172 @@
+{
+  "title": "TetraTint: adatta i colori del brand a modalità scura e alto contrasto su Mac",
+  "description": "Strumento per sviluppatori Mac: da un colore crea varianti chiare, scure e ad alto contrasto, e controlla contrasto WCAG, daltonismo e Dynamic Type.",
+  "hero": {
+    "headline": "Un colore in entrata,\nquattro aspetti in uscita",
+    "lead": "I colori di sistema si adattano da soli alla modalità scura e ad Aumenta contrasto. I colori del tuo brand no. TetraTint parte da un colore della modalità chiara, crea le varianti Chiaro, Chiaro ad alto contrasto, Scuro e Scuro ad alto contrasto, e le esporta direttamente in Xcode.",
+    "cta": "Scaricala gratis dal Mac App Store",
+    "note": "Tutte le funzioni sono gratuite. Richiede macOS 14 o successivo."
+  },
+  "demo": {
+    "title": "Prova il colore del tuo brand",
+    "lead": "Incolla un valore hex o tocca un preset. Con lo stesso calcolo dell’app vedi subito le quattro varianti e il loro contrasto.",
+    "picker": "Scegli un colore",
+    "hex": "Colore base della modalità chiara, valore hex",
+    "presets": "Preset",
+    "light": "Chiaro (Qualsiasi)",
+    "lightHC": "Chiaro ad alto contrasto",
+    "dark": "Scuro",
+    "darkHC": "Scuro ad alto contrasto",
+    "ratio": "%@:1 rispetto allo sfondo",
+    "aa": "Testo AA",
+    "low": "Basso",
+    "button": "Pulsante",
+    "tint": "Etichetta tinta",
+    "footnote": "Le schede chiare sono misurate sul bianco, quelle scure sul nero. Nell’app puoi rifinire ogni scheda con il selettore colore ed esportare in Contents.json, .colorset o codice."
+  },
+  "problem": {
+    "title": "Il colore del tuo brand è mai sparito in modalità scura?",
+    "text": "Il blu scelto in modalità chiara sul nero sembra spento, e chi usa Aumenta contrasto fa fatica a leggere il testo. Cercare un colore per ogni aspetto e misurare ogni rapporto a mano porta via mezza giornata. TetraTint ricava le varianti come cambiano i colori di sistema tra un aspetto e l’altro, e ti dice subito se ognuna supera la soglia."
+  },
+  "features": [
+    {
+      "title": "Controlla in un colpo tutti i colori che usi",
+      "text": "Incolla l’intero elenco hex della tua app: ogni colore viene classificato come va bene così, serve alto contrasto o solo decorativo.\nUn clic trasforma un colore problematico in quattro varianti salvate nella palette. Utile anche per prepararsi all’indicazione di accessibilità Contrasto sufficiente sull’App Store.",
+      "shot": "02-contrast"
+    },
+    {
+      "title": "Guarda con gli occhi di chi ha un deficit della visione dei colori",
+      "text": "Simula la tua palette con protanopia, deuteranopia, tritanopia e scala di grigi, con un avviso per ogni coppia che diventa difficile da distinguere.\nCarica con un clic le palette adatte al daltonismo Okabe–Ito, IBM e Paul Tol, oppure usa il pulsante a forma di occhio in alto a destra per vedere così tutta l’app.",
+      "shot": "03-color-vision"
+    },
+    {
+      "title": "Anche i font personalizzati seguono la dimensione del testo",
+      "text": "Consulta gli 11 stili di testo in 7 dimensioni e sposta un cursore per vedere le dimensioni reali.\nInserisci il nome PostScript del font e ottieni codice UIKit, SwiftUI e `@ScaledMetric`, più il codice che cambia layout con testo grande.",
+      "shot": "04-dynamic-type"
+    }
+  ],
+  "steps": {
+    "title": "Tre passaggi per iniziare",
+    "items": [
+      {
+        "title": "Inserisci un colore base",
+        "text": "Incolla un hex, preleva un colore ovunque sullo schermo con il contagocce o scegli un preset."
+      },
+      {
+        "title": "Controlla le quattro varianti",
+        "text": "Leggi i badge del contrasto e ritocca le varianti che non si sposano col brand."
+      },
+      {
+        "title": "Esporta in Xcode",
+        "text": "Copia o salva come Contents.json, .colorset o codice UIKit e SwiftUI."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Come nascono le varianti e cosa dicono i badge",
+    "rows": [
+      [
+        "Chiaro (Qualsiasi)",
+        "Il tuo colore così come l’hai inserito"
+      ],
+      [
+        "Chiaro ad alto contrasto",
+        "Un po’ più saturo, scurito fino a 4.5:1 sul bianco"
+      ],
+      [
+        "Scuro",
+        "Un po’ più chiaro e vivace (luminosità +5, saturazione +3)"
+      ],
+      [
+        "Scuro ad alto contrasto",
+        "Schiarito fino a 7:1 sul nero"
+      ],
+      [
+        "Testo AA",
+        "4.5:1 o più rispetto allo sfondo, adatto al testo"
+      ],
+      [
+        "UI 3:1",
+        "3:1 o più, va bene per pulsanti e icone ma non per il testo"
+      ],
+      [
+        "Basso",
+        "Sotto 3:1, da non usare per testo, icone o stati"
+      ],
+      [
+        "Esportazione",
+        "Contents.json · .colorset · UIKit · SwiftUI, o l’intera palette in un solo .xcassets"
+      ]
+    ],
+    "note": "I valori di riferimento dei colori di sistema provengono dalle Human Interface Guidelines di Apple e possono cambiare con gli aggiornamenti del sistema. Nell’app pubblicata usa le API dei colori di sistema."
+  },
+  "pricing": {
+    "title": "Tutte le funzioni sono gratuite",
+    "free": {
+      "name": "TetraTint",
+      "items": [
+        "Creazione ed esportazione delle quattro varianti",
+        "Controllo del contrasto per un elenco di hex",
+        "Simulazione della visione dei colori e palette sicure",
+        "Tabella Dynamic Type e generazione di codice",
+        "Riferimento dei colori di sistema, esportazione della palette in .xcassets"
+      ]
+    },
+    "pro": {
+      "name": "Sostieni lo sviluppatore (facoltativo)",
+      "items": [
+        "Nessuna funzione è bloccata",
+        "Se ti è stata utile, puoi lasciare una mancia dalle Impostazioni"
+      ],
+      "note": "La mancia non cambia nessuna funzione."
+    },
+    "note": "Niente account, niente pubblicità. La palette resta solo su questo Mac."
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "items": [
+      {
+        "q": "Le varianti generate non si adattano al mio brand.",
+        "a": "Ritocca ogni variante con il selettore colore della sua scheda. Rigenera tutto scarta le modifiche manuali e ricava di nuovo tutto dal colore base."
+      },
+      {
+        "q": "Come vengono calcolate le varianti?",
+        "a": "Seguono il modo in cui i colori di sistema di Apple cambiano davvero tra un aspetto e l’altro: un po’ più chiare e vivaci in scuro, almeno 4.5:1 sul bianco in chiaro ad alto contrasto, almeno 7:1 sul nero in scuro ad alto contrasto."
+      },
+      {
+        "q": "Che cosa vuol dire un avviso nella simulazione della visione dei colori?",
+        "a": "Che con quella simulazione la differenza tra due colori scende sotto ΔE 12 e diventa difficile distinguerli. Non affidarti solo al colore: aggiungi icone, motivi o etichette, oppure passa a una palette sicura."
+      },
+      {
+        "q": "Come faccio a far supportare Dynamic Type a un font personalizzato?",
+        "a": "In Dynamic Type inserisci il nome PostScript del font e scegli uno stile per ottenere codice UIKit, SwiftUI e `@ScaledMetric`. Nelle dimensioni di accessibilità Body diventa più del triplo, quindi evita altezze fisse e lineLimit(1)."
+      },
+      {
+        "q": "I colori esportati sembrano diversi da quelli di sistema nella mia app.",
+        "a": "I valori di riferimento provengono dalle Human Interface Guidelines e possono cambiare tra una versione e l’altra del sistema. Per i colori di sistema usa sempre le API UIColor o Color."
+      },
+      {
+        "q": "Dove viene salvata la mia palette?",
+        "a": "Solo sul tuo Mac. Niente viene sincronizzato nel cloud o inviato altrove. Trovi i dettagli nell’informativa sulla privacy."
+      },
+      {
+        "q": "Il colore prelevato con il contagocce viene salvato?",
+        "a": "No. Viene letto solo il valore del colore nel punto scelto e usato come colore di lavoro. Nessuna immagine dello schermo viene salvata o inviata."
+      },
+      {
+        "q": "Su quali Mac funziona?",
+        "a": "Su macOS 14 (Sonoma) o successivo. Quando esporti, scegli tu dove salvare i file."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Colori del brand che si comportano\ncome quelli di sistema",
+    "cta": "Scaricala gratis dal Mac App Store"
+  },
+  "ui": {
+    "skip": "Vai al contenuto",
+    "languages": "Lingua",
+    "privacy": "Informativa sulla privacy",
+    "contact": "Bug, idee o domande? Scrivi a {email}. Di solito rispondiamo entro 2–3 giorni."
+  }
+}

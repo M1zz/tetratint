@@ -1,0 +1,172 @@
+{
+  "title": "TetraTint: fit your brand colors to Dark Mode and high contrast on Mac",
+  "description": "A Mac developer tool that turns one color into light, dark and high-contrast variants and checks WCAG contrast, color blindness and Dynamic Type.",
+  "hero": {
+    "headline": "One color in,\nfour appearances out",
+    "lead": "System colors adapt to Dark Mode and Increase Contrast on their own. Your brand colors don't. TetraTint takes one light-mode color, builds Light, Light High Contrast, Dark and Dark High Contrast variants, and exports them straight to Xcode.",
+    "cta": "Get it free on the Mac App Store",
+    "note": "Every feature is free. Requires macOS 14 or later."
+  },
+  "demo": {
+    "title": "Try your brand color",
+    "lead": "Paste a hex value or tap a preset. The same math as the app gives you all four variants and their contrast right away.",
+    "picker": "Pick a color",
+    "hex": "Light mode base color, hex value",
+    "presets": "Presets",
+    "light": "Light (Any)",
+    "lightHC": "Light High Contrast",
+    "dark": "Dark",
+    "darkHC": "Dark High Contrast",
+    "ratio": "%@:1 vs background",
+    "aa": "AA text",
+    "low": "Low",
+    "button": "Button",
+    "tint": "Tint label",
+    "footnote": "Light cards measure against white, dark cards against black. In the app you can fine-tune each card with a color picker and export to Contents.json, a .colorset or code."
+  },
+  "problem": {
+    "title": "Ever watched your brand color vanish in Dark Mode?",
+    "text": "The blue you picked in light mode looks muddy on black, and for people with Increase Contrast on, the text barely reads. Hunting for a color per appearance and checking each ratio by hand eats half a day. TetraTint derives variants the way system colors shift between appearances, and shows on the spot whether each one passes."
+  },
+  "features": [
+    {
+      "title": "Audit every color you already use",
+      "text": "Paste your app's whole hex list and it sorts each color: fine as is, needs a high-contrast variant, or decorative only.\nOne click turns a problem color into four variants saved to your palette. It's a quick way to get ready for the Sufficient Contrast accessibility label on the App Store.",
+      "shot": "02-contrast"
+    },
+    {
+      "title": "See it through color-blind eyes",
+      "text": "Preview your palette with protanopia, deuteranopia, tritanopia and grayscale, and get a warning for any pair that becomes too close to tell apart.\nPull in the Okabe–Ito, IBM or Paul Tol color-blind safe palettes with one click, or use the eye button at the top right to preview the whole app that way.",
+      "shot": "03-color-vision"
+    },
+    {
+      "title": "Custom fonts that follow text size",
+      "text": "See all 11 text styles across 7 size categories, and drag a slider to preview real sizes.\nEnter your font's PostScript name and get UIKit, SwiftUI and `@ScaledMetric` code, plus code that switches layout at large sizes.",
+      "shot": "04-dynamic-type"
+    }
+  ],
+  "steps": {
+    "title": "Three steps to start",
+    "items": [
+      {
+        "title": "Add a base color",
+        "text": "Paste a hex, sample one anywhere on screen with the eyedropper, or pick a preset."
+      },
+      {
+        "title": "Check the four variants",
+        "text": "Read the contrast badges and fine-tune any variant that's off-brand."
+      },
+      {
+        "title": "Export to Xcode",
+        "text": "Copy or save as Contents.json, a .colorset, or UIKit and SwiftUI code."
+      }
+    ]
+  },
+  "reference": {
+    "title": "How variants are made, and what the badges mean",
+    "rows": [
+      [
+        "Light (Any)",
+        "Your color as entered"
+      ],
+      [
+        "Light High Contrast",
+        "Slightly more saturated, darkened until it clears 4.5:1 on white"
+      ],
+      [
+        "Dark",
+        "A little brighter and more vivid (lightness +5, saturation +3)"
+      ],
+      [
+        "Dark High Contrast",
+        "Brightened until it clears 7:1 on black"
+      ],
+      [
+        "AA text",
+        "4.5:1 or more against the background, fine for body text"
+      ],
+      [
+        "UI 3:1",
+        "3:1 or more, fine for buttons and icons but not for text"
+      ],
+      [
+        "Low",
+        "Below 3:1, don't use for text, icons or status"
+      ],
+      [
+        "Export",
+        "Contents.json · .colorset · UIKit · SwiftUI, or the whole palette as one .xcassets"
+      ]
+    ],
+    "note": "System color reference values come from Apple's Human Interface Guidelines and may change with OS updates. In your shipping app, use the system color APIs."
+  },
+  "pricing": {
+    "title": "Every feature is free",
+    "free": {
+      "name": "TetraTint",
+      "items": [
+        "Generate and export four variants",
+        "Contrast audit for a list of hex values",
+        "Color vision simulation and safe palettes",
+        "Dynamic Type table and code generation",
+        "System color reference, palette export as .xcassets"
+      ]
+    },
+    "pro": {
+      "name": "Support the developer (optional)",
+      "items": [
+        "Nothing is locked",
+        "If it helped, you can leave a tip in Settings"
+      ],
+      "note": "Tipping doesn't change any features."
+    },
+    "note": "No account, no ads. Your palette is stored only on this Mac."
+  },
+  "faq": {
+    "title": "Questions",
+    "items": [
+      {
+        "q": "The generated variants don't match my brand.",
+        "a": "Adjust any variant with the color picker on its card. Regenerate all throws away your manual edits and derives everything again from the base color."
+      },
+      {
+        "q": "How are the variants calculated?",
+        "a": "They follow how Apple's system colors actually shift between appearances: a little brighter and more vivid in Dark, at least 4.5:1 on white for Light High Contrast, and at least 7:1 on black for Dark High Contrast."
+      },
+      {
+        "q": "What does a color vision warning mean?",
+        "a": "Under that simulation, two colors fall below a difference of ΔE 12 and become hard to tell apart. Don't rely on color alone: add icons, patterns or labels, or switch to a safe palette."
+      },
+      {
+        "q": "How do I make a custom font support Dynamic Type?",
+        "a": "In Dynamic Type, enter the font's PostScript name and pick a style to get UIKit, SwiftUI and `@ScaledMetric` code. At accessibility sizes Body grows to over three times its default, so avoid fixed heights and lineLimit(1)."
+      },
+      {
+        "q": "Exported colors look different from the system colors in my app.",
+        "a": "System color reference values come from the Human Interface Guidelines and can change between OS releases. Always use the UIColor or Color API for system colors."
+      },
+      {
+        "q": "Where is my saved palette stored?",
+        "a": "Only on your Mac. Nothing is synced to the cloud or sent anywhere. See the privacy policy for details."
+      },
+      {
+        "q": "Is a color I sample with the eyedropper saved?",
+        "a": "No. It reads only the color value at the point you pick and uses it as the working color. No screen image is saved or sent."
+      },
+      {
+        "q": "Which Macs does it run on?",
+        "a": "macOS 14 (Sonoma) or later. When you export, you choose where the files are saved."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Make brand colors behave\nlike system colors",
+    "cta": "Get it free on the Mac App Store"
+  },
+  "ui": {
+    "skip": "Skip to content",
+    "languages": "Language",
+    "privacy": "Privacy Policy",
+    "contact": "Bug reports, feature ideas or questions? Write to {email}. We usually reply within 2–3 days."
+  }
+}

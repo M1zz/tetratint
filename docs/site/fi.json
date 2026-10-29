@@ -1,0 +1,115 @@
+{
+  "title": "TetraTint: brändivärit tummaan tilaan ja korkeaan kontrastiin Macilla",
+  "description": "Kehittäjätyökalu Macille: tekee yhdestä väristä vaalean, tumman ja korkean kontrastin versiot ja tarkistaa WCAG-kontrastin, värinäön ja Dynamic Typen.",
+  "hero": {
+    "headline": "Yksi väri sisään,\nneljä ulkoasua ulos",
+    "lead": "Järjestelmävärit mukautuvat itse tummaan tilaan ja Lisää kontrastia -asetukseen. Brändivärisi eivät. TetraTint ottaa yhden vaalean tilan värin, tekee siitä versiot Vaalea, Vaalea korkea kontrasti, Tumma ja Tumma korkea kontrasti ja vie ne suoraan Xcodeen.",
+    "cta": "Lataa ilmaiseksi Mac App Storesta",
+    "note": "Kaikki ominaisuudet ovat ilmaisia. Vaatii macOS 14:n tai uudemman."
+  },
+  "demo": {
+    "title": "Kokeile brändiväriäsi",
+    "lead": "Liitä hex-arvo tai napauta esiasetusta. Samalla laskulla kuin apissa näet heti kaikki neljä versiota ja niiden kontrastin.",
+    "picker": "Valitse väri",
+    "hex": "Vaalean tilan perusväri, hex-arvo",
+    "presets": "Esiasetukset",
+    "light": "Vaalea (Any)",
+    "lightHC": "Vaalea, korkea kontrasti",
+    "dark": "Tumma",
+    "darkHC": "Tumma, korkea kontrasti",
+    "ratio": "%@:1 taustaa vasten",
+    "aa": "AA-teksti",
+    "low": "Matala",
+    "button": "Painike",
+    "tint": "Sävytetty teksti",
+    "footnote": "Vaaleat kortit mitataan valkoista ja tummat mustaa vasten. Apissa hiot jokaisen kortin värinvalitsimella ja viet sen Contents.json-, .colorset- tai koodimuodossa."
+  },
+  "problem": {
+    "title": "Onko brändivärisi hukkunut tummassa tilassa?",
+    "text": "Vaaleassa tilassa valittu sininen näyttää mustalla sameelta, ja Lisää kontrastia -asetusta käyttävä tuskin saa tekstistä selvää. Värin etsiminen jokaiseen ulkoasuun ja kontrastin laskeminen käsin vie puoli päivää. TetraTint johtaa versiot samaan tapaan kuin järjestelmävärit muuttuvat ulkoasujen välillä ja näyttää heti, läpäiseekö kukin."
+  },
+  "features": [
+    {
+      "title": "Tarkista kaikki käyttämäsi värit kerralla",
+      "text": "Liitä apin koko hex-lista, ja jokainen väri luokitellaan: käyttökelpoinen sellaisenaan, tarvitsee korkean kontrastin tai vain koristeluun.\nYksi klikkaus tekee ongelmavärista neljä versiota palettiisi. Siitä on apua myös App Storen saavutettavuusmerkinnän Riittävä kontrasti valmisteluun.",
+      "shot": "02-contrast"
+    },
+    {
+      "title": "Katso värisokean silmin",
+      "text": "Näe paletti protanopiana, deuteranopiana, tritanopiana ja harmaasävynä, ja saat varoituksen pareista, joita on vaikea erottaa.\nTuo värisokeille sopivat paletit Okabe–Ito, IBM ja Paul Tol yhdellä klikkauksella, tai näe koko appi samoin oikean yläkulman silmäpainikkeella.",
+      "shot": "03-color-vision"
+    },
+    {
+      "title": "Omat fontit seuraavat tekstikokoa",
+      "text": "Näe kaikki 11 tekstityyliä 7 koossa ja liu'uta säädintä nähdäksesi todelliset koot.\nSyötä fontin PostScript-nimi, niin saat koodin UIKitille, SwiftUI:lle ja `@ScaledMetric`ille sekä koodin, joka vaihtaa asettelua suurella tekstillä.",
+      "shot": "04-dynamic-type"
+    }
+  ],
+  "steps": {
+    "title": "Kolme askelta alkuun",
+    "items": [
+      {"title": "Anna perusväri", "text": "Liitä hex, poimi väri pipetillä mistä tahansa näytöltä tai valitse esiasetus."},
+      {"title": "Tarkista neljä versiota", "text": "Katso kontrastimerkit ja hio brändiin sopimattomat versiot värinvalitsimella."},
+      {"title": "Vie Xcodeen", "text": "Kopioi tai tallenna Contents.json-, .colorset- tai UIKit- ja SwiftUI-koodina."}
+    ]
+  },
+  "reference": {
+    "title": "Miten versiot syntyvät ja mitä merkit tarkoittavat",
+    "rows": [
+      ["Vaalea (Any)", "Värisi sellaisenaan"],
+      ["Vaalea, korkea kontrasti", "Hieman kylläisempi ja tummennettu, kunnes valkoista vasten 4.5:1"],
+      ["Tumma", "Hieman vaaleampi ja kirkkaampi (vaaleus +5, kylläisyys +3)"],
+      ["Tumma, korkea kontrasti", "Vaalennettu, kunnes mustaa vasten 7:1"],
+      ["AA-teksti", "Vähintään 4.5:1 taustaa vasten, sopii leipätekstiin"],
+      ["UI 3:1", "Vähintään 3:1, riittää painikkeisiin ja kuvakkeisiin mutta ei tekstiin"],
+      ["Matala", "Alle 3:1, älä käytä tekstiin, kuvakkeisiin tai tiloihin"],
+      ["Vienti", "Contents.json · .colorset · UIKit · SwiftUI, tai koko paletti yhtenä .xcassets-tiedostona"]
+    ],
+    "note": "Järjestelmävärien viitearvot ovat Applen Human Interface Guidelinesista ja voivat muuttua käyttöjärjestelmäpäivitysten myötä. Käytä julkaistussa apissa järjestelmävärien rajapintoja."
+  },
+  "pricing": {
+    "title": "Kaikki ominaisuudet ovat ilmaisia",
+    "free": {
+      "name": "TetraTint",
+      "items": [
+        "Neljän version luonti ja vienti",
+        "Hex-listan kontrastitarkistus",
+        "Värinäön simulointi ja värisokeille sopivat paletit",
+        "Dynamic Type -taulukko ja koodin luonti",
+        "Järjestelmävärien viitteet, paletin vienti .xcassets-muodossa"
+      ]
+    },
+    "pro": {
+      "name": "Tue kehittäjää (vapaaehtoinen)",
+      "items": [
+        "Mitään ei ole lukittu",
+        "Jos appi auttoi, voit antaa juomarahaa asetuksista"
+      ],
+      "note": "Juomaraha ei muuta mitään ominaisuutta."
+    },
+    "note": "Ei tiliä, ei mainoksia. Paletti pysyy vain tällä Macilla."
+  },
+  "faq": {
+    "title": "Usein kysyttyä",
+    "items": [
+      {"q": "Luodut versiot eivät sovi brändiimme.", "a": "Säädä mitä tahansa versiota sen kortin värinvalitsimella. Luo kaikki uudelleen hylkää käsin tehdyt muutokset ja johtaa kaiken uudelleen perusväristä."},
+      {"q": "Miten versiot lasketaan?", "a": "Ne seuraavat sitä, miten Applen järjestelmävärit oikeasti muuttuvat ulkoasujen välillä: tummassa hieman vaaleampi ja kirkkaampi, vaaleassa korkeassa kontrastissa vähintään 4.5:1 valkoista vasten ja tummassa korkeassa kontrastissa vähintään 7:1 mustaa vasten."},
+      {"q": "Mitä värinäön simuloinnin varoitus tarkoittaa?", "a": "Sitä, että simuloinnissa kahden värin ero (ΔE) laskee alle 12:n ja niitä on vaikea erottaa. Älä nojaa pelkkään väriin: lisää kuvakkeita, kuvioita tai tekstejä tai vaihda värisokeille sopivaan palettiin."},
+      {"q": "Miten saan oman fontin tukemaan Dynamic Typea?", "a": "Syötä Dynamic Type -näkymässä fontin PostScript-nimi ja valitse tyyli, niin saat UIKit-, SwiftUI- ja `@ScaledMetric`-koodin. Saavutettavuuskoissa Body kasvaa yli kolminkertaiseksi, joten vältä kiinteitä korkeuksia ja lineLimit(1):tä."},
+      {"q": "Viedyt värit näyttävät erilaisilta kuin apin järjestelmävärit.", "a": "Viitearvot ovat Human Interface Guidelinesista ja voivat vaihdella käyttöjärjestelmäversioiden välillä. Käytä järjestelmäväreihin aina UIColor- tai Color-rajapintaa."},
+      {"q": "Mihin palettini tallennetaan?", "a": "Vain Maciisi. Mitään ei synkronoida pilveen eikä lähetetä minnekään. Lisätietoja tietosuojakäytännöstä."},
+      {"q": "Tallentuuko pipetillä poimittu väri?", "a": "Ei. Vain valitun kohdan värin arvo luetaan ja otetaan työväriksi. Näytön kuvaa ei tallenneta eikä lähetetä."},
+      {"q": "Millä Maceilla appi toimii?", "a": "macOS 14:llä (Sonoma) ja uudemmilla. Viennissä valitset itse, minne tiedostot tallennetaan."}
+    ]
+  },
+  "closing": {
+    "headline": "Brändivärit, jotka toimivat\nkuin järjestelmävärit",
+    "cta": "Lataa ilmaiseksi Mac App Storesta"
+  },
+  "ui": {
+    "skip": "Siirry sisältöön",
+    "languages": "Kieli",
+    "privacy": "Tietosuojakäytäntö",
+    "contact": "Virheitä, ideoita tai kysyttävää? Kirjoita osoitteeseen {email}. Vastaamme yleensä 2–3 päivän kuluessa."
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "title": "TetraTint: adapte as cores da sua marca ao modo escuro e ao alto contraste no Mac",
+  "description": "Ferramenta para Mac: transforma uma cor em variantes clara, escura e de alto contraste e confere contraste WCAG, daltonismo e Dynamic Type.",
+  "hero": {
+    "headline": "Uma cor na entrada,\nquatro aparências na saída",
+    "lead": "As cores do sistema se ajustam sozinhas ao modo escuro e ao Aumentar Contraste. As cores da sua marca, não. O TetraTint pega uma cor do modo claro, cria as variantes Claro, Claro com alto contraste, Escuro e Escuro com alto contraste, e exporta direto para o Xcode.",
+    "cta": "Baixe grátis na Mac App Store",
+    "note": "Todos os recursos são grátis. Requer macOS 14 ou posterior."
+  },
+  "demo": {
+    "title": "Teste a cor da sua marca",
+    "lead": "Cole um valor hex ou toque numa predefinição. Com o mesmo cálculo do app, você vê na hora as quatro variantes e o contraste de cada uma.",
+    "picker": "Escolher cor",
+    "hex": "Cor base do modo claro, valor hex",
+    "presets": "Predefinições",
+    "light": "Claro (Qualquer)",
+    "lightHC": "Claro com alto contraste",
+    "dark": "Escuro",
+    "darkHC": "Escuro com alto contraste",
+    "ratio": "%@:1 em relação ao fundo",
+    "aa": "Texto AA",
+    "low": "Baixo",
+    "button": "Botão",
+    "tint": "Rótulo de tom",
+    "footnote": "Os cartões claros são medidos sobre branco e os escuros sobre preto. No app, você ajusta cada cartão com o seletor de cores e exporta em Contents.json, .colorset ou código."
+  },
+  "problem": {
+    "title": "A cor da sua marca já sumiu no modo escuro?",
+    "text": "O azul escolhido no modo claro fica apagado no preto, e quem usa Aumentar Contraste mal consegue ler o texto. Procurar uma cor para cada aparência e medir cada contraste na mão leva meio dia. O TetraTint cria as variantes do jeito que as cores do sistema mudam entre aparências e mostra na hora se cada uma passa."
+  },
+  "features": [
+    {
+      "title": "Confira de uma vez todas as cores que você usa",
+      "text": "Cole a lista inteira de hex do seu app e cada cor é classificada: pode usar assim, precisa de alto contraste ou apenas decorativa.\nCom um clique, uma cor problemática vira quatro variantes salvas na sua paleta. Ajuda a se preparar para o rótulo de acessibilidade Contraste suficiente na App Store.",
+      "shot": "02-contrast"
+    },
+    {
+      "title": "Veja com os olhos de quem tem daltonismo",
+      "text": "Simule sua paleta com protanopia, deuteranopia, tritanopia e tons de cinza, e receba um aviso para cada par que fica difícil de distinguir.\nCarregue com um clique as paletas seguras para daltonismo Okabe–Ito, IBM e Paul Tol, ou use o botão de olho no canto superior direito para ver o app inteiro assim.",
+      "shot": "03-color-vision"
+    },
+    {
+      "title": "Fontes personalizadas que acompanham o tamanho do texto",
+      "text": "Veja os 11 estilos de texto em 7 tamanhos e arraste um controle para conferir os tamanhos reais.\nDigite o nome PostScript da fonte e receba código para UIKit, SwiftUI e `@ScaledMetric`, além do código que muda o layout com texto grande.",
+      "shot": "04-dynamic-type"
+    }
+  ],
+  "steps": {
+    "title": "Três passos para começar",
+    "items": [
+      {
+        "title": "Informe uma cor base",
+        "text": "Cole um hex, capture uma cor de qualquer lugar da tela com o conta-gotas ou escolha uma predefinição."
+      },
+      {
+        "title": "Confira as quatro variantes",
+        "text": "Veja os selos de contraste e ajuste as variantes que fogem da sua marca."
+      },
+      {
+        "title": "Exporte para o Xcode",
+        "text": "Copie ou salve como Contents.json, .colorset ou código UIKit e SwiftUI."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Como as variantes são feitas e o que os selos dizem",
+    "rows": [
+      [
+        "Claro (Qualquer)",
+        "Sua cor do jeito que você digitou"
+      ],
+      [
+        "Claro com alto contraste",
+        "Um pouco mais saturada, escurecida até 4.5:1 sobre branco"
+      ],
+      [
+        "Escuro",
+        "Um pouco mais clara e viva (luminosidade +5, saturação +3)"
+      ],
+      [
+        "Escuro com alto contraste",
+        "Clareada até 7:1 sobre preto"
+      ],
+      [
+        "Texto AA",
+        "4.5:1 ou mais em relação ao fundo, serve para texto"
+      ],
+      [
+        "UI 3:1",
+        "3:1 ou mais, serve para botões e ícones, mas não para texto"
+      ],
+      [
+        "Baixo",
+        "Abaixo de 3:1, não use em texto, ícones ou status"
+      ],
+      [
+        "Exportação",
+        "Contents.json · .colorset · UIKit · SwiftUI, ou a paleta inteira num só .xcassets"
+      ]
+    ],
+    "note": "Os valores de referência das cores do sistema vêm das Human Interface Guidelines da Apple e podem mudar com atualizações do sistema. No app publicado, use as APIs de cores do sistema."
+  },
+  "pricing": {
+    "title": "Todos os recursos são grátis",
+    "free": {
+      "name": "TetraTint",
+      "items": [
+        "Criar e exportar as quatro variantes",
+        "Verificação de contraste para uma lista de hex",
+        "Simulação de visão de cores e paletas seguras",
+        "Tabela de Dynamic Type e geração de código",
+        "Referência de cores do sistema, exportação da paleta em .xcassets"
+      ]
+    },
+    "pro": {
+      "name": "Apoie o desenvolvedor (opcional)",
+      "items": [
+        "Nada fica bloqueado",
+        "Se ajudou, dá para deixar uma gorjeta nos Ajustes"
+      ],
+      "note": "A gorjeta não muda nenhum recurso."
+    },
+    "note": "Sem conta e sem anúncios. Sua paleta fica só neste Mac."
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "items": [
+      {
+        "q": "As variantes geradas não combinam com a minha marca.",
+        "a": "Ajuste qualquer variante com o seletor de cores do cartão dela. Gerar tudo de novo descarta suas edições manuais e recria tudo a partir da cor base."
+      },
+      {
+        "q": "Como as variantes são calculadas?",
+        "a": "Seguem como as cores do sistema da Apple realmente mudam entre aparências: um pouco mais claras e vivas no escuro, pelo menos 4.5:1 sobre branco no claro com alto contraste e pelo menos 7:1 sobre preto no escuro com alto contraste."
+      },
+      {
+        "q": "O que significa um aviso na simulação de visão de cores?",
+        "a": "Que, nessa simulação, a diferença entre duas cores fica abaixo de ΔE 12 e elas ficam difíceis de distinguir. Não dependa só da cor: use ícones, padrões ou rótulos, ou troque por uma paleta segura."
+      },
+      {
+        "q": "Como faço uma fonte personalizada suportar Dynamic Type?",
+        "a": "Em Dynamic Type, digite o nome PostScript da fonte e escolha um estilo para receber código UIKit, SwiftUI e `@ScaledMetric`. Nos tamanhos de acessibilidade o Body passa de três vezes o padrão, então evite alturas fixas e lineLimit(1)."
+      },
+      {
+        "q": "As cores exportadas ficam diferentes das cores do sistema no meu app.",
+        "a": "Os valores de referência vêm das Human Interface Guidelines e podem mudar entre versões do sistema. Use sempre as APIs UIColor ou Color para as cores do sistema."
+      },
+      {
+        "q": "Onde minha paleta fica salva?",
+        "a": "Só no seu Mac. Nada é sincronizado com a nuvem nem enviado para lugar nenhum. Veja a política de privacidade para mais detalhes."
+      },
+      {
+        "q": "A cor capturada com o conta-gotas é salva?",
+        "a": "Não. Só o valor da cor no ponto escolhido é lido e usado como cor de trabalho. Nenhuma imagem da tela é salva ou enviada."
+      },
+      {
+        "q": "Em quais Macs funciona?",
+        "a": "No macOS 14 (Sonoma) ou posterior. Na exportação, você escolhe onde salvar os arquivos."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Cores da marca que se comportam\ncomo as do sistema",
+    "cta": "Baixe grátis na Mac App Store"
+  },
+  "ui": {
+    "skip": "Pular para o conteúdo",
+    "languages": "Idioma",
+    "privacy": "Política de Privacidade",
+    "contact": "Erros, ideias ou dúvidas? Escreva para {email}. Costumamos responder em 2 a 3 dias."
+  }
+}

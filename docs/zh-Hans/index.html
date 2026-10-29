@@ -1,122 +1,192 @@
 <!doctype html>
 <html lang="zh-Hans">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TetraTint — macOS 自定义颜色与字体的无障碍工具</title>
-<meta name="description" content="一款 macOS 开发者工具：为自定义颜色生成浅色、深色和高对比度变体，检查 WCAG 对比度，模拟色觉缺陷，并生成动态字体代码。">
-<link rel="canonical" href="https://m1zz.github.io/tetratint/zh-Hans/">
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/tetratint/ko/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/tetratint/en/">
-<link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/tetratint/en-GB/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/tetratint/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/tetratint/zh-Hant/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/tetratint/ja/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/tetratint/ru/">
-<link rel="alternate" hreflang="es-MX" href="https://m1zz.github.io/tetratint/es-MX/">
-<link rel="alternate" hreflang="de-DE" href="https://m1zz.github.io/tetratint/de-DE/">
-<link rel="alternate" hreflang="fr-FR" href="https://m1zz.github.io/tetratint/fr-FR/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/tetratint/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/tetratint/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/tetratint/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/tetratint/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/tetratint/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/tetratint/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/tetratint/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/tetratint/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/tetratint/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/tetratint/no/">
-<link rel="alternate" hreflang="nl-NL" href="https://m1zz.github.io/tetratint/nl-NL/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/tetratint/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/tetratint/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/tetratint/tr/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/tetratint/">
-<style>
-  :root {
-    --bg: #f5f5f7; --card: #ffffff; --text: #1d1d1f; --muted: #6e6e73;
-    --border: #e3e3e6; --accent: #0a84ff; --ok: #34c759;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg:#000; --card:#1c1c1e; --text:#f5f5f7; --muted:#98989d; --border:#2c2c2e; --accent:#0a84ff; --ok:#30d158; }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--bg); color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", "Apple SD Gothic Neo", sans-serif;
-    line-height: 1.7; -webkit-font-smoothing: antialiased;
-  }
-  .logo {
-    width: 56px; height: 56px; border-radius: 14px; display: grid;
-    grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0,0,0,.15); margin-bottom: 20px;
-  }
-  .logo i { display: block; }
-  .logo i:nth-child(1){ background:#0a84ff; }
-  .logo i:nth-child(2){ background:#0060df; }
-  .logo i:nth-child(3){ background:#5ac8fa; }
-  .logo i:nth-child(4){ background:#004299; }
-  nav.langs { display: flex; gap: 6px; flex-wrap: wrap; margin: 0 0 24px; }
-  nav.langs a {
-    border: 1px solid var(--border); color: var(--muted); font-size: 14px;
-    padding: 3px 12px; border-radius: 999px; text-decoration: none;
-  }
-  nav.langs a[aria-current="true"] { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  footer { color: var(--muted); font-size: 14px; text-align: center; margin-top: 40px; }
-
-  body { min-height: 100vh; display: grid; place-items: center; }
-  .wrap { max-width: 620px; padding: 48px 24px; text-align: center; }
-  .logo { width: 88px; height: 88px; border-radius: 20px; margin: 0 auto 24px; box-shadow: 0 6px 24px rgba(0,0,0,.2); }
-  nav.langs { justify-content: center; }
-  h1 { font-size: 40px; letter-spacing: -.03em; margin: 0 0 8px; }
-  p.tag { color: var(--muted); font-size: 18px; margin: 0 0 20px; }
-  p.desc { margin: 0 0 32px; }
-  .links { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
-  .links a {
-    background: var(--card); border: 1px solid var(--border); color: var(--text);
-    text-decoration: none; padding: 14px 24px; border-radius: 14px; font-weight: 600;
-  }
-  .links a:hover { border-color: var(--accent); color: var(--accent); }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TetraTint：让品牌色适配深色模式和高对比度的 Mac 工具</title>
+  <meta name="description" content="用一个颜色生成浅色、深色和高对比度四种变体，并检查 WCAG 对比度、色觉障碍效果和动态字体的 Mac 开发者工具。免费。">
+  <meta name="theme-color" content="#0064D2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6789206198">
+  <link rel="canonical" href="https://m1zz.github.io/tetratint/zh-Hans/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/tetratint/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/tetratint/ko/">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/tetratint/en-GB/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/tetratint/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/tetratint/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/tetratint/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/tetratint/ru/">
+  <link rel="alternate" hreflang="es-MX" href="https://m1zz.github.io/tetratint/es-MX/">
+  <link rel="alternate" hreflang="de-DE" href="https://m1zz.github.io/tetratint/de-DE/">
+  <link rel="alternate" hreflang="fr-FR" href="https://m1zz.github.io/tetratint/fr-FR/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/tetratint/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/tetratint/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/tetratint/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/tetratint/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/tetratint/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/tetratint/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/tetratint/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/tetratint/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/tetratint/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/tetratint/no/">
+  <link rel="alternate" hreflang="nl-NL" href="https://m1zz.github.io/tetratint/nl-NL/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/tetratint/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/tetratint/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/tetratint/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/tetratint/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TetraTint：让品牌色适配深色模式和高对比度的 Mac 工具">
+  <meta property="og:description" content="用一个颜色生成浅色、深色和高对比度四种变体，并检查 WCAG 对比度、色觉障碍效果和动态字体的 Mac 开发者工具。免费。">
+  <meta property="og:url" content="https://m1zz.github.io/tetratint/zh-Hans/">
+  <meta property="og:image" content="https://m1zz.github.io/tetratint/img/zh-Hans/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#0064D2}@media (prefers-color-scheme:dark){:root{--accent:#409CFF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<div class="wrap">
-  <div class="logo"><i></i><i></i><i></i><i></i></div>
-  <nav class="langs" aria-label="Language">
-    <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
-    <a href="../en/index.html" hreflang="en" lang="en">English</a>
-    <a href="../en-GB/index.html" hreflang="en-GB" lang="en-GB">English (UK)</a>
-    <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans" aria-current="true">简体中文</a>
-    <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-    <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-    <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-    <a href="../es-MX/index.html" hreflang="es-MX" lang="es-MX">Español (México)</a>
-    <a href="../de-DE/index.html" hreflang="de-DE" lang="de-DE">Deutsch</a>
-    <a href="../fr-FR/index.html" hreflang="fr-FR" lang="fr-FR">Français</a>
-    <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-    <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-    <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-    <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-    <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-    <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-    <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-    <a href="../fi/index.html" hreflang="fi" lang="fi">suomi</a>
-    <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-    <a href="../no/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-    <a href="../nl-NL/index.html" hreflang="nl-NL" lang="nl-NL">Nederlands</a>
-    <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-    <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-    <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-  </nav>
-  <h1>TetraTint</h1>
-  <p class="tag">macOS 自定义颜色与字体的无障碍工具</p>
-  <p class="desc">从一种基准色出发，即可得到浅色、深色和高对比度的四种变体，检查 WCAG 对比度，预览色觉缺陷用户眼中的效果，还能为自定义字体生成动态字体代码。</p>
-  <div class="links">
-    <a href="support.html">支持</a>
-    <a href="privacy.html">隐私政策</a>
-  </div>
-  <footer>© 2026 TetraTint</footer>
-</div>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="bar">
+    <a class="brand" href="../zh-Hans/"><img src="../icon.png" alt="" width="32" height="32">TetraTint</a>
+    <a class="lang-link" href="#languages">语言</a>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>输入一个颜色<br>得到四种外观</h1>
+        <p class="lead">系统颜色会随深色模式和“增强对比度”自动变化，品牌色却不会。TetraTint 从一个浅色模式颜色出发，生成浅色、浅色高对比度、深色、深色高对比度四种变体，并直接导出到 Xcode。</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6789206198">在 Mac App Store 免费下载</a><a class="try" href="#try">试试你的品牌色 ↓</a></div>
+        <p class="muted small">所有功能免费。需要 macOS 14 或更高版本。</p>
+      </div>
+      <div class="plain"><img src="../img/zh-Hans/01-generator.jpg" alt="输入一个颜色 得到四种外观" width="600" height="350" decoding="async"></div>
+    </section>
+
+
+    <section class="reveal" id="try">
+      <h2>试试你的品牌色</h2>
+      <p class="muted">粘贴一个 hex 值，或点一个预设。用和 App 相同的算法，四种变体和背景对比度立刻出来。</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;试试你的品牌色&quot;, &quot;lead&quot;: &quot;粘贴一个 hex 值，或点一个预设。用和 App 相同的算法，四种变体和背景对比度立刻出来。&quot;, &quot;picker&quot;: &quot;选择颜色&quot;, &quot;hex&quot;: &quot;浅色模式基准色的 hex 值&quot;, &quot;presets&quot;: &quot;预设&quot;, &quot;light&quot;: &quot;浅色（任何外观）&quot;, &quot;lightHC&quot;: &quot;浅色高对比度&quot;, &quot;dark&quot;: &quot;深色&quot;, &quot;darkHC&quot;: &quot;深色高对比度&quot;, &quot;ratio&quot;: &quot;与背景的对比度 %@:1&quot;, &quot;aa&quot;: &quot;AA 文本&quot;, &quot;low&quot;: &quot;偏低&quot;, &quot;button&quot;: &quot;按钮&quot;, &quot;tint&quot;: &quot;着色标签&quot;, &quot;footnote&quot;: &quot;浅色卡片以白色为背景，深色卡片以黑色为背景计算对比度。在 App 中，每张卡片都能用拾色器微调，并导出为 Contents.json、.colorset 或代码。&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>品牌色在深色模式下被吞掉过吗？</h2>
+      <p>在浅色模式下挑好的蓝色，放到黑色背景上就发灰；对开启了“增强对比度”的用户来说，文字也很难看清。为每种外观手动找颜色、逐个算对比度，半天就过去了。TetraTint 按照系统颜色在不同外观间变化的方式生成变体，并当场告诉你每一种是否达标。</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>一次检查所有在用的颜色</h2>
+        <p>把 App 里用到的 hex 列表整段粘贴进来，它会逐个判断：可直接使用、需要高对比度变体，还是仅限装饰用途。<br>有问题的颜色点一下就能生成四种变体并存进调色板。准备 App Store 无障碍标签中的“足够的对比度”时也能直接用。</p>
+      </div>
+      <div class="plain"><img src="../img/zh-Hans/02-contrast.jpg" alt="一次检查所有在用的颜色" width="600" height="350" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>用色觉障碍者的眼睛去看</h2>
+        <p>模拟调色板在红色盲、绿色盲、蓝色盲和灰度下的样子，并对变得难以区分的颜色组合发出警告。<br>一键导入 Okabe–Ito、IBM、Paul Tol 色盲友好调色板；也可以点右上角的眼睛按钮，用这种视角预览整个 App 界面。</p>
+      </div>
+      <div class="plain"><img src="../img/zh-Hans/03-color-vision.jpg" alt="用色觉障碍者的眼睛去看" width="600" height="350" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>自定字体也能跟随文字大小</h2>
+        <p>查看 11 种文本样式在 7 个尺寸档位下的对照表，拖动滑块即可预览实际大小。<br>输入字体的 PostScript 名称，就能生成 UIKit、SwiftUI、<code>@ScaledMetric</code> 代码，以及在大字号下切换布局的代码。</p>
+      </div>
+      <div class="plain"><img src="../img/zh-Hans/04-dynamic-type.jpg" alt="自定字体也能跟随文字大小" width="600" height="350" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>三步开始</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>输入基准色</h3><p>粘贴 hex，用吸管在屏幕任意位置取色，或选一个预设。</p></li>
+<li class="card"><span class="n">2</span><h3>检查四种变体</h3><p>看徽章了解对比度，与品牌调性不符的变体用拾色器调整。</p></li>
+<li class="card"><span class="n">3</span><h3>导出到 Xcode</h3><p>以 Contents.json、.colorset、UIKit 或 SwiftUI 代码复制或保存。</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>变体的生成规则和徽章含义</h2>
+      <div class="card table">
+        <dl><div><dt>浅色（任何外观）</dt><dd>保持你输入的颜色</dd></div><div><dt>浅色高对比度</dt><dd>略微提高饱和度，再调暗到在白色背景上达到 4.5:1</dd></div><div><dt>深色</dt><dd>稍微更亮、更鲜艳（亮度 +5，饱和度 +3）</dd></div><div><dt>深色高对比度</dt><dd>调亮到在黑色背景上达到 7:1</dd></div><div><dt>AA 文本</dt><dd>与背景对比度不低于 4.5:1，可用于正文</dd></div><div><dt>UI 3:1</dt><dd>不低于 3:1，可用于按钮和图标，但不够用于文字</dd></div><div><dt>偏低</dt><dd>低于 3:1，不要用于文字、图标或状态提示</dd></div><div><dt>导出</dt><dd>Contents.json · .colorset · UIKit · SwiftUI，整个调色板可导出为一个 .xcassets</dd></div></dl>
+      </div>
+      <p class="muted">系统颜色参考值依据 Apple 人机界面指南，可能随系统更新而变化。正式的 App 中请使用系统颜色 API。</p>
+    </section>
+
+
+    <section class="reveal" id="pricing">
+      <h2>所有功能免费</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>TetraTint</h3>
+          <ul><li>生成并导出四种变体</li><li>hex 列表对比度检查</li><li>色觉模拟与色盲友好调色板</li><li>动态字体对照表与代码生成</li><li>系统颜色参考，调色板导出为 .xcassets</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>支持开发者（可选）</h3>
+          <ul><li>没有任何锁定的功能</li><li>觉得有用的话，可以在设置里打赏</li></ul>
+          <p class="muted">打赏不会改变任何功能。</p>
+        </div>
+      </div>
+      <p class="muted">无需账号，没有广告。调色板只保存在这台 Mac 上。</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>常见问题</h2>
+      <div class="faq"><details><summary>自动生成的变体和品牌调性不符。</summary><p>可以用每张变体卡片上的拾色器逐个调整。点“全部重新生成”会丢弃手动修改，从基准色重新生成。</p></details>
+<details><summary>变体是按什么规则生成的？</summary><p>依照 Apple 系统颜色在不同外观之间的真实变化规律：深色下稍微更亮更鲜艳，浅色高对比度在白色背景上超过 4.5:1，深色高对比度在黑色背景上超过 7:1。</p></details>
+<details><summary>色觉模拟里的警告是什么意思？</summary><p>表示在这种色觉下，两种颜色的差异（ΔE）低于 12，变得难以区分。不要只靠颜色区分状态，请配合图标、图案或文字标签，或换用色盲友好调色板。</p></details>
+<details><summary>怎样让自定字体支持动态字体？</summary><p>在“动态字体”页面输入字体的 PostScript 名称并选择样式，就会生成 UIKit、SwiftUI 和 <code>@ScaledMetric</code> 代码。在辅助功能字号下，正文会超过默认大小的三倍，请避免固定高度和 lineLimit(1)。</p></details>
+<details><summary>导出的颜色在 App 里看起来和系统颜色不一样。</summary><p>系统颜色参考值依据人机界面指南文档，可能随系统版本而变。系统颜色请始终通过 UIColor 或 Color API 使用。</p></details>
+<details><summary>保存的调色板存在哪里？</summary><p>只保存在你的 Mac 上，不会同步到云端，也不会发送出去。详情请参阅隐私政策。</p></details>
+<details><summary>用吸管取的颜色会被保存吗？</summary><p>不会。它只读取所指位置的颜色值作为当前颜色，不会保存或发送屏幕图像。</p></details>
+<details><summary>支持哪些 Mac？</summary><p>需要 macOS 14（Sonoma）或更高版本。导出时由你选择文件保存位置。</p></details></div>
+      <p class="contact">问题反馈、功能建议或使用疑问，请发邮件到 <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>。通常会在 2–3 天内回复。</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>让品牌色<br>像系统颜色一样</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6789206198">在 Mac App Store 免费下载</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="语言"><a href="../" hreflang="en" lang="en">English</a>
+<a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../en-GB/" hreflang="en-GB" lang="en-GB">English (UK)</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans" aria-current="page">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es-MX/" hreflang="es-MX" lang="es-MX">Español (México)</a>
+<a href="../de-DE/" hreflang="de-DE" lang="de-DE">Deutsch</a>
+<a href="../fr-FR/" hreflang="fr-FR" lang="fr-FR">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../no/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl-NL/" hreflang="nl-NL" lang="nl-NL">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">隐私政策</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 TetraTint</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

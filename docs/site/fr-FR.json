@@ -1,0 +1,172 @@
+{
+  "title": "TetraTint : adaptez vos couleurs de marque au mode sombre et au contraste élevé sur Mac",
+  "description": "Outil Mac pour développeurs : une couleur devient variantes claires, sombres et à fort contraste, avec contrôle WCAG, daltonisme et Dynamic Type.",
+  "hero": {
+    "headline": "Une couleur en entrée,\nquatre apparences en sortie",
+    "lead": "Les couleurs système s’adaptent seules au mode sombre et à « Augmenter le contraste ». Vos couleurs de marque, non. TetraTint part d’une couleur du mode clair, crée les variantes Clair, Clair contraste élevé, Sombre et Sombre contraste élevé, puis les exporte directement vers Xcode.",
+    "cta": "Télécharger gratuitement sur le Mac App Store",
+    "note": "Toutes les fonctions sont gratuites. macOS 14 ou ultérieur."
+  },
+  "demo": {
+    "title": "Essayez votre couleur de marque",
+    "lead": "Collez une valeur hex ou touchez un préréglage. Le même calcul que dans l’app affiche aussitôt les quatre variantes et leur contraste.",
+    "picker": "Choisir une couleur",
+    "hex": "Couleur de base du mode clair, valeur hex",
+    "presets": "Préréglages",
+    "light": "Clair (par défaut)",
+    "lightHC": "Clair, contraste élevé",
+    "dark": "Sombre",
+    "darkHC": "Sombre, contraste élevé",
+    "ratio": "%@:1 sur le fond",
+    "aa": "Texte AA",
+    "low": "Faible",
+    "button": "Bouton",
+    "tint": "Libellé teinté",
+    "footnote": "Les cartes claires sont mesurées sur blanc, les sombres sur noir. Dans l’app, vous ajustez chaque carte avec le sélecteur de couleur et exportez en Contents.json, .colorset ou code."
+  },
+  "problem": {
+    "title": "Votre couleur de marque s’est-elle déjà noyée en mode sombre ?",
+    "text": "Le bleu choisi en mode clair paraît terne sur fond noir, et pour qui active « Augmenter le contraste », le texte devient difficile à lire. Chercher une couleur par apparence et vérifier chaque rapport à la main prend une demi-journée. TetraTint dérive les variantes comme évoluent les couleurs système d’une apparence à l’autre, et indique tout de suite si chacune passe."
+  },
+  "features": [
+    {
+      "title": "Vérifiez d’un coup toutes vos couleurs",
+      "text": "Collez toute la liste hex de votre app : chaque couleur est classée comme utilisable telle quelle, fort contraste requis ou décorative uniquement.\nUn clic transforme une couleur à problème en quatre variantes enregistrées dans votre palette. Pratique pour préparer la mention d’accessibilité « Contraste suffisant » sur l’App Store.",
+      "shot": "02-contrast"
+    },
+    {
+      "title": "Voyez avec les yeux d’une personne daltonienne",
+      "text": "Visualisez votre palette en protanopie, deutéranopie, tritanopie et niveaux de gris, avec une alerte pour chaque paire qui devient difficile à distinguer.\nChargez d’un clic les palettes adaptées au daltonisme Okabe–Ito, IBM et Paul Tol, ou utilisez le bouton en forme d’œil en haut à droite pour voir toute l’app ainsi.",
+      "shot": "03-color-vision"
+    },
+    {
+      "title": "Vos polices personnalisées suivent la taille du texte",
+      "text": "Consultez les 11 styles de texte sur 7 tailles et faites glisser un curseur pour voir les tailles réelles.\nSaisissez le nom PostScript de votre police pour obtenir du code UIKit, SwiftUI et `@ScaledMetric`, ainsi que du code qui change la mise en page en grande taille.",
+      "shot": "04-dynamic-type"
+    }
+  ],
+  "steps": {
+    "title": "Trois étapes pour commencer",
+    "items": [
+      {
+        "title": "Ajoutez une couleur de base",
+        "text": "Collez un hex, prélevez une couleur n’importe où à l’écran avec la pipette ou choisissez un préréglage."
+      },
+      {
+        "title": "Vérifiez les quatre variantes",
+        "text": "Lisez les badges de contraste et ajustez celles qui s’écartent de votre marque."
+      },
+      {
+        "title": "Exportez vers Xcode",
+        "text": "Copiez ou enregistrez en Contents.json, .colorset ou code UIKit et SwiftUI."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Comment naissent les variantes et ce que disent les badges",
+    "rows": [
+      [
+        "Clair (par défaut)",
+        "Votre couleur telle que saisie"
+      ],
+      [
+        "Clair, contraste élevé",
+        "Un peu plus saturée, assombrie jusqu’à 4.5:1 sur blanc"
+      ],
+      [
+        "Sombre",
+        "Un peu plus claire et plus vive (luminosité +5, saturation +3)"
+      ],
+      [
+        "Sombre, contraste élevé",
+        "Éclaircie jusqu’à 7:1 sur noir"
+      ],
+      [
+        "Texte AA",
+        "4.5:1 ou plus avec le fond, convient au texte courant"
+      ],
+      [
+        "UI 3:1",
+        "3:1 ou plus, convient aux boutons et icônes, pas au texte"
+      ],
+      [
+        "Faible",
+        "Moins de 3:1, à éviter pour le texte, les icônes et les états"
+      ],
+      [
+        "Export",
+        "Contents.json · .colorset · UIKit · SwiftUI, ou toute la palette en un seul .xcassets"
+      ]
+    ],
+    "note": "Les valeurs de référence des couleurs système proviennent des Human Interface Guidelines d’Apple et peuvent changer avec les mises à jour du système. Dans votre app publiée, utilisez les API de couleurs système."
+  },
+  "pricing": {
+    "title": "Toutes les fonctions sont gratuites",
+    "free": {
+      "name": "TetraTint",
+      "items": [
+        "Création et export des quatre variantes",
+        "Vérification du contraste d’une liste hex",
+        "Simulation de la vision des couleurs et palettes adaptées",
+        "Tableau Dynamic Type et génération de code",
+        "Référence des couleurs système, export de la palette en .xcassets"
+      ]
+    },
+    "pro": {
+      "name": "Soutenir le développeur (facultatif)",
+      "items": [
+        "Rien n’est verrouillé",
+        "Si l’app vous a aidé, vous pouvez laisser un pourboire dans les Réglages"
+      ],
+      "note": "Un pourboire ne change aucune fonction."
+    },
+    "note": "Pas de compte, pas de pub. Votre palette reste uniquement sur ce Mac."
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Les variantes générées ne collent pas à ma marque.",
+        "a": "Ajustez chaque variante avec le sélecteur de couleur de sa carte. « Tout régénérer » efface vos retouches et recalcule tout à partir de la couleur de base."
+      },
+      {
+        "q": "Comment les variantes sont-elles calculées ?",
+        "a": "Elles suivent la façon dont les couleurs système d’Apple évoluent réellement d’une apparence à l’autre : un peu plus claires et vives en sombre, au moins 4.5:1 sur blanc en clair contraste élevé, au moins 7:1 sur noir en sombre contraste élevé."
+      },
+      {
+        "q": "Que signifie une alerte de vision des couleurs ?",
+        "a": "Avec cette simulation, l’écart entre deux couleurs passe sous ΔE 12 et elles deviennent difficiles à distinguer. Ne comptez pas que sur la couleur : ajoutez icônes, motifs ou libellés, ou passez à une palette adaptée."
+      },
+      {
+        "q": "Comment rendre une police personnalisée compatible Dynamic Type ?",
+        "a": "Dans Dynamic Type, saisissez le nom PostScript de la police et choisissez un style pour obtenir du code UIKit, SwiftUI et `@ScaledMetric`. Aux tailles d’accessibilité, Body dépasse trois fois sa taille par défaut : évitez les hauteurs fixes et lineLimit(1)."
+      },
+      {
+        "q": "Les couleurs exportées ne ressemblent pas aux couleurs système de mon app.",
+        "a": "Les valeurs de référence proviennent des Human Interface Guidelines et peuvent changer d’une version du système à l’autre. Utilisez toujours les API UIColor ou Color pour les couleurs système."
+      },
+      {
+        "q": "Où ma palette est-elle stockée ?",
+        "a": "Uniquement sur votre Mac. Rien n’est synchronisé dans le cloud ni envoyé où que ce soit. Voir la politique de confidentialité pour en savoir plus."
+      },
+      {
+        "q": "La couleur prélevée à la pipette est-elle enregistrée ?",
+        "a": "Non. Seule la valeur de la couleur au point choisi est lue et devient la couleur de travail. Aucune image de l’écran n’est enregistrée ni envoyée."
+      },
+      {
+        "q": "Sur quels Mac fonctionne-t-elle ?",
+        "a": "macOS 14 (Sonoma) ou ultérieur. À l’export, vous choisissez où enregistrer les fichiers."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Des couleurs de marque\naussi souples que celles du système",
+    "cta": "Télécharger gratuitement sur le Mac App Store"
+  },
+  "ui": {
+    "skip": "Aller au contenu",
+    "languages": "Langue",
+    "privacy": "Politique de confidentialité",
+    "contact": "Un bug, une idée, une question ? Écrivez à {email}. Réponse en général sous 2 à 3 jours."
+  }
+}

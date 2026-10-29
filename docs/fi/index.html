@@ -1,122 +1,192 @@
 <!doctype html>
 <html lang="fi">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TetraTint — Saavutettavuustyökalu omille väreille ja fonteille macOS:ssa</title>
-<meta name="description" content="macOS-kehittäjän työkalu, joka luo omista väreistä vaaleat, tummat ja korkean kontrastin muunnelmat, tarkistaa WCAG-kontrastin, simuloi värinäön puutteita ja tuottaa Dynamic Type -koodia.">
-<link rel="canonical" href="https://m1zz.github.io/tetratint/fi/">
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/tetratint/ko/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/tetratint/en/">
-<link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/tetratint/en-GB/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/tetratint/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/tetratint/zh-Hant/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/tetratint/ja/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/tetratint/ru/">
-<link rel="alternate" hreflang="es-MX" href="https://m1zz.github.io/tetratint/es-MX/">
-<link rel="alternate" hreflang="de-DE" href="https://m1zz.github.io/tetratint/de-DE/">
-<link rel="alternate" hreflang="fr-FR" href="https://m1zz.github.io/tetratint/fr-FR/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/tetratint/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/tetratint/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/tetratint/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/tetratint/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/tetratint/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/tetratint/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/tetratint/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/tetratint/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/tetratint/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/tetratint/no/">
-<link rel="alternate" hreflang="nl-NL" href="https://m1zz.github.io/tetratint/nl-NL/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/tetratint/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/tetratint/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/tetratint/tr/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/tetratint/">
-<style>
-  :root {
-    --bg: #f5f5f7; --card: #ffffff; --text: #1d1d1f; --muted: #6e6e73;
-    --border: #e3e3e6; --accent: #0a84ff; --ok: #34c759;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg:#000; --card:#1c1c1e; --text:#f5f5f7; --muted:#98989d; --border:#2c2c2e; --accent:#0a84ff; --ok:#30d158; }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--bg); color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", "Apple SD Gothic Neo", sans-serif;
-    line-height: 1.7; -webkit-font-smoothing: antialiased;
-  }
-  .logo {
-    width: 56px; height: 56px; border-radius: 14px; display: grid;
-    grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0,0,0,.15); margin-bottom: 20px;
-  }
-  .logo i { display: block; }
-  .logo i:nth-child(1){ background:#0a84ff; }
-  .logo i:nth-child(2){ background:#0060df; }
-  .logo i:nth-child(3){ background:#5ac8fa; }
-  .logo i:nth-child(4){ background:#004299; }
-  nav.langs { display: flex; gap: 6px; flex-wrap: wrap; margin: 0 0 24px; }
-  nav.langs a {
-    border: 1px solid var(--border); color: var(--muted); font-size: 14px;
-    padding: 3px 12px; border-radius: 999px; text-decoration: none;
-  }
-  nav.langs a[aria-current="true"] { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  footer { color: var(--muted); font-size: 14px; text-align: center; margin-top: 40px; }
-
-  body { min-height: 100vh; display: grid; place-items: center; }
-  .wrap { max-width: 620px; padding: 48px 24px; text-align: center; }
-  .logo { width: 88px; height: 88px; border-radius: 20px; margin: 0 auto 24px; box-shadow: 0 6px 24px rgba(0,0,0,.2); }
-  nav.langs { justify-content: center; }
-  h1 { font-size: 40px; letter-spacing: -.03em; margin: 0 0 8px; }
-  p.tag { color: var(--muted); font-size: 18px; margin: 0 0 20px; }
-  p.desc { margin: 0 0 32px; }
-  .links { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
-  .links a {
-    background: var(--card); border: 1px solid var(--border); color: var(--text);
-    text-decoration: none; padding: 14px 24px; border-radius: 14px; font-weight: 600;
-  }
-  .links a:hover { border-color: var(--accent); color: var(--accent); }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TetraTint: brändivärit tummaan tilaan ja korkeaan kontrastiin Macilla</title>
+  <meta name="description" content="Kehittäjätyökalu Macille: tekee yhdestä väristä vaalean, tumman ja korkean kontrastin versiot ja tarkistaa WCAG-kontrastin, värinäön ja Dynamic Typen.">
+  <meta name="theme-color" content="#0064D2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6789206198">
+  <link rel="canonical" href="https://m1zz.github.io/tetratint/fi/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/tetratint/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/tetratint/ko/">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/tetratint/en-GB/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/tetratint/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/tetratint/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/tetratint/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/tetratint/ru/">
+  <link rel="alternate" hreflang="es-MX" href="https://m1zz.github.io/tetratint/es-MX/">
+  <link rel="alternate" hreflang="de-DE" href="https://m1zz.github.io/tetratint/de-DE/">
+  <link rel="alternate" hreflang="fr-FR" href="https://m1zz.github.io/tetratint/fr-FR/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/tetratint/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/tetratint/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/tetratint/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/tetratint/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/tetratint/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/tetratint/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/tetratint/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/tetratint/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/tetratint/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/tetratint/no/">
+  <link rel="alternate" hreflang="nl-NL" href="https://m1zz.github.io/tetratint/nl-NL/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/tetratint/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/tetratint/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/tetratint/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/tetratint/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TetraTint: brändivärit tummaan tilaan ja korkeaan kontrastiin Macilla">
+  <meta property="og:description" content="Kehittäjätyökalu Macille: tekee yhdestä väristä vaalean, tumman ja korkean kontrastin versiot ja tarkistaa WCAG-kontrastin, värinäön ja Dynamic Typen.">
+  <meta property="og:url" content="https://m1zz.github.io/tetratint/fi/">
+  <meta property="og:image" content="https://m1zz.github.io/tetratint/img/fi/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#0064D2}@media (prefers-color-scheme:dark){:root{--accent:#409CFF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<div class="wrap">
-  <div class="logo"><i></i><i></i><i></i><i></i></div>
-  <nav class="langs" aria-label="Kieli">
-    <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
-    <a href="../en/index.html" hreflang="en" lang="en">English</a>
-    <a href="../en-GB/index.html" hreflang="en-GB" lang="en-GB">English (UK)</a>
-    <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-    <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-    <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-    <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-    <a href="../es-MX/index.html" hreflang="es-MX" lang="es-MX">Español (México)</a>
-    <a href="../de-DE/index.html" hreflang="de-DE" lang="de-DE">Deutsch</a>
-    <a href="../fr-FR/index.html" hreflang="fr-FR" lang="fr-FR">Français</a>
-    <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-    <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-    <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-    <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-    <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-    <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-    <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-    <a href="../fi/index.html" hreflang="fi" lang="fi" aria-current="true">suomi</a>
-    <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-    <a href="../no/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-    <a href="../nl-NL/index.html" hreflang="nl-NL" lang="nl-NL">Nederlands</a>
-    <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-    <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-    <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-  </nav>
-  <h1>TetraTint</h1>
-  <p class="tag">Saavutettavuustyökalu omille väreille ja fonteille macOS:ssa</p>
-  <p class="desc">Aloita yhdestä perusväristä ja saat kaikki neljä vaaleaa, tummaa ja korkean kontrastin muunnelmaa. Tarkista WCAG-kontrasti, katso miltä väri näyttää värinäön puutteissa ja luo Dynamic Type -koodi omille fonteillesi.</p>
-  <div class="links">
-    <a href="support.html">Tuki</a>
-    <a href="privacy.html">Tietosuojaseloste</a>
-  </div>
-  <footer>© 2026 TetraTint</footer>
-</div>
+  <a class="skip" href="#main">Siirry sisältöön</a>
+  <header class="bar">
+    <a class="brand" href="../fi/"><img src="../icon.png" alt="" width="32" height="32">TetraTint</a>
+    <a class="lang-link" href="#languages">Kieli</a>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Yksi väri sisään,<br>neljä ulkoasua ulos</h1>
+        <p class="lead">Järjestelmävärit mukautuvat itse tummaan tilaan ja Lisää kontrastia -asetukseen. Brändivärisi eivät. TetraTint ottaa yhden vaalean tilan värin, tekee siitä versiot Vaalea, Vaalea korkea kontrasti, Tumma ja Tumma korkea kontrasti ja vie ne suoraan Xcodeen.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6789206198">Lataa ilmaiseksi Mac App Storesta</a><a class="try" href="#try">Kokeile brändiväriäsi ↓</a></div>
+        <p class="muted small">Kaikki ominaisuudet ovat ilmaisia. Vaatii macOS 14:n tai uudemman.</p>
+      </div>
+      <div class="plain"><img src="../img/fi/01-generator.jpg" alt="Yksi väri sisään, neljä ulkoasua ulos" width="600" height="350" decoding="async"></div>
+    </section>
+
+
+    <section class="reveal" id="try">
+      <h2>Kokeile brändiväriäsi</h2>
+      <p class="muted">Liitä hex-arvo tai napauta esiasetusta. Samalla laskulla kuin apissa näet heti kaikki neljä versiota ja niiden kontrastin.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Kokeile brändiväriäsi&quot;, &quot;lead&quot;: &quot;Liitä hex-arvo tai napauta esiasetusta. Samalla laskulla kuin apissa näet heti kaikki neljä versiota ja niiden kontrastin.&quot;, &quot;picker&quot;: &quot;Valitse väri&quot;, &quot;hex&quot;: &quot;Vaalean tilan perusväri, hex-arvo&quot;, &quot;presets&quot;: &quot;Esiasetukset&quot;, &quot;light&quot;: &quot;Vaalea (Any)&quot;, &quot;lightHC&quot;: &quot;Vaalea, korkea kontrasti&quot;, &quot;dark&quot;: &quot;Tumma&quot;, &quot;darkHC&quot;: &quot;Tumma, korkea kontrasti&quot;, &quot;ratio&quot;: &quot;%@:1 taustaa vasten&quot;, &quot;aa&quot;: &quot;AA-teksti&quot;, &quot;low&quot;: &quot;Matala&quot;, &quot;button&quot;: &quot;Painike&quot;, &quot;tint&quot;: &quot;Sävytetty teksti&quot;, &quot;footnote&quot;: &quot;Vaaleat kortit mitataan valkoista ja tummat mustaa vasten. Apissa hiot jokaisen kortin värinvalitsimella ja viet sen Contents.json-, .colorset- tai koodimuodossa.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Onko brändivärisi hukkunut tummassa tilassa?</h2>
+      <p>Vaaleassa tilassa valittu sininen näyttää mustalla sameelta, ja Lisää kontrastia -asetusta käyttävä tuskin saa tekstistä selvää. Värin etsiminen jokaiseen ulkoasuun ja kontrastin laskeminen käsin vie puoli päivää. TetraTint johtaa versiot samaan tapaan kuin järjestelmävärit muuttuvat ulkoasujen välillä ja näyttää heti, läpäiseekö kukin.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Tarkista kaikki käyttämäsi värit kerralla</h2>
+        <p>Liitä apin koko hex-lista, ja jokainen väri luokitellaan: käyttökelpoinen sellaisenaan, tarvitsee korkean kontrastin tai vain koristeluun.<br>Yksi klikkaus tekee ongelmavärista neljä versiota palettiisi. Siitä on apua myös App Storen saavutettavuusmerkinnän Riittävä kontrasti valmisteluun.</p>
+      </div>
+      <div class="plain"><img src="../img/fi/02-contrast.jpg" alt="Tarkista kaikki käyttämäsi värit kerralla" width="600" height="350" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Katso värisokean silmin</h2>
+        <p>Näe paletti protanopiana, deuteranopiana, tritanopiana ja harmaasävynä, ja saat varoituksen pareista, joita on vaikea erottaa.<br>Tuo värisokeille sopivat paletit Okabe–Ito, IBM ja Paul Tol yhdellä klikkauksella, tai näe koko appi samoin oikean yläkulman silmäpainikkeella.</p>
+      </div>
+      <div class="plain"><img src="../img/fi/03-color-vision.jpg" alt="Katso värisokean silmin" width="600" height="350" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Omat fontit seuraavat tekstikokoa</h2>
+        <p>Näe kaikki 11 tekstityyliä 7 koossa ja liu'uta säädintä nähdäksesi todelliset koot.<br>Syötä fontin PostScript-nimi, niin saat koodin UIKitille, SwiftUI:lle ja <code>@ScaledMetric</code>ille sekä koodin, joka vaihtaa asettelua suurella tekstillä.</p>
+      </div>
+      <div class="plain"><img src="../img/fi/04-dynamic-type.jpg" alt="Omat fontit seuraavat tekstikokoa" width="600" height="350" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Kolme askelta alkuun</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Anna perusväri</h3><p>Liitä hex, poimi väri pipetillä mistä tahansa näytöltä tai valitse esiasetus.</p></li>
+<li class="card"><span class="n">2</span><h3>Tarkista neljä versiota</h3><p>Katso kontrastimerkit ja hio brändiin sopimattomat versiot värinvalitsimella.</p></li>
+<li class="card"><span class="n">3</span><h3>Vie Xcodeen</h3><p>Kopioi tai tallenna Contents.json-, .colorset- tai UIKit- ja SwiftUI-koodina.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Miten versiot syntyvät ja mitä merkit tarkoittavat</h2>
+      <div class="card table">
+        <dl><div><dt>Vaalea (Any)</dt><dd>Värisi sellaisenaan</dd></div><div><dt>Vaalea, korkea kontrasti</dt><dd>Hieman kylläisempi ja tummennettu, kunnes valkoista vasten 4.5:1</dd></div><div><dt>Tumma</dt><dd>Hieman vaaleampi ja kirkkaampi (vaaleus +5, kylläisyys +3)</dd></div><div><dt>Tumma, korkea kontrasti</dt><dd>Vaalennettu, kunnes mustaa vasten 7:1</dd></div><div><dt>AA-teksti</dt><dd>Vähintään 4.5:1 taustaa vasten, sopii leipätekstiin</dd></div><div><dt>UI 3:1</dt><dd>Vähintään 3:1, riittää painikkeisiin ja kuvakkeisiin mutta ei tekstiin</dd></div><div><dt>Matala</dt><dd>Alle 3:1, älä käytä tekstiin, kuvakkeisiin tai tiloihin</dd></div><div><dt>Vienti</dt><dd>Contents.json · .colorset · UIKit · SwiftUI, tai koko paletti yhtenä .xcassets-tiedostona</dd></div></dl>
+      </div>
+      <p class="muted">Järjestelmävärien viitearvot ovat Applen Human Interface Guidelinesista ja voivat muuttua käyttöjärjestelmäpäivitysten myötä. Käytä julkaistussa apissa järjestelmävärien rajapintoja.</p>
+    </section>
+
+
+    <section class="reveal" id="pricing">
+      <h2>Kaikki ominaisuudet ovat ilmaisia</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>TetraTint</h3>
+          <ul><li>Neljän version luonti ja vienti</li><li>Hex-listan kontrastitarkistus</li><li>Värinäön simulointi ja värisokeille sopivat paletit</li><li>Dynamic Type -taulukko ja koodin luonti</li><li>Järjestelmävärien viitteet, paletin vienti .xcassets-muodossa</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Tue kehittäjää (vapaaehtoinen)</h3>
+          <ul><li>Mitään ei ole lukittu</li><li>Jos appi auttoi, voit antaa juomarahaa asetuksista</li></ul>
+          <p class="muted">Juomaraha ei muuta mitään ominaisuutta.</p>
+        </div>
+      </div>
+      <p class="muted">Ei tiliä, ei mainoksia. Paletti pysyy vain tällä Macilla.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Usein kysyttyä</h2>
+      <div class="faq"><details><summary>Luodut versiot eivät sovi brändiimme.</summary><p>Säädä mitä tahansa versiota sen kortin värinvalitsimella. Luo kaikki uudelleen hylkää käsin tehdyt muutokset ja johtaa kaiken uudelleen perusväristä.</p></details>
+<details><summary>Miten versiot lasketaan?</summary><p>Ne seuraavat sitä, miten Applen järjestelmävärit oikeasti muuttuvat ulkoasujen välillä: tummassa hieman vaaleampi ja kirkkaampi, vaaleassa korkeassa kontrastissa vähintään 4.5:1 valkoista vasten ja tummassa korkeassa kontrastissa vähintään 7:1 mustaa vasten.</p></details>
+<details><summary>Mitä värinäön simuloinnin varoitus tarkoittaa?</summary><p>Sitä, että simuloinnissa kahden värin ero (ΔE) laskee alle 12:n ja niitä on vaikea erottaa. Älä nojaa pelkkään väriin: lisää kuvakkeita, kuvioita tai tekstejä tai vaihda värisokeille sopivaan palettiin.</p></details>
+<details><summary>Miten saan oman fontin tukemaan Dynamic Typea?</summary><p>Syötä Dynamic Type -näkymässä fontin PostScript-nimi ja valitse tyyli, niin saat UIKit-, SwiftUI- ja <code>@ScaledMetric</code>-koodin. Saavutettavuuskoissa Body kasvaa yli kolminkertaiseksi, joten vältä kiinteitä korkeuksia ja lineLimit(1):tä.</p></details>
+<details><summary>Viedyt värit näyttävät erilaisilta kuin apin järjestelmävärit.</summary><p>Viitearvot ovat Human Interface Guidelinesista ja voivat vaihdella käyttöjärjestelmäversioiden välillä. Käytä järjestelmäväreihin aina UIColor- tai Color-rajapintaa.</p></details>
+<details><summary>Mihin palettini tallennetaan?</summary><p>Vain Maciisi. Mitään ei synkronoida pilveen eikä lähetetä minnekään. Lisätietoja tietosuojakäytännöstä.</p></details>
+<details><summary>Tallentuuko pipetillä poimittu väri?</summary><p>Ei. Vain valitun kohdan värin arvo luetaan ja otetaan työväriksi. Näytön kuvaa ei tallenneta eikä lähetetä.</p></details>
+<details><summary>Millä Maceilla appi toimii?</summary><p>macOS 14:llä (Sonoma) ja uudemmilla. Viennissä valitset itse, minne tiedostot tallennetaan.</p></details></div>
+      <p class="contact">Virheitä, ideoita tai kysyttävää? Kirjoita osoitteeseen <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>. Vastaamme yleensä 2–3 päivän kuluessa.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Brändivärit, jotka toimivat<br>kuin järjestelmävärit</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6789206198">Lataa ilmaiseksi Mac App Storesta</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Kieli"><a href="../" hreflang="en" lang="en">English</a>
+<a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../en-GB/" hreflang="en-GB" lang="en-GB">English (UK)</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es-MX/" hreflang="es-MX" lang="es-MX">Español (México)</a>
+<a href="../de-DE/" hreflang="de-DE" lang="de-DE">Deutsch</a>
+<a href="../fr-FR/" hreflang="fr-FR" lang="fr-FR">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi" aria-current="page">suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../no/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl-NL/" hreflang="nl-NL" lang="nl-NL">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Tietosuojakäytäntö</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 TetraTint</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

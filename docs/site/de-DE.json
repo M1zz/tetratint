@@ -1,0 +1,172 @@
+{
+  "title": "TetraTint: Markenfarben für Dunkelmodus und hohen Kontrast auf dem Mac",
+  "description": "Entwicklertool für den Mac: macht aus einer Farbe helle, dunkle und kontrastreiche Varianten und prüft WCAG-Kontrast, Farbsehen und Dynamic Type.",
+  "hero": {
+    "headline": "Eine Farbe rein,\nvier Darstellungen raus",
+    "lead": "Systemfarben passen sich von selbst an Dunkelmodus und „Kontrast erhöhen“ an. Deine Markenfarben nicht. TetraTint nimmt eine Farbe aus dem hellen Modus, erzeugt die Varianten Hell, Hell mit hohem Kontrast, Dunkel und Dunkel mit hohem Kontrast und exportiert sie direkt nach Xcode.",
+    "cta": "Kostenlos im Mac App Store laden",
+    "note": "Alle Funktionen sind kostenlos. Ab macOS 14."
+  },
+  "demo": {
+    "title": "Probier deine Markenfarbe aus",
+    "lead": "Füge einen Hex-Wert ein oder tippe auf eine Vorgabe. Mit derselben Berechnung wie in der App siehst du sofort alle vier Varianten und ihren Kontrast.",
+    "picker": "Farbe wählen",
+    "hex": "Grundfarbe für den hellen Modus, Hex-Wert",
+    "presets": "Vorgaben",
+    "light": "Hell (Standard)",
+    "lightHC": "Hell, hoher Kontrast",
+    "dark": "Dunkel",
+    "darkHC": "Dunkel, hoher Kontrast",
+    "ratio": "%@:1 zum Hintergrund",
+    "aa": "AA-Text",
+    "low": "Niedrig",
+    "button": "Button",
+    "tint": "Tint-Beschriftung",
+    "footnote": "Helle Karten werden gegen Weiß gemessen, dunkle gegen Schwarz. In der App feinjustierst du jede Karte mit der Farbauswahl und exportierst als Contents.json, .colorset oder Code."
+  },
+  "problem": {
+    "title": "Ist deine Markenfarbe im Dunkelmodus schon mal untergegangen?",
+    "text": "Das Blau aus dem hellen Modus wirkt auf Schwarz trüb, und wer „Kontrast erhöhen“ aktiviert hat, kann den Text kaum lesen. Für jede Darstellung eine Farbe suchen und jeden Kontrast von Hand nachrechnen kostet einen halben Tag. TetraTint leitet die Varianten so ab, wie sich Systemfarben zwischen den Darstellungen verändern, und zeigt sofort, ob jede besteht."
+  },
+  "features": [
+    {
+      "title": "Alle Farben auf einmal prüfen",
+      "text": "Füge die komplette Hex-Liste deiner App ein, und jede Farbe wird eingeordnet: unverändert nutzbar, hoher Kontrast nötig oder nur zur Dekoration.\nEine Problemfarbe wird mit einem Klick zu vier Varianten in deiner Palette. So bist du schnell bereit für die Barrierefreiheitsangabe „Ausreichender Kontrast“ im App Store.",
+      "shot": "02-contrast"
+    },
+    {
+      "title": "Mit den Augen farbenfehlsichtiger Menschen sehen",
+      "text": "Sieh deine Palette mit Protanopie, Deuteranopie, Tritanopie und in Graustufen, und erhalte eine Warnung für Paare, die kaum noch zu unterscheiden sind.\nLade die farbenblindsicheren Paletten Okabe–Ito, IBM und Paul Tol mit einem Klick, oder zeig mit dem Augensymbol oben rechts die ganze App so an.",
+      "shot": "03-color-vision"
+    },
+    {
+      "title": "Eigene Schriften folgen der Textgröße",
+      "text": "Sieh alle 11 Textstile in 7 Größenstufen und verschiebe einen Regler, um echte Größen zu sehen.\nGib den PostScript-Namen deiner Schrift ein und erhalte Code für UIKit, SwiftUI und `@ScaledMetric` sowie Code, der bei großer Schrift das Layout umstellt.",
+      "shot": "04-dynamic-type"
+    }
+  ],
+  "steps": {
+    "title": "In drei Schritten startklar",
+    "items": [
+      {
+        "title": "Grundfarbe eingeben",
+        "text": "Hex einfügen, mit der Pipette irgendwo auf dem Bildschirm aufnehmen oder eine Vorgabe wählen."
+      },
+      {
+        "title": "Vier Varianten prüfen",
+        "text": "Kontrast an den Abzeichen ablesen und unpassende Varianten mit der Farbauswahl anpassen."
+      },
+      {
+        "title": "Nach Xcode exportieren",
+        "text": "Als Contents.json, .colorset oder UIKit- und SwiftUI-Code kopieren oder sichern."
+      }
+    ]
+  },
+  "reference": {
+    "title": "So entstehen die Varianten, das bedeuten die Abzeichen",
+    "rows": [
+      [
+        "Hell (Standard)",
+        "Deine Farbe wie eingegeben"
+      ],
+      [
+        "Hell, hoher Kontrast",
+        "Etwas gesättigter, abgedunkelt bis 4.5:1 auf Weiß"
+      ],
+      [
+        "Dunkel",
+        "Etwas heller und kräftiger (Helligkeit +5, Sättigung +3)"
+      ],
+      [
+        "Dunkel, hoher Kontrast",
+        "Aufgehellt bis 7:1 auf Schwarz"
+      ],
+      [
+        "AA-Text",
+        "Mindestens 4.5:1 zum Hintergrund, geeignet für Fließtext"
+      ],
+      [
+        "UI 3:1",
+        "Mindestens 3:1, reicht für Buttons und Symbole, nicht für Text"
+      ],
+      [
+        "Niedrig",
+        "Unter 3:1, nicht für Text, Symbole oder Statusanzeigen"
+      ],
+      [
+        "Export",
+        "Contents.json · .colorset · UIKit · SwiftUI, oder die ganze Palette als ein .xcassets"
+      ]
+    ],
+    "note": "Die Referenzwerte der Systemfarben stammen aus Apples Human Interface Guidelines und können sich mit OS-Updates ändern. Nutze in deiner fertigen App die APIs für Systemfarben."
+  },
+  "pricing": {
+    "title": "Alle Funktionen sind kostenlos",
+    "free": {
+      "name": "TetraTint",
+      "items": [
+        "Vier Varianten erzeugen und exportieren",
+        "Kontrastprüfung für eine Liste von Hex-Werten",
+        "Farbsehen-Simulation und farbenblindsichere Paletten",
+        "Dynamic-Type-Tabelle und Code-Erzeugung",
+        "Systemfarben-Referenz, Palettenexport als .xcassets"
+      ]
+    },
+    "pro": {
+      "name": "Den Entwickler unterstützen (freiwillig)",
+      "items": [
+        "Nichts ist gesperrt",
+        "Wenn es dir geholfen hat, kannst du in den Einstellungen ein Trinkgeld geben"
+      ],
+      "note": "Ein Trinkgeld schaltet keine Funktionen frei."
+    },
+    "note": "Kein Konto, keine Werbung. Deine Palette bleibt nur auf diesem Mac."
+  },
+  "faq": {
+    "title": "Häufige Fragen",
+    "items": [
+      {
+        "q": "Die erzeugten Varianten passen nicht zu meiner Marke.",
+        "a": "Passe jede Variante mit der Farbauswahl auf ihrer Karte an. „Alle neu erzeugen“ verwirft deine Änderungen und leitet alles neu aus der Grundfarbe ab."
+      },
+      {
+        "q": "Wie werden die Varianten berechnet?",
+        "a": "Sie folgen dem, wie sich Apples Systemfarben tatsächlich zwischen den Darstellungen verändern: im Dunkelmodus etwas heller und kräftiger, bei Hell mit hohem Kontrast mindestens 4.5:1 auf Weiß, bei Dunkel mit hohem Kontrast mindestens 7:1 auf Schwarz."
+      },
+      {
+        "q": "Was bedeutet eine Warnung bei der Farbsehen-Simulation?",
+        "a": "Unter dieser Simulation fällt der Unterschied zweier Farben unter ΔE 12, sie sind kaum zu unterscheiden. Verlass dich nicht nur auf Farbe: ergänze Symbole, Muster oder Beschriftungen, oder wechsle zu einer sicheren Palette."
+      },
+      {
+        "q": "Wie bringe ich einer eigenen Schrift Dynamic Type bei?",
+        "a": "Gib unter Dynamic Type den PostScript-Namen der Schrift ein und wähle einen Stil, dann erhältst du Code für UIKit, SwiftUI und `@ScaledMetric`. In den Bedienungshilfen-Größen wird Body mehr als dreimal so groß, vermeide also feste Höhen und lineLimit(1)."
+      },
+      {
+        "q": "Exportierte Farben sehen anders aus als die Systemfarben in meiner App.",
+        "a": "Die Referenzwerte stammen aus den Human Interface Guidelines und können sich zwischen OS-Versionen ändern. Verwende für Systemfarben immer die APIs UIColor oder Color."
+      },
+      {
+        "q": "Wo wird meine Palette gespeichert?",
+        "a": "Nur auf deinem Mac. Nichts wird mit der Cloud synchronisiert oder irgendwohin gesendet. Mehr dazu in der Datenschutzerklärung."
+      },
+      {
+        "q": "Wird eine mit der Pipette aufgenommene Farbe gespeichert?",
+        "a": "Nein. Es wird nur der Farbwert an der gewählten Stelle gelesen und als Arbeitsfarbe verwendet. Kein Bildschirmbild wird gespeichert oder gesendet."
+      },
+      {
+        "q": "Auf welchen Macs läuft die App?",
+        "a": "Ab macOS 14 (Sonoma). Beim Export wählst du selbst, wo die Dateien gesichert werden."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Markenfarben, die sich\nwie Systemfarben verhalten",
+    "cta": "Kostenlos im Mac App Store laden"
+  },
+  "ui": {
+    "skip": "Zum Inhalt springen",
+    "languages": "Sprache",
+    "privacy": "Datenschutzerklärung",
+    "contact": "Fehler, Ideen oder Fragen? Schreib an {email}. Meist kommt die Antwort innerhalb von 2–3 Tagen."
+  }
+}

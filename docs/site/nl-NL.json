@@ -1,0 +1,172 @@
+{
+  "title": "TetraTint: merkkleuren voor donkere modus en hoog contrast op de Mac",
+  "description": "Ontwikkelaarstool voor de Mac: maakt van één kleur lichte, donkere en hoogcontrastvarianten en checkt WCAG-contrast, kleurenblindheid en Dynamic Type.",
+  "hero": {
+    "headline": "Eén kleur erin,\nvier weergaven eruit",
+    "lead": "Systeemkleuren passen zich vanzelf aan donkere modus en Verhoog contrast aan. Je merkkleuren niet. TetraTint neemt één kleur uit de lichte modus, maakt de varianten Licht, Licht hoog contrast, Donker en Donker hoog contrast, en exporteert ze meteen naar Xcode.",
+    "cta": "Gratis downloaden in de Mac App Store",
+    "note": "Alle functies zijn gratis. Vereist macOS 14 of nieuwer."
+  },
+  "demo": {
+    "title": "Probeer je merkkleur",
+    "lead": "Plak een hexwaarde of tik op een voorinstelling. Met dezelfde berekening als in de app zie je direct alle vier varianten en hun contrast.",
+    "picker": "Kies een kleur",
+    "hex": "Basiskleur voor lichte modus, hexwaarde",
+    "presets": "Voorinstellingen",
+    "light": "Licht (standaard)",
+    "lightHC": "Licht, hoog contrast",
+    "dark": "Donker",
+    "darkHC": "Donker, hoog contrast",
+    "ratio": "%@:1 t.o.v. achtergrond",
+    "aa": "AA-tekst",
+    "low": "Laag",
+    "button": "Knop",
+    "tint": "Tintlabel",
+    "footnote": "Lichte kaarten worden tegen wit gemeten, donkere tegen zwart. In de app verfijn je elke kaart met de kleurkiezer en exporteer je naar Contents.json, .colorset of code."
+  },
+  "problem": {
+    "title": "Is je merkkleur weleens verdwenen in donkere modus?",
+    "text": "Het blauw dat je in lichte modus koos, oogt dof op zwart, en wie Verhoog contrast aan heeft, kan de tekst amper lezen. Voor elke weergave een kleur zoeken en elk contrast met de hand narekenen kost een halve dag. TetraTint leidt de varianten af zoals systeemkleuren tussen weergaven verschuiven, en laat meteen zien of elke variant voldoet."
+  },
+  "features": [
+    {
+      "title": "Controleer al je kleuren in één keer",
+      "text": "Plak de complete hexlijst van je app en elke kleur krijgt een oordeel: kan zo blijven, hoogcontrastvariant nodig of alleen voor decoratie.\nMet één klik wordt een probleemkleur vier varianten in je palet. Handig bij het voorbereiden van het toegankelijkheidslabel Voldoende contrast in de App Store.",
+      "shot": "02-contrast"
+    },
+    {
+      "title": "Kijk door de ogen van kleurenblinden",
+      "text": "Bekijk je palet met protanopie, deuteranopie, tritanopie en in grijstinten, met een waarschuwing voor elk paar dat lastig uit elkaar te houden wordt.\nLaad de kleurenblindveilige paletten Okabe–Ito, IBM en Paul Tol met één klik, of bekijk de hele app zo met de oogknop rechtsboven.",
+      "shot": "03-color-vision"
+    },
+    {
+      "title": "Eigen lettertypen volgen de tekstgrootte",
+      "text": "Bekijk alle 11 tekststijlen in 7 groottes en sleep een schuifknop om de echte groottes te zien.\nVoer de PostScript-naam van je lettertype in en krijg code voor UIKit, SwiftUI en `@ScaledMetric`, plus code die bij grote tekst de lay-out omzet.",
+      "shot": "04-dynamic-type"
+    }
+  ],
+  "steps": {
+    "title": "In drie stappen aan de slag",
+    "items": [
+      {
+        "title": "Voer een basiskleur in",
+        "text": "Plak een hex, pak een kleur waar dan ook op het scherm met de pipet of kies een voorinstelling."
+      },
+      {
+        "title": "Controleer de vier varianten",
+        "text": "Lees de contrastlabels en pas varianten die niet bij je merk passen aan met de kleurkiezer."
+      },
+      {
+        "title": "Exporteer naar Xcode",
+        "text": "Kopieer of bewaar als Contents.json, .colorset of UIKit- en SwiftUI-code."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Zo ontstaan de varianten en dit betekenen de labels",
+    "rows": [
+      [
+        "Licht (standaard)",
+        "Je kleur zoals ingevoerd"
+      ],
+      [
+        "Licht, hoog contrast",
+        "Iets verzadigder en donkerder tot 4.5:1 op wit"
+      ],
+      [
+        "Donker",
+        "Iets lichter en levendiger (helderheid +5, verzadiging +3)"
+      ],
+      [
+        "Donker, hoog contrast",
+        "Lichter tot 7:1 op zwart"
+      ],
+      [
+        "AA-tekst",
+        "Minstens 4.5:1 t.o.v. de achtergrond, geschikt voor lopende tekst"
+      ],
+      [
+        "UI 3:1",
+        "Minstens 3:1, goed voor knoppen en symbolen, niet voor tekst"
+      ],
+      [
+        "Laag",
+        "Onder 3:1, niet gebruiken voor tekst, symbolen of statussen"
+      ],
+      [
+        "Export",
+        "Contents.json · .colorset · UIKit · SwiftUI, of het hele palet als één .xcassets"
+      ]
+    ],
+    "note": "De referentiewaarden van systeemkleuren komen uit Apples Human Interface Guidelines en kunnen veranderen met systeemupdates. Gebruik in je uitgebrachte app de API's voor systeemkleuren."
+  },
+  "pricing": {
+    "title": "Alle functies zijn gratis",
+    "free": {
+      "name": "TetraTint",
+      "items": [
+        "Vier varianten maken en exporteren",
+        "Contrastcontrole voor een lijst met hexwaarden",
+        "Simulatie van kleurenzicht en kleurenblindveilige paletten",
+        "Dynamic Type-tabel en codegeneratie",
+        "Overzicht van systeemkleuren, palet exporteren als .xcassets"
+      ]
+    },
+    "pro": {
+      "name": "Steun de ontwikkelaar (vrijwillig)",
+      "items": [
+        "Er zit niets op slot",
+        "Heb je er wat aan, dan kun je via Instellingen een fooi geven"
+      ],
+      "note": "Een fooi verandert niets aan de functies."
+    },
+    "note": "Geen account, geen advertenties. Je palet blijft alleen op deze Mac."
+  },
+  "faq": {
+    "title": "Veelgestelde vragen",
+    "items": [
+      {
+        "q": "De gemaakte varianten passen niet bij ons merk.",
+        "a": "Pas elke variant aan met de kleurkiezer op de kaart. Alles opnieuw maken gooit je handmatige aanpassingen weg en leidt alles opnieuw af van de basiskleur."
+      },
+      {
+        "q": "Hoe worden de varianten berekend?",
+        "a": "Ze volgen hoe Apples systeemkleuren echt verschuiven tussen weergaven: in donker iets lichter en levendiger, minstens 4.5:1 op wit voor licht hoog contrast en minstens 7:1 op zwart voor donker hoog contrast."
+      },
+      {
+        "q": "Wat betekent een waarschuwing bij de simulatie van kleurenzicht?",
+        "a": "Dat het verschil tussen twee kleuren (ΔE) in die simulatie onder 12 zakt en ze moeilijk te onderscheiden zijn. Vertrouw niet alleen op kleur: voeg symbolen, patronen of labels toe, of stap over op een veilig palet."
+      },
+      {
+        "q": "Hoe laat ik een eigen lettertype Dynamic Type ondersteunen?",
+        "a": "Voer bij Dynamic Type de PostScript-naam van het lettertype in en kies een stijl voor code in UIKit, SwiftUI en `@ScaledMetric`. In toegankelijkheidsgroottes wordt Body meer dan drie keer zo groot, dus vermijd vaste hoogtes en lineLimit(1)."
+      },
+      {
+        "q": "Geëxporteerde kleuren zien er anders uit dan de systeemkleuren in mijn app.",
+        "a": "De referentiewaarden komen uit de Human Interface Guidelines en kunnen per systeemversie verschillen. Gebruik voor systeemkleuren altijd de API's UIColor of Color."
+      },
+      {
+        "q": "Waar wordt mijn palet bewaard?",
+        "a": "Alleen op je Mac. Er wordt niets met de cloud gesynchroniseerd of ergens heen gestuurd. Zie het privacybeleid voor details."
+      },
+      {
+        "q": "Wordt een kleur die ik met de pipet pak bewaard?",
+        "a": "Nee. Alleen de kleurwaarde op het gekozen punt wordt gelezen en als werkkleur gebruikt. Er wordt geen schermafbeelding bewaard of verstuurd."
+      },
+      {
+        "q": "Op welke Macs werkt de app?",
+        "a": "Op macOS 14 (Sonoma) of nieuwer. Bij het exporteren kies je zelf waar de bestanden worden bewaard."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Merkkleuren die zich gedragen\nals systeemkleuren",
+    "cta": "Gratis downloaden in de Mac App Store"
+  },
+  "ui": {
+    "skip": "Naar de inhoud",
+    "languages": "Taal",
+    "privacy": "Privacybeleid",
+    "contact": "Fouten, ideeën of vragen? Mail naar {email}. Meestal antwoorden we binnen 2–3 dagen."
+  }
+}

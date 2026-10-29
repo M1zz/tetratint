@@ -1,0 +1,115 @@
+{
+  "title": "TetraTint: brandfarver til mørk tilstand og høj kontrast på Mac",
+  "description": "Udviklerværktøj til Mac, der laver lyse, mørke og højkontrast-varianter af én farve og tjekker WCAG-kontrast, farveblindhed og Dynamic Type. Gratis.",
+  "hero": {
+    "headline": "Én farve ind,\nfire udseender ud",
+    "lead": "Systemfarver tilpasser sig selv mørk tilstand og Øg kontrast. Dine brandfarver gør ikke. TetraTint tager én farve fra lys tilstand, laver varianterne Lys, Lys med høj kontrast, Mørk og Mørk med høj kontrast og eksporterer dem direkte til Xcode.",
+    "cta": "Hent gratis i Mac App Store",
+    "note": "Alle funktioner er gratis. Kræver macOS 14 eller nyere."
+  },
+  "demo": {
+    "title": "Prøv din brandfarve",
+    "lead": "Indsæt en hex-værdi, eller tryk på en forudindstilling. Med samme beregning som i appen ser du straks alle fire varianter og deres kontrast.",
+    "picker": "Vælg farve",
+    "hex": "Grundfarve til lys tilstand, hex-værdi",
+    "presets": "Forudindstillinger",
+    "light": "Lys (Any)",
+    "lightHC": "Lys, høj kontrast",
+    "dark": "Mørk",
+    "darkHC": "Mørk, høj kontrast",
+    "ratio": "%@:1 mod baggrund",
+    "aa": "AA-tekst",
+    "low": "Lav",
+    "button": "Knap",
+    "tint": "Farvet etiket",
+    "footnote": "Lyse kort måles mod hvid, mørke mod sort. I appen finjusterer du hvert kort med farvevælgeren og eksporterer som Contents.json, .colorset eller kode."
+  },
+  "problem": {
+    "title": "Er din brandfarve forsvundet i mørk tilstand?",
+    "text": "Den blå, du valgte i lys tilstand, ser mudret ud på sort, og dem med Øg kontrast slået til kan knap læse teksten. At finde en farve til hvert udseende og regne kontrasten ud i hånden tager en halv dag. TetraTint udleder varianterne, som systemfarver skifter mellem udseender, og viser med det samme, om hver enkelt består."
+  },
+  "features": [
+    {
+      "title": "Tjek alle dine farver på én gang",
+      "text": "Indsæt hele appens hex-liste, og hver farve bliver vurderet: kan bruges, som den er, kræver høj kontrast eller kun til pynt.\nEt klik gør en problemfarve til fire varianter i din palet. Det er en nem vej til at gøre klar til tilgængelighedsmærket Tilstrækkelig kontrast i App Store.",
+      "shot": "02-contrast"
+    },
+    {
+      "title": "Se med farveblindes øjne",
+      "text": "Se paletten med protanopi, deuteranopi, tritanopi og i gråtoner, og få en advarsel om par, der bliver svære at skelne.\nHent de farveblindvenlige paletter Okabe–Ito, IBM og Paul Tol med ét klik, eller brug øjeknappen øverst til højre til at se hele appen sådan.",
+      "shot": "03-color-vision"
+    },
+    {
+      "title": "Egne skrifttyper følger tekststørrelsen",
+      "text": "Se alle 11 tekststile i 7 størrelser, og træk i en skyder for at se de rigtige størrelser.\nIndtast skriftens PostScript-navn, og få kode til UIKit, SwiftUI og `@ScaledMetric` plus kode, der skifter layout ved stor tekst.",
+      "shot": "04-dynamic-type"
+    }
+  ],
+  "steps": {
+    "title": "Kom i gang i tre trin",
+    "items": [
+      {"title": "Tilføj en grundfarve", "text": "Indsæt en hex, tag en farve hvor som helst på skærmen med pipetten, eller vælg en forudindstilling."},
+      {"title": "Tjek de fire varianter", "text": "Læs kontrastmærkerne, og justér varianter, der ikke passer til brandet, med farvevælgeren."},
+      {"title": "Eksportér til Xcode", "text": "Kopiér eller gem som Contents.json, .colorset eller UIKit- og SwiftUI-kode."}
+    ]
+  },
+  "reference": {
+    "title": "Sådan laves varianterne, og det betyder mærkerne",
+    "rows": [
+      ["Lys (Any)", "Din farve, som du skrev den"],
+      ["Lys, høj kontrast", "Lidt mere mættet og gjort mørkere, til den når 4.5:1 på hvid"],
+      ["Mørk", "Lidt lysere og mere klar (lyshed +5, mætning +3)"],
+      ["Mørk, høj kontrast", "Gjort lysere, til den når 7:1 på sort"],
+      ["AA-tekst", "Mindst 4.5:1 mod baggrunden, fin til brødtekst"],
+      ["UI 3:1", "Mindst 3:1, fin til knapper og ikoner, men ikke til tekst"],
+      ["Lav", "Under 3:1, brug den ikke til tekst, ikoner eller status"],
+      ["Eksport", "Contents.json · .colorset · UIKit · SwiftUI, eller hele paletten som én .xcassets"]
+    ],
+    "note": "Referenceværdierne for systemfarver stammer fra Apples Human Interface Guidelines og kan ændre sig med systemopdateringer. I den færdige app skal du bruge API'erne til systemfarver."
+  },
+  "pricing": {
+    "title": "Alle funktioner er gratis",
+    "free": {
+      "name": "TetraTint",
+      "items": [
+        "Lav og eksportér fire varianter",
+        "Kontrasttjek af en liste med hex-værdier",
+        "Simulering af farvesyn og farveblindvenlige paletter",
+        "Dynamic Type-tabel og kodegenerering",
+        "Oversigt over systemfarver, eksport af palet som .xcassets"
+      ]
+    },
+    "pro": {
+      "name": "Støt udvikleren (valgfrit)",
+      "items": [
+        "Intet er låst",
+        "Har den hjulpet dig, kan du give drikkepenge under Indstillinger"
+      ],
+      "note": "Drikkepenge ændrer ingen funktioner."
+    },
+    "note": "Ingen konto, ingen reklamer. Din palet bliver kun på denne Mac."
+  },
+  "faq": {
+    "title": "Spørgsmål og svar",
+    "items": [
+      {"q": "De genererede varianter passer ikke til vores brand.", "a": "Justér hver variant med farvevælgeren på dens kort. Lav alle om kasserer dine manuelle ændringer og udleder alt igen fra grundfarven."},
+      {"q": "Hvordan beregnes varianterne?", "a": "De følger, hvordan Apples systemfarver faktisk skifter mellem udseender: lidt lysere og klarere i mørk, mindst 4.5:1 på hvid i lys med høj kontrast og mindst 7:1 på sort i mørk med høj kontrast."},
+      {"q": "Hvad betyder en advarsel i farvesynssimuleringen?", "a": "At forskellen mellem to farver (ΔE) falder under 12 i den simulering, så de er svære at skelne. Brug ikke farve alene: tilføj ikoner, mønstre eller tekst, eller skift til en farveblindvenlig palet."},
+      {"q": "Hvordan får jeg en egen skrifttype til at understøtte Dynamic Type?", "a": "Indtast skriftens PostScript-navn under Dynamic Type, og vælg en stil for at få kode til UIKit, SwiftUI og `@ScaledMetric`. Ved tilgængelighedsstørrelser bliver Body over tre gange større, så undgå faste højder og lineLimit(1)."},
+      {"q": "Eksporterede farver ser anderledes ud end systemfarverne i min app.", "a": "Referenceværdierne stammer fra Human Interface Guidelines og kan ændre sig mellem systemversioner. Brug altid API'erne UIColor eller Color til systemfarver."},
+      {"q": "Hvor gemmes min palet?", "a": "Kun på din Mac. Intet synkroniseres til skyen eller sendes nogen steder hen. Se privatlivspolitikken for detaljer."},
+      {"q": "Gemmes en farve, jeg tager med pipetten?", "a": "Nej. Kun farveværdien i det valgte punkt læses og bruges som arbejdsfarve. Intet billede af skærmen gemmes eller sendes."},
+      {"q": "Hvilke Mac-computere virker den på?", "a": "macOS 14 (Sonoma) eller nyere. Når du eksporterer, vælger du selv, hvor filerne gemmes."}
+    ]
+  },
+  "closing": {
+    "headline": "Brandfarver, der opfører sig\nsom systemfarver",
+    "cta": "Hent gratis i Mac App Store"
+  },
+  "ui": {
+    "skip": "Spring til indhold",
+    "languages": "Sprog",
+    "privacy": "Privatlivspolitik",
+    "contact": "Fejl, idéer eller spørgsmål? Skriv til {email}. Vi svarer normalt inden for 2–3 dage."
+  }
+}

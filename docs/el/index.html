@@ -1,122 +1,192 @@
 <!doctype html>
 <html lang="el">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TetraTint — Προσβασιμότητα για προσαρμοσμένα χρώματα και γραμματοσειρές στο macOS</title>
-<meta name="description" content="Εργαλείο για προγραμματιστές macOS που δημιουργεί παραλλαγές φωτεινής, σκοτεινής και υψηλής αντίθεσης για προσαρμοσμένα χρώματα, ελέγχει την αντίθεση WCAG, προσομοιώνει την αχρωματοψία και παράγει κώδικα Dynamic Type.">
-<link rel="canonical" href="https://m1zz.github.io/tetratint/el/">
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/tetratint/ko/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/tetratint/en/">
-<link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/tetratint/en-GB/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/tetratint/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/tetratint/zh-Hant/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/tetratint/ja/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/tetratint/ru/">
-<link rel="alternate" hreflang="es-MX" href="https://m1zz.github.io/tetratint/es-MX/">
-<link rel="alternate" hreflang="de-DE" href="https://m1zz.github.io/tetratint/de-DE/">
-<link rel="alternate" hreflang="fr-FR" href="https://m1zz.github.io/tetratint/fr-FR/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/tetratint/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/tetratint/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/tetratint/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/tetratint/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/tetratint/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/tetratint/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/tetratint/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/tetratint/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/tetratint/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/tetratint/no/">
-<link rel="alternate" hreflang="nl-NL" href="https://m1zz.github.io/tetratint/nl-NL/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/tetratint/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/tetratint/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/tetratint/tr/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/tetratint/">
-<style>
-  :root {
-    --bg: #f5f5f7; --card: #ffffff; --text: #1d1d1f; --muted: #6e6e73;
-    --border: #e3e3e6; --accent: #0a84ff; --ok: #34c759;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg:#000; --card:#1c1c1e; --text:#f5f5f7; --muted:#98989d; --border:#2c2c2e; --accent:#0a84ff; --ok:#30d158; }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--bg); color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", "Apple SD Gothic Neo", sans-serif;
-    line-height: 1.7; -webkit-font-smoothing: antialiased;
-  }
-  .logo {
-    width: 56px; height: 56px; border-radius: 14px; display: grid;
-    grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0,0,0,.15); margin-bottom: 20px;
-  }
-  .logo i { display: block; }
-  .logo i:nth-child(1){ background:#0a84ff; }
-  .logo i:nth-child(2){ background:#0060df; }
-  .logo i:nth-child(3){ background:#5ac8fa; }
-  .logo i:nth-child(4){ background:#004299; }
-  nav.langs { display: flex; gap: 6px; flex-wrap: wrap; margin: 0 0 24px; }
-  nav.langs a {
-    border: 1px solid var(--border); color: var(--muted); font-size: 14px;
-    padding: 3px 12px; border-radius: 999px; text-decoration: none;
-  }
-  nav.langs a[aria-current="true"] { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  footer { color: var(--muted); font-size: 14px; text-align: center; margin-top: 40px; }
-
-  body { min-height: 100vh; display: grid; place-items: center; }
-  .wrap { max-width: 620px; padding: 48px 24px; text-align: center; }
-  .logo { width: 88px; height: 88px; border-radius: 20px; margin: 0 auto 24px; box-shadow: 0 6px 24px rgba(0,0,0,.2); }
-  nav.langs { justify-content: center; }
-  h1 { font-size: 40px; letter-spacing: -.03em; margin: 0 0 8px; }
-  p.tag { color: var(--muted); font-size: 18px; margin: 0 0 20px; }
-  p.desc { margin: 0 0 32px; }
-  .links { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
-  .links a {
-    background: var(--card); border: 1px solid var(--border); color: var(--text);
-    text-decoration: none; padding: 14px 24px; border-radius: 14px; font-weight: 600;
-  }
-  .links a:hover { border-color: var(--accent); color: var(--accent); }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TetraTint: χρώματα επωνυμίας για σκούρα λειτουργία και υψηλή αντίθεση στο Mac</title>
+  <meta name="description" content="Εργαλείο για Mac: από ένα χρώμα φτιάχνει φωτεινές, σκούρες και παραλλαγές υψηλής αντίθεσης και ελέγχει αντίθεση WCAG, αχρωματοψία και Dynamic Type.">
+  <meta name="theme-color" content="#0064D2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6789206198">
+  <link rel="canonical" href="https://m1zz.github.io/tetratint/el/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/tetratint/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/tetratint/ko/">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/tetratint/en-GB/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/tetratint/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/tetratint/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/tetratint/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/tetratint/ru/">
+  <link rel="alternate" hreflang="es-MX" href="https://m1zz.github.io/tetratint/es-MX/">
+  <link rel="alternate" hreflang="de-DE" href="https://m1zz.github.io/tetratint/de-DE/">
+  <link rel="alternate" hreflang="fr-FR" href="https://m1zz.github.io/tetratint/fr-FR/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/tetratint/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/tetratint/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/tetratint/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/tetratint/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/tetratint/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/tetratint/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/tetratint/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/tetratint/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/tetratint/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/tetratint/no/">
+  <link rel="alternate" hreflang="nl-NL" href="https://m1zz.github.io/tetratint/nl-NL/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/tetratint/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/tetratint/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/tetratint/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/tetratint/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TetraTint: χρώματα επωνυμίας για σκούρα λειτουργία και υψηλή αντίθεση στο Mac">
+  <meta property="og:description" content="Εργαλείο για Mac: από ένα χρώμα φτιάχνει φωτεινές, σκούρες και παραλλαγές υψηλής αντίθεσης και ελέγχει αντίθεση WCAG, αχρωματοψία και Dynamic Type.">
+  <meta property="og:url" content="https://m1zz.github.io/tetratint/el/">
+  <meta property="og:image" content="https://m1zz.github.io/tetratint/img/el/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#0064D2}@media (prefers-color-scheme:dark){:root{--accent:#409CFF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<div class="wrap">
-  <div class="logo"><i></i><i></i><i></i><i></i></div>
-  <nav class="langs" aria-label="Γλώσσα">
-    <a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a>
-    <a href="../en/index.html" hreflang="en" lang="en">English</a>
-    <a href="../en-GB/index.html" hreflang="en-GB" lang="en-GB">English (UK)</a>
-    <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-    <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-    <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-    <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-    <a href="../es-MX/index.html" hreflang="es-MX" lang="es-MX">Español (México)</a>
-    <a href="../de-DE/index.html" hreflang="de-DE" lang="de-DE">Deutsch</a>
-    <a href="../fr-FR/index.html" hreflang="fr-FR" lang="fr-FR">Français</a>
-    <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-    <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-    <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-    <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-    <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-    <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-    <a href="../el/index.html" hreflang="el" lang="el" aria-current="true">Ελληνικά</a>
-    <a href="../fi/index.html" hreflang="fi" lang="fi">suomi</a>
-    <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-    <a href="../no/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-    <a href="../nl-NL/index.html" hreflang="nl-NL" lang="nl-NL">Nederlands</a>
-    <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-    <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-    <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-  </nav>
-  <h1>TetraTint</h1>
-  <p class="tag">Προσβασιμότητα για προσαρμοσμένα χρώματα και γραμματοσειρές στο macOS</p>
-  <p class="desc">Ξεκινήστε από ένα βασικό χρώμα και πάρτε και τις τέσσερις παραλλαγές για φωτεινή, σκοτεινή και υψηλή αντίθεση, ελέγξτε την αντίθεση WCAG, δείτε πώς φαίνεται σε άτομα με αχρωματοψία και δημιουργήστε κώδικα Dynamic Type για τις προσαρμοσμένες γραμματοσειρές σας.</p>
-  <div class="links">
-    <a href="support.html">Υποστήριξη</a>
-    <a href="privacy.html">Πολιτική απορρήτου</a>
-  </div>
-  <footer>© 2026 TetraTint</footer>
-</div>
+  <a class="skip" href="#main">Μετάβαση στο περιεχόμενο</a>
+  <header class="bar">
+    <a class="brand" href="../el/"><img src="../icon.png" alt="" width="32" height="32">TetraTint</a>
+    <a class="lang-link" href="#languages">Γλώσσα</a>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Ένα χρώμα μέσα,<br>τέσσερις εμφανίσεις έξω</h1>
+        <p class="lead">Τα χρώματα συστήματος προσαρμόζονται μόνα τους στη σκούρα λειτουργία και στην Αύξηση αντίθεσης. Τα χρώματα της επωνυμίας σας όχι. Το TetraTint παίρνει ένα χρώμα φωτεινής λειτουργίας, φτιάχνει τις παραλλαγές Φωτεινή, Φωτεινή υψηλής αντίθεσης, Σκοτεινή και Σκοτεινή υψηλής αντίθεσης και τις εξάγει κατευθείαν στο Xcode.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6789206198">Δωρεάν λήψη από το Mac App Store</a><a class="try" href="#try">Δοκιμάστε το χρώμα της επωνυμίας σας ↓</a></div>
+        <p class="muted small">Όλες οι λειτουργίες είναι δωρεάν. Απαιτεί macOS 14 ή νεότερο.</p>
+      </div>
+      <div class="plain"><img src="../img/el/01-generator.jpg" alt="Ένα χρώμα μέσα, τέσσερις εμφανίσεις έξω" width="600" height="350" decoding="async"></div>
+    </section>
+
+
+    <section class="reveal" id="try">
+      <h2>Δοκιμάστε το χρώμα της επωνυμίας σας</h2>
+      <p class="muted">Επικολλήστε μια τιμή hex ή πατήστε μια έτοιμη επιλογή. Με τον ίδιο υπολογισμό με την εφαρμογή, βλέπετε αμέσως τις τέσσερις παραλλαγές και την αντίθεσή τους.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Δοκιμάστε το χρώμα της επωνυμίας σας&quot;, &quot;lead&quot;: &quot;Επικολλήστε μια τιμή hex ή πατήστε μια έτοιμη επιλογή. Με τον ίδιο υπολογισμό με την εφαρμογή, βλέπετε αμέσως τις τέσσερις παραλλαγές και την αντίθεσή τους.&quot;, &quot;picker&quot;: &quot;Επιλογή χρώματος&quot;, &quot;hex&quot;: &quot;Βασικό χρώμα φωτεινής λειτουργίας, τιμή hex&quot;, &quot;presets&quot;: &quot;Έτοιμες επιλογές&quot;, &quot;light&quot;: &quot;Φωτεινή (Any)&quot;, &quot;lightHC&quot;: &quot;Φωτεινή υψηλής αντίθεσης&quot;, &quot;dark&quot;: &quot;Σκοτεινή&quot;, &quot;darkHC&quot;: &quot;Σκοτεινή υψηλής αντίθεσης&quot;, &quot;ratio&quot;: &quot;%@:1 έναντι φόντου&quot;, &quot;aa&quot;: &quot;Κείμενο AA&quot;, &quot;low&quot;: &quot;Χαμηλή&quot;, &quot;button&quot;: &quot;Κουμπί&quot;, &quot;tint&quot;: &quot;Ετικέτα απόχρωσης&quot;, &quot;footnote&quot;: &quot;Οι φωτεινές κάρτες μετρώνται σε λευκό και οι σκούρες σε μαύρο. Στην εφαρμογή ρυθμίζετε κάθε κάρτα με τον επιλογέα χρώματος και εξάγετε σε Contents.json, .colorset ή κώδικα.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Χάθηκε ποτέ το χρώμα της επωνυμίας σας στη σκούρα λειτουργία;</h2>
+      <p>Το μπλε που διαλέξατε στη φωτεινή λειτουργία φαίνεται θολό πάνω στο μαύρο, κι όσοι έχουν ενεργή την Αύξηση αντίθεσης μόλις που διαβάζουν το κείμενο. Να ψάχνετε χρώμα για κάθε εμφάνιση και να μετράτε την αντίθεση με το χέρι κοστίζει μισή μέρα. Το TetraTint βγάζει τις παραλλαγές όπως αλλάζουν τα χρώματα συστήματος από εμφάνιση σε εμφάνιση και δείχνει αμέσως αν περνά η καθεμία.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Ελέγξτε όλα τα χρώματά σας μαζί</h2>
+        <p>Επικολλήστε όλη τη λίστα hex της εφαρμογής σας και κάθε χρώμα κατατάσσεται: κατάλληλο ως έχει, χρειάζεται υψηλή αντίθεση ή μόνο για διακόσμηση.<br>Με ένα κλικ ένα προβληματικό χρώμα γίνεται τέσσερις παραλλαγές στην παλέτα σας. Βοηθά και στην προετοιμασία της σήμανσης προσβασιμότητας Επαρκής αντίθεση στο App Store.</p>
+      </div>
+      <div class="plain"><img src="../img/el/02-contrast.jpg" alt="Ελέγξτε όλα τα χρώματά σας μαζί" width="600" height="350" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Δείτε με τα μάτια όσων έχουν αχρωματοψία</h2>
+        <p>Δείτε την παλέτα με πρωτανοπία, δευτερανοπία, τριτανοπία και σε κλίμακα του γκρι, με προειδοποίηση για ζεύγη που δύσκολα ξεχωρίζουν.<br>Φορτώστε με ένα κλικ τις ασφαλείς για αχρωματοψία παλέτες Okabe–Ito, IBM και Paul Tol, ή πατήστε το κουμπί με το μάτι πάνω δεξιά για να δείτε έτσι όλη την εφαρμογή.</p>
+      </div>
+      <div class="plain"><img src="../img/el/03-color-vision.jpg" alt="Δείτε με τα μάτια όσων έχουν αχρωματοψία" width="600" height="350" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Και οι δικές σας γραμματοσειρές ακολουθούν το μέγεθος κειμένου</h2>
+        <p>Δείτε τα 11 στυλ κειμένου σε 7 μεγέθη και σύρετε ένα ρυθμιστικό για να δείτε τα πραγματικά μεγέθη.<br>Γράψτε το όνομα PostScript της γραμματοσειράς και πάρτε κώδικα για UIKit, SwiftUI και <code>@ScaledMetric</code>, καθώς και κώδικα που αλλάζει τη διάταξη με μεγάλο κείμενο.</p>
+      </div>
+      <div class="plain"><img src="../img/el/04-dynamic-type.jpg" alt="Και οι δικές σας γραμματοσειρές ακολουθούν το μέγεθος κειμένου" width="600" height="350" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Τρία βήματα για να ξεκινήσετε</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Δώστε ένα βασικό χρώμα</h3><p>Επικολλήστε hex, πάρτε χρώμα από οπουδήποτε στην οθόνη με το σταγονόμετρο ή διαλέξτε έτοιμη επιλογή.</p></li>
+<li class="card"><span class="n">2</span><h3>Ελέγξτε τις τέσσερις παραλλαγές</h3><p>Δείτε τα σήματα αντίθεσης και ρυθμίστε με τον επιλογέα όσες ξεφεύγουν από την επωνυμία.</p></li>
+<li class="card"><span class="n">3</span><h3>Εξαγωγή στο Xcode</h3><p>Αντιγράψτε ή αποθηκεύστε ως Contents.json, .colorset ή κώδικα UIKit και SwiftUI.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Πώς φτιάχνονται οι παραλλαγές και τι σημαίνουν τα σήματα</h2>
+      <div class="card table">
+        <dl><div><dt>Φωτεινή (Any)</dt><dd>Το χρώμα σας όπως το δώσατε</dd></div><div><dt>Φωτεινή υψηλής αντίθεσης</dt><dd>Λίγο πιο κορεσμένο, σκουραίνει ώσπου να φτάσει 4.5:1 σε λευκό</dd></div><div><dt>Σκοτεινή</dt><dd>Λίγο πιο φωτεινό και ζωηρό (φωτεινότητα +5, κορεσμός +3)</dd></div><div><dt>Σκοτεινή υψηλής αντίθεσης</dt><dd>Ανοίγει ώσπου να φτάσει 7:1 σε μαύρο</dd></div><div><dt>Κείμενο AA</dt><dd>Αντίθεση με το φόντο τουλάχιστον 4.5:1, κατάλληλο για κείμενο</dd></div><div><dt>UI 3:1</dt><dd>Τουλάχιστον 3:1, αρκεί για κουμπιά και εικονίδια, όχι για κείμενο</dd></div><div><dt>Χαμηλή</dt><dd>Κάτω από 3:1, μη το χρησιμοποιείτε για κείμενο, εικονίδια ή καταστάσεις</dd></div><div><dt>Εξαγωγή</dt><dd>Contents.json · .colorset · UIKit · SwiftUI, ή όλη η παλέτα σε ένα .xcassets</dd></div></dl>
+      </div>
+      <p class="muted">Οι τιμές αναφοράς των χρωμάτων συστήματος προέρχονται από τις Human Interface Guidelines της Apple και μπορεί να αλλάξουν με ενημερώσεις του συστήματος. Στην εφαρμογή που δημοσιεύετε, χρησιμοποιήστε τα API χρωμάτων συστήματος.</p>
+    </section>
+
+
+    <section class="reveal" id="pricing">
+      <h2>Όλες οι λειτουργίες είναι δωρεάν</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>TetraTint</h3>
+          <ul><li>Δημιουργία και εξαγωγή τεσσάρων παραλλαγών</li><li>Έλεγχος αντίθεσης για λίστα hex</li><li>Προσομοίωση όρασης χρωμάτων και ασφαλείς παλέτες</li><li>Πίνακας Dynamic Type και δημιουργία κώδικα</li><li>Αναφορά χρωμάτων συστήματος, εξαγωγή παλέτας σε .xcassets</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Στηρίξτε τον προγραμματιστή (προαιρετικά)</h3>
+          <ul><li>Τίποτα δεν είναι κλειδωμένο</li><li>Αν σας βοήθησε, μπορείτε να αφήσετε φιλοδώρημα από τις Ρυθμίσεις</li></ul>
+          <p class="muted">Το φιλοδώρημα δεν αλλάζει καμία λειτουργία.</p>
+        </div>
+      </div>
+      <p class="muted">Χωρίς λογαριασμό, χωρίς διαφημίσεις. Η παλέτα μένει μόνο σε αυτό το Mac.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Συχνές ερωτήσεις</h2>
+      <div class="faq"><details><summary>Οι παραλλαγές που βγήκαν δεν ταιριάζουν στην επωνυμία μας.</summary><p>Ρυθμίστε κάθε παραλλαγή με τον επιλογέα χρώματος της κάρτας της. Η Επαναδημιουργία όλων πετά τις χειροκίνητες αλλαγές και τα ξαναβγάζει όλα από το βασικό χρώμα.</p></details>
+<details><summary>Πώς υπολογίζονται οι παραλλαγές;</summary><p>Ακολουθούν τον τρόπο που αλλάζουν πραγματικά τα χρώματα συστήματος της Apple ανά εμφάνιση: λίγο πιο φωτεινά και ζωηρά στη σκοτεινή, τουλάχιστον 4.5:1 σε λευκό στη φωτεινή υψηλής αντίθεσης και τουλάχιστον 7:1 σε μαύρο στη σκοτεινή υψηλής αντίθεσης.</p></details>
+<details><summary>Τι σημαίνει μια προειδοποίηση στην προσομοίωση όρασης χρωμάτων;</summary><p>Ότι σε αυτή την προσομοίωση η διαφορά δύο χρωμάτων (ΔE) πέφτει κάτω από 12 και δύσκολα ξεχωρίζουν. Μη βασίζεστε μόνο στο χρώμα: προσθέστε εικονίδια, μοτίβα ή ετικέτες, ή αλλάξτε σε ασφαλή παλέτα.</p></details>
+<details><summary>Πώς κάνω μια δική μου γραμματοσειρά να υποστηρίζει Dynamic Type;</summary><p>Στο Dynamic Type γράψτε το όνομα PostScript της γραμματοσειράς και διαλέξτε στυλ για να πάρετε κώδικα UIKit, SwiftUI και <code>@ScaledMetric</code>. Στα μεγέθη προσβασιμότητας το Body ξεπερνά το τριπλάσιο του κανονικού, οπότε αποφύγετε σταθερά ύψη και το lineLimit(1).</p></details>
+<details><summary>Τα χρώματα που εξήγαγα φαίνονται διαφορετικά από τα χρώματα συστήματος στην εφαρμογή μου.</summary><p>Οι τιμές αναφοράς προέρχονται από τις Human Interface Guidelines και μπορεί να αλλάζουν από έκδοση σε έκδοση. Για τα χρώματα συστήματος χρησιμοποιείτε πάντα τα API UIColor ή Color.</p></details>
+<details><summary>Πού αποθηκεύεται η παλέτα μου;</summary><p>Μόνο στο Mac σας. Τίποτα δεν συγχρονίζεται σε υπηρεσίες νέφους ούτε στέλνεται πουθενά. Δείτε την πολιτική απορρήτου για λεπτομέρειες.</p></details>
+<details><summary>Αποθηκεύεται το χρώμα που παίρνω με το σταγονόμετρο;</summary><p>Όχι. Διαβάζεται μόνο η τιμή του χρώματος στο σημείο που επιλέγετε και γίνεται χρώμα εργασίας. Καμία εικόνα της οθόνης δεν αποθηκεύεται ούτε στέλνεται.</p></details>
+<details><summary>Σε ποια Mac λειτουργεί;</summary><p>Σε macOS 14 (Sonoma) ή νεότερο. Στην εξαγωγή επιλέγετε εσείς πού θα αποθηκευτούν τα αρχεία.</p></details></div>
+      <p class="contact">Σφάλματα, ιδέες ή ερωτήσεις; Γράψτε στο <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>. Συνήθως απαντάμε σε 2–3 ημέρες.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Χρώματα επωνυμίας που συμπεριφέρονται<br>σαν χρώματα συστήματος</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6789206198">Δωρεάν λήψη από το Mac App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Γλώσσα"><a href="../" hreflang="en" lang="en">English</a>
+<a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+<a href="../en-GB/" hreflang="en-GB" lang="en-GB">English (UK)</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es-MX/" hreflang="es-MX" lang="es-MX">Español (México)</a>
+<a href="../de-DE/" hreflang="de-DE" lang="de-DE">Deutsch</a>
+<a href="../fr-FR/" hreflang="fr-FR" lang="fr-FR">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el" aria-current="page">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../no/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl-NL/" hreflang="nl-NL" lang="nl-NL">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Πολιτική απορρήτου</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 TetraTint</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

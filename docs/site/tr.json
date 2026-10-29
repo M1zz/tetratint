@@ -1,0 +1,172 @@
+{
+  "title": "TetraTint: marka renklerini Mac’te koyu moda ve yüksek kontrasta uyarlayın",
+  "description": "Mac geliştirici aracı: tek renkten açık, koyu ve yüksek kontrastlı varyantlar üretir; WCAG kontrastını, renk körlüğünü ve Dynamic Type’ı denetler.",
+  "hero": {
+    "headline": "Tek renk girer,\ndört görünüm çıkar",
+    "lead": "Sistem renkleri koyu moda ve Kontrastı Artır ayarına kendiliğinden uyar. Marka renkleriniz uymaz. TetraTint açık moddaki tek bir renkten Açık, Açık yüksek kontrast, Koyu ve Koyu yüksek kontrast varyantlarını üretir ve doğrudan Xcode’a aktarır.",
+    "cta": "Mac App Store’dan ücretsiz indirin",
+    "note": "Tüm özellikler ücretsiz. macOS 14 veya üstü gerekir."
+  },
+  "demo": {
+    "title": "Marka renginizi deneyin",
+    "lead": "Bir hex değeri yapıştırın ya da hazır ayarlardan birine dokunun. Uygulamadakiyle aynı hesapla dört varyant ve kontrastları anında çıkar.",
+    "picker": "Renk seç",
+    "hex": "Açık mod temel rengi, hex değeri",
+    "presets": "Hazır ayarlar",
+    "light": "Açık (varsayılan)",
+    "lightHC": "Açık, yüksek kontrast",
+    "dark": "Koyu",
+    "darkHC": "Koyu, yüksek kontrast",
+    "ratio": "Arka plana karşı %@:1",
+    "aa": "AA metin",
+    "low": "Düşük",
+    "button": "Düğme",
+    "tint": "Ton etiketi",
+    "footnote": "Açık kartlar beyaza, koyu kartlar siyaha karşı ölçülür. Uygulamada her kartı renk seçiciyle ince ayarlayıp Contents.json, .colorset veya kod olarak dışa aktarabilirsiniz."
+  },
+  "problem": {
+    "title": "Marka renginiz koyu modda kayboldu mu hiç?",
+    "text": "Açık modda seçtiğiniz mavi siyah üzerinde bulanık görünür, Kontrastı Artır açık olanlar da metni zor okur. Her görünüm için renk arayıp kontrastı elle hesaplamak yarım gününüzü alır. TetraTint varyantları sistem renklerinin görünümler arasında değiştiği şekilde türetir ve her birinin geçip geçmediğini hemen gösterir."
+  },
+  "features": [
+    {
+      "title": "Kullandığınız tüm renkleri tek seferde denetleyin",
+      "text": "Uygulamanızdaki hex listesinin tamamını yapıştırın; her renk değerlendirilir: olduğu gibi kullanılabilir, yüksek kontrast gerekir ya da yalnızca dekoratif.\nSorunlu bir renk tek tıkla dört varyanta dönüşüp paletinize kaydedilir. App Store’daki Yeterli Kontrast erişilebilirlik etiketine hazırlanırken de işe yarar.",
+      "shot": "02-contrast"
+    },
+    {
+      "title": "Renk körü birinin gözünden bakın",
+      "text": "Paletinizi protanopi, döteranopi, tritanopi ve gri tonlamayla görün; ayırt edilmesi zorlaşan çiftler için uyarı alın.\nRenk körlüğüne uygun Okabe–Ito, IBM ve Paul Tol paletlerini tek tıkla yükleyin ya da sağ üstteki göz düğmesiyle tüm uygulamayı bu şekilde görün.",
+      "shot": "03-color-vision"
+    },
+    {
+      "title": "Özel yazı tipleri de metin boyutunu izler",
+      "text": "11 metin stilini 7 boyutta görün, kaydırıcıyı sürükleyerek gerçek boyutları önizleyin.\nYazı tipinin PostScript adını girin; UIKit, SwiftUI ve `@ScaledMetric` kodunun yanında büyük metinde düzeni değiştiren kodu da alın.",
+      "shot": "04-dynamic-type"
+    }
+  ],
+  "steps": {
+    "title": "Üç adımda başlayın",
+    "items": [
+      {
+        "title": "Temel rengi girin",
+        "text": "Bir hex yapıştırın, damlalıkla ekranın herhangi bir yerinden renk alın ya da hazır ayar seçin."
+      },
+      {
+        "title": "Dört varyantı kontrol edin",
+        "text": "Kontrast rozetlerine bakın, markaya uymayan varyantları renk seçiciyle düzeltin."
+      },
+      {
+        "title": "Xcode’a aktarın",
+        "text": "Contents.json, .colorset ya da UIKit ve SwiftUI kodu olarak kopyalayın veya kaydedin."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Varyantlar nasıl üretilir, rozetler ne anlama gelir",
+    "rows": [
+      [
+        "Açık (varsayılan)",
+        "Girdiğiniz renk olduğu gibi"
+      ],
+      [
+        "Açık, yüksek kontrast",
+        "Biraz daha doygun, beyaz üzerinde 4.5:1 olana dek koyulaştırılır"
+      ],
+      [
+        "Koyu",
+        "Biraz daha açık ve canlı (açıklık +5, doygunluk +3)"
+      ],
+      [
+        "Koyu, yüksek kontrast",
+        "Siyah üzerinde 7:1 olana dek açılır"
+      ],
+      [
+        "AA metin",
+        "Arka plana karşı en az 4.5:1, metin için uygun"
+      ],
+      [
+        "UI 3:1",
+        "En az 3:1, düğme ve simgeler için yeterli ama metin için değil"
+      ],
+      [
+        "Düşük",
+        "3:1’in altında, metin, simge ya da durum göstergesinde kullanmayın"
+      ],
+      [
+        "Dışa aktarma",
+        "Contents.json · .colorset · UIKit · SwiftUI ya da tüm palet tek bir .xcassets"
+      ]
+    ],
+    "note": "Sistem renklerinin referans değerleri Apple’ın Human Interface Guidelines belgesinden alınmıştır ve sistem güncellemeleriyle değişebilir. Yayımladığınız uygulamada sistem renk API’lerini kullanın."
+  },
+  "pricing": {
+    "title": "Tüm özellikler ücretsiz",
+    "free": {
+      "name": "TetraTint",
+      "items": [
+        "Dört varyant üretme ve dışa aktarma",
+        "Hex listesi için kontrast denetimi",
+        "Renk görme simülasyonu ve renk körlüğüne uygun paletler",
+        "Dynamic Type tablosu ve kod üretimi",
+        "Sistem renkleri başvurusu, paleti .xcassets olarak dışa aktarma"
+      ]
+    },
+    "pro": {
+      "name": "Geliştiriciyi destekleyin (isteğe bağlı)",
+      "items": [
+        "Kilitli hiçbir özellik yok",
+        "İşinize yaradıysa Ayarlar’dan bahşiş bırakabilirsiniz"
+      ],
+      "note": "Bahşiş hiçbir özelliği değiştirmez."
+    },
+    "note": "Hesap yok, reklam yok. Paletiniz yalnızca bu Mac’te kalır."
+  },
+  "faq": {
+    "title": "Sık sorulan sorular",
+    "items": [
+      {
+        "q": "Üretilen varyantlar markamıza uymuyor.",
+        "a": "Her varyantı kartındaki renk seçiciyle ayarlayın. Tümünü yeniden oluştur, elle yaptığınız değişiklikleri atıp her şeyi temel renkten yeniden türetir."
+      },
+      {
+        "q": "Varyantlar nasıl hesaplanıyor?",
+        "a": "Apple sistem renklerinin görünümler arasında gerçekte nasıl değiştiğini izler: koyuda biraz daha açık ve canlı, açık yüksek kontrastta beyaz üzerinde en az 4.5:1, koyu yüksek kontrastta siyah üzerinde en az 7:1."
+      },
+      {
+        "q": "Renk görme simülasyonundaki uyarı ne demek?",
+        "a": "O simülasyonda iki renk arasındaki farkın (ΔE) 12’nin altına düştüğü ve ayırt etmenin zorlaştığı anlamına gelir. Yalnızca renge güvenmeyin: simge, desen veya etiket ekleyin ya da güvenli bir palete geçin."
+      },
+      {
+        "q": "Özel yazı tipime Dynamic Type desteği nasıl eklerim?",
+        "a": "Dynamic Type bölümünde yazı tipinin PostScript adını girip bir stil seçin; UIKit, SwiftUI ve `@ScaledMetric` kodu oluşur. Erişilebilirlik boyutlarında Body varsayılanın üç katından fazla büyür, bu yüzden sabit yükseklik ve lineLimit(1) kullanmayın."
+      },
+      {
+        "q": "Dışa aktarılan renkler uygulamamdaki sistem renklerinden farklı görünüyor.",
+        "a": "Referans değerler Human Interface Guidelines belgesinden gelir ve sistem sürümleri arasında değişebilir. Sistem renkleri için her zaman UIColor veya Color API’sini kullanın."
+      },
+      {
+        "q": "Paletim nerede saklanıyor?",
+        "a": "Yalnızca Mac’inizde. Hiçbir şey buluta eşzamanlanmaz ya da bir yere gönderilmez. Ayrıntılar için gizlilik politikasına bakın."
+      },
+      {
+        "q": "Damlalıkla aldığım renk kaydediliyor mu?",
+        "a": "Hayır. Yalnızca seçtiğiniz noktadaki renk değeri okunur ve çalışma rengi olarak kullanılır. Ekran görüntüsü kaydedilmez ya da gönderilmez."
+      },
+      {
+        "q": "Hangi Mac’lerde çalışır?",
+        "a": "macOS 14 (Sonoma) veya üstünde. Dışa aktarırken dosyaların nereye kaydedileceğini siz seçersiniz."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Sistem renkleri gibi davranan\nmarka renkleri",
+    "cta": "Mac App Store’dan ücretsiz indirin"
+  },
+  "ui": {
+    "skip": "İçeriğe geç",
+    "languages": "Dil",
+    "privacy": "Gizlilik Politikası",
+    "contact": "Hata bildirimi, özellik önerisi ya da soru için {email} adresine yazın. Genellikle 2–3 gün içinde yanıt veririz."
+  }
+}

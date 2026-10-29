@@ -1,0 +1,172 @@
+{
+  "title": "TetraTint: kolory marki w trybie ciemnym i wysokim kontraście na Macu",
+  "description": "Narzędzie na Maca: z jednego koloru robi warianty jasne, ciemne i o wysokim kontraście oraz sprawdza kontrast WCAG, daltonizm i Dynamic Type.",
+  "hero": {
+    "headline": "Jeden kolor na wejściu,\ncztery wyglądy na wyjściu",
+    "lead": "Kolory systemowe same dopasowują się do trybu ciemnego i opcji Zwiększ kontrast. Kolory twojej marki nie. TetraTint bierze jeden kolor z trybu jasnego, tworzy warianty Jasny, Jasny z wysokim kontrastem, Ciemny i Ciemny z wysokim kontrastem i od razu eksportuje je do Xcode.",
+    "cta": "Pobierz za darmo z Mac App Store",
+    "note": "Wszystkie funkcje są bezpłatne. Wymaga macOS 14 lub nowszego."
+  },
+  "demo": {
+    "title": "Wypróbuj kolor swojej marki",
+    "lead": "Wklej wartość hex albo stuknij gotowy kolor. Tym samym wyliczeniem co w aplikacji od razu zobaczysz cztery warianty i ich kontrast.",
+    "picker": "Wybierz kolor",
+    "hex": "Kolor bazowy trybu jasnego, wartość hex",
+    "presets": "Gotowe kolory",
+    "light": "Jasny (domyślny)",
+    "lightHC": "Jasny, wysoki kontrast",
+    "dark": "Ciemny",
+    "darkHC": "Ciemny, wysoki kontrast",
+    "ratio": "%@:1 względem tła",
+    "aa": "Tekst AA",
+    "low": "Niski",
+    "button": "Przycisk",
+    "tint": "Etykieta w kolorze",
+    "footnote": "Jasne karty mierzone są względem bieli, ciemne względem czerni. W aplikacji każdą kartę dopracujesz próbnikiem kolorów i wyeksportujesz jako Contents.json, .colorset lub kod."
+  },
+  "problem": {
+    "title": "Kolor marki zginął ci kiedyś w trybie ciemnym?",
+    "text": "Niebieski wybrany w trybie jasnym na czerni wygląda mętnie, a osoby z włączoną opcją Zwiększ kontrast ledwo czytają tekst. Szukanie koloru dla każdego wyglądu i ręczne liczenie kontrastu zajmuje pół dnia. TetraTint wyprowadza warianty tak, jak zmieniają się kolory systemowe między wyglądami, i od razu pokazuje, czy każdy przechodzi."
+  },
+  "features": [
+    {
+      "title": "Sprawdź naraz wszystkie używane kolory",
+      "text": "Wklej całą listę hex z aplikacji, a każdy kolor dostanie ocenę: można zostawić bez zmian, potrzebny wysoki kontrast albo tylko do dekoracji.\nJednym kliknięciem problematyczny kolor zamienia się w cztery warianty zapisane w palecie. Przydaje się też przy przygotowaniu oznaczenia dostępności Wystarczający kontrast w App Store.",
+      "shot": "02-contrast"
+    },
+    {
+      "title": "Zobacz oczami osób z daltonizmem",
+      "text": "Podejrzyj paletę przy protanopii, deuteranopii, trytanopii i w skali szarości, z ostrzeżeniem dla par, które trudno odróżnić.\nWczytaj jednym kliknięciem palety przyjazne daltonistom Okabe–Ito, IBM i Paul Tol albo przyciskiem z okiem w prawym górnym rogu zobacz tak całą aplikację.",
+      "shot": "03-color-vision"
+    },
+    {
+      "title": "Własne czcionki też podążają za rozmiarem tekstu",
+      "text": "Zobacz 11 stylów tekstu w 7 rozmiarach i przesuń suwak, by podejrzeć prawdziwe rozmiary.\nWpisz nazwę PostScript czcionki i dostaniesz kod dla UIKit, SwiftUI i `@ScaledMetric`, a także kod zmieniający układ przy dużym tekście.",
+      "shot": "04-dynamic-type"
+    }
+  ],
+  "steps": {
+    "title": "Trzy kroki na start",
+    "items": [
+      {
+        "title": "Podaj kolor bazowy",
+        "text": "Wklej hex, pobierz kolor z dowolnego miejsca ekranu kroplomierzem albo wybierz gotowy."
+      },
+      {
+        "title": "Sprawdź cztery warianty",
+        "text": "Odczytaj plakietki kontrastu i popraw próbnikiem warianty, które nie pasują do marki."
+      },
+      {
+        "title": "Eksportuj do Xcode",
+        "text": "Skopiuj lub zapisz jako Contents.json, .colorset albo kod UIKit i SwiftUI."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Jak powstają warianty i co znaczą plakietki",
+    "rows": [
+      [
+        "Jasny (domyślny)",
+        "Twój kolor taki, jak go wpisano"
+      ],
+      [
+        "Jasny, wysoki kontrast",
+        "Nieco bardziej nasycony i przyciemniany do 4.5:1 na bieli"
+      ],
+      [
+        "Ciemny",
+        "Nieco jaśniejszy i żywszy (jasność +5, nasycenie +3)"
+      ],
+      [
+        "Ciemny, wysoki kontrast",
+        "Rozjaśniany do 7:1 na czerni"
+      ],
+      [
+        "Tekst AA",
+        "Kontrast z tłem co najmniej 4.5:1, nadaje się do tekstu"
+      ],
+      [
+        "UI 3:1",
+        "Co najmniej 3:1, wystarczy dla przycisków i ikon, ale nie dla tekstu"
+      ],
+      [
+        "Niski",
+        "Poniżej 3:1, nie używaj do tekstu, ikon ani statusów"
+      ],
+      [
+        "Eksport",
+        "Contents.json · .colorset · UIKit · SwiftUI albo cała paleta jako jeden .xcassets"
+      ]
+    ],
+    "note": "Wartości referencyjne kolorów systemowych pochodzą z Human Interface Guidelines Apple i mogą się zmieniać wraz z aktualizacjami systemu. W wydanej aplikacji używaj API kolorów systemowych."
+  },
+  "pricing": {
+    "title": "Wszystkie funkcje są bezpłatne",
+    "free": {
+      "name": "TetraTint",
+      "items": [
+        "Tworzenie i eksport czterech wariantów",
+        "Sprawdzanie kontrastu listy hex",
+        "Symulacja widzenia barw i palety przyjazne daltonistom",
+        "Tabela Dynamic Type i generowanie kodu",
+        "Wzorzec kolorów systemowych, eksport palety do .xcassets"
+      ]
+    },
+    "pro": {
+      "name": "Wesprzyj dewelopera (opcjonalnie)",
+      "items": [
+        "Nic nie jest zablokowane",
+        "Jeśli aplikacja pomogła, możesz zostawić napiwek w Ustawieniach"
+      ],
+      "note": "Napiwek nie zmienia żadnych funkcji."
+    },
+    "note": "Bez konta i bez reklam. Paleta zostaje tylko na tym Macu."
+  },
+  "faq": {
+    "title": "Częste pytania",
+    "items": [
+      {
+        "q": "Wygenerowane warianty nie pasują do naszej marki.",
+        "a": "Każdy wariant poprawisz próbnikiem kolorów na jego karcie. Utwórz wszystko od nowa odrzuca ręczne zmiany i wyprowadza wszystko ponownie z koloru bazowego."
+      },
+      {
+        "q": "Jak liczone są warianty?",
+        "a": "Zgodnie z tym, jak kolory systemowe Apple naprawdę zmieniają się między wyglądami: w ciemnym nieco jaśniej i żywiej, w jasnym z wysokim kontrastem co najmniej 4.5:1 na bieli, w ciemnym z wysokim kontrastem co najmniej 7:1 na czerni."
+      },
+      {
+        "q": "Co oznacza ostrzeżenie w symulacji widzenia barw?",
+        "a": "Że w tej symulacji różnica dwóch kolorów (ΔE) spada poniżej 12 i trudno je odróżnić. Nie polegaj tylko na kolorze: dodaj ikony, wzory lub etykiety albo przejdź na bezpieczną paletę."
+      },
+      {
+        "q": "Jak sprawić, by własna czcionka obsługiwała Dynamic Type?",
+        "a": "W sekcji Dynamic Type wpisz nazwę PostScript czcionki i wybierz styl, a dostaniesz kod UIKit, SwiftUI i `@ScaledMetric`. W rozmiarach dostępności Body rośnie ponad trzykrotnie, więc unikaj stałych wysokości i lineLimit(1)."
+      },
+      {
+        "q": "Wyeksportowane kolory wyglądają inaczej niż systemowe w mojej aplikacji.",
+        "a": "Wartości referencyjne pochodzą z Human Interface Guidelines i mogą się różnić między wersjami systemu. Do kolorów systemowych zawsze używaj API UIColor lub Color."
+      },
+      {
+        "q": "Gdzie zapisuje się moja paleta?",
+        "a": "Tylko na twoim Macu. Nic nie jest synchronizowane z chmurą ani nigdzie wysyłane. Szczegóły w polityce prywatności."
+      },
+      {
+        "q": "Czy kolor pobrany kroplomierzem jest zapisywany?",
+        "a": "Nie. Odczytywana jest tylko wartość koloru w wybranym punkcie i staje się kolorem roboczym. Żaden obraz ekranu nie jest zapisywany ani wysyłany."
+      },
+      {
+        "q": "Na jakich Macach działa?",
+        "a": "Na macOS 14 (Sonoma) i nowszych. Przy eksporcie sam wybierasz, gdzie zapisać pliki."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Kolory marki, które zachowują się\njak systemowe",
+    "cta": "Pobierz za darmo z Mac App Store"
+  },
+  "ui": {
+    "skip": "Przejdź do treści",
+    "languages": "Język",
+    "privacy": "Polityka prywatności",
+    "contact": "Błędy, pomysły albo pytania? Napisz na {email}. Zwykle odpowiadamy w ciągu 2–3 dni."
+  }
+}
