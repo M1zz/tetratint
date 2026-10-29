@@ -1441,3 +1441,16 @@ Kayıtlı tüm marka renklerinizi tek adımda tek bir .xcassets dosyasına aktar
 Otomatik varyantlar, sistem renklerinin modlar arasında izlediği kalıpları izler. Koyu modda renkler biraz daha parlak ve canlı olur. Açık yüksek kontrastta beyaz arka plana karşı 4,5:1’e, koyu yüksek kontrastta siyah arka plana karşı 7:1’e ulaşacak şekilde ayarlanır.
 
 Sistem rengi referans değerleri Human Interface Guidelines’a dayanır ve işletim sistemi güncellemeleriyle değişebilir. Yayınladığınız uygulamada sistem renk API’lerini kullanın.
+
+## 손쉬운 사용
+
+<!-- DeployBar 가 App Store Connect '앱의 손쉬운 사용' 에 올린다. 실제로 확인한 것만 적는다. -->
+<!-- largerText 는 뺐다: macOS SwiftUI 는 시스템 텍스트 크기를 따르지 않고(dynamicTypeSize 무효), 앱 안 글자 키우기도 없다. -->
+
+### Mac
+voiceOver
+voiceControl
+darkInterface
+differentiateWithoutColor
+sufficientContrast
+reducedMotion

@@ -106,6 +106,7 @@ private struct PaletteRow: View {
 
     /// Drives the pop-in: the row starts small + transparent, then springs into place.
     @State private var landed = false
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     var body: some View {
         HStack(spacing: 12) {
@@ -123,11 +124,11 @@ private struct PaletteRow: View {
                                 .strokeBorder(Color.primary.opacity(0.15), lineWidth: 1)
                         )
                     Text(item.set[appearance])
-                        .font(.system(size: 14, design: .monospaced))
+                        .font(.system(.body, design: .monospaced))
                         .foregroundStyle(.secondary)
                 }
                 .frame(width: PaletteView.variantColumnWidth)
-                .help(appearance.displayName)
+                .help(Text(verbatim: "\(appearance.displayName): \(item.set[appearance].colorName)"))
                 .swatchAccessibility(role: appearance.shortLabel, hex: item.set[appearance])
             }
 
@@ -148,7 +149,8 @@ private struct PaletteRow: View {
         .padding(12)
         .background(Color(nsColor: .controlBackgroundColor))
         .clipShape(RoundedRectangle(cornerRadius: 10))
-        .scaleEffect(landed ? 1 : 0.3)
+        // 동작 줄이기에서는 튀어나오지 않고 서서히 나타나기만 한다.
+        .scaleEffect(landed || reduceMotion ? 1 : 0.3)
         .opacity(landed ? 1 : 0)
         .onAppear {
             guard isNew else {
@@ -156,7 +158,7 @@ private struct PaletteRow: View {
                 return
             }
             // Bouncy spring overshoots past 1.0 so the row visibly pops in.
-            withAnimation(.spring(response: 0.4, dampingFraction: 0.5)) {
+            withAnimation(reduceMotion ? .easeOut(duration: 0.25) : .spring(response: 0.4, dampingFraction: 0.5)) {
                 landed = true
             }
         }

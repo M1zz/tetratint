@@ -224,11 +224,14 @@ struct ContentView: View {
                                 .padding(.vertical, 2)
                                 .background(Color.accentColor, in: Capsule())
                                 .foregroundStyle(.white)
+                                .accessibilityLabel(Text("\(store.unseenCount) new colors"))
                         }
                     }
                     .contentShape(Rectangle())
                 }
                 .buttonStyle(.plain)
+                // 선택은 배경색만이 아니라 VoiceOver 에도 알린다.
+                .accessibilityAddTraits(appState.section == section ? .isSelected : [])
                 .listRowBackground(
                     appState.section == section
                         ? Color.accentColor.opacity(0.18)

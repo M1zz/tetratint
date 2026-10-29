@@ -30,12 +30,14 @@ struct SystemColorsView: View {
         }
         .font(.callout.weight(.medium))
         .foregroundStyle(.secondary)
+        .accessibilityHidden(true)
     }
 
     private func section(title: LocalizedStringKey, entries: [SystemColorEntry]) -> some View {
         VStack(alignment: .leading, spacing: 8) {
             Text(title)
                 .font(.title3.weight(.semibold))
+                .accessibilityAddTraits(.isHeader)
             ForEach(entries) { entry in
                 row(entry)
             }
@@ -52,16 +54,17 @@ struct SystemColorsView: View {
                     .foregroundStyle(.secondary)
             }
             .frame(width: 190, alignment: .leading)
+            .accessibilityElement(children: .combine)
 
             ForEach(Appearance.allCases) { appearance in
-                chip(hex: entry.set[appearance], appearance: appearance)
+                chip(hex: entry.set[appearance], appearance: appearance, name: entry.name)
                     .frame(maxWidth: .infinity)
             }
         }
         .padding(.vertical, 4)
     }
 
-    private func chip(hex: String, appearance: Appearance) -> some View {
+    private func chip(hex: String, appearance: Appearance, name: String) -> some View {
         Button {
             Exporters.copyToClipboard(hex)
             copiedHex = hex
@@ -78,8 +81,8 @@ struct SystemColorsView: View {
                             .strokeBorder(Color.primary.opacity(0.15), lineWidth: 1)
                     )
                 Text(copiedHex == hex ? "Copied" : hex)
-                    .font(.system(size: 14, design: .monospaced))
-                    .foregroundStyle(copiedHex == hex ? .green : .secondary)
+                    .font(.system(.body, design: .monospaced))
+                    .foregroundStyle(copiedHex == hex ? .primary : .secondary)
             }
             .padding(.horizontal, 6)
             .background(
@@ -89,6 +92,8 @@ struct SystemColorsView: View {
         }
         .buttonStyle(.plain)
         .help("Click to copy \(hex)")
+        .accessibilityLabel(Text(verbatim: "\(name), \(appearance.displayName): \(hex.colorName), \(hex)"))
+        .accessibilityInputLabels([Text(verbatim: "\(name) \(appearance.shortLabel)"), Text(verbatim: hex)])
     }
 
     private var disclaimer: some View {

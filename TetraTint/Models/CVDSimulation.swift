@@ -11,6 +11,9 @@ enum CVDType: String, CaseIterable, Identifiable {
 
     var id: String { rawValue }
 
+    /// Localized display name (the raw value is the English key).
+    var localizedName: String { String(localized: String.LocalizationValue(rawValue)) }
+
     var subtitle: String {
         switch self {
         case .normal: return String(localized: "Normal vision")

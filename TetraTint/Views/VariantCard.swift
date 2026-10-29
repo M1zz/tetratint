@@ -12,7 +12,8 @@ struct VariantCard: View {
     private var bg: Color { Color(hex: appearance.backgroundHex) }
     private var cardBg: Color { Color(hex: appearance.secondaryBackgroundHex) }
     private var fg: Color { appearance.isDark ? .white : .black }
-    private var sub: Color { appearance.isDark ? Color.white.opacity(0.55) : Color.black.opacity(0.5) }
+    /// 보조 글자. 흰 바탕 위 검정 50% 는 3.9:1 이라 AA(4.5:1) 를 넘도록 60% 로 둔다.
+    private var sub: Color { appearance.isDark ? Color.white.opacity(0.6) : Color.black.opacity(0.6) }
 
     private var contrastVsBackground: Double {
         WCAG.contrast(hex: hex, hex: appearance.backgroundHex)
@@ -40,6 +41,10 @@ struct VariantCard: View {
                         .font(.system(.title3, design: .monospaced).weight(.medium))
                         .foregroundStyle(fg)
                         .textSelection(.enabled)
+                    // 색을 못 가리는 사람도 무슨 색인지 글로 안다.
+                    Text(hex.colorName)
+                        .font(.callout)
+                        .foregroundStyle(sub)
                     Text("\(String(format: "%.2f", contrastVsBackground)):1 vs background")
                         .font(.callout)
                         .foregroundStyle(sub)
@@ -56,9 +61,11 @@ struct VariantCard: View {
                 .buttonStyle(.plain)
                 .help("Copy hex")
                 .accessibilityLabel(Text("Copy \(hex)"))
+                .accessibilityInputLabels([Text("Copy \(hex)"), Text("Copy hex")])
             }
 
             componentPreview
+                .accessibilityHidden(true)
         }
         .padding(14)
         .background(bg)
@@ -95,17 +102,24 @@ struct VariantCard: View {
 
     private var contrastBadge: some View {
         let ratio = contrastVsBackground
-        let (label, color): (LocalizedStringKey, Color) =
-            ratio >= 4.5 ? ("AA text", .green) :
-            ratio >= 3.0 ? ("UI 3:1", .orange) :
-            ("Low", .red)
-        return Text(label)
-            .font(.callout.weight(.medium))
-            .padding(.horizontal, 7)
-            .padding(.vertical, 2)
-            .background(color.opacity(0.18))
-            .foregroundStyle(color)
-            .clipShape(Capsule())
+        // 등급은 색 말고도 글과 모양으로 구별한다. 글자는 카드의 기본 글자색이라 대비가 충분하다.
+        let (label, color, icon): (LocalizedStringKey, Color, String) =
+            ratio >= 4.5 ? ("AA text", .green, "checkmark.circle.fill") :
+            ratio >= 3.0 ? ("UI 3:1", .orange, "exclamationmark.triangle.fill") :
+            ("Low", .red, "xmark.octagon.fill")
+        return HStack(spacing: 4) {
+            Image(systemName: icon)
+                .foregroundStyle(color)
+                .accessibilityHidden(true)
+            Text(label)
+                .foregroundStyle(fg)
+        }
+        .font(.callout.weight(.medium))
+        .padding(.horizontal, 7)
+        .padding(.vertical, 2)
+        .background(color.opacity(0.18))
+        .clipShape(Capsule())
+        .accessibilityElement(children: .combine)
     }
 
     // MARK: Mini component preview

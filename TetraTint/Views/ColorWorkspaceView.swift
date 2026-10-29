@@ -92,6 +92,7 @@ struct ColorWorkspaceView: View {
                         )
                     }
                     .buttonStyle(.plain)
+                    .accessibilityAddTraits(lens == option ? .isSelected : [])
                 }
             }
             .frame(maxWidth: 620)
@@ -135,6 +136,7 @@ struct ColorWorkspaceView: View {
                 }
                 .help("Pick a color from anywhere on screen")
                 .accessibilityLabel(Text("Pick a color from anywhere on screen"))
+                .accessibilityInputLabels([Text("Pick color from screen"), Text("Eyedropper")])
 
                 TextField("#007AFF", text: $baseHexField)
                     .accessibilityLabel(Text("Hex value"))
@@ -185,8 +187,9 @@ struct ColorWorkspaceView: View {
                         .frame(width: 16, height: 16)
                 }
                 .buttonStyle(.plain)
-                .help(entry.name)
+                .help(Text(verbatim: "\(entry.name), \(entry.set.light.colorName)"))
                 .accessibilityLabel(Text("Preset \(entry.name)"))
+                .accessibilityValue(Text(verbatim: "\(entry.set.light.colorName), \(entry.set.light)"))
             }
         }
     }

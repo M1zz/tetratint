@@ -84,6 +84,7 @@ struct FlyingSwatch: View {
 /// swatch (or several) flying toward the Palette sidebar row.
 struct FlyingAddButton<L: View>: View {
     @EnvironmentObject private var fly: FlyOverlayModel
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     /// Colors to send flying. Multiple colors fan out with a slight stagger.
     let colors: [Color]
@@ -107,6 +108,8 @@ struct FlyingAddButton<L: View>: View {
             action()
             // Saving to the palette is the moment the app did its job.
             LeeoEngagement.shared.registerSignificantEvent()
+            // 동작 줄이기에서는 날리지 않는다 — 팔레트 줄의 새 색 개수 배지가 대신 알린다.
+            guard !reduceMotion else { return }
             for (i, c) in colors.prefix(6).enumerated() {
                 fly.launch(color: c, from: center, delay: Double(i) * 0.08)
             }

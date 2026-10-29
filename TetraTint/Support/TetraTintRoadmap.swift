@@ -18,13 +18,13 @@ import LeeoKit
 extension TetraTintSpec {
     static var roadmap: [LeeoRoadmapItem] {[
         // MARK: 다음에 만들어요
-        .init(id: "a11y.voiceover", status: .planned,
+        .init(id: "a11y.voiceover", status: .building,
               title: NSLocalizedString("Better VoiceOver support", comment: "Roadmap item: a11y.voiceover"),
               detail: NSLocalizedString("VoiceOver reads every color, button, and value in a sensible order.", comment: "Roadmap item detail: a11y.voiceover")),
-        .init(id: "a11y.contrast", status: .planned,
+        .init(id: "a11y.contrast", status: .building,
               title: NSLocalizedString("Easier-to-see interface", comment: "Roadmap item: a11y.contrast"),
               detail: NSLocalizedString("Labels and controls stay crisp with Increase Contrast turned on.", comment: "Roadmap item detail: a11y.contrast")),
-        .init(id: "a11y.motion", status: .planned,
+        .init(id: "a11y.motion", status: .building,
               title: NSLocalizedString("Reduced motion", comment: "Roadmap item: a11y.motion"),
               detail: NSLocalizedString("With Reduce Motion on, effects like colors flying into your palette get calmer.", comment: "Roadmap item detail: a11y.motion")),
         .init(id: "lang.more", status: .planned,

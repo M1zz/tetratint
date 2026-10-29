@@ -225,5 +225,14 @@ enum Exporters {
     static func copyToClipboard(_ string: String) {
         NSPasteboard.general.clearContents()
         NSPasteboard.general.setString(string, forType: .string)
+        // 복사됐다는 걸 VoiceOver 에도 말해 준다(화면의 "Copied" 표시는 들리지 않는다).
+        if let window = NSApp?.keyWindow {
+            NSAccessibility.post(
+                element: window,
+                notification: .announcementRequested,
+                userInfo: [.announcement: String(localized: "Copied"),
+                           .priority: NSAccessibilityPriorityLevel.high.rawValue]
+            )
+        }
     }
 }

@@ -62,12 +62,14 @@ struct VariantsLens: View {
             HStack {
                 Text("Export")
                     .font(.title3.weight(.semibold))
-                Picker("", selection: $exportTab) {
+                    .accessibilityAddTraits(.isHeader)
+                Picker("Export", selection: $exportTab) {
                     ForEach(ExportTab.allCases) { tab in
                         Text(tab.rawValue).tag(tab)
                     }
                 }
                 .pickerStyle(.segmented)
+                .labelsHidden()
                 .frame(width: 440)
 
                 Spacer()

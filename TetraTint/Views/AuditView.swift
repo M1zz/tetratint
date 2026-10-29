@@ -85,6 +85,7 @@ struct ContrastLens: View {
         VStack(alignment: .leading, spacing: 10) {
             Text("Working color")
                 .font(.title3.weight(.semibold))
+                .accessibilityAddTraits(.isHeader)
             row(auditResult(for: appState.set.light))
         }
     }
@@ -104,6 +105,7 @@ struct ContrastLens: View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Paste the colors your app uses (separated by line breaks or commas)")
                 .font(.title3.weight(.semibold))
+                .accessibilityAddTraits(.isHeader)
 
             TextEditor(text: $input)
                 .font(.system(.title3, design: .monospaced))
@@ -187,7 +189,7 @@ struct ContrastLens: View {
                 .overlay {
                     if !s.valid {
                         Image(systemName: "questionmark")
-                            .font(.system(size: 12, weight: .bold))
+                            .font(.callout.weight(.bold))
                             .foregroundStyle(.secondary)
                     }
                 }
@@ -203,6 +205,10 @@ struct ContrastLens: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color(nsColor: .controlBackgroundColor))
         .clipShape(RoundedRectangle(cornerRadius: 6))
+        .help(Text(verbatim: s.hex?.colorName ?? s.token))
+        // 알아본 색은 이름과 hex 를, 못 알아본 글자는 그대로 읽는다.
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(Text(verbatim: s.hex.map { "\($0.colorName), \($0)" } ?? s.token))
     }
 
     private func runAudit() {
@@ -230,6 +236,7 @@ struct ContrastLens: View {
             }.count
             Text("\(needsWork) of \(results.count) colors need a high-contrast variant")
                 .font(.title3.weight(.semibold))
+                .accessibilityAddTraits(.isHeader)
 
             ForEach(results) { result in
                 row(result)
@@ -295,6 +302,7 @@ struct ContrastLens: View {
         HStack(alignment: .top, spacing: 6) {
             Image(systemName: verdict.icon)
                 .foregroundStyle(verdict.color)
+                .accessibilityHidden(true)
             VStack(alignment: .leading, spacing: 0) {
                 Text(verbatim: "\(title)  \(String(format: "%.2f", ratio)):1  \(verdict.label)")
                     .font(.callout.weight(.medium))
@@ -305,5 +313,6 @@ struct ContrastLens: View {
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
+        .accessibilityElement(children: .combine)
     }
 }

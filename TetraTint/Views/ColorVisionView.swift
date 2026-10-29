@@ -34,9 +34,11 @@ struct ColorVisionLens: View {
                 .foregroundStyle(.white)
                 .frame(width: 26, height: 26)
                 .background(Circle().fill(Color.accentColor))
+                .accessibilityHidden(true)
             VStack(alignment: .leading, spacing: 2) {
                 Text(title)
                     .font(.title3.weight(.semibold))
+                    .accessibilityAddTraits(.isHeader)
                 Text(subtitle)
                     .font(.callout)
                     .foregroundStyle(.secondary)
@@ -57,10 +59,10 @@ struct ColorVisionLens: View {
                         .frame(width: 130, alignment: .leading)
                     ForEach(CVDType.allCases) { type in
                         VStack(spacing: 0) {
-                            Text(type.rawValue)
+                            Text(type.localizedName)
                             Text(type.subtitle)
-                                .font(.system(size: 13))
-                                .foregroundStyle(.tertiary)
+                                .font(.callout)
+                                .foregroundStyle(.secondary)
                         }
                         .frame(maxWidth: .infinity)
                     }
@@ -74,10 +76,11 @@ struct ColorVisionLens: View {
                             Text(item.name)
                                 .font(.system(.callout, design: .monospaced))
                             Text(item.hex)
-                                .font(.system(size: 14, design: .monospaced))
+                                .font(.system(.body, design: .monospaced))
                                 .foregroundStyle(.secondary)
                         }
                         .frame(width: 130, alignment: .leading)
+                        .accessibilityElement(children: .combine)
 
                         ForEach(CVDType.allCases) { type in
                             let simulated = simulatedHex(item.hex, type: type)
@@ -88,7 +91,8 @@ struct ColorVisionLens: View {
                                     RoundedRectangle(cornerRadius: 6)
                                         .strokeBorder(Color.primary.opacity(0.12), lineWidth: 1)
                                 )
-                                .help("\(type.rawValue): \(simulated)")
+                                .help(Text(verbatim: "\(type.localizedName): \(simulated.colorName), \(simulated)"))
+                                .swatchAccessibility(role: type.localizedName, hex: simulated)
                         }
                     }
                 }
@@ -140,9 +144,13 @@ struct ColorVisionLens: View {
                 .padding(.bottom, 4)
 
             if conflicts.isEmpty {
-                Label("All color pairs stay distinguishable across every vision type (ΔE ≥ 12)", systemImage: "checkmark.circle.fill")
-                    .font(.body)
-                    .foregroundStyle(.green)
+                // 초록 글자는 밝은 바탕에서 대비가 낮다 — 글은 기본색, 아이콘만 초록.
+                Label {
+                    Text("All color pairs stay distinguishable across every vision type (ΔE ≥ 12)")
+                } icon: {
+                    Image(systemName: "checkmark.circle.fill").foregroundStyle(.green)
+                }
+                .font(.body)
             } else {
                 ForEach(conflicts) { c in
                     HStack(spacing: 10) {
@@ -153,11 +161,12 @@ struct ColorVisionLens: View {
                             swatchPair(c.a.hex, type: c.type)
                             swatchPair(c.b.hex, type: c.type)
                         }
+                        .accessibilityHidden(true)
 
                         Text("\(c.a.name) ↔ \(c.b.name)")
                             .font(.system(.callout, design: .monospaced))
 
-                        Text("ΔE \(String(format: "%.1f", c.deltaE)) under \(c.type.rawValue)")
+                        Text("ΔE \(String(format: "%.1f", c.deltaE)) under \(c.type.localizedName)")
                             .font(.callout)
                             .foregroundStyle(.secondary)
 
@@ -166,6 +175,7 @@ struct ColorVisionLens: View {
                     .padding(8)
                     .background(Color(nsColor: .controlBackgroundColor))
                     .clipShape(RoundedRectangle(cornerRadius: 8))
+                    .accessibilityElement(children: .combine)
                 }
                 Text("Do not rely on color alone. Pair it with icons, patterns, or labels, or switch to a safe palette below.")
                     .font(.callout)
@@ -209,7 +219,8 @@ struct ColorVisionLens: View {
                             RoundedRectangle(cornerRadius: 5)
                                 .fill(Color(hex: hex))
                                 .frame(width: 30, height: 24)
-                                .help(hex)
+                                .help(Text(verbatim: "\(hex.colorName), \(hex)"))
+                                .swatchAccessibility(role: palette.name, hex: hex)
                         }
                     }
 

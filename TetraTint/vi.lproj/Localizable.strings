@@ -229,3 +229,9 @@
 
 /* Tip ask card: how many times colors were saved or exported */
 "You've saved or exported colors %lld times with TetraTint" = "Bạn đã lưu hoặc xuất màu %lld lần với TetraTint";
+
+/* 손쉬운 사용: 사이드바 팔레트 배지(VoiceOver) */
+"%lld new colors" = "%lld màu mới";
+
+/* 손쉬운 사용: 스포이트 버튼의 음성 명령 이름 */
+"Eyedropper" = "Ống hút màu";

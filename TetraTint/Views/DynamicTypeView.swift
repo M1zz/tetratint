@@ -36,6 +36,7 @@ struct DynamicTypeView: View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Scaling preview")
                 .font(.title3.weight(.semibold))
+                .accessibilityAddTraits(.isHeader)
 
             HStack(spacing: 12) {
                 Picker("Style", selection: $selectedStyle) {
@@ -56,6 +57,8 @@ struct DynamicTypeView: View {
                     .foregroundStyle(.secondary)
                 Slider(value: $categoryIndex, in: 0...6, step: 1)
                     .frame(width: 280)
+                    .accessibilityLabel(Text("Category"))
+                    .accessibilityValue(Text(verbatim: "\(DynamicTypeData.categories[Int(categoryIndex)]), \(currentSize)pt"))
                 Text(DynamicTypeData.categories[Int(categoryIndex)])
                     .font(.callout.weight(.medium))
                     .frame(width: 80, alignment: .leading)
@@ -81,12 +84,14 @@ struct DynamicTypeView: View {
             HStack {
                 Text("Code")
                     .font(.title3.weight(.semibold))
-                Picker("", selection: $snippetTab) {
+                    .accessibilityAddTraits(.isHeader)
+                Picker("Code", selection: $snippetTab) {
                     ForEach(SnippetTab.allCases) { tab in
                         Text(tab.rawValue).tag(tab)
                     }
                 }
                 .pickerStyle(.segmented)
+                .labelsHidden()
                 .frame(width: 300)
 
                 Spacer()
@@ -134,6 +139,7 @@ struct DynamicTypeView: View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Text style sizes (pt)")
                 .font(.title3.weight(.semibold))
+                .accessibilityAddTraits(.isHeader)
 
             Grid(alignment: .leading, horizontalSpacing: 0, verticalSpacing: 4) {
                 GridRow {
