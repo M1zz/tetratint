@@ -100,31 +100,13 @@
     ],
     "note": "Nilai acuan warna sistem berasal dari Human Interface Guidelines Apple dan bisa berubah seiring pembaruan sistem. Di app yang dirilis, gunakan API warna sistem."
   },
-  "pricing": {
-    "title": "Semua fitur gratis",
-    "free": {
-      "name": "TetraTint",
-      "items": [
-        "Buat dan ekspor empat varian",
-        "Pemeriksaan kontras untuk daftar hex",
-        "Simulasi penglihatan warna dan palet ramah buta warna",
-        "Tabel Dynamic Type dan pembuatan kode",
-        "Acuan warna sistem, ekspor palet ke .xcassets"
-      ]
-    },
-    "pro": {
-      "name": "Dukung developer (opsional)",
-      "items": [
-        "Tidak ada yang dikunci",
-        "Kalau membantu, Anda bisa memberi tip di Pengaturan"
-      ],
-      "note": "Tip tidak mengubah fitur apa pun."
-    },
-    "note": "Tanpa akun, tanpa iklan. Palet hanya tersimpan di Mac ini."
-  },
   "faq": {
     "title": "Pertanyaan umum",
     "items": [
+      {
+        "q": "Benar-benar gratis?",
+        "a": "Ya. Semua fitur gratis, tanpa akun dan tanpa iklan. Kalau membantu, Anda bisa memberi tip di Pengaturan; tip tidak membuka fitur apa pun."
+      },
       {
         "q": "Varian yang dibuat tidak cocok dengan brand saya.",
         "a": "Setel tiap varian dengan pemilih warna di kartunya. Buat ulang semua akan membuang suntingan manual dan menurunkan ulang semuanya dari warna dasar."
@@ -167,6 +149,12 @@
     "skip": "Langsung ke konten",
     "languages": "Bahasa",
     "privacy": "Kebijakan Privasi",
-    "contact": "Laporan bug, ide fitur, atau pertanyaan? Kirim email ke {email}. Biasanya kami membalas dalam 2–3 hari."
+    "contact": "Laporan bug, ide fitur, atau pertanyaan? Kirim email ke {email}. Biasanya kami membalas dalam 2–3 hari.",
+    "links": [
+      [
+        "Dukungan",
+        "support.html"
+      ]
+    ]
   }
 }

@@ -100,31 +100,13 @@
     ],
     "note": "Los valores de referencia de los colores del sistema vienen de las Human Interface Guidelines de Apple y pueden cambiar con las actualizaciones del sistema. En tu app publicada, usa las API de colores del sistema."
   },
-  "pricing": {
-    "title": "Todas las funciones son gratis",
-    "free": {
-      "name": "TetraTint",
-      "items": [
-        "Crear y exportar cuatro variantes",
-        "Revisión de contraste para una lista de hex",
-        "Simulación de visión del color y paletas aptas para daltonismo",
-        "Tabla de Dynamic Type y generación de código",
-        "Referencia de colores del sistema y exportación de la paleta a .xcassets"
-      ]
-    },
-    "pro": {
-      "name": "Apoya al desarrollador (opcional)",
-      "items": [
-        "No hay nada bloqueado",
-        "Si te sirvió, puedes dejar una propina en Ajustes"
-      ],
-      "note": "La propina no cambia ninguna función."
-    },
-    "note": "Sin cuenta ni anuncios. Tu paleta se guarda solo en esta Mac."
-  },
   "faq": {
     "title": "Preguntas frecuentes",
     "items": [
+      {
+        "q": "¿De verdad es gratis?",
+        "a": "Sí. Todas las funciones son gratis, sin cuenta ni anuncios. Si te sirvió, puedes dejar una propina en Ajustes; no desbloquea nada."
+      },
       {
         "q": "Las variantes generadas no van con mi marca.",
         "a": "Ajusta cualquier variante con el selector de color de su tarjeta. Regenerar todo descarta tus cambios manuales y vuelve a crear todo a partir del color base."
@@ -167,6 +149,12 @@
     "skip": "Ir al contenido",
     "languages": "Idioma",
     "privacy": "Aviso de privacidad",
-    "contact": "¿Errores, ideas o preguntas? Escríbenos a {email}. Solemos responder en 2 a 3 días."
+    "contact": "¿Errores, ideas o preguntas? Escríbenos a {email}. Solemos responder en 2 a 3 días.",
+    "links": [
+      [
+        "Soporte",
+        "support.html"
+      ]
+    ]
   }
 }

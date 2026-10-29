@@ -100,31 +100,13 @@
     ],
     "note": "Referensvärdena för systemfärger kommer från Apples Human Interface Guidelines och kan ändras med systemuppdateringar. Använd API:erna för systemfärger i den färdiga appen."
   },
-  "pricing": {
-    "title": "Alla funktioner är gratis",
-    "free": {
-      "name": "TetraTint",
-      "items": [
-        "Skapa och exportera fyra varianter",
-        "Kontrastkontroll för en lista med hexvärden",
-        "Simulering av färgseende och färgblindvänliga paletter",
-        "Dynamic Type-tabell och kodgenerering",
-        "Översikt över systemfärger, export av palett som .xcassets"
-      ]
-    },
-    "pro": {
-      "name": "Stöd utvecklaren (frivilligt)",
-      "items": [
-        "Inget är låst",
-        "Om appen hjälpte dig kan du ge dricks under Inställningar"
-      ],
-      "note": "Dricks ändrar inga funktioner."
-    },
-    "note": "Inget konto, ingen reklam. Paletten stannar bara på den här datorn."
-  },
   "faq": {
     "title": "Vanliga frågor",
     "items": [
+      {
+        "q": "Är det verkligen gratis?",
+        "a": "Ja. Alla funktioner är gratis, utan konto och utan reklam. Om appen hjälpte dig kan du ge dricks under Inställningar; det låser inte upp något."
+      },
       {
         "q": "De skapade varianterna passar inte vårt varumärke.",
         "a": "Justera varje variant med färgväljaren på kortet. Skapa om alla slänger dina manuella ändringar och härleder allt på nytt från grundfärgen."
@@ -167,6 +149,12 @@
     "skip": "Hoppa till innehållet",
     "languages": "Språk",
     "privacy": "Integritetspolicy",
-    "contact": "Buggar, idéer eller frågor? Skriv till {email}. Vi svarar oftast inom 2–3 dagar."
+    "contact": "Buggar, idéer eller frågor? Skriv till {email}. Vi svarar oftast inom 2–3 dagar.",
+    "links": [
+      [
+        "Support",
+        "support.html"
+      ]
+    ]
   }
 }

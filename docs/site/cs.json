@@ -48,58 +48,97 @@
   "steps": {
     "title": "Tři kroky na začátek",
     "items": [
-      {"title": "Zadejte základní barvu", "text": "Vložte hex, naberte barvu kapátkem kdekoli na obrazovce nebo zvolte předvolbu."},
-      {"title": "Zkontrolujte čtyři varianty", "text": "Podívejte se na štítky kontrastu a varianty mimo styl značky dolaďte výběrem barvy."},
-      {"title": "Exportujte do Xcode", "text": "Zkopírujte nebo uložte jako Contents.json, .colorset nebo kód UIKit a SwiftUI."}
+      {
+        "title": "Zadejte základní barvu",
+        "text": "Vložte hex, naberte barvu kapátkem kdekoli na obrazovce nebo zvolte předvolbu."
+      },
+      {
+        "title": "Zkontrolujte čtyři varianty",
+        "text": "Podívejte se na štítky kontrastu a varianty mimo styl značky dolaďte výběrem barvy."
+      },
+      {
+        "title": "Exportujte do Xcode",
+        "text": "Zkopírujte nebo uložte jako Contents.json, .colorset nebo kód UIKit a SwiftUI."
+      }
     ]
   },
   "reference": {
     "title": "Jak vznikají varianty a co znamenají štítky",
     "rows": [
-      ["Světlý (Any)", "Vaše barva tak, jak jste ji zadali"],
-      ["Světlý, vysoký kontrast", "O něco sytější a ztmavená, dokud nedosáhne 4.5:1 na bílé"],
-      ["Tmavý", "O něco světlejší a živější (světlost +5, sytost +3)"],
-      ["Tmavý, vysoký kontrast", "Zesvětlená, dokud nedosáhne 7:1 na černé"],
-      ["Text AA", "Kontrast s pozadím aspoň 4.5:1, vhodné pro text"],
-      ["UI 3:1", "Aspoň 3:1, stačí na tlačítka a ikony, na text ne"],
-      ["Nízký", "Pod 3:1, nepoužívejte pro text, ikony ani stavy"],
-      ["Export", "Contents.json · .colorset · UIKit · SwiftUI, nebo celá paleta jako jeden .xcassets"]
+      [
+        "Světlý (Any)",
+        "Vaše barva tak, jak jste ji zadali"
+      ],
+      [
+        "Světlý, vysoký kontrast",
+        "O něco sytější a ztmavená, dokud nedosáhne 4.5:1 na bílé"
+      ],
+      [
+        "Tmavý",
+        "O něco světlejší a živější (světlost +5, sytost +3)"
+      ],
+      [
+        "Tmavý, vysoký kontrast",
+        "Zesvětlená, dokud nedosáhne 7:1 na černé"
+      ],
+      [
+        "Text AA",
+        "Kontrast s pozadím aspoň 4.5:1, vhodné pro text"
+      ],
+      [
+        "UI 3:1",
+        "Aspoň 3:1, stačí na tlačítka a ikony, na text ne"
+      ],
+      [
+        "Nízký",
+        "Pod 3:1, nepoužívejte pro text, ikony ani stavy"
+      ],
+      [
+        "Export",
+        "Contents.json · .colorset · UIKit · SwiftUI, nebo celá paleta jako jeden .xcassets"
+      ]
     ],
     "note": "Referenční hodnoty systémových barev vycházejí z Apple Human Interface Guidelines a mohou se s aktualizacemi systému měnit. Ve vydané aplikaci používejte API systémových barev."
-  },
-  "pricing": {
-    "title": "Všechny funkce jsou zdarma",
-    "free": {
-      "name": "TetraTint",
-      "items": [
-        "Vytváření a export čtyř variant",
-        "Kontrola kontrastu pro seznam hex",
-        "Simulace barevného vidění a bezpečné palety",
-        "Tabulka Dynamic Type a generování kódu",
-        "Přehled systémových barev, export palety do .xcassets"
-      ]
-    },
-    "pro": {
-      "name": "Podpořte vývojáře (dobrovolné)",
-      "items": [
-        "Nic není zamčené",
-        "Pokud vám pomohla, můžete v Nastavení nechat spropitné"
-      ],
-      "note": "Spropitné nemění žádné funkce."
-    },
-    "note": "Žádný účet ani reklamy. Paleta zůstává jen na tomto Macu."
   },
   "faq": {
     "title": "Časté dotazy",
     "items": [
-      {"q": "Vytvořené varianty neladí s naší značkou.", "a": "Každou variantu upravíte výběrem barvy na její kartě. Vytvořit vše znovu zahodí ruční úpravy a vše znovu odvodí ze základní barvy."},
-      {"q": "Jak se varianty počítají?", "a": "Podle toho, jak se systémové barvy Applu skutečně mění mezi vzhledy: v tmavém o něco světlejší a živější, ve světlém s vysokým kontrastem aspoň 4.5:1 na bílé, v tmavém s vysokým kontrastem aspoň 7:1 na černé."},
-      {"q": "Co znamená upozornění v simulaci barevného vidění?", "a": "Že při této simulaci klesne rozdíl dvou barev (ΔE) pod 12 a těžko se rozliší. Nespoléhejte jen na barvu: přidejte ikony, vzory nebo popisky, nebo přejděte na bezpečnou paletu."},
-      {"q": "Jak naučit vlastní písmo Dynamic Type?", "a": "V části Dynamic Type zadejte PostScriptový název písma a zvolte styl, a dostanete kód pro UIKit, SwiftUI a `@ScaledMetric`. Ve velikostech pro zpřístupnění naroste Body na víc než trojnásobek, takže se vyhněte pevné výšce a lineLimit(1)."},
-      {"q": "Exportované barvy vypadají jinak než systémové v mé aplikaci.", "a": "Referenční hodnoty vycházejí z Human Interface Guidelines a mohou se mezi verzemi systému měnit. Pro systémové barvy vždy používejte API UIColor nebo Color."},
-      {"q": "Kde je uložená moje paleta?", "a": "Jen na vašem Macu. Nic se nesynchronizuje do cloudu ani nikam neodesílá. Podrobnosti najdete v zásadách ochrany soukromí."},
-      {"q": "Ukládá se barva nabraná kapátkem?", "a": "Ne. Přečte se jen hodnota barvy ve zvoleném bodě a použije se jako pracovní barva. Žádný obraz obrazovky se neukládá ani neodesílá."},
-      {"q": "Na kterých Macích funguje?", "a": "Na macOS 14 (Sonoma) a novějších. Při exportu si sami zvolíte, kam se soubory uloží."}
+      {
+        "q": "Je to opravdu zdarma?",
+        "a": "Ano. Všechny funkce jsou zdarma, bez účtu a bez reklam. Pokud vám pomohla, můžete v Nastavení nechat spropitné; nic tím neodemknete."
+      },
+      {
+        "q": "Vytvořené varianty neladí s naší značkou.",
+        "a": "Každou variantu upravíte výběrem barvy na její kartě. Vytvořit vše znovu zahodí ruční úpravy a vše znovu odvodí ze základní barvy."
+      },
+      {
+        "q": "Jak se varianty počítají?",
+        "a": "Podle toho, jak se systémové barvy Applu skutečně mění mezi vzhledy: v tmavém o něco světlejší a živější, ve světlém s vysokým kontrastem aspoň 4.5:1 na bílé, v tmavém s vysokým kontrastem aspoň 7:1 na černé."
+      },
+      {
+        "q": "Co znamená upozornění v simulaci barevného vidění?",
+        "a": "Že při této simulaci klesne rozdíl dvou barev (ΔE) pod 12 a těžko se rozliší. Nespoléhejte jen na barvu: přidejte ikony, vzory nebo popisky, nebo přejděte na bezpečnou paletu."
+      },
+      {
+        "q": "Jak naučit vlastní písmo Dynamic Type?",
+        "a": "V části Dynamic Type zadejte PostScriptový název písma a zvolte styl, a dostanete kód pro UIKit, SwiftUI a `@ScaledMetric`. Ve velikostech pro zpřístupnění naroste Body na víc než trojnásobek, takže se vyhněte pevné výšce a lineLimit(1)."
+      },
+      {
+        "q": "Exportované barvy vypadají jinak než systémové v mé aplikaci.",
+        "a": "Referenční hodnoty vycházejí z Human Interface Guidelines a mohou se mezi verzemi systému měnit. Pro systémové barvy vždy používejte API UIColor nebo Color."
+      },
+      {
+        "q": "Kde je uložená moje paleta?",
+        "a": "Jen na vašem Macu. Nic se nesynchronizuje do cloudu ani nikam neodesílá. Podrobnosti najdete v zásadách ochrany soukromí."
+      },
+      {
+        "q": "Ukládá se barva nabraná kapátkem?",
+        "a": "Ne. Přečte se jen hodnota barvy ve zvoleném bodě a použije se jako pracovní barva. Žádný obraz obrazovky se neukládá ani neodesílá."
+      },
+      {
+        "q": "Na kterých Macích funguje?",
+        "a": "Na macOS 14 (Sonoma) a novějších. Při exportu si sami zvolíte, kam se soubory uloží."
+      }
     ]
   },
   "closing": {
@@ -110,6 +149,12 @@
     "skip": "Přejít na obsah",
     "languages": "Jazyk",
     "privacy": "Zásady ochrany soukromí",
-    "contact": "Chyby, nápady nebo dotazy pište na {email}. Obvykle odpovídáme do 2–3 dnů."
+    "contact": "Chyby, nápady nebo dotazy pište na {email}. Obvykle odpovídáme do 2–3 dnů.",
+    "links": [
+      [
+        "Podpora",
+        "support.html"
+      ]
+    ]
   }
 }

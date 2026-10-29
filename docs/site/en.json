@@ -100,31 +100,13 @@
     ],
     "note": "System color reference values come from Apple's Human Interface Guidelines and may change with OS updates. In your shipping app, use the system color APIs."
   },
-  "pricing": {
-    "title": "Every feature is free",
-    "free": {
-      "name": "TetraTint",
-      "items": [
-        "Generate and export four variants",
-        "Contrast audit for a list of hex values",
-        "Color vision simulation and safe palettes",
-        "Dynamic Type table and code generation",
-        "System color reference, palette export as .xcassets"
-      ]
-    },
-    "pro": {
-      "name": "Support the developer (optional)",
-      "items": [
-        "Nothing is locked",
-        "If it helped, you can leave a tip in Settings"
-      ],
-      "note": "Tipping doesn't change any features."
-    },
-    "note": "No account, no ads. Your palette is stored only on this Mac."
-  },
   "faq": {
     "title": "Questions",
     "items": [
+      {
+        "q": "Is it really free?",
+        "a": "Yes. Every feature is free, with no account and no ads. If it helped, you can leave a tip in Settings; it doesn't unlock anything."
+      },
       {
         "q": "The generated variants don't match my brand.",
         "a": "Adjust any variant with the color picker on its card. Regenerate all throws away your manual edits and derives everything again from the base color."
@@ -167,6 +149,12 @@
     "skip": "Skip to content",
     "languages": "Language",
     "privacy": "Privacy Policy",
-    "contact": "Bug reports, feature ideas or questions? Write to {email}. We usually reply within 2–3 days."
+    "contact": "Bug reports, feature ideas or questions? Write to {email}. We usually reply within 2–3 days.",
+    "links": [
+      [
+        "Support",
+        "support.html"
+      ]
+    ]
   }
 }

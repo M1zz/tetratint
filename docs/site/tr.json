@@ -100,31 +100,13 @@
     ],
     "note": "Sistem renklerinin referans değerleri Apple’ın Human Interface Guidelines belgesinden alınmıştır ve sistem güncellemeleriyle değişebilir. Yayımladığınız uygulamada sistem renk API’lerini kullanın."
   },
-  "pricing": {
-    "title": "Tüm özellikler ücretsiz",
-    "free": {
-      "name": "TetraTint",
-      "items": [
-        "Dört varyant üretme ve dışa aktarma",
-        "Hex listesi için kontrast denetimi",
-        "Renk görme simülasyonu ve renk körlüğüne uygun paletler",
-        "Dynamic Type tablosu ve kod üretimi",
-        "Sistem renkleri başvurusu, paleti .xcassets olarak dışa aktarma"
-      ]
-    },
-    "pro": {
-      "name": "Geliştiriciyi destekleyin (isteğe bağlı)",
-      "items": [
-        "Kilitli hiçbir özellik yok",
-        "İşinize yaradıysa Ayarlar’dan bahşiş bırakabilirsiniz"
-      ],
-      "note": "Bahşiş hiçbir özelliği değiştirmez."
-    },
-    "note": "Hesap yok, reklam yok. Paletiniz yalnızca bu Mac’te kalır."
-  },
   "faq": {
     "title": "Sık sorulan sorular",
     "items": [
+      {
+        "q": "Gerçekten ücretsiz mi?",
+        "a": "Evet. Tüm özellikler ücretsiz; hesap da reklam da yok. İşinize yaradıysa Ayarlar’dan bahşiş bırakabilirsiniz; bahşiş hiçbir özelliğin kilidini açmaz."
+      },
       {
         "q": "Üretilen varyantlar markamıza uymuyor.",
         "a": "Her varyantı kartındaki renk seçiciyle ayarlayın. Tümünü yeniden oluştur, elle yaptığınız değişiklikleri atıp her şeyi temel renkten yeniden türetir."
@@ -167,6 +149,12 @@
     "skip": "İçeriğe geç",
     "languages": "Dil",
     "privacy": "Gizlilik Politikası",
-    "contact": "Hata bildirimi, özellik önerisi ya da soru için {email} adresine yazın. Genellikle 2–3 gün içinde yanıt veririz."
+    "contact": "Hata bildirimi, özellik önerisi ya da soru için {email} adresine yazın. Genellikle 2–3 gün içinde yanıt veririz.",
+    "links": [
+      [
+        "Destek",
+        "support.html"
+      ]
+    ]
   }
 }

@@ -100,31 +100,13 @@
     ],
     "note": "Les valeurs de référence des couleurs système proviennent des Human Interface Guidelines d’Apple et peuvent changer avec les mises à jour du système. Dans votre app publiée, utilisez les API de couleurs système."
   },
-  "pricing": {
-    "title": "Toutes les fonctions sont gratuites",
-    "free": {
-      "name": "TetraTint",
-      "items": [
-        "Création et export des quatre variantes",
-        "Vérification du contraste d’une liste hex",
-        "Simulation de la vision des couleurs et palettes adaptées",
-        "Tableau Dynamic Type et génération de code",
-        "Référence des couleurs système, export de la palette en .xcassets"
-      ]
-    },
-    "pro": {
-      "name": "Soutenir le développeur (facultatif)",
-      "items": [
-        "Rien n’est verrouillé",
-        "Si l’app vous a aidé, vous pouvez laisser un pourboire dans les Réglages"
-      ],
-      "note": "Un pourboire ne change aucune fonction."
-    },
-    "note": "Pas de compte, pas de pub. Votre palette reste uniquement sur ce Mac."
-  },
   "faq": {
     "title": "Questions fréquentes",
     "items": [
+      {
+        "q": "C’est vraiment gratuit ?",
+        "a": "Oui. Toutes les fonctions sont gratuites, sans compte ni pub. Si l’app vous a aidé, vous pouvez laisser un pourboire dans les Réglages ; cela ne débloque rien."
+      },
       {
         "q": "Les variantes générées ne collent pas à ma marque.",
         "a": "Ajustez chaque variante avec le sélecteur de couleur de sa carte. « Tout régénérer » efface vos retouches et recalcule tout à partir de la couleur de base."
@@ -167,6 +149,12 @@
     "skip": "Aller au contenu",
     "languages": "Langue",
     "privacy": "Politique de confidentialité",
-    "contact": "Un bug, une idée, une question ? Écrivez à {email}. Réponse en général sous 2 à 3 jours."
+    "contact": "Un bug, une idée, une question ? Écrivez à {email}. Réponse en général sous 2 à 3 jours.",
+    "links": [
+      [
+        "Assistance",
+        "support.html"
+      ]
+    ]
   }
 }

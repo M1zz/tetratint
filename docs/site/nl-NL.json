@@ -100,31 +100,13 @@
     ],
     "note": "De referentiewaarden van systeemkleuren komen uit Apples Human Interface Guidelines en kunnen veranderen met systeemupdates. Gebruik in je uitgebrachte app de API's voor systeemkleuren."
   },
-  "pricing": {
-    "title": "Alle functies zijn gratis",
-    "free": {
-      "name": "TetraTint",
-      "items": [
-        "Vier varianten maken en exporteren",
-        "Contrastcontrole voor een lijst met hexwaarden",
-        "Simulatie van kleurenzicht en kleurenblindveilige paletten",
-        "Dynamic Type-tabel en codegeneratie",
-        "Overzicht van systeemkleuren, palet exporteren als .xcassets"
-      ]
-    },
-    "pro": {
-      "name": "Steun de ontwikkelaar (vrijwillig)",
-      "items": [
-        "Er zit niets op slot",
-        "Heb je er wat aan, dan kun je via Instellingen een fooi geven"
-      ],
-      "note": "Een fooi verandert niets aan de functies."
-    },
-    "note": "Geen account, geen advertenties. Je palet blijft alleen op deze Mac."
-  },
   "faq": {
     "title": "Veelgestelde vragen",
     "items": [
+      {
+        "q": "Is het echt gratis?",
+        "a": "Ja. Alle functies zijn gratis, zonder account en zonder advertenties. Heb je er wat aan, dan kun je via Instellingen een fooi geven; daarmee ontgrendel je niets."
+      },
       {
         "q": "De gemaakte varianten passen niet bij ons merk.",
         "a": "Pas elke variant aan met de kleurkiezer op de kaart. Alles opnieuw maken gooit je handmatige aanpassingen weg en leidt alles opnieuw af van de basiskleur."
@@ -167,6 +149,12 @@
     "skip": "Naar de inhoud",
     "languages": "Taal",
     "privacy": "Privacybeleid",
-    "contact": "Fouten, ideeën of vragen? Mail naar {email}. Meestal antwoorden we binnen 2–3 dagen."
+    "contact": "Fouten, ideeën of vragen? Mail naar {email}. Meestal antwoorden we binnen 2–3 dagen.",
+    "links": [
+      [
+        "Support",
+        "support.html"
+      ]
+    ]
   }
 }

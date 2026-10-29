@@ -100,31 +100,13 @@
     ],
     "note": "Die Referenzwerte der Systemfarben stammen aus Apples Human Interface Guidelines und können sich mit OS-Updates ändern. Nutze in deiner fertigen App die APIs für Systemfarben."
   },
-  "pricing": {
-    "title": "Alle Funktionen sind kostenlos",
-    "free": {
-      "name": "TetraTint",
-      "items": [
-        "Vier Varianten erzeugen und exportieren",
-        "Kontrastprüfung für eine Liste von Hex-Werten",
-        "Farbsehen-Simulation und farbenblindsichere Paletten",
-        "Dynamic-Type-Tabelle und Code-Erzeugung",
-        "Systemfarben-Referenz, Palettenexport als .xcassets"
-      ]
-    },
-    "pro": {
-      "name": "Den Entwickler unterstützen (freiwillig)",
-      "items": [
-        "Nichts ist gesperrt",
-        "Wenn es dir geholfen hat, kannst du in den Einstellungen ein Trinkgeld geben"
-      ],
-      "note": "Ein Trinkgeld schaltet keine Funktionen frei."
-    },
-    "note": "Kein Konto, keine Werbung. Deine Palette bleibt nur auf diesem Mac."
-  },
   "faq": {
     "title": "Häufige Fragen",
     "items": [
+      {
+        "q": "Ist das wirklich kostenlos?",
+        "a": "Ja. Alle Funktionen sind kostenlos, ohne Konto und ohne Werbung. Wenn es dir geholfen hat, kannst du in den Einstellungen ein Trinkgeld geben; freigeschaltet wird dadurch nichts."
+      },
       {
         "q": "Die erzeugten Varianten passen nicht zu meiner Marke.",
         "a": "Passe jede Variante mit der Farbauswahl auf ihrer Karte an. „Alle neu erzeugen“ verwirft deine Änderungen und leitet alles neu aus der Grundfarbe ab."
@@ -167,6 +149,12 @@
     "skip": "Zum Inhalt springen",
     "languages": "Sprache",
     "privacy": "Datenschutzerklärung",
-    "contact": "Fehler, Ideen oder Fragen? Schreib an {email}. Meist kommt die Antwort innerhalb von 2–3 Tagen."
+    "contact": "Fehler, Ideen oder Fragen? Schreib an {email}. Meist kommt die Antwort innerhalb von 2–3 Tagen.",
+    "links": [
+      [
+        "Support",
+        "support.html"
+      ]
+    ]
   }
 }
