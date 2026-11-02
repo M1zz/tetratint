@@ -54,10 +54,12 @@ final class PaletteStore: ObservableObject {
     }
 
     private func load() {
-        guard
-            let data = UserDefaults.standard.data(forKey: Self.storageKey),
-            let decoded = try? JSONDecoder().decode([PaletteItem].self, from: data)
-        else { return }
+        guard let data = UserDefaults.standard.data(forKey: Self.storageKey) else { return }
+        guard let decoded = try? JSONDecoder().decode([PaletteItem].self, from: data) else {
+            // 못 읽은 원본을 옆에 남긴다 — 빈 목록으로 시작해 다음 저장이 덮어써도 되찾을 수 있게
+            UserDefaults.standard.set(data, forKey: Self.storageKey + ".unreadable")
+            return
+        }
         items = decoded
     }
 }
