@@ -13,7 +13,7 @@ configFiles:
 packages:
   LeeoKit:
     url: https://github.com/M1zz/LeeoKit.git
-    from: 3.26.0
+    from: 3.30.1
 
 targets:
   TetraTint:
