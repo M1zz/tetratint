@@ -201,6 +201,7 @@
 "Open in TetraTint" = "在 TetraTint 中開啟";
 "Opens a TetraTint screen: Color, Dynamic Type, System colors, or Palette." = "開啟 TetraTint 的其中一個畫面：色彩、動態字體、系統色彩或色票。";
 "Screen" = "畫面";
+"The TetraTint screen to open" = "要打開的 TetraTint 畫面";
 "Pick Color" = "取色";
 "Open Screen" = "開啟畫面";
 
@@ -226,6 +227,8 @@
 "Save your palette to a file and load it back anytime." = "將色票存成檔案，隨時都能再載入。";
 "Clear the whole palette" = "一次清空色票";
 "Remove every saved color at once when you want a fresh start." = "想重新開始時，可一次刪除所有已儲存的顏色。";
+"Just Ask Siri" = "直接跟 Siri 說";
+"Siri will start the eyedropper or open the screen you need, even if you don't say the app's name." = "不必說出 App 名稱，Siri 也能啟動滴管或立即打開你需要的畫面。";
 
 /* Tip ask card: how many times colors were saved or exported */
 "You've saved or exported colors %lld times with TetraTint" = "你已用 TetraTint 儲存或輸出顏色 %lld 次";

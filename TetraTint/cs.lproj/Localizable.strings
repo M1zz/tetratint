@@ -201,6 +201,7 @@
 "Open in TetraTint" = "Otevřít v TetraTint";
 "Opens a TetraTint screen: Color, Dynamic Type, System colors, or Palette." = "Otevře jednu z obrazovek TetraTint: Barva, Dynamic Type, Systémové barvy nebo Paleta.";
 "Screen" = "Obrazovka";
+"The TetraTint screen to open" = "Obrazovka TetraTint, kterou chcete otevřít";
 "Pick Color" = "Vybrat barvu";
 "Open Screen" = "Otevřít obrazovku";
 
@@ -226,6 +227,8 @@
 "Save your palette to a file and load it back anytime." = "Uložte paletu do souboru a kdykoli ji znovu načtěte.";
 "Clear the whole palette" = "Vymazat celou paletu";
 "Remove every saved color at once when you want a fresh start." = "Smažte všechny uložené barvy najednou, když chcete začít znovu.";
+"Just Ask Siri" = "Stačí říct Siri";
+"Siri will start the eyedropper or open the screen you need, even if you don't say the app's name." = "Siri spustí kapátko nebo otevře obrazovku, kterou potřebujete, i když neřeknete název aplikace.";
 
 /* Tip ask card: how many times colors were saved or exported */
 "You've saved or exported colors %lld times with TetraTint" = "Barvy jste v TetraTintu uložili nebo exportovali už %lld×";

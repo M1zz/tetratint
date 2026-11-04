@@ -201,6 +201,7 @@
 "Open in TetraTint" = "TetraTint에서 열기";
 "Opens a TetraTint screen: Color, Dynamic Type, System colors, or Palette." = "TetraTint의 화면 하나를 엽니다: 색상, 다이나믹 타입, 시스템 색상, 팔레트.";
 "Screen" = "화면";
+"The TetraTint screen to open" = "열어 볼 TetraTint 화면";
 "Pick Color" = "색 추출";
 "Open Screen" = "화면 열기";
 
@@ -226,6 +227,8 @@
 "Save your palette to a file and load it back anytime." = "팔레트를 파일로 저장해 두고 언제든 다시 불러와요.";
 "Clear the whole palette" = "팔레트 한 번에 비우기";
 "Remove every saved color at once when you want a fresh start." = "새로 시작하고 싶을 때 저장한 색을 한 번에 지워요.";
+"Just Ask Siri" = "Siri에게 그냥 말하기";
+"Siri will start the eyedropper or open the screen you need, even if you don't say the app's name." = "앱 이름을 말하지 않아도 Siri가 스포이트를 켜거나 필요한 화면을 바로 열어 줘요.";
 
 /* Tip ask card: how many times colors were saved or exported */
 "You've saved or exported colors %lld times with TetraTint" = "TetraTint 로 색을 %lld번 저장하거나 내보냈어요";

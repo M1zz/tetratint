@@ -201,6 +201,7 @@
 "Open in TetraTint" = "Åpne i TetraTint";
 "Opens a TetraTint screen: Color, Dynamic Type, System colors, or Palette." = "Åpner et skjermbilde i TetraTint: Farge, Dynamic Type, Systemfarger eller Palett.";
 "Screen" = "Skjermbilde";
+"The TetraTint screen to open" = "Skjermbildet i TetraTint som skal åpnes";
 "Pick Color" = "Velg farge";
 "Open Screen" = "Åpne skjermbilde";
 
@@ -226,6 +227,8 @@
 "Save your palette to a file and load it back anytime." = "Lagre paletten i en fil og last den inn igjen når som helst.";
 "Clear the whole palette" = "Tøm hele paletten";
 "Remove every saved color at once when you want a fresh start." = "Fjern alle lagrede farger på én gang når du vil begynne på nytt.";
+"Just Ask Siri" = "Bare spør Siri";
+"Siri will start the eyedropper or open the screen you need, even if you don't say the app's name." = "Siri starter pipetten eller åpner skjermbildet du trenger, selv om du ikke sier navnet på appen.";
 
 /* Tip ask card: how many times colors were saved or exported */
 "You've saved or exported colors %lld times with TetraTint" = "Du har lagret eller eksportert farger %lld ganger med TetraTint";

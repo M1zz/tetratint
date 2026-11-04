@@ -201,6 +201,7 @@
 "Open in TetraTint" = "Άνοιγμα στο TetraTint";
 "Opens a TetraTint screen: Color, Dynamic Type, System colors, or Palette." = "Ανοίγει μια οθόνη του TetraTint: Χρώμα, Dynamic Type, Χρώματα συστήματος ή Παλέτα.";
 "Screen" = "Οθόνη";
+"The TetraTint screen to open" = "Η οθόνη του TetraTint που θέλετε να ανοίξετε";
 "Pick Color" = "Επιλογή χρώματος";
 "Open Screen" = "Άνοιγμα οθόνης";
 
@@ -226,6 +227,8 @@
 "Save your palette to a file and load it back anytime." = "Αποθηκεύστε την παλέτα σε αρχείο και φορτώστε την ξανά όποτε θέλετε.";
 "Clear the whole palette" = "Εκκαθάριση ολόκληρης της παλέτας";
 "Remove every saved color at once when you want a fresh start." = "Διαγράψτε όλα τα αποθηκευμένα χρώματα με μία κίνηση όταν θέλετε να ξεκινήσετε από την αρχή.";
+"Just Ask Siri" = "Απλώς ζητήστε το από τη Siri";
+"Siri will start the eyedropper or open the screen you need, even if you don't say the app's name." = "Η Siri θα ενεργοποιεί το σταγονόμετρο ή θα ανοίγει την οθόνη που χρειάζεστε, ακόμη κι αν δεν πείτε το όνομα της εφαρμογής.";
 
 /* Tip ask card: how many times colors were saved or exported */
 "You've saved or exported colors %lld times with TetraTint" = "Έχετε αποθηκεύσει ή εξαγάγει χρώματα %lld φορές με το TetraTint";

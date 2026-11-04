@@ -48,6 +48,9 @@ extension TetraTintSpec {
         .init(id: "data.delete", status: .planned,
               title: NSLocalizedString("Clear the whole palette", comment: "Roadmap item: data.delete"),
               detail: NSLocalizedString("Remove every saved color at once when you want a fresh start.", comment: "Roadmap item detail: data.delete")),
+        .init(id: "siri-ai", status: .planned,
+              title: NSLocalizedString("Just Ask Siri", comment: "Roadmap item: siri-ai"),
+              detail: NSLocalizedString("Siri will start the eyedropper or open the screen you need, even if you don't say the app's name.", comment: "Roadmap item detail: siri-ai")),
     ]}
 }
 

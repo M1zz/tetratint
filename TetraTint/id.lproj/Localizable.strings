@@ -201,6 +201,7 @@
 "Open in TetraTint" = "Buka di TetraTint";
 "Opens a TetraTint screen: Color, Dynamic Type, System colors, or Palette." = "Membuka salah satu layar TetraTint: Warna, Dynamic Type, Warna sistem, atau Palet.";
 "Screen" = "Layar";
+"The TetraTint screen to open" = "Layar TetraTint yang ingin dibuka";
 "Pick Color" = "Ambil Warna";
 "Open Screen" = "Buka Layar";
 
@@ -226,6 +227,8 @@
 "Save your palette to a file and load it back anytime." = "Simpan palet ke file dan muat kembali kapan saja.";
 "Clear the whole palette" = "Kosongkan seluruh palet";
 "Remove every saved color at once when you want a fresh start." = "Hapus semua warna tersimpan sekaligus saat ingin memulai dari awal.";
+"Just Ask Siri" = "Cukup minta Siri";
+"Siri will start the eyedropper or open the screen you need, even if you don't say the app's name." = "Siri akan menyalakan pipet atau membuka layar yang Anda perlukan, meski Anda tidak menyebut nama aplikasinya.";
 
 /* Tip ask card: how many times colors were saved or exported */
 "You've saved or exported colors %lld times with TetraTint" = "Kamu sudah menyimpan atau mengekspor warna %lld kali dengan TetraTint";

@@ -201,6 +201,7 @@
 "Open in TetraTint" = "เปิดใน TetraTint";
 "Opens a TetraTint screen: Color, Dynamic Type, System colors, or Palette." = "เปิดหน้าจอของ TetraTint ได้แก่ สี, Dynamic Type, สีของระบบ หรือจานสี";
 "Screen" = "หน้าจอ";
+"The TetraTint screen to open" = "หน้าจอ TetraTint ที่จะเปิด";
 "Pick Color" = "เลือกสี";
 "Open Screen" = "เปิดหน้าจอ";
 
@@ -226,6 +227,8 @@
 "Save your palette to a file and load it back anytime." = "บันทึกจานสีเป็นไฟล์แล้วโหลดกลับมาได้ทุกเมื่อ";
 "Clear the whole palette" = "ล้างจานสีทั้งหมด";
 "Remove every saved color at once when you want a fresh start." = "ลบสีที่บันทึกไว้ทั้งหมดในครั้งเดียว เมื่ออยากเริ่มใหม่";
+"Just Ask Siri" = "แค่บอก Siri";
+"Siri will start the eyedropper or open the screen you need, even if you don't say the app's name." = "Siri จะเปิดที่ดูดสีหรือหน้าจอที่คุณต้องการให้ทันที แม้ไม่ได้พูดชื่อแอป";
 
 /* Tip ask card: how many times colors were saved or exported */
 "You've saved or exported colors %lld times with TetraTint" = "คุณบันทึกหรือส่งออกสีด้วย TetraTint มาแล้ว %lld ครั้ง";

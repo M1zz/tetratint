@@ -24,7 +24,7 @@ struct OpenTetraTintSectionIntent: AppIntent {
     static var description = IntentDescription("Opens a TetraTint screen: Color, Dynamic Type, System colors, or Palette.")
     static var openAppWhenRun = true
 
-    @Parameter(title: "Screen")
+    @Parameter(title: "Screen", description: "The TetraTint screen to open")
     var section: AppSectionEntity
 
     @MainActor
