@@ -8,6 +8,7 @@ struct VariantsLens: View {
 
     @State private var exportTab: ExportTab = .contentsJSON
     @State private var showCopied = false
+    private let purchases = PurchaseManager.shared
 
     private var set: AppearanceSet { appState.set }
 
@@ -81,12 +82,16 @@ struct VariantsLens: View {
                     Label(showCopied ? "Copied" : "Copy", systemImage: "doc.on.doc")
                 }
 
+                // 텍스트 복사는 언제나 무료, 파일째 저장은 Pro.
+                let lock = purchases.lock(.colorSetFiles)
                 Button {
-                    if Exporters.exportColorSet(name: appState.colorName, set: set) {
+                    if let lock {
+                        appState.paywall = lock
+                    } else if Exporters.exportColorSet(name: appState.colorName, set: set) {
                         LeeoEngagement.shared.registerSignificantEvent()
                     }
                 } label: {
-                    Label("Save .colorset", systemImage: "square.and.arrow.down")
+                    Label("Save .colorset", systemImage: lock == nil ? "square.and.arrow.down" : "lock")
                 }
             }
 

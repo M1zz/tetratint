@@ -1,7 +1,7 @@
 import Foundation
 import LeeoKit
 
-/// LeeoKit 계약 — 피드백·리뷰 요청·익명 사용 통계·원격 킬스위치가 이 값으로 묶인다.
+/// LeeoKit 계약 — 피드백·리뷰 요청·익명 사용 통계·원격 킬스위치·요금제가 이 값으로 묶인다.
 enum TetraTintSpec: LeeoAppSpec {
     /// 식별 이름. 피드백·사용 기록이 이 값으로 묶이므로 언어마다 바꾸지 않는다.
     static let appName = "TetraTint"
@@ -12,14 +12,24 @@ enum TetraTintSpec: LeeoAppSpec {
     static let legal = LeeoLegalConfig(
         privacyURL: URL(string: "https://m1zz.github.io/tetratint/privacy.html")!,
         supportURL: URL(string: "https://m1zz.github.io/tetratint/support.html")!)
-    static let monetization = LeeoMonetization.free
-    /// 개발자 응원하기(팁, 소모성 세 가지 — 작은 것부터). 기능을 열지 않는다.
-    /// 무료 앱이라 LeeoStore 가 없다 — 앱이 뜰 때 `startStandalone()` 으로 혼자 선다.
-    @MainActor static let tipJar = LeeoTipJar(config: LeeoTipJarConfig(productIDs: [
-        "com.leeo.TetraTint.tip.small",
-        "com.leeo.TetraTint.tip.medium",
-        "com.leeo.TetraTint.tip.large"
-    ]))
+    /// **무료 · Plus · Pro 세 칸** (→ Plan.swift, PurchaseManager.swift). 칸마다 주 · 월 · 연 구독과 평생을 둔다.
+    ///
+    /// ⚠️ 팁 상품은 `productIDs` · 권한 목록에 넣지 않는다. 넣으면 팁을 낸 사람이 Plus 가 된다.
+    static let monetization = LeeoMonetization.freemiumSubscription(
+        LeeoSubscriptionConfig(
+            productIDs: Plan.saleProductIDs,
+            // 자체 약관이 없으므로 애플 표준 사용권 계약(EULA)을 건다.
+            termsURL: URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!,
+            entitlementIDs: Plan.plusEntitlementIDs.union(Plan.proEntitlementIDs),
+            // 실제 판정은 `PurchaseManager.allows` 가 한다. 여기는 매니페스트 · 점검용 선언이다.
+            gate: LeeoGatePolicy(
+                freeLimits: [PlanFeature.unlimitedPalette.rawValue: Plan.freePaletteLimit],
+                proOnly: Set(PlanFeature.allCases.filter { $0 != .unlimitedPalette }.map(\.rawValue))),
+            // 개발자 응원하기(팁, 소모성 세 가지 — 작은 것부터). 기능을 열지 않는다.
+            tipJar: LeeoTipJarConfig(productIDs: Plan.tipProductIDs)
+        )
+    )
+
     /// Mac App Store 의 TetraTint. 설정의 "리뷰 남기기" 가 작성 페이지로 바로 간다.
     static let appStoreID: String? = "6789206198"
     /// 익명 사용 통계 → FeedbackHub. 없으면 bootstrap 이 스냅샷·app_open 을 건너뛴다.

@@ -82,29 +82,39 @@ struct FlyingSwatch: View {
 
 /// An "add to palette" button that, on tap, both runs `action` and launches a
 /// swatch (or several) flying toward the Palette sidebar row.
+/// 막혀 있으면(`lock`) 담지 않고 그 기능이 든 칸의 페이월을 띄운다.
 struct FlyingAddButton<L: View>: View {
     @EnvironmentObject private var fly: FlyOverlayModel
+    @EnvironmentObject private var appState: AppState
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     /// Colors to send flying. Multiple colors fan out with a slight stagger.
     let colors: [Color]
+    let lock: PlanFeature?
     let action: () -> Void
     @ViewBuilder var label: () -> L
 
     @State private var center: CGPoint = .zero
 
-    init(colors: [Color], action: @escaping () -> Void, @ViewBuilder label: @escaping () -> L) {
+    init(colors: [Color], lock: PlanFeature? = nil, action: @escaping () -> Void,
+         @ViewBuilder label: @escaping () -> L) {
         self.colors = colors
+        self.lock = lock
         self.action = action
         self.label = label
     }
 
-    init(color: Color, action: @escaping () -> Void, @ViewBuilder label: @escaping () -> L) {
-        self.init(colors: [color], action: action, label: label)
+    init(color: Color, lock: PlanFeature? = nil, action: @escaping () -> Void,
+         @ViewBuilder label: @escaping () -> L) {
+        self.init(colors: [color], lock: lock, action: action, label: label)
     }
 
     var body: some View {
         Button {
+            if let lock {
+                appState.paywall = lock
+                return
+            }
             action()
             // Saving to the palette is the moment the app did its job.
             LeeoEngagement.shared.registerSignificantEvent()

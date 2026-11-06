@@ -238,3 +238,51 @@
 
 /* 손쉬운 사용: 스포이트 버튼의 음성 명령 이름 */
 "Eyedropper" = "Damlalık";
+
+/* 요금제: 무료 · Plus · Pro (PaywallView · SettingsView · PurchaseManager) */
+"Free" = "Ücretsiz";
+"TetraTint Plus and Pro" = "TetraTint Plus ve Pro";
+"Audit your whole palette and send it straight to Xcode. Go yearly or lifetime." = "Tüm paletinizi denetleyin ve doğrudan Xcode’a gönderin. Yıllık ya da ömür boyu seçin.";
+"Make one color in four modes and check its contrast." = "Bir rengi dört modda oluşturun ve kontrastını denetleyin.";
+"Check your whole palette in one go." = "Tüm paletinizi tek seferde denetleyin.";
+"Send files straight to Xcode, and start from Shortcuts." = "Dosyaları doğrudan Xcode’a gönderin, Kestirmeler’den başlayın.";
+"Recommended" = "Önerilen";
+"Current plan" = "Mevcut plan";
+"Included in %@" = "%@ içinde";
+"Show weekly and monthly plans" = "Haftalık ve aylık planları göster";
+"Weekly" = "Haftalık";
+"%@ / week" = "%@ / hafta";
+"Monthly" = "Aylık";
+"%@ / month" = "%@ / ay";
+"You own Plus Lifetime, so you pay only the difference." = "Ömür boyu Plus’a sahipsiniz, yalnızca farkı ödersiniz.";
+"Pay %@" = "%@ öde";
+"Loading plans…" = "Planlar yükleniyor…";
+"Couldn't load plans. Check your internet connection and try again." = "Planlar yüklenemedi. İnternet bağlantınızı denetleyip yeniden deneyin.";
+"Try Again" = "Yeniden Dene";
+"Subscriptions renew automatically at the same price unless canceled at least 24 hours before the period ends, and are charged to your Apple Account. New subscribers get the first year of a yearly plan at a discount once; after that it renews at the regular price. Manage or cancel anytime in your App Store account settings. Lifetime is a one-time payment and never renews." = "Abonelikler, dönem bitmeden en az 24 saat önce iptal edilmedikçe aynı fiyattan otomatik olarak yenilenir ve Apple Hesabınızdan ücretlendirilir. Yeni aboneler yıllık planın ilk yılında bir kez indirim alır; sonrasında normal fiyattan yenilenir. Aboneliği dilediğiniz zaman App Store hesap ayarlarından yönetebilir veya iptal edebilirsiniz. Ömür boyu tek seferlik bir ödemedir ve asla yenilenmez.";
+"Terms of Use" = "Kullanım Koşulları";
+"Privacy Policy" = "Gizlilik Politikası";
+"Restore Purchases" = "Satın Alımları Geri Yükle";
+"Unlimited" = "Sınırsız";
+"Four mode variants" = "Dört mod için varyantlar";
+"Contrast and WCAG for one color" = "Tek renk için kontrast ve WCAG";
+"Copy hex and code as text" = "Hex ve kodu metin olarak kopyalama";
+"Dynamic Type table and preview" = "Dynamic Type tablosu ve önizlemesi";
+"System colors reference" = "Sistem renkleri başvurusu";
+"%lld colors" = "%lld renk";
+"Feature" = "Özellik";
+"Included" = "Var";
+"Not included" = "Yok";
+"Unlimited palette" = "Sınırsız palet";
+"Bulk contrast audit and quick fix" = "Toplu kontrast denetimi ve hızlı düzeltme";
+"Color-blind safe palettes" = "Renk körlüğüne uygun paletler";
+"Save .colorset files" = ".colorset dosyalarını kaydetme";
+"Export the palette as one .xcassets" = "Paleti tek bir .xcassets olarak dışa aktarma";
+"Dynamic Type code" = "Dynamic Type kodu";
+"Shortcuts and Spotlight" = "Kestirmeler ve Spotlight";
+"Free palettes hold up to %lld colors" = "Ücretsiz palete en fazla %lld renk eklenebilir";
+"No purchases were found for this Apple Account." = "Bu Apple Hesabı için satın alım bulunamadı.";
+"Your plan" = "Planınız";
+"You were here before plans existed, so Pro is yours to keep." = "Planlar gelmeden önce de buradaydınız, bu yüzden Pro sizde kalıyor.";
+"See Plans" = "Planları Gör";
+"Plan" = "Plan";

@@ -238,3 +238,51 @@
 
 /* 손쉬운 사용: 스포이트 버튼의 음성 명령 이름 */
 "Eyedropper" = "ที่ดูดสี";
+
+/* 요금제: 무료 · Plus · Pro (PaywallView · SettingsView · PurchaseManager) */
+"Free" = "ฟรี";
+"TetraTint Plus and Pro" = "TetraTint Plus และ Pro";
+"Audit your whole palette and send it straight to Xcode. Go yearly or lifetime." = "ตรวจจานสีทั้งชุดแล้วส่งเข้า Xcode ได้ทันที เลือกแบบรายปีหรือตลอดชีพ";
+"Make one color in four modes and check its contrast." = "สร้างสีเดียวให้ครบสี่โหมด แล้วตรวจคอนทราสต์ได้เลย";
+"Check your whole palette in one go." = "ตรวจจานสีทั้งชุดได้ในครั้งเดียว";
+"Send files straight to Xcode, and start from Shortcuts." = "ส่งเป็นไฟล์เข้า Xcode ได้ทันที และเริ่มจากคำสั่งลัดได้";
+"Recommended" = "แนะนำ";
+"Current plan" = "แผนปัจจุบัน";
+"Included in %@" = "รวมอยู่ใน %@";
+"Show weekly and monthly plans" = "แสดงแผนรายสัปดาห์และรายเดือน";
+"Weekly" = "รายสัปดาห์";
+"%@ / week" = "%@ / สัปดาห์";
+"Monthly" = "รายเดือน";
+"%@ / month" = "%@ / เดือน";
+"You own Plus Lifetime, so you pay only the difference." = "คุณมี Plus ตลอดชีพอยู่แล้ว จึงจ่ายแค่ส่วนต่าง";
+"Pay %@" = "ชำระ %@";
+"Loading plans…" = "กำลังโหลดแผน…";
+"Couldn't load plans. Check your internet connection and try again." = "โหลดแผนไม่สำเร็จ โปรดตรวจการเชื่อมต่ออินเทอร์เน็ตแล้วลองอีกครั้ง";
+"Try Again" = "ลองอีกครั้ง";
+"Subscriptions renew automatically at the same price unless canceled at least 24 hours before the period ends, and are charged to your Apple Account. New subscribers get the first year of a yearly plan at a discount once; after that it renews at the regular price. Manage or cancel anytime in your App Store account settings. Lifetime is a one-time payment and never renews." = "การสมัครสมาชิกจะต่ออายุอัตโนมัติในราคาเดิม เว้นแต่จะยกเลิกอย่างน้อย 24 ชั่วโมงก่อนสิ้นสุดรอบ และจะเรียกเก็บเงินจากบัญชี Apple ของคุณ ผู้สมัครใหม่จะได้รับส่วนลดปีแรกของแผนรายปีหนึ่งครั้ง หลังจากนั้นจะต่ออายุในราคาปกติ คุณจัดการหรือยกเลิกได้ทุกเมื่อในการตั้งค่าบัญชี App Store แบบตลอดชีพชำระครั้งเดียวและไม่มีการต่ออายุ";
+"Terms of Use" = "ข้อกำหนดการใช้งาน";
+"Privacy Policy" = "นโยบายความเป็นส่วนตัว";
+"Restore Purchases" = "กู้คืนการซื้อ";
+"Unlimited" = "ไม่จำกัด";
+"Four mode variants" = "เวอร์ชันสีสำหรับสี่โหมด";
+"Contrast and WCAG for one color" = "คอนทราสต์และ WCAG ของสีเดียว";
+"Copy hex and code as text" = "คัดลอก hex และโค้ดเป็นข้อความ";
+"Dynamic Type table and preview" = "ตารางและตัวอย่าง Dynamic Type";
+"System colors reference" = "ข้อมูลอ้างอิงสีของระบบ";
+"%lld colors" = "%lld สี";
+"Feature" = "คุณสมบัติ";
+"Included" = "มี";
+"Not included" = "ไม่มี";
+"Unlimited palette" = "จานสีไม่จำกัด";
+"Bulk contrast audit and quick fix" = "ตรวจคอนทราสต์ทีละหลายสีและแก้ได้ทันที";
+"Color-blind safe palettes" = "จานสีที่ปลอดภัยสำหรับผู้ตาบอดสี";
+"Save .colorset files" = "บันทึกไฟล์ .colorset";
+"Export the palette as one .xcassets" = "ส่งออกจานสีเป็น .xcassets ไฟล์เดียว";
+"Dynamic Type code" = "โค้ด Dynamic Type";
+"Shortcuts and Spotlight" = "คำสั่งลัดและ Spotlight";
+"Free palettes hold up to %lld colors" = "จานสีแบบฟรีเก็บได้สูงสุด %lld สี";
+"No purchases were found for this Apple Account." = "ไม่พบการซื้อของบัญชี Apple นี้";
+"Your plan" = "แผนของคุณ";
+"You were here before plans existed, so Pro is yours to keep." = "คุณใช้งานมาตั้งแต่ก่อนมีแผนชำระเงิน จึงได้ใช้ Pro ต่อไป";
+"See Plans" = "ดูแผน";
+"Plan" = "แผน";

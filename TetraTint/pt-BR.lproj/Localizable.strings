@@ -238,3 +238,51 @@
 
 /* 손쉬운 사용: 스포이트 버튼의 음성 명령 이름 */
 "Eyedropper" = "Conta-gotas";
+
+/* 요금제: 무료 · Plus · Pro (PaywallView · SettingsView · PurchaseManager) */
+"Free" = "Grátis";
+"TetraTint Plus and Pro" = "TetraTint Plus e Pro";
+"Audit your whole palette and send it straight to Xcode. Go yearly or lifetime." = "Analise a paleta inteira e mande direto para o Xcode. Escolha anual ou vitalício.";
+"Make one color in four modes and check its contrast." = "Crie uma cor em quatro modos e confira o contraste.";
+"Check your whole palette in one go." = "Analise a paleta inteira de uma vez.";
+"Send files straight to Xcode, and start from Shortcuts." = "Mande arquivos direto para o Xcode e comece pelos Atalhos.";
+"Recommended" = "Recomendado";
+"Current plan" = "Plano atual";
+"Included in %@" = "Incluído no %@";
+"Show weekly and monthly plans" = "Mostrar planos semanais e mensais";
+"Weekly" = "Semanal";
+"%@ / week" = "%@ / semana";
+"Monthly" = "Mensal";
+"%@ / month" = "%@ / mês";
+"You own Plus Lifetime, so you pay only the difference." = "Você já tem o Plus vitalício, então paga só a diferença.";
+"Pay %@" = "Pagar %@";
+"Loading plans…" = "Carregando planos…";
+"Couldn't load plans. Check your internet connection and try again." = "Não foi possível carregar os planos. Verifique a conexão com a internet e tente de novo.";
+"Try Again" = "Tentar de novo";
+"Subscriptions renew automatically at the same price unless canceled at least 24 hours before the period ends, and are charged to your Apple Account. New subscribers get the first year of a yearly plan at a discount once; after that it renews at the regular price. Manage or cancel anytime in your App Store account settings. Lifetime is a one-time payment and never renews." = "As assinaturas são renovadas automaticamente pelo mesmo preço, a menos que sejam canceladas pelo menos 24 horas antes do fim do período, e são cobradas na sua Conta Apple. Novos assinantes recebem uma única vez o primeiro ano do plano anual com desconto; depois, a renovação é pelo preço normal. Gerencie ou cancele quando quiser nos ajustes da sua conta da App Store. O vitalício é um pagamento único e nunca é renovado.";
+"Terms of Use" = "Termos de Uso";
+"Privacy Policy" = "Política de Privacidade";
+"Restore Purchases" = "Restaurar compras";
+"Unlimited" = "Ilimitada";
+"Four mode variants" = "Variantes para quatro modos";
+"Contrast and WCAG for one color" = "Contraste e WCAG de uma cor";
+"Copy hex and code as text" = "Copiar hex e código como texto";
+"Dynamic Type table and preview" = "Tabela e prévia do Dynamic Type";
+"System colors reference" = "Referência de cores do sistema";
+"%lld colors" = "%lld cores";
+"Feature" = "Recurso";
+"Included" = "Incluído";
+"Not included" = "Não incluído";
+"Unlimited palette" = "Paleta ilimitada";
+"Bulk contrast audit and quick fix" = "Análise de contraste em lote e correção na hora";
+"Color-blind safe palettes" = "Paletas seguras para daltonismo";
+"Save .colorset files" = "Salvar arquivos .colorset";
+"Export the palette as one .xcassets" = "Exportar a paleta como um único .xcassets";
+"Dynamic Type code" = "Código de Dynamic Type";
+"Shortcuts and Spotlight" = "Atalhos e Spotlight";
+"Free palettes hold up to %lld colors" = "A paleta grátis guarda até %lld cores";
+"No purchases were found for this Apple Account." = "Nenhuma compra foi encontrada nesta Conta Apple.";
+"Your plan" = "Seu plano";
+"You were here before plans existed, so Pro is yours to keep." = "Você já usava o app antes dos planos, então o Pro continua seu.";
+"See Plans" = "Ver planos";
+"Plan" = "Plano";

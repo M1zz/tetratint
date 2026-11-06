@@ -238,3 +238,51 @@
 
 /* 손쉬운 사용: 스포이트 버튼의 음성 명령 이름 */
 "Eyedropper" = "スポイト";
+
+/* 요금제: 무료 · Plus · Pro (PaywallView · SettingsView · PurchaseManager) */
+"Free" = "無料";
+"TetraTint Plus and Pro" = "TetraTint Plus・Pro";
+"Audit your whole palette and send it straight to Xcode. Go yearly or lifetime." = "パレット全体をチェックして、そのままXcodeへ。年額か買い切りを選べます。";
+"Make one color in four modes and check its contrast." = "1色を4つのモードで作り、コントラストまで確認できます。";
+"Check your whole palette in one go." = "パレット全体をまとめてチェック。";
+"Send files straight to Xcode, and start from Shortcuts." = "ファイルのままXcodeへ。ショートカットからもすぐ始められます。";
+"Recommended" = "おすすめ";
+"Current plan" = "利用中";
+"Included in %@" = "%@に含まれます";
+"Show weekly and monthly plans" = "週額・月額プランも表示";
+"Weekly" = "週額";
+"%@ / week" = "%@／週";
+"Monthly" = "月額";
+"%@ / month" = "%@／月";
+"You own Plus Lifetime, so you pay only the difference." = "Plusの買い切りをお持ちなので、差額だけでアップグレードできます。";
+"Pay %@" = "%@で購入";
+"Loading plans…" = "プランを読み込み中…";
+"Couldn't load plans. Check your internet connection and try again." = "プランを読み込めませんでした。インターネット接続を確認して、もう一度お試しください。";
+"Try Again" = "再試行";
+"Subscriptions renew automatically at the same price unless canceled at least 24 hours before the period ends, and are charged to your Apple Account. New subscribers get the first year of a yearly plan at a discount once; after that it renews at the regular price. Manage or cancel anytime in your App Store account settings. Lifetime is a one-time payment and never renews." = "サブスクリプションは、期間終了の24時間前までに解約しない限り同じ価格で自動更新され、Apple Accountに請求されます。初めての方は年額プランの最初の1年を一度だけ割引価格で利用でき、その後は通常価格で更新されます。管理と解約はApp Storeのアカウント設定からいつでも行えます。買い切りは一度のお支払いで、更新されません。";
+"Terms of Use" = "利用規約";
+"Privacy Policy" = "プライバシーポリシー";
+"Restore Purchases" = "購入を復元";
+"Unlimited" = "無制限";
+"Four mode variants" = "4モードのバリエーション作成";
+"Contrast and WCAG for one color" = "1色ずつのコントラスト・WCAG";
+"Copy hex and code as text" = "hex・コードをテキストでコピー";
+"Dynamic Type table and preview" = "Dynamic Typeの表・プレビュー";
+"System colors reference" = "システムカラーの参照";
+"%lld colors" = "%lld色";
+"Feature" = "機能";
+"Included" = "含まれます";
+"Not included" = "含まれません";
+"Unlimited palette" = "パレット無制限";
+"Bulk contrast audit and quick fix" = "コントラストの一括チェックとその場で修正";
+"Color-blind safe palettes" = "色覚に配慮したパレット";
+"Save .colorset files" = ".colorsetファイルを保存";
+"Export the palette as one .xcassets" = "パレットを.xcassetsにまとめて書き出し";
+"Dynamic Type code" = "Dynamic Typeのコード生成";
+"Shortcuts and Spotlight" = "ショートカット・Spotlight";
+"Free palettes hold up to %lld colors" = "無料のパレットには%lld色まで保存できます";
+"No purchases were found for this Apple Account." = "このApple Accountで購入履歴が見つかりませんでした。";
+"Your plan" = "現在のプラン";
+"You were here before plans existed, so Pro is yours to keep." = "プランができる前から使ってくださっているので、Proをそのままお使いいただけます。";
+"See Plans" = "プランを見る";
+"Plan" = "プラン";

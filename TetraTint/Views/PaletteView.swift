@@ -3,6 +3,8 @@ import LeeoKit
 
 struct PaletteView: View {
     @EnvironmentObject private var store: PaletteStore
+    @EnvironmentObject private var appState: AppState
+    private let purchases = PurchaseManager.shared
 
     var body: some View {
         Group {
@@ -15,12 +17,15 @@ struct PaletteView: View {
         .navigationTitle("Palette")
         .toolbar {
             ToolbarItem {
+                let lock = purchases.lock(.assetCatalog)
                 Button {
-                    if Exporters.exportAssetCatalog(items: store.items) {
+                    if let lock {
+                        appState.paywall = lock
+                    } else if Exporters.exportAssetCatalog(items: store.items) {
                         LeeoEngagement.shared.registerSignificantEvent()
                     }
                 } label: {
-                    Label("Export .xcassets", systemImage: "square.and.arrow.down.on.square")
+                    Label("Export .xcassets", systemImage: lock == nil ? "square.and.arrow.down.on.square" : "lock")
                 }
                 .disabled(store.items.isEmpty)
                 .help("Export every saved color as one asset catalog")
@@ -75,15 +80,29 @@ struct PaletteView: View {
     private var list: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 10) {
-                // 저장·내보내기로 덕을 본 사람에게, 모아 둔 팔레트를 보는 자리에서 드물게 응원을 부탁한다.
-                LeeoTipAskSlot<TetraTintSpec>(tipJar: TetraTintSpec.tipJar, reached: TetraTintTipMoments.reachedNow)
+                // 저장·내보내기로 덕을 본 Pro 에게만, 모아 둔 팔레트를 보는 자리에서 드물게 응원을 부탁한다.
+                if purchases.tier == .pro {
+                    LeeoTipAskSlot<TetraTintSpec>(tipJar: purchases.tipJar, reached: TetraTintTipMoments.reachedNow)
+                }
+                // 무료 칸이 꽉 찼으면 한 줄로 알린다. 이미 담긴 색은 몇 개든 보고 지운다.
+                if purchases.paletteLock(existing: store.items.count) != nil {
+                    Button {
+                        appState.paywall = .unlimitedPalette
+                    } label: {
+                        Label(PlanFeature.unlimitedPalette.reasonTitle, systemImage: "lock")
+                    }
+                    .buttonStyle(.link)
+                    .font(.body)
+                }
                 columnHeader
                 ForEach(store.items) { item in
                     PaletteRow(
                         item: item,
                         isNew: item.id == store.lastAddedID,
                         onExport: {
-                            if Exporters.exportColorSet(name: item.name, set: item.set) {
+                            if let lock = purchases.lock(.colorSetFiles) {
+                                appState.paywall = lock
+                            } else if Exporters.exportColorSet(name: item.name, set: item.set) {
                                 LeeoEngagement.shared.registerSignificantEvent()
                             }
                         },

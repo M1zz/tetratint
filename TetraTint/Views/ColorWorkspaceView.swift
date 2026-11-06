@@ -9,6 +9,7 @@ struct ColorWorkspaceView: View {
     @EnvironmentObject private var appState: AppState
 
     @State private var lens: Lens = .variants
+    private let purchases = PurchaseManager.shared
     /// Local editing buffer for the hex field, synced with the shared color.
     @State private var baseHexField: String = "#007AFF"
 
@@ -65,6 +66,10 @@ struct ColorWorkspaceView: View {
         .navigationTitle("Color")
         .onAppear { baseHexField = appState.baseHex }
         .onChange(of: appState.baseHex) { baseHexField = $0 }
+        // 구독이 끝나 색각 렌즈가 다시 잠겼으면 열려 있던 렌즈를 닫는다.
+        .onChange(of: purchases.allows(.colorVision)) { _, allowed in
+            if !allowed, lens == .colorVision { lens = .variants }
+        }
     }
 
     // MARK: Lens switcher
@@ -73,11 +78,12 @@ struct ColorWorkspaceView: View {
         VStack(alignment: .leading, spacing: 8) {
             HStack(spacing: 8) {
                 ForEach(Lens.allCases) { option in
+                    let lock = option == .colorVision ? purchases.lock(.colorVision) : nil
                     Button {
-                        lens = option
+                        if let lock { appState.paywall = lock } else { lens = option }
                     } label: {
                         HStack(spacing: 8) {
-                            Image(systemName: option.icon)
+                            Image(systemName: lock == nil ? option.icon : "lock.fill")
                             Text(option.title)
                         }
                         .font(.title3.weight(.semibold))
@@ -162,10 +168,11 @@ struct ColorWorkspaceView: View {
 
                 Spacer()
 
-                FlyingAddButton(color: Color(hex: appState.set.light)) {
+                let lock = purchases.paletteLock(existing: store.items.count)
+                FlyingAddButton(color: Color(hex: appState.set.light), lock: lock) {
                     store.add(name: appState.colorName, set: appState.set)
                 } label: {
-                    Label("Save to palette", systemImage: "square.grid.2x2")
+                    Label("Save to palette", systemImage: lock == nil ? "square.grid.2x2" : "lock")
                 }
             }
 

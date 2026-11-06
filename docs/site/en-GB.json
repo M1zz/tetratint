@@ -5,7 +5,7 @@
     "headline": "One colour in,\nfour appearances out",
     "lead": "System colours adapt to Dark Mode and Increase Contrast on their own. Your brand colours don't. TetraTint takes one light-mode colour, builds Light, Light High Contrast, Dark and Dark High Contrast variants, and exports them straight to Xcode.",
     "cta": "Get it free on the Mac App Store",
-    "note": "Every feature is free. Requires macOS 14 or later."
+    "note": "Free to start, with Plus and Pro for more. Requires macOS 14 or later."
   },
   "demo": {
     "title": "Try your brand colour",
@@ -104,8 +104,8 @@
     "title": "Questions",
     "items": [
       {
-        "q": "Is it really free?",
-        "a": "Yes. Every feature is free, with no account and no ads. If it helped, you can leave a tip in Settings; it doesn't unlock anything."
+        "q": "Is it free?",
+        "a": "Free to start. Four mode variants of a colour, contrast checks one colour at a time, copying hex and code, Dynamic Type and system colours, and a palette of up to 6 colours are free, with no account and no ads. Plus and Pro, by subscription or one-off purchase, add bulk contrast audits, colour vision simulation, .colorset and .xcassets export, and more. Tips in Settings don't unlock anything."
       },
       {
         "q": "The generated variants don't match my brand.",

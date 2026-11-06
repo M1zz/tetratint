@@ -238,3 +238,51 @@
 
 /* 손쉬운 사용: 스포이트 버튼의 음성 명령 이름 */
 "Eyedropper" = "Eyedropper";
+
+/* 요금제: 무료 · Plus · Pro (PaywallView · SettingsView · PurchaseManager) */
+"Free" = "Free";
+"TetraTint Plus and Pro" = "TetraTint Plus and Pro";
+"Audit your whole palette and send it straight to Xcode. Go yearly or lifetime." = "Audit your whole palette and send it straight to Xcode. Go yearly or lifetime.";
+"Make one color in four modes and check its contrast." = "Make one colour in four modes and check its contrast.";
+"Check your whole palette in one go." = "Check your whole palette in one go.";
+"Send files straight to Xcode, and start from Shortcuts." = "Send files straight to Xcode, and start from Shortcuts.";
+"Recommended" = "Recommended";
+"Current plan" = "Current plan";
+"Included in %@" = "Included in %@";
+"Show weekly and monthly plans" = "Show weekly and monthly plans";
+"Weekly" = "Weekly";
+"%@ / week" = "%@ / week";
+"Monthly" = "Monthly";
+"%@ / month" = "%@ / month";
+"You own Plus Lifetime, so you pay only the difference." = "You own Plus Lifetime, so you pay only the difference.";
+"Pay %@" = "Pay %@";
+"Loading plans…" = "Loading plans…";
+"Couldn't load plans. Check your internet connection and try again." = "Couldn’t load plans. Check your internet connection and try again.";
+"Try Again" = "Try Again";
+"Subscriptions renew automatically at the same price unless canceled at least 24 hours before the period ends, and are charged to your Apple Account. New subscribers get the first year of a yearly plan at a discount once; after that it renews at the regular price. Manage or cancel anytime in your App Store account settings. Lifetime is a one-time payment and never renews." = "Subscriptions renew automatically at the same price unless cancelled at least 24 hours before the period ends, and are charged to your Apple Account. New subscribers get the first year of a yearly plan at a discount once; after that it renews at the regular price. Manage or cancel at any time in your App Store account settings. Lifetime is a one-off payment and never renews.";
+"Terms of Use" = "Terms of Use";
+"Privacy Policy" = "Privacy Policy";
+"Restore Purchases" = "Restore Purchases";
+"Unlimited" = "Unlimited";
+"Four mode variants" = "Four mode variants";
+"Contrast and WCAG for one color" = "Contrast and WCAG for one colour";
+"Copy hex and code as text" = "Copy hex and code as text";
+"Dynamic Type table and preview" = "Dynamic Type table and preview";
+"System colors reference" = "System colours reference";
+"%lld colors" = "%lld colours";
+"Feature" = "Feature";
+"Included" = "Included";
+"Not included" = "Not included";
+"Unlimited palette" = "Unlimited palette";
+"Bulk contrast audit and quick fix" = "Bulk contrast audit and quick fix";
+"Color-blind safe palettes" = "Colour-blind safe palettes";
+"Save .colorset files" = "Save .colorset files";
+"Export the palette as one .xcassets" = "Export the palette as one .xcassets";
+"Dynamic Type code" = "Dynamic Type code";
+"Shortcuts and Spotlight" = "Shortcuts and Spotlight";
+"Free palettes hold up to %lld colors" = "Free palettes hold up to %lld colours";
+"No purchases were found for this Apple Account." = "No purchases were found for this Apple Account.";
+"Your plan" = "Your plan";
+"You were here before plans existed, so Pro is yours to keep." = "You were here before plans existed, so Pro is yours to keep.";
+"See Plans" = "See Plans";
+"Plan" = "Plan";

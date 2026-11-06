@@ -1,14 +1,27 @@
 import SwiftUI
 import LeeoKit
 
-/// TetraTint ▸ Settings… (⌘,) — 피드백 · 리뷰 · 개발자 연락처.
+/// TetraTint ▸ Settings… (⌘,) — 요금제 · 피드백 · 리뷰 · 개발자 연락처.
 struct TetraTintSettingsView: View {
     @AppStorage(OnboardingState.storageKey) private var hasSeenOnboarding = false
+
+    private static let subscriptionsURL = URL(string: "https://apps.apple.com/account/subscriptions")!
+
+    // 요금제 (→ PurchaseManager.swift, PaywallView.swift)
+    private let purchases = PurchaseManager.shared
+    @State private var showingPaywall = false
+    /// 페이월을 평생으로 골라 둔 채 여는가 ('평생으로 바꾸기').
+    @State private var paywallTerm: PlanTerm = .yearly
+    /// 구독을 평생으로 바꾸는 시트 (→ LeeoGraduationOfferView).
+    @State private var showingGraduation = false
+    @State private var restoreMessage: String?
 
     var body: some View {
         // LeeoSupportSection 의 "피드백 보내기" 는 NavigationLink 라 스택 안에 있어야 열린다.
         NavigationStack {
             Form {
+                planSection
+
                 Section {
                     LeeoSupportSection<TetraTintSpec>()
                     // 앞으로 만들 기능 — 원본은 TetraTintRoadmap.swift
@@ -16,7 +29,7 @@ struct TetraTintSettingsView: View {
                     // 친구에게 소개하기 — App Store ID 가 없으면 그리지 않는다
                     LeeoShareAppLink<TetraTintSpec>()
                     // 개발자 응원하기 — 판매 중인 팁이 있어야 선다
-                    LeeoTipJarLink<TetraTintSpec>(tipJar: TetraTintSpec.tipJar)
+                    LeeoTipJarLink<TetraTintSpec>(tipJar: purchases.tipJar)
                 } header: {
                     Text("Support")
                 }
@@ -47,7 +60,61 @@ struct TetraTintSettingsView: View {
             .formStyle(.grouped)
         }
         .frame(width: 460)
-        .frame(minHeight: 480)
+        .frame(minHeight: 560)
+        .sheet(isPresented: $showingPaywall) {
+            PaywallView(initialTerm: paywallTerm)
+        }
+        .sheet(isPresented: $showingGraduation) {
+            LeeoGraduationOfferView(graduate: purchases.graduateProduct) {
+                await purchases.refresh()
+            }
+        }
+    }
+
+    /// 지금 쓰는 칸 · 요금제 보기 · 구독 관리 · 평생으로 바꾸기 · 구매 복원.
+    private var planSection: some View {
+        Section {
+            LabeledContent("Your plan", value: purchases.tier.title)
+            if purchases.isEarlyUser {
+                Text("You were here before plans existed, so Pro is yours to keep.")
+                    .foregroundStyle(.secondary)
+            }
+            if purchases.tier < .pro {
+                Button("See Plans") { openPaywall(.yearly) }
+            }
+            if purchases.subscription != nil {
+                Link(LeeoLadderText.manageSubscription, destination: Self.subscriptionsURL)
+            }
+            // 평생이 아닌 사람에게 늘 선다. 구독 중이면 졸업가로, 아니면 평생을 골라 둔 요금제로.
+            if !purchases.ownsLifetimePro, !purchases.ownsPlusLifetime {
+                Button(LeeoLadderText.switchToLifetimeEntry) {
+                    if purchases.subscription != nil, purchases.graduateProduct != nil {
+                        showingGraduation = true
+                    } else {
+                        openPaywall(.lifetime)
+                    }
+                }
+            }
+            Button("Restore Purchases") {
+                Task {
+                    restoreMessage = nil
+                    await purchases.restore()
+                    if purchases.tier == .free { restoreMessage = purchases.failureMessage }
+                }
+            }
+            .disabled(purchases.isWorking)
+            if let restoreMessage {
+                Text(restoreMessage)
+                    .foregroundStyle(.secondary)
+            }
+        } header: {
+            Text("Plan")
+        }
+    }
+
+    private func openPaywall(_ term: PlanTerm) {
+        paywallTerm = term
+        showingPaywall = true
     }
 }
 

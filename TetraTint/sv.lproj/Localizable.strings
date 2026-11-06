@@ -238,3 +238,51 @@
 
 /* 손쉬운 사용: 스포이트 버튼의 음성 명령 이름 */
 "Eyedropper" = "Pipett";
+
+/* 요금제: 무료 · Plus · Pro (PaywallView · SettingsView · PurchaseManager) */
+"Free" = "Gratis";
+"TetraTint Plus and Pro" = "TetraTint Plus och Pro";
+"Audit your whole palette and send it straight to Xcode. Go yearly or lifetime." = "Granska hela paletten och skicka den direkt till Xcode. Välj årsvis eller livstid.";
+"Make one color in four modes and check its contrast." = "Gör en färg i fyra lägen och kontrollera kontrasten.";
+"Check your whole palette in one go." = "Granska hela paletten på en gång.";
+"Send files straight to Xcode, and start from Shortcuts." = "Skicka filer direkt till Xcode och starta från Genvägar.";
+"Recommended" = "Rekommenderas";
+"Current plan" = "Nuvarande plan";
+"Included in %@" = "Ingår i %@";
+"Show weekly and monthly plans" = "Visa vecko- och månadsplaner";
+"Weekly" = "Veckovis";
+"%@ / week" = "%@/vecka";
+"Monthly" = "Månadsvis";
+"%@ / month" = "%@/månad";
+"You own Plus Lifetime, so you pay only the difference." = "Du har Plus livstid, så du betalar bara mellanskillnaden.";
+"Pay %@" = "Betala %@";
+"Loading plans…" = "Läser in planer …";
+"Couldn't load plans. Check your internet connection and try again." = "Det gick inte att läsa in planerna. Kontrollera internetanslutningen och försök igen.";
+"Try Again" = "Försök igen";
+"Subscriptions renew automatically at the same price unless canceled at least 24 hours before the period ends, and are charged to your Apple Account. New subscribers get the first year of a yearly plan at a discount once; after that it renews at the regular price. Manage or cancel anytime in your App Store account settings. Lifetime is a one-time payment and never renews." = "Prenumerationer förnyas automatiskt till samma pris om de inte sägs upp senast 24 timmar före periodens slut, och debiteras ditt Apple‑konto. Nya prenumeranter får rabatt på första året av en årsplan en gång; därefter förnyas den till ordinarie pris. Hantera eller säg upp när som helst i kontoinställningarna för App Store. Livstid är en engångsbetalning som aldrig förnyas.";
+"Terms of Use" = "Användarvillkor";
+"Privacy Policy" = "Integritetspolicy";
+"Restore Purchases" = "Återskapa köp";
+"Unlimited" = "Obegränsat";
+"Four mode variants" = "Varianter för fyra lägen";
+"Contrast and WCAG for one color" = "Kontrast och WCAG för en färg";
+"Copy hex and code as text" = "Kopiera hex och kod som text";
+"Dynamic Type table and preview" = "Dynamic Type-tabell och förhandsvisning";
+"System colors reference" = "Systemfärger som referens";
+"%lld colors" = "%lld färger";
+"Feature" = "Funktion";
+"Included" = "Ingår";
+"Not included" = "Ingår inte";
+"Unlimited palette" = "Obegränsad palett";
+"Bulk contrast audit and quick fix" = "Kontrastgranskning i ett svep och snabb rättning";
+"Color-blind safe palettes" = "Färgblindsäkra paletter";
+"Save .colorset files" = "Spara .colorset-filer";
+"Export the palette as one .xcassets" = "Exportera paletten som en .xcassets";
+"Dynamic Type code" = "Dynamic Type-kod";
+"Shortcuts and Spotlight" = "Genvägar och Spotlight";
+"Free palettes hold up to %lld colors" = "En gratispalett rymmer upp till %lld färger";
+"No purchases were found for this Apple Account." = "Inga köp hittades för det här Apple‑kontot.";
+"Your plan" = "Din plan";
+"You were here before plans existed, so Pro is yours to keep." = "Du fanns här innan planerna kom, så Pro är ditt att behålla.";
+"See Plans" = "Visa planer";
+"Plan" = "Plan";

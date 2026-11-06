@@ -238,3 +238,51 @@
 
 /* 손쉬운 사용: 스포이트 버튼의 음성 명령 이름 */
 "Eyedropper" = "Pipet";
+
+/* 요금제: 무료 · Plus · Pro (PaywallView · SettingsView · PurchaseManager) */
+"Free" = "Gratis";
+"TetraTint Plus and Pro" = "TetraTint Plus dan Pro";
+"Audit your whole palette and send it straight to Xcode. Go yearly or lifetime." = "Periksa seluruh palet dan kirim langsung ke Xcode. Pilih tahunan atau seumur hidup.";
+"Make one color in four modes and check its contrast." = "Buat satu warna dalam empat mode dan periksa kontrasnya.";
+"Check your whole palette in one go." = "Periksa seluruh palet sekaligus.";
+"Send files straight to Xcode, and start from Shortcuts." = "Kirim file langsung ke Xcode, dan mulai dari Pintasan.";
+"Recommended" = "Disarankan";
+"Current plan" = "Paket saat ini";
+"Included in %@" = "Termasuk di %@";
+"Show weekly and monthly plans" = "Tampilkan paket mingguan dan bulanan";
+"Weekly" = "Mingguan";
+"%@ / week" = "%@ / minggu";
+"Monthly" = "Bulanan";
+"%@ / month" = "%@ / bulan";
+"You own Plus Lifetime, so you pay only the difference." = "Anda sudah punya Plus seumur hidup, jadi cukup bayar selisihnya.";
+"Pay %@" = "Bayar %@";
+"Loading plans…" = "Memuat paket…";
+"Couldn't load plans. Check your internet connection and try again." = "Paket tidak dapat dimuat. Periksa koneksi internet Anda lalu coba lagi.";
+"Try Again" = "Coba Lagi";
+"Subscriptions renew automatically at the same price unless canceled at least 24 hours before the period ends, and are charged to your Apple Account. New subscribers get the first year of a yearly plan at a discount once; after that it renews at the regular price. Manage or cancel anytime in your App Store account settings. Lifetime is a one-time payment and never renews." = "Langganan diperpanjang otomatis dengan harga yang sama kecuali dibatalkan setidaknya 24 jam sebelum periode berakhir, dan ditagihkan ke Akun Apple Anda. Pelanggan baru mendapat diskon tahun pertama paket tahunan satu kali; setelah itu diperpanjang dengan harga normal. Kelola atau batalkan kapan saja di pengaturan akun App Store. Seumur hidup adalah pembayaran sekali dan tidak pernah diperpanjang.";
+"Terms of Use" = "Ketentuan Penggunaan";
+"Privacy Policy" = "Kebijakan Privasi";
+"Restore Purchases" = "Pulihkan Pembelian";
+"Unlimited" = "Tanpa batas";
+"Four mode variants" = "Varian untuk empat mode";
+"Contrast and WCAG for one color" = "Kontras dan WCAG untuk satu warna";
+"Copy hex and code as text" = "Salin hex dan kode sebagai teks";
+"Dynamic Type table and preview" = "Tabel dan pratinjau Dynamic Type";
+"System colors reference" = "Referensi warna sistem";
+"%lld colors" = "%lld warna";
+"Feature" = "Fitur";
+"Included" = "Termasuk";
+"Not included" = "Tidak termasuk";
+"Unlimited palette" = "Palet tanpa batas";
+"Bulk contrast audit and quick fix" = "Pemeriksaan kontras massal dan perbaikan cepat";
+"Color-blind safe palettes" = "Palet aman buta warna";
+"Save .colorset files" = "Simpan file .colorset";
+"Export the palette as one .xcassets" = "Ekspor palet sebagai satu .xcassets";
+"Dynamic Type code" = "Kode Dynamic Type";
+"Shortcuts and Spotlight" = "Pintasan dan Spotlight";
+"Free palettes hold up to %lld colors" = "Palet gratis menampung hingga %lld warna";
+"No purchases were found for this Apple Account." = "Tidak ditemukan pembelian untuk Akun Apple ini.";
+"Your plan" = "Paket Anda";
+"You were here before plans existed, so Pro is yours to keep." = "Anda sudah memakai aplikasi ini sebelum ada paket, jadi Pro tetap milik Anda.";
+"See Plans" = "Lihat Paket";
+"Plan" = "Paket";

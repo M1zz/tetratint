@@ -238,3 +238,51 @@
 
 /* 손쉬운 사용: 스포이트 버튼의 음성 명령 이름 */
 "Eyedropper" = "Pipet";
+
+/* 요금제: 무료 · Plus · Pro (PaywallView · SettingsView · PurchaseManager) */
+"Free" = "Gratis";
+"TetraTint Plus and Pro" = "TetraTint Plus en Pro";
+"Audit your whole palette and send it straight to Xcode. Go yearly or lifetime." = "Controleer je hele palet en stuur het meteen naar Xcode. Kies jaarlijks of levenslang.";
+"Make one color in four modes and check its contrast." = "Maak van één kleur vier modi en controleer het contrast.";
+"Check your whole palette in one go." = "Controleer je hele palet in één keer.";
+"Send files straight to Xcode, and start from Shortcuts." = "Zet bestanden direct in Xcode en begin vanuit Opdrachten.";
+"Recommended" = "Aanbevolen";
+"Current plan" = "Huidig abonnement";
+"Included in %@" = "Inbegrepen bij %@";
+"Show weekly and monthly plans" = "Toon week- en maandabonnementen";
+"Weekly" = "Per week";
+"%@ / week" = "%@ / week";
+"Monthly" = "Per maand";
+"%@ / month" = "%@ / maand";
+"You own Plus Lifetime, so you pay only the difference." = "Je hebt Plus levenslang, dus je betaalt alleen het verschil.";
+"Pay %@" = "Betaal %@";
+"Loading plans…" = "Abonnementen laden…";
+"Couldn't load plans. Check your internet connection and try again." = "Kan abonnementen niet laden. Controleer je internetverbinding en probeer het opnieuw.";
+"Try Again" = "Probeer opnieuw";
+"Subscriptions renew automatically at the same price unless canceled at least 24 hours before the period ends, and are charged to your Apple Account. New subscribers get the first year of a yearly plan at a discount once; after that it renews at the regular price. Manage or cancel anytime in your App Store account settings. Lifetime is a one-time payment and never renews." = "Abonnementen worden automatisch tegen dezelfde prijs verlengd, tenzij je ze uiterlijk 24 uur voor het einde van de periode opzegt, en worden in rekening gebracht via je Apple Account. Nieuwe abonnees krijgen eenmalig korting op het eerste jaar van een jaarabonnement; daarna wordt het tegen de normale prijs verlengd. Beheer of zeg op wanneer je wilt in de accountinstellingen van de App Store. Levenslang is een eenmalige betaling en wordt nooit verlengd.";
+"Terms of Use" = "Gebruiksvoorwaarden";
+"Privacy Policy" = "Privacybeleid";
+"Restore Purchases" = "Herstel aankopen";
+"Unlimited" = "Onbeperkt";
+"Four mode variants" = "Varianten voor vier modi";
+"Contrast and WCAG for one color" = "Contrast en WCAG voor één kleur";
+"Copy hex and code as text" = "Hex en code als tekst kopiëren";
+"Dynamic Type table and preview" = "Dynamic Type-tabel en voorvertoning";
+"System colors reference" = "Systeemkleuren als referentie";
+"%lld colors" = "%lld kleuren";
+"Feature" = "Functie";
+"Included" = "Inbegrepen";
+"Not included" = "Niet inbegrepen";
+"Unlimited palette" = "Onbeperkt palet";
+"Bulk contrast audit and quick fix" = "Contrast in bulk controleren en meteen corrigeren";
+"Color-blind safe palettes" = "Kleurenblindveilige paletten";
+"Save .colorset files" = ".colorset-bestanden bewaren";
+"Export the palette as one .xcassets" = "Palet exporteren als één .xcassets";
+"Dynamic Type code" = "Dynamic Type-code";
+"Shortcuts and Spotlight" = "Opdrachten en Spotlight";
+"Free palettes hold up to %lld colors" = "Een gratis palet bevat tot %lld kleuren";
+"No purchases were found for this Apple Account." = "Er zijn geen aankopen gevonden voor dit Apple Account.";
+"Your plan" = "Jouw abonnement";
+"You were here before plans existed, so Pro is yours to keep." = "Je was er al voordat er abonnementen waren, dus Pro blijft van jou.";
+"See Plans" = "Bekijk abonnementen";
+"Plan" = "Abonnement";

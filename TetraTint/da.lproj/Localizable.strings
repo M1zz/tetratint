@@ -238,3 +238,51 @@
 
 /* 손쉬운 사용: 스포이트 버튼의 음성 명령 이름 */
 "Eyedropper" = "Pipette";
+
+/* 요금제: 무료 · Plus · Pro (PaywallView · SettingsView · PurchaseManager) */
+"Free" = "Gratis";
+"TetraTint Plus and Pro" = "TetraTint Plus og Pro";
+"Audit your whole palette and send it straight to Xcode. Go yearly or lifetime." = "Tjek hele din palet, og send den direkte til Xcode. Vælg årligt eller livstid.";
+"Make one color in four modes and check its contrast." = "Lav én farve i fire tilstande, og tjek dens kontrast.";
+"Check your whole palette in one go." = "Tjek hele din palet på én gang.";
+"Send files straight to Xcode, and start from Shortcuts." = "Send filer direkte til Xcode, og start fra Genveje.";
+"Recommended" = "Anbefalet";
+"Current plan" = "Nuværende plan";
+"Included in %@" = "Med i %@";
+"Show weekly and monthly plans" = "Vis uge- og månedsplaner";
+"Weekly" = "Ugentligt";
+"%@ / week" = "%@ / uge";
+"Monthly" = "Månedligt";
+"%@ / month" = "%@ / måned";
+"You own Plus Lifetime, so you pay only the difference." = "Du har Plus på livstid, så du betaler kun forskellen.";
+"Pay %@" = "Betal %@";
+"Loading plans…" = "Indlæser planer…";
+"Couldn't load plans. Check your internet connection and try again." = "Planerne kunne ikke indlæses. Tjek din internetforbindelse, og prøv igen.";
+"Try Again" = "Prøv igen";
+"Subscriptions renew automatically at the same price unless canceled at least 24 hours before the period ends, and are charged to your Apple Account. New subscribers get the first year of a yearly plan at a discount once; after that it renews at the regular price. Manage or cancel anytime in your App Store account settings. Lifetime is a one-time payment and never renews." = "Abonnementer fornyes automatisk til samme pris, medmindre de opsiges senest 24 timer før periodens udløb, og opkræves via din Apple-konto. Nye abonnenter får én gang rabat på det første år af et årsabonnement; derefter fornyes det til normalpris. Administrer eller opsig når som helst i dine App Store-kontoindstillinger. Livstid er en engangsbetaling og fornyes aldrig.";
+"Terms of Use" = "Vilkår for brug";
+"Privacy Policy" = "Privatlivspolitik";
+"Restore Purchases" = "Gendan køb";
+"Unlimited" = "Ubegrænset";
+"Four mode variants" = "Varianter til fire tilstande";
+"Contrast and WCAG for one color" = "Kontrast og WCAG for én farve";
+"Copy hex and code as text" = "Kopiér hex og kode som tekst";
+"Dynamic Type table and preview" = "Dynamic Type-tabel og eksempel";
+"System colors reference" = "Systemfarver som reference";
+"%lld colors" = "%lld farver";
+"Feature" = "Funktion";
+"Included" = "Med";
+"Not included" = "Ikke med";
+"Unlimited palette" = "Ubegrænset palet";
+"Bulk contrast audit and quick fix" = "Samlet kontrasttjek og hurtig rettelse";
+"Color-blind safe palettes" = "Farveblindsikre paletter";
+"Save .colorset files" = "Gem .colorset-filer";
+"Export the palette as one .xcassets" = "Eksportér paletten som én .xcassets";
+"Dynamic Type code" = "Dynamic Type-kode";
+"Shortcuts and Spotlight" = "Genveje og Spotlight";
+"Free palettes hold up to %lld colors" = "Gratis paletter kan rumme op til %lld farver";
+"No purchases were found for this Apple Account." = "Der blev ikke fundet nogen køb for denne Apple-konto.";
+"Your plan" = "Din plan";
+"You were here before plans existed, so Pro is yours to keep." = "Du var her, før der kom planer, så Pro er dit at beholde.";
+"See Plans" = "Se planer";
+"Plan" = "Plan";

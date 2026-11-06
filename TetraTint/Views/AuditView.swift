@@ -12,6 +12,7 @@ struct ContrastLens: View {
 
     @State private var input: String = "#007AFF\n#8E8E93\n#FFCC00\n#34C759"
     @State private var results: [AuditResult] = []
+    private let purchases = PurchaseManager.shared
 
     struct AuditResult: Identifiable {
         let id = UUID()
@@ -121,10 +122,12 @@ struct ContrastLens: View {
             livePreview
 
             HStack {
+                // 색 하나는 무료, 두 색 이상을 한 번에 판정하는 것은 Plus.
+                let lock = parsedSwatches.filter(\.valid).count > 1 ? purchases.lock(.bulkAudit) : nil
                 Button {
-                    runAudit()
+                    if let lock { appState.paywall = lock } else { runAudit() }
                 } label: {
-                    Label("Audit", systemImage: "checklist")
+                    Label("Audit", systemImage: lock == nil ? "checklist" : "lock")
                 }
                 .keyboardShortcut(.return, modifiers: [.command])
 
@@ -281,7 +284,8 @@ struct ContrastLens: View {
             .frame(maxWidth: .infinity, alignment: .leading)
 
             if result.lightVerdict != .passes || result.darkVerdict != .passes {
-                FlyingAddButton(color: Color(hex: result.hex)) {
+                FlyingAddButton(color: Color(hex: result.hex),
+                                lock: purchases.paletteLock(existing: store.items.count)) {
                     store.add(
                         name: "audited\(result.hex.dropFirst())",
                         set: VariantDeriver.derive(fromLight: result.hex)

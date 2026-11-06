@@ -5,7 +5,7 @@
     "headline": "Masukkan satu warna,\ndapatkan empat tampilan",
     "lead": "Warna sistem menyesuaikan sendiri dengan mode gelap dan Tingkatkan Kontras. Warna brand Anda tidak. TetraTint mengambil satu warna mode terang, membuat varian Terang, Terang kontras tinggi, Gelap, dan Gelap kontras tinggi, lalu mengekspornya langsung ke Xcode.",
     "cta": "Unduh gratis di Mac App Store",
-    "note": "Semua fitur gratis. Perlu macOS 14 atau lebih baru."
+    "note": "Mulai gratis, dengan Plus dan Pro untuk lebih banyak. Perlu macOS 14 atau lebih baru."
   },
   "demo": {
     "title": "Coba warna brand Anda",
@@ -104,8 +104,8 @@
     "title": "Pertanyaan umum",
     "items": [
       {
-        "q": "Benar-benar gratis?",
-        "a": "Ya. Semua fitur gratis, tanpa akun dan tanpa iklan. Kalau membantu, Anda bisa memberi tip di Pengaturan; tip tidak membuka fitur apa pun."
+        "q": "Apakah gratis?",
+        "a": "Anda bisa mulai gratis. Varian satu warna untuk empat mode, pemeriksaan kontras per warna, menyalin hex dan kode, Dynamic Type dan warna sistem, serta palet hingga 6 warna gratis, tanpa akun dan tanpa iklan. Plus dan Pro, lewat langganan atau sekali beli, menambahkan pemeriksaan kontras massal, simulasi penglihatan warna, ekspor .colorset dan .xcassets, dan lainnya. Tip di Pengaturan tidak membuka fitur apa pun."
       },
       {
         "q": "Varian yang dibuat tidak cocok dengan brand saya.",

@@ -5,7 +5,7 @@
     "headline": "Tek renk girer,\ndört görünüm çıkar",
     "lead": "Sistem renkleri koyu moda ve Kontrastı Artır ayarına kendiliğinden uyar. Marka renkleriniz uymaz. TetraTint açık moddaki tek bir renkten Açık, Açık yüksek kontrast, Koyu ve Koyu yüksek kontrast varyantlarını üretir ve doğrudan Xcode’a aktarır.",
     "cta": "Mac App Store’dan ücretsiz indirin",
-    "note": "Tüm özellikler ücretsiz. macOS 14 veya üstü gerekir."
+    "note": "Ücretsiz başlayın, daha fazlası için Plus ve Pro var. macOS 14 veya üstü gerekir."
   },
   "demo": {
     "title": "Marka renginizi deneyin",
@@ -104,8 +104,8 @@
     "title": "Sık sorulan sorular",
     "items": [
       {
-        "q": "Gerçekten ücretsiz mi?",
-        "a": "Evet. Tüm özellikler ücretsiz; hesap da reklam da yok. İşinize yaradıysa Ayarlar’dan bahşiş bırakabilirsiniz; bahşiş hiçbir özelliğin kilidini açmaz."
+        "q": "Ücretsiz mi?",
+        "a": "Ücretsiz başlayabilirsiniz. Bir rengin dört mod varyantı, renk renk kontrast denetimi, hex ve kodu kopyalama, Dynamic Type ve sistem renkleri ile 6 renge kadar palet hesap gerekmeden ve reklamsız olarak ücretsizdir. Abonelikle veya tek seferlik satın alımla açılan Plus ve Pro; toplu kontrast denetimi, renk görme simülasyonu, .colorset ve .xcassets dışa aktarma ve daha fazlasını ekler. Ayarlar’daki bahşiş hiçbir özelliğin kilidini açmaz."
       },
       {
         "q": "Üretilen varyantlar markamıza uymuyor.",

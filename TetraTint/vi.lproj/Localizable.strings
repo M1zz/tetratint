@@ -238,3 +238,51 @@
 
 /* 손쉬운 사용: 스포이트 버튼의 음성 명령 이름 */
 "Eyedropper" = "Ống hút màu";
+
+/* 요금제: 무료 · Plus · Pro (PaywallView · SettingsView · PurchaseManager) */
+"Free" = "Miễn phí";
+"TetraTint Plus and Pro" = "TetraTint Plus và Pro";
+"Audit your whole palette and send it straight to Xcode. Go yearly or lifetime." = "Kiểm tra cả bảng màu và đưa thẳng vào Xcode. Chọn gói năm hoặc trọn đời.";
+"Make one color in four modes and check its contrast." = "Tạo một màu ở bốn chế độ và kiểm tra độ tương phản.";
+"Check your whole palette in one go." = "Kiểm tra cả bảng màu trong một lần.";
+"Send files straight to Xcode, and start from Shortcuts." = "Đưa tệp thẳng vào Xcode và bắt đầu từ Phím tắt.";
+"Recommended" = "Đề xuất";
+"Current plan" = "Gói hiện tại";
+"Included in %@" = "Có trong %@";
+"Show weekly and monthly plans" = "Hiện gói tuần và gói tháng";
+"Weekly" = "Hằng tuần";
+"%@ / week" = "%@ / tuần";
+"Monthly" = "Hằng tháng";
+"%@ / month" = "%@ / tháng";
+"You own Plus Lifetime, so you pay only the difference." = "Bạn đã có Plus trọn đời nên chỉ trả phần chênh lệch.";
+"Pay %@" = "Thanh toán %@";
+"Loading plans…" = "Đang tải các gói…";
+"Couldn't load plans. Check your internet connection and try again." = "Không tải được các gói. Hãy kiểm tra kết nối internet rồi thử lại.";
+"Try Again" = "Thử lại";
+"Subscriptions renew automatically at the same price unless canceled at least 24 hours before the period ends, and are charged to your Apple Account. New subscribers get the first year of a yearly plan at a discount once; after that it renews at the regular price. Manage or cancel anytime in your App Store account settings. Lifetime is a one-time payment and never renews." = "Gói đăng ký tự động gia hạn với cùng mức giá trừ khi bạn hủy ít nhất 24 giờ trước khi kỳ hạn kết thúc, và được tính vào Tài khoản Apple của bạn. Người đăng ký mới được giảm giá năm đầu của gói năm một lần; sau đó gia hạn theo giá thường. Bạn có thể quản lý hoặc hủy bất cứ lúc nào trong phần cài đặt tài khoản App Store. Gói trọn đời chỉ thanh toán một lần và không bao giờ gia hạn.";
+"Terms of Use" = "Điều khoản sử dụng";
+"Privacy Policy" = "Chính sách quyền riêng tư";
+"Restore Purchases" = "Khôi phục giao dịch mua";
+"Unlimited" = "Không giới hạn";
+"Four mode variants" = "Biến thể cho bốn chế độ";
+"Contrast and WCAG for one color" = "Tương phản và WCAG cho một màu";
+"Copy hex and code as text" = "Sao chép hex và mã dạng văn bản";
+"Dynamic Type table and preview" = "Bảng và xem trước Dynamic Type";
+"System colors reference" = "Tham khảo màu hệ thống";
+"%lld colors" = "%lld màu";
+"Feature" = "Tính năng";
+"Included" = "Có";
+"Not included" = "Không có";
+"Unlimited palette" = "Bảng màu không giới hạn";
+"Bulk contrast audit and quick fix" = "Kiểm tra tương phản hàng loạt và sửa ngay";
+"Color-blind safe palettes" = "Bảng màu an toàn cho người mù màu";
+"Save .colorset files" = "Lưu tệp .colorset";
+"Export the palette as one .xcassets" = "Xuất bảng màu thành một tệp .xcassets";
+"Dynamic Type code" = "Mã Dynamic Type";
+"Shortcuts and Spotlight" = "Phím tắt và Spotlight";
+"Free palettes hold up to %lld colors" = "Bảng màu miễn phí chứa tối đa %lld màu";
+"No purchases were found for this Apple Account." = "Không tìm thấy giao dịch mua nào cho Tài khoản Apple này.";
+"Your plan" = "Gói của bạn";
+"You were here before plans existed, so Pro is yours to keep." = "Bạn đã dùng ứng dụng từ trước khi có các gói, nên Pro vẫn là của bạn.";
+"See Plans" = "Xem các gói";
+"Plan" = "Gói";

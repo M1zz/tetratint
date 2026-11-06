@@ -6,6 +6,8 @@ struct DynamicTypeView: View {
     @State private var categoryIndex: Double = 3 // Large (default)
     @State private var snippetTab: SnippetTab = .swiftUI
     @State private var showCopied = false
+    @EnvironmentObject private var appState: AppState
+    private let purchases = PurchaseManager.shared
 
     private enum SnippetTab: String, CaseIterable, Identifiable {
         case swiftUI = "SwiftUI"
@@ -96,21 +98,28 @@ struct DynamicTypeView: View {
 
                 Spacer()
 
+                // 표 · 미리보기는 무료, 코드를 받아 가는 것은 Pro.
+                let lock = purchases.lock(.dynamicTypeCode)
                 Button {
+                    if let lock {
+                        appState.paywall = lock
+                        return
+                    }
                     Exporters.copyToClipboard(snippet)
                     showCopied = true
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) { showCopied = false }
                 } label: {
-                    Label(showCopied ? "Copied" : "Copy", systemImage: "doc.on.doc")
+                    Label(showCopied ? "Copied" : "Copy", systemImage: lock == nil ? "doc.on.doc" : "lock")
                 }
             }
 
             ScrollView(.horizontal) {
-                Text(snippet)
-                    .font(.system(.callout, design: .monospaced))
-                    .textSelection(.enabled)
-                    .padding(12)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                // 무료 칸에서는 코드를 보여 주기만 한다 — 골라 복사하는 길도 Pro 와 함께 열린다.
+                if purchases.allows(.dynamicTypeCode) {
+                    snippetText.textSelection(.enabled)
+                } else {
+                    snippetText
+                }
             }
             .frame(maxHeight: 260)
             .background(Color(nsColor: .textBackgroundColor))
@@ -120,6 +129,13 @@ struct DynamicTypeView: View {
                     .strokeBorder(Color.primary.opacity(0.1), lineWidth: 1)
             )
         }
+    }
+
+    private var snippetText: some View {
+        Text(snippet)
+            .font(.system(.callout, design: .monospaced))
+            .padding(12)
+            .frame(maxWidth: .infinity, alignment: .leading)
     }
 
     private var snippet: String {

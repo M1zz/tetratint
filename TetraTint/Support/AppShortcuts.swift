@@ -4,6 +4,15 @@ import AppIntents
 //
 // 앱을 연 뒤 하는 첫 동작 두 가지를 단축어로 바로 부른다.
 // 두 동작 모두 앱 창이 필요하므로 앱을 열고(openAppWhenRun) 그 안에서 실행한다.
+// 단축어 · Spotlight 는 Pro 다. 칸이 모자라면 앱은 열고 그 안에서 페이월을 보인다.
+
+/// Pro 가 아니면 페이월을 띄우고 false.
+@MainActor
+private func shortcutsAllowed() -> Bool {
+    guard let lock = PurchaseManager.shared.lock(.shortcuts) else { return true }
+    AppState.shared.paywall = lock
+    return false
+}
 
 /// 화면에서 색을 집어 작업 색으로 — TetraTint 의 가장 흔한 시작.
 struct PickColorFromScreenIntent: AppIntent {
@@ -13,6 +22,7 @@ struct PickColorFromScreenIntent: AppIntent {
 
     @MainActor
     func perform() async throws -> some IntentResult {
+        guard shortcutsAllowed() else { return .result() }
         AppState.shared.pickFromScreen(switchToColor: true)
         return .result()
     }
@@ -29,6 +39,7 @@ struct OpenTetraTintSectionIntent: AppIntent {
 
     @MainActor
     func perform() async throws -> some IntentResult {
+        guard shortcutsAllowed() else { return .result() }
         AppState.shared.section = section.appSection
         return .result()
     }

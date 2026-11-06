@@ -59,10 +59,8 @@ Automatic variants follow the same patterns system colors use from mode to mode.
 
 System color reference values are based on the Human Interface Guidelines and may change with OS updates. In your shipping app, use the system color APIs.
 
-
-
-
-
+Free, Plus, and Pro
+Free: make four mode variants of a color, check its contrast, copy hex and code, browse Dynamic Type and system colors, and keep up to 6 colors in your palette. Plus, by subscription or one-time purchase, adds an unlimited palette, bulk contrast audits, color blindness simulation, and colorblind-safe palettes. Pro adds .colorset and .xcassets export, Dynamic Type code, and Shortcuts and Spotlight.
 
 ## ko
 
@@ -110,6 +108,9 @@ TetraTint: 접근성 디자인 도구
 자동 변형은 시스템 컬러가 모드별로 달라지는 실제 패턴을 따라 만들어집니다. 다크 모드에서는 조금 더 밝고 선명하게, 라이트 고대비에서는 흰 배경 대비 4.5:1을, 다크 고대비에서는 검은 배경 대비 7:1을 만족하도록 조정합니다.
 
 시스템 컬러 참고 값은 가이드라인 문서를 기준으로 하며 OS 업데이트에 따라 달라질 수 있습니다. 실제 앱에서는 시스템 컬러 API를 사용하세요.
+
+무료 · Plus · Pro
+무료로 색 하나의 4가지 모드 변형 만들기, 대비 확인, hex와 코드 복사, 다이나믹 타입 표와 시스템 색상 보기, 팔레트 6색까지 쓸 수 있습니다. 구독이나 한 번 구매로 여는 Plus는 팔레트 무제한, 대비 일괄 검사, 색각 시뮬레이션, 색맹 안전 팔레트를 더합니다. Pro는 .colorset과 .xcassets 내보내기, 다이나믹 타입 코드, 단축어와 Spotlight까지 엽니다.
 
 ### 지원 URL
 
@@ -182,6 +183,8 @@ Automatic variants follow the same patterns that system colours use from mode to
 
 System colour reference values are based on the Human Interface Guidelines and may change with OS updates. In your shipping app, use the system colour APIs.
 
+Free, Plus and Pro
+Free: make four mode variants of a colour, check its contrast, copy hex and code, browse Dynamic Type and system colours, and keep up to 6 colours in your palette. Plus, by subscription or one-off purchase, adds an unlimited palette, bulk contrast audits, colour blindness simulation and colour-blind safe palettes. Pro adds .colorset and .xcassets export, Dynamic Type code, and Shortcuts and Spotlight.
 
 ## zh-Hans
 
@@ -242,6 +245,8 @@ Contrast Checker（对比度检查）
 
 系统颜色的参考值来自《人机界面指南》，可能随系统更新而变化。在正式发布的 App 中，请使用系统颜色 API。
 
+免费、Plus 与 Pro
+免费即可为一个颜色生成四种模式变体、检查对比度、拷贝 hex 和代码、查看动态字体与系统颜色，调色板最多保存 6 种颜色。Plus 可按订阅或一次性购买开通，增加无限调色板、批量对比度检查、色盲模拟和色盲友好调色板。Pro 再增加 .colorset 与 .xcassets 导出、动态字体代码，以及快捷指令和聚焦搜索。
 
 ## zh-Hant
 
@@ -302,6 +307,8 @@ TetraTint：無障礙色彩工具
 
 系統色彩的參考值依據《人機介面指南》，可能隨系統更新而改變。在正式發行的 App 中，請使用系統色彩 API。
 
+免費、Plus 與 Pro
+免費即可為一個色彩產生四種模式變化版本、檢查對比、拷貝 hex 與程式碼、查看動態字體與系統色彩，色票最多可存 6 種色彩。Plus 可用訂閱或一次購買開通，增加無限色票、批次對比檢查、色盲模擬與色盲友善色票。Pro 再增加 .colorset 與 .xcassets 匯出、動態字體程式碼，以及捷徑與 Spotlight。
 
 ## ja
 
@@ -362,6 +369,8 @@ Dynamic Type
 
 システムカラーの参考値はヒューマンインターフェイスガイドラインに基づいており、OSのアップデートで変わる可能性があります。公開するアプリでは、システムカラーのAPIを使用してください。
 
+無料・Plus・Pro
+無料で、1色から4モードのバリエーション作成、コントラストの確認、hexとコードのコピー、Dynamic Typeとシステムカラーの参照ができ、パレットには6色まで保存できます。サブスクリプションまたは買い切りのPlusでは、パレット無制限、コントラストの一括チェック、色覚シミュレーション、色覚に配慮したパレットが加わります。Proでは、.colorsetと.xcassetsの書き出し、Dynamic Typeのコード生成、ショートカットとSpotlightも使えます。
 
 ## ru
 
@@ -422,6 +431,8 @@ Dynamic Type
 
 Справочные значения системных цветов основаны на Human Interface Guidelines и могут измениться с обновлениями ОС. В готовом приложении используйте API системных цветов.
 
+Бесплатно, Plus и Pro
+Бесплатно: варианты цвета для четырёх режимов, проверка контраста, копирование hex и кода, таблица Dynamic Type и системные цвета, а в палитре до 6 цветов. Plus по подписке или разовой покупкой добавляет палитру без ограничений, пакетную проверку контраста, симуляцию дальтонизма и безопасные палитры. Pro добавляет экспорт .colorset и .xcassets, код для Dynamic Type, Быстрые команды и Spotlight.
 
 ## es-MX
 
@@ -482,6 +493,8 @@ Las variantes automáticas siguen los mismos patrones que usan los colores del s
 
 Los valores de referencia de los colores del sistema se basan en las Human Interface Guidelines y pueden cambiar con las actualizaciones del sistema. En tu app publicada, usa las API de colores del sistema.
 
+Gratis, Plus y Pro
+Gratis: crea variantes de un color para cuatro modos, revisa su contraste, copia hex y código, consulta Dynamic Type y los colores del sistema, y guarda hasta 6 colores en tu paleta. Plus, por suscripción o compra única, agrega paleta ilimitada, revisión de contraste en lote, simulación de daltonismo y paletas seguras para daltonismo. Pro agrega exportación .colorset y .xcassets, código de Dynamic Type, y Atajos y Spotlight.
 
 ## de-DE
 
@@ -542,6 +555,8 @@ Die automatischen Varianten folgen den Mustern, nach denen sich Systemfarben von
 
 Die Referenzwerte der Systemfarben beruhen auf den Human Interface Guidelines und können sich mit OS-Updates ändern. Verwende in deiner ausgelieferten App die APIs für Systemfarben.
 
+Gratis, Plus und Pro
+Gratis: Varianten einer Farbe für vier Modi erzeugen, Kontrast prüfen, Hex und Code kopieren, Dynamic Type und Systemfarben ansehen und bis zu 6 Farben in der Palette sichern. Plus, im Abo oder als Einmalkauf, bringt eine unbegrenzte Palette, Kontrast-Sammelprüfungen, Farbenblindheits-Simulation und farbenblind-sichere Paletten. Pro ergänzt den Export als .colorset und .xcassets, Dynamic Type-Code sowie Kurzbefehle und Spotlight.
 
 ## fr-FR
 
@@ -602,6 +617,8 @@ Les variantes automatiques suivent les mêmes schémas que les couleurs système
 
 Les valeurs de référence des couleurs système reposent sur les Human Interface Guidelines et peuvent évoluer avec les mises à jour du système. Dans votre app livrée, utilisez les API de couleurs système.
 
+Gratuit, Plus et Pro
+Gratuit : déclinez une couleur en quatre modes, vérifiez son contraste, copiez le hex et le code, consultez Dynamic Type et les couleurs système, et gardez jusqu’à 6 couleurs dans votre palette. Plus, par abonnement ou achat unique, ajoute une palette illimitée, l’analyse groupée du contraste, la simulation du daltonisme et des palettes adaptées au daltonisme. Pro ajoute l’export .colorset et .xcassets, le code Dynamic Type, ainsi que Raccourcis et Spotlight.
 
 ## it
 
@@ -662,6 +679,8 @@ Le varianti automatiche seguono gli stessi schemi con cui i colori di sistema ca
 
 I valori di riferimento dei colori di sistema si basano sulle Human Interface Guidelines e possono cambiare con gli aggiornamenti del sistema. Nella tua app in distribuzione usa le API dei colori di sistema.
 
+Gratis, Plus e Pro
+Gratis: crea le varianti di un colore per quattro modalità, verificane il contrasto, copia hex e codice, consulta Dynamic Type e i colori di sistema, e salva fino a 6 colori nella palette. Plus, in abbonamento o con acquisto singolo, aggiunge palette illimitata, analisi del contrasto in blocco, simulazione del daltonismo e palette sicure per il daltonismo. Pro aggiunge l’esportazione .colorset e .xcassets, il codice Dynamic Type, Comandi Rapidi e Spotlight.
 
 ## pt-BR
 
@@ -722,6 +741,8 @@ As variantes automáticas seguem os mesmos padrões que as cores do sistema usam
 
 Os valores de referência das cores do sistema se baseiam nas Human Interface Guidelines e podem mudar com as atualizações do sistema. No seu app publicado, use as APIs de cores do sistema.
 
+Grátis, Plus e Pro
+Grátis: crie variantes de uma cor para quatro modos, confira o contraste, copie hex e código, consulte o Dynamic Type e as cores do sistema, e guarde até 6 cores na paleta. O Plus, por assinatura ou compra única, adiciona paleta ilimitada, análise de contraste em lote, simulação de daltonismo e paletas seguras para daltonismo. O Pro adiciona exportação .colorset e .xcassets, código de Dynamic Type, Atalhos e Spotlight.
 
 ## th
 
@@ -782,6 +803,8 @@ Dynamic Type
 
 ค่าอ้างอิงของสีระบบอิงจาก Human Interface Guidelines และอาจเปลี่ยนไปเมื่ออัปเดต OS ในแอปที่ปล่อยใช้งานจริง ให้ใช้ API สีของระบบ
 
+ฟรี, Plus และ Pro
+ใช้ฟรีได้ทั้งสร้างเวอร์ชันสีสี่โหมดจากสีเดียว ตรวจคอนทราสต์ คัดลอก hex และโค้ด ดูตาราง Dynamic Type และสีของระบบ และเก็บสีในจานสีได้ 6 สี Plus แบบสมัครสมาชิกหรือซื้อครั้งเดียวเพิ่มจานสีไม่จำกัด ตรวจคอนทราสต์ทีละหลายสี จำลองภาวะตาบอดสี และจานสีที่ปลอดภัยสำหรับผู้ตาบอดสี Pro เพิ่มการส่งออก .colorset และ .xcassets โค้ด Dynamic Type รวมถึงคำสั่งลัดและ Spotlight
 
 ## vi
 
@@ -842,6 +865,8 @@ Các biến thể tự động được tạo theo cùng quy luật mà màu h�
 
 Giá trị tham khảo của màu hệ thống dựa trên Human Interface Guidelines và có thể thay đổi theo bản cập nhật hệ điều hành. Trong ứng dụng phát hành, hãy dùng API màu hệ thống.
 
+Miễn phí, Plus và Pro
+Miễn phí: tạo biến thể bốn chế độ cho một màu, kiểm tra tương phản, sao chép hex và mã, xem Dynamic Type và màu hệ thống, lưu tối đa 6 màu trong bảng màu. Plus, theo gói đăng ký hoặc mua một lần, thêm bảng màu không giới hạn, kiểm tra tương phản hàng loạt, mô phỏng mù màu và bảng màu an toàn cho người mù màu. Pro thêm xuất .colorset và .xcassets, mã Dynamic Type, cùng Phím tắt và Spotlight.
 
 ## cs
 
@@ -902,6 +927,8 @@ Automatické varianty se řídí stejnými vzorci, jaké systémové barvy použ
 
 Referenční hodnoty systémových barev vycházejí z Human Interface Guidelines a mohou se s aktualizacemi systému změnit. Ve své vydané aplikaci používejte API systémových barev.
 
+Zdarma, Plus a Pro
+Zdarma: varianty barvy pro čtyři režimy, kontrola kontrastu, kopírování hex a kódu, přehled Dynamic Type a systémových barev a až 6 barev v paletě. Plus v předplatném nebo jednorázovým nákupem přidává neomezenou paletu, hromadnou kontrolu kontrastu, simulaci barvosleposti a palety bezpečné pro barvoslepé. Pro přidává export .colorset a .xcassets, kód pro Dynamic Type a Zkratky a Spotlight.
 
 ## da
 
@@ -962,6 +989,8 @@ De automatiske varianter følger de samme mønstre, som systemfarverne bruger fr
 
 Referenceværdierne for systemfarver er baseret på Human Interface Guidelines og kan ændre sig med systemopdateringer. Brug systemets farve-API'er i din færdige app.
 
+Gratis, Plus og Pro
+Gratis: lav varianter af en farve til fire tilstande, tjek kontrasten, kopiér hex og kode, se Dynamic Type og systemfarver, og gem op til 6 farver i din palet. Plus, som abonnement eller engangskøb, giver en ubegrænset palet, samlede kontrasttjek, simulering af farveblindhed og farveblindsikre paletter. Pro tilføjer eksport som .colorset og .xcassets, Dynamic Type-kode samt Genveje og Spotlight.
 
 ## el
 
@@ -1022,6 +1051,8 @@ Dynamic Type
 
 Οι τιμές αναφοράς των χρωμάτων συστήματος βασίζονται στις Human Interface Guidelines και μπορεί να αλλάξουν με τις ενημερώσεις του λειτουργικού συστήματος. Στην εφαρμογή που θα κυκλοφορήσετε, χρησιμοποιήστε τα API χρωμάτων του συστήματος.
 
+Δωρεάν, Plus και Pro
+Δωρεάν: παραλλαγές ενός χρώματος για τέσσερις λειτουργίες, έλεγχος αντίθεσης, αντιγραφή hex και κώδικα, πίνακας Dynamic Type και χρώματα συστήματος, και έως 6 χρώματα στην παλέτα. Το Plus, με συνδρομή ή εφάπαξ αγορά, προσθέτει απεριόριστη παλέτα, μαζικό έλεγχο αντίθεσης, προσομοίωση αχρωματοψίας και παλέτες ασφαλείς για αχρωματοψία. Το Pro προσθέτει εξαγωγή .colorset και .xcassets, κώδικα Dynamic Type, Συντομεύσεις και Spotlight.
 
 ## fi
 
@@ -1082,6 +1113,8 @@ Automaattiset muunnelmat noudattavat samoja kaavoja, joita järjestelmävärit k
 
 Järjestelmävärien viitearvot perustuvat Human Interface Guidelines -ohjeeseen ja voivat muuttua käyttöjärjestelmäpäivitysten myötä. Käytä julkaistavassa sovelluksessasi järjestelmän värirajapintoja.
 
+Ilmainen, Plus ja Pro
+Ilmaiseksi: värin muunnelmat neljään tilaan, kontrastin tarkistus, hexin ja koodin kopiointi, Dynamic Type -taulukko ja järjestelmävärit sekä enintään 6 väriä paletissa. Tilauksena tai kertaostona saatava Plus tuo rajattoman paletin, kontrastin joukkotarkistuksen, värisokeuden simuloinnin ja värisokeille turvalliset paletit. Pro lisää .colorset- ja .xcassets-viennin, Dynamic Type -koodin sekä Pikakomennot ja Spotlightin.
 
 ## id
 
@@ -1142,6 +1175,8 @@ Varian otomatis mengikuti pola yang dipakai warna sistem dari satu mode ke mode 
 
 Nilai acuan warna sistem didasarkan pada Human Interface Guidelines dan dapat berubah seiring pembaruan OS. Di app yang Anda rilis, gunakan API warna sistem.
 
+Gratis, Plus, dan Pro
+Gratis: buat varian satu warna untuk empat mode, periksa kontrasnya, salin hex dan kode, lihat Dynamic Type dan warna sistem, serta simpan hingga 6 warna di palet. Plus, lewat langganan atau sekali beli, menambahkan palet tanpa batas, pemeriksaan kontras massal, simulasi buta warna, dan palet aman buta warna. Pro menambahkan ekspor .colorset dan .xcassets, kode Dynamic Type, serta Pintasan dan Spotlight.
 
 ## no
 
@@ -1202,6 +1237,8 @@ De automatiske variantene følger de samme mønstrene som systemfargene bruker f
 
 Referanseverdiene for systemfarger bygger på Human Interface Guidelines og kan endre seg med OS-oppdateringer. Bruk API-ene for systemfarger i appen du sender ut.
 
+Gratis, Plus og Pro
+Gratis: lag varianter av en farge for fire moduser, sjekk kontrasten, kopier hex og kode, se Dynamic Type og systemfarger, og lagre opptil 6 farger i paletten. Plus, som abonnement eller engangskjøp, gir ubegrenset palett, kontrastsjekk i bulk, simulering av fargeblindhet og fargeblindsikre paletter. Pro legger til eksport som .colorset og .xcassets, Dynamic Type-kode samt Snarveier og Spotlight.
 
 ## nl-NL
 
@@ -1262,6 +1299,8 @@ De automatische varianten volgen dezelfde patronen die systeemkleuren van modus 
 
 De referentiewaarden van de systeemkleuren zijn gebaseerd op de Human Interface Guidelines en kunnen met OS-updates veranderen. Gebruik in je uiteindelijke app de API's voor systeemkleuren.
 
+Gratis, Plus en Pro
+Gratis: maak varianten van een kleur voor vier modi, controleer het contrast, kopieer hex en code, bekijk Dynamic Type en systeemkleuren, en bewaar tot 6 kleuren in je palet. Plus, als abonnement of eenmalige aankoop, voegt een onbeperkt palet, contrastcontrole in bulk, simulatie van kleurenblindheid en kleurenblindveilige paletten toe. Pro voegt export als .colorset en .xcassets, Dynamic Type-code, en Opdrachten en Spotlight toe.
 
 ## pl
 
@@ -1322,6 +1361,8 @@ Automatyczne warianty podążają za tymi samymi wzorcami, których kolory syste
 
 Wartości referencyjne kolorów systemowych opierają się na Human Interface Guidelines i mogą zmieniać się wraz z aktualizacjami systemu. W swojej aplikacji używaj API kolorów systemowych.
 
+Za darmo, Plus i Pro
+Za darmo: warianty koloru dla czterech trybów, sprawdzanie kontrastu, kopiowanie hex i kodu, tabela Dynamic Type i kolory systemowe oraz do 6 kolorów w palecie. Plus w subskrypcji lub jednorazowym zakupie dodaje paletę bez limitu, zbiorcze sprawdzanie kontrastu, symulację daltonizmu i palety bezpieczne dla daltonistów. Pro dodaje eksport .colorset i .xcassets, kod Dynamic Type oraz Skróty i Spotlight.
 
 ## sv
 
@@ -1382,6 +1423,8 @@ De automatiska varianterna följer samma mönster som systemfärgerna använder 
 
 Referensvärdena för systemfärger bygger på Human Interface Guidelines och kan ändras vid OS-uppdateringar. Använd systemets färg-API:er i din färdiga app.
 
+Gratis, Plus och Pro
+Gratis: gör varianter av en färg för fyra lägen, kontrollera kontrasten, kopiera hex och kod, se Dynamic Type och systemfärger, och spara upp till 6 färger i paletten. Plus, som prenumeration eller engångsköp, ger obegränsad palett, kontrastgranskning i ett svep, simulering av färgblindhet och färgblindsäkra paletter. Pro lägger till export som .colorset och .xcassets, Dynamic Type-kod samt Genvägar och Spotlight.
 
 ## tr
 
@@ -1441,6 +1484,9 @@ Kayıtlı tüm marka renklerinizi tek adımda tek bir .xcassets dosyasına aktar
 Otomatik varyantlar, sistem renklerinin modlar arasında izlediği kalıpları izler. Koyu modda renkler biraz daha parlak ve canlı olur. Açık yüksek kontrastta beyaz arka plana karşı 4,5:1’e, koyu yüksek kontrastta siyah arka plana karşı 7:1’e ulaşacak şekilde ayarlanır.
 
 Sistem rengi referans değerleri Human Interface Guidelines’a dayanır ve işletim sistemi güncellemeleriyle değişebilir. Yayınladığınız uygulamada sistem renk API’lerini kullanın.
+
+Ücretsiz, Plus ve Pro
+Ücretsiz: bir renk için dört mod varyantı oluşturun, kontrastı denetleyin, hex ve kodu kopyalayın, Dynamic Type ile sistem renklerine bakın ve paletinizde 6 renge kadar saklayın. Abonelikle veya tek seferlik satın alımla açılan Plus; sınırsız palet, toplu kontrast denetimi, renk körlüğü simülasyonu ve renk körlüğüne uygun paletler ekler. Pro; .colorset ve .xcassets dışa aktarma, Dynamic Type kodu, Kestirmeler ve Spotlight ekler.
 
 ## 손쉬운 사용
 

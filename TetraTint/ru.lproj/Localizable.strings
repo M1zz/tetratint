@@ -238,3 +238,51 @@
 
 /* 손쉬운 사용: 스포이트 버튼의 음성 명령 이름 */
 "Eyedropper" = "Пипетка";
+
+/* 요금제: 무료 · Plus · Pro (PaywallView · SettingsView · PurchaseManager) */
+"Free" = "Бесплатно";
+"TetraTint Plus and Pro" = "TetraTint Plus и Pro";
+"Audit your whole palette and send it straight to Xcode. Go yearly or lifetime." = "Проверяйте всю палитру и отправляйте её прямо в Xcode. Подписка на год или навсегда.";
+"Make one color in four modes and check its contrast." = "Сделайте один цвет в четырёх режимах и проверьте контраст.";
+"Check your whole palette in one go." = "Проверяйте всю палитру за один раз.";
+"Send files straight to Xcode, and start from Shortcuts." = "Файлы прямо в Xcode и запуск из «Быстрых команд».";
+"Recommended" = "Рекомендуем";
+"Current plan" = "Текущий план";
+"Included in %@" = "Входит в %@";
+"Show weekly and monthly plans" = "Показать планы на неделю и месяц";
+"Weekly" = "На неделю";
+"%@ / week" = "%@ / неделя";
+"Monthly" = "На месяц";
+"%@ / month" = "%@ / месяц";
+"You own Plus Lifetime, so you pay only the difference." = "У вас уже есть Plus навсегда, поэтому вы платите только разницу.";
+"Pay %@" = "Оплатить %@";
+"Loading plans…" = "Загрузка планов…";
+"Couldn't load plans. Check your internet connection and try again." = "Не удалось загрузить планы. Проверьте подключение к интернету и повторите попытку.";
+"Try Again" = "Повторить";
+"Subscriptions renew automatically at the same price unless canceled at least 24 hours before the period ends, and are charged to your Apple Account. New subscribers get the first year of a yearly plan at a discount once; after that it renews at the regular price. Manage or cancel anytime in your App Store account settings. Lifetime is a one-time payment and never renews." = "Подписка продлевается автоматически по той же цене, если её не отменить хотя бы за 24 часа до конца периода; оплата списывается с вашего Apple Account. Новые подписчики один раз получают скидку на первый год годового плана, затем подписка продлевается по обычной цене. Управлять подпиской и отменять её можно в любое время в настройках учётной записи App Store. Покупка навсегда оплачивается один раз и не продлевается.";
+"Terms of Use" = "Условия использования";
+"Privacy Policy" = "Политика конфиденциальности";
+"Restore Purchases" = "Восстановить покупки";
+"Unlimited" = "Без ограничений";
+"Four mode variants" = "Варианты для четырёх режимов";
+"Contrast and WCAG for one color" = "Контраст и WCAG для одного цвета";
+"Copy hex and code as text" = "Копирование hex и кода текстом";
+"Dynamic Type table and preview" = "Таблица и предпросмотр Dynamic Type";
+"System colors reference" = "Справка по системным цветам";
+"%lld colors" = "%lld цветов";
+"Feature" = "Функция";
+"Included" = "Есть";
+"Not included" = "Нет";
+"Unlimited palette" = "Палитра без ограничений";
+"Bulk contrast audit and quick fix" = "Пакетная проверка контраста и быстрое исправление";
+"Color-blind safe palettes" = "Палитры, безопасные для дальтоников";
+"Save .colorset files" = "Сохранение файлов .colorset";
+"Export the palette as one .xcassets" = "Экспорт палитры одним .xcassets";
+"Dynamic Type code" = "Код для Dynamic Type";
+"Shortcuts and Spotlight" = "Быстрые команды и Spotlight";
+"Free palettes hold up to %lld colors" = "В бесплатной палитре до %lld цветов";
+"No purchases were found for this Apple Account." = "Для этого Apple Account покупки не найдены.";
+"Your plan" = "Ваш план";
+"You were here before plans existed, so Pro is yours to keep." = "Вы были с нами ещё до появления планов, поэтому Pro остаётся за вами.";
+"See Plans" = "Посмотреть планы";
+"Plan" = "План";

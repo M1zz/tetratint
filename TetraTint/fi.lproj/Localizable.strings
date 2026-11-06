@@ -238,3 +238,51 @@
 
 /* 손쉬운 사용: 스포이트 버튼의 음성 명령 이름 */
 "Eyedropper" = "Pipetti";
+
+/* 요금제: 무료 · Plus · Pro (PaywallView · SettingsView · PurchaseManager) */
+"Free" = "Ilmainen";
+"TetraTint Plus and Pro" = "TetraTint Plus ja Pro";
+"Audit your whole palette and send it straight to Xcode. Go yearly or lifetime." = "Tarkista koko paletti ja vie se suoraan Xcodeen. Valitse vuositilaus tai elinikäinen.";
+"Make one color in four modes and check its contrast." = "Tee yhdestä väristä neljä tilaa ja tarkista sen kontrasti.";
+"Check your whole palette in one go." = "Tarkista koko paletti kerralla.";
+"Send files straight to Xcode, and start from Shortcuts." = "Vie tiedostot suoraan Xcodeen ja aloita Pikakomennoista.";
+"Recommended" = "Suositeltu";
+"Current plan" = "Nykyinen tilaus";
+"Included in %@" = "Sisältyy %@-tilaukseen";
+"Show weekly and monthly plans" = "Näytä viikko- ja kuukausitilaukset";
+"Weekly" = "Viikoittain";
+"%@ / week" = "%@ / viikko";
+"Monthly" = "Kuukausittain";
+"%@ / month" = "%@ / kuukausi";
+"You own Plus Lifetime, so you pay only the difference." = "Sinulla on elinikäinen Plus, joten maksat vain erotuksen.";
+"Pay %@" = "Maksa %@";
+"Loading plans…" = "Ladataan tilauksia…";
+"Couldn't load plans. Check your internet connection and try again." = "Tilauksia ei voitu ladata. Tarkista internetyhteys ja yritä uudelleen.";
+"Try Again" = "Yritä uudelleen";
+"Subscriptions renew automatically at the same price unless canceled at least 24 hours before the period ends, and are charged to your Apple Account. New subscribers get the first year of a yearly plan at a discount once; after that it renews at the regular price. Manage or cancel anytime in your App Store account settings. Lifetime is a one-time payment and never renews." = "Tilaukset uusiutuvat automaattisesti samaan hintaan, ellei niitä peruta viimeistään 24 tuntia ennen jakson päättymistä, ja ne veloitetaan Apple-tililtäsi. Uudet tilaajat saavat kerran alennuksen vuositilauksen ensimmäisestä vuodesta, minkä jälkeen se uusiutuu normaalihintaan. Hallitse tai peru milloin tahansa App Storen tiliasetuksissa. Elinikäinen on kertamaksu, eikä se uusiudu koskaan.";
+"Terms of Use" = "Käyttöehdot";
+"Privacy Policy" = "Tietosuojakäytäntö";
+"Restore Purchases" = "Palauta ostot";
+"Unlimited" = "Rajaton";
+"Four mode variants" = "Muunnelmat neljään tilaan";
+"Contrast and WCAG for one color" = "Yhden värin kontrasti ja WCAG";
+"Copy hex and code as text" = "Hexin ja koodin kopiointi tekstinä";
+"Dynamic Type table and preview" = "Dynamic Type -taulukko ja esikatselu";
+"System colors reference" = "Järjestelmävärit viitteeksi";
+"%lld colors" = "%lld väriä";
+"Feature" = "Ominaisuus";
+"Included" = "Sisältyy";
+"Not included" = "Ei sisälly";
+"Unlimited palette" = "Rajaton paletti";
+"Bulk contrast audit and quick fix" = "Kontrastin joukkotarkistus ja pikakorjaus";
+"Color-blind safe palettes" = "Värisokeille turvalliset paletit";
+"Save .colorset files" = ".colorset-tiedostojen tallennus";
+"Export the palette as one .xcassets" = "Paletin vienti yhtenä .xcassets-tiedostona";
+"Dynamic Type code" = "Dynamic Type -koodi";
+"Shortcuts and Spotlight" = "Pikakomennot ja Spotlight";
+"Free palettes hold up to %lld colors" = "Ilmaiseen palettiin mahtuu enintään %lld väriä";
+"No purchases were found for this Apple Account." = "Tällä Apple-tilillä ei löytynyt ostoja.";
+"Your plan" = "Tilauksesi";
+"You were here before plans existed, so Pro is yours to keep." = "Olit mukana jo ennen tilauksia, joten Pro jää sinulle.";
+"See Plans" = "Näytä tilaukset";
+"Plan" = "Tilaus";

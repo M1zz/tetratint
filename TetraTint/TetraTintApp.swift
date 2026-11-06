@@ -42,6 +42,8 @@ final class AppState: ObservableObject {
     @Published var hasManualEdits = false
     /// Color vision deficiency simulated across the whole app UI (.normal = off).
     @Published var previewCVD: CVDType = .normal
+    /// 잠긴 자리를 눌렀을 때 그 기능이 든 칸을 앞세운 페이월 (→ PaywallView). 단축어도 여기로 보낸다.
+    @Published var paywall: PlanFeature?
 
     private let sampler = NSColorSampler()
 
@@ -88,8 +90,8 @@ struct TetraTintApp: App {
                 .environmentObject(store)
                 .environmentObject(appState)
                 .frame(minWidth: 860, minHeight: 620)
-                // 개발자 응원하기(팁) — 상품을 불러오고, 끝나지 않은 팁을 마저 센다.
-                .task { await TetraTintSpec.tipJar.startStandalone() }
+                // 영수증 · 상품 · 구독을 읽는다 (→ PurchaseManager). 팁 결제도 같은 리스너가 받는다.
+                .task { await PurchaseManager.shared.refresh() }
         }
         .commands { TetraTintHelpCommands() }
 
@@ -117,6 +119,9 @@ struct ContentView: View {
     @StateObject private var fly = FlyOverlayModel()
     @AppStorage(OnboardingState.storageKey) private var hasSeenOnboarding = false
     @State private var showOnboarding = false
+    /// 구독 졸업 제안 (구독 6개월째 · 갱신 7일 전에 한 번씩).
+    @State private var showGraduation = false
+    private let purchases = PurchaseManager.shared
 
     private let pickTip = PickFromScreenTip()
     private let colorVisionTip = ColorVisionPreviewTip()
@@ -153,6 +158,17 @@ struct ContentView: View {
         .dynamicTypeSize(.xLarge)
         .sheet(isPresented: $showOnboarding, onDismiss: { hasSeenOnboarding = true }) {
             TetraTintOnboardingView { showOnboarding = false }
+        }
+        .sheet(item: $appState.paywall) { feature in
+            PaywallView(highlight: feature)
+        }
+        .sheet(isPresented: $showGraduation) {
+            LeeoGraduationOfferView(graduate: purchases.graduateProduct) {
+                await purchases.refresh()
+            }
+        }
+        .onChange(of: purchases.subscription, initial: true) { _, _ in
+            if purchases.takeGraduationOffer() { showGraduation = true }
         }
         .onAppear {
             guard !hasSeenOnboarding else { return }

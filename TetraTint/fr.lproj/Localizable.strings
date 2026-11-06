@@ -238,3 +238,51 @@
 
 /* 손쉬운 사용: 스포이트 버튼의 음성 명령 이름 */
 "Eyedropper" = "Pipette";
+
+/* 요금제: 무료 · Plus · Pro (PaywallView · SettingsView · PurchaseManager) */
+"Free" = "Gratuit";
+"TetraTint Plus and Pro" = "TetraTint Plus et Pro";
+"Audit your whole palette and send it straight to Xcode. Go yearly or lifetime." = "Vérifiez toute votre palette et envoyez-la directement dans Xcode. À l’année ou à vie.";
+"Make one color in four modes and check its contrast." = "Déclinez une couleur en quatre modes et vérifiez son contraste.";
+"Check your whole palette in one go." = "Vérifiez toute votre palette d’un coup.";
+"Send files straight to Xcode, and start from Shortcuts." = "Envoyez les fichiers directement dans Xcode, et lancez-vous depuis Raccourcis.";
+"Recommended" = "Recommandé";
+"Current plan" = "Formule actuelle";
+"Included in %@" = "Inclus dans %@";
+"Show weekly and monthly plans" = "Afficher les formules hebdomadaires et mensuelles";
+"Weekly" = "Hebdomadaire";
+"%@ / week" = "%@ / semaine";
+"Monthly" = "Mensuel";
+"%@ / month" = "%@ / mois";
+"You own Plus Lifetime, so you pay only the difference." = "Vous avez Plus à vie : vous ne payez que la différence.";
+"Pay %@" = "Payer %@";
+"Loading plans…" = "Chargement des formules…";
+"Couldn't load plans. Check your internet connection and try again." = "Impossible de charger les formules. Vérifiez votre connexion Internet et réessayez.";
+"Try Again" = "Réessayer";
+"Subscriptions renew automatically at the same price unless canceled at least 24 hours before the period ends, and are charged to your Apple Account. New subscribers get the first year of a yearly plan at a discount once; after that it renews at the regular price. Manage or cancel anytime in your App Store account settings. Lifetime is a one-time payment and never renews." = "Les abonnements se renouvellent automatiquement au même prix, sauf résiliation au moins 24 heures avant la fin de la période, et sont facturés sur votre compte Apple. Les nouveaux abonnés profitent une fois d’une réduction sur la première année d’un abonnement annuel ; ensuite, le renouvellement se fait au prix normal. Gérez ou résiliez à tout moment dans les réglages de votre compte App Store. L’achat à vie est un paiement unique, sans renouvellement.";
+"Terms of Use" = "Conditions d’utilisation";
+"Privacy Policy" = "Politique de confidentialité";
+"Restore Purchases" = "Restaurer les achats";
+"Unlimited" = "Illimitée";
+"Four mode variants" = "Variantes pour quatre modes";
+"Contrast and WCAG for one color" = "Contraste et WCAG pour une couleur";
+"Copy hex and code as text" = "Copie du hex et du code en texte";
+"Dynamic Type table and preview" = "Tableau et aperçu Dynamic Type";
+"System colors reference" = "Référence des couleurs système";
+"%lld colors" = "%lld couleurs";
+"Feature" = "Fonction";
+"Included" = "Inclus";
+"Not included" = "Non inclus";
+"Unlimited palette" = "Palette illimitée";
+"Bulk contrast audit and quick fix" = "Analyse groupée du contraste et correction immédiate";
+"Color-blind safe palettes" = "Palettes adaptées au daltonisme";
+"Save .colorset files" = "Enregistrement de fichiers .colorset";
+"Export the palette as one .xcassets" = "Export de la palette en un seul .xcassets";
+"Dynamic Type code" = "Code Dynamic Type";
+"Shortcuts and Spotlight" = "Raccourcis et Spotlight";
+"Free palettes hold up to %lld colors" = "La palette gratuite contient jusqu’à %lld couleurs";
+"No purchases were found for this Apple Account." = "Aucun achat trouvé pour ce compte Apple.";
+"Your plan" = "Votre formule";
+"You were here before plans existed, so Pro is yours to keep." = "Vous étiez là avant les formules : Pro vous reste acquis.";
+"See Plans" = "Voir les formules";
+"Plan" = "Formule";

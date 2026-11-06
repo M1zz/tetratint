@@ -238,3 +238,51 @@
 
 /* 손쉬운 사용: 스포이트 버튼의 음성 명령 이름 */
 "Eyedropper" = "Σταγονόμετρο";
+
+/* 요금제: 무료 · Plus · Pro (PaywallView · SettingsView · PurchaseManager) */
+"Free" = "Δωρεάν";
+"TetraTint Plus and Pro" = "TetraTint Plus και Pro";
+"Audit your whole palette and send it straight to Xcode. Go yearly or lifetime." = "Ελέγξτε ολόκληρη την παλέτα σας και στείλτε τη κατευθείαν στο Xcode. Ετήσια ή εφ’ όρου ζωής.";
+"Make one color in four modes and check its contrast." = "Φτιάξτε ένα χρώμα σε τέσσερις λειτουργίες και ελέγξτε την αντίθεσή του.";
+"Check your whole palette in one go." = "Ελέγξτε ολόκληρη την παλέτα με μία κίνηση.";
+"Send files straight to Xcode, and start from Shortcuts." = "Αρχεία κατευθείαν στο Xcode και έναρξη από τις Συντομεύσεις.";
+"Recommended" = "Προτείνεται";
+"Current plan" = "Τρέχον πρόγραμμα";
+"Included in %@" = "Περιλαμβάνεται στο %@";
+"Show weekly and monthly plans" = "Εμφάνιση εβδομαδιαίων και μηνιαίων προγραμμάτων";
+"Weekly" = "Εβδομαδιαία";
+"%@ / week" = "%@ / εβδομάδα";
+"Monthly" = "Μηνιαία";
+"%@ / month" = "%@ / μήνα";
+"You own Plus Lifetime, so you pay only the difference." = "Έχετε ήδη το Plus εφ’ όρου ζωής, οπότε πληρώνετε μόνο τη διαφορά.";
+"Pay %@" = "Πληρωμή %@";
+"Loading plans…" = "Φόρτωση προγραμμάτων…";
+"Couldn't load plans. Check your internet connection and try again." = "Δεν ήταν δυνατή η φόρτωση των προγραμμάτων. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο και δοκιμάστε ξανά.";
+"Try Again" = "Δοκιμάστε ξανά";
+"Subscriptions renew automatically at the same price unless canceled at least 24 hours before the period ends, and are charged to your Apple Account. New subscribers get the first year of a yearly plan at a discount once; after that it renews at the regular price. Manage or cancel anytime in your App Store account settings. Lifetime is a one-time payment and never renews." = "Οι συνδρομές ανανεώνονται αυτόματα στην ίδια τιμή, εκτός αν ακυρωθούν τουλάχιστον 24 ώρες πριν από τη λήξη της περιόδου, και χρεώνονται στον λογαριασμό Apple σας. Οι νέοι συνδρομητές έχουν μία φορά έκπτωση στον πρώτο χρόνο του ετήσιου προγράμματος· μετά ανανεώνεται στην κανονική τιμή. Διαχειριστείτε ή ακυρώστε οποτεδήποτε από τις ρυθμίσεις του λογαριασμού σας στο App Store. Το εφ’ όρου ζωής είναι εφάπαξ πληρωμή και δεν ανανεώνεται ποτέ.";
+"Terms of Use" = "Όροι χρήσης";
+"Privacy Policy" = "Πολιτική απορρήτου";
+"Restore Purchases" = "Επαναφορά αγορών";
+"Unlimited" = "Απεριόριστα";
+"Four mode variants" = "Παραλλαγές για τέσσερις λειτουργίες";
+"Contrast and WCAG for one color" = "Αντίθεση και WCAG για ένα χρώμα";
+"Copy hex and code as text" = "Αντιγραφή hex και κώδικα ως κείμενο";
+"Dynamic Type table and preview" = "Πίνακας και προεπισκόπηση Dynamic Type";
+"System colors reference" = "Χρώματα συστήματος για αναφορά";
+"%lld colors" = "%lld χρώματα";
+"Feature" = "Λειτουργία";
+"Included" = "Περιλαμβάνεται";
+"Not included" = "Δεν περιλαμβάνεται";
+"Unlimited palette" = "Απεριόριστη παλέτα";
+"Bulk contrast audit and quick fix" = "Μαζικός έλεγχος αντίθεσης και άμεση διόρθωση";
+"Color-blind safe palettes" = "Παλέτες ασφαλείς για αχρωματοψία";
+"Save .colorset files" = "Αποθήκευση αρχείων .colorset";
+"Export the palette as one .xcassets" = "Εξαγωγή της παλέτας σε ένα .xcassets";
+"Dynamic Type code" = "Κώδικας Dynamic Type";
+"Shortcuts and Spotlight" = "Συντομεύσεις και Spotlight";
+"Free palettes hold up to %lld colors" = "Η δωρεάν παλέτα χωράει έως %lld χρώματα";
+"No purchases were found for this Apple Account." = "Δεν βρέθηκαν αγορές για αυτόν τον λογαριασμό Apple.";
+"Your plan" = "Το πρόγραμμά σας";
+"You were here before plans existed, so Pro is yours to keep." = "Ήσασταν εδώ πριν από τα προγράμματα, γι’ αυτό το Pro μένει δικό σας.";
+"See Plans" = "Δείτε τα προγράμματα";
+"Plan" = "Πρόγραμμα";

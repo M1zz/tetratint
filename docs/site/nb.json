@@ -1,11 +1,11 @@
 {
   "title": "TetraTint: merkevarefarger for mørk modus og høy kontrast på Mac",
-  "description": "Utviklerverktøy for Mac som lager lyse, mørke og høykontrast-varianter av én farge og sjekker WCAG-kontrast, fargeblindhet og Dynamic Type. Gratis.",
+  "description": "Utviklerverktøy for Mac som lager lyse, mørke og høykontrast-varianter av én farge og sjekker WCAG-kontrast, fargeblindhet og Dynamic Type.",
   "hero": {
     "headline": "Én farge inn,\nfire utseender ut",
     "lead": "Systemfarger tilpasser seg selv mørk modus og Øk kontrast. Merkevarefargene dine gjør ikke det. TetraTint tar én farge fra lys modus, lager variantene Lys, Lys høykontrast, Mørk og Mørk høykontrast, og eksporterer dem rett til Xcode.",
     "cta": "Last ned gratis i Mac App Store",
-    "note": "Alle funksjoner er gratis. Krever macOS 14 eller nyere."
+    "note": "Gratis å starte, med Plus og Pro for mer. Krever macOS 14 eller nyere."
   },
   "demo": {
     "title": "Prøv merkevarefargen din",
@@ -104,8 +104,8 @@
     "title": "Vanlige spørsmål",
     "items": [
       {
-        "q": "Er det virkelig gratis?",
-        "a": "Ja. Alle funksjoner er gratis, uten konto og uten reklame. Hvis appen hjalp deg, kan du gi tips under Innstillinger; det låser ikke opp noe."
+        "q": "Er det gratis?",
+        "a": "Du kan starte gratis. Varianter av en farge for fire moduser, kontrastsjekk én farge om gangen, kopiering av hex og kode, Dynamic Type og systemfarger samt en palett med opptil 6 farger er gratis, uten konto og uten reklame. Plus og Pro, som abonnement eller engangskjøp, gir kontrastsjekk i bulk, simulering av fargesyn, eksport som .colorset og .xcassets og mer. Tips i Innstillinger låser ikke opp noe."
       },
       {
         "q": "De genererte variantene passer ikke til merkevaren vår.",

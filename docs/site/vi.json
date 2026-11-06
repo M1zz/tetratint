@@ -1,11 +1,11 @@
 {
   "title": "TetraTint: đưa màu thương hiệu vào chế độ tối và tương phản cao trên Mac",
-  "description": "Công cụ lập trình trên Mac: từ một màu tạo biến thể sáng, tối và tương phản cao, kiểm tra tương phản WCAG, mù màu và Dynamic Type. Miễn phí.",
+  "description": "Công cụ lập trình trên Mac: từ một màu tạo biến thể sáng, tối và tương phản cao, kiểm tra tương phản WCAG, mù màu và Dynamic Type.",
   "hero": {
     "headline": "Nhập một màu,\nnhận đủ bốn giao diện",
     "lead": "Màu hệ thống tự đổi theo chế độ tối và Tăng tương phản, còn màu thương hiệu của bạn thì không. TetraTint lấy một màu ở chế độ sáng, tạo các biến thể Sáng, Sáng tương phản cao, Tối và Tối tương phản cao, rồi xuất thẳng sang Xcode.",
     "cta": "Tải miễn phí trên Mac App Store",
-    "note": "Mọi tính năng đều miễn phí. Cần macOS 14 trở lên."
+    "note": "Bắt đầu miễn phí, có Plus và Pro khi cần thêm. Cần macOS 14 trở lên."
   },
   "demo": {
     "title": "Thử màu thương hiệu của bạn",
@@ -104,8 +104,8 @@
     "title": "Câu hỏi thường gặp",
     "items": [
       {
-        "q": "Có thật sự miễn phí không?",
-        "a": "Có. Mọi tính năng đều miễn phí, không cần tài khoản, không quảng cáo. Nếu thấy hữu ích, bạn có thể gửi tiền tip trong Cài đặt; tiền tip không mở thêm tính năng nào."
+        "q": "Có miễn phí không?",
+        "a": "Bạn có thể bắt đầu miễn phí. Biến thể bốn chế độ của một màu, kiểm tra tương phản từng màu, sao chép hex và mã, Dynamic Type và màu hệ thống, cùng bảng màu tối đa 6 màu đều miễn phí, không cần tài khoản và không có quảng cáo. Plus và Pro, theo gói đăng ký hoặc mua một lần, thêm kiểm tra tương phản hàng loạt, mô phỏng thị giác màu, xuất .colorset và .xcassets, và hơn thế nữa. Tiền tip trong Cài đặt không mở khóa tính năng nào."
       },
       {
         "q": "Biến thể tự tạo không hợp với tông thương hiệu.",

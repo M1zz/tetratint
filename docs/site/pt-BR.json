@@ -5,7 +5,7 @@
     "headline": "Uma cor na entrada,\nquatro aparências na saída",
     "lead": "As cores do sistema se ajustam sozinhas ao modo escuro e ao Aumentar Contraste. As cores da sua marca, não. O TetraTint pega uma cor do modo claro, cria as variantes Claro, Claro com alto contraste, Escuro e Escuro com alto contraste, e exporta direto para o Xcode.",
     "cta": "Baixe grátis na Mac App Store",
-    "note": "Todos os recursos são grátis. Requer macOS 14 ou posterior."
+    "note": "Comece grátis; o Plus e o Pro oferecem mais. Requer macOS 14 ou posterior."
   },
   "demo": {
     "title": "Teste a cor da sua marca",
@@ -104,8 +104,8 @@
     "title": "Perguntas frequentes",
     "items": [
       {
-        "q": "É grátis mesmo?",
-        "a": "Sim. Todos os recursos são grátis, sem conta e sem anúncios. Se ajudou, dá para deixar uma gorjeta nos Ajustes; ela não libera nada."
+        "q": "É grátis?",
+        "a": "Dá para começar grátis. Variantes de uma cor para quatro modos, verificação de contraste cor a cor, cópia de hex e código, Dynamic Type e cores do sistema, e uma paleta de até 6 cores são grátis, sem conta e sem anúncios. O Plus e o Pro, por assinatura ou compra única, adicionam análise de contraste em lote, simulação de visão de cores, exportação .colorset e .xcassets e mais. As gorjetas nos Ajustes não desbloqueiam nada."
       },
       {
         "q": "As variantes geradas não combinam com a minha marca.",

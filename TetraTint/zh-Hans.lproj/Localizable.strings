@@ -238,3 +238,51 @@
 
 /* 손쉬운 사용: 스포이트 버튼의 음성 명령 이름 */
 "Eyedropper" = "吸管";
+
+/* 요금제: 무료 · Plus · Pro (PaywallView · SettingsView · PurchaseManager) */
+"Free" = "免费";
+"TetraTint Plus and Pro" = "TetraTint Plus 与 Pro";
+"Audit your whole palette and send it straight to Xcode. Go yearly or lifetime." = "检查整套调色板，直接送进 Xcode。按年订阅或一次买断，任你选择。";
+"Make one color in four modes and check its contrast." = "把一个颜色做成四种模式，并检查对比度。";
+"Check your whole palette in one go." = "一次检查整套调色板。";
+"Send files straight to Xcode, and start from Shortcuts." = "以文件形式直接放进 Xcode，还能从快捷指令开始。";
+"Recommended" = "推荐";
+"Current plan" = "当前方案";
+"Included in %@" = "包含在 %@ 中";
+"Show weekly and monthly plans" = "显示按周和按月方案";
+"Weekly" = "按周";
+"%@ / week" = "%@ / 周";
+"Monthly" = "按月";
+"%@ / month" = "%@ / 月";
+"You own Plus Lifetime, so you pay only the difference." = "你已拥有 Plus 终身版，只需支付差价。";
+"Pay %@" = "支付 %@";
+"Loading plans…" = "正在载入方案…";
+"Couldn't load plans. Check your internet connection and try again." = "无法载入方案。请检查网络连接后重试。";
+"Try Again" = "重试";
+"Subscriptions renew automatically at the same price unless canceled at least 24 hours before the period ends, and are charged to your Apple Account. New subscribers get the first year of a yearly plan at a discount once; after that it renews at the regular price. Manage or cancel anytime in your App Store account settings. Lifetime is a one-time payment and never renews." = "订阅会以相同价格自动续订，除非在当期结束前至少 24 小时取消，费用将从你的 Apple 账户扣除。首次订阅的用户可享受一次年度方案首年折扣，之后按原价续订。你可以随时在 App Store 账户设置中管理或取消订阅。终身版为一次性付款，不会续订。";
+"Terms of Use" = "使用条款";
+"Privacy Policy" = "隐私政策";
+"Restore Purchases" = "恢复购买";
+"Unlimited" = "无限";
+"Four mode variants" = "四种模式变体";
+"Contrast and WCAG for one color" = "单个颜色的对比度与 WCAG";
+"Copy hex and code as text" = "以文本拷贝 hex 和代码";
+"Dynamic Type table and preview" = "动态字体表格与预览";
+"System colors reference" = "系统颜色参考";
+"%lld colors" = "%lld 种颜色";
+"Feature" = "功能";
+"Included" = "包含";
+"Not included" = "不包含";
+"Unlimited palette" = "调色板无限制";
+"Bulk contrast audit and quick fix" = "批量检查对比度并一键修正";
+"Color-blind safe palettes" = "色盲友好调色板";
+"Save .colorset files" = "保存 .colorset 文件";
+"Export the palette as one .xcassets" = "将调色板导出为一个 .xcassets";
+"Dynamic Type code" = "动态字体代码生成";
+"Shortcuts and Spotlight" = "快捷指令与聚焦搜索";
+"Free palettes hold up to %lld colors" = "免费调色板最多可存 %lld 种颜色";
+"No purchases were found for this Apple Account." = "未找到此 Apple 账户的购买记录。";
+"Your plan" = "你的方案";
+"You were here before plans existed, so Pro is yours to keep." = "你在推出付费方案之前就开始使用，因此可继续享用 Pro。";
+"See Plans" = "查看方案";
+"Plan" = "方案";

@@ -6,6 +6,7 @@ import SwiftUI
 struct ColorVisionLens: View {
     @EnvironmentObject private var store: PaletteStore
     @EnvironmentObject private var appState: AppState
+    private let purchases = PurchaseManager.shared
 
     /// Colors under inspection: the shared working color first, then any
     /// saved palette colors so conflicts between them can be spotted.
@@ -226,7 +227,10 @@ struct ColorVisionLens: View {
 
                     Spacer()
 
-                    FlyingAddButton(colors: palette.hexes.map { Color(hex: $0) }) {
+                    FlyingAddButton(colors: palette.hexes.map { Color(hex: $0) },
+                                    lock: purchases.lock(.safePalettes)
+                                        ?? purchases.paletteLock(existing: store.items.count,
+                                                                 adding: palette.hexes.count)) {
                         for (index, hex) in palette.hexes.enumerated() {
                             let name = palette.name.replacingOccurrences(of: "–", with: "")
                                 .replacingOccurrences(of: " ", with: "") + "\(index + 1)"

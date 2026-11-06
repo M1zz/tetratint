@@ -1,11 +1,11 @@
 {
   "title": "TetraTint: firemní barvy pro tmavý režim a vysoký kontrast na Macu",
-  "description": "Vývojářský nástroj pro Mac: z jedné barvy udělá světlé, tmavé a kontrastní varianty a ověří kontrast WCAG, barvoslepost i Dynamic Type. Zdarma.",
+  "description": "Vývojářský nástroj pro Mac: z jedné barvy udělá světlé, tmavé a kontrastní varianty a ověří kontrast WCAG, barvoslepost i Dynamic Type.",
   "hero": {
     "headline": "Jedna barva na vstupu,\nčtyři vzhledy na výstupu",
     "lead": "Systémové barvy se samy přizpůsobí tmavému režimu i Zvýšení kontrastu. Vaše firemní barvy ne. TetraTint vezme jednu barvu světlého režimu, vytvoří varianty Světlý, Světlý s vysokým kontrastem, Tmavý a Tmavý s vysokým kontrastem a rovnou je vyexportuje do Xcode.",
     "cta": "Stáhnout zdarma v Mac App Store",
-    "note": "Všechny funkce jsou zdarma. Vyžaduje macOS 14 nebo novější."
+    "note": "Začít můžete zdarma, Plus a Pro nabídnou víc. Vyžaduje macOS 14 nebo novější."
   },
   "demo": {
     "title": "Vyzkoušejte svou firemní barvu",
@@ -104,8 +104,8 @@
     "title": "Časté dotazy",
     "items": [
       {
-        "q": "Je to opravdu zdarma?",
-        "a": "Ano. Všechny funkce jsou zdarma, bez účtu a bez reklam. Pokud vám pomohla, můžete v Nastavení nechat spropitné; nic tím neodemknete."
+        "q": "Je to zdarma?",
+        "a": "Začít můžete zdarma. Varianty barvy pro čtyři režimy, kontrola kontrastu barvu po barvě, kopírování hex a kódu, Dynamic Type a systémové barvy i paleta až se 6 barvami jsou zdarma, bez účtu a bez reklam. Plus a Pro v předplatném nebo jednorázovým nákupem přidávají hromadnou kontrolu kontrastu, simulaci barevného vidění, export .colorset a .xcassets a další. Spropitné v Nastavení nic neodemyká."
       },
       {
         "q": "Vytvořené varianty neladí s naší značkou.",

@@ -5,7 +5,7 @@
     "headline": "En färg in,\nfyra utseenden ut",
     "lead": "Systemfärger anpassar sig själva till mörkt läge och Öka kontrast. Dina varumärkesfärger gör det inte. TetraTint tar en färg från ljust läge, skapar varianterna Ljust, Ljust hög kontrast, Mörkt och Mörkt hög kontrast och exporterar dem direkt till Xcode.",
     "cta": "Hämta gratis på Mac App Store",
-    "note": "Alla funktioner är gratis. Kräver macOS 14 eller senare."
+    "note": "Gratis att börja, med Plus och Pro för mer. Kräver macOS 14 eller senare."
   },
   "demo": {
     "title": "Testa din varumärkesfärg",
@@ -104,8 +104,8 @@
     "title": "Vanliga frågor",
     "items": [
       {
-        "q": "Är det verkligen gratis?",
-        "a": "Ja. Alla funktioner är gratis, utan konto och utan reklam. Om appen hjälpte dig kan du ge dricks under Inställningar; det låser inte upp något."
+        "q": "Är det gratis?",
+        "a": "Du kan börja gratis. Varianter av en färg för fyra lägen, kontrastkontroll en färg i taget, kopiering av hex och kod, Dynamic Type och systemfärger samt en palett med upp till 6 färger är gratis, utan konto och utan reklam. Plus och Pro, som prenumeration eller engångsköp, ger kontrastgranskning i ett svep, simulering av färgseende, export som .colorset och .xcassets och mer. Dricks i Inställningar låser inte upp något."
       },
       {
         "q": "De skapade varianterna passar inte vårt varumärke.",

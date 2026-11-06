@@ -5,7 +5,7 @@
     "headline": "Eine Farbe rein,\nvier Darstellungen raus",
     "lead": "Systemfarben passen sich von selbst an Dunkelmodus und „Kontrast erhöhen“ an. Deine Markenfarben nicht. TetraTint nimmt eine Farbe aus dem hellen Modus, erzeugt die Varianten Hell, Hell mit hohem Kontrast, Dunkel und Dunkel mit hohem Kontrast und exportiert sie direkt nach Xcode.",
     "cta": "Kostenlos im Mac App Store laden",
-    "note": "Alle Funktionen sind kostenlos. Ab macOS 14."
+    "note": "Gratis starten, mit Plus und Pro für mehr. Ab macOS 14."
   },
   "demo": {
     "title": "Probier deine Markenfarbe aus",
@@ -104,8 +104,8 @@
     "title": "Häufige Fragen",
     "items": [
       {
-        "q": "Ist das wirklich kostenlos?",
-        "a": "Ja. Alle Funktionen sind kostenlos, ohne Konto und ohne Werbung. Wenn es dir geholfen hat, kannst du in den Einstellungen ein Trinkgeld geben; freigeschaltet wird dadurch nichts."
+        "q": "Ist es kostenlos?",
+        "a": "Der Einstieg ist kostenlos. Varianten einer Farbe für vier Modi, Kontrastprüfung Farbe für Farbe, Hex und Code kopieren, Dynamic Type und Systemfarben sowie eine Palette mit bis zu 6 Farben sind gratis, ohne Account und ohne Werbung. Plus und Pro, im Abo oder als Einmalkauf, bringen Kontrast-Sammelprüfungen, Farbsehen-Simulation, Export als .colorset und .xcassets und mehr. Trinkgeld in den Einstellungen schaltet nichts frei."
       },
       {
         "q": "Die erzeugten Varianten passen nicht zu meiner Marke.",

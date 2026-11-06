@@ -5,7 +5,7 @@
     "headline": "Yksi väri sisään,\nneljä ulkoasua ulos",
     "lead": "Järjestelmävärit mukautuvat itse tummaan tilaan ja Lisää kontrastia -asetukseen. Brändivärisi eivät. TetraTint ottaa yhden vaalean tilan värin, tekee siitä versiot Vaalea, Vaalea korkea kontrasti, Tumma ja Tumma korkea kontrasti ja vie ne suoraan Xcodeen.",
     "cta": "Lataa ilmaiseksi Mac App Storesta",
-    "note": "Kaikki ominaisuudet ovat ilmaisia. Vaatii macOS 14:n tai uudemman."
+    "note": "Aloita ilmaiseksi, ja Plus ja Pro tuovat lisää. Vaatii macOS 14:n tai uudemman."
   },
   "demo": {
     "title": "Kokeile brändiväriäsi",
@@ -104,8 +104,8 @@
     "title": "Usein kysyttyä",
     "items": [
       {
-        "q": "Onko se todella ilmainen?",
-        "a": "On. Kaikki ominaisuudet ovat ilmaisia, eikä tiliä tai mainoksia ole. Jos appi auttoi, voit antaa juomarahaa asetuksista; se ei avaa mitään lisää."
+        "q": "Onko se ilmainen?",
+        "a": "Aloittaminen on ilmaista. Värin muunnelmat neljään tilaan, kontrastin tarkistus väri kerrallaan, hexin ja koodin kopiointi, Dynamic Type ja järjestelmävärit sekä enintään 6 värin paletti ovat ilmaisia, ilman tiliä ja mainoksia. Tilauksena tai kertaostona saatavat Plus ja Pro tuovat kontrastin joukkotarkistuksen, värinäön simuloinnin, .colorset- ja .xcassets-viennin ja paljon muuta. Asetusten juomarahat eivät avaa mitään."
       },
       {
         "q": "Luodut versiot eivät sovi brändiimme.",

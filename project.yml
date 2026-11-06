@@ -51,6 +51,10 @@ targets:
       - TetraTint/Models/ColorNaming.swift
       - TetraTint/Models/PaletteStore.swift
       - TetraTint/Export/Exporters.swift
+      - TetraTint/Support/Plan.swift
+      # 가짜 스토어(→ TetraTint.storekit)로 상품 · 구매 흐름을 시험한다 (StoreKitTests).
+      - path: TetraTint.storekit
+        buildPhase: resources
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.leeo.TetraTintTests
@@ -66,6 +70,9 @@ schemes:
         TetraTint: all
     run:
       config: Debug
+      # 로컬에서 구매 흐름을 굴려 보는 가짜 스토어 (→ TetraTint.storekit). Release · archive 에는 안 붙는다.
+      # ⚠️ 상품 ID 는 App Store Connect 에 만들 상품과 글자 하나까지 같아야 한다 (→ Plan.swift).
+      storeKitConfiguration: TetraTint.storekit
     test:
       config: Debug
       targets:

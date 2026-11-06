@@ -238,3 +238,51 @@
 
 /* 손쉬운 사용: 스포이트 버튼의 음성 명령 이름 */
 "Eyedropper" = "Kapátko";
+
+/* 요금제: 무료 · Plus · Pro (PaywallView · SettingsView · PurchaseManager) */
+"Free" = "Zdarma";
+"TetraTint Plus and Pro" = "TetraTint Plus a Pro";
+"Audit your whole palette and send it straight to Xcode. Go yearly or lifetime." = "Zkontrolujte celou paletu a pošlete ji rovnou do Xcode. Zvolte roční plán nebo doživotní.";
+"Make one color in four modes and check its contrast." = "Udělejte z jedné barvy čtyři režimy a zkontrolujte kontrast.";
+"Check your whole palette in one go." = "Zkontrolujte celou paletu najednou.";
+"Send files straight to Xcode, and start from Shortcuts." = "Soubory rovnou do Xcode a start ze Zkratek.";
+"Recommended" = "Doporučeno";
+"Current plan" = "Aktuální plán";
+"Included in %@" = "Součást %@";
+"Show weekly and monthly plans" = "Zobrazit týdenní a měsíční plány";
+"Weekly" = "Týdně";
+"%@ / week" = "%@ / týden";
+"Monthly" = "Měsíčně";
+"%@ / month" = "%@ / měsíc";
+"You own Plus Lifetime, so you pay only the difference." = "Plus doživotně už máte, takže platíte jen rozdíl.";
+"Pay %@" = "Zaplatit %@";
+"Loading plans…" = "Načítání plánů…";
+"Couldn't load plans. Check your internet connection and try again." = "Plány se nepodařilo načíst. Zkontrolujte připojení k internetu a zkuste to znovu.";
+"Try Again" = "Zkusit znovu";
+"Subscriptions renew automatically at the same price unless canceled at least 24 hours before the period ends, and are charged to your Apple Account. New subscribers get the first year of a yearly plan at a discount once; after that it renews at the regular price. Manage or cancel anytime in your App Store account settings. Lifetime is a one-time payment and never renews." = "Předplatné se automaticky obnovuje za stejnou cenu, pokud ho nezrušíte nejpozději 24 hodin před koncem období, a účtuje se na váš Apple účet. Noví předplatitelé dostanou jednou slevu na první rok ročního plánu; poté se obnovuje za běžnou cenu. Spravovat nebo zrušit ho můžete kdykoli v nastavení účtu App Store. Doživotní nákup je jednorázová platba a nikdy se neobnovuje.";
+"Terms of Use" = "Podmínky použití";
+"Privacy Policy" = "Zásady ochrany soukromí";
+"Restore Purchases" = "Obnovit nákupy";
+"Unlimited" = "Neomezeně";
+"Four mode variants" = "Varianty pro čtyři režimy";
+"Contrast and WCAG for one color" = "Kontrast a WCAG pro jednu barvu";
+"Copy hex and code as text" = "Kopírování hex a kódu jako textu";
+"Dynamic Type table and preview" = "Tabulka a náhled Dynamic Type";
+"System colors reference" = "Přehled systémových barev";
+"%lld colors" = "%lld barev";
+"Feature" = "Funkce";
+"Included" = "Ano";
+"Not included" = "Ne";
+"Unlimited palette" = "Neomezená paleta";
+"Bulk contrast audit and quick fix" = "Hromadná kontrola kontrastu a rychlá oprava";
+"Color-blind safe palettes" = "Palety bezpečné pro barvoslepé";
+"Save .colorset files" = "Ukládání souborů .colorset";
+"Export the palette as one .xcassets" = "Export palety jako jednoho .xcassets";
+"Dynamic Type code" = "Kód pro Dynamic Type";
+"Shortcuts and Spotlight" = "Zkratky a Spotlight";
+"Free palettes hold up to %lld colors" = "Bezplatná paleta pojme až %lld barev";
+"No purchases were found for this Apple Account." = "Pro tento Apple účet se nenašly žádné nákupy.";
+"Your plan" = "Váš plán";
+"You were here before plans existed, so Pro is yours to keep." = "Byli jste tu dřív, než vznikly plány, takže vám Pro zůstává.";
+"See Plans" = "Zobrazit plány";
+"Plan" = "Plán";
