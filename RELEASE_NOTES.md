@@ -3,6 +3,152 @@
 App Store 의 "이 버전의 새로운 기능" 에 그대로 올라가는 글이다.
 평문만 쓴다. 한 줄에 한 문장, 3~5줄, 한 줄 40자 이내.
 
+## 1.0.3
+
+### 앱스토어 (한국어)
+
+저장한 팔레트가 매일, 업데이트 직전에도 자동으로 백업돼요
+백업은 iCloud나 파일에서 언제든 되살릴 수 있어요
+드물게 저장한 팔레트가 사라질 수 있던 문제를 고쳤어요
+
+### App Store (English)
+
+Saved palettes back up daily and right before updates
+Restore a backup from iCloud or a file anytime
+Fixed a rare issue that could erase saved palettes
+
+### App Store (en-GB)
+
+Saved palettes back up daily and right before updates
+Restore a backup from iCloud or a file at any time
+Fixed a rare issue that could erase saved palettes
+
+### App Store (简体中文)
+
+已保存的调色板每天以及更新前都会自动备份
+可随时从 iCloud 或文件恢复备份
+修复了已保存调色板偶尔可能丢失的问题
+
+### App Store (繁體中文)
+
+已儲存的調色盤每天以及更新前都會自動備份
+可隨時從 iCloud 或檔案還原備份
+修正了已儲存調色盤偶爾可能遺失的問題
+
+### App Store (日本語)
+
+保存したパレットが毎日とアップデート直前に自動でバックアップされます
+バックアップはiCloudやファイルからいつでも復元できます
+まれに保存したパレットが消えることがある問題を修正しました
+
+### App Store (Русский)
+
+Палитры сохраняются каждый день и перед обновлением
+Копию можно восстановить из iCloud или из файла
+Исправлена редкая ошибка, из-за которой пропадали палитры
+
+### App Store (Español (México))
+
+Tus paletas se respaldan cada día y antes de actualizar
+Restaura un respaldo desde iCloud o un archivo
+Corregimos un error poco común que podía borrar tus paletas
+
+### App Store (Deutsch)
+
+Gespeicherte Paletten werden täglich und vor Updates gesichert
+Stelle Sicherungen aus iCloud oder einer Datei wieder her
+Seltener Fehler behoben, der Paletten löschen konnte
+
+### App Store (Français)
+
+Vos palettes sont sauvegardées chaque jour et avant mise à jour
+Restaurez une sauvegarde depuis iCloud ou un fichier
+Correction d’un bug rare qui pouvait effacer vos palettes
+
+### App Store (Italiano)
+
+Le palette vengono salvate ogni giorno e prima degli aggiornamenti
+Ripristina un backup da iCloud o da un file
+Risolto un raro problema che poteva cancellare le palette
+
+### App Store (Português (Brasil))
+
+Suas paletas ganham backup todo dia e antes de atualizar
+Restaure um backup do iCloud ou de um arquivo
+Corrigimos um erro raro que podia apagar suas paletas
+
+### App Store (ไทย)
+
+พาเลตต์ที่บันทึกไว้สำรองอัตโนมัติทุกวันและก่อนอัปเดต
+กู้คืนข้อมูลสำรองจาก iCloud หรือไฟล์ได้ทุกเมื่อ
+แก้ปัญหาที่พบไม่บ่อยซึ่งอาจทำให้พาเลตต์ที่บันทึกไว้หาย
+
+### App Store (Tiếng Việt)
+
+Bảng màu đã lưu được sao lưu mỗi ngày và trước khi cập nhật
+Khôi phục bản sao lưu từ iCloud hoặc tệp bất cứ lúc nào
+Đã sửa lỗi hiếm gặp có thể làm mất bảng màu đã lưu
+
+### App Store (Čeština)
+
+Uložené palety se zálohují každý den a před aktualizací
+Zálohu obnovíte z iCloudu nebo ze souboru
+Opravena vzácná chyba, která mohla smazat uložené palety
+
+### App Store (Dansk)
+
+Gemte paletter sikkerhedskopieres dagligt og før opdateringer
+Gendan en sikkerhedskopi fra iCloud eller en fil
+Rettet en sjælden fejl, der kunne slette gemte paletter
+
+### App Store (Ελληνικά)
+
+Οι παλέτες σας αποθηκεύονται κάθε μέρα και πριν από ενημερώσεις
+Επαναφέρετε αντίγραφο από το iCloud ή από αρχείο
+Διορθώθηκε σπάνιο σφάλμα που μπορούσε να σβήσει παλέτες
+
+### App Store (suomi)
+
+Tallennetut paletit varmuuskopioidaan päivittäin ja ennen päivitystä
+Palauta varmuuskopio iCloudista tai tiedostosta
+Korjattu harvinainen virhe, joka saattoi poistaa paletteja
+
+### App Store (Bahasa Indonesia)
+
+Palet tersimpan dicadangkan setiap hari dan sebelum pembaruan
+Pulihkan cadangan dari iCloud atau file kapan saja
+Memperbaiki masalah langka yang bisa menghapus palet
+
+### App Store (Norsk bokmål)
+
+Lagrede paletter sikkerhetskopieres daglig og før oppdateringer
+Gjenopprett en sikkerhetskopi fra iCloud eller en fil
+Rettet en sjelden feil som kunne slette lagrede paletter
+
+### App Store (Nederlands)
+
+Bewaarde paletten krijgen elke dag en vóór een update een back-up
+Zet een back-up terug vanuit iCloud of een bestand
+Zeldzame fout opgelost die paletten kon wissen
+
+### App Store (Polski)
+
+Zapisane palety są kopiowane codziennie i przed aktualizacją
+Przywróć kopię z iCloud lub z pliku
+Naprawiono rzadki błąd, który mógł usunąć palety
+
+### App Store (Svenska)
+
+Sparade paletter säkerhetskopieras dagligen och före uppdateringar
+Återställ en säkerhetskopia från iCloud eller en fil
+Åtgärdat ett sällsynt fel som kunde radera sparade paletter
+
+### App Store (Türkçe)
+
+Kayıtlı paletleriniz her gün ve güncellemeden önce yedeklenir
+Yedeği iCloud’dan veya bir dosyadan geri yükleyin
+Kayıtlı paletleri silebilen nadir bir hata düzeltildi
+
 ## 1.0.2
 
 ### 앱스토어 (한국어)
