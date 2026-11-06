@@ -62,6 +62,11 @@ System color reference values are based on the Human Interface Guidelines and ma
 Free, Plus, and Pro
 Free: make four mode variants of a color, check its contrast, copy hex and code, browse Dynamic Type and system colors, and keep up to 6 colors in your palette. Plus, by subscription or one-time purchase, adds an unlimited palette, bulk contrast audits, color blindness simulation, and colorblind-safe palettes. Pro adds .colorset and .xcassets export, Dynamic Type code, and Shortcuts and Spotlight.
 
+Subscriptions
+TetraTint Plus and Pro subscriptions renew automatically. Payment is charged to your Apple Account, and a subscription renews unless canceled at least 24 hours before the end of the current period. Manage or cancel anytime in Settings.
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privacy Policy: https://m1zz.github.io/tetratint/en/privacy.html
+
 ## ko
 
 ### 이름
@@ -111,6 +116,11 @@ TetraTint: 접근성 디자인 도구
 
 무료 · Plus · Pro
 무료로 색 하나의 4가지 모드 변형 만들기, 대비 확인, hex와 코드 복사, 다이나믹 타입 표와 시스템 색상 보기, 팔레트 6색까지 쓸 수 있습니다. 구독이나 한 번 구매로 여는 Plus는 팔레트 무제한, 대비 일괄 검사, 색각 시뮬레이션, 색맹 안전 팔레트를 더합니다. Pro는 .colorset과 .xcassets 내보내기, 다이나믹 타입 코드, 단축어와 Spotlight까지 엽니다.
+
+구독 안내
+TetraTint Plus와 Pro 구독은 자동 갱신 구독입니다. 갱신일 24시간 전까지 해지하지 않으면 Apple 계정으로 자동 결제되며, 설정의 구독 관리에서 언제든 해지할 수 있습니다.
+이용약관(EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+개인정보처리방침: https://m1zz.github.io/tetratint/ko/privacy.html
 
 ### 지원 URL
 
@@ -186,6 +196,11 @@ System colour reference values are based on the Human Interface Guidelines and m
 Free, Plus and Pro
 Free: make four mode variants of a colour, check its contrast, copy hex and code, browse Dynamic Type and system colours, and keep up to 6 colours in your palette. Plus, by subscription or one-off purchase, adds an unlimited palette, bulk contrast audits, colour blindness simulation and colour-blind safe palettes. Pro adds .colorset and .xcassets export, Dynamic Type code, and Shortcuts and Spotlight.
 
+Subscriptions
+TetraTint Plus and Pro subscriptions renew automatically. Payment is charged to your Apple Account, and a subscription renews unless cancelled at least 24 hours before the end of the current period. Manage or cancel at any time in Settings.
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privacy Policy: https://m1zz.github.io/tetratint/en-GB/privacy.html
+
 ## zh-Hans
 
 ### 지원 URL
@@ -247,6 +262,11 @@ Contrast Checker（对比度检查）
 
 免费、Plus 与 Pro
 免费即可为一个颜色生成四种模式变体、检查对比度、拷贝 hex 和代码、查看动态字体与系统颜色，调色板最多保存 6 种颜色。Plus 可按订阅或一次性购买开通，增加无限调色板、批量对比度检查、色盲模拟和色盲友好调色板。Pro 再增加 .colorset 与 .xcassets 导出、动态字体代码，以及快捷指令和聚焦搜索。
+
+订阅说明
+TetraTint Plus 和 Pro 订阅均为自动续期订阅。费用从你的 Apple 账户扣除，除非在当期结束前至少 24 小时取消，否则将自动续期。可随时在“设置”中管理或取消。
+使用条款（EULA）: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+隐私政策: https://m1zz.github.io/tetratint/zh-Hans/privacy.html
 
 ## zh-Hant
 
@@ -310,6 +330,11 @@ TetraTint：無障礙色彩工具
 免費、Plus 與 Pro
 免費即可為一個色彩產生四種模式變化版本、檢查對比、拷貝 hex 與程式碼、查看動態字體與系統色彩，色票最多可存 6 種色彩。Plus 可用訂閱或一次購買開通，增加無限色票、批次對比檢查、色盲模擬與色盲友善色票。Pro 再增加 .colorset 與 .xcassets 匯出、動態字體程式碼，以及捷徑與 Spotlight。
 
+訂閱說明
+TetraTint Plus 與 Pro 訂閱皆為自動續訂訂閱。費用會從你的 Apple 帳號扣款，除非在當期結束前至少 24 小時取消，否則將自動續訂。可隨時在「設定」中管理或取消。
+使用條款（EULA）: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+隱私權政策: https://m1zz.github.io/tetratint/zh-Hant/privacy.html
+
 ## ja
 
 ### 지원 URL
@@ -371,6 +396,11 @@ Dynamic Type
 
 無料・Plus・Pro
 無料で、1色から4モードのバリエーション作成、コントラストの確認、hexとコードのコピー、Dynamic Typeとシステムカラーの参照ができ、パレットには6色まで保存できます。サブスクリプションまたは買い切りのPlusでは、パレット無制限、コントラストの一括チェック、色覚シミュレーション、色覚に配慮したパレットが加わります。Proでは、.colorsetと.xcassetsの書き出し、Dynamic Typeのコード生成、ショートカットとSpotlightも使えます。
+
+サブスクリプションについて
+TetraTint PlusとProのサブスクリプションは自動更新です。期間終了の24時間前までに解約しない限り、Apple Accountに自動で請求され更新されます。設定のサブスクリプション管理からいつでも解約できます。
+利用規約（EULA）: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+プライバシーポリシー: https://m1zz.github.io/tetratint/ja/privacy.html
 
 ## ru
 
@@ -434,6 +464,11 @@ Dynamic Type
 Бесплатно, Plus и Pro
 Бесплатно: варианты цвета для четырёх режимов, проверка контраста, копирование hex и кода, таблица Dynamic Type и системные цвета, а в палитре до 6 цветов. Plus по подписке или разовой покупкой добавляет палитру без ограничений, пакетную проверку контраста, симуляцию дальтонизма и безопасные палитры. Pro добавляет экспорт .colorset и .xcassets, код для Dynamic Type, Быстрые команды и Spotlight.
 
+Подписки
+TetraTint Plus и Pro — подписки с автопродлением. Оплата списывается с вашего аккаунта Apple, и подписка продлевается, если не отменить её минимум за 24 часа до конца периода. Управлять подпиской и отменить её можно в Настройках.
+Условия использования (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Политика конфиденциальности: https://m1zz.github.io/tetratint/ru/privacy.html
+
 ## es-MX
 
 ### 지원 URL
@@ -495,6 +530,11 @@ Los valores de referencia de los colores del sistema se basan en las Human Inter
 
 Gratis, Plus y Pro
 Gratis: crea variantes de un color para cuatro modos, revisa su contraste, copia hex y código, consulta Dynamic Type y los colores del sistema, y guarda hasta 6 colores en tu paleta. Plus, por suscripción o compra única, agrega paleta ilimitada, revisión de contraste en lote, simulación de daltonismo y paletas seguras para daltonismo. Pro agrega exportación .colorset y .xcassets, código de Dynamic Type, y Atajos y Spotlight.
+
+Suscripciones
+Las suscripciones a TetraTint Plus y Pro se renuevan automáticamente. El cargo se realiza en tu cuenta de Apple y la suscripción se renueva salvo que la canceles al menos 24 horas antes de que termine el periodo. Puedes gestionarla o cancelarla cuando quieras en Ajustes.
+Términos de uso (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Política de privacidad: https://m1zz.github.io/tetratint/es-MX/privacy.html
 
 ## de-DE
 
@@ -558,6 +598,11 @@ Die Referenzwerte der Systemfarben beruhen auf den Human Interface Guidelines un
 Gratis, Plus und Pro
 Gratis: Varianten einer Farbe für vier Modi erzeugen, Kontrast prüfen, Hex und Code kopieren, Dynamic Type und Systemfarben ansehen und bis zu 6 Farben in der Palette sichern. Plus, im Abo oder als Einmalkauf, bringt eine unbegrenzte Palette, Kontrast-Sammelprüfungen, Farbenblindheits-Simulation und farbenblind-sichere Paletten. Pro ergänzt den Export als .colorset und .xcassets, Dynamic Type-Code sowie Kurzbefehle und Spotlight.
 
+Abos
+Die Abos von TetraTint Plus und Pro verlängern sich automatisch. Die Zahlung erfolgt über deinen Apple Account. Das Abo verlängert sich, sofern du nicht mindestens 24 Stunden vor Ablauf des Zeitraums kündigst. Verwalten oder kündigen kannst du jederzeit in den Einstellungen.
+Nutzungsbedingungen (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Datenschutzerklärung: https://m1zz.github.io/tetratint/de-DE/privacy.html
+
 ## fr-FR
 
 ### 지원 URL
@@ -593,10 +638,10 @@ Couleurs et polices système s’adaptent seules, pas celles de votre marque. Te
 Un outil de développement pour Mac qui prend en charge le travail d’accessibilité que le système ne fait pas à votre place.
 Offrez à vos couleurs et polices personnalisées la même prise en charge du mode sombre, du contraste renforcé, des déficiences de la vision des couleurs et de la taille du texte que celle dont bénéficient d’office les valeurs système.
 
-Les couleurs système s’adaptent automatiquement au mode sombre et à « Augmenter le contraste », mais pas les couleurs de marque que vous définissez vous-même. Les polices système suivent le réglage de taille du texte de l’utilisateur, alors que les polices personnalisées demandent du code supplémentaire. TetraTint comble cette lacune et met votre design aux normes d’accessibilité. C’est aussi un moyen rapide de préparer la rubrique « Contraste suffisant » des informations d’accessibilité de l’App Store.
+Les couleurs système s’adaptent automatiquement au mode sombre et à « Augmenter le contraste », mais pas les couleurs de marque que vous définissez. Les polices système suivent le réglage de taille du texte de l’utilisateur, alors que les polices personnalisées demandent du code supplémentaire. TetraTint comble cette lacune et met votre design aux normes d’accessibilité. C’est aussi un moyen rapide de préparer la rubrique « Contraste suffisant » des informations d’accessibilité de l’App Store.
 
 Générateur
-Saisissez une seule couleur du mode clair et TetraTint crée automatiquement quatre variantes : Clair, Clair à fort contraste, Sombre et Sombre à fort contraste. Comparez les quatre modes côte à côte et retouchez au sélecteur de couleur toute variante qui ne correspond pas à votre marque. Vous pouvez tout régénérer à tout moment pour repartir de zéro. Exportez le résultat en Contents.json, en .colorset, en code UIKit ou en code SwiftUI.
+Saisissez une seule couleur du mode clair et TetraTint crée automatiquement quatre variantes : Clair, Clair à fort contraste, Sombre et Sombre à fort contraste. Comparez les quatre modes côte à côte et retouchez au sélecteur de couleur toute variante qui ne correspond pas à votre marque. Exportez en Contents.json, .colorset, code UIKit ou SwiftUI.
 
 Vérification du contraste
 Collez la liste complète des couleurs hex utilisées par votre app : TetraTint indique, pour chacune, si elle convient telle quelle, si elle nécessite une variante à fort contraste ou si elle doit rester purement décorative. D’un clic, générez quatre variantes pour chaque couleur problématique. Vous voyez aussi les pastilles WCAG de chaque mode pour toute votre palette.
@@ -605,20 +650,25 @@ Simulation de la vision des couleurs
 Voyez le rendu de votre palette pour les personnes atteintes de protanopie, de deutéranopie, de tritanopie ou de monochromatisme. TetraTint signale les paires de couleurs difficiles à distinguer et importe d’un clic les palettes adaptées au daltonisme d’Okabe-Ito, d’IBM et de Paul Tol.
 
 Dynamic Type
-Parcourez un tableau de 11 styles de texte dans 7 catégories de taille et faites glisser le curseur pour voir les changements de taille en temps réel. TetraTint génère du code UIKit, SwiftUI et @ScaledMetric pour que vos polices personnalisées suivent le réglage de taille du texte de l’utilisateur, ainsi que du code qui adapte votre mise en page aux grandes tailles.
+Parcourez 11 styles de texte dans 7 catégories de taille et prévisualisez chaque taille en temps réel avec le curseur. TetraTint génère du code UIKit, SwiftUI et @ScaledMetric pour que vos polices personnalisées suivent la taille du texte choisie, ainsi que du code qui adapte votre mise en page aux grandes tailles.
 
 Couleurs système
 Affichez sur un seul écran les couleurs système des Human Interface Guidelines dans les quatre modes. Un clic sur une valeur la copie aussitôt.
 
 Palette
-Exportez toutes vos couleurs de marque enregistrées dans un seul fichier .xcassets, en une seule étape.
+Exportez toutes vos couleurs de marque enregistrées dans un seul fichier .xcassets.
 
 Les variantes automatiques suivent les mêmes schémas que les couleurs système d’un mode à l’autre. En mode sombre, les couleurs deviennent légèrement plus claires et plus vives. En clair à fort contraste, elles sont ajustées pour atteindre 4,5:1 sur fond blanc, et en sombre à fort contraste, 7:1 sur fond noir.
 
-Les valeurs de référence des couleurs système reposent sur les Human Interface Guidelines et peuvent évoluer avec les mises à jour du système. Dans votre app livrée, utilisez les API de couleurs système.
+Les valeurs de référence des couleurs système suivent les Human Interface Guidelines et peuvent évoluer avec le système. Dans votre app, utilisez les API de couleurs système.
 
 Gratuit, Plus et Pro
 Gratuit : déclinez une couleur en quatre modes, vérifiez son contraste, copiez le hex et le code, consultez Dynamic Type et les couleurs système, et gardez jusqu’à 6 couleurs dans votre palette. Plus, par abonnement ou achat unique, ajoute une palette illimitée, l’analyse groupée du contraste, la simulation du daltonisme et des palettes adaptées au daltonisme. Pro ajoute l’export .colorset et .xcassets, le code Dynamic Type, ainsi que Raccourcis et Spotlight.
+
+Abonnements
+Les abonnements TetraTint Plus et Pro se renouvellent automatiquement. Le paiement est débité sur votre compte Apple, et l'abonnement est reconduit sauf résiliation au moins 24 heures avant la fin de la période en cours. Gérez-le ou résiliez-le à tout moment dans Réglages.
+Conditions d'utilisation (EULA) : https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Politique de confidentialité : https://m1zz.github.io/tetratint/fr-FR/privacy.html
 
 ## it
 
@@ -682,6 +732,11 @@ I valori di riferimento dei colori di sistema si basano sulle Human Interface Gu
 Gratis, Plus e Pro
 Gratis: crea le varianti di un colore per quattro modalità, verificane il contrasto, copia hex e codice, consulta Dynamic Type e i colori di sistema, e salva fino a 6 colori nella palette. Plus, in abbonamento o con acquisto singolo, aggiunge palette illimitata, analisi del contrasto in blocco, simulazione del daltonismo e palette sicure per il daltonismo. Pro aggiunge l’esportazione .colorset e .xcassets, il codice Dynamic Type, Comandi Rapidi e Spotlight.
 
+Abbonamenti
+Gli abbonamenti TetraTint Plus e Pro si rinnovano automaticamente. Il pagamento viene addebitato sul tuo Account Apple e l'abbonamento si rinnova se non lo disdici almeno 24 ore prima della fine del periodo. Puoi gestirlo o disdirlo in qualsiasi momento in Impostazioni.
+Condizioni d'uso (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Informativa sulla privacy: https://m1zz.github.io/tetratint/it/privacy.html
+
 ## pt-BR
 
 ### 지원 URL
@@ -743,6 +798,11 @@ Os valores de referência das cores do sistema se baseiam nas Human Interface Gu
 
 Grátis, Plus e Pro
 Grátis: crie variantes de uma cor para quatro modos, confira o contraste, copie hex e código, consulte o Dynamic Type e as cores do sistema, e guarde até 6 cores na paleta. O Plus, por assinatura ou compra única, adiciona paleta ilimitada, análise de contraste em lote, simulação de daltonismo e paletas seguras para daltonismo. O Pro adiciona exportação .colorset e .xcassets, código de Dynamic Type, Atalhos e Spotlight.
+
+Assinaturas
+As assinaturas TetraTint Plus e Pro são renovadas automaticamente. A cobrança é feita na sua Conta Apple e a assinatura é renovada, a menos que você cancele pelo menos 24 horas antes do fim do período. Gerencie ou cancele quando quiser em Ajustes.
+Termos de Uso (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Política de Privacidade: https://m1zz.github.io/tetratint/pt-BR/privacy.html
 
 ## th
 
@@ -806,6 +866,11 @@ Dynamic Type
 ฟรี, Plus และ Pro
 ใช้ฟรีได้ทั้งสร้างเวอร์ชันสีสี่โหมดจากสีเดียว ตรวจคอนทราสต์ คัดลอก hex และโค้ด ดูตาราง Dynamic Type และสีของระบบ และเก็บสีในจานสีได้ 6 สี Plus แบบสมัครสมาชิกหรือซื้อครั้งเดียวเพิ่มจานสีไม่จำกัด ตรวจคอนทราสต์ทีละหลายสี จำลองภาวะตาบอดสี และจานสีที่ปลอดภัยสำหรับผู้ตาบอดสี Pro เพิ่มการส่งออก .colorset และ .xcassets โค้ด Dynamic Type รวมถึงคำสั่งลัดและ Spotlight
 
+การสมัครสมาชิก
+TetraTint Plus และ Pro เป็นการสมัครสมาชิกที่ต่ออายุอัตโนมัติ ระบบจะเรียกเก็บเงินจากบัญชี Apple ของคุณและต่ออายุ เว้นแต่จะยกเลิกอย่างน้อย 24 ชั่วโมงก่อนสิ้นสุดรอบ จัดการหรือยกเลิกได้ทุกเมื่อในการตั้งค่า
+ข้อกำหนดการใช้งาน (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+นโยบายความเป็นส่วนตัว: https://m1zz.github.io/tetratint/th/privacy.html
+
 ## vi
 
 ### 지원 URL
@@ -867,6 +932,11 @@ Giá trị tham khảo của màu hệ thống dựa trên Human Interface Guide
 
 Miễn phí, Plus và Pro
 Miễn phí: tạo biến thể bốn chế độ cho một màu, kiểm tra tương phản, sao chép hex và mã, xem Dynamic Type và màu hệ thống, lưu tối đa 6 màu trong bảng màu. Plus, theo gói đăng ký hoặc mua một lần, thêm bảng màu không giới hạn, kiểm tra tương phản hàng loạt, mô phỏng mù màu và bảng màu an toàn cho người mù màu. Pro thêm xuất .colorset và .xcassets, mã Dynamic Type, cùng Phím tắt và Spotlight.
+
+Gói đăng ký
+TetraTint Plus và Pro là các gói đăng ký tự động gia hạn. Phí được tính vào Tài khoản Apple của bạn và tự gia hạn trừ khi bạn hủy ít nhất 24 giờ trước khi kỳ hạn kết thúc. Bạn có thể quản lý hoặc hủy bất cứ lúc nào trong Cài đặt.
+Điều khoản sử dụng (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Chính sách quyền riêng tư: https://m1zz.github.io/tetratint/vi/privacy.html
 
 ## cs
 
@@ -930,6 +1000,11 @@ Referenční hodnoty systémových barev vycházejí z Human Interface Guideline
 Zdarma, Plus a Pro
 Zdarma: varianty barvy pro čtyři režimy, kontrola kontrastu, kopírování hex a kódu, přehled Dynamic Type a systémových barev a až 6 barev v paletě. Plus v předplatném nebo jednorázovým nákupem přidává neomezenou paletu, hromadnou kontrolu kontrastu, simulaci barvosleposti a palety bezpečné pro barvoslepé. Pro přidává export .colorset a .xcassets, kód pro Dynamic Type a Zkratky a Spotlight.
 
+Předplatné
+TetraTint Plus a Pro jsou automaticky obnovovaná předplatná. Platba se strhává z vašeho účtu Apple a předplatné se obnoví, pokud ho nezrušíte alespoň 24 hodin před koncem období. Spravovat nebo zrušit ho můžete kdykoli v Nastavení.
+Podmínky použití (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Zásady ochrany osobních údajů: https://m1zz.github.io/tetratint/cs/privacy.html
+
 ## da
 
 ### 지원 URL
@@ -992,6 +1067,11 @@ Referenceværdierne for systemfarver er baseret på Human Interface Guidelines o
 Gratis, Plus og Pro
 Gratis: lav varianter af en farve til fire tilstande, tjek kontrasten, kopiér hex og kode, se Dynamic Type og systemfarver, og gem op til 6 farver i din palet. Plus, som abonnement eller engangskøb, giver en ubegrænset palet, samlede kontrasttjek, simulering af farveblindhed og farveblindsikre paletter. Pro tilføjer eksport som .colorset og .xcassets, Dynamic Type-kode samt Genveje og Spotlight.
 
+Abonnementer
+TetraTint Plus og Pro er abonnementer, der fornyes automatisk. Betalingen trækkes på din Apple-konto, og abonnementet fornyes, medmindre du opsiger det mindst 24 timer før perioden slutter. Administrer eller opsig når som helst i Indstillinger.
+Brugsvilkår (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privatlivspolitik: https://m1zz.github.io/tetratint/da/privacy.html
+
 ## el
 
 ### 지원 URL
@@ -1030,7 +1110,7 @@ TetraTint
 Τα χρώματα του συστήματος προσαρμόζονται αυτόματα στη Σκοτεινή λειτουργία και στην Αύξηση αντίθεσης, ενώ τα χρώματα της επωνυμίας που ορίζετε εσείς όχι. Οι γραμματοσειρές του συστήματος ακολουθούν το μέγεθος κειμένου που έχει επιλέξει ο χρήστης, αλλά οι προσαρμοσμένες απαιτούν επιπλέον κώδικα. Το TetraTint καλύπτει αυτό το κενό και φέρνει τον σχεδιασμό σας στα πρότυπα προσβασιμότητας. Είναι επίσης ένας γρήγορος τρόπος να προετοιμαστείτε για το στοιχείο «Επαρκής αντίθεση» στις Ετικέτες διατροφής προσβασιμότητας του App Store.
 
 Generator
-Εισαγάγετε ένα μόνο χρώμα Φωτεινής λειτουργίας και το TetraTint δημιουργεί αυτόματα τέσσερις παραλλαγές: Φωτεινή, Φωτεινή υψηλής αντίθεσης, Σκοτεινή και Σκοτεινή υψηλής αντίθεσης. Δείτε και τις τέσσερις λειτουργίες δίπλα δίπλα και ρυθμίστε με τον επιλογέα χρώματος όποια παραλλαγή δεν ταιριάζει με την επωνυμία σας. Μπορείτε να τα δημιουργήσετε όλα ξανά όποτε θέλετε, για να ξεκινήσετε από την αρχή. Εξαγάγετε το αποτέλεσμα ως Contents.json, .colorset, κώδικα UIKit ή κώδικα SwiftUI.
+Εισαγάγετε ένα μόνο χρώμα Φωτεινής λειτουργίας και το TetraTint δημιουργεί αυτόματα τέσσερις παραλλαγές: Φωτεινή, Φωτεινή υψηλής αντίθεσης, Σκοτεινή και Σκοτεινή υψηλής αντίθεσης. Δείτε και τις τέσσερις λειτουργίες δίπλα δίπλα και ρυθμίστε με τον επιλογέα χρώματος όποια παραλλαγή δεν ταιριάζει με την επωνυμία σας. Εξαγάγετε σε Contents.json, .colorset, κώδικα UIKit ή SwiftUI.
 
 Έλεγχος αντίθεσης
 Επικολλήστε ολόκληρη τη λίστα με τα χρώματα hex που χρησιμοποιεί η εφαρμογή σας και το TetraTint σάς λέει για κάθε χρώμα αν είναι εντάξει ως έχει, αν χρειάζεται παραλλαγή υψηλής αντίθεσης ή αν πρέπει να χρησιμοποιείται μόνο για διακόσμηση. Με ένα κλικ δημιουργείτε τέσσερις παραλλαγές για κάθε προβληματικό χρώμα. Βλέπετε επίσης σήματα WCAG για κάθε λειτουργία σε ολόκληρη την παλέτα σας.
@@ -1039,20 +1119,25 @@ Generator
 Δείτε πώς φαίνεται η παλέτα σας σε άτομα με πρωτανοπία, δευτερανοπία, τριτανοπία ή μονοχρωματοψία. Το TetraTint επισημαίνει ζεύγη χρωμάτων που δύσκολα ξεχωρίζουν και σας επιτρέπει να εισαγάγετε με ένα κλικ τις ασφαλείς για αχρωματοψία παλέτες Okabe–Ito, IBM και Paul Tol.
 
 Dynamic Type
-Δείτε έναν πίνακα με 11 στυλ κειμένου σε 7 κατηγορίες μεγέθους και σύρετε ένα ρυθμιστικό για να βλέπετε τις αλλαγές μεγέθους σε πραγματικό χρόνο. Το TetraTint δημιουργεί κώδικα UIKit, SwiftUI και @ScaledMetric, ώστε οι προσαρμοσμένες γραμματοσειρές σας να ακολουθούν τη ρύθμιση μεγέθους κειμένου του χρήστη, καθώς και κώδικα που προσαρμόζει τη διάταξη σε μεγαλύτερα μεγέθη.
+Δείτε 11 στυλ κειμένου σε 7 κατηγορίες μεγέθους και σύρετε το ρυθμιστικό για προεπισκόπηση σε πραγματικό χρόνο. Το TetraTint δημιουργεί κώδικα UIKit, SwiftUI και @ScaledMetric, ώστε οι προσαρμοσμένες γραμματοσειρές σας να ακολουθούν τη ρύθμιση μεγέθους κειμένου του χρήστη, καθώς και κώδικα που προσαρμόζει τη διάταξη σε μεγαλύτερα μεγέθη.
 
 Χρώματα συστήματος
-Δείτε τα χρώματα συστήματος από τις Human Interface Guidelines και στις τέσσερις λειτουργίες σε μία μόνο οθόνη. Κάντε κλικ σε οποιαδήποτε τιμή για να την αντιγράψετε αμέσως.
+Δείτε τα χρώματα συστήματος από τις Human Interface Guidelines και στις τέσσερις λειτουργίες σε μία μόνο οθόνη. Ένα κλικ σε μια τιμή την αντιγράφει αμέσως.
 
 Παλέτα
-Εξαγάγετε όλα τα αποθηκευμένα χρώματα της επωνυμίας σας σε ένα ενιαίο αρχείο .xcassets με ένα μόνο βήμα.
+Εξαγάγετε όλα τα χρώματα της επωνυμίας σας σε ένα αρχείο .xcassets με ένα βήμα.
 
-Οι αυτόματες παραλλαγές ακολουθούν τα ίδια πρότυπα που χρησιμοποιούν τα χρώματα του συστήματος από λειτουργία σε λειτουργία. Στη Σκοτεινή λειτουργία τα χρώματα γίνονται ελαφρώς φωτεινότερα και πιο ζωηρά. Στη Φωτεινή υψηλής αντίθεσης προσαρμόζονται ώστε να πληρούν το 4,5:1 έναντι λευκού φόντου και στη Σκοτεινή υψηλής αντίθεσης το 7:1 έναντι μαύρου φόντου.
+Οι αυτόματες παραλλαγές ακολουθούν τα ίδια πρότυπα με τα χρώματα του συστήματος. Στη Σκοτεινή λειτουργία τα χρώματα γίνονται ελαφρώς φωτεινότερα και πιο ζωηρά. Στη Φωτεινή υψηλής αντίθεσης προσαρμόζονται ώστε να πληρούν το 4,5:1 έναντι λευκού φόντου και στη Σκοτεινή υψηλής αντίθεσης το 7:1 έναντι μαύρου φόντου.
 
-Οι τιμές αναφοράς των χρωμάτων συστήματος βασίζονται στις Human Interface Guidelines και μπορεί να αλλάξουν με τις ενημερώσεις του λειτουργικού συστήματος. Στην εφαρμογή που θα κυκλοφορήσετε, χρησιμοποιήστε τα API χρωμάτων του συστήματος.
+Οι τιμές αναφοράς βασίζονται στις Human Interface Guidelines και μπορεί να αλλάξουν με τις ενημερώσεις του συστήματος. Στην εφαρμογή σας, χρησιμοποιήστε τα API χρωμάτων του συστήματος.
 
 Δωρεάν, Plus και Pro
 Δωρεάν: παραλλαγές ενός χρώματος για τέσσερις λειτουργίες, έλεγχος αντίθεσης, αντιγραφή hex και κώδικα, πίνακας Dynamic Type και χρώματα συστήματος, και έως 6 χρώματα στην παλέτα. Το Plus, με συνδρομή ή εφάπαξ αγορά, προσθέτει απεριόριστη παλέτα, μαζικό έλεγχο αντίθεσης, προσομοίωση αχρωματοψίας και παλέτες ασφαλείς για αχρωματοψία. Το Pro προσθέτει εξαγωγή .colorset και .xcassets, κώδικα Dynamic Type, Συντομεύσεις και Spotlight.
+
+Συνδρομές
+Τα TetraTint Plus και Pro είναι συνδρομές με αυτόματη ανανέωση. Η χρέωση γίνεται στον λογαριασμό Apple σας και η συνδρομή ανανεώνεται, εκτός αν την ακυρώσετε τουλάχιστον 24 ώρες πριν λήξει η περίοδος. Μπορείτε να τη διαχειριστείτε ή να την ακυρώσετε οποτεδήποτε από τις Ρυθμίσεις.
+Όροι χρήσης (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Πολιτική απορρήτου: https://m1zz.github.io/tetratint/el/privacy.html
 
 ## fi
 
@@ -1116,6 +1201,11 @@ Järjestelmävärien viitearvot perustuvat Human Interface Guidelines -ohjeeseen
 Ilmainen, Plus ja Pro
 Ilmaiseksi: värin muunnelmat neljään tilaan, kontrastin tarkistus, hexin ja koodin kopiointi, Dynamic Type -taulukko ja järjestelmävärit sekä enintään 6 väriä paletissa. Tilauksena tai kertaostona saatava Plus tuo rajattoman paletin, kontrastin joukkotarkistuksen, värisokeuden simuloinnin ja värisokeille turvalliset paletit. Pro lisää .colorset- ja .xcassets-viennin, Dynamic Type -koodin sekä Pikakomennot ja Spotlightin.
 
+Tilaukset
+TetraTint Plus ja Pro ovat automaattisesti uusiutuvia tilauksia. Maksu veloitetaan Apple-tililtäsi, ja tilaus uusiutuu, ellei sitä peruta vähintään 24 tuntia ennen jakson päättymistä. Hallitse tai peru milloin tahansa Asetuksissa.
+Käyttöehdot (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Tietosuojakäytäntö: https://m1zz.github.io/tetratint/fi/privacy.html
+
 ## id
 
 ### 지원 URL
@@ -1177,6 +1267,11 @@ Nilai acuan warna sistem didasarkan pada Human Interface Guidelines dan dapat be
 
 Gratis, Plus, dan Pro
 Gratis: buat varian satu warna untuk empat mode, periksa kontrasnya, salin hex dan kode, lihat Dynamic Type dan warna sistem, serta simpan hingga 6 warna di palet. Plus, lewat langganan atau sekali beli, menambahkan palet tanpa batas, pemeriksaan kontras massal, simulasi buta warna, dan palet aman buta warna. Pro menambahkan ekspor .colorset dan .xcassets, kode Dynamic Type, serta Pintasan dan Spotlight.
+
+Langganan
+TetraTint Plus dan Pro adalah langganan yang diperpanjang otomatis. Pembayaran ditagihkan ke Akun Apple Anda dan langganan diperpanjang kecuali dibatalkan paling lambat 24 jam sebelum periode berakhir. Kelola atau batalkan kapan saja di Pengaturan.
+Ketentuan Penggunaan (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Kebijakan Privasi: https://m1zz.github.io/tetratint/id/privacy.html
 
 ## no
 
@@ -1240,6 +1335,11 @@ Referanseverdiene for systemfarger bygger på Human Interface Guidelines og kan 
 Gratis, Plus og Pro
 Gratis: lag varianter av en farge for fire moduser, sjekk kontrasten, kopier hex og kode, se Dynamic Type og systemfarger, og lagre opptil 6 farger i paletten. Plus, som abonnement eller engangskjøp, gir ubegrenset palett, kontrastsjekk i bulk, simulering av fargeblindhet og fargeblindsikre paletter. Pro legger til eksport som .colorset og .xcassets, Dynamic Type-kode samt Snarveier og Spotlight.
 
+Abonnementer
+TetraTint Plus og Pro er abonnementer som fornyes automatisk. Betalingen belastes Apple-kontoen din, og abonnementet fornyes med mindre du sier det opp minst 24 timer før perioden er over. Administrer eller si opp når som helst i Innstillinger.
+Bruksvilkår (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Personvernerklæring: https://m1zz.github.io/tetratint/no/privacy.html
+
 ## nl-NL
 
 ### 지원 URL
@@ -1301,6 +1401,11 @@ De referentiewaarden van de systeemkleuren zijn gebaseerd op de Human Interface 
 
 Gratis, Plus en Pro
 Gratis: maak varianten van een kleur voor vier modi, controleer het contrast, kopieer hex en code, bekijk Dynamic Type en systeemkleuren, en bewaar tot 6 kleuren in je palet. Plus, als abonnement of eenmalige aankoop, voegt een onbeperkt palet, contrastcontrole in bulk, simulatie van kleurenblindheid en kleurenblindveilige paletten toe. Pro voegt export als .colorset en .xcassets, Dynamic Type-code, en Opdrachten en Spotlight toe.
+
+Abonnementen
+TetraTint Plus en Pro zijn automatisch verlengende abonnementen. De betaling loopt via je Apple Account en het abonnement wordt verlengd tenzij je minstens 24 uur voor het einde van de periode opzegt. Beheer of zeg op wanneer je wilt in Instellingen.
+Gebruiksvoorwaarden (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privacybeleid: https://m1zz.github.io/tetratint/nl-NL/privacy.html
 
 ## pl
 
@@ -1364,6 +1469,11 @@ Wartości referencyjne kolorów systemowych opierają się na Human Interface Gu
 Za darmo, Plus i Pro
 Za darmo: warianty koloru dla czterech trybów, sprawdzanie kontrastu, kopiowanie hex i kodu, tabela Dynamic Type i kolory systemowe oraz do 6 kolorów w palecie. Plus w subskrypcji lub jednorazowym zakupie dodaje paletę bez limitu, zbiorcze sprawdzanie kontrastu, symulację daltonizmu i palety bezpieczne dla daltonistów. Pro dodaje eksport .colorset i .xcassets, kod Dynamic Type oraz Skróty i Spotlight.
 
+Subskrypcje
+TetraTint Plus i Pro to subskrypcje odnawiane automatycznie. Opłata jest pobierana z Twojego konta Apple, a subskrypcja odnawia się, jeśli nie anulujesz jej co najmniej 24 godziny przed końcem okresu. Zarządzaj nią lub anuluj ją w dowolnej chwili w Ustawieniach.
+Warunki korzystania (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Polityka prywatności: https://m1zz.github.io/tetratint/pl/privacy.html
+
 ## sv
 
 ### 지원 URL
@@ -1426,6 +1536,11 @@ Referensvärdena för systemfärger bygger på Human Interface Guidelines och ka
 Gratis, Plus och Pro
 Gratis: gör varianter av en färg för fyra lägen, kontrollera kontrasten, kopiera hex och kod, se Dynamic Type och systemfärger, och spara upp till 6 färger i paletten. Plus, som prenumeration eller engångsköp, ger obegränsad palett, kontrastgranskning i ett svep, simulering av färgblindhet och färgblindsäkra paletter. Pro lägger till export som .colorset och .xcassets, Dynamic Type-kod samt Genvägar och Spotlight.
 
+Prenumerationer
+TetraTint Plus och Pro är prenumerationer som förnyas automatiskt. Betalningen dras från ditt Apple-konto och prenumerationen förnyas om du inte avslutar den minst 24 timmar innan perioden slutar. Hantera eller avsluta när som helst i Inställningar.
+Användarvillkor (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Integritetspolicy: https://m1zz.github.io/tetratint/sv/privacy.html
+
 ## tr
 
 ### 지원 URL
@@ -1487,6 +1602,11 @@ Sistem rengi referans değerleri Human Interface Guidelines’a dayanır ve işl
 
 Ücretsiz, Plus ve Pro
 Ücretsiz: bir renk için dört mod varyantı oluşturun, kontrastı denetleyin, hex ve kodu kopyalayın, Dynamic Type ile sistem renklerine bakın ve paletinizde 6 renge kadar saklayın. Abonelikle veya tek seferlik satın alımla açılan Plus; sınırsız palet, toplu kontrast denetimi, renk körlüğü simülasyonu ve renk körlüğüne uygun paletler ekler. Pro; .colorset ve .xcassets dışa aktarma, Dynamic Type kodu, Kestirmeler ve Spotlight ekler.
+
+Abonelikler
+TetraTint Plus ve Pro otomatik yenilenen aboneliklerdir. Ödeme Apple Hesabınızdan alınır ve abonelik, dönem bitmeden en az 24 saat önce iptal edilmezse yenilenir. Ayarlar'dan istediğiniz zaman yönetebilir veya iptal edebilirsiniz.
+Kullanım Koşulları (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Gizlilik Politikası: https://m1zz.github.io/tetratint/tr/privacy.html
 
 ## 손쉬운 사용
 
