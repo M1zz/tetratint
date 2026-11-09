@@ -87,6 +87,8 @@ struct TetraTintApp: App {
     var body: some Scene {
         WindowGroup {
             root
+                // 개발자가 보낸 의견에 답장하면, 앱이 앞으로 올 때 답장을 시트로 보여 준다 (LeeoKit).
+                .leeoFeedbackReplyNotice(TetraTintSpec.self)
                 .environmentObject(store)
                 .environmentObject(appState)
                 .frame(minWidth: 860, minHeight: 620)
