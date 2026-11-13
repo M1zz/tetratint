@@ -119,9 +119,10 @@ enum Plan {
 
 /// 페이월이 들어오기 전에 받은 사람은 그때까지 무료로 쓰던 것을 잃지 않게 **Pro 평생**을 그대로 쓴다.
 enum EarlyUser {
-    /// 페이월이 없는 마지막 버전(1.0.3 빌드 5). 그때까지 받은 사람은 Pro 다.
-    /// ⚠️ 페이월이 든 버전은 이보다 높아야 한다(1.0.4 이상).
-    static let lastVersionBeforePaywall = "1.0.3"
+    /// 스토어에 나간 페이월 없는 마지막 버전(1.0.2). 그때까지 받은 사람은 Pro 다.
+    /// 페이월이 없던 1.0.3 빌드 5 는 심사에서 반려돼 나가지 않았고, 페이월이 든 첫 판이 1.0.3 이다.
+    /// ⚠️ 페이월이 든 버전은 이보다 높아야 한다(1.0.3 이상).
+    static let lastVersionBeforePaywall = "1.0.2"
 
     /// macOS 의 `originalAppVersion` 은 처음 받은 판의 CFBundleShortVersionString 이다.
     /// 샌드박스 · Xcode 는 실제 판을 돌려주지 않으므로 App Store 에서 받은 것만 본다.

@@ -3,318 +3,196 @@
 App Store 의 "이 버전의 새로운 기능" 에 그대로 올라가는 글이다.
 평문만 쓴다. 한 줄에 한 문장, 3~5줄, 한 줄 40자 이내.
 
-## 1.0.4
-
-### 앱스토어 (한국어)
-
-색약이나 색맹인 사람에게 보이는 색을 미리 볼 수 있어요
-원래 색과 나란히 놓고 라이트와 다크에서 비교해요
-Plus와 Pro로 더 많은 기능을 쓸 수 있어요
-보낸 의견에 개발자가 답하면 앱에서 바로 보여요
-
-### App Store (English)
-
-See colors as color-blind users do
-Compare side by side in light and dark
-Get more done with Plus and Pro
-Read developer replies right in the app
-
-### App Store (en-GB)
-
-See colours as colour-blind users do
-Compare side by side in light and dark
-Get more done with Plus and Pro
-Read developer replies right in the app
-
-### App Store (简体中文)
-
-可预览色弱和色盲人士看到的颜色
-在浅色和深色模式下与原色并排对比
-Plus 和 Pro 带来更多功能
-开发者回复你的反馈后，App 内即可查看
-
-### App Store (繁體中文)
-
-可預覽色弱和色盲人士看到的顏色
-在淺色和深色模式下與原色並排對照
-Plus 與 Pro 帶來更多功能
-開發者回覆你的意見後，App 內即可查看
-
-### App Store (日本語)
-
-色弱や色覚特性のある人の見え方をプレビュー
-元の色と並べてライトとダークで比較
-PlusとProでさらに多くの機能を
-開発者からの返信をアプリですぐ確認
-
-### App Store (Русский)
-
-Цвета глазами людей с дальтонизмом
-Сравнение рядом в светлой и тёмной теме
-Больше возможностей с Plus и Pro
-Ответы разработчика прямо в приложении
-
-### App Store (Español (México))
-
-Ve los colores como alguien daltónico
-Compáralos lado a lado en claro y oscuro
-Haz más con Plus y Pro
-Respuestas del desarrollador en la app
-
-### App Store (Deutsch)
-
-Farben so sehen wie Farbenblinde
-Hell und dunkel direkt nebeneinander
-Mehr Funktionen mit Plus und Pro
-Antworten des Entwicklers in der App
-
-### App Store (Français)
-
-Voyez les couleurs comme un daltonien
-Comparez côte à côte en clair et sombre
-Plus de fonctions avec Plus et Pro
-Les réponses du développeur dans l’app
-
-### App Store (Italiano)
-
-Guarda i colori come un daltonico
-Confrontali affiancati in chiaro e scuro
-Fai di più con Plus e Pro
-Risposte dello sviluppatore nell’app
-
-### App Store (Português (Brasil))
-
-Veja as cores como um daltônico vê
-Compare lado a lado no claro e no escuro
-Faça mais com Plus e Pro
-Respostas do desenvolvedor no app
-
-### App Store (ไทย)
-
-ดูสีแบบที่ผู้ตาบอดสีมองเห็น
-เทียบกับสีจริงทั้งโหมดสว่างและโหมดมืด
-ใช้งานได้มากขึ้นด้วย Plus และ Pro
-อ่านคำตอบจากนักพัฒนาได้ในแอปทันที
-
-### App Store (Tiếng Việt)
-
-Xem màu như người mù màu nhìn thấy
-So sánh song song ở chế độ sáng và tối
-Làm được nhiều hơn với Plus và Pro
-Đọc phản hồi từ nhà phát triển trong app
-
-### App Store (Čeština)
-
-Uvidíte barvy očima barvoslepých
-Porovnání ve světlém i tmavém režimu
-Více funkcí s Plus a Pro
-Odpovědi vývojáře přímo v aplikaci
-
-### App Store (Dansk)
-
-Se farver, som farveblinde ser dem
-Sammenlign side om side i lyst og mørkt
-Få mere med Plus og Pro
-Læs udviklerens svar direkte i appen
-
-### App Store (Ελληνικά)
-
-Δείτε τα χρώματα όπως ένας αχρωματοψός
-Σύγκριση σε φωτεινό και σκοτεινό θέμα
-Περισσότερα με το Plus και το Pro
-Απαντήσεις του δημιουργού στην εφαρμογή
-
-### App Store (suomi)
-
-Näe värit kuten värisokea ne näkee
-Vertaa rinnakkain vaaleassa ja tummassa
-Enemmän ominaisuuksia Plusilla ja Prolla
-Kehittäjän vastaukset suoraan apissa
-
-### App Store (Bahasa Indonesia)
-
-Lihat warna seperti orang buta warna
-Bandingkan di mode terang dan gelap
-Lebih banyak fitur dengan Plus dan Pro
-Baca balasan pengembang langsung di app
-
-### App Store (Norsk bokmål)
-
-Se farger slik fargeblinde ser dem
-Sammenlign i lys og mørk modus
-Få mer ut av appen med Plus og Pro
-Les svar fra utvikleren rett i appen
-
-### App Store (Nederlands)
-
-Zie kleuren zoals kleurenblinden
-Vergelijk licht en donker naast elkaar
-Meer mogelijkheden met Plus en Pro
-Antwoorden van de ontwikkelaar in de app
-
-### App Store (Polski)
-
-Zobacz kolory oczami daltonisty
-Porównuj obok siebie w jasnym i ciemnym
-Więcej możliwości z Plus i Pro
-Odpowiedzi twórcy prosto w aplikacji
-
-### App Store (Svenska)
-
-Se färger som färgblinda ser dem
-Jämför sida vid sida i ljust och mörkt
-Gör mer med Plus och Pro
-Läs utvecklarens svar direkt i appen
-
-### App Store (Türkçe)
-
-Renkleri renk körü birinin gözüyle görün
-Açık ve koyu modda yan yana kıyaslayın
-Plus ve Pro ile daha fazlası
-Geliştirici yanıtları uygulamada
-
 ## 1.0.3
 
 ### 앱스토어 (한국어)
 
+색약이나 색맹인 사람에게 보이는 색을 미리 볼 수 있어요
+Plus와 Pro로 더 많은 기능을 쓸 수 있어요
 저장한 팔레트가 매일, 업데이트 직전에도 자동으로 백업돼요
 백업은 iCloud나 파일에서 언제든 되살릴 수 있어요
 드물게 저장한 팔레트가 사라질 수 있던 문제를 고쳤어요
 
 ### App Store (English)
 
+See colors as color-blind users do
+Get more done with Plus and Pro
 Saved palettes back up daily and right before updates
 Restore a backup from iCloud or a file anytime
 Fixed a rare issue that could erase saved palettes
 
 ### App Store (en-GB)
 
+See colours as colour-blind users do
+Get more done with Plus and Pro
 Saved palettes back up daily and right before updates
 Restore a backup from iCloud or a file at any time
 Fixed a rare issue that could erase saved palettes
 
 ### App Store (简体中文)
 
+可预览色弱和色盲人士看到的颜色
+Plus 和 Pro 带来更多功能
 已保存的调色板每天以及更新前都会自动备份
 可随时从 iCloud 或文件恢复备份
 修复了已保存调色板偶尔可能丢失的问题
 
 ### App Store (繁體中文)
 
+可預覽色弱和色盲人士看到的顏色
+Plus 與 Pro 帶來更多功能
 已儲存的調色盤每天以及更新前都會自動備份
 可隨時從 iCloud 或檔案還原備份
 修正了已儲存調色盤偶爾可能遺失的問題
 
 ### App Store (日本語)
 
+色弱や色覚特性のある人の見え方をプレビュー
+PlusとProでさらに多くの機能を
 保存したパレットが毎日とアップデート直前に自動でバックアップされます
 バックアップはiCloudやファイルからいつでも復元できます
 まれに保存したパレットが消えることがある問題を修正しました
 
 ### App Store (Русский)
 
+Цвета глазами людей с дальтонизмом
+Больше возможностей с Plus и Pro
 Палитры сохраняются каждый день и перед обновлением
 Копию можно восстановить из iCloud или из файла
 Исправлена редкая ошибка, из-за которой пропадали палитры
 
 ### App Store (Español (México))
 
+Ve los colores como alguien daltónico
+Haz más con Plus y Pro
 Tus paletas se respaldan cada día y antes de actualizar
 Restaura un respaldo desde iCloud o un archivo
 Corregimos un error poco común que podía borrar tus paletas
 
 ### App Store (Deutsch)
 
+Farben so sehen wie Farbenblinde
+Mehr Funktionen mit Plus und Pro
 Gespeicherte Paletten werden täglich und vor Updates gesichert
 Stelle Sicherungen aus iCloud oder einer Datei wieder her
 Seltener Fehler behoben, der Paletten löschen konnte
 
 ### App Store (Français)
 
+Voyez les couleurs comme un daltonien
+Plus de fonctions avec Plus et Pro
 Vos palettes sont sauvegardées chaque jour et avant mise à jour
 Restaurez une sauvegarde depuis iCloud ou un fichier
 Correction d’un bug rare qui pouvait effacer vos palettes
 
 ### App Store (Italiano)
 
+Guarda i colori come un daltonico
+Fai di più con Plus e Pro
 Le palette vengono salvate ogni giorno e prima degli aggiornamenti
 Ripristina un backup da iCloud o da un file
 Risolto un raro problema che poteva cancellare le palette
 
 ### App Store (Português (Brasil))
 
+Veja as cores como um daltônico vê
+Faça mais com Plus e Pro
 Suas paletas ganham backup todo dia e antes de atualizar
 Restaure um backup do iCloud ou de um arquivo
 Corrigimos um erro raro que podia apagar suas paletas
 
 ### App Store (ไทย)
 
+ดูสีแบบที่ผู้ตาบอดสีมองเห็น
+ใช้งานได้มากขึ้นด้วย Plus และ Pro
 พาเลตต์ที่บันทึกไว้สำรองอัตโนมัติทุกวันและก่อนอัปเดต
 กู้คืนข้อมูลสำรองจาก iCloud หรือไฟล์ได้ทุกเมื่อ
 แก้ปัญหาที่พบไม่บ่อยซึ่งอาจทำให้พาเลตต์ที่บันทึกไว้หาย
 
 ### App Store (Tiếng Việt)
 
+Xem màu như người mù màu nhìn thấy
+Làm được nhiều hơn với Plus và Pro
 Bảng màu đã lưu được sao lưu mỗi ngày và trước khi cập nhật
 Khôi phục bản sao lưu từ iCloud hoặc tệp bất cứ lúc nào
 Đã sửa lỗi hiếm gặp có thể làm mất bảng màu đã lưu
 
 ### App Store (Čeština)
 
+Uvidíte barvy očima barvoslepých
+Více funkcí s Plus a Pro
 Uložené palety se zálohují každý den a před aktualizací
 Zálohu obnovíte z iCloudu nebo ze souboru
 Opravena vzácná chyba, která mohla smazat uložené palety
 
 ### App Store (Dansk)
 
+Se farver, som farveblinde ser dem
+Få mere med Plus og Pro
 Gemte paletter sikkerhedskopieres dagligt og før opdateringer
 Gendan en sikkerhedskopi fra iCloud eller en fil
 Rettet en sjælden fejl, der kunne slette gemte paletter
 
 ### App Store (Ελληνικά)
 
+Δείτε τα χρώματα όπως ένας αχρωματοψός
+Περισσότερα με το Plus και το Pro
 Οι παλέτες σας αποθηκεύονται κάθε μέρα και πριν από ενημερώσεις
 Επαναφέρετε αντίγραφο από το iCloud ή από αρχείο
 Διορθώθηκε σπάνιο σφάλμα που μπορούσε να σβήσει παλέτες
 
 ### App Store (suomi)
 
+Näe värit kuten värisokea ne näkee
+Enemmän ominaisuuksia Plusilla ja Prolla
 Tallennetut paletit varmuuskopioidaan päivittäin ja ennen päivitystä
 Palauta varmuuskopio iCloudista tai tiedostosta
 Korjattu harvinainen virhe, joka saattoi poistaa paletteja
 
 ### App Store (Bahasa Indonesia)
 
+Lihat warna seperti orang buta warna
+Lebih banyak fitur dengan Plus dan Pro
 Palet tersimpan dicadangkan setiap hari dan sebelum pembaruan
 Pulihkan cadangan dari iCloud atau file kapan saja
 Memperbaiki masalah langka yang bisa menghapus palet
 
 ### App Store (Norsk bokmål)
 
+Se farger slik fargeblinde ser dem
+Få mer ut av appen med Plus og Pro
 Lagrede paletter sikkerhetskopieres daglig og før oppdateringer
 Gjenopprett en sikkerhetskopi fra iCloud eller en fil
 Rettet en sjelden feil som kunne slette lagrede paletter
 
 ### App Store (Nederlands)
 
+Zie kleuren zoals kleurenblinden
+Meer mogelijkheden met Plus en Pro
 Bewaarde paletten krijgen elke dag en vóór een update een back-up
 Zet een back-up terug vanuit iCloud of een bestand
 Zeldzame fout opgelost die paletten kon wissen
 
 ### App Store (Polski)
 
+Zobacz kolory oczami daltonisty
+Więcej możliwości z Plus i Pro
 Zapisane palety są kopiowane codziennie i przed aktualizacją
 Przywróć kopię z iCloud lub z pliku
 Naprawiono rzadki błąd, który mógł usunąć palety
 
 ### App Store (Svenska)
 
+Se färger som färgblinda ser dem
+Gör mer med Plus och Pro
 Sparade paletter säkerhetskopieras dagligen och före uppdateringar
 Återställ en säkerhetskopia från iCloud eller en fil
 Åtgärdat ett sällsynt fel som kunde radera sparade paletter
 
 ### App Store (Türkçe)
 
+Renkleri renk körü birinin gözüyle görün
+Plus ve Pro ile daha fazlası
 Kayıtlı paletleriniz her gün ve güncellemeden önce yedeklenir
 Yedeği iCloud’dan veya bir dosyadan geri yükleyin
 Kayıtlı paletleri silebilen nadir bir hata düzeltildi

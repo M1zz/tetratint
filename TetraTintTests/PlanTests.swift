@@ -39,7 +39,7 @@ final class PlanTests: XCTestCase {
     func testEarlyUsersUpToTheLastFreeVersion() {
         XCTAssertTrue(EarlyUser.isEarly(originalAppVersion: "1.0"))
         XCTAssertTrue(EarlyUser.isEarly(originalAppVersion: "1.0.2"))
-        XCTAssertTrue(EarlyUser.isEarly(originalAppVersion: "1.0.3"))
+        XCTAssertFalse(EarlyUser.isEarly(originalAppVersion: "1.0.3"))
         XCTAssertFalse(EarlyUser.isEarly(originalAppVersion: "1.0.4"))
         XCTAssertFalse(EarlyUser.isEarly(originalAppVersion: "1.1"))
         XCTAssertFalse(EarlyUser.isEarly(originalAppVersion: "1.0.10"))
