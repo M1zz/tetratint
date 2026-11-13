@@ -3,6 +3,176 @@
 App Store 의 "이 버전의 새로운 기능" 에 그대로 올라가는 글이다.
 평문만 쓴다. 한 줄에 한 문장, 3~5줄, 한 줄 40자 이내.
 
+## 1.0.4
+
+### 앱스토어 (한국어)
+
+색약이나 색맹인 사람에게 보이는 색을 미리 볼 수 있어요
+원래 색과 나란히 놓고 라이트와 다크에서 비교해요
+Plus와 Pro로 더 많은 기능을 쓸 수 있어요
+보낸 의견에 개발자가 답하면 앱에서 바로 보여요
+
+### App Store (English)
+
+See colors as color-blind users do
+Compare side by side in light and dark
+Get more done with Plus and Pro
+Read developer replies right in the app
+
+### App Store (en-GB)
+
+See colours as colour-blind users do
+Compare side by side in light and dark
+Get more done with Plus and Pro
+Read developer replies right in the app
+
+### App Store (简体中文)
+
+可预览色弱和色盲人士看到的颜色
+在浅色和深色模式下与原色并排对比
+Plus 和 Pro 带来更多功能
+开发者回复你的反馈后，App 内即可查看
+
+### App Store (繁體中文)
+
+可預覽色弱和色盲人士看到的顏色
+在淺色和深色模式下與原色並排對照
+Plus 與 Pro 帶來更多功能
+開發者回覆你的意見後，App 內即可查看
+
+### App Store (日本語)
+
+色弱や色覚特性のある人の見え方をプレビュー
+元の色と並べてライトとダークで比較
+PlusとProでさらに多くの機能を
+開発者からの返信をアプリですぐ確認
+
+### App Store (Русский)
+
+Цвета глазами людей с дальтонизмом
+Сравнение рядом в светлой и тёмной теме
+Больше возможностей с Plus и Pro
+Ответы разработчика прямо в приложении
+
+### App Store (Español (México))
+
+Ve los colores como alguien daltónico
+Compáralos lado a lado en claro y oscuro
+Haz más con Plus y Pro
+Respuestas del desarrollador en la app
+
+### App Store (Deutsch)
+
+Farben so sehen wie Farbenblinde
+Hell und dunkel direkt nebeneinander
+Mehr Funktionen mit Plus und Pro
+Antworten des Entwicklers in der App
+
+### App Store (Français)
+
+Voyez les couleurs comme un daltonien
+Comparez côte à côte en clair et sombre
+Plus de fonctions avec Plus et Pro
+Les réponses du développeur dans l’app
+
+### App Store (Italiano)
+
+Guarda i colori come un daltonico
+Confrontali affiancati in chiaro e scuro
+Fai di più con Plus e Pro
+Risposte dello sviluppatore nell’app
+
+### App Store (Português (Brasil))
+
+Veja as cores como um daltônico vê
+Compare lado a lado no claro e no escuro
+Faça mais com Plus e Pro
+Respostas do desenvolvedor no app
+
+### App Store (ไทย)
+
+ดูสีแบบที่ผู้ตาบอดสีมองเห็น
+เทียบกับสีจริงทั้งโหมดสว่างและโหมดมืด
+ใช้งานได้มากขึ้นด้วย Plus และ Pro
+อ่านคำตอบจากนักพัฒนาได้ในแอปทันที
+
+### App Store (Tiếng Việt)
+
+Xem màu như người mù màu nhìn thấy
+So sánh song song ở chế độ sáng và tối
+Làm được nhiều hơn với Plus và Pro
+Đọc phản hồi từ nhà phát triển trong app
+
+### App Store (Čeština)
+
+Uvidíte barvy očima barvoslepých
+Porovnání ve světlém i tmavém režimu
+Více funkcí s Plus a Pro
+Odpovědi vývojáře přímo v aplikaci
+
+### App Store (Dansk)
+
+Se farver, som farveblinde ser dem
+Sammenlign side om side i lyst og mørkt
+Få mere med Plus og Pro
+Læs udviklerens svar direkte i appen
+
+### App Store (Ελληνικά)
+
+Δείτε τα χρώματα όπως ένας αχρωματοψός
+Σύγκριση σε φωτεινό και σκοτεινό θέμα
+Περισσότερα με το Plus και το Pro
+Απαντήσεις του δημιουργού στην εφαρμογή
+
+### App Store (suomi)
+
+Näe värit kuten värisokea ne näkee
+Vertaa rinnakkain vaaleassa ja tummassa
+Enemmän ominaisuuksia Plusilla ja Prolla
+Kehittäjän vastaukset suoraan apissa
+
+### App Store (Bahasa Indonesia)
+
+Lihat warna seperti orang buta warna
+Bandingkan di mode terang dan gelap
+Lebih banyak fitur dengan Plus dan Pro
+Baca balasan pengembang langsung di app
+
+### App Store (Norsk bokmål)
+
+Se farger slik fargeblinde ser dem
+Sammenlign i lys og mørk modus
+Få mer ut av appen med Plus og Pro
+Les svar fra utvikleren rett i appen
+
+### App Store (Nederlands)
+
+Zie kleuren zoals kleurenblinden
+Vergelijk licht en donker naast elkaar
+Meer mogelijkheden met Plus en Pro
+Antwoorden van de ontwikkelaar in de app
+
+### App Store (Polski)
+
+Zobacz kolory oczami daltonisty
+Porównuj obok siebie w jasnym i ciemnym
+Więcej możliwości z Plus i Pro
+Odpowiedzi twórcy prosto w aplikacji
+
+### App Store (Svenska)
+
+Se färger som färgblinda ser dem
+Jämför sida vid sida i ljust och mörkt
+Gör mer med Plus och Pro
+Läs utvecklarens svar direkt i appen
+
+### App Store (Türkçe)
+
+Renkleri renk körü birinin gözüyle görün
+Açık ve koyu modda yan yana kıyaslayın
+Plus ve Pro ile daha fazlası
+Geliştirici yanıtları uygulamada
+
 ## 1.0.3
 
 ### 앱스토어 (한국어)

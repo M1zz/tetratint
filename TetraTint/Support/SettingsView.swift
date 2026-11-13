@@ -118,6 +118,16 @@ struct TetraTintSettingsView: View {
     }
 }
 
+/// TetraTint 메뉴 ▸ 설정 바로 아래 '요금제 보기'. 인앱 상품을 찾는 가장 눈에 띄는 길이다
+/// (설정 안쪽에만 있으면 App Review 가 상품을 못 찾는다 — 가이드라인 2.1(b)).
+struct TetraTintPlanCommands: Commands {
+    var body: some Commands {
+        CommandGroup(after: .appSettings) {
+            Button("See Plans") { AppState.shared.showsPlans = true }
+        }
+    }
+}
+
 /// Help 메뉴 끝에 붙는 항목 — 맥 사용자가 도움을 찾으러 가는 자리.
 struct TetraTintHelpCommands: Commands {
     @AppStorage(OnboardingState.storageKey) private var hasSeenOnboarding = false

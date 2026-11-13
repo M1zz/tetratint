@@ -44,6 +44,8 @@ final class AppState: ObservableObject {
     @Published var previewCVD: CVDType = .normal
     /// 잠긴 자리를 눌렀을 때 그 기능이 든 칸을 앞세운 페이월 (→ PaywallView). 단축어도 여기로 보낸다.
     @Published var paywall: PlanFeature?
+    /// 앱 메뉴 ▸ 요금제 보기 — 기능과 상관없이 요금제 전체를 연다.
+    @Published var showsPlans = false
 
     private let sampler = NSColorSampler()
 
@@ -95,7 +97,10 @@ struct TetraTintApp: App {
                 // 영수증 · 상품 · 구독을 읽는다 (→ PurchaseManager). 팁 결제도 같은 리스너가 받는다.
                 .task { await PurchaseManager.shared.refresh() }
         }
-        .commands { TetraTintHelpCommands() }
+        .commands {
+            TetraTintPlanCommands()
+            TetraTintHelpCommands()
+        }
 
         Settings {
             TetraTintSettingsView()
@@ -163,6 +168,9 @@ struct ContentView: View {
         }
         .sheet(item: $appState.paywall) { feature in
             PaywallView(highlight: feature)
+        }
+        .sheet(isPresented: $appState.showsPlans) {
+            PaywallView()
         }
         .sheet(isPresented: $showGraduation) {
             LeeoGraduationOfferView(graduate: purchases.graduateProduct) {
