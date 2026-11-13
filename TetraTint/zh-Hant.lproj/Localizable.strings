@@ -286,3 +286,17 @@
 "You were here before plans existed, so Pro is yours to keep." = "你在推出付費方案前就開始使用，因此可繼續享用 Pro。";
 "See Plans" = "查看方案";
 "Plan" = "方案";
+
+/* Color preview lens, color weakness */
+"Protanomaly" = "紅色弱";
+"Deuteranomaly" = "綠色弱";
+"Tritanomaly" = "藍色弱";
+"Weak red, about 1% of men" = "紅色弱，約佔男性 1%";
+"Weak green, about 5% of men" = "綠色弱，約佔男性 5%";
+"Weak blue, rare" = "藍色弱，罕見";
+"Color weakness" = "色弱";
+"Color blindness" = "色盲";
+"Seen by" = "視覺類型";
+"Original" = "原色";
+"Preview in use" = "實際效果預覽";
+"See the color in use, as it is and as people with color weakness or color blindness see it" = "查看顏色在介面中的實際效果，並與色弱或色盲人士看到的效果並排對照";

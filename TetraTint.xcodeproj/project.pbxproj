@@ -33,6 +33,7 @@
 		63472D239A6A7132A9183A88 /* FlyToPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2920BA56E1E641FF038499 /* FlyToPalette.swift */; };
 		637C23B0E15744162B5771EA /* AppearanceSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AD967B11D838B36CF85FEB /* AppearanceSet.swift */; };
 		6699EFF6D678821C837727FF /* ColorNaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C1E20A2A174BCEE56ADBAE /* ColorNaming.swift */; };
+		6E012C3892643763DA39752F /* PreviewLens.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78DB6756CB7C1394CC40DB1 /* PreviewLens.swift */; };
 		6E6B18473C1602C29AFF04EA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4ECE7D82BB077927D8CCC0BC /* Localizable.strings */; };
 		7223E838083257FBDB8A67FA /* CVDSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F229B2DA9FE066BE4377DE63 /* CVDSimulation.swift */; };
 		74BA14A320E3A1D8C4689051 /* AppShortcuts.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9A8357A8FC31F178F37F180 /* AppShortcuts.strings */; };
@@ -160,6 +161,7 @@
 		D4A76EBC1AEC715744B9DEE9 /* TetraTintRoadmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetraTintRoadmap.swift; sourceTree = "<group>"; };
 		D4A9EC38C31C2B824B261E4F /* ColorVisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorVisionView.swift; sourceTree = "<group>"; };
 		D6CAD4F3CC97ED706DC1B834 /* AppShortcuts.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = AppShortcuts.strings; path = cs.lproj/AppShortcuts.strings; sourceTree = "<group>"; };
+		D78DB6756CB7C1394CC40DB1 /* PreviewLens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLens.swift; sourceTree = "<group>"; };
 		DB684D194CF269FD4E12C0AF /* AppShortcuts.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = AppShortcuts.strings; path = sv.lproj/AppShortcuts.strings; sourceTree = "<group>"; };
 		DE9EA715460FE43571D0BAA5 /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
 		E7A5DAF0302F7D99CA2D343B /* GeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorView.swift; sourceTree = "<group>"; };
@@ -328,6 +330,7 @@
 				E7A5DAF0302F7D99CA2D343B /* GeneratorView.swift */,
 				79DA57A4322D5FCA4CCCE586 /* PaletteView.swift */,
 				946827217278292C54335B68 /* PaywallView.swift */,
+				D78DB6756CB7C1394CC40DB1 /* PreviewLens.swift */,
 				278B9DB81A76EE74B2E7C8BE /* SystemColorsView.swift */,
 				805252219AA81B77DFED04C7 /* VariantCard.swift */,
 			);
@@ -537,6 +540,7 @@
 				A24E97A82F3D11778859FFC3 /* PaletteView.swift in Sources */,
 				4F46D32FB2CDE808C2A0C33B /* PaywallView.swift in Sources */,
 				25BAF257C0E08155822F2BE2 /* Plan.swift in Sources */,
+				6E012C3892643763DA39752F /* PreviewLens.swift in Sources */,
 				CBEBA625EBDA4BFCA4DD472B /* PurchaseManager.swift in Sources */,
 				5EC5168C8223131CF03D1BD7 /* SettingsView.swift in Sources */,
 				0FD30AF0BE62E6E11C8B2CA9 /* SystemColorData.swift in Sources */,
@@ -809,7 +813,7 @@
 			repositoryURL = "https://github.com/M1zz/LeeoKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.38.1;
+				minimumVersion = 3.44.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

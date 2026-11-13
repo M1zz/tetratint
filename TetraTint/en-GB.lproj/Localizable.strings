@@ -286,3 +286,17 @@
 "You were here before plans existed, so Pro is yours to keep." = "You were here before plans existed, so Pro is yours to keep.";
 "See Plans" = "See Plans";
 "Plan" = "Plan";
+
+/* Color preview lens, color weakness */
+"Protanomaly" = "Protanomaly";
+"Deuteranomaly" = "Deuteranomaly";
+"Tritanomaly" = "Tritanomaly";
+"Weak red, about 1% of men" = "Weak red, about 1% of men";
+"Weak green, about 5% of men" = "Weak green, about 5% of men";
+"Weak blue, rare" = "Weak blue, rare";
+"Color weakness" = "Colour weakness";
+"Color blindness" = "Colour blindness";
+"Seen by" = "Seen by";
+"Original" = "Original";
+"Preview in use" = "Preview in use";
+"See the color in use, as it is and as people with color weakness or color blindness see it" = "See the colour in use, as it is and as people with colour weakness or colour blindness see it";

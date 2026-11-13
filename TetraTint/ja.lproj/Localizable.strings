@@ -286,3 +286,17 @@
 "You were here before plans existed, so Pro is yours to keep." = "プランができる前から使ってくださっているので、Proをそのままお使いいただけます。";
 "See Plans" = "プランを見る";
 "Plan" = "プラン";
+
+/* Color preview lens, color weakness */
+"Protanomaly" = "P型（1型）色弱";
+"Deuteranomaly" = "D型（2型）色弱";
+"Tritanomaly" = "T型（3型）色弱";
+"Weak red, about 1% of men" = "P型色弱、男性の約1%";
+"Weak green, about 5% of men" = "D型色弱、男性の約5%";
+"Weak blue, rare" = "T型色弱、まれ";
+"Color weakness" = "弱い色覚特性";
+"Color blindness" = "強い色覚特性";
+"Seen by" = "見え方";
+"Original" = "元の色";
+"Preview in use" = "使用例をプレビュー";
+"See the color in use, as it is and as people with color weakness or color blindness see it" = "実際の画面での色を、元の見え方と色覚特性のある人の見え方で並べて確認します";

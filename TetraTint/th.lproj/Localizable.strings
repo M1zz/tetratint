@@ -286,3 +286,17 @@
 "You were here before plans existed, so Pro is yours to keep." = "คุณใช้งานมาตั้งแต่ก่อนมีแผนชำระเงิน จึงได้ใช้ Pro ต่อไป";
 "See Plans" = "ดูแผน";
 "Plan" = "แผน";
+
+/* Color preview lens, color weakness */
+"Protanomaly" = "ตาบอดสีแดงบางส่วน";
+"Deuteranomaly" = "ตาบอดสีเขียวบางส่วน";
+"Tritanomaly" = "ตาบอดสีน้ำเงินบางส่วน";
+"Weak red, about 1% of men" = "เห็นสีแดงไม่ชัด พบในผู้ชายราว 1%";
+"Weak green, about 5% of men" = "เห็นสีเขียวไม่ชัด พบในผู้ชายราว 5%";
+"Weak blue, rare" = "เห็นสีน้ำเงินไม่ชัด พบได้น้อย";
+"Color weakness" = "ตาบอดสีบางส่วน";
+"Color blindness" = "ตาบอดสี";
+"Seen by" = "การมองเห็น";
+"Original" = "สีต้นฉบับ";
+"Preview in use" = "ดูตัวอย่างการใช้งาน";
+"See the color in use, as it is and as people with color weakness or color blindness see it" = "ดูสีในการใช้งานจริง เทียบกันระหว่างสีจริงกับสีที่ผู้ตาบอดสีบางส่วนหรือผู้ตาบอดสีมองเห็น";

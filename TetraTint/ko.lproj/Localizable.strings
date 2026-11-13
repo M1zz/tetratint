@@ -286,3 +286,17 @@
 "You were here before plans existed, so Pro is yours to keep." = "요금제가 생기기 전부터 써 주셔서 Pro를 그대로 드려요.";
 "See Plans" = "요금제 보기";
 "Plan" = "요금제";
+
+/* Color preview lens, color weakness */
+"Protanomaly" = "적색약";
+"Deuteranomaly" = "녹색약";
+"Tritanomaly" = "청색약";
+"Weak red, about 1% of men" = "적색약, 남성 약 1%";
+"Weak green, about 5% of men" = "녹색약, 남성 약 5%";
+"Weak blue, rare" = "청색약, 희귀";
+"Color weakness" = "색약";
+"Color blindness" = "색맹";
+"Seen by" = "보는 눈";
+"Original" = "원래 색";
+"Preview in use" = "미리 보기";
+"See the color in use, as it is and as people with color weakness or color blindness see it" = "화면에 쓰인 색을 원래 모습과 색약이나 색맹인 사람에게 보이는 모습으로 나란히 봅니다";

@@ -286,3 +286,17 @@
 "You were here before plans existed, so Pro is yours to keep." = "Byli jste tu dřív, než vznikly plány, takže vám Pro zůstává.";
 "See Plans" = "Zobrazit plány";
 "Plan" = "Plán";
+
+/* Color preview lens, color weakness */
+"Protanomaly" = "Protanomálie";
+"Deuteranomaly" = "Deuteranomálie";
+"Tritanomaly" = "Tritanomálie";
+"Weak red, about 1% of men" = "Oslabené vnímání červené, asi 1 % mužů";
+"Weak green, about 5% of men" = "Oslabené vnímání zelené, asi 5 % mužů";
+"Weak blue, rare" = "Oslabené vnímání modré, vzácná";
+"Color weakness" = "Barvoslabost";
+"Color blindness" = "Barvoslepost";
+"Seen by" = "Způsob vidění";
+"Original" = "Originál";
+"Preview in use" = "Náhled v použití";
+"See the color in use, as it is and as people with color weakness or color blindness see it" = "Podívejte se na barvu v použití, jak skutečně vypadá a jak ji vidí lidé s barvoslabostí nebo barvoslepostí";

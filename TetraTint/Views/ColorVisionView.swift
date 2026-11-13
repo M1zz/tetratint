@@ -18,6 +18,10 @@ struct ColorVisionLens: View {
         return result
     }
 
+    /// Grid columns and conflict checks use the missing-cone forms: a pair that
+    /// survives 색맹 also survives the milder 색약.
+    private let columns: [CVDType] = [.normal] + CVDType.missing
+
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
             simulationGrid
@@ -58,7 +62,7 @@ struct ColorVisionLens: View {
                 GridRow {
                     Text("Color")
                         .frame(width: 130, alignment: .leading)
-                    ForEach(CVDType.allCases) { type in
+                    ForEach(columns) { type in
                         VStack(spacing: 0) {
                             Text(type.localizedName)
                             Text(type.subtitle)
@@ -83,7 +87,7 @@ struct ColorVisionLens: View {
                         .frame(width: 130, alignment: .leading)
                         .accessibilityElement(children: .combine)
 
-                        ForEach(CVDType.allCases) { type in
+                        ForEach(columns) { type in
                             let simulated = simulatedHex(item.hex, type: type)
                             RoundedRectangle(cornerRadius: 6)
                                 .fill(Color(hex: simulated))
@@ -119,7 +123,7 @@ struct ColorVisionLens: View {
     private var conflicts: [Conflict] {
         var result: [Conflict] = []
         let items = inspected
-        for type in CVDType.allCases where type != .normal {
+        for type in CVDType.missing {
             for i in items.indices {
                 for j in items.indices where j > i {
                     guard

@@ -286,3 +286,17 @@
 "You were here before plans existed, so Pro is yours to keep." = "Você já usava o app antes dos planos, então o Pro continua seu.";
 "See Plans" = "Ver planos";
 "Plan" = "Plano";
+
+/* Color preview lens, color weakness */
+"Protanomaly" = "Protanomalia";
+"Deuteranomaly" = "Deuteranomalia";
+"Tritanomaly" = "Tritanomalia";
+"Weak red, about 1% of men" = "Vermelho fraco, cerca de 1% dos homens";
+"Weak green, about 5% of men" = "Verde fraco, cerca de 5% dos homens";
+"Weak blue, rare" = "Azul fraco, rara";
+"Color weakness" = "Visão de cores fraca";
+"Color blindness" = "Daltonismo";
+"Seen by" = "Visto com";
+"Original" = "Original";
+"Preview in use" = "Ver em uso";
+"See the color in use, as it is and as people with color weakness or color blindness see it" = "Veja a cor em uso, como ela é e como pessoas com visão de cores fraca ou daltonismo a veem";

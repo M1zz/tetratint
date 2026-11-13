@@ -286,3 +286,17 @@
 "You were here before plans existed, so Pro is yours to keep." = "Anda sudah memakai aplikasi ini sebelum ada paket, jadi Pro tetap milik Anda.";
 "See Plans" = "Lihat Paket";
 "Plan" = "Paket";
+
+/* Color preview lens, color weakness */
+"Protanomaly" = "Protanomali";
+"Deuteranomaly" = "Deuteranomali";
+"Tritanomaly" = "Tritanomali";
+"Weak red, about 1% of men" = "Merah lemah, sekitar 1% pria";
+"Weak green, about 5% of men" = "Hijau lemah, sekitar 5% pria";
+"Weak blue, rare" = "Biru lemah, jarang";
+"Color weakness" = "Buta warna parsial";
+"Color blindness" = "Buta warna";
+"Seen by" = "Cara melihat";
+"Original" = "Asli";
+"Preview in use" = "Pratinjau penggunaan";
+"See the color in use, as it is and as people with color weakness or color blindness see it" = "Lihat warna saat digunakan, seperti aslinya dan seperti yang dilihat orang dengan buta warna parsial atau buta warna";

@@ -15,6 +15,7 @@ struct ColorWorkspaceView: View {
 
     enum Lens: String, CaseIterable, Identifiable {
         case variants = "Variants"
+        case preview = "Preview"
         case contrast = "Contrast"
         case colorVision = "Color vision"
         var id: String { rawValue }
@@ -22,6 +23,7 @@ struct ColorWorkspaceView: View {
         var icon: String {
             switch self {
             case .variants: return "square.grid.2x2.fill"
+            case .preview: return "macwindow"
             case .contrast: return "circle.lefthalf.filled"
             case .colorVision: return "eye.fill"
             }
@@ -31,6 +33,7 @@ struct ColorWorkspaceView: View {
         var title: LocalizedStringKey {
             switch self {
             case .variants: return "Generate variants"
+            case .preview: return "Preview in use"
             case .contrast: return "Check contrast"
             case .colorVision: return "Simulate color vision"
             }
@@ -39,6 +42,7 @@ struct ColorWorkspaceView: View {
         var purpose: LocalizedStringKey {
             switch self {
             case .variants: return "Generate and export light, dark, and high-contrast variants"
+            case .preview: return "See the color in use, as it is and as people with color weakness or color blindness see it"
             case .contrast: return "Check the color against WCAG contrast thresholds"
             case .colorVision: return "Simulate how the color looks with color vision deficiency"
             }
@@ -101,7 +105,7 @@ struct ColorWorkspaceView: View {
                     .accessibilityAddTraits(lens == option ? .isSelected : [])
                 }
             }
-            .frame(maxWidth: 620)
+            .frame(maxWidth: 820)
 
             Text(lens.purpose)
                 .font(.callout)
@@ -113,6 +117,7 @@ struct ColorWorkspaceView: View {
     private var lensContent: some View {
         switch lens {
         case .variants: VariantsLens()
+        case .preview: PreviewLens()
         case .contrast: ContrastLens()
         case .colorVision: ColorVisionLens()
         }

@@ -4,6 +4,11 @@ import Foundation
 
 enum CVDType: String, CaseIterable, Identifiable {
     case normal = "Normal"
+    // 색약: the cone is there but weak, so colors are only partly confused.
+    case protanomaly = "Protanomaly"
+    case deuteranomaly = "Deuteranomaly"
+    case tritanomaly = "Tritanomaly"
+    // 색맹: the cone is missing.
     case protanopia = "Protanopia"
     case deuteranopia = "Deuteranopia"
     case tritanopia = "Tritanopia"
@@ -17,12 +22,29 @@ enum CVDType: String, CaseIterable, Identifiable {
     var subtitle: String {
         switch self {
         case .normal: return String(localized: "Normal vision")
+        case .protanomaly: return String(localized: "Weak red, about 1% of men")
+        case .deuteranomaly: return String(localized: "Weak green, about 5% of men")
+        case .tritanomaly: return String(localized: "Weak blue, rare")
         case .protanopia: return String(localized: "Protan, about 1% of men")
         case .deuteranopia: return String(localized: "Deutan, about 1% of men")
         case .tritanopia: return String(localized: "Tritan, rare")
         case .grayscale: return String(localized: "Monochromacy")
         }
     }
+
+    /// The missing-cone form a weak-cone type is a milder version of.
+    var fullForm: CVDType? {
+        switch self {
+        case .protanomaly: return .protanopia
+        case .deuteranomaly: return .deuteranopia
+        case .tritanomaly: return .tritanopia
+        default: return nil
+        }
+    }
+
+    /// Picker layout: normal, then 색약 (weak), then 색맹 (missing) and monochromacy.
+    static let weak: [CVDType] = [.protanomaly, .deuteranomaly, .tritanomaly]
+    static let missing: [CVDType] = [.protanopia, .deuteranopia, .tritanopia, .grayscale]
 }
 
 // MARK: - Simulator
@@ -49,10 +71,19 @@ enum CVDSimulator {
         ]
     ]
 
-    /// The Machado severity-1.0 matrix for a dichromacy type (nil for
-    /// normal/grayscale, which aren't a linear 3×3 transform). Exposed so the
-    /// live GPU preview uses the exact same math as the swatch simulation.
-    static func matrix(for type: CVDType) -> [[Double]]? { matrices[type] }
+    /// How strong a weak-cone (색약) simulation is, on Machado's 0…1 scale.
+    static let weakSeverity = 0.6
+
+    /// The linear-sRGB matrix for a deficiency (nil for normal/grayscale, which
+    /// aren't a 3×3 transform). Weak-cone types blend identity toward the
+    /// missing-cone matrix. Exposed so the live GPU preview uses the exact same
+    /// math as the swatch simulation.
+    static func matrix(for type: CVDType) -> [[Double]]? {
+        if let full = matrices[type] { return full }
+        guard let full = type.fullForm.flatMap({ matrices[$0] }) else { return nil }
+        let s = weakSeverity
+        return (0..<3).map { i in (0..<3).map { j in (i == j ? 1 - s : 0) + s * full[i][j] } }
+    }
 
     static func simulate(_ rgb: RGB, type: CVDType) -> RGB {
         switch type {
@@ -63,7 +94,7 @@ enum CVDSimulator {
             let v = delinearize(y) * 255
             return RGB(r: v, g: v, b: v)
         default:
-            guard let m = matrices[type] else { return rgb }
+            guard let m = matrix(for: type) else { return rgb }
             let r = linearize(rgb.r / 255)
             let g = linearize(rgb.g / 255)
             let b = linearize(rgb.b / 255)

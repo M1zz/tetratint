@@ -63,6 +63,25 @@ struct CVDWindowFilter: NSViewRepresentable {
     }
 }
 
+// MARK: - Grouped picker options
+
+/// Picker rows for every vision type: normal, then 색약 (a weak cone), then
+/// 색맹 (a missing cone) and monochromacy. Used by the toolbar menu and the
+/// Preview lens so both read the same way.
+struct CVDTypeOptions: View {
+    var body: some View {
+        Text(LocalizedStringKey(CVDType.normal.rawValue)).tag(CVDType.normal)
+        Section("Color weakness") { rows(CVDType.weak) }
+        Section("Color blindness") { rows(CVDType.missing) }
+    }
+
+    private func rows(_ types: [CVDType]) -> some View {
+        ForEach(types) { type in
+            Text(LocalizedStringKey(type.rawValue)).tag(type)
+        }
+    }
+}
+
 // MARK: - Swatch accessibility
 
 extension View {

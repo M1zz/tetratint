@@ -286,3 +286,17 @@
 "You were here before plans existed, so Pro is yours to keep." = "Korzystasz z aplikacji od czasu, zanim pojawiły się plany, więc Pro zostaje u Ciebie.";
 "See Plans" = "Zobacz plany";
 "Plan" = "Plan";
+
+/* Color preview lens, color weakness */
+"Protanomaly" = "Protanomalia";
+"Deuteranomaly" = "Deuteranomalia";
+"Tritanomaly" = "Trytanomalia";
+"Weak red, about 1% of men" = "Osłabione widzenie czerwieni, około 1% mężczyzn";
+"Weak green, about 5% of men" = "Osłabione widzenie zieleni, około 5% mężczyzn";
+"Weak blue, rare" = "Osłabione widzenie niebieskiego, rzadka";
+"Color weakness" = "Słabe widzenie barw";
+"Color blindness" = "Ślepota barw";
+"Seen by" = "Sposób widzenia";
+"Original" = "Oryginał";
+"Preview in use" = "Podgląd w użyciu";
+"See the color in use, as it is and as people with color weakness or color blindness see it" = "Zobacz kolor w użyciu, taki jaki jest i taki, jak widzą go osoby ze słabym widzeniem barw lub ślepotą barw";

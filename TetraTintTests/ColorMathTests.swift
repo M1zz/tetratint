@@ -127,6 +127,23 @@ final class CVDSimulationTests: XCTestCase {
         }
     }
 
+    /// 색약 sits between normal vision and 색맹: every channel of the weak-cone
+    /// result lies between the original color and the missing-cone result.
+    func testWeakConeLiesBetweenNormalAndMissingCone() {
+        for hex in ["#D55E00", "#009E73", "#0072B2", "#F0E442", "#CC79A7"] {
+            let c = RGB(hex: hex)!
+            for weak in CVDType.weak {
+                let w = CVDSimulator.simulate(c, type: weak)
+                let f = CVDSimulator.simulate(c, type: weak.fullForm!)
+                for (o, m, x) in [(c.r, w.r, f.r), (c.g, w.g, f.g), (c.b, w.b, f.b)] {
+                    XCTAssertGreaterThanOrEqual(m, min(o, x) - 0.5, "\(weak) \(hex)")
+                    XCTAssertLessThanOrEqual(m, max(o, x) + 0.5, "\(weak) \(hex)")
+                }
+                XCTAssertNotEqual(w, c, "\(weak) \(hex)")
+            }
+        }
+    }
+
     func testDeltaEIsZeroForSameColorAndSymmetric() {
         let a = RGB(hex: "#4477AA")!, b = RGB(hex: "#EE6677")!
         XCTAssertEqual(LabColor.deltaE(a, a), 0, accuracy: 1e-9)

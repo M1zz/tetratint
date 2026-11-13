@@ -203,9 +203,7 @@ struct ContentView: View {
             ToolbarItem {
                 Menu {
                     Picker("Color vision preview", selection: $appState.previewCVD) {
-                        ForEach(CVDType.allCases) { type in
-                            Text(LocalizedStringKey(type.rawValue)).tag(type)
-                        }
+                        CVDTypeOptions()
                     }
                     .pickerStyle(.inline)
                 } label: {

@@ -286,3 +286,17 @@
 "You were here before plans existed, so Pro is yours to keep." = "Je was er al voordat er abonnementen waren, dus Pro blijft van jou.";
 "See Plans" = "Bekijk abonnementen";
 "Plan" = "Abonnement";
+
+/* Color preview lens, color weakness */
+"Protanomaly" = "Protanomalie";
+"Deuteranomaly" = "Deuteranomalie";
+"Tritanomaly" = "Tritanomalie";
+"Weak red, about 1% of men" = "Zwak rood, ongeveer 1% van de mannen";
+"Weak green, about 5% of men" = "Zwak groen, ongeveer 5% van de mannen";
+"Weak blue, rare" = "Zwak blauw, zeldzaam";
+"Color weakness" = "Kleurzwakte";
+"Color blindness" = "Kleurenblindheid";
+"Seen by" = "Gezien met";
+"Original" = "Origineel";
+"Preview in use" = "Bekijken in gebruik";
+"See the color in use, as it is and as people with color weakness or color blindness see it" = "Bekijk de kleur in gebruik, zoals hij is en zoals mensen met kleurzwakte of kleurenblindheid hem zien";

@@ -286,3 +286,17 @@
 "You were here before plans existed, so Pro is yours to keep." = "Olit mukana jo ennen tilauksia, joten Pro jää sinulle.";
 "See Plans" = "Näytä tilaukset";
 "Plan" = "Tilaus";
+
+/* Color preview lens, color weakness */
+"Protanomaly" = "Protanomalia";
+"Deuteranomaly" = "Deuteranomalia";
+"Tritanomaly" = "Tritanomalia";
+"Weak red, about 1% of men" = "Heikko punaisen näkö, noin 1 % miehistä";
+"Weak green, about 5% of men" = "Heikko vihreän näkö, noin 5 % miehistä";
+"Weak blue, rare" = "Heikko sinisen näkö, harvinainen";
+"Color weakness" = "Heikentynyt värinäkö";
+"Color blindness" = "Värisokeus";
+"Seen by" = "Näkötapa";
+"Original" = "Alkuperäinen";
+"Preview in use" = "Esikatsele käytössä";
+"See the color in use, as it is and as people with color weakness or color blindness see it" = "Katso väri käytössä sellaisena kuin se on ja sellaisena kuin heikentyneen värinäön tai värisokeuden kanssa elävät sen näkevät";

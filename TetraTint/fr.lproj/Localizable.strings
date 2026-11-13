@@ -286,3 +286,17 @@
 "You were here before plans existed, so Pro is yours to keep." = "Vous étiez là avant les formules : Pro vous reste acquis.";
 "See Plans" = "Voir les formules";
 "Plan" = "Formule";
+
+/* Color preview lens, color weakness */
+"Protanomaly" = "Protanomalie";
+"Deuteranomaly" = "Deutéranomalie";
+"Tritanomaly" = "Tritanomalie";
+"Weak red, about 1% of men" = "Rouge affaibli, environ 1 % des hommes";
+"Weak green, about 5% of men" = "Vert affaibli, environ 5 % des hommes";
+"Weak blue, rare" = "Bleu affaibli, rare";
+"Color weakness" = "Vision des couleurs affaiblie";
+"Color blindness" = "Daltonisme";
+"Seen by" = "Vu avec";
+"Original" = "Original";
+"Preview in use" = "Aperçu en situation";
+"See the color in use, as it is and as people with color weakness or color blindness see it" = "Voir la couleur en situation, telle qu’elle est et telle que la voient les personnes daltoniennes ou à la vision des couleurs affaiblie";

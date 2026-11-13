@@ -286,3 +286,17 @@
 "You were here before plans existed, so Pro is yours to keep." = "Bạn đã dùng ứng dụng từ trước khi có các gói, nên Pro vẫn là của bạn.";
 "See Plans" = "Xem các gói";
 "Plan" = "Gói";
+
+/* Color preview lens, color weakness */
+"Protanomaly" = "Yếu màu đỏ";
+"Deuteranomaly" = "Yếu màu lục";
+"Tritanomaly" = "Yếu màu lam";
+"Weak red, about 1% of men" = "Yếu màu đỏ, khoảng 1% nam giới";
+"Weak green, about 5% of men" = "Yếu màu lục, khoảng 5% nam giới";
+"Weak blue, rare" = "Yếu màu lam, hiếm gặp";
+"Color weakness" = "Yếu màu";
+"Color blindness" = "Mù màu";
+"Seen by" = "Cách nhìn";
+"Original" = "Màu gốc";
+"Preview in use" = "Xem trước khi dùng";
+"See the color in use, as it is and as people with color weakness or color blindness see it" = "Xem màu khi được dùng thực tế, đúng như vốn có và như người yếu màu hoặc mù màu nhìn thấy";

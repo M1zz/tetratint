@@ -286,3 +286,17 @@
 "You were here before plans existed, so Pro is yours to keep." = "Planlar gelmeden önce de buradaydınız, bu yüzden Pro sizde kalıyor.";
 "See Plans" = "Planları Gör";
 "Plan" = "Plan";
+
+/* Color preview lens, color weakness */
+"Protanomaly" = "Protanomali";
+"Deuteranomaly" = "Döteranomali";
+"Tritanomaly" = "Tritanomali";
+"Weak red, about 1% of men" = "Zayıf kırmızı algısı, erkeklerin yaklaşık yüzde 1’i";
+"Weak green, about 5% of men" = "Zayıf yeşil algısı, erkeklerin yaklaşık yüzde 5’i";
+"Weak blue, rare" = "Zayıf mavi algısı, nadir";
+"Color weakness" = "Renk zayıflığı";
+"Color blindness" = "Renk körlüğü";
+"Seen by" = "Görme türü";
+"Original" = "Orijinal";
+"Preview in use" = "Kullanımda önizle";
+"See the color in use, as it is and as people with color weakness or color blindness see it" = "Rengi kullanımda, olduğu gibi ve renk zayıflığı ya da renk körlüğü olan kişilerin gördüğü gibi yan yana görün";

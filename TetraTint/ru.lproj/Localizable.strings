@@ -286,3 +286,17 @@
 "You were here before plans existed, so Pro is yours to keep." = "Вы были с нами ещё до появления планов, поэтому Pro остаётся за вами.";
 "See Plans" = "Посмотреть планы";
 "Plan" = "План";
+
+/* Color preview lens, color weakness */
+"Protanomaly" = "Протаномалия";
+"Deuteranomaly" = "Дейтераномалия";
+"Tritanomaly" = "Тританомалия";
+"Weak red, about 1% of men" = "Ослабленное восприятие красного, около 1% мужчин";
+"Weak green, about 5% of men" = "Ослабленное восприятие зелёного, около 5% мужчин";
+"Weak blue, rare" = "Ослабленное восприятие синего, редко";
+"Color weakness" = "Ослабленное цветовое зрение";
+"Color blindness" = "Цветовая слепота";
+"Seen by" = "Как видит";
+"Original" = "Оригинал";
+"Preview in use" = "Предпросмотр в интерфейсе";
+"See the color in use, as it is and as people with color weakness or color blindness see it" = "Посмотрите, как цвет выглядит в интерфейсе на самом деле и как его видят люди с ослабленным цветовым зрением или цветовой слепотой";

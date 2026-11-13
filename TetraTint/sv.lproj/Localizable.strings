@@ -286,3 +286,17 @@
 "You were here before plans existed, so Pro is yours to keep." = "Du fanns här innan planerna kom, så Pro är ditt att behålla.";
 "See Plans" = "Visa planer";
 "Plan" = "Plan";
+
+/* Color preview lens, color weakness */
+"Protanomaly" = "Protanomali";
+"Deuteranomaly" = "Deuteranomali";
+"Tritanomaly" = "Tritanomali";
+"Weak red, about 1% of men" = "Svag rödsyn, cirka 1 procent av männen";
+"Weak green, about 5% of men" = "Svag grönsyn, cirka 5 procent av männen";
+"Weak blue, rare" = "Svag blåsyn, sällsynt";
+"Color weakness" = "Färgsvaghet";
+"Color blindness" = "Färgblindhet";
+"Seen by" = "Sett med";
+"Original" = "Original";
+"Preview in use" = "Förhandsvisa i bruk";
+"See the color in use, as it is and as people with color weakness or color blindness see it" = "Se färgen i bruk, som den är och som personer med färgsvaghet eller färgblindhet ser den";

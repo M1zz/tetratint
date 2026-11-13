@@ -286,3 +286,17 @@
 "You were here before plans existed, so Pro is yours to keep." = "Ήσασταν εδώ πριν από τα προγράμματα, γι’ αυτό το Pro μένει δικό σας.";
 "See Plans" = "Δείτε τα προγράμματα";
 "Plan" = "Πρόγραμμα";
+
+/* Color preview lens, color weakness */
+"Protanomaly" = "Πρωτανωμαλία";
+"Deuteranomaly" = "Δευτερανωμαλία";
+"Tritanomaly" = "Τριτανωμαλία";
+"Weak red, about 1% of men" = "Αδύναμο κόκκινο, περίπου 1% των ανδρών";
+"Weak green, about 5% of men" = "Αδύναμο πράσινο, περίπου 5% των ανδρών";
+"Weak blue, rare" = "Αδύναμο μπλε, σπάνια";
+"Color weakness" = "Μειωμένη χρωματική όραση";
+"Color blindness" = "Αχρωματοψία";
+"Seen by" = "Όραση";
+"Original" = "Αρχικό";
+"Preview in use" = "Προεπισκόπηση σε χρήση";
+"See the color in use, as it is and as people with color weakness or color blindness see it" = "Δείτε το χρώμα σε χρήση, όπως είναι και όπως το βλέπουν άτομα με μειωμένη χρωματική όραση ή αχρωματοψία";
