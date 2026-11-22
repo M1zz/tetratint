@@ -49,3 +49,13 @@
   .tt-swatch, .tt-btn, .tt-tint, .tt-presets button::before { transition: none; }
 }
 @media (max-width: 900px) { .tt-cards { grid-template-columns: 1fr 1fr; } }
+
+/* 오른쪽에서 왼쪽으로 쓰는 언어(아랍어). 생성기 공용 스타일의 왼쪽 · 오른쪽을 뒤집는다 (→ scripts/build_site.sh).
+   hex 값은 원래 왼쪽부터 읽으므로 그대로 둔다. */
+[dir="rtl"] .tt-badge::before { margin-right: 0; margin-left: 4px; }
+[dir="rtl"] .tt-hex { direction: ltr; text-align: left; }
+[dir="rtl"] .plan ul { padding-left: 0; padding-right: 1.2em; }
+[dir="rtl"] summary { padding-left: var(--s6); padding-right: 0; }
+[dir="rtl"] summary::after { right: auto; left: 0; }
+[dir="rtl"] .skip { left: auto; right: var(--s4); }
+@media (max-width: 760px) { [dir="rtl"] .hero { text-align: right; } }
