@@ -13,7 +13,7 @@ configFiles:
 packages:
   LeeoKit:
     url: https://github.com/M1zz/LeeoKit.git
-    from: 3.46.4
+    from: 3.47.1
 
 targets:
   TetraTint:
@@ -29,6 +29,8 @@ targets:
         # 버전·빌드 번호는 여기 두지 않는다 → Config/Version.xcconfig (위 configFiles).
         DEVELOPMENT_TEAM: QGAQ3AY3R3
         GENERATE_INFOPLIST_FILE: YES
+        # App Store 이벤트 링크(com.leeo.tetratint://paywall)를 받는 URL 스킴 (LeeoKit LeeoPaywallLink)
+        INFOPLIST_FILE: TetraTint-Info.plist
         INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.developer-tools
         INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: "NO"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon

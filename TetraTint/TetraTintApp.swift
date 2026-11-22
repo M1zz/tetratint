@@ -178,6 +178,8 @@ struct ContentView: View {
             PaywallView()
                 .arabicLayout()
         }
+        // App Store 이벤트 링크(<번들 ID>://paywall)로 열리면 요금제를 띄운다 (LeeoKit).
+        .leeoPaywallLink(isPresented: $appState.showsPlans)
         .sheet(isPresented: $showGraduation) {
             LeeoGraduationOfferView(graduate: purchases.graduateProduct) {
                 await purchases.refresh()
