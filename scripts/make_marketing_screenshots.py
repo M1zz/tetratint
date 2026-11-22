@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """Mac App Store 스크린샷 합성: 창 캡처 + 헤드라인 → 2880x1800. HTML → 헤드리스 Chrome.
 
 사용법: python3 scripts/make_marketing_screenshots.py [로케일 ...]
@@ -184,16 +185,27 @@ SHOTS = {
         ("04-dynamic-type.png", "Özel yazı tipleriniz için Dynamic Type", "Boyut tabloları ile SwiftUI ve UIKit kodu tek ekranda"),
         ("05-system-colors.png", "Sistem renklerinin dört hali bir arada", "Açık, koyu ve yüksek karşıtlık değerleri yan yana, kopyalamaya hazır"),
     ],
+    # 아랍어는 오른쪽에서 왼쪽으로 (→ RTL). 파일 확장자 · 코드 이름은 <bdi> 로 감싸 왼쪽부터 그대로 둔다.
+    "ar": [
+        ("01-generator.png",    "لون واحد يمنحك الداكن والتباين العالي", "اشتق أربعة أنماط من لون فاتح واحد وصدّرها ملف <bdi>.colorset</bdi>"),
+        ("02-contrast.png",     "اكتشف الألوان ضعيفة التباين", "الصق ألوان تطبيقك واحصل فورًا على حكم WCAG لكل لون"),
+        ("03-color-vision.png", "شاهد لوحتك بعيون الآخرين", "محاكاة عمى الأحمر والأخضر والأزرق والتدرج الرمادي، مع تنبيه للألوان المتشابهة"),
+        ("04-dynamic-type.png", "Dynamic Type لخطوطك المخصصة", "جداول الأحجام وشيفرة SwiftUI وUIKit في شاشة واحدة"),
+        ("05-system-colors.png", "ألوان النظام بأوضاعها الأربعة", "قيم الفاتح والداكن والتباين العالي جنبًا إلى جنب، جاهزة للنسخ"),
+    ],
 }
 
-HTML = """<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><style>
+# 오른쪽에서 왼쪽으로 쓰는 언어. 아랍어 글자는 이어 써야 해서 자간을 좁히지 않는다.
+RTL = {"ar"}
+
+HTML = """<!doctype html><html lang="{lang}" dir="{dir}"><head><meta charset="utf-8"><style>
 * {{ margin:0; padding:0; box-sizing:border-box; }}
 html,body {{ width:{W}px; height:{H}px; overflow:hidden; }}
 body {{ background:linear-gradient(160deg,#f6f4ff 0%,#eef3ff 55%,#fdf2f7 100%);
   font-family:-apple-system,"SF Pro Display","Apple SD Gothic Neo",sans-serif; position:relative; }}
 .text {{ position:absolute; left:0; right:0; top:110px; text-align:center; padding:0 160px; }}
-.headline {{ font-size:104px; font-weight:800; color:#1c1c2e; letter-spacing:-0.025em; line-height:1.1; word-break:keep-all; }}
-.sub {{ margin-top:30px; font-size:48px; font-weight:500; color:#5e5e70; letter-spacing:-0.01em; word-break:keep-all; }}
+.headline {{ font-size:104px; font-weight:800; color:#1c1c2e; letter-spacing:{track}; line-height:1.1; word-break:keep-all; }}
+.sub {{ margin-top:30px; font-size:48px; font-weight:500; color:#5e5e70; letter-spacing:{subtrack}; word-break:keep-all; }}
 .win {{ position:absolute; left:50%; top:470px; width:2380px; transform:translateX(-50%);
   border-radius:26px; overflow:hidden;
   box-shadow:0 50px 120px rgba(40,30,90,.22), 0 0 0 1px rgba(0,0,0,.08); }}
@@ -226,7 +238,10 @@ def main(only=None):
         out = OUTROOT / loc
         out.mkdir(parents=True, exist_ok=True)
         for fname, headline, sub in shots:
-            html = HTML.format(lang=loc[:2], W=W, H=H, headline=headline, sub=sub,
+            rtl = loc in RTL
+            html = HTML.format(lang=loc[:2], dir="rtl" if rtl else "ltr",
+                               track="normal" if rtl else "-0.025em", subtrack="normal" if rtl else "-0.01em",
+                               W=W, H=H, headline=headline, sub=sub,
                                img=(RAW / loc / fname).as_uri())
             html_path = pathlib.Path("/tmp") / f"tetratint-{loc}-{fname.replace('.png', '.html')}"
             html_path.write_text(html, encoding="utf-8")
