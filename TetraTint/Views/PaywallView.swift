@@ -415,7 +415,7 @@ private struct ComparisonTable: View {
             Row(title: String(localized: "Dynamic Type table and preview", comment: "Comparison table row"), cells: everyone),
             Row(title: String(localized: "System colors reference", comment: "Comparison table row"), cells: everyone),
             Row(title: String(localized: "Palette"),
-                cells: [.text(String(localized: "\(Plan.freePaletteLimit) colors", comment: "Comparison table: free palette size")),
+                cells: [.text(String(localized: "\(Plan.freePaletteLimit) colors", locale: AppLanguage.locale, comment: "Comparison table: free palette size")),
                         .text(unlimited), .text(unlimited)],
                 feature: .unlimitedPalette),
             Row(title: PlanFeature.bulkAudit.title, cells: plus, feature: .bulkAudit),
@@ -506,6 +506,7 @@ extension PlanFeature {
         switch self {
         case .unlimitedPalette:
             String(localized: "Free palettes hold up to \(Plan.freePaletteLimit) colors",
+                   locale: AppLanguage.locale,
                    comment: "Paywall reason: the free palette limit is reached")
         default:
             title

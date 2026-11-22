@@ -72,6 +72,7 @@ struct RoadmapScreen: View {
                         }
                 }
                 .frame(width: 460, height: 560)
+                .arabicLayout()
             }
     }
 }

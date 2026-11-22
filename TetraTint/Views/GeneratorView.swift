@@ -96,12 +96,13 @@ struct VariantsLens: View {
             }
 
             ScrollView(.horizontal) {
-                Text(exportText)
+                Text(AppLanguage.leftToRightLines(exportText))
                     .font(.system(.callout, design: .monospaced))
                     .textSelection(.enabled)
                     .padding(12)
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
+            .keepsLeftToRight()
             .frame(maxHeight: 240)
             .background(Color(nsColor: .textBackgroundColor))
             .clipShape(RoundedRectangle(cornerRadius: 8))

@@ -81,7 +81,7 @@ struct SystemColorsView: View {
                             .strokeBorder(Color.primary.opacity(0.15), lineWidth: 1)
                     )
                 Text(copiedHex == hex ? "Copied" : hex)
-                    .font(.system(.body, design: .monospaced))
+                    .font(copiedHex == hex ? .body : .system(.body, design: .monospaced))
                     .foregroundStyle(copiedHex == hex ? .primary : .secondary)
             }
             .padding(.horizontal, 6)

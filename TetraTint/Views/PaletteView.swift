@@ -130,7 +130,7 @@ private struct PaletteRow: View {
     var body: some View {
         HStack(spacing: 12) {
             Text(item.name)
-                .font(.system(.title3, design: .monospaced))
+                .font(.system(.title3, design: .nameDesign))
                 .frame(width: PaletteView.nameColumnWidth, alignment: .leading)
 
             ForEach(Appearance.allCases) { appearance in
@@ -194,6 +194,7 @@ enum TetraTintTipMoments {
         saves.filter { count >= $0 }.map {
             LeeoTipMoment(id: "saves.\($0)",
                           message: String(localized: "You've saved or exported colors \(count) times with TetraTint",
+                                          locale: AppLanguage.locale,
                                           comment: "Tip ask card: how many times colors were saved or exported"))
         }
     }

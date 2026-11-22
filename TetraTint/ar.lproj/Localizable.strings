@@ -1,0 +1,304 @@
+/* Color vision preview */
+"Color vision preview" = "معاينة رؤية الألوان";
+"Preview the whole app as someone with color vision deficiency sees it" = "شاهد التطبيق كله كما يراه من لديه قصور في رؤية الألوان";
+"simulated colors, not the real ones" = "ألوان محاكاة وليست الألوان الحقيقية";
+"Exit" = "إيقاف";
+"Normal" = "طبيعي";
+"Protanopia" = "عمى الأحمر";
+"Deuteranopia" = "عمى الأخضر";
+"Tritanopia" = "عمى الأزرق";
+"Grayscale" = "تدرّج رمادي";
+
+/* Color names (spoken for accessibility) */
+"Black" = "أسود";
+"Dark gray" = "رمادي داكن";
+"Gray" = "رمادي";
+"Light gray" = "رمادي فاتح";
+"White" = "أبيض";
+"Red" = "أحمر";
+"Orange" = "برتقالي";
+"Yellow" = "أصفر";
+"Lime" = "ليموني";
+"Green" = "أخضر";
+"Teal" = "أزرق مخضرّ";
+"Sky blue" = "سماوي";
+"Blue" = "أزرق";
+"Indigo" = "نيلي";
+"Purple" = "بنفسجي";
+"Magenta" = "أرجواني";
+"Pink" = "وردي";
+"Dark" = "داكن";
+"Light" = "فاتح";
+"Pale" = "باهت";
+
+/* Color name: hue, then qualifier (Arabic puts the adjective after the noun) */
+"%@ %@" = "%2$@ %1$@";
+
+/* Navigation & view titles */
+"Color" = "اللون";
+"Variants" = "الأنماط";
+"Contrast" = "التباين";
+"Color vision" = "رؤية الألوان";
+"Generate variants" = "إنشاء الأنماط";
+"Check contrast" = "فحص التباين";
+"Simulate color vision" = "محاكاة رؤية الألوان";
+"Generate and export light, dark, and high-contrast variants" = "أنشئ أنماط الوضع الفاتح والداكن والتباين العالي وصدّرها";
+"Check the color against WCAG contrast thresholds" = "يحكم على اللون وفق حدود التباين في معيار WCAG";
+"Simulate how the color looks with color vision deficiency" = "يحاكي كيف يبدو اللون لمن لديه قصور في رؤية الألوان";
+"Dynamic Type" = "Dynamic Type";
+"System colors" = "ألوان النظام";
+"Palette" = "لوحة الألوان";
+
+/* Appearance variants */
+"Light (Any)" = "فاتح (الافتراضي)";
+"Light High Contrast" = "فاتح بتباين عالٍ";
+"Dark" = "داكن";
+"Dark High Contrast" = "داكن بتباين عالٍ";
+"Light" = "فاتح";
+"Light HC" = "فاتح عالي التباين";
+"Dark HC" = "داكن عالي التباين";
+"Light mode default (Any Appearance)" = "القيمة الافتراضية للوضع الفاتح (Any Appearance)";
+"Light with Increase Contrast on" = "الوضع الفاتح مع تشغيل ⁨زيادة التباين⁩ من تسهيلات الاستخدام";
+"Dark mode default" = "القيمة الافتراضية للوضع الداكن";
+"Dark with Increase Contrast on" = "الوضع الداكن مع تشغيل ⁨زيادة التباين⁩ من تسهيلات الاستخدام";
+
+/* Color vision deficiency subtitles */
+"Normal vision" = "رؤية ألوان طبيعية";
+"Protan, about 1% of men" = "عمى الأحمر، نحو 1% من الرجال";
+"Deutan, about 1% of men" = "عمى الأخضر، نحو 1% من الرجال";
+"Tritan, rare" = "عمى الأزرق، نادر";
+"Monochromacy" = "عمى الألوان الكلي (أبيض وأسود)";
+
+/* Safe palettes */
+"Scientific visualization standard, 8 colors" = "معيار التمثيل العلمي للبيانات، 8 ألوان";
+"IBM accessibility palette, 5 colors" = "لوحة إمكانية الوصول من IBM، 5 ألوان";
+"Qualitative data visualization, 7 colors" = "لتمثيل البيانات النوعية، 7 ألوان";
+
+/* Generator */
+"Light mode base color" = "اللون الأساسي للوضع الفاتح";
+"Color name" = "اسم اللون";
+"Regenerate all" = "إعادة إنشاء الكل";
+"Discard manual edits and re-derive from the base color" = "يتجاهل تعديلاتك اليدوية ويعيد اشتقاق الأنماط من اللون الأساسي";
+"Save to palette" = "حفظ في لوحة الألوان";
+"Presets" = "ألوان جاهزة";
+"Export" = "تصدير";
+"Copied" = "تم النسخ";
+"Copy" = "نسخ";
+"Save .colorset" = "حفظ ملف ⁨.colorset⁩";
+
+/* Variant card */
+"%@:1 vs background" = "التباين مع الخلفية ⁨%@:1⁩";
+"AA text" = "نص AA";
+"Low" = "منخفض";
+"Button" = "زر";
+"Tint label" = "تسمية ملونة";
+"Progress" = "التقدّم";
+"Copy hex" = "نسخ رمز hex";
+"Fine-tune this variant manually" = "اضبط هذا النمط يدويًا بدقة";
+
+/* Color vision screen */
+"Color vision simulation" = "محاكاة رؤية الألوان";
+"This shows how your colors look to people with color vision deficiency. It is the current state, not a suggestion to change them." = "يعرض كيف تبدو ألوانك لمن لديهم قصور في رؤية الألوان. هذا هو الوضع الحالي، وليس دعوة إلى تغييرها.";
+"Conflict warnings" = "تحذيرات الألوان المتشابهة";
+"Finds color pairs that become too similar to tell apart under simulation." = "يكتشف أزواج الألوان التي تتشابه في المحاكاة إلى حد يصعب معه التمييز بينها.";
+"Recommended safe palettes" = "لوحات آمنة لعمى الألوان";
+"If there were conflicts above, switch to a verified palette that stays distinguishable across every vision type." = "إذا ظهرت ألوان متشابهة أعلاه، فانتقل إلى لوحة موثوقة تبقى ألوانها مميزة لكل أنواع رؤية الألوان.";
+"No palette saved yet, so the Okabe Ito demo palette is shown. Save colors in Generator to audit your own palette." = "لا توجد لوحة محفوظة بعد، لذا تظهر لوحة Okabe Ito التجريبية. احفظ ألوانًا من شاشة إنشاء الأنماط لفحص لوحتك أنت.";
+"All color pairs stay distinguishable across every vision type (ΔE ≥ 12)" = "كل أزواج الألوان تبقى مميزة في جميع أنواع رؤية الألوان ⁨(ΔE ≥ 12)⁩";
+"ΔE %@ under %@" = "⁨ΔE %1$@⁩ مع %2$@";
+"Do not rely on color alone. Pair it with icons, patterns, or labels, or switch to a safe palette below." = "لا تعتمد على اللون وحده لتمييز الحالة. أضف أيقونات أو أنماطًا أو تسميات، أو انتقل إلى إحدى اللوحات الآمنة أدناه.";
+"Add to palette" = "إضافة إلى لوحة الألوان";
+"Derive each color into four variants and save to the palette" = "اشتق من كل لون أربعة أنماط واحفظها في لوحة الألوان";
+
+/* Contrast audit */
+"Paste the colors your app uses (separated by line breaks or commas)" = "الصق الألوان التي يستخدمها تطبيقك (افصل بينها بسطر جديد أو فاصلة)";
+"Audit" = "فحص";
+"Screens each color against light (vs white) and dark (vs black) backgrounds using WCAG thresholds." = "يحكم على كل لون وفق حدود WCAG على الخلفية الفاتحة (مقابل الأبيض) والداكنة (مقابل الأسود).";
+"Preview: %lld colors" = "معاينة: %lld لون";
+"Preview: %lld colors, %lld unrecognized" = "معاينة: %1$lld لون، منها %2$lld غير معروف";
+"%lld of %lld colors need a high-contrast variant" = "%1$lld من أصل %2$lld لون تحتاج إلى نمط بتباين عالٍ";
+"Use as is" = "صالح كما هو";
+"Needs high contrast" = "يحتاج إلى تباين عالٍ";
+"Decorative only" = "للزينة فقط";
+"Meets 4.5:1 for text" = "يحقق نسبة ⁨4.5:1⁩ المطلوبة للنص";
+"Passes 3:1 for UI; text or High Contrast needs a variant" = "يجتاز ⁨3:1⁩ لعناصر الواجهة، لكن النص والتباين العالي يحتاجان إلى نمط إضافي";
+"Below 3:1; do not use for text, icons, or status" = "أقل من ⁨3:1⁩، فلا تستخدمه للنص أو الأيقونات أو عرض الحالة";
+"Derive four variants" = "إنشاء 4 أنماط";
+"Derive four variants including high contrast and save to the palette" = "اشتق أربعة أنماط منها التباين العالي واحفظها في لوحة الألوان";
+
+/* Dynamic Type */
+"Scaling preview" = "معاينة تغيّر الحجم";
+"Style" = "النمط";
+"Custom font PostScript name" = "اسم PostScript للخط المخصص";
+"Category" = "الفئة";
+"The quick brown fox jumps over the lazy dog" = "صِف خَلقَ خَودٍ كَمِثلِ الشَّمسِ إذ بَزَغَت";
+"Code" = "الشيفرة";
+"Text style sizes (pt)" = "أحجام أنماط النص (pt)";
+"Large is the default. In accessibility sizes (AX1 to AX5), Body grows to %@pt, over three times the default, so avoid fixed heights, fixed padding, and lineLimit(1)." = "الحجم Large هو الافتراضي. في أحجام تسهيلات الاستخدام (من AX1 إلى AX5) يكبر Body حتى ⁨%@pt⁩، أي أكثر من ثلاثة أضعاف الافتراضي، فتجنّب الارتفاع الثابت والحشو الثابت و⁨lineLimit(1)⁩.";
+
+/* System colors */
+"Tint colors" = "ألوان التلوين";
+"Gray colors" = "الألوان الرمادية";
+"Reference values from Apple's Human Interface Guidelines. Actual values may change between OS releases, so always use the UIColor or Color API in shipping code rather than hard-coding." = "قيم مرجعية من إرشادات واجهة المستخدم البشرية من Apple. قد تتغير القيم الفعلية بين إصدارات النظام، لذا استخدم واجهة UIColor أو Color في الشيفرة المنشورة بدل كتابة القيم يدويًا.";
+"Click to copy %@" = "انقر لنسخ ⁨%@⁩";
+
+/* Screen color picker */
+"Pick color from screen" = "التقاط لون من الشاشة";
+"Pick a color from anywhere on screen" = "التقط لونًا من أي مكان على الشاشة";
+"Pick a color from anywhere on screen and make it the working color" = "التقط لونًا من أي مكان على الشاشة واجعله لون العمل";
+"Working color" = "لون العمل";
+"Change the working color to see how it looks under each type of color vision." = "غيّر لون العمل لترى كيف يبدو مع كل نوع من أنواع رؤية الألوان.";
+
+/* Palette */
+"Export .xcassets" = "تصدير ⁨.xcassets⁩";
+"Export every saved color as one asset catalog" = "صدّر كل الألوان المحفوظة في كتالوج أصول واحد";
+"No saved colors" = "لا توجد ألوان محفوظة";
+"Generate a color and save it here, then export your whole brand palette as one .xcassets catalog." = "أنشئ لونًا واحفظه هنا، ثم صدّر لوحة ألوان علامتك التجارية كاملة في كتالوج ⁨.xcassets⁩ واحد.";
+"Each color is saved as four variants" = "يُحفظ كل لون بأربعة أنماط";
+"Export %@.colorset" = "تصدير ⁨%@.colorset⁩";
+"Delete" = "حذف";
+
+/* VoiceOver labels */
+"Delete %@" = "حذف ⁨%@⁩";
+"Copy %@" = "نسخ ⁨%@⁩";
+"Hex value" = "قيمة hex";
+"Preset %@" = "لون جاهز ⁨%@⁩";
+
+/* Settings */
+"Support" = "الدعم";
+"Contact" = "تواصل معنا";
+"Help" = "المساعدة";
+"Email the developer" = "راسل المطوّر عبر البريد";
+"Message on Instagram (@lee25_ios)" = "راسلنا على Instagram ⁨(@lee25_ios)⁩";
+"Show the welcome guide again" = "عرض دليل البدء مجددًا";
+"Opens the guide in the main window" = "يفتح الدليل في النافذة الرئيسية";
+
+/* Help menu */
+"Welcome to TetraTint" = "مرحبًا بك في TetraTint";
+"TetraTint Support Page" = "صفحة دعم TetraTint";
+"Email the Developer…" = "راسل المطوّر عبر البريد…";
+
+/* Onboarding */
+"Accessibility work Apple doesn't do for your custom colors and fonts." = "يتولى عنك أعمال إمكانية الوصول التي لا تقوم بها Apple لألوانك وخطوطك المخصصة.";
+"Start with one color" = "ابدأ بلون واحد";
+"Type a hex value, use the color well, or pick any pixel on screen with the eyedropper. Every screen works on this same color." = "اكتب قيمة hex أو استخدم منتقي الألوان أو التقط أي نقطة على الشاشة بالقطّارة. كل الشاشات تعمل على هذا اللون نفسه.";
+"Look at it through three lenses" = "افحصه من ثلاث زوايا";
+"Generate light, dark, and high-contrast variants, check WCAG contrast, and see how it looks with color vision deficiency." = "أنشئ أنماط الوضع الفاتح والداكن والتباين العالي، وافحص التباين وفق WCAG، وشاهد كيف يبدو لمن لديه قصور في رؤية الألوان.";
+"Save and export" = "احفظ وصدّر";
+"Save colors to your palette, then export a .colorset, SwiftUI or UIKit code, or one .xcassets catalog for Xcode." = "احفظ الألوان في لوحتك، ثم صدّرها ملف ⁨.colorset⁩ أو شيفرة SwiftUI وUIKit أو كتالوج ⁨.xcassets⁩ واحدًا لـ Xcode.";
+"Custom fonts too" = "والخطوط المخصصة أيضًا";
+"Dynamic Type shows every text style at every size and writes the scaling code for your custom font." = "تعرض شاشة Dynamic Type كل أنماط النص بكل الأحجام، وتكتب شيفرة تغيير الحجم لخطك المخصص.";
+"You can open this guide again from the Help menu." = "يمكنك فتح هذا الدليل مجددًا من قائمة المساعدة.";
+"Get Started" = "ابدأ الآن";
+
+/* Tips */
+"Pick any color on screen" = "التقط أي لون على الشاشة";
+"Click the eyedropper, then click a pixel in any app, website, or design file. It becomes the working color everywhere." = "انقر على القطّارة، ثم انقر على أي نقطة في تطبيق أو موقع أو ملف تصميم، فيصبح لون العمل في كل الشاشات.";
+"See the whole app as others do" = "شاهد التطبيق كله بعيون الآخرين";
+"Turn on a color vision preview to view every screen as someone with protanopia, deuteranopia, or tritanopia sees it." = "شغّل معاينة رؤية الألوان لترى كل شاشة كما يراها من لديه عمى الأحمر أو الأخضر أو الأزرق.";
+
+/* Shortcuts (App Intents) */
+"Pick Color from Screen" = "التقاط لون من الشاشة";
+"Opens TetraTint and starts the eyedropper so you can pick any color on screen." = "يفتح TetraTint ويشغّل القطّارة لتلتقط أي لون على الشاشة.";
+"Open in TetraTint" = "فتح في TetraTint";
+"Opens a TetraTint screen: Color, Dynamic Type, System colors, or Palette." = "يفتح إحدى شاشات TetraTint: اللون أو Dynamic Type أو ألوان النظام أو لوحة الألوان.";
+"Screen" = "الشاشة";
+"The TetraTint screen to open" = "شاشة TetraTint التي تريد فتحها";
+"Pick Color" = "التقاط لون";
+"Open Screen" = "فتح شاشة";
+
+/* Roadmap (Settings > Coming Features), source: TetraTintRoadmap.swift */
+"Close" = "إغلاق";
+"Better VoiceOver support" = "دعم أفضل لـ VoiceOver";
+"VoiceOver reads every color, button, and value in a sensible order." = "يقرأ VoiceOver كل لون وزر وقيمة بترتيب منطقي دون أن يفوته شيء.";
+"Easier-to-see interface" = "واجهة أوضح للعين";
+"Labels and controls stay crisp with Increase Contrast turned on." = "تبقى النصوص والأزرار واضحة حتى مع تشغيل ⁨زيادة التباين⁩.";
+"Reduced motion" = "تقليل الحركة";
+"With Reduce Motion on, effects like colors flying into your palette get calmer." = "عند تشغيل ⁨تقليل الحركة⁩ تهدأ المؤثرات مثل انتقال الألوان طائرةً إلى لوحتك.";
+"More languages" = "لغات أكثر";
+"Use TetraTint in more languages, not just English and Korean." = "استخدم TetraTint بلغات أكثر، لا بالإنجليزية والكورية فقط.";
+"What’s new" = "ما الجديد";
+"After an update, see what’s new the first time you open the app." = "بعد كل تحديث، اعرف الجديد عند أول فتح للتطبيق.";
+"Replies to your feedback" = "ردود على ملاحظاتك";
+"Read our replies to your feedback right in the app." = "اقرأ ردودنا على ملاحظاتك داخل التطبيق مباشرة.";
+"Desktop widgets" = "أدوات سطح المكتب";
+"See your palette right on the desktop without opening the app." = "شاهد لوحة ألوانك على سطح المكتب مباشرة دون فتح التطبيق.";
+"Palettes on all your Macs" = "لوحتك على كل أجهزة Mac";
+"Pick up the same palette on your other Macs with iCloud." = "تابع العمل على لوحة الألوان نفسها في أجهزة Mac الأخرى عبر iCloud.";
+"Back up and restore palettes" = "نسخ لوحات الألوان احتياطيًا واستعادتها";
+"Save your palette to a file and load it back anytime." = "احفظ لوحتك في ملف واستعدها متى شئت.";
+"Clear the whole palette" = "مسح لوحة الألوان دفعة واحدة";
+"Remove every saved color at once when you want a fresh start." = "احذف كل الألوان المحفوظة مرة واحدة حين تريد بداية جديدة.";
+"Just Ask Siri" = "اطلب من Siri فقط";
+"Siri will start the eyedropper or open the screen you need, even if you don't say the app's name." = "تشغّل Siri القطّارة أو تفتح الشاشة التي تحتاجها، حتى دون أن تذكر اسم التطبيق.";
+
+/* Tip ask card: how many times colors were saved or exported */
+"You've saved or exported colors %lld times with TetraTint" = "حفظت الألوان أو صدّرتها %lld مرة باستخدام TetraTint";
+
+/* Accessibility: palette badge in the sidebar (VoiceOver) */
+"%lld new colors" = "%lld لون جديد";
+
+/* Accessibility: voice command name for the eyedropper button */
+"Eyedropper" = "القطّارة";
+
+/* Plans: Free, Plus, Pro (PaywallView, SettingsView, PurchaseManager) */
+"Free" = "مجاني";
+"TetraTint Plus and Pro" = "خطط TetraTint Plus وPro";
+"Audit your whole palette and send it straight to Xcode. Go yearly or lifetime." = "افحص لوحة ألوانك كاملة وأرسلها مباشرة إلى Xcode. اختر الاشتراك السنوي أو الشراء مدى الحياة.";
+"Make one color in four modes and check its contrast." = "اصنع من لون واحد أربعة أوضاع وافحص تباينه.";
+"Check your whole palette in one go." = "افحص لوحة ألوانك كاملة دفعة واحدة.";
+"Send files straight to Xcode, and start from Shortcuts." = "أرسل الملفات مباشرة إلى Xcode، وابدأ من الاختصارات.";
+"Recommended" = "موصى به";
+"Current plan" = "خطتك الحالية";
+"Included in %@" = "مشمول في %@";
+"Show weekly and monthly plans" = "عرض الاشتراك الأسبوعي والشهري";
+"Weekly" = "أسبوعي";
+"%@ / week" = "⁨%@⁩ / أسبوعيًا";
+"Monthly" = "شهري";
+"%@ / month" = "⁨%@⁩ / شهريًا";
+"You own Plus Lifetime, so you pay only the difference." = "لديك Plus مدى الحياة، لذا تدفع الفرق فقط.";
+"Pay %@" = "ادفع ⁨%@⁩";
+"Loading plans…" = "جارٍ تحميل الخطط…";
+"Couldn't load plans. Check your internet connection and try again." = "تعذّر تحميل الخطط. تحقق من اتصالك بالإنترنت وحاول مرة أخرى.";
+"Try Again" = "إعادة المحاولة";
+"Subscriptions renew automatically at the same price unless canceled at least 24 hours before the period ends, and are charged to your Apple Account. New subscribers get the first year of a yearly plan at a discount once; after that it renews at the regular price. Manage or cancel anytime in your App Store account settings. Lifetime is a one-time payment and never renews." = "تتجدد الاشتراكات تلقائيًا بالسعر نفسه ما لم تُلغَ قبل 24 ساعة على الأقل من نهاية المدة، ويُخصم المبلغ من حساب Apple. يحصل المشتركون الجدد على خصم لمرة واحدة في السنة الأولى من الاشتراك السنوي، ثم يتجدد بالسعر العادي. يمكنك إدارة الاشتراك أو إلغاؤه في أي وقت من إعدادات حسابك في App Store. أما الشراء مدى الحياة فيُدفع مرة واحدة ولا يتجدد.";
+"Terms of Use" = "شروط الاستخدام";
+"Privacy Policy" = "سياسة الخصوصية";
+"Restore Purchases" = "استعادة المشتريات";
+"Unlimited" = "غير محدود";
+"Four mode variants" = "أنماط الأوضاع الأربعة";
+"Contrast and WCAG for one color" = "التباين وWCAG للون واحد";
+"Copy hex and code as text" = "نسخ hex والشيفرة كنص";
+"Dynamic Type table and preview" = "جدول Dynamic Type ومعاينته";
+"System colors reference" = "مرجع ألوان النظام";
+"%lld colors" = "%lld لون";
+"Feature" = "الميزة";
+"Included" = "مشمول";
+"Not included" = "غير مشمول";
+"Unlimited palette" = "لوحة ألوان بلا حدود";
+"Bulk contrast audit and quick fix" = "فحص التباين بالجملة وإصلاحه فورًا";
+"Color-blind safe palettes" = "لوحات آمنة لعمى الألوان";
+"Save .colorset files" = "حفظ ملفات ⁨.colorset⁩";
+"Export the palette as one .xcassets" = "تصدير اللوحة في ملف ⁨.xcassets⁩ واحد";
+"Dynamic Type code" = "شيفرة Dynamic Type";
+"Shortcuts and Spotlight" = "الاختصارات وSpotlight";
+"Free palettes hold up to %lld colors" = "اللوحة المجانية تتسع لـ %lld لون كحد أقصى";
+"No purchases were found for this Apple Account." = "لم نعثر على مشتريات في حساب Apple هذا.";
+"Your plan" = "خطتك";
+"You were here before plans existed, so Pro is yours to keep." = "كنت معنا قبل ظهور الخطط، لذا تبقى Pro لك دائمًا.";
+"See Plans" = "عرض الخطط";
+"Plan" = "الخطة";
+
+/* Color preview lens, color weakness */
+"Protanomaly" = "ضعف رؤية الأحمر";
+"Deuteranomaly" = "ضعف رؤية الأخضر";
+"Tritanomaly" = "ضعف رؤية الأزرق";
+"Weak red, about 1% of men" = "ضعف الأحمر، نحو 1% من الرجال";
+"Weak green, about 5% of men" = "ضعف الأخضر، نحو 5% من الرجال";
+"Weak blue, rare" = "ضعف الأزرق، نادر";
+"Color weakness" = "ضعف رؤية الألوان";
+"Color blindness" = "عمى الألوان";
+"Seen by" = "كما يراه";
+"Original" = "اللون الأصلي";
+"Preview in use" = "معاينة في الواجهة";
+"See the color in use, as it is and as people with color weakness or color blindness see it" = "شاهد اللون داخل الواجهة كما هو، وكما يراه من لديه ضعف في رؤية الألوان أو عمى الألوان";

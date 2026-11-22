@@ -121,6 +121,7 @@ struct DynamicTypeView: View {
                     snippetText
                 }
             }
+            .keepsLeftToRight()
             .frame(maxHeight: 260)
             .background(Color(nsColor: .textBackgroundColor))
             .clipShape(RoundedRectangle(cornerRadius: 8))
@@ -132,7 +133,7 @@ struct DynamicTypeView: View {
     }
 
     private var snippetText: some View {
-        Text(snippet)
+        Text(AppLanguage.leftToRightLines(snippet))
             .font(.system(.callout, design: .monospaced))
             .padding(12)
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -197,7 +198,7 @@ struct DynamicTypeView: View {
 
     private var axNote: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text("Large is the default. In accessibility sizes (AX1 to AX5), Body grows to \(DynamicTypeData.bodyAccessibilitySizes.map(String.init).joined(separator: " → "))pt, over three times the default, so avoid fixed heights, fixed padding, and lineLimit(1).")
+            Text("Large is the default. In accessibility sizes (AX1 to AX5), Body grows to \("\u{2066}" + DynamicTypeData.bodyAccessibilitySizes.map(String.init).joined(separator: " → ") + "\u{2069}")pt, over three times the default, so avoid fixed heights, fixed padding, and lineLimit(1).")
                 .font(.callout)
                 .foregroundStyle(.secondary)
         }

@@ -47,7 +47,9 @@ extension RGB {
         default:     qualifier = nil
         }
 
-        if let q = qualifier { return "\(q) \(hue)" }
+        // 말 순서는 언어마다 다르다: "어두운 파랑", 아랍어는 "أزرق داكن" (형용사가 뒤).
+        // "%@ %@" 를 번역하지 않은 언어는 키 그대로 쓰여 지금과 같다.
+        if let q = qualifier { return String(localized: "\(q) \(hue)") }
         return hue
     }
 }

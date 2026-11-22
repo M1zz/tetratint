@@ -59,7 +59,13 @@ final class PurchaseManager {
 
     /// **팔고 있는가.** 상품을 App Store Connect 에 만들기 전에 빌드가 나가도 살 수 없는 사람을 막지 않는다.
     /// 한 번이라도 상품을 불러온 기기는 잠깐 인터넷이 끊겨도 판매 중으로 본다.
-    var isSelling: Bool { hasEverSold || !products.isEmpty }
+    var isSelling: Bool {
+        #if DEBUG
+        // 스토어 스크린샷은 잠금 표시 없이 모든 화면을 연 채로 찍는다 (디버그 빌드만).
+        if ProcessInfo.processInfo.arguments.contains("-screenshotUnlocked") { return false }
+        #endif
+        return hasEverSold || !products.isEmpty
+    }
 
     /// 이 기능을 지금 써도 되는가.
     func allows(_ feature: PlanFeature) -> Bool { !isSelling || tier >= feature.tier }

@@ -63,11 +63,13 @@ struct TetraTintSettingsView: View {
         .frame(minHeight: 560)
         .sheet(isPresented: $showingPaywall) {
             PaywallView(initialTerm: paywallTerm)
+                .arabicLayout()
         }
         .sheet(isPresented: $showingGraduation) {
             LeeoGraduationOfferView(graduate: purchases.graduateProduct) {
                 await purchases.refresh()
             }
+            .arabicLayout()
         }
     }
 

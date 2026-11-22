@@ -153,6 +153,7 @@ struct ColorWorkspaceView: View {
                     .accessibilityLabel(Text("Hex value"))
                     .textFieldStyle(.roundedBorder)
                     .font(.system(.title3, design: .monospaced))
+                    .keepsLeftToRight()
                     .frame(width: 120)
                     .onSubmit {
                         if RGB(hex: baseHexField) != nil {

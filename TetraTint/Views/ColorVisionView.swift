@@ -79,7 +79,7 @@ struct ColorVisionLens: View {
                     GridRow {
                         VStack(alignment: .leading, spacing: 1) {
                             Text(item.name)
-                                .font(.system(.callout, design: .monospaced))
+                                .font(.system(.callout, design: .nameDesign))
                             Text(item.hex)
                                 .font(.system(.body, design: .monospaced))
                                 .foregroundStyle(.secondary)
@@ -169,7 +169,7 @@ struct ColorVisionLens: View {
                         .accessibilityHidden(true)
 
                         Text("\(c.a.name) ↔ \(c.b.name)")
-                            .font(.system(.callout, design: .monospaced))
+                            .font(.system(.callout, design: .nameDesign))
 
                         Text("ΔE \(String(format: "%.1f", c.deltaE)) under \(c.type.localizedName)")
                             .font(.callout)

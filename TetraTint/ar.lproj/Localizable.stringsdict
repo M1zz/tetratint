@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%lld colors</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@c@</string>
+		<key>c</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>few</key>
+			<string>%lld ألوان</string>
+			<key>many</key>
+			<string>%lld لونًا</string>
+			<key>one</key>
+			<string>لون واحد</string>
+			<key>other</key>
+			<string>%lld لون</string>
+			<key>two</key>
+			<string>لونان</string>
+			<key>zero</key>
+			<string>لا ألوان</string>
+		</dict>
+	</dict>
+	<key>%lld new colors</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@c@</string>
+		<key>c</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>few</key>
+			<string>%lld ألوان جديدة</string>
+			<key>many</key>
+			<string>%lld لونًا جديدًا</string>
+			<key>one</key>
+			<string>لون جديد واحد</string>
+			<key>other</key>
+			<string>%lld لون جديد</string>
+			<key>two</key>
+			<string>لونان جديدان</string>
+			<key>zero</key>
+			<string>لا ألوان جديدة</string>
+		</dict>
+	</dict>
+	<key>%lld of %lld colors need a high-contrast variant</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%2$#@t@، يحتاج %1$lld منها إلى نمط بتباين عالٍ</string>
+		<key>t</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>few</key>
+			<string>من أصل %lld ألوان</string>
+			<key>many</key>
+			<string>من أصل %lld لونًا</string>
+			<key>one</key>
+			<string>من أصل لون واحد</string>
+			<key>other</key>
+			<string>من أصل %lld لون</string>
+			<key>two</key>
+			<string>من أصل لونين</string>
+			<key>zero</key>
+			<string>لا ألوان</string>
+		</dict>
+	</dict>
+	<key>Free palettes hold up to %lld colors</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>اللوحة المجانية تتسع لـ %#@c@ كحد أقصى</string>
+		<key>c</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>few</key>
+			<string>%lld ألوان</string>
+			<key>many</key>
+			<string>%lld لونًا</string>
+			<key>one</key>
+			<string>لون واحد</string>
+			<key>other</key>
+			<string>%lld لون</string>
+			<key>two</key>
+			<string>لونين</string>
+			<key>zero</key>
+			<string>0 لون</string>
+		</dict>
+	</dict>
+	<key>Preview: %lld colors</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>معاينة: %#@c@</string>
+		<key>c</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>few</key>
+			<string>%lld ألوان</string>
+			<key>many</key>
+			<string>%lld لونًا</string>
+			<key>one</key>
+			<string>لون واحد</string>
+			<key>other</key>
+			<string>%lld لون</string>
+			<key>two</key>
+			<string>لونان</string>
+			<key>zero</key>
+			<string>لا ألوان</string>
+		</dict>
+	</dict>
+	<key>Preview: %lld colors, %lld unrecognized</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>معاينة: %1$#@c@، منها %2$lld غير معروف</string>
+		<key>c</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>few</key>
+			<string>%lld ألوان</string>
+			<key>many</key>
+			<string>%lld لونًا</string>
+			<key>one</key>
+			<string>لون واحد</string>
+			<key>other</key>
+			<string>%lld لون</string>
+			<key>two</key>
+			<string>لونان</string>
+			<key>zero</key>
+			<string>لا ألوان</string>
+		</dict>
+	</dict>
+	<key>You've saved or exported colors %lld times with TetraTint</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>حفظت الألوان أو صدّرتها %#@t@ باستخدام TetraTint</string>
+		<key>t</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>few</key>
+			<string>%lld مرات</string>
+			<key>many</key>
+			<string>%lld مرة</string>
+			<key>one</key>
+			<string>مرة واحدة</string>
+			<key>other</key>
+			<string>%lld مرة</string>
+			<key>two</key>
+			<string>مرتين</string>
+			<key>zero</key>
+			<string>0 مرة</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -110,6 +110,7 @@ struct ContrastLens: View {
 
             TextEditor(text: $input)
                 .font(.system(.title3, design: .monospaced))
+                .keepsLeftToRight()
                 .frame(height: 110)
                 .padding(8)
                 .background(Color(nsColor: .textBackgroundColor))

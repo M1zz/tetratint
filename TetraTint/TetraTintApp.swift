@@ -89,6 +89,7 @@ struct TetraTintApp: App {
     var body: some Scene {
         WindowGroup {
             root
+                .arabicNumbers()
                 // 개발자가 보낸 의견에 답장하면, 앱이 앞으로 올 때 답장을 시트로 보여 준다 (LeeoKit).
                 .leeoFeedbackReplyNotice(TetraTintSpec.self)
                 .environmentObject(store)
@@ -104,6 +105,7 @@ struct TetraTintApp: App {
 
         Settings {
             TetraTintSettingsView()
+                .arabicLayout()
         }
     }
 
@@ -148,6 +150,7 @@ struct ContentView: View {
                 CVDPreviewBanner(type: appState.previewCVD) {
                     appState.previewCVD = .normal
                 }
+                .arabicLayout()
             }
         }
         .background(CVDWindowFilter(type: appState.previewCVD))
@@ -165,17 +168,21 @@ struct ContentView: View {
         .dynamicTypeSize(.xLarge)
         .sheet(isPresented: $showOnboarding, onDismiss: { hasSeenOnboarding = true }) {
             TetraTintOnboardingView { showOnboarding = false }
+                .arabicLayout()
         }
         .sheet(item: $appState.paywall) { feature in
             PaywallView(highlight: feature)
+                .arabicLayout()
         }
         .sheet(isPresented: $appState.showsPlans) {
             PaywallView()
+                .arabicLayout()
         }
         .sheet(isPresented: $showGraduation) {
             LeeoGraduationOfferView(graduate: purchases.graduateProduct) {
                 await purchases.refresh()
             }
+            .arabicLayout()
         }
         .onChange(of: purchases.subscription, initial: true) { _, _ in
             if purchases.takeGraduationOffer() { showGraduation = true }
@@ -193,9 +200,9 @@ struct ContentView: View {
 
     private var splitView: some View {
         NavigationSplitView {
-            sidebar
+            sidebar.arabicLayout()
         } detail: {
-            detail
+            detail.arabicLayout()
         }
         .toolbar {
             ToolbarItem {

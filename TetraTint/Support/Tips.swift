@@ -11,6 +11,10 @@ enum TetraTintTips {
     /// 앱 시작 시 1회. 원격 킬스위치(tipsEnabled)가 꺼져 있으면 팁 시스템을 켜지 않는다 → 팁이 뜨지 않는다.
     static func configure() {
         guard LeeoRemoteFlags.isEnabled(TetraTintFlag.tipsEnabled) else { return }
+        #if DEBUG
+        // 스토어 스크린샷에는 팁 말풍선이 화면을 가리지 않게 한다 (디버그 빌드만).
+        if ProcessInfo.processInfo.arguments.contains("-screenshotUnlocked") { return }
+        #endif
         try? Tips.configure([.displayFrequency(.immediate)])
     }
 }
