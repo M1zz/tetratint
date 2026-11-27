@@ -78,6 +78,7 @@ struct VariantsLens: View {
                 Button {
                     Exporters.copyToClipboard(exportText)
                     flashCopied()
+                    LeeoAnalyticsCenter.track(.custom(name: "color_exported", parameters: [:]))
                 } label: {
                     Label(showCopied ? "Copied" : "Copy", systemImage: "doc.on.doc")
                 }
@@ -89,6 +90,7 @@ struct VariantsLens: View {
                         appState.paywall = lock
                     } else if Exporters.exportColorSet(name: appState.colorName, set: set) {
                         LeeoEngagement.shared.registerSignificantEvent()
+                        LeeoAnalyticsCenter.track(.custom(name: "color_exported", parameters: [:]))
                     }
                 } label: {
                     Label("Save .colorset", systemImage: lock == nil ? "square.and.arrow.down" : "lock")
